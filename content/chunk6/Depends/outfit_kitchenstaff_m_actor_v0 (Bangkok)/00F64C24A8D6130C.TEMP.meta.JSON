@@ -1,0 +1,93 @@
+{
+    "hash_value": "00F64C24A8D6130C",
+    "hash_offset": 1013363484,
+    "hash_size": 2147485531,
+    "hash_resource_type": "TEMP",
+    "hash_reference_table_size": 184,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 4415,
+    "hash_size_in_memory": 3232,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[modules:/zbodypartentity.class].pc_entitytype",
+            "flag": "1F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_genericparts/heads/male/materials/male_reg_head_asian_01.mi].pc_entitytype",
+            "flag": "1F"
+        },
+        {
+            "hash": "[assembly:/templates/aspectdummy.aspect]([modules:/zlinkedproxyentity.class].entitytype,[modules:/zclothcharacterentity.class].entitytype).pc_entitytype",
+            "flag": "1F"
+        },
+        {
+            "hash": "00A07A54EB00FA6A",
+            "flag": "1F"
+        },
+        {
+            "hash": "003AAB3D2C739F59",
+            "flag": "5F"
+        },
+        {
+            "hash": "00A089E7D607CF25",
+            "flag": "5F"
+        },
+        {
+            "hash": "00C5ADD459BB617D",
+            "flag": "5F"
+        },
+        {
+            "hash": "0028899332140FA0",
+            "flag": "5F"
+        },
+        {
+            "hash": "00078CFF59F929B7",
+            "flag": "5F"
+        },
+        {
+            "hash": "003C4B05469D01B7",
+            "flag": "5F"
+        },
+        {
+            "hash": "0045924C7B9C8D59",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_genericparts/heads/male/geometry/male_reg_head_asian_01.wl2?/male_reg_head_asian_01.weightedprim](bodypart).pc_weightedprim",
+            "flag": "5F"
+        },
+        {
+            "hash": "00936023823CF8E6",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_genericparts/heads/male/textures/male_reg_head_asian_01.texture?/normal_a.tex](asnormalmap).pc_tex",
+            "flag": "5F"
+        },
+        {
+            "hash": "00F3654BB38A68EC",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_base/pro_male_regular/textures/base_male_head.texture?/translucency_a.tex](ascolormap).pc_tex",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_genericparts/heads/male/textures/male_reg_head_asian_01.texture?/specular_b.tex](ascolormap).pc_tex",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_genericparts/heads/male/textures/male_reg_head_asian_01.texture?/diffuse_b.tex](ascolormap).pc_tex",
+            "flag": "5F"
+        },
+        {
+            "hash": "00BC38B1FBD65A9A",
+            "flag": "5F"
+        },
+        {
+            "hash": "0029CE2A450BA0DF",
+            "flag": "1F"
+        }
+    ]
+}

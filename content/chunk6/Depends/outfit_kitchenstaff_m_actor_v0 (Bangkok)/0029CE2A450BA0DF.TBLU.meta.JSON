@@ -1,0 +1,29 @@
+{
+    "hash_value": "0029CE2A450BA0DF",
+    "hash_offset": 1013362281,
+    "hash_size": 2147484851,
+    "hash_resource_type": "TBLU",
+    "hash_reference_table_size": 40,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 3118,
+    "hash_size_in_memory": 2378,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[modules:/zbodypartentity.class].pc_entityblueprint",
+            "flag": "1F"
+        },
+        {
+            "hash": "[assembly:/_pro/characters/assets/_genericparts/heads/male/materials/male_reg_head_asian_01.mi].pc_entityblueprint",
+            "flag": "1F"
+        },
+        {
+            "hash": "[assembly:/templates/aspectdummy.aspect]([modules:/zlinkedproxyentity.class].entitytype,[modules:/zclothcharacterentity.class].entitytype).pc_entityblueprint",
+            "flag": "1F"
+        },
+        {
+            "hash": "0017EE8CF01DBCFA",
+            "flag": "1F"
+        }
+    ]
+}

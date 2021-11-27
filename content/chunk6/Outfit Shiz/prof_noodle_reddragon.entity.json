@@ -1,0 +1,104 @@
+{
+    "tempHash": "007E827EA0D8ABB8",
+    "tbluHash": "00D8D0CD7A6B623C",
+    "rootEntity": "Prof_Noodle_RedDragon",
+    "entities": {
+        "5a8c487b180d3346": {
+            "parent": {
+                "ref": "80fc22309763e45b",
+                "exposedEntity": "",
+                "externalScene": "SPECIAL: None",
+                "entityID": "ffffffffffffffff"
+            },
+            "name": "OutfitProfession",
+            "template": "[modules:/zoutfitprofessionentity.class].pc_entitytype",
+            "blueprint": "[modules:/zoutfitprofessionentity.class].pc_entityblueprint",
+            "properties": {},
+            "postInitProperties": {
+                "m_rKeywordProfession": {
+                    "type": "SEntityTemplateReference",
+                    "value": "4305c3f6d8e526a8"
+                }
+            },
+            "editorOnly": false,
+            "platformSpecificPropertyValues": [],
+            "events": [],
+            "inputCopying": [],
+            "outputCopying": []
+        },
+        "4305c3f6d8e526a8": {
+            "parent": {
+                "ref": "80fc22309763e45b",
+                "exposedEntity": "",
+                "externalScene": "SPECIAL: None",
+                "entityID": "ffffffffffffffff"
+            },
+            "name": "Keyword_Prof_Noodle_RedDragon",
+            "template": "[modules:/zkeywordentity.class].pc_entitytype",
+            "blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+            "properties": {
+                "m_sKeyword": {
+                    "type": "ZString",
+                    "value": "Prof_Noodle_RedDragon"
+                },
+                "m_aHolders": {
+                    "type": "TArray<SEntityTemplateReference>",
+                    "value": []
+                }
+            },
+            "postInitProperties": {
+                "m_rHolder": {
+                    "type": "SEntityTemplateReference",
+                    "value": "80fc22309763e45b"
+                }
+            },
+            "editorOnly": false,
+            "platformSpecificPropertyValues": [],
+            "events": [],
+            "inputCopying": [],
+            "outputCopying": []
+        },
+        "80fc22309763e45b": {
+            "parent": {
+                "ref": "SPECIAL: None",
+                "exposedEntity": "",
+                "externalScene": "SPECIAL: None",
+                "entityID": "ffffffffffffffff"
+            },
+            "name": "Prof_Noodle_RedDragon",
+            "template": "[modules:/zentity.class].pc_entitytype",
+            "blueprint": "[modules:/zentity.class].pc_entityblueprint",
+            "properties": {},
+            "postInitProperties": {},
+            "editorOnly": false,
+            "platformSpecificPropertyValues": [],
+            "propertyAliases": [
+                {
+                    "sAliasName": "m_aHolders",
+                    "entityID": "4305c3f6d8e526a8",
+                    "sPropertyName": "m_aHolders"
+                }
+            ],
+            "exposedInterfaces": [
+                [
+                    "ZKeywordEntity",
+                    "4305c3f6d8e526a8"
+                ],
+                [
+                    "ZOutfitProfessionEntity",
+                    "5a8c487b180d3346"
+                ]
+            ],
+            "events": [],
+            "inputCopying": [],
+            "outputCopying": []
+        }
+    },
+    "propertyOverrides": [],
+    "overrideDeletes": [],
+    "pinConnectionOverrides": [],
+    "pinConnectionOverrideDeletes": [],
+    "externalScenes": [],
+    "subType": 0,
+    "quickEntityVersion": 2
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Seafood Massacre",
+	"description": "This sucks",
+	"authors": ["Ruddster"],
+	"contentFolder": "content",
+	"blobsFolder": "blobs",
+	"localisation": {
+		"english": {},
+		"french": {},
+		"italian": {},
+		"german": {},
+		"spanish": {},
+		"russian": {},
+		"chineseSimplified": {},
+		"chineseTraditional": {},
+		"japanese": {}
+	},
+	"packagedefinition": [{
+		"type": "entity",
+		"partition": "wet",
+		"path": "[assembly:/_pro/scenes/missions/wet/scene_noodle.entity].entitytemplate"
+	  }],
+	"runtimePackages": [],
+	"version": "0.2.0",
+	"frameworkVersion": "1.0.0"
+	
+}
