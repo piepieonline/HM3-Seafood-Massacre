@@ -3999,17 +3999,17 @@
 				"entityID": "ffffffffffffffff"
 			},
 			"name": "AOL_DR6184_Officer47CellGuards_BDYGRD03_002",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "007D7BD3E9CEE479",
+						"resource": "00D48CB2A353F2C0",
 						"flag": "5F"
 					}
 				},
-				"m_rActor": {
+				"m_rCharacter": {
 					"type": "SEntityTemplateReference",
 					"value": "abcddf2751cdf649"
 				}
