@@ -3512,18 +3512,12 @@
 					"value": "d40a022a606b4f72"
 				},
 				"m_rPromptTextResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00378267FD919466",
-						"flag": "5F"
-					}
+					"type": "ZString",
+					"value": "Talk to"
 				},
 				"m_rPromptDescriptionTextResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00378267FD919466",
-						"flag": "5F"
-					}
+					"type": "ZString",
+					"value": "Bartender"
 				},
 				"m_sId": {
 					"type": "ZGuid",
@@ -3924,6 +3918,10 @@
 				"onEvent": "Aborted",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd95abdae4603a"
+			}, {
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd003ded13e389"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
@@ -3935,9 +3933,9 @@
 				"externalScene": "SPECIAL: None",
 				"entityID": "ffffffffffffffff"
 			},
-			"name": "Act_MR_Military_Stand_Attention_Salute",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_attention_salute.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_attention_salute.entitytemplate].pc_entityblueprint",
+			"name": "SetPiece_Activator_Actor_TakeItem_Generic",
+			"template": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_actor_takeitem_generic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_actor_takeitem_generic.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -3945,46 +3943,59 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 0
+							"z": -78.70410224042362
 						},
 						"position": {
-							"x": -91.00850677490234,
-							"y": 42.39142990112305,
-							"z": 101
+							"x": 0,
+							"y": -3.999999989900971e-06,
+							"z": 0
 						}
 					}
-				},
-				"m_AlignRotation": {
-					"type": "ZActBehaviorEntity.ERotationAlignment",
-					"value": "RA_EXACT"
 				},
 				"m_bUseConversationHelper": {
 					"type": "bool",
 					"value": true
 				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "d40a022a606b4f72"
+				},
+				"ItemFromInventory": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdaebfdc6fc13e"
+				},
 				"m_MovementType": {
 					"type": "ZActBehaviorEntity.EMovementType",
 					"value": "MT_IGNORE_POSITION"
 				},
-				"m_fActTimeout": {
-					"type": "float32",
-					"value": 3
+				"m_AlignRotation": {
+					"type": "ZActBehaviorEntity.ERotationAlignment",
+					"value": "RA_EXACT"
+				},
+				"m_rOrientToTransform": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "SPECIAL: Use EntityID",
+						"entityID": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+						"exposedEntity": ""
+					}
 				}
 			},
 			"postInitProperties": {
 				"m_pActor": {
 					"type": "SEntityTemplateReference",
-					"value": "abcddf2751cdf649"
+					"value": "d40a022a606b4f72"
+				},
+				"m_rKeywordsToFind": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd86dd69a8cbe0"
 				}
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnReached",
-				"shouldTrigger": "Start",
-				"onEntity": "abcd003ded13e389"
-			}, {
-				"onEvent": "OnActTimeout",
+				"onEvent": "ItemTaken",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd367ba650e6d4"
 			}],
@@ -4015,6 +4026,39 @@
 				}
 			},
 			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd80263b5f0633": {
+			"parent": {
+				"ref": "abcd6456f7fdfc1a",
+				"exposedEntity": "",
+				"externalScene": "SPECIAL: None",
+				"entityID": "ffffffffffffffff"
+			},
+			"name": "ActStateCondition",
+			"template": "007E378EA87BA806",
+			"blueprint": "0018FB9506135A96",
+			"properties": {
+				"m_bIsPlaying": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcd6456f7fdfc1a",
+						"entityID": "ffffffffffffffff",
+						"externalScene": "SPECIAL: None",
+						"exposedEntity": "Act_MR_FR_Stand_Item_Give"
+					}
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [],
