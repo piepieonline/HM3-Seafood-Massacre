@@ -5,5 +5,12 @@
 	"description": "WIP Mod recreating The Seafood Massacre from Hitman Contracts, in H3's Chongqing. Intending to have day and night variations",
 	"authors": ["Kevin Rudd"],
 	"contentFolder": "content",
+	"packagedefinition": [
+		{
+		  "type": "entity",
+		  "partition": "wet",
+		  "path": "[assembly:/_pro/scenes/missions/wet/scene_noodle.entity].entitytemplate"
+		}
+	  ],
 	"frameworkVersion": "1.0.0"
 }
