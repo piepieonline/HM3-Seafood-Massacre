@@ -1,15 +1,10 @@
 {
 	"tempHash": "0055FED55FB34E5C",
 	"tbluHash": "00C5C81891F5566A",
-	"rootEntity": "Scene",
+	"rootEntity": "fffffffffffffffe",
 	"entities": {
 		"fffffffffffffffe": {
-			"parent": {
-				"ref": "SPECIAL: None",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "Scene",
 			"template": "[modules:/zspatialentity.class].pc_entitytype",
 			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
@@ -36,18 +31,10 @@
 				["Rooms", {
 					"entities": []
 				}]
-			],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			]
 		},
 		"d40a022a606b4f72": {
-			"parent": {
-				"ref": "abcd3216ca0eb5b1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd3216ca0eb5b1",
 			"name": "CHAR_Bartender",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -58,7 +45,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 10.923433832036393
+							"z": 10.923433111197847
 						},
 						"position": {
 							"x": -91.00850677490234,
@@ -103,54 +90,30 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdde52f4b1409b": {
-			"parent": {
-				"ref": "fffffffffffffffe",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "fffffffffffffffe",
 			"name": "Restaurant",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd3216ca0eb5b1": {
-			"parent": {
-				"ref": "abcdde52f4b1409b",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdde52f4b1409b",
 			"name": "NPCs",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"214005e4e9b8e2b3": {
-			"parent": {
-				"ref": "d40a022a606b4f72",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "d40a022a606b4f72",
 			"name": "Restaurant Owner at Restaurant Front Desk",
 			"template": "005B2A6454B76874",
 			"blueprint": "00BD25C96EAAC850",
@@ -162,19 +125,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"exposedEntities": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"e4ae21f200d8e8a8": {
-			"parent": {
-				"ref": "214005e4e9b8e2b3",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "214005e4e9b8e2b3",
 			"name": "Act_MR_Stand_ArmsBack",
 			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_armsback.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_armsback.entitytemplate].pc_entityblueprint",
@@ -185,7 +139,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -80.42102967899199
+							"z": -80.42102940135537
 						},
 						"position": {
 							"x": -93.103447,
@@ -210,18 +164,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"a90305d4a866095e": {
-			"parent": {
-				"ref": "214005e4e9b8e2b3",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "214005e4e9b8e2b3",
 			"name": "ActStateCondition",
 			"template": "007E378EA87BA806",
 			"blueprint": "0018FB9506135A96",
@@ -242,48 +188,33 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Set",
 				"onEntity": "7ab523862730fbda"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Clear",
-				"onEntity": "7ab523862730fbda"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"7ab523862730fbda": {
-			"parent": {
-				"ref": "214005e4e9b8e2b3",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "214005e4e9b8e2b3",
 			"name": "AIModifierActor",
 			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
 			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
 			"properties": {
 				"m_pActor": {
 					"type": "SEntityTemplateReference",
-					"value": "7f5683f5066cc763"
+					"value": "d40a022a606b4f72"
 				},
 				"m_bIgnoreSillyHitman": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAnnoyingHitman": {
 					"type": "bool",
 					"value": true
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"5488ab964751693b": {
-			"parent": {
-				"ref": "214005e4e9b8e2b3",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "214005e4e9b8e2b3",
 			"name": "DramaSituation2Proxy",
 			"template": "000C288A323918F9",
 			"blueprint": "00900EB78F2E0F5E",
@@ -300,17 +231,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "e4ae21f200d8e8a8"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"7f5683f5066cc763": {
-			"parent": {
-				"ref": "214005e4e9b8e2b3",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "214005e4e9b8e2b3",
 			"name": "Restaurant Owner",
 			"template": "00808A03B82188F7",
 			"blueprint": "0064725514B34594",
@@ -322,36 +246,20 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf64c6a3963e8": {
-			"parent": {
-				"ref": "abcdde52f4b1409b",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdde52f4b1409b",
 			"name": "SentryZones_FrontEntrance",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd3caa15d6a29f": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "CHAR_SentryTest1",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -362,7 +270,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -170.923433832036393
+							"z": -170.92343442329582
 						},
 						"position": {
 							"x": -90.62219677490234,
@@ -407,18 +315,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd2b378fdc5ce7": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "CHAR_SentryTest2",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -429,7 +329,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -170.923433832036393
+							"z": -170.92343442329582
 						},
 						"position": {
 							"x": -86.62219677490234,
@@ -466,18 +366,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd18f028c9f8fc": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "Entrance",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -513,18 +405,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdebc7dca5539a": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "Warning",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -560,18 +444,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd36314d42bd3b": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "Greeting",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -607,18 +483,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"1679547057907d98": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "IdleGuardFrontGate",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -636,21 +504,13 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"propertyAliases": [{
-				"sAliasName": "m_aActors",
-				"entityID": "da1b9444f9951ff2",
-				"sPropertyName": "m_aActors"
-			}],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+				"exposeProperty": "m_aActors",
+				"onEntity": "da1b9444f9951ff2",
+				"asProperty": "m_aActors"
+			}]
 		},
 		"8f2e7da56b67663c": {
-			"parent": {
-				"ref": "1679547057907d98",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "1679547057907d98",
 			"name": "act_mr_guard_stand_armsside",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_armsside.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_armsside.entitytemplate].pc_entityblueprint",
@@ -661,7 +521,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -170.923433832036393
+							"z": -170.92343442329582
 						},
 						"position": {
 							"x": -90.62219677490234,
@@ -682,18 +542,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"da1b9444f9951ff2": {
-			"parent": {
-				"ref": "1679547057907d98",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "1679547057907d98",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -705,18 +557,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"fcff4012f42d102b": {
-			"parent": {
-				"ref": "1679547057907d98",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "1679547057907d98",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -733,17 +577,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "8f2e7da56b67663c"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"e0f96b929c7f0618": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "IdleGuardFrontGate01",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -761,21 +598,13 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"propertyAliases": [{
-				"sAliasName": "m_aActors",
-				"entityID": "28d5837dfa732283",
-				"sPropertyName": "m_aActors"
-			}],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+				"exposeProperty": "m_aActors",
+				"onEntity": "28d5837dfa732283",
+				"asProperty": "m_aActors"
+			}]
 		},
 		"4fe5f7ced844bfcc": {
-			"parent": {
-				"ref": "e0f96b929c7f0618",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "e0f96b929c7f0618",
 			"name": "act_mr_guard_stand_idle",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entityblueprint",
@@ -786,7 +615,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -170.923433832036393
+							"z": -170.92343442329582
 						},
 						"position": {
 							"x": -87.62219677490234,
@@ -807,18 +636,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"28d5837dfa732283": {
-			"parent": {
-				"ref": "e0f96b929c7f0618",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "e0f96b929c7f0618",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -830,18 +651,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"e31790a7a9cbd006": {
-			"parent": {
-				"ref": "e0f96b929c7f0618",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "e0f96b929c7f0618",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -858,17 +671,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "4fe5f7ced844bfcc"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"f09f347097e9fd79": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "SentryZone01",
 			"template": "[modules:/zsentryzoneentity.class].pc_entitytype",
 			"blueprint": "[modules:/zsentryzoneentity.class].pc_entityblueprint",
@@ -910,44 +716,26 @@
 				"m_aDisguisesAllowed": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd3283846a3f03", {
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-						"exposedEntity": ""
+						"ref": "58d50e428bb02419",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}]
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"695c9eec21f0d23": {
-			"parent": {
-				"ref": "f09f347097e9fd79",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "f09f347097e9fd79",
 			"name": "Prof_Agent47",
 			"template": "[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd34c824b21f97": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "EnableConditions 2",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
@@ -959,18 +747,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf9217ced5864": {
-			"parent": {
-				"ref": "abcd34c824b21f97",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd34c824b21f97",
 			"name": "ValueBool_Basic",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -986,18 +766,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd97141be4a7ef": {
-			"parent": {
-				"ref": "abcdf64c6a3963e8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf64c6a3963e8",
 			"name": "Refrisk",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -1033,90 +805,50 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd3283846a3f03": {
-			"parent": {
-				"ref": "f09f347097e9fd79",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "f09f347097e9fd79",
 			"name": "Prof_Noodle_Meeting",
 			"template": "007E827EA0D8ABB8",
 			"blueprint": "00D8D0CD7A6B623C",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf673ffefa5f1": {
-			"parent": {
-				"ref": "fffffffffffffffe",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "fffffffffffffffe",
 			"name": "Streets",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde0a0a267f4d7": {
-			"parent": {
-				"ref": "abcdde52f4b1409b",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdde52f4b1409b",
 			"name": "Trespass Rules",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd97b18facbcd7": {
-			"parent": {
-				"ref": "f09f347097e9fd79",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "f09f347097e9fd79",
 			"name": "Prof_Police",
 			"template": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdc86d6f2c2e96": {
-			"parent": {
-				"ref": "abcde0a0a267f4d7",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde0a0a267f4d7",
 			"name": "Restaurant Area Hostile",
 			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zdisguisezoneentity.class].entitytype,[modules:/zorderedentity.class].entitytype).pc_entitytype",
 			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zdisguisezoneentity.class].entitytype,[modules:/zorderedentity.class].entitytype).pc_entityblueprint",
@@ -1132,18 +864,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcda68da210bdc5": {
-			"parent": {
-				"ref": "abcdc86d6f2c2e96",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdc86d6f2c2e96",
 			"name": "Restaurant Volumebox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -1179,18 +903,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd3970bda4206e": {
-			"parent": {
-				"ref": "abcdc86d6f2c2e96",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdc86d6f2c2e96",
 			"name": "Restaurant Hostile Rules",
 			"template": "[modules:/ztrespassingruleentity.class].pc_entitytype",
 			"blueprint": "[modules:/ztrespassingruleentity.class].pc_entityblueprint",
@@ -1206,19 +922,15 @@
 				"m_AllowedProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd3283846a3f03", {
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-						"exposedEntity": ""
+						"ref": "58d50e428bb02419",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}]
 				},
 				"m_KeeperProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", {
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-						"exposedEntity": ""
+						"ref": "58d50e428bb02419",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}]
 				},
 				"m_Zones": {
@@ -1228,72 +940,40 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd0415db798b80": {
-			"parent": {
-				"ref": "fffffffffffffffe",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "fffffffffffffffe",
 			"name": "Targets",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd82237dac2971": {
-			"parent": {
-				"ref": "fffffffffffffffe",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "fffffffffffffffe",
 			"name": "Objectives",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd2a42760b27bb": {
-			"parent": {
-				"ref": "abcd82237dac2971",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd82237dac2971",
 			"name": "Amulet",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcda2c87b915010": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "VolumeBox Table",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -1329,18 +1009,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd7c1121fe837e": {
-			"parent": {
-				"ref": "abcd673e1641c0c9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd673e1641c0c9",
 			"name": "Keyword_ITEM_NECKLACE",
 			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fiberwire_jewelnecklace_fake.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fiberwire_jewelnecklace_fake.entitytemplate].pc_entityblueprint",
@@ -1352,18 +1024,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd16911aad7908": {
-			"parent": {
-				"ref": "abcd673e1641c0c9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd673e1641c0c9",
 			"name": "ItemKey_Necklace",
 			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
 			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
@@ -1375,18 +1039,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdd38ec18c41ef": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "ContractsEvent - Amulet",
 			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
@@ -1398,18 +1054,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde2d23dfd6a96": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "EnableConditions01-Necklace",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
@@ -1421,36 +1069,20 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdfc7164d82d5a": {
-			"parent": {
-				"ref": "abcde2d23dfd6a96",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde2d23dfd6a96",
 			"name": "ValueBool_Basic",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf2ad6ea06edf": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "VolumeTriggerKeyword",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggerkeyword.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggerkeyword.entitytemplate].pc_entityblueprint",
@@ -1480,17 +1112,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Send",
 				"onEntity": "abcdb3cc0a0ba9f1"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcdb3cc0a0ba9f1": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "play_sfx_pos_gluttony_pig_statue_soup_splash",
 			"template": "[modules:/zaudioevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zaudioevententity.class].pc_entityblueprint",
@@ -1509,18 +1134,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdd697b047d2b3": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "3DAE_Pig_Statue_Soup",
 			"template": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entityblueprint",
@@ -1551,18 +1168,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd8f9835f8767b": {
-			"parent": {
-				"ref": "abcde2d23dfd6a96",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde2d23dfd6a96",
 			"name": "ValueBool_Set02",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
@@ -1574,18 +1183,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdc9ff920e87df": {
-			"parent": {
-				"ref": "abcde2d23dfd6a96",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde2d23dfd6a96",
 			"name": "StepCounter",
 			"template": "[modules:/zstepcounterentity.class].pc_entitytype",
 			"blueprint": "[modules:/zstepcounterentity.class].pc_entityblueprint",
@@ -1602,35 +1203,20 @@
 				"onEvent": "OnStep",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd8f9835f8767b"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd673e1641c0c9": {
-			"parent": {
-				"ref": "abcd2a42760b27bb",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2a42760b27bb",
 			"name": "Place Amulet_Greedy",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde23fa5e5c5bd": {
-			"parent": {
-				"ref": "abcd673e1641c0c9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd673e1641c0c9",
 			"name": "Office_Documents_C_00",
 			"template": "[assembly:/_pro/environment/templates/props/office_props/office_props_a.template?/office_documents_c_00.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/environment/templates/props/office_props/office_props_a.template?/office_documents_c_00.entitytemplate].pc_entityblueprint",
@@ -1641,7 +1227,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 91.40428771961082
+							"z": 91.4042876883247
 						},
 						"position": {
 							"x": -89.1402212704104,
@@ -1661,36 +1247,20 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9b7c88598e90": {
-			"parent": {
-				"ref": "abcd673e1641c0c9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd673e1641c0c9",
 			"name": "Documents placed",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde0176854c5fd": {
-			"parent": {
-				"ref": "abcd673e1641c0c9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd673e1641c0c9",
 			"name": "ValueBool_Set",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
@@ -1707,17 +1277,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Send",
 				"onEntity": "abcdb3cc0a0ba9f1"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd0cb4801cecce": {
-			"parent": {
-				"ref": "abcd673e1641c0c9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd673e1641c0c9",
 			"name": "Setpiece_General_Place_QuestItem",
 			"template": "[assembly:/_pro/design/setpieces/setpieces_general.template?/setpiece_general_place_questitem.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_general.template?/setpiece_general_place_questitem.entitytemplate].pc_entityblueprint",
@@ -1728,7 +1291,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 180.31806975728227
+							"z": -179.68193024127547
 						},
 						"position": {
 							"x": -89.1402212704104,
@@ -1752,10 +1315,8 @@
 				"m_aUIHighlightGeom": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "ea2ff0891b62bb18",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-						"exposedEntity": ""
+						"ref": "ea2ff0891b62bb18",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}]
 				},
 				"m_eidParent": {
@@ -1778,17 +1339,10 @@
 				"onEvent": "OnDocumentsPlaced",
 				"shouldTrigger": "Trigger",
 				"onEntity": "abcdd38ec18c41ef"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcdaebfdc6fc13e": {
-			"parent": {
-				"ref": "d40a022a606b4f72",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "d40a022a606b4f72",
 			"name": "ItemKey_BATHROOMKey",
 			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
 			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
@@ -1800,18 +1354,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd86dd69a8cbe0": {
-			"parent": {
-				"ref": "abcdaebfdc6fc13e",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdaebfdc6fc13e",
 			"name": "Keyword_KEY_BATHROOMKey",
 			"template": "[assembly:/_pro/design/gamecore/keywords/keywordkeys.template?/keyword_key_italy_toilet_door.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordkeys.template?/keyword_key_italy_toilet_door.entitytemplate].pc_entityblueprint",
@@ -1820,26 +1366,17 @@
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "51da1b7462a6b2c5",
+						"ref": "51da1b7462a6b2c5",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
 						"exposedEntity": "KeyWord_Key"
 					}]
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdd0110d31999a": {
-			"parent": {
-				"ref": "abcd0415db798b80",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd0415db798b80",
 			"name": "CHAR_RedDragon",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -1850,7 +1387,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 10.923433832036393
+							"z": 10.923433111197847
 						},
 						"position": {
 							"x": -92.00850677490234,
@@ -1861,7 +1398,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "000205ac-2d27-4ab1-8f9d-a7d6610d475c"
+					"value": "205ac-2d27-4ab1-8f9d-a7d6610d475c"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -1895,18 +1432,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9a040fd7639e": {
-			"parent": {
-				"ref": "abcd0415db798b80",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd0415db798b80",
 			"name": "CHAR_Chief",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -1917,7 +1446,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 10.923433832036393
+							"z": 10.923433111197847
 						},
 						"position": {
 							"x": -90.071198,
@@ -1958,18 +1487,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd3d755cd84fe8": {
-			"parent": {
-				"ref": "abcd0415db798b80",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd0415db798b80",
 			"name": "CHAR_BlueLotus",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -1980,7 +1501,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 10.923433832036393
+							"z": 10.923433111197847
 						},
 						"position": {
 							"x": -90.00850677490234,
@@ -1991,7 +1512,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "0a4e517a-e1e1-41d7-af91-751bc663df35"
+					"value": "a4e517a-e1e1-41d7-af91-751bc663df35"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -2021,36 +1542,20 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd692adf85a546": {
-			"parent": {
-				"ref": "abcdf673ffefa5f1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf673ffefa5f1",
 			"name": "NPCs",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd51a8f267dfa9": {
-			"parent": {
-				"ref": "abcd692adf85a546",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd692adf85a546",
 			"name": "CHAR_Cop1",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -2061,7 +1566,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -90.923433832036393
+							"z": -90.92343385152114
 						},
 						"position": {
 							"x": -100.32219677490234,
@@ -2106,18 +1611,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd55fa10385008": {
-			"parent": {
-				"ref": "abcd51a8f267dfa9",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd51a8f267dfa9",
 			"name": "DR_RestaurantWalkway",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -2133,18 +1630,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd172c905f9ec4": {
-			"parent": {
-				"ref": "abcd55fa10385008",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd55fa10385008",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -2156,18 +1645,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd6199e9bbfe41": {
-			"parent": {
-				"ref": "abcd55fa10385008",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd55fa10385008",
 			"name": "Act_MR_Guard_Stand_Rifle2",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
@@ -2178,7 +1659,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.00298110015896
+							"z": -45.002979908338
 						},
 						"position": {
 							"x": -80.08000244140625,
@@ -2208,17 +1689,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd301990ef8959"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd301990ef8959": {
-			"parent": {
-				"ref": "abcd55fa10385008",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd55fa10385008",
 			"name": "Act_MR_Stand_Rifle1",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
@@ -2229,7 +1703,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -90.923433832036393
+							"z": -90.92343385152114
 						},
 						"position": {
 							"x": -100.32219677490234,
@@ -2259,17 +1733,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd6199e9bbfe41"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd514b49987991": {
-			"parent": {
-				"ref": "abcd55fa10385008",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd55fa10385008",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -2286,17 +1753,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd301990ef8959"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcdba7e01047fcf": {
-			"parent": {
-				"ref": "abcd9a040fd7639e",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd9a040fd7639e",
 			"name": "DR_ToRestaurant",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -2312,18 +1772,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd70501cb75193": {
-			"parent": {
-				"ref": "abcdba7e01047fcf",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdba7e01047fcf",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -2335,18 +1787,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd3babaa763e83": {
-			"parent": {
-				"ref": "abcdba7e01047fcf",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdba7e01047fcf",
 			"name": "Act_MR_Guard_Stand_Rifle2",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
@@ -2357,7 +1801,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.00298110015896
+							"z": -45.002979908338
 						},
 						"position": {
 							"x": -80.08000244140625,
@@ -2387,17 +1831,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdda8c7c5b2a4a"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcdda8c7c5b2a4a": {
-			"parent": {
-				"ref": "abcdba7e01047fcf",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdba7e01047fcf",
 			"name": "Act_Sit_Meeting",
 			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entityblueprint",
@@ -2408,7 +1845,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -170.923433832036393
+							"z": -170.92343442329582
 						},
 						"position": {
 							"x": -89.071198,
@@ -2446,17 +1883,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd3babaa763e83"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd446c08699972": {
-			"parent": {
-				"ref": "abcdba7e01047fcf",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdba7e01047fcf",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -2473,17 +1903,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdda8c7c5b2a4a"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd460483433912": {
-			"parent": {
-				"ref": "abcdda8c7c5b2a4a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdda8c7c5b2a4a",
 			"name": "Cafe_Chair_Rat_China",
 			"template": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entityblueprint",
@@ -2498,7 +1921,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -0.6519152429046771
+							"z": -0.6519152289641441
 						},
 						"position": {
 							"x": 0,
@@ -2514,18 +1937,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd7e536bbd183d": {
-			"parent": {
-				"ref": "abcd3d755cd84fe8",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd3d755cd84fe8",
 			"name": "DR_ToRestaurant",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -2541,18 +1956,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd52341c0dd6b4": {
-			"parent": {
-				"ref": "abcd7e536bbd183d",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd7e536bbd183d",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -2564,18 +1971,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd432adfe4aef7": {
-			"parent": {
-				"ref": "abcd7e536bbd183d",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd7e536bbd183d",
 			"name": "Act_MR_Guard_Stand_Rifle2",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
@@ -2586,7 +1985,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.00298110015896
+							"z": -45.002979908338
 						},
 						"position": {
 							"x": -80.08000244140625,
@@ -2616,17 +2015,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd81c826dc03f3"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd81c826dc03f3": {
-			"parent": {
-				"ref": "abcd7e536bbd183d",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd7e536bbd183d",
 			"name": "Act_Sit_Meeting",
 			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entityblueprint",
@@ -2637,7 +2029,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -125.923433832036393
+							"z": -125.9234328541352
 						},
 						"position": {
 							"x": -90.01271198,
@@ -2675,17 +2067,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd432adfe4aef7"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd47cd008ef008": {
-			"parent": {
-				"ref": "abcd7e536bbd183d",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd7e536bbd183d",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -2702,17 +2087,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd81c826dc03f3"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcdacd6f2f635ff": {
-			"parent": {
-				"ref": "abcd81c826dc03f3",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd81c826dc03f3",
 			"name": "Cafe_Chair_Rat_China",
 			"template": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entityblueprint",
@@ -2727,7 +2105,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -0.6519152429046771
+							"z": -0.6519152289641441
 						},
 						"position": {
 							"x": 0,
@@ -2743,18 +2121,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcda024411ee09a": {
-			"parent": {
-				"ref": "abcdd0110d31999a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdd0110d31999a",
 			"name": "DR_ToRestaurant",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -2770,18 +2140,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdad317c818a0c": {
-			"parent": {
-				"ref": "abcda024411ee09a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcda024411ee09a",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -2793,18 +2155,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd0c62c4000a7b": {
-			"parent": {
-				"ref": "abcda024411ee09a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcda024411ee09a",
 			"name": "Act_MR_Guard_Stand_Rifle2",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
@@ -2815,7 +2169,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.00298110015896
+							"z": -45.002979908338
 						},
 						"position": {
 							"x": -80.08000244140625,
@@ -2845,17 +2199,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd2d00fce5938a"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd2d00fce5938a": {
-			"parent": {
-				"ref": "abcda024411ee09a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcda024411ee09a",
 			"name": "Act_Sit_Meeting",
 			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entityblueprint",
@@ -2866,7 +2213,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 125.923433832036393
+							"z": 125.9234328541352
 						},
 						"position": {
 							"x": -87.79486198,
@@ -2904,17 +2251,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd0c62c4000a7b"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd110f286a8bbf": {
-			"parent": {
-				"ref": "abcda024411ee09a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcda024411ee09a",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -2931,17 +2271,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd2d00fce5938a"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd96b8b43349bd": {
-			"parent": {
-				"ref": "abcd2d00fce5938a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd2d00fce5938a",
 			"name": "Cafe_Chair_Rat_China",
 			"template": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entityblueprint",
@@ -2956,7 +2289,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -0.6519152429046771
+							"z": -0.6519152289641441
 						},
 						"position": {
 							"x": 0,
@@ -2972,18 +2305,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdba75fae49278": {
-			"parent": {
-				"ref": "abcd692adf85a546",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd692adf85a546",
 			"name": "CHAR_Sniper1",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -2994,7 +2319,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.923433832036393
+							"z": -45.923432414556004
 						},
 						"position": {
 							"x": -116.0036,
@@ -3039,18 +2364,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd23ee0a571ff6": {
-			"parent": {
-				"ref": "abcdba75fae49278",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdba75fae49278",
 			"name": "DR_RestaurantWalkway",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -3066,18 +2383,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd771593a403ff": {
-			"parent": {
-				"ref": "abcd23ee0a571ff6",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd23ee0a571ff6",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -3089,18 +2398,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd29a51d2fed06": {
-			"parent": {
-				"ref": "abcd23ee0a571ff6",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd23ee0a571ff6",
 			"name": "Act_MR_Guard_Stand_Rifle2",
 			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
@@ -3111,7 +2412,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.923433832036393
+							"z": -45.923432414556004
 						},
 						"position": {
 							"x": -116.0036,
@@ -3141,17 +2442,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd512e397b6525"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd512e397b6525": {
-			"parent": {
-				"ref": "abcd23ee0a571ff6",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd23ee0a571ff6",
 			"name": "Act_MR_Binocs",
 			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_binoculars.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_binoculars.entitytemplate].pc_entityblueprint",
@@ -3162,7 +2456,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.923433832036393
+							"z": -45.923432414556004
 						},
 						"position": {
 							"x": -116.0036,
@@ -3192,17 +2486,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd29a51d2fed06"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd7a37ed3bfdd6": {
-			"parent": {
-				"ref": "abcd23ee0a571ff6",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd23ee0a571ff6",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -3219,53 +2506,30 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd512e397b6525"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd63ea14cfc68a": {
-			"parent": {
-				"ref": "abcd5b457226e00a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "ValueBool_Poll",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd5f70d2b4a68d": {
-			"parent": {
-				"ref": "abcd5b457226e00a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "Exposed",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd556156557816": {
-			"parent": {
-				"ref": "abcd5b457226e00a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "HKC_Meeting",
 			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
@@ -3281,18 +2545,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd555a0f839efe": {
-			"parent": {
-				"ref": "abcd5d7d551e9a99",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -3304,18 +2560,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd91b784ac2865": {
-			"parent": {
-				"ref": "abcd5d7d551e9a99",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "HEADOFSTAFF",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -3327,18 +2575,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd643331d87ff0": {
-			"parent": {
-				"ref": "abcd5d7d551e9a99",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": null,
 			"name": "AOL_DR1116_GreatCleaningHeadofStaff",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
@@ -3366,17 +2606,10 @@
 				"onEvent": "Completed",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd555a0f839efe"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd4920c9e3168a": {
-			"parent": {
-				"ref": "fffffffffffffffe",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "fffffffffffffffe",
 			"name": "Trigger stuff upon game start",
 			"template": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
@@ -3388,18 +2621,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf9ffd05f0aa1": {
-			"parent": {
-				"ref": "d40a022a606b4f72",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "d40a022a606b4f72",
 			"name": "HitmanInteracting05",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
@@ -3411,36 +2636,25 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde06a19f9c2f1": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "ValueBool_Proxy",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entityblueprint",
 			"properties": {},
-			"postInitProperties": {},
+			"postInitProperties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd885da8ac7373"
+				}
+			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdae42809a1449": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "InvertedCondition",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
@@ -3452,18 +2666,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd24880992e43f": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "VB_ShowInteraction",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -3475,18 +2681,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdc454d99c8391": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "SetPiece_Activator_Dialogue",
 			"template": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_dialogue.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_dialogue.entitytemplate].pc_entityblueprint",
@@ -3542,7 +2740,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd9308b3206161"]
+					"value": ["abcd9308b3206161", "abcd24880992e43f", "abcdae42809a1449"]
 				}
 			},
 			"editorOnly": false,
@@ -3555,35 +2753,20 @@
 				"onEvent": "Started",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcd24880992e43f"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcdcab922e78d41": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "VBB_Interacting",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9308b3206161": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "VBO_MilitaryDisguise",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
@@ -3599,54 +2782,30 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd178b147ad79c": {
-			"parent": {
-				"ref": "abcd9308b3206161",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd9308b3206161",
 			"name": "Prof_Noodle_Meeting",
 			"template": "007E827EA0D8ABB8",
 			"blueprint": "00D8D0CD7A6B623C",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd035e28352a06": {
-			"parent": {
-				"ref": "abcd9308b3206161",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd9308b3206161",
 			"name": "Prof_Marrakesh_Guard_Elite",
 			"template": "[assembly:/_pro/design/actor/profession.template?/prof_marrakesh_guard_elite.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_marrakesh_guard_elite.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd089b840b1f89": {
-			"parent": {
-				"ref": "abcd9308b3206161",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd9308b3206161",
 			"name": "HeroKeywordCondition",
 			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
@@ -3658,18 +2817,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd952ffacb47ef": {
-			"parent": {
-				"ref": "abcd9308b3206161",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd9308b3206161",
 			"name": "HeroKeywordCondition01",
 			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
@@ -3681,18 +2832,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde166ce07d495": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "HitmanAsOfficerInteracting03",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
@@ -3704,36 +2847,20 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcddc036a2478b0": {
-			"parent": {
-				"ref": "abcde166ce07d495",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde166ce07d495",
 			"name": "Prof_Noodle_Meeting",
 			"template": "007E827EA0D8ABB8",
 			"blueprint": "00D8D0CD7A6B623C",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd96152f20a094": {
-			"parent": {
-				"ref": "abcde166ce07d495",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde166ce07d495",
 			"name": "HeroKeywordCondition_PlayerHaveOfficer",
 			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
@@ -3749,18 +2876,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde54070de7e46": {
-			"parent": {
-				"ref": "abcdf9ffd05f0aa1",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcdf9ffd05f0aa1",
 			"name": "DR6184_Dismissing03",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
@@ -3790,17 +2909,18 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"events": [{
+				"onEvent": "OnDone",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd288d4f0f43a0"
+			}, {
+				"onEvent": "OnTerminate",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd288d4f0f43a0"
+			}]
 		},
 		"abcddf2751cdf649": {
-			"parent": {
-				"ref": "abcde54070de7e46",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde54070de7e46",
 			"name": "Role",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
@@ -3812,18 +2932,10 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd367ba650e6d4": {
-			"parent": {
-				"ref": "abcde54070de7e46",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde54070de7e46",
 			"name": "Screenplay",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
@@ -3848,17 +2960,10 @@
 				"onEvent": "OnDone",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcd95abdae4603a"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd95abdae4603a": {
-			"parent": {
-				"ref": "abcde54070de7e46",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde54070de7e46",
 			"name": "VBS_ShowInteraction",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
@@ -3870,18 +2975,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcddbbf5c2034e8": {
-			"parent": {
-				"ref": "abcde54070de7e46",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde54070de7e46",
 			"name": "HeroOneLiner",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entityblueprint",
@@ -3889,10 +2986,8 @@
 				"m_rCharacter": {
 					"type": "SEntityTemplateReference",
 					"value": {
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-						"exposedEntity": ""
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
 				},
 				"m_pAudioEvent": {
@@ -3922,17 +3017,10 @@
 				"onEvent": "Completed",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd003ded13e389"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd6456f7fdfc1a": {
-			"parent": {
-				"ref": "abcde54070de7e46",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde54070de7e46",
 			"name": "SetPiece_Activator_Actor_TakeItem_Generic",
 			"template": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_actor_takeitem_generic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_actor_takeitem_generic.entitytemplate].pc_entityblueprint",
@@ -3941,9 +3029,9 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": -78.70410224042362
+							"x": 90.70410223092419,
+							"y": 90,
+							"z": 0
 						},
 						"position": {
 							"x": 0,
@@ -3955,6 +3043,10 @@
 				"m_bUseConversationHelper": {
 					"type": "bool",
 					"value": true
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": -1
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -3970,15 +3062,13 @@
 				},
 				"m_AlignRotation": {
 					"type": "ZActBehaviorEntity.ERotationAlignment",
-					"value": "RA_EXACT"
+					"value": "RA_LOOSE"
 				},
 				"m_rOrientToTransform": {
 					"type": "SEntityTemplateReference",
 					"value": {
-						"ref": "SPECIAL: Use EntityID",
-						"entityID": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-						"exposedEntity": ""
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
 				}
 			},
@@ -3998,25 +3088,18 @@
 				"onEvent": "ItemTaken",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd367ba650e6d4"
-			}],
-			"inputCopying": [],
-			"outputCopying": []
+			}]
 		},
 		"abcd003ded13e389": {
-			"parent": {
-				"ref": "abcde54070de7e46",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcde54070de7e46",
 			"name": "AOL_DR6184_Officer47CellGuards_BDYGRD03_002",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00D48CB2A353F2C0",
+						"resource": "00F6956082B0535D",
 						"flag": "5F"
 					}
 				},
@@ -4027,18 +3110,10 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd80263b5f0633": {
-			"parent": {
-				"ref": "abcd6456f7fdfc1a",
-				"exposedEntity": "",
-				"externalScene": "SPECIAL: None",
-				"entityID": "ffffffffffffffff"
-			},
+			"parent": "abcd6456f7fdfc1a",
 			"name": "ActStateCondition",
 			"template": "007E378EA87BA806",
 			"blueprint": "0018FB9506135A96",
@@ -4053,2608 +3128,880 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "abcd6456f7fdfc1a",
-						"entityID": "ffffffffffffffff",
-						"externalScene": "SPECIAL: None",
+						"externalScene": null,
 						"exposedEntity": "Act_MR_FR_Stand_Item_Give"
 					}
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb8f61944aa1e": {
+			"parent": "abcdf9ffd05f0aa1",
+			"name": "Dismissed03",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd885da8ac7373"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd885da8ac7373": {
+			"parent": "abcdb8f61944aa1e",
+			"name": "VB_Dismissed",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd288d4f0f43a0": {
+			"parent": "abcde54070de7e46",
+			"name": "VBS_Dissmissed03",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValueEntities": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd885da8ac7373"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
-		"propertyOwner": {
-			"entityID": "51da1b7462a6b2c5",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "m_bIsLocked",
-			"type": "bool",
-			"value": true
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3919e06430973e1c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "94e2a9679f9cb653",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "dd3cee4d2fd169f4",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ed6472dbc9f5ddc7",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "9bf7b4f2d1bd230e",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ceae012ebc9ef8a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "da8477227578d8a4",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b40f5cd4a8580c1f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "27a7c85ec7990f6c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c841846acd657c64",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "2906809196e5b629",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8bb550b693ca140c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8ddd2306af6fa3ab",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b64cbb984f191242",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f9bbf13b08dc2531",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a38debca5d4f0f93",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5543149e2e2fa50f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "59883bb1f9d4012e",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "4308c13a87a9ee7b",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f77d66ff8d8ee91f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "57932d9c77639e8b",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ecdf11c31adfb1bb",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "7158ebb17a86eb3b",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "2beb95ba8106eb2d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "fc35444ca86e02d7",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "EnableInteractionLeft",
-			"type": "bool",
-			"value": true
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b869b9bf6991bfda",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "580a5758d37d9651",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3c8faf4bb74e6aa5",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "49dba483d2a212a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a56968f6fbc7354f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c4e0f2befc18e621",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ed9606dd327c9ead",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "fec08bd5461068b4",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "20fa5f56b8be100e",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "m_nOutfitVariation",
-			"type": "int32",
-			"value": 8
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b17f9c1e6aad9b49",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "137c1b50874babc3",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "51efd631f2b868d1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "4b8dbb8f851cddc2",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "e60921b0b10a39cc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a8d576c02aa43f84",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "20f310debce193a3",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8d1eabe2464b0da",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "96f8d16ec0d1c996",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "e1ca7ab27b4cd234",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b748b6053f207f94",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "7b115e1fa966d9fb",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "beba144d04a92536",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5cb7d40231b5bc2c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "2ce020c4e29c0a69",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "623ded7cee52e500",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "2026ae4ccee428be",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "6f7d0ec82dc134b5",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "9c836b13549d86ba",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3d68151c73e9dfe7",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a1d383c441542745",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "e55eda70c1de5568",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "fcb4dafc41dce081",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "400b383bc79534df",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f7bc37ae0a119ce2",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "18ad85570407cd3c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "788745546dbf3aa6",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "32eb51627dba4503",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "84e57fbfafd89898",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "11b420629d3ee72e",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "m_InitialOutfitId",
-			"type": "ZGuid",
-			"value": "ce31f5de-18ae-42a3-8b6a-c94a0aa3e4f9"
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b0b5c2bec7ec2013",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d1bf629599fa902a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3384cf9c0732121a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "9a9fd86bbbf68e4d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "84d4798704f34a8c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "706a5dae7bdba5bd",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f9f41cf4375722ea",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "22318cee3cccc248",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "44fa5c17c8533c9f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ccd2698d410bfdb7",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": 2090999008,
-			"type": "SColorRGB",
-			"value": "#de8d31"
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b193a5ad95ae2b7e",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "17e8b1d56de05c8a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "40973bb759302074",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8ad8aa286203b299",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "bf3719c3c52627af",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f2fc38a2ede25520",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "9fe6d2777a44cfe7",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d404e64a0f23f106",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3196bd7094787ee5",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "307d2b73dfbaa71c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "e45d6f32394d6f85",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b946773db3b87932",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3f609dab7c7a297d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "94c9f093f5205fc1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "241b65a91ab27f1a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f25f4f00f404a0c1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8b4ebe3c127d22ff",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c07f22951ba97434",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "bab9295f1d74428c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5561203014f0fd16",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d92baff87eb27714",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "4ef6d4eec6df3240",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "25c353950697f6b1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66edb0272d6f89f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "22c51624dd0b7a82",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "On",
-			"type": "bool",
-			"value": true
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3486d04b1117a17c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "7c760972a1959a9f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8684f2c978c4587a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "bcc912e536504b36",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a55190211b2faf5f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "83f3e32ab1523637",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "7f4bf9c26f794e69",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "m_bValue",
-			"type": "bool",
-			"value": true
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3e52f563c60a5845",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
+		"entities": [{
+			"ref": "51da1b7462a6b2c5",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bIsLocked": {
+				"type": "bool",
+				"value": true
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "b4aa2ccb30f41c10",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
+		"entities": [{
+			"ref": "3919e06430973e1c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "94e2a9679f9cb653",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "dd3cee4d2fd169f4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c841846acd657c64",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2906809196e5b629",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f9bbf13b08dc2531",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "59883bb1f9d4012e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "580a5758d37d9651",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3c8faf4bb74e6aa5",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a56968f6fbc7354f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "137c1b50874babc3",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e60921b0b10a39cc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "20f310debce193a3",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5cb7d40231b5bc2c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2ce020c4e29c0a69",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "623ded7cee52e500",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3d68151c73e9dfe7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e55eda70c1de5568",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fcb4dafc41dce081",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "400b383bc79534df",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "18ad85570407cd3c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "84e57fbfafd89898",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d1bf629599fa902a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "84d4798704f34a8c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f9f41cf4375722ea",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "17e8b1d56de05c8a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "40973bb759302074",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "307d2b73dfbaa71c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e45d6f32394d6f85",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3f609dab7c7a297d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "94c9f093f5205fc1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c07f22951ba97434",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5561203014f0fd16",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4ef6d4eec6df3240",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "25c353950697f6b1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "66edb0272d6f89f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7c760972a1959a9f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "83f3e32ab1523637",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b4aa2ccb30f41c10",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fd20778e7edd49f6",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c7237ad5aab928a3",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "61f77709b8e0ff05",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3affb0d517c04854",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "474006ddfb745cbb",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a2d8dfc60afb6b95",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ddb59976db7c6fcc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cd43f94cceede5bc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "72111be659d919c3",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ee6ee24394fb7951",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e103fc572ecc0284",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9bdb0cbc4f9708bc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "221d32877a7b5462",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5cf8446b3e9cc159",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cca00b4add708a2f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7958fc1057798c27",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "aeb9abf3263ce6dc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "898ff12edf208e5b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4e0e4edb6b30d3ad",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c8b053098f59b23d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8e8cba648ccc71a1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b0f6d59b640dd469",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7b454c1f00ac616a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ff0e90fc5f140ae9",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6b30d748f50ec103",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5ef37a0d611e7daa",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3bc78219db84d7a9",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ca2683da8ffa62b7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bfb03c2f7fe8df54",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e9f718c98003f1db",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f877980ec2ad930c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"Music_AmbientBiome": {
+				"type": "int32",
+				"value": 1
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "e0ebe73d6c3bfa9f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
+		"entities": [{
+			"ref": "ed6472dbc9f5ddc7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b40f5cd4a8580c1f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "27a7c85ec7990f6c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b64cbb984f191242",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a38debca5d4f0f93",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5543149e2e2fa50f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4308c13a87a9ee7b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f77d66ff8d8ee91f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ecdf11c31adfb1bb",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7158ebb17a86eb3b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "49dba483d2a212a0",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c4e0f2befc18e621",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b17f9c1e6aad9b49",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "51efd631f2b868d1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "96f8d16ec0d1c996",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b748b6053f207f94",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7b115e1fa966d9fb",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "beba144d04a92536",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2026ae4ccee428be",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9c836b13549d86ba",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "788745546dbf3aa6",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b0b5c2bec7ec2013",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "706a5dae7bdba5bd",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "22318cee3cccc248",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "44fa5c17c8533c9f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b193a5ad95ae2b7e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bf3719c3c52627af",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f2fc38a2ede25520",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d404e64a0f23f106",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3196bd7094787ee5",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b946773db3b87932",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "241b65a91ab27f1a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f25f4f00f404a0c1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d92baff87eb27714",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8684f2c978c4587a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bcc912e536504b36",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a55190211b2faf5f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e0ebe73d6c3bfa9f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7b42c8218ed619bb",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f5befb1af76d4560",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1ff2c8228448c13b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d73dfd7e2d8226ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8acc6d43c6200070",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8dd1c2f71948d734",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b4ed2b8cac12a819",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "832d6e20c2d7f9d9",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5acb20d0c0cff32f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ec285304e668d097",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "12173b3c2ae2eb9",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d1487d0da1766064",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fc7982dae8a9e3f2",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d94fab54accce930",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c1d3896c1d40e158",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8b553182323f122d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d43aa8430c8daf1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6eac100af4dfdbe6",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c8009a76de3fc00a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b850a2a6bc59e44",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "108e0af83d564e13",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3e9d82dda8db3eb8",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "dd76c03f91ee19b8",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "50c779abf7ff5d98",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c05f4e2cd215aaf",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "530042c1b07c8383",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fdd29b3420e7e02e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4af3d64a08eb6086",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ac50761302116ae4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fb5401f50b1177b4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"Music_AmbientBiome": {
+				"type": "int32",
+				"value": 2
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "7b42c8218ed619bb",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
+		"entities": [{
+			"ref": "9bf7b4f2d1bd230e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ceae012ebc9ef8a0",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "da8477227578d8a4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8bb550b693ca140c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8ddd2306af6fa3ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "57932d9c77639e8b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2beb95ba8106eb2d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b869b9bf6991bfda",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ed9606dd327c9ead",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fec08bd5461068b4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4b8dbb8f851cddc2",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a8d576c02aa43f84",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8d1eabe2464b0da",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e1ca7ab27b4cd234",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6f7d0ec82dc134b5",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a1d383c441542745",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f7bc37ae0a119ce2",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "32eb51627dba4503",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3384cf9c0732121a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9a9fd86bbbf68e4d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8ad8aa286203b299",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9fe6d2777a44cfe7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8b4ebe3c127d22ff",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bab9295f1d74428c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3486d04b1117a17c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3e52f563c60a5845",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e330ebcb92b7800d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "87cae41971e42011",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2690e6bc46c36efc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c4940eb8645451bc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1b1c3be1454bd2d1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5017f52f5de04fd",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cf4dc4382f8f6973",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a9100f6a7e15dc88",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2207aa7062b2916d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "abefa4398c60a971",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "23215403eb69c0ea",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3eb855b42fb61e66",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9e47c38a2eea3c7d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d7fa84c1ac9d134d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d9c8cdf300940570",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ef703a7074c5a065",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "af5e68db20237195",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"Music_AmbientBiome": {
+				"type": "int32",
+				"value": 3
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "fd20778e7edd49f6",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
+		"entities": [{
+			"ref": "fc35444ca86e02d7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"EnableInteractionLeft": {
+				"type": "bool",
+				"value": true
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "e330ebcb92b7800d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
+		"entities": [{
+			"ref": "20fa5f56b8be100e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_nOutfitVariation": {
+				"type": "int32",
+				"value": 8
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "c7237ad5aab928a3",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
+		"entities": [{
+			"ref": "11b420629d3ee72e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_InitialOutfitId": {
+				"type": "ZGuid",
+				"value": "ce31f5de-18ae-42a3-8b6a-c94a0aa3e4f9"
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "87cae41971e42011",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
+		"entities": [{
+			"ref": "ccd2698d410bfdb7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"2090999008": {
+				"type": "SColorRGB",
+				"value": "#de8d31"
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "f5befb1af76d4560",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
+		"entities": [{
+			"ref": "22c51624dd0b7a82",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"On": {
+				"type": "bool",
+				"value": true
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "61f77709b8e0ff05",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
+		"entities": [{
+			"ref": "7f4bf9c26f794e69",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bValue": {
+				"type": "bool",
+				"value": true
+			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "d5caf8708a625d4b",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "m_mTransform",
-			"type": "SMatrix43",
-			"value": {
-				"rotation": {
-					"x": 0,
-					"y": 0,
-					"z": 113.31505075852331
-				},
-				"position": {
-					"x": -84.99006652832031,
-					"y": 98.42498016357422,
-					"z": 97.00965118408203
+		"entities": [{
+			"ref": "d5caf8708a625d4b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_mTransform": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 113.31505075852331
+					},
+					"position": {
+						"x": -84.99006652832031,
+						"y": 98.42498016357422,
+						"z": 97.00965118408203
+					}
 				}
 			}
 		}
 	}, {
-		"propertyOwner": {
-			"entityID": "3affb0d517c04854",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "1ff2c8228448c13b",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66c22b8d852a49a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Composition_PlayEvent",
-			"type": "ZRuntimeResourceID",
-			"value": "009805B6A91D206E"
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66c22b8d852a49a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "IntroCue_Part1_CustomEventStart",
-			"type": "ZRuntimeResourceID",
-			"value": "SPECIAL: None"
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66c22b8d852a49a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "IntroCue_Part2_CustomEventStart",
-			"type": "ZRuntimeResourceID",
-			"value": "SPECIAL: None"
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66c22b8d852a49a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "m_sDefaultState",
-			"type": "ZString",
-			"value": "AmbientBiome_02"
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66c22b8d852a49a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Start_As_AmbBio_1",
-			"type": "bool",
-			"value": false
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "66c22b8d852a49a0",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Start_As_AmbBio_2",
-			"type": "bool",
-			"value": true
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "474006ddfb745cbb",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a2d8dfc60afb6b95",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ddb59976db7c6fcc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "cd43f94cceede5bc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d73dfd7e2d8226ab",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "72111be659d919c3",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8acc6d43c6200070",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8dd1c2f71948d734",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ee6ee24394fb7951",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b4ed2b8cac12a819",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "e103fc572ecc0284",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "9bdb0cbc4f9708bc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "2690e6bc46c36efc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "221d32877a7b5462",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c4940eb8645451bc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "1b1c3be1454bd2d1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "832d6e20c2d7f9d9",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5cf8446b3e9cc159",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "cca00b4add708a2f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5acb20d0c0cff32f",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5017f52f5de04fd",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ec285304e668d097",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "cf4dc4382f8f6973",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "a9100f6a7e15dc88",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "2207aa7062b2916d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "7958fc1057798c27",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "aeb9abf3263ce6dc",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "12173b3c2ae2eb9",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "898ff12edf208e5b",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d1487d0da1766064",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "fc7982dae8a9e3f2",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d94fab54accce930",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "abefa4398c60a971",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "23215403eb69c0ea",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3eb855b42fb61e66",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c1d3896c1d40e158",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "4e0e4edb6b30d3ad",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c8b053098f59b23d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8e8cba648ccc71a1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b0f6d59b640dd469",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "9e47c38a2eea3c7d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "8b553182323f122d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d43aa8430c8daf1",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "7b454c1f00ac616a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ff0e90fc5f140ae9",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "6eac100af4dfdbe6",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d7fa84c1ac9d134d",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "6b30d748f50ec103",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "5ef37a0d611e7daa",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c8009a76de3fc00a",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "d9c8cdf300940570",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "b850a2a6bc59e44",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "108e0af83d564e13",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3e9d82dda8db3eb8",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "3bc78219db84d7a9",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ca2683da8ffa62b7",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "dd76c03f91ee19b8",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "50c779abf7ff5d98",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "c05f4e2cd215aaf",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "530042c1b07c8383",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "fdd29b3420e7e02e",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "4af3d64a08eb6086",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ac50761302116ae4",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "bfb03c2f7fe8df54",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "ef703a7074c5a065",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "fb5401f50b1177b4",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 2
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "e9f718c98003f1db",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "f877980ec2ad930c",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 1
-		}
-	}, {
-		"propertyOwner": {
-			"entityID": "af5e68db20237195",
-			"exposedEntity": "",
-			"ref": "SPECIAL: Use EntityID",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"propertyValue": {
-			"name": "Music_AmbientBiome",
-			"type": "int32",
-			"value": 3
+		"entities": [{
+			"ref": "66c22b8d852a49a0",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"Composition_PlayEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": "009805B6A91D206E"
+			},
+			"IntroCue_Part1_CustomEventStart": {
+				"type": "ZRuntimeResourceID",
+				"value": null
+			},
+			"IntroCue_Part2_CustomEventStart": {
+				"type": "ZRuntimeResourceID",
+				"value": null
+			},
+			"m_sDefaultState": {
+				"type": "ZString",
+				"value": "AmbientBiome_02"
+			},
+			"Start_As_AmbBio_1": {
+				"type": "bool",
+				"value": false
+			},
+			"Start_As_AmbBio_2": {
+				"type": "bool",
+				"value": true
+			}
 		}
 	}],
 	"overrideDeletes": [{
-		"entityID": "4587e62faa9c1b77",
-		"exposedEntity": "",
-		"_comment": "Hush",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "4587e62faa9c1b77",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "aeebd6c1d9ccdad3",
-		"exposedEntity": "",
-		"_comment": "Hush Apartment",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "aeebd6c1d9ccdad3",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "7b6c57965f22f1bb",
-		"exposedEntity": "",
-		"_comment": "Hush Bodyguard",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "7b6c57965f22f1bb",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "9983ee9a88e0e937",
-		"exposedEntity": "",
-		"_comment": "Sis Lei",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "9983ee9a88e0e937",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "758c71e6158abe21",
-		"exposedEntity": "",
-		"_comment": "perfect test subjects",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "758c71e6158abe21",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "5e9fd394f8b045e8",
-		"exposedEntity": "",
-		"_comment": "Props from a Block room",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "5e9fd394f8b045e8",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "81b7d232aebebea6",
-		"exposedEntity": "",
-		"_comment": "Props",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "81b7d232aebebea6",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "7986669ce024fa5",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "7986669ce024fa5",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "340a660167fd7ba4",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "340a660167fd7ba4",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "8e971617c5cb69a2",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "8e971617c5cb69a2",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "73b07a4c0d5197fe",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "73b07a4c0d5197fe",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "5fc852ece98a7184",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "5fc852ece98a7184",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "326b4faaaa53ec68",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "326b4faaaa53ec68",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "49e0d2f248ea47d4",
-		"exposedEntity": "",
-		"_comment": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "49e0d2f248ea47d4",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "e6c310557737210",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "e6c310557737210",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "9ac5616f0d34d59",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "9ac5616f0d34d59",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "f6503dbadaea28c4",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "f6503dbadaea28c4",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "1082cb2faca0dcd2",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "1082cb2faca0dcd2",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "a548de9edd373685",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "a548de9edd373685",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "a7ceaecbe0114fc2",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "a7ceaecbe0114fc2",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "aedfdd58dfb346bd",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "aedfdd58dfb346bd",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "7f79bc73533bc644",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "7f79bc73533bc644",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "ddcbe09aa24b5267",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "ddcbe09aa24b5267",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "dfaee33d37e3ffee",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "dfaee33d37e3ffee",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "81d0542f63603e7e",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "81d0542f63603e7e",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "38eb85ee3e5749b0",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "38eb85ee3e5749b0",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "5784b1d08bfad92",
-		"exposedEntity": "",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "5784b1d08bfad92",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "f677af028a0737c8",
-		"exposedEntity": "",
-		"_comment": "More Props from Block",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "f677af028a0737c8",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "29fed8fac51b9831",
-		"exposedEntity": "",
-		"_comment": "Decals Testing Room",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "29fed8fac51b9831",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "ce919b382fff9b2",
-		"exposedEntity": "",
-		"_comment": "Restaurant NPCs",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "ce919b382fff9b2",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "2fd910647c1f4cb",
-		"exposedEntity": "",
-		"_comment": "The Controller",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "2fd910647c1f4cb",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "d40a022a606b4f72",
-		"exposedEntity": "",
-		"_comment": "The Assistant Chen Ting",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "d40a022a606b4f72",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "48963f177ee1c72f",
-		"exposedEntity": "",
-		"_comment": "Facility back entrance courtyard NPCs",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "48963f177ee1c72f",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "ad66e7f6ff8bd00a",
-		"exposedEntity": "",
-		"_comment": "Facility main entrance courtyard NPCs",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "ad66e7f6ff8bd00a",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "61cfe233d0f8c57a",
-		"exposedEntity": "",
-		"_comment": "Employee Infiltrarion NPCs and dramas",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "61cfe233d0f8c57a",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "baed2dce2ea046a7",
-		"exposedEntity": "",
-		"_comment": "Meeting Table Chair",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "baed2dce2ea046a7",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "3e88d91ced8303b",
-		"exposedEntity": "",
-		"_comment": "Meeting Table Chair",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "3e88d91ced8303b",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "ffa6977c3d5dbab3",
-		"exposedEntity": "",
-		"_comment": "Meeting Table Chair",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "ffa6977c3d5dbab3",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "36e6ce4a29963fe6",
-		"exposedEntity": "",
-		"_comment": "Meeting Table Chair",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "36e6ce4a29963fe6",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "a6cd76ad48db306",
-		"exposedEntity": "",
-		"_comment": "Meeting Table Chair",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "a6cd76ad48db306",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"entityID": "36120e6171d5561",
-		"exposedEntity": "",
-		"_comment": "Meeting Table Chair",
-		"ref": "SPECIAL: Use EntityID",
+		"ref": "36120e6171d5561",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
 	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "[assembly:/_pro/scenes/missions/wet/commentary_rat.brick].pc_entitytype", "006B472172270F02", "00A789B895DCDFE3"],
 	"subType": 1,
-	"quickEntityVersion": 2
+	"quickEntityVersion": 2.1
 }
