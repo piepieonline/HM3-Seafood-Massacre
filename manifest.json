@@ -1,27 +1,9 @@
 {
-	"name": "Seafood Massacre",
-	"description": "This sucks",
-	"authors": ["Ruddster"],
+	"version": "0.1.0",
+	"id": "KevinRudd.SeafoodMassacre",
+	"name": "Seafood Massacre Remake",
+	"description": "WIP Mod recreating The Seafood Massacre from Hitman Contracts, in H3's Chongqing. Intending to have day and night variations",
+	"authors": ["Kevin Rudd"],
 	"contentFolder": "content",
-	"blobsFolder": "blobs",
-	"localisation": {
-		"english": {},
-		"french": {},
-		"italian": {},
-		"german": {},
-		"spanish": {},
-		"russian": {},
-		"chineseSimplified": {},
-		"chineseTraditional": {},
-		"japanese": {}
-	},
-	"packagedefinition": [{
-		"type": "entity",
-		"partition": "wet",
-		"path": "[assembly:/_pro/scenes/missions/wet/scene_noodle.entity].entitytemplate"
-	  }],
-	"runtimePackages": [],
-	"version": "0.2.0",
 	"frameworkVersion": "1.0.0"
-	
 }
