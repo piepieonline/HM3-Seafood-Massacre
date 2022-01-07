@@ -2763,7 +2763,12 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcd5ee7bb1bd496"
+			}]
 		},
 		"abcd9308b3206161": {
 			"parent": "abcdf9ffd05f0aa1",
@@ -3171,6 +3176,269 @@
 				"m_aValueEntities": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd885da8ac7373"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb4b066e27787": {
+			"parent": "fffffffffffffffe",
+			"name": "Sniper",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5ee7bb1bd496": {
+			"parent": "abcdb4b066e27787",
+			"name": "Kill HM",
+			"template": "[modules:/zhm5splashdamageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5splashdamageentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDrawPush": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDrawLift": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDrawTorque": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fExplosionPushOrigin": {
+					"type": "float32",
+					"value": 40
+				},
+				"m_fExplosionPushBorder": {
+					"type": "float32",
+					"value": 1
+				},
+				"m_fPoxStrength": {
+					"type": "float32",
+					"value": 400
+				},
+				"m_fTargetStrength": {
+					"type": "float32",
+					"value": 400
+				},
+				"m_nExplosionLiftSharpness": {
+					"type": "uint32",
+					"value": 3
+				},
+				"m_nExplisionPushSharpness": {
+					"type": "uint32",
+					"value": 3
+				},
+				"m_vTargetRadii": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.8,
+						"y": 0.8,
+						"z": 0.8
+					}
+				},
+				"m_vOffset": {
+					"type": "SVector3",
+					"value": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				"m_vRotation": {
+					"type": "SVector3",
+					"value": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				"m_bOnlyOnce": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bFixedOrientation": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bLocalRotation": {
+					"type": "bool",
+					"value": false
+				},
+				"m_nDurationTicks": {
+					"type": "uint32",
+					"value": 1
+				},
+				"m_fDurationInterval": {
+					"type": "float32",
+					"value": 100
+				},
+				"m_fRotationMultiplier": {
+					"type": "float32",
+					"value": 0.5
+				},
+				"m_fExplosionLiftBias": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_eDeathType": {
+					"type": "EDeathType",
+					"value": "eDT_KILL"
+				},
+				"m_eDeathContext": {
+					"type": "EDeathContext",
+					"value": "eDC_ACCIDENT"
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_STATIC"
+				},
+				"m_bForceVisible": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bVisible": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIsPrivate": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bVisibleInBoxReflection": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fShockwavePropagationSpeed": {
+					"type": "float32",
+					"value": 25
+				},
+				"m_fEffectsRangeMultiplier": {
+					"type": "float32",
+					"value": 0.5
+				},
+				"m_fRagdollImpulseMultiplier": {
+					"type": "float32",
+					"value": 2
+				},
+				"m_aIgnoreList": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_vKnockdownRadii": {
+					"type": "SVector3",
+					"value": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				"m_vPacifyRadii": {
+					"type": "SVector3",
+					"value": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				"m_fExplosionLiftMultiplier": {
+					"type": "float32",
+					"value": 2.75
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd651a6bb4cd67"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd651a6bb4cd67": {
+			"parent": "abcdb4b066e27787",
+			"name": "Target Spatial",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"exposedEntities": [{
+				"name": "TargetInSight",
+				"isArray": false,
+				"targets": []
+			}]
+		},
+		"abcdf3ce346a87eb": {
+			"parent": "abcdb4b066e27787",
+			"name": "ActorBoneAttachEntity",
+			"template": "[modules:/zactorboneattachentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorboneattachentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bStartAttached": {
+					"type": "bool",
+					"value": false
+				},
+				"m_BoneName": {
+					"type": "ZString",
+					"value": "head"
+				},
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "d40a022a606b4f72"
+				}
+			},
+			"postInitProperties": {
+				"m_spatial": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd651a6bb4cd67"
 				}
 			},
 			"editorOnly": false,
