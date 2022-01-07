@@ -3042,7 +3042,7 @@
 				},
 				"m_bUseConversationHelper": {
 					"type": "bool",
-					"value": true
+					"value": false
 				},
 				"m_fActTimeout": {
 					"type": "float32",
