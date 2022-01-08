@@ -3907,18 +3907,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Eating",
 				"onEntity": "abcd81c826dc03f3"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Eating",
-				"onEntity": "abcdda8c7c5b2a4a"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Eating",
-				"onEntity": "abcd2d00fce5938a"
 			}]
 		},
 		"abcd24ceccc3b3fe": {
-			"parent": "abcd0415db798b80",
+			"parent": "abcd4189eb0dd314",
 			"name": "Food has arrived",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -3999,12 +3991,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 10.923433111197847
+							"z": 0
 						},
 						"position": {
-							"x": -91.00850677490234,
-							"y": 42.39142990112305,
-							"z": 101
+							"x": -89.14022064208984,
+							"y": 63.7731819152832,
+							"z": 101.03020477294922
 						}
 					}
 				},
@@ -4197,6 +4189,105 @@
 				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "Activate",
 				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "Plate_On_Table",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd24ceccc3b3fe"
+			}]
+		},
+		"abcdb96c31fcc9dd": {
+			"parent": "abcd4189eb0dd314",
+			"name": "Meal 1 Act_MR_CarryNoodles_PutDown_075cm",
+			"template": "00BB6E13A2C145A7",
+			"blueprint": "00EAC913E2E0A631",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_Color": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6ee93e13337704c2",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcd81c826dc03f3",
+						"externalScene": null,
+						"exposedEntity": "Spatial_CarryPlate_PutDown_075cm_POS"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Plate_On_Table",
+				"shouldTrigger": "SpawnItem",
+				"onEntity": "abcd7ae3a95e98bd"
+			}, {
+				"onEvent": "OnActDone",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd9ee709287983"
+			}]
+		},
+		"abcdbcdaee620668": {
+			"parent": "abcdda8c7c5b2a4a",
+			"name": "Start Eating when true",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Eating",
+				"onEntity": "abcdda8c7c5b2a4a"
+			}]
+		},
+		"abcd82e802140f7e": {
+			"parent": "abcd2d00fce5938a",
+			"name": "Start Eating when true",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Eating",
+				"onEntity": "abcd2d00fce5938a"
 			}]
 		}
 	},
@@ -5078,34 +5169,10 @@
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": {
-			"ref": "20bfda5f2ef386ab",
+			"ref": "2500cf88fd8834d8",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		},
-		"toEntity": "abcd24ceccc3b3fe",
-		"fromPinName": "Plate_On_Table",
-		"toPinName": "SetTrue",
-		"constantPinValue": {
-			"$type": "void",
-			"$val": null
-		}
-	}, {
-		"fromEntity": {
-			"ref": "20bfda5f2ef386ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"toEntity": "abcd7ae3a95e98bd",
-		"fromPinName": "Plate_On_Table",
-		"toPinName": "SpawnItem",
-		"constantPinValue": {
-			"$type": "void",
-			"$val": null
-		}
-	}, {
-		"fromEntity": {
-			"ref": "20bfda5f2ef386ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"toEntity": "abcd9ee709287983",
+		"toEntity": "abcdb96c31fcc9dd",
 		"fromPinName": "OnActDone",
 		"toPinName": "Start",
 		"constantPinValue": {
@@ -5136,6 +5203,21 @@
 		},
 		"fromPinName": "Plate_On_Table",
 		"toPinName": "Done",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "2500cf88fd8834d8",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "20bfda5f2ef386ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActDone",
+		"toPinName": "Start",
 		"constantPinValue": {
 			"$type": "void",
 			"$val": null
