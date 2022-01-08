@@ -224,7 +224,15 @@
 					"value": "214005e4e9b8e2b3"
 				}
 			},
-			"postInitProperties": {},
+			"postInitProperties": {
+				"m_aHigherPriority": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "64f9539bbd38fccc",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}]
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
@@ -1835,9 +1843,9 @@
 		},
 		"abcdda8c7c5b2a4a": {
 			"parent": "abcdba7e01047fcf",
-			"name": "Act_Sit_Meeting",
-			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entityblueprint",
+			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01",
+			"template": "0020E4B44A8C337A",
+			"blueprint": "00408B0675AEC149",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -2019,9 +2027,9 @@
 		},
 		"abcd81c826dc03f3": {
 			"parent": "abcd7e536bbd183d",
-			"name": "Act_Sit_Meeting",
-			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entityblueprint",
+			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01",
+			"template": "00B31B6ECBE94A36",
+			"blueprint": "00ACF41FA6E1B7EF",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -2041,10 +2049,6 @@
 				"m_fActTimeout": {
 					"type": "float32",
 					"value": -1
-				},
-				"m_MovementType": {
-					"type": "ZActBehaviorEntity.EMovementType",
-					"value": "MT_WALK"
 				}
 			},
 			"postInitProperties": {
@@ -2203,9 +2207,9 @@
 		},
 		"abcd2d00fce5938a": {
 			"parent": "abcda024411ee09a",
-			"name": "Act_Sit_Meeting",
-			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_sit_relaxed_a.entitytemplate].pc_entityblueprint",
+			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01",
+			"template": "0020E4B44A8C337A",
+			"blueprint": "00408B0675AEC149",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -2763,8 +2767,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9308b3206161": {
 			"parent": "abcdf9ffd05f0aa1",
@@ -3668,8 +3671,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdd6e7e6390bb9": {
 			"parent": "abcd0886580ebb2d",
@@ -3679,7 +3681,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd2c62761e8677", "abcd207158ec2894"]
+					"value": ["abcd0d2f65df04d4", "abcd207158ec2894"]
 				}
 			},
 			"postInitProperties": {},
@@ -3714,7 +3716,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6", "abcd2c62761e8677", "abcd207158ec2894"]
+					"value": ["abcd7ddbc0fdfad6", "abcd207158ec2894"]
 				}
 			},
 			"postInitProperties": {},
@@ -3749,10 +3751,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9df9701a171c": {
 			"parent": "abcd0886580ebb2d",
@@ -3762,10 +3761,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd09af7b9b3ffd": {
 			"parent": "abcd207158ec2894",
@@ -3818,8 +3814,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdec37daa791c7": {
 			"parent": "abcd207158ec2894",
@@ -3869,6 +3864,235 @@
 				"m_rCondition": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd09af7b9b3ffd"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd857e0f74e7c1": {
+			"parent": "abcd81c826dc03f3",
+			"name": "Sitting and Ready to eat",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcd81c826dc03f3",
+						"externalScene": null,
+						"exposedEntity": "Ready_To_Eat"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5a31f14fb148": {
+			"parent": "abcd81c826dc03f3",
+			"name": "Start Eating when true",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Eating",
+				"onEntity": "abcd81c826dc03f3"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Eating",
+				"onEntity": "abcdda8c7c5b2a4a"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Eating",
+				"onEntity": "abcd2d00fce5938a"
+			}]
+		},
+		"abcd24ceccc3b3fe": {
+			"parent": "abcd0415db798b80",
+			"name": "Food has arrived",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2e67f73b76e3": {
+			"parent": "fffffffffffffffe",
+			"name": "GroupPoison",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd0da3c20c4b7b": {
+			"parent": "abcd2e67f73b76e3",
+			"name": "Keyword_STATE_POISONED_SEDATED",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned_sedated.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned_sedated.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd86403a711f22": {
+			"parent": "abcd2e67f73b76e3",
+			"name": "ActorPickerEffectKeyword",
+			"template": "[modules:/zactorpickereffectkeyword.class].pc_entitytype",
+			"blueprint": "[modules:/zactorpickereffectkeyword.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_rAddKeywords": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0da3c20c4b7b"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4189eb0dd314": {
+			"parent": "abcd0415db798b80",
+			"name": "3 Meals",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd1d619c37fff9": {
+			"parent": "abcd4189eb0dd314",
+			"name": "ItemKey_Poisonable_FoodPlate_Noodles",
+			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "cfd359e5-bc76-4975-8db6-0462bc746407"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7ae3a95e98bd": {
+			"parent": "abcd4189eb0dd314",
+			"name": "ItemSpawner",
+			"template": "[modules:/zitemspawner.class].pc_entitytype",
+			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 10.923433111197847
+						},
+						"position": {
+							"x": -91.00850677490234,
+							"y": 42.39142990112305,
+							"z": 101
+						}
+					}
+				},
+				"m_bSpawnOnStart": {
+					"type": "bool",
+					"value": false
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				},
+				"m_rMainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1d619c37fff9"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "ItemSpawned",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcdf85ce7eb28b8"
+			}]
+		},
+		"abcdf85ce7eb28b8": {
+			"parent": "abcd4189eb0dd314",
+			"name": "ActorItemAction",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zactoritemaction.class].entitytype,[modules:/zreplicableaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zactoritemaction.class].entitytype,[modules:/zreplicableaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_eMaxTension": {
+					"type": "EGameTension",
+					"value": "EGT_AlertedLow"
+				},
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6ee93e13337704c2",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_pDetachPoint": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd819a20ffe643"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnSetItem",
+				"shouldTrigger": "AttachRightHand",
+				"onEntity": "abcdf85ce7eb28b8"
+			}]
+		},
+		"abcd819a20ffe643": {
+			"parent": "abcd4189eb0dd314",
+			"name": "Spatial_ObjectPosition",
+			"template": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -0.06899300217628479,
+							"y": -0.6011250019073486,
+							"z": 1
+						}
+					}
 				}
 			},
 			"postInitProperties": {},
