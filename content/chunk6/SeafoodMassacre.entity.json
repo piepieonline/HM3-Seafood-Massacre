@@ -3578,7 +3578,7 @@
 			}]
 		},
 		"abcd95b1168e6d39": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd0886580ebb2d",
 			"name": "TargetKillZone VolumeBox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -3617,7 +3617,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd54f94259ff83": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd0886580ebb2d",
 			"name": "TargetWatchZone VolumeBox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -3656,7 +3656,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd0d2f65df04d4": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd0886580ebb2d",
 			"name": "TargetKillZone VolumeTriggerCharacter",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
@@ -3672,14 +3672,14 @@
 			"events": []
 		},
 		"abcdd6e7e6390bb9": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd0886580ebb2d",
 			"name": "TargetKillZone AllConditionsMet",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd2c62761e8677"]
+					"value": ["abcd0d2f65df04d4", "abcd2c62761e8677", "abcd207158ec2894"]
 				}
 			},
 			"postInitProperties": {},
@@ -3692,7 +3692,7 @@
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd0886580ebb2d",
 			"name": "TargetWatchZone VolumeTriggerCharacter",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
@@ -3707,14 +3707,14 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd9e63db315762": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd0886580ebb2d",
 			"name": "TargetWatchZone AllConditionsMet",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6", "abcd2c62761e8677"]
+					"value": ["abcd7ddbc0fdfad6", "abcd2c62761e8677", "abcd207158ec2894"]
 				}
 			},
 			"postInitProperties": {},
@@ -3727,7 +3727,7 @@
 			}]
 		},
 		"abcd2c62761e8677": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcd9df9701a171c",
 			"name": "IncorrectUniform InvertedCondition",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
@@ -3735,6 +3735,140 @@
 				"m_rCondition": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd089b840b1f89"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0886580ebb2d": {
+			"parent": "abcdb4b066e27787",
+			"name": "AI",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd9df9701a171c": {
+			"parent": "abcd0886580ebb2d",
+			"name": "CommonConditions",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd09af7b9b3ffd": {
+			"parent": "abcd207158ec2894",
+			"name": "ItemEquippedLegal",
+			"template": "[modules:/zheroitemcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zheroitemcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bIncludeItemsNotVisibleInInventory": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckEquippedItemLegal": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5c61f69b7128": {
+			"parent": "abcd207158ec2894",
+			"name": "IllegalOnBack",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdec37daa791c7"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd207158ec2894": {
+			"parent": "abcd9df9701a171c",
+			"name": "HasVisibleWeapons",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd42109b450ad", "abcd5c61f69b7128"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcdec37daa791c7": {
+			"parent": "abcd207158ec2894",
+			"name": "ItemOnBackLegal",
+			"template": "[modules:/zheroitemcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zheroitemcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bIncludeItemsNotVisibleInInventory": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckEquippedItemLegal": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckInventory": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckEquippedItem": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckItemOnBack": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bCheckHasItemOnBack": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bCheckItemOnBackLegal": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd42109b450ad": {
+			"parent": "abcd207158ec2894",
+			"name": "IllegalEquipped",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd09af7b9b3ffd"
 				}
 			},
 			"postInitProperties": {},
