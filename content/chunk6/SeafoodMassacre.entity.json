@@ -3935,10 +3935,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd0da3c20c4b7b": {
 			"parent": "abcd2e67f73b76e3",
@@ -3973,10 +3970,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd1d619c37fff9": {
 			"parent": "abcd4189eb0dd314",
@@ -4069,7 +4063,7 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnSetItem",
-				"shouldTrigger": "AttachRightHand",
+				"shouldTrigger": "AttachLeftHand",
 				"onEntity": "abcdf85ce7eb28b8"
 			}]
 		},
@@ -4098,6 +4092,112 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd9ee709287983": {
+			"parent": "abcd4189eb0dd314",
+			"name": "Meal 2 Act_MR_CarryNoodles_PutDown_075cm",
+			"template": "00BB6E13A2C145A7",
+			"blueprint": "00EAC913E2E0A631",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_Color": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6ee93e13337704c2",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcdda8c7c5b2a4a",
+						"externalScene": null,
+						"exposedEntity": "Spatial_CarryPlate_PutDown_075cm_POS"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Plate_On_Table",
+				"shouldTrigger": "SpawnItem",
+				"onEntity": "abcd7ae3a95e98bd"
+			}, {
+				"onEvent": "OnActDone",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdbb37e72a06f5"
+			}]
+		},
+		"abcdbb37e72a06f5": {
+			"parent": "abcd4189eb0dd314",
+			"name": "Meal 3 Act_MR_CarryNoodles_PutDown_075cm",
+			"template": "00BB6E13A2C145A7",
+			"blueprint": "00EAC913E2E0A631",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_Color": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6ee93e13337704c2",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcd2d00fce5938a",
+						"externalScene": null,
+						"exposedEntity": "Spatial_CarryPlate_PutDown_075cm_POS"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Plate_On_Table",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}]
 		}
 	},
 	"propertyOverrides": [{
@@ -4120,6 +4220,49 @@
 			"m_OutfitRepositoryID": {
 				"type": "ZGuid",
 				"value": "af2d4a61-e7e9-40ba-a614-511457e8706a"
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "f0daf0ef8645fc39",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_rMainItemKey": {
+				"type": "SEntityTemplateReference",
+				"value": {
+					"ref": "5e2922743412ec7e",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "20bfda5f2ef386ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_eidParent": {
+				"type": "SEntityTemplateReference",
+				"value": {
+					"ref": "abcd81c826dc03f3",
+					"externalScene": null,
+					"exposedEntity": "Spatial_CarryPlate_PutDown_075cm_POS"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "43390d442177f82a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_aActors": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "3957fa286e703e5e",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}, "d40a022a606b4f72"]
 			}
 		}
 	}, {
@@ -4933,8 +5076,71 @@
 		"ref": "36120e6171d5561",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
-	"pinConnectionOverrides": [],
-	"pinConnectionOverrideDeletes": [],
+	"pinConnectionOverrides": [{
+		"fromEntity": {
+			"ref": "20bfda5f2ef386ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": "abcd24ceccc3b3fe",
+		"fromPinName": "Plate_On_Table",
+		"toPinName": "SetTrue",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "20bfda5f2ef386ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": "abcd7ae3a95e98bd",
+		"fromPinName": "Plate_On_Table",
+		"toPinName": "SpawnItem",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "20bfda5f2ef386ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": "abcd9ee709287983",
+		"fromPinName": "OnActDone",
+		"toPinName": "Start",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": "abcdbb37e72a06f5",
+		"toEntity": {
+			"ref": "64f9539bbd38fccc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActDone",
+		"toPinName": "Done",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}],
+	"pinConnectionOverrideDeletes": [{
+		"fromEntity": {
+			"ref": "20bfda5f2ef386ab",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "64f9539bbd38fccc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "Plate_On_Table",
+		"toPinName": "Done",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}],
 	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "[assembly:/_pro/scenes/missions/wet/commentary_rat.brick].pc_entitytype", "006B472172270F02", "00A789B895DCDFE3"],
 	"subType": 1,
 	"quickEntityVersion": 2.1
