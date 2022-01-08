@@ -2486,10 +2486,6 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd29a51d2fed06"
-			}, {
-				"onEvent": "OnActTimeout",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd7a37ed3bfdd6": {
@@ -2768,11 +2764,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcd5ee7bb1bd496"
-			}]
+			"events": []
 		},
 		"abcd9308b3206161": {
 			"parent": "abcdf9ffd05f0aa1",
@@ -3244,9 +3236,9 @@
 				"m_vTargetRadii": {
 					"type": "SVector3",
 					"value": {
-						"x": 0.8,
-						"y": 0.8,
-						"z": 0.8
+						"x": 0.800000011920929,
+						"y": 0.800000011920929,
+						"z": 0.800000011920929
 					}
 				},
 				"m_vOffset": {
@@ -3405,10 +3397,7 @@
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": {
-						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-					}
+					"value": "fffffffffffffffe"
 				}
 			},
 			"postInitProperties": {},
@@ -3428,15 +3417,18 @@
 			"properties": {
 				"m_bStartAttached": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_BoneName": {
 					"type": "ZString",
 					"value": "head"
 				},
-				"m_pActor": {
+				"m_linkedEntity": {
 					"type": "SEntityTemplateReference",
-					"value": "d40a022a606b4f72"
+					"value": {
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
 				}
 			},
 			"postInitProperties": {
@@ -3449,7 +3441,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdc38640d82521": {
-			"parent": "abcdb4b066e27787",
+			"parent": "abcdba75fae49278",
 			"name": "PIP_Camera_Custom_Event",
 			"template": "006CAAFB6054F1E1",
 			"blueprint": "00C0E9190BD13907",
@@ -3460,12 +3452,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 0
+							"z": 90
 						},
 						"position": {
 							"x": 0,
 							"y": 0,
-							"z": 1.8
+							"z": 1.7999999523162842
 						}
 					}
 				},
@@ -3508,17 +3500,244 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcdba75fae49278"
+					"value": "abcd028695650617"
 				},
 				"m_eidParentcustomevent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcdba75fae49278"
+					"value": "abcd028695650617"
 				},
 				"m_pRootNode": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd028695650617"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd3f6832713d4": {
+			"parent": "abcdba75fae49278",
+			"name": "ActorBoneAttachEntity",
+			"template": "[modules:/zactorboneattachentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorboneattachentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bStartAttached": {
+					"type": "bool",
+					"value": true
+				},
+				"m_BoneName": {
+					"type": "ZString",
+					"value": "spine"
+				},
+				"m_linkedEntity": {
 					"type": "SEntityTemplateReference",
 					"value": "abcdba75fae49278"
 				}
 			},
+			"postInitProperties": {
+				"m_spatial": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd028695650617"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd028695650617": {
+			"parent": "abcdba75fae49278",
+			"name": "PIP Spatial",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"exposedEntities": [{
+				"name": "TargetInSight",
+				"isArray": false,
+				"targets": []
+			}]
+		},
+		"abcd95b1168e6d39": {
+			"parent": "abcdb4b066e27787",
+			"name": "TargetKillZone VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -89.07119750976563,
+							"y": 63.409786224365234,
+							"z": 101.00008392333984
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 12,
+						"y": 6,
+						"z": 4
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd54f94259ff83": {
+			"parent": "abcdb4b066e27787",
+			"name": "TargetWatchZone VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -89.07119750976563,
+							"y": 63.409786224365234,
+							"z": 101.00008392333984
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 16,
+						"y": 10,
+						"z": 4
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0d2f65df04d4": {
+			"parent": "abcdb4b066e27787",
+			"name": "TargetKillZone VolumeTriggerCharacter",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd95b1168e6d39"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcdd6e7e6390bb9": {
+			"parent": "abcdb4b066e27787",
+			"name": "TargetKillZone AllConditionsMet",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0d2f65df04d4", "abcd2c62761e8677"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcd5ee7bb1bd496"
+			}]
+		},
+		"abcd7ddbc0fdfad6": {
+			"parent": "abcdb4b066e27787",
+			"name": "TargetWatchZone VolumeTriggerCharacter",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd54f94259ff83"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9e63db315762": {
+			"parent": "abcdb4b066e27787",
+			"name": "TargetWatchZone AllConditionsMet",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7ddbc0fdfad6", "abcd2c62761e8677"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}]
+		},
+		"abcd2c62761e8677": {
+			"parent": "abcdb4b066e27787",
+			"name": "IncorrectUniform InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd089b840b1f89"
+				}
+			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
