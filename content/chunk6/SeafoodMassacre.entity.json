@@ -4429,10 +4429,6 @@
 				"onEvent": "OnItemGrabbed",
 				"shouldTrigger": "GetItem",
 				"onEntity": "abcd16bef66b6588"
-			}, {
-				"onEvent": "Item",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd32b09860db3a": {
@@ -4724,6 +4720,111 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd07c5a86622c6": {
+			"parent": "abcd5dfffe265eba",
+			"name": "Keyword_ITEM_POISON_halucination",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_halucination.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_halucination.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2e5d80016430": {
+			"parent": "abcd5dfffe265eba",
+			"name": "Keyword_ITEM_POISON_FAST",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_fast.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_fast.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd01f0f045719c": {
+			"parent": "abcd5dfffe265eba",
+			"name": "Keyword_ITEM_POISON_sedative",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_sedative.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_sedative.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1d1130885333": {
+			"parent": "abcd5dfffe265eba",
+			"name": "keyword_questitem_italy_canned_spaghetti",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_canned_spaghetti.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_canned_spaghetti.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb49a6d4fb61c": {
+			"parent": "abcd5dfffe265eba",
+			"name": "Keyword_ITEM_POISON_slow",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_slow.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison_slow.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0a783fe70a30": {
+			"parent": "abcd5dfffe265eba",
+			"name": "Keyword_ITEM_POISON",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf3b326eaced7": {
+			"parent": "abcd5dfffe265eba",
+			"name": "keyword_questitem_miami_octane_booster",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_miami_octane_booster.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_miami_octane_booster.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -4757,7 +4858,7 @@
 			"m_rMainItemKey": {
 				"type": "SEntityTemplateReference",
 				"value": {
-					"ref": "5e2922743412ec7e",
+					"ref": "67ed7ccf29449e48",
 					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 				}
 			}
