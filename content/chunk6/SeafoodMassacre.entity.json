@@ -4333,7 +4333,7 @@
 			"properties": {
 				"m_rSearchVolume": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd378aa8bc7115"
+					"value": "abcd32b09860db3a"
 				},
 				"m_rRepositoryKeyToFind": {
 					"type": "SEntityTemplateReference",
@@ -4349,12 +4349,16 @@
 			"events": [{
 				"onEvent": "Item",
 				"shouldTrigger": "SetItem",
-				"onEntity": "abcdd3ac79790455"
+				"onEntity": "abcd1f527f4c1771"
+			}, {
+				"onEvent": "OnItemGrabbed",
+				"shouldTrigger": "GetItem",
+				"onEntity": "abcd1f527f4c1771"
 			}]
 		},
 		"abcd378aa8bc7115": {
 			"parent": "abcd25ee54729b95",
-			"name": "PreppedGrabber VolumeBox02",
+			"name": "PreppedGrabber TestSpawner VolumeBox02",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
 			"properties": {
@@ -4367,9 +4371,9 @@
 							"z": -180
 						},
 						"position": {
-							"x": -86.2850570678711,
-							"y": 33.99040985107422,
-							"z": 100.99659729003906
+							"x": -91.0085067749023,
+							"y": 42.39142990112305,
+							"z": 102
 						}
 					}
 				},
@@ -4378,7 +4382,7 @@
 					"value": {
 						"x": 0.30000001192092896,
 						"y": 0.30000001192092896,
-						"z": 3
+						"z": 0.4
 					}
 				}
 			},
@@ -4414,7 +4418,11 @@
 			"events": [{
 				"onEvent": "Item",
 				"shouldTrigger": "SetItem",
-				"onEntity": "abcd0cdc95f34577"
+				"onEntity": "abcd16bef66b6588"
+			}, {
+				"onEvent": "OnItemGrabbed",
+				"shouldTrigger": "GetItem",
+				"onEntity": "abcd16bef66b6588"
 			}]
 		},
 		"abcd32b09860db3a": {
@@ -4498,8 +4506,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "Item",
-				"shouldTrigger": "SetItem",
-				"onEntity": "abcd0cdc95f34577"
+				"shouldTrigger": "Grab",
+				"onEntity": "abcd4a4f0a586f05"
 			}]
 		},
 		"abcdd3ac79790455": {
@@ -4638,9 +4646,77 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "Item",
+				"shouldTrigger": "Grab",
+				"onEntity": "abcda16f62854f41"
+			}]
+		},
+		"abcd1f527f4c1771": {
+			"parent": "abcd25ee54729b95",
+			"name": "TestGrabber HM5ItemProxy",
+			"template": "[modules:/zhm5itemproxy.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5itemproxy.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnGetItem",
 				"shouldTrigger": "SetItem",
 				"onEntity": "abcdd3ac79790455"
 			}]
+		},
+		"abcd16bef66b6588": {
+			"parent": "abcd25ee54729b95",
+			"name": "PreppedGrabber HM5ItemProxy",
+			"template": "[modules:/zhm5itemproxy.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5itemproxy.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnGetItem",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcd0cdc95f34577"
+			}]
+		},
+		"abcd89ad4afde47d": {
+			"parent": "abcd25ee54729b95",
+			"name": "PreppedGrabber VolumeBox02",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -180
+						},
+						"position": {
+							"x": -86.2850570678711,
+							"y": 33.99040985107422,
+							"z": 100.99659729003906
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.30000001192092896,
+						"y": 0.30000001192092896,
+						"z": 3
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false
 		}
 	},
 	"propertyOverrides": [{
