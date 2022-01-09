@@ -1843,7 +1843,7 @@
 		},
 		"abcdda8c7c5b2a4a": {
 			"parent": "abcdba7e01047fcf",
-			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01",
+			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01 Chief",
 			"template": "0020E4B44A8C337A",
 			"blueprint": "00408B0675AEC149",
 			"properties": {
@@ -2027,7 +2027,7 @@
 		},
 		"abcd81c826dc03f3": {
 			"parent": "abcd7e536bbd183d",
-			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01",
+			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01 Blue",
 			"template": "00B31B6ECBE94A36",
 			"blueprint": "00ACF41FA6E1B7EF",
 			"properties": {
@@ -2207,7 +2207,7 @@
 		},
 		"abcd2d00fce5938a": {
 			"parent": "abcda024411ee09a",
-			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01",
+			"name": "Act_MR_Sit_ChopstickEating_075CM_Enter_BR_01 Red",
 			"template": "0020E4B44A8C337A",
 			"blueprint": "00408B0675AEC149",
 			"properties": {
@@ -3872,7 +3872,7 @@
 		},
 		"abcd857e0f74e7c1": {
 			"parent": "abcd81c826dc03f3",
-			"name": "Sitting and Ready to eat",
+			"name": "Blue Sitting and Ready to eat",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -3891,7 +3891,7 @@
 		},
 		"abcd5a31f14fb148": {
 			"parent": "abcd81c826dc03f3",
-			"name": "Start Eating when true",
+			"name": "Blue Start Eating when true",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -3964,21 +3964,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd1d619c37fff9": {
-			"parent": "abcd4189eb0dd314",
-			"name": "ItemKey_Poisonable_FoodPlate_Noodles",
-			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
-			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryId": {
-					"type": "ZGuid",
-					"value": "cfd359e5-bc76-4975-8db6-0462bc746407"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd7ae3a95e98bd": {
 			"parent": "abcd4189eb0dd314",
 			"name": "ItemSpawner",
@@ -4016,7 +4001,10 @@
 				},
 				"m_rMainItemKey": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd1d619c37fff9"
+					"value": {
+						"ref": "7c51c282481f8b73",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
 				}
 			},
 			"editorOnly": false,
@@ -4187,10 +4175,6 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "Plate_On_Table",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd24ceccc3b3fe"
 			}]
@@ -4252,13 +4236,13 @@
 		},
 		"abcdbcdaee620668": {
 			"parent": "abcdda8c7c5b2a4a",
-			"name": "Start Eating when true",
+			"name": "Chief Start Eating when true",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe"]
+					"value": ["abcd33f28136cbd9", "abcd24ceccc3b3fe"]
 				}
 			},
 			"postInitProperties": {},
@@ -4272,13 +4256,13 @@
 		},
 		"abcd82e802140f7e": {
 			"parent": "abcd2d00fce5938a",
-			"name": "Start Eating when true",
+			"name": "Red Start Eating when true",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe"]
+					"value": ["abcd82a2bf6d2fe8", "abcd24ceccc3b3fe"]
 				}
 			},
 			"postInitProperties": {},
@@ -4289,6 +4273,44 @@
 				"shouldTrigger": "Eating",
 				"onEntity": "abcd2d00fce5938a"
 			}]
+		},
+		"abcd33f28136cbd9": {
+			"parent": "abcdda8c7c5b2a4a",
+			"name": "Chief Sitting and Ready to eat",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcdda8c7c5b2a4a",
+						"externalScene": null,
+						"exposedEntity": "Ready_To_Eat"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd82a2bf6d2fe8": {
+			"parent": "abcd2d00fce5938a",
+			"name": "Red Sitting and Ready to eat",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcd2d00fce5938a",
+						"externalScene": null,
+						"exposedEntity": "Ready_To_Eat"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
