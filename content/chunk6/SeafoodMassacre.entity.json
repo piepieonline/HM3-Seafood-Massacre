@@ -1469,7 +1469,7 @@
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
-					"value": "267c54a7-58b4-4e53-8d08-3e745269cb81"
+					"value": "af2d4a61-e7e9-40ba-a614-511457e8706a"
 				},
 				"m_eRequiredVoiceVariation": {
 					"type": "EActorVoiceVariation",
@@ -1524,7 +1524,7 @@
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
-					"value": "267c54a7-58b4-4e53-8d08-3e745269cb81"
+					"value": "af2d4a61-e7e9-40ba-a614-511457e8706a"
 				},
 				"m_eRequiredVoiceVariation": {
 					"type": "EActorVoiceVariation",
@@ -4010,9 +4010,17 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "ItemSpawned",
+				"onEvent": "Item",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcdd3ac79790455"
+			}, {
+				"onEvent": "Item",
 				"shouldTrigger": "SetItem",
 				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "Transfer",
+				"onEntity": "abcdf973599aae35"
 			}]
 		},
 		"abcdf85ce7eb28b8": {
@@ -4232,10 +4240,6 @@
 				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd9ee709287983"
-			}, {
-				"onEvent": "OnStart",
-				"shouldTrigger": "Transfer",
-				"onEntity": "abcdf973599aae35"
 			}]
 		},
 		"abcdbcdaee620668": {
