@@ -4299,7 +4299,7 @@
 		},
 		"abcd25ee54729b95": {
 			"parent": "abcd4189eb0dd314",
-			"name": "PoisonTest",
+			"name": "Poison",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
