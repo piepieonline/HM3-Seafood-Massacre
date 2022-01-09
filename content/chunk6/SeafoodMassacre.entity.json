@@ -2312,7 +2312,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdba75fae49278": {
-			"parent": "abcd692adf85a546",
+			"parent": "abcdb4b066e27787",
 			"name": "CHAR_Sniper1",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -3907,6 +3907,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Eating",
 				"onEntity": "abcd81c826dc03f3"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcdd9f5ef8ebc61"
 			}]
 		},
 		"abcd24ceccc3b3fe": {
@@ -3916,41 +3920,6 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd2e67f73b76e3": {
-			"parent": "fffffffffffffffe",
-			"name": "GroupPoison",
-			"template": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd0da3c20c4b7b": {
-			"parent": "abcd2e67f73b76e3",
-			"name": "Keyword_STATE_POISONED_SEDATED",
-			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned_sedated.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned_sedated.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd86403a711f22": {
-			"parent": "abcd2e67f73b76e3",
-			"name": "ActorPickerEffectKeyword",
-			"template": "[modules:/zactorpickereffectkeyword.class].pc_entitytype",
-			"blueprint": "[modules:/zactorpickereffectkeyword.class].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_rAddKeywords": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd0da3c20c4b7b"
-				}
-			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -4260,6 +4229,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Eating",
 				"onEntity": "abcdda8c7c5b2a4a"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd0c4a123c936f"
 			}]
 		},
 		"abcd82e802140f7e": {
@@ -4280,6 +4253,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Eating",
 				"onEntity": "abcd2d00fce5938a"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd143f9f4ed8af"
 			}]
 		},
 		"abcd33f28136cbd9": {
@@ -4649,6 +4626,63 @@
 					"value": ["abcdb5c5b0a38c91"]
 				}
 			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd9f5ef8ebc61": {
+			"parent": "abcd3d755cd84fe8",
+			"name": "Blue AIModifierActor",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3d755cd84fe8"
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0c4a123c936f": {
+			"parent": "abcd9a040fd7639e",
+			"name": "Chief AIModifierActor",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd143f9f4ed8af": {
+			"parent": "abcdd0110d31999a",
+			"name": "Red AIModifierActor",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd0110d31999a"
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
