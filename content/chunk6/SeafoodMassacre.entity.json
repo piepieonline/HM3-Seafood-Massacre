@@ -4012,15 +4012,19 @@
 			"events": [{
 				"onEvent": "Item",
 				"shouldTrigger": "SetItem",
-				"onEntity": "abcdd3ac79790455"
+				"onEntity": "abcdf85ce7eb28b8"
 			}, {
 				"onEvent": "Item",
 				"shouldTrigger": "SetItem",
-				"onEntity": "abcdf85ce7eb28b8"
+				"onEntity": "abcdd3ac79790455"
 			}, {
 				"onEvent": "ItemReady",
 				"shouldTrigger": "Transfer",
 				"onEntity": "abcdf973599aae35"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "AttachLeftHand",
+				"onEntity": "abcdf85ce7eb28b8"
 			}]
 		},
 		"abcdf85ce7eb28b8": {
@@ -4049,11 +4053,7 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnSetItem",
-				"shouldTrigger": "AttachLeftHand",
-				"onEntity": "abcdf85ce7eb28b8"
-			}]
+			"events": []
 		},
 		"abcd819a20ffe643": {
 			"parent": "abcd4189eb0dd314",
