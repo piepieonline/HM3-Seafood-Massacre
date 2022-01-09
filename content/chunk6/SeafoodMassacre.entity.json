@@ -4324,10 +4324,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcda16f62854f41": {
 			"parent": "abcd25ee54729b95",
@@ -4375,7 +4372,7 @@
 							"z": -180
 						},
 						"position": {
-							"x": -91.0085067749023,
+							"x": -91.00850677490234,
 							"y": 42.39142990112305,
 							"z": 102
 						}
@@ -4386,7 +4383,7 @@
 					"value": {
 						"x": 0.30000001192092896,
 						"y": 0.30000001192092896,
-						"z": 0.4
+						"z": 0.4000000059604645
 					}
 				}
 			},
@@ -4396,7 +4393,8 @@
 					"value": "fffffffffffffffe"
 				}
 			},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcd4a4f0a586f05": {
 			"parent": "abcd25ee54729b95",
@@ -4459,7 +4457,7 @@
 					"value": {
 						"x": 0.30000001192092896,
 						"y": 0.30000001192092896,
-						"z": 0.4
+						"z": 0.4000000059604645
 					}
 				}
 			},
@@ -4469,7 +4467,8 @@
 					"value": "fffffffffffffffe"
 				}
 			},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcdfd726a930f5a": {
 			"parent": "abcd25ee54729b95",
@@ -4486,7 +4485,7 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": -91.0085067749023,
+							"x": -91.00850677490234,
 							"y": 42.39142990112305,
 							"z": 102
 						}
@@ -4511,8 +4510,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdd3ac79790455": {
 			"parent": "abcd25ee54729b95",
@@ -4521,7 +4519,8 @@
 			"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcd0cdc95f34577": {
 			"parent": "abcd25ee54729b95",
@@ -4530,7 +4529,8 @@
 			"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcd5dfffe265eba": {
 			"parent": "abcd25ee54729b95",
@@ -4540,10 +4540,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf973599aae35": {
 			"parent": "abcd5dfffe265eba",
@@ -4565,7 +4562,8 @@
 					"value": "abcdb5c5b0a38c91"
 				}
 			},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcdb5c5b0a38c91": {
 			"parent": "abcd5dfffe265eba",
@@ -4575,10 +4573,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd14e7ab3436ff": {
 			"parent": "abcd5dfffe265eba",
@@ -4592,7 +4587,8 @@
 					"value": ["abcdb5c5b0a38c91"]
 				}
 			},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcdbbb0259b6dd4": {
 			"parent": "abcd5dfffe265eba",
@@ -4605,7 +4601,9 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcdb5c5b0a38c91"]
 				}
-			}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		},
 		"abcd0ea15e812453": {
 			"parent": "abcd25ee54729b95",
@@ -4720,7 +4718,8 @@
 					"value": "fffffffffffffffe"
 				}
 			},
-			"editorOnly": false
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
