@@ -4232,6 +4232,10 @@
 				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd9ee709287983"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "Transfer",
+				"onEntity": "abcdf973599aae35"
 			}]
 		},
 		"abcdbcdaee620668": {
@@ -4314,7 +4318,7 @@
 		},
 		"abcd25ee54729b95": {
 			"parent": "abcd4189eb0dd314",
-			"name": "Poison",
+			"name": "PoisonTest",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -4402,7 +4406,7 @@
 			"properties": {
 				"m_rSearchVolume": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd378aa8bc7115"
+					"value": "abcd89ad4afde47d"
 				},
 				"m_rRepositoryKeyToFind": {
 					"type": "SEntityTemplateReference",
@@ -4423,6 +4427,10 @@
 				"onEvent": "OnItemGrabbed",
 				"shouldTrigger": "GetItem",
 				"onEntity": "abcd16bef66b6588"
+			}, {
+				"onEvent": "Item",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd32b09860db3a": {
@@ -4504,11 +4512,7 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "Item",
-				"shouldTrigger": "Grab",
-				"onEntity": "abcd4a4f0a586f05"
-			}]
+			"events": []
 		},
 		"abcdd3ac79790455": {
 			"parent": "abcd25ee54729b95",
@@ -4704,8 +4708,8 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 0.30000001192092896,
-						"y": 0.30000001192092896,
+						"x": 1,
+						"y": 1,
 						"z": 3
 					}
 				}
@@ -5612,9 +5616,9 @@
 			"ref": "710845eac3f6aa0c",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		},
-		"toEntity": "abcdf973599aae35",
+		"toEntity": "abcd4a4f0a586f05",
 		"fromPinName": "FoodReady",
-		"toPinName": "Transfer",
+		"toPinName": "Grab",
 		"constantPinValue": {
 			"$type": "void",
 			"$val": null
