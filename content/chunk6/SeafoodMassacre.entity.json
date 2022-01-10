@@ -4908,10 +4908,6 @@
 				"onEvent": "PollTrue",
 				"shouldTrigger": "Trigger",
 				"onEntity": "abcdd38ec18c41ef"
-			}, {
-				"onEvent": "PollFalse",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcd5ee7bb1bd496"
 			}]
 		},
 		"abcdd09bb2dacfed": {
