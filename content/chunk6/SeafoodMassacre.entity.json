@@ -1051,13 +1051,13 @@
 		},
 		"abcdd38ec18c41ef": {
 			"parent": "abcd2a42760b27bb",
-			"name": "ContractsEvent - Amulet",
+			"name": "ContractsEvent - AmuletPickedUp",
 			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
 			"properties": {
 				"m_sName": {
 					"type": "ZString",
-					"value": "AmuletPlaced"
+					"value": "AmuletPickedUp"
 				}
 			},
 			"postInitProperties": {},
@@ -4840,7 +4840,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd071ac30376d8"
+					"value": "abcd3ebd6ae8a2b6"
 				},
 				"m_rMainItemKey": {
 					"type": "SEntityTemplateReference",
@@ -4867,8 +4867,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd459a8c901b56": {
 			"parent": "abcd4189eb0dd314",
@@ -4888,6 +4887,10 @@
 				"onEvent": "PollTrue",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcdd09bb2dacfed"
+			}, {
+				"onEvent": "PollTrue",
+				"shouldTrigger": "Attach",
+				"onEntity": "abcde5a49d19381f"
 			}]
 		},
 		"abcd9273d6101d74": {
@@ -4908,6 +4911,10 @@
 				"onEvent": "PollTrue",
 				"shouldTrigger": "Trigger",
 				"onEntity": "abcdd38ec18c41ef"
+			}, {
+				"onEvent": "PollTrue",
+				"shouldTrigger": "Detach",
+				"onEntity": "abcde5a49d19381f"
 			}]
 		},
 		"abcdd09bb2dacfed": {
@@ -4918,8 +4925,159 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde5a49d19381f": {
+			"parent": "abcdb282ca1f649e",
+			"name": "AmuletDelivery ActorBoneAttachEntity",
+			"template": "[modules:/zactorboneattachentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorboneattachentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bStartAttached": {
+					"type": "bool",
+					"value": false
+				},
+				"m_BoneName": {
+					"type": "ZString",
+					"value": "L_Hand"
+				}
+			},
+			"postInitProperties": {
+				"m_spatial": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3ebd6ae8a2b6"
+				},
+				"m_linkedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "d40a022a606b4f72"
+				}
+			},
+			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": []
+		},
+		"abcdb282ca1f649e": {
+			"parent": "abcd071ac30376d8",
+			"name": "Delivery",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3ebd6ae8a2b6": {
+			"parent": "abcdb282ca1f649e",
+			"name": "AmuletDelivery Spatial",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd071ac30376d8"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc3fbeb09b34f": {
+			"parent": "abcd9105b49b083c",
+			"name": "TEST Poison Spawner",
+			"template": "[modules:/zitemspawner.class].pc_entitytype",
+			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_bSpawnOnStart": {
+					"type": "bool",
+					"value": true
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3ebd6ae8a2b6"
+				},
+				"m_rMainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "67ed7ccf29449e48",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "ItemReady",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd21dbcaade68e"
+			}, {
+				"onEvent": "OnPickup",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcd21dbcaade68e"
+			}]
+		},
+		"abcd9105b49b083c": {
+			"parent": "fffffffffffffffe",
+			"name": "TEST",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd3f061716ed27": {
+			"parent": "abcd2a42760b27bb",
+			"name": "ContractsEvent - AmuletPlaced",
+			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "AmuletPlaced"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -5803,6 +5961,18 @@
 		"toEntity": "abcdb96c31fcc9dd",
 		"fromPinName": "OnActDone",
 		"toPinName": "Start",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "6ee93e13337704c2",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": "abcde5a49d19381f",
+		"fromPinName": "OnIActorChanged",
+		"toPinName": "SetIActor",
 		"constantPinValue": {
 			"$type": "void",
 			"$val": null
