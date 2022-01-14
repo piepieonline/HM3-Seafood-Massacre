@@ -1051,13 +1051,13 @@
 		},
 		"abcdd38ec18c41ef": {
 			"parent": "abcd2a42760b27bb",
-			"name": "ContractsEvent - AmuletPickedUp",
+			"name": "ContractsEvent - AmuletPlaced",
 			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
 			"properties": {
 				"m_sName": {
 					"type": "ZString",
-					"value": "AmuletPickedUp"
+					"value": "AmuletPlaced"
 				}
 			},
 			"postInitProperties": {},
@@ -2326,8 +2326,8 @@
 							"z": -45.923432414556004
 						},
 						"position": {
-							"x": -116.00360107421875,
-							"y": 110.22041320800781,
+							"x": -115.50360107421875,
+							"y": 111.72041320800781,
 							"z": 123.05000305175781
 						}
 					}
@@ -2463,8 +2463,8 @@
 							"z": -45.923432414556004
 						},
 						"position": {
-							"x": -116.00360107421875,
-							"y": 110.22041320800781,
+							"x": -117.50360107421875,
+							"y": 110.72041320800781,
 							"z": 123.05000305175781
 						}
 					}
@@ -2489,7 +2489,7 @@
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd29a51d2fed06"
+				"onEntity": "abcd8de5cbd87793"
 			}]
 		},
 		"abcd7a37ed3bfdd6": {
@@ -3474,7 +3474,7 @@
 				},
 				"int_PiPDuriation": {
 					"type": "int32",
-					"value": 8000
+					"value": 80000
 				},
 				"m_fFovYDeg": {
 					"type": "float32",
@@ -3487,13 +3487,6 @@
 				"m_bValueusepiptimer": {
 					"type": "bool",
 					"value": true
-				},
-				"m_rHUDMessagepip": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00AADCBDFE4A0AEB",
-						"flag": "5F"
-					}
 				},
 				"m_nValuePiPPriority": {
 					"type": "int32",
@@ -3606,7 +3599,7 @@
 					"value": {
 						"x": 12,
 						"y": 6,
-						"z": 4
+						"z": 10
 					}
 				}
 			},
@@ -3689,8 +3682,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcd5ee7bb1bd496"
+				"shouldTrigger": "Fire_Shoot",
+				"onEntity": "abcd8de5cbd87793"
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
@@ -4953,8 +4946,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdb282ca1f649e": {
 			"parent": "abcd071ac30376d8",
@@ -5059,20 +5051,189 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
-		"abcd3f061716ed27": {
-			"parent": "abcd2a42760b27bb",
-			"name": "ContractsEvent - AmuletPlaced",
-			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+		"abcd8de5cbd87793": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "Act_MR_Stand_Sniper_Shoot_Fox",
+			"template": "0072DE501BD829B4",
+			"blueprint": "0055D49E4ABEC56E",
 			"properties": {
-				"m_sName": {
-					"type": "ZString",
-					"value": "AmuletPlaced"
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 100
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd771593a403ff"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcdcda5152e32a4",
+						"externalScene": null,
+						"exposedEntity": "ActPosition"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "ShotFired",
+				"shouldTrigger": "StartFire",
+				"onEntity": "abcdcda5152e32a4"
+			}, {
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd512e397b6525"
+			}]
+		},
+		"abcdcda5152e32a4": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "Setpiece_Fox_Sniper_Setup_01",
+			"template": "[assembly:/_pro/design/setpieces/unique/setpiece_fox_unique.template?/setpiece_fox_sniper_setup.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/setpieces/unique/setpiece_fox_unique.template?/setpiece_fox_sniper_setup.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 135.923432414556
+						},
+						"position": {
+							"x": -116.00360107421875,
+							"y": 110.22041320800781,
+							"z": 123
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {
+				"Target01": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd651a6bb4cd67"
+				},
+				"Target02": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd651a6bb4cd67"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				},
+				"SniperRifle_MainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "ff1648b47766e5b1",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"rNumMissesBeforeHit": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdedeb6490e165"
+				},
+				"rNumShotsBeforeCounterReset": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd301a89e47041": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "Firing Rifle",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7d36c47430a7": {
+			"parent": "abcd301a89e47041",
+			"name": "play_sfx_fox_sniper_fire",
+			"template": "[modules:/zaudioevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zaudioevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMainEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00546EF49CC05DD1",
+						"flag": "5F"
+					}
+				},
+				"m_aEmitters": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdaa12f6ab0a0e"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdaa12f6ab0a0e": {
+			"parent": "abcd301a89e47041",
+			"name": "3DAE_FakeSniperFire_Tower",
+			"template": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45.923432414556004
+						},
+						"position": {
+							"x": -116.00360107421875,
+							"y": 110.22041320800781,
+							"z": 123.05000305175781
+						}
+					}
+				},
+				"m_bUseRaycastObstruction": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdedeb6490e165": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "ShotsToMissBeforeKill",
+			"template": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nValue": {
+					"type": "int32",
+					"value": 0
 				}
 			},
 			"postInitProperties": {},
