@@ -3474,7 +3474,7 @@
 				},
 				"int_PiPDuriation": {
 					"type": "int32",
-					"value": 80000
+					"value": 1
 				},
 				"m_fFovYDeg": {
 					"type": "float32",
@@ -3486,11 +3486,15 @@
 				},
 				"m_bValueusepiptimer": {
 					"type": "bool",
-					"value": true
+					"value": false
 				},
 				"m_nValuePiPPriority": {
 					"type": "int32",
 					"value": 1000
+				},
+				"PlayOncePRDuration": {
+					"type": "bool",
+					"value": false
 				}
 			},
 			"postInitProperties": {
@@ -3718,6 +3722,10 @@
 			"events": [{
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
 				"onEntity": "abcdc38640d82521"
 			}]
 		},
