@@ -2318,7 +2318,7 @@
 				},
 				"m_aEnableConditions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6"]
+					"value": ["abcd7ddbc0fdfad6", "abcd08f3961bbdf9"]
 				},
 				"m_bTerminateOnDone": {
 					"type": "bool",
@@ -3242,7 +3242,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd207158ec2894", "abcdfe50f2bf070d"]
+					"value": ["abcd0d2f65df04d4", "abcd207158ec2894", "abcdfe50f2bf070d", "abcd08f3961bbdf9"]
 				}
 			},
 			"postInitProperties": {},
@@ -3277,7 +3277,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6", "abcd207158ec2894"]
+					"value": ["abcd7ddbc0fdfad6", "abcd207158ec2894", "abcd08f3961bbdf9"]
 				}
 			},
 			"postInitProperties": {},
@@ -5084,8 +5084,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdb12abb6df7dd": {
 			"parent": "abcd23ee0a571ff6",
@@ -5117,6 +5116,45 @@
 				"onEvent": "TimeOut",
 				"shouldTrigger": "Fire_Shoot",
 				"onEntity": "abcd8de5cbd87793"
+			}]
+		},
+		"abcd08f3961bbdf9": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "IsRifleNotMissing InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd80892d6441d2"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd80892d6441d2": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "Sniper rifle missing",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "abcdcda5152e32a4",
+						"externalScene": null,
+						"exposedEntity": "RifleMissing"
+					}]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "EndFire",
+				"onEntity": "abcdcda5152e32a4"
 			}]
 		}
 	},
