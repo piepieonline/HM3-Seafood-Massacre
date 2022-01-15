@@ -21,6 +21,9 @@
                         "Start": {
                             "AmuletPlaced": {
                                 "Transition": "Success"
+                            },
+                            "TargetsEscaped": {
+                                "Transition": "Failure"
                             }
                         }
                     }
