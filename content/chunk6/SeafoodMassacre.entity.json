@@ -3242,7 +3242,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd207158ec2894"]
+					"value": ["abcd0d2f65df04d4", "abcd207158ec2894", "abcdfe50f2bf070d"]
 				}
 			},
 			"postInitProperties": {},
@@ -5053,6 +5053,71 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdfe50f2bf070d": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "IsSniperReadyToFire ActStateCondition",
+			"template": "007E378EA87BA806",
+			"blueprint": "0018FB9506135A96",
+			"properties": {
+				"m_bIsPlaying": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIsEntering": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIsMoving": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIsIdle": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd8de5cbd87793"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcdb12abb6df7dd": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "RepeatedShots TimerConditional",
+			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nInterval": {
+					"type": "int32",
+					"value": 3500
+				},
+				"m_pCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd6e7e6390bb9"
+				},
+				"m_bRepeatWhileTrue": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bResetWhenStopped": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "TimeOut",
+				"shouldTrigger": "Fire_Shoot",
+				"onEntity": "abcd8de5cbd87793"
+			}]
 		}
 	},
 	"propertyOverrides": [{
