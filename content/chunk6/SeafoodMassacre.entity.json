@@ -5304,28 +5304,6 @@
 		}
 	}, {
 		"entities": [{
-			"ref": "3957fa286e703e5e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}],
-		"properties": {
-			"m_OutfitRepositoryID": {
-				"type": "ZGuid",
-				"value": "af2d4a61-e7e9-40ba-a614-511457e8706a"
-			}
-		}
-	}, {
-		"entities": [{
-			"ref": "f0daf0ef8645fc39",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}],
-		"properties": {
-			"m_rMainItemKey": {
-				"type": "SEntityTemplateReference",
-				"value": "abcd16911aad7908"
-			}
-		}
-	}, {
-		"entities": [{
 			"ref": "20bfda5f2ef386ab",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
