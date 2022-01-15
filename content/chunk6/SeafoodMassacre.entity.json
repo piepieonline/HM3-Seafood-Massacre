@@ -1789,7 +1789,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 174.81493419766605
+							"z": 174.81493388903368
 						},
 						"position": {
 							"x": -88.4000015258789,
@@ -1865,7 +1865,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -0.6519152429046771
+							"z": -0.6519152289641441
 						},
 						"position": {
 							"x": 0.4012663960456848,
@@ -1973,10 +1973,10 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -134.81493419766605
+							"z": -134.8149338531613
 						},
 						"position": {
-							"x": -89.7000015258789,
+							"x": -89.70000457763672,
 							"y": 63.54999923706055,
 							"z": 101
 						}
@@ -2045,7 +2045,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -0.6519152429046771
+							"z": -0.6519152289641441
 						},
 						"position": {
 							"x": 0.4012663960456848,
@@ -2153,11 +2153,11 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 133.81493419766605
+							"z": 133.81493345920273
 						},
 						"position": {
-							"x": -87.5000015258789,
-							"y": 63.64999923706055,
+							"x": -87.5,
+							"y": 63.64999771118164,
 							"z": 101
 						}
 					}
@@ -2229,7 +2229,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -0.6519152429046771
+							"z": -0.6519152289641441
 						},
 						"position": {
 							"x": 0.4012663960456848,
@@ -2314,17 +2314,20 @@
 			"properties": {
 				"m_aRoles": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0696b52e1c0c"]
+					"value": ["abcdcc455b8e4052"]
 				},
-				"m_aStartConditions": {
+				"m_aEnableConditions": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd7ddbc0fdfad6"]
+				},
+				"m_bTerminateOnDone": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd63ea14cfc68a": {
 			"parent": null,
@@ -3264,8 +3267,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9e63db315762": {
 			"parent": "abcd0886580ebb2d",
@@ -3285,10 +3287,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Activate",
 				"onEntity": "abcdc38640d82521"
-				}, {
-					"onEvent": "OnFalse",
-					"shouldTrigger": "Deactivate",
-					"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
+				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd2c62761e8677": {
@@ -3484,8 +3486,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd4189eb0dd314": {
 			"parent": "abcd0415db798b80",
@@ -4587,8 +4588,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9105b49b083c": {
 			"parent": "fffffffffffffffe",
@@ -4629,7 +4629,7 @@
 			"postInitProperties": {
 				"m_pActor": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd0696b52e1c0c"
+					"value": "abcdcc455b8e4052"
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -4646,6 +4646,10 @@
 				"onEvent": "ShotFired",
 				"shouldTrigger": "StartFire",
 				"onEntity": "abcdcda5152e32a4"
+			}, {
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Done",
+				"onEntity": "abcdf9df2e4958a9"
 			}]
 		},
 		"abcdcda5152e32a4": {
@@ -4675,29 +4679,29 @@
 				}
 			},
 			"postInitProperties": {
+				"1699999762": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdbe26a93e85ac"
+				},
+				"2257254277": {
+					"type": "float32",
+					"value": 1
+				},
+				"3258291188": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdedeb6490e165"
+				},
 				"Target01": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd651a6bb4cd67"
+					"value": null
 				},
 				"Target02": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd651a6bb4cd67"
+					"value": null
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
-				},
-				"SniperRifle_MainItemKey": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdbe26a93e85ac"
-				},
-				"rNumMissesBeforeHit": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdedeb6490e165"
-				},
-				"rNumShotsBeforeCounterReset": {
-					"type": "float32",
-					"value": 1
 				}
 			},
 			"editorOnly": false,
@@ -4836,10 +4840,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdf89705d30966": {
 			"parent": "abcddb726fef6a58",
@@ -4882,8 +4883,8 @@
 		"abcd051af883846b": {
 			"parent": "abcddb726fef6a58",
 			"name": "AmuletOnTable Prop",
-			"template": "001A7C0E4DD9F510",
-			"blueprint": "00183EC932A95C2E",
+			"template": "[assembly:/_pro/items/templates/melee/melee.template?/itemart_necklace_b.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/items/templates/melee/melee.template?/itemart_necklace_b.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -4949,8 +4950,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd573b1d00168d": {
 			"parent": "abcdba75fae49278",
@@ -4964,7 +4964,7 @@
 				},
 				"m_bTerminateOnDone": {
 					"type": "bool",
-					"value": false
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -4977,8 +4977,8 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd0696b52e1c0c": {
-			"parent": "abcdba75fae49278",
-			"name": "Sniper Role",
+			"parent": "abcd573b1d00168d",
+			"name": "Sniper Role Binos",
 			"template": "00808A03B82188F7",
 			"blueprint": "0064725514B34594",
 			"properties": {},
@@ -5009,6 +5009,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd4a2e9928ac95"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "Reset",
+				"onEntity": "abcd23ee0a571ff6"
 			}]
 		},
 		"abcdf9df2e4958a9": {
@@ -5029,7 +5033,26 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd8de5cbd87793"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "Reset",
+				"onEntity": "abcd573b1d00168d"
 			}]
+		},
+		"abcdcc455b8e4052": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "Sniper Role Rifle",
+			"template": "00808A03B82188F7",
+			"blueprint": "0064725514B34594",
+			"properties": {},
+			"postInitProperties": {
+				"m_rActorProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdba75fae49278"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -5891,18 +5914,6 @@
 		"toEntity": "abcdb96c31fcc9dd",
 		"fromPinName": "OnActDone",
 		"toPinName": "Start",
-		"constantPinValue": {
-			"$type": "void",
-			"$val": null
-		}
-	}, {
-		"fromEntity": {
-			"ref": "6ee93e13337704c2",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		},
-		"toEntity": "abcde5a49d19381f",
-		"fromPinName": "OnIActorChanged",
-		"toPinName": "SetIActor",
 		"constantPinValue": {
 			"$type": "void",
 			"$val": null
