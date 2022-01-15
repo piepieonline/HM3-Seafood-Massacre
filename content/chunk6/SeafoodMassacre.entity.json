@@ -5231,7 +5231,7 @@
 			"events": [{
 				"onEvent": "EventOccurred",
 				"shouldTrigger": "SetVisible",
-				"onEntity": "abcd2c9394f09c9d",
+				"onEntity": "abcd051af883846b",
 				"value": {
 					"type": "bool",
 					"value": false
@@ -5250,12 +5250,45 @@
 			"events": [{
 				"onEvent": "OnTrue",
 				"shouldTrigger": "SetVisible",
-				"onEntity": "abcd2c9394f09c9d",
+				"onEntity": "abcd051af883846b",
 				"value": {
 					"type": "bool",
 					"value": true
 				}
 			}]
+		},
+		"abcd051af883846b": {
+			"parent": "abcddb726fef6a58",
+			"name": "AmuletOnTable Prop",
+			"template": "001A7C0E4DD9F510",
+			"blueprint": "00183EC932A95C2E",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 2
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "ea2ff0891b62bb18",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
