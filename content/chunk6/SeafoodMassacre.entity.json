@@ -1261,9 +1261,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": -92.07119750976563,
-							"y": 63.409786224365234,
-							"z": 101.00008392333984
+							"x": 0,
+							"y": 0,
+							"z": 0
 						}
 					}
 				},
@@ -1273,7 +1273,7 @@
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
-					"value": "af2d4a61-e7e9-40ba-a614-511457e8706a"
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d35"
 				},
 				"m_eRequiredVoiceVariation": {
 					"type": "EActorVoiceVariation",
@@ -1295,7 +1295,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "fffffffffffffffe"
+					"value": "abcd3babaa763e83"
 				}
 			},
 			"editorOnly": false,
@@ -1603,9 +1603,9 @@
 		},
 		"abcd3babaa763e83": {
 			"parent": "abcdba7e01047fcf",
-			"name": "Act_MR_Guard_Stand_Rifle2",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_anxious_looking_around",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -1613,18 +1613,18 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.002979908338
+							"z": 0
 						},
 						"position": {
-							"x": -80.08000183105469,
-							"y": 25.323909759521484,
-							"z": 101.00686645507813
+							"x": -89.11,
+							"y": 70.1,
+							"z": 96.8552
 						}
 					}
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 16
+					"value": 2
 				}
 			},
 			"postInitProperties": {
@@ -1714,7 +1714,7 @@
 			"events": [{
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
-				"onEntity": "abcdda8c7c5b2a4a"
+				"onEntity": "abcd3babaa763e83"
 			}]
 		},
 		"abcd460483433912": {
