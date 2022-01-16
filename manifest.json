@@ -1,9 +1,9 @@
 {
-	"version": "0.1.0",
+	"version": "0.4.0",
 	"id": "KevinRudd.SeafoodMassacre",
-	"name": "Seafood Massacre Remake",
+	"name": "Chongqing Noodle Massacre",
 	"description": "WIP Mod recreating The Seafood Massacre from Hitman Contracts, in H3's Chongqing. Intending to have day and night variations",
-	"authors": ["Kevin Rudd"],
+	"authors": ["Kevin Rudd", "Piepieonline"],
 	"contentFolder": "content",
 	"packagedefinition": [
 		{
