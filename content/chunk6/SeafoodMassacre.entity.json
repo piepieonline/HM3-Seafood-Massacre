@@ -3075,8 +3075,12 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "Fire_Shoot",
-				"onEntity": "abcd8de5cbd87793"
+				"shouldTrigger": "In",
+				"onEntity": "abcda9c79f4ab253"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcdeedc06b4cc58"
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
@@ -3093,30 +3097,6 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
-		},
-		"abcd9e63db315762": {
-			"parent": "abcd0886580ebb2d",
-			"name": "TargetWatchZone AllConditionsMet",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6", "abcd207158ec2894", "abcd08f3961bbdf9"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Deactivate",
-				"onEntity": "abcdc38640d82521"
-			}]
 		},
 		"abcd2c62761e8677": {
 			"parent": "abcd9df9701a171c",
@@ -4890,7 +4870,7 @@
 		},
 		"abcdcc455b8e4052": {
 			"parent": "abcd23ee0a571ff6",
-			"name": "Sniper Role Rifle",
+			"name": "Sniper Rifle Role",
 			"template": "00808A03B82188F7",
 			"blueprint": "0064725514B34594",
 			"properties": {},
@@ -4904,7 +4884,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdfe50f2bf070d": {
-			"parent": "abcd23ee0a571ff6",
+			"parent": "abcd39ae6d69ed26",
 			"name": "IsSniperReadyToFire ActStateCondition",
 			"template": "007E378EA87BA806",
 			"blueprint": "0018FB9506135A96",
@@ -4936,7 +4916,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdb12abb6df7dd": {
-			"parent": "abcd23ee0a571ff6",
+			"parent": "abcd5c7cebfb354c",
 			"name": "RepeatedShots TimerConditional",
 			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
@@ -4947,7 +4927,7 @@
 				},
 				"m_pCondition": {
 					"type": "SEntityTemplateReference",
-					"value": "abcdd6e7e6390bb9"
+					"value": "abcdeedc06b4cc58"
 				},
 				"m_bRepeatWhileTrue": {
 					"type": "bool",
@@ -4968,7 +4948,7 @@
 			}]
 		},
 		"abcd08f3961bbdf9": {
-			"parent": "abcd23ee0a571ff6",
+			"parent": "abcd39ae6d69ed26",
 			"name": "IsRifleNotMissing InvertedCondition",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
@@ -4983,7 +4963,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd80892d6441d2": {
-			"parent": "abcd23ee0a571ff6",
+			"parent": "abcd39ae6d69ed26",
 			"name": "Sniper rifle missing",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
@@ -5575,6 +5555,163 @@
 				"m_RepositoryId": {
 					"type": "ZGuid",
 					"value": "49765e76-dea7-4ad4-b502-2bad7727a15f"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdeedc06b4cc58": {
+			"parent": "abcd0886580ebb2d",
+			"name": "TargetKillZone IsFiring VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5c7cebfb354c": {
+			"parent": "abcd0886580ebb2d",
+			"name": "ShotTiming",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcda9c79f4ab253": {
+			"parent": "abcd5c7cebfb354c",
+			"name": "InitialDelay",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 2000
+				},
+				"m_bResetWhenStopped": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "Fire_Shoot",
+				"onEntity": "abcd8de5cbd87793"
+			}, {
+				"onEvent": "Out",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcdeedc06b4cc58"
+			}]
+		},
+		"abcd39ae6d69ed26": {
+			"parent": "abcd0886580ebb2d",
+			"name": "SniperReadyToFire",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcde38df2a00e42": {
+			"parent": "abcd0886580ebb2d",
+			"name": "WatchZoneBathroomHidden VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -83.5,
+							"y": 41.24,
+							"z": 102.5
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 6,
+						"y": 6,
+						"z": 5
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd495c26c61f05": {
+			"parent": "abcd0886580ebb2d",
+			"name": "WatchZoneBathroomHidden VolumeTriggerCharacter",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde38df2a00e42"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc73c5e590871": {
+			"parent": "abcd0886580ebb2d",
+			"name": "TargetWatchZone AllConditionsMet",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7ddbc0fdfad6", "abcd207158ec2894", "abcd08f3961bbdf9", "abcddbb8e1c0e1ba"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
+				"onEntity": "abcdc38640d82521"
+			}]
+		},
+		"abcddbb8e1c0e1ba": {
+			"parent": "abcd0886580ebb2d",
+			"name": "WatchZoneBathroomHidden InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd495c26c61f05"
 				}
 			},
 			"postInitProperties": {},
