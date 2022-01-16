@@ -4027,6 +4027,10 @@
 				"m_bNeverSpectate": {
 					"type": "bool",
 					"value": true
+				},
+				"m_bIgnoreDeadBodies": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -4055,6 +4059,10 @@
 				"m_bNeverSpectate": {
 					"type": "bool",
 					"value": true
+				},
+				"m_bIgnoreDeadBodies": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -4081,6 +4089,10 @@
 					"value": true
 				},
 				"m_bNeverSpectate": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreDeadBodies": {
 					"type": "bool",
 					"value": true
 				}
