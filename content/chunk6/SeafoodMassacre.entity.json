@@ -6747,6 +6747,26 @@
 	}, {
 		"ref": "36120e6171d5561",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "1f3ae073665bc480",
+		"_comment": "Suyin Shen - Civ walks into restaurant",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "1ed6c015b8265b42",
+		"_comment": "Dirty Dishes on Meeting table",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a2f44357583b0e4a",
+		"_comment": "Dirty Dishes on Meeting table",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "d5eaa65f533033a9",
+		"_comment": "Dirty Dishes on Meeting table",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "8d6d0876a6b0bf92",
+		"_comment": "bowl on Meeting table",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": {
