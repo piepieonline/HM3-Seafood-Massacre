@@ -11,7 +11,6 @@ Notes
 * Sniper
   * Convert to a new entity
   * Needs to fire in open combat
-  * Doesn't stop firing?!?
 * Panic needs to be if they get to a guard, not just out of zone? (...or like PZ? Spreads to anyone they contact? But contacts aren't valid targets - just can't leave with them alive. Force loss of SA and cleanup)
 * Lock the gate to the back of the restaurant?
 
