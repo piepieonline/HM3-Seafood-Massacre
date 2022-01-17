@@ -3057,7 +3057,12 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnFalse",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcd4ea84af5102a"
+			}]
 		},
 		"abcdd6e7e6390bb9": {
 			"parent": "abcd0886580ebb2d",
@@ -3067,7 +3072,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd207158ec2894", "abcd24e4e2668cdb", "abcd08f3961bbdf9"]
+					"value": ["abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd24e4e2668cdb", "abcd08f3961bbdf9"]
 				}
 			},
 			"postInitProperties": {},
@@ -4503,6 +4508,10 @@
 				"onEvent": "ShotFired",
 				"shouldTrigger": "Execute",
 				"onEntity": "abcd298e106778c9"
+			}, {
+				"onEvent": "OnActInterrupted",
+				"shouldTrigger": "Done",
+				"onEntity": "abcdf9df2e4958a9"
 			}]
 		},
 		"abcdcda5152e32a4": {
@@ -5705,7 +5714,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6", "abcd207158ec2894", "abcd08f3961bbdf9", "abcddbb8e1c0e1ba"]
+					"value": ["abcd7ddbc0fdfad6", "abcd6b1e3aeb1751", "abcd08f3961bbdf9", "abcddbb8e1c0e1ba"]
 				}
 			},
 			"postInitProperties": {},
@@ -5878,6 +5887,212 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd29d4b41732ba": {
+			"parent": "abcd9df9701a171c",
+			"name": "IllegalAction",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd14ecb738d511": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_IllegalAction",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_IllegalAction"
+				},
+				"m_rEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd24880992e43f"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcd4ea84af5102a": {
+			"parent": "abcd29d4b41732ba",
+			"name": "VBB HM has committed illegal action inside killzone",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd6b1e3aeb1751": {
+			"parent": "abcd9df9701a171c",
+			"name": "Visible illegal weapons or illegal action VBO",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd4ea84af5102a", "abcd207158ec2894"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcd7413d27a50bb": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_IllegalActionSevere",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_IllegalActionSevere"
+				},
+				"m_rEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd24880992e43f"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcdd34deb7e2abf": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_IllegalBehavior",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_IllegalBehavior"
+				},
+				"m_rEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd24880992e43f"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcdd63ce459a4f3": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_IllegalAgility",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_IllegalAgility"
+				},
+				"m_rEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd24880992e43f"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcd037a110fa5f2": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_PacifyingWithStrangle",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_PacifyingWithStrangle"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcd1970211d7505": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_KillingWithFiberwire",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_KillingWithFiberwire"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
+		},
+		"abcda0128609f0ca": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_PacifyingWithKnockDownThrow",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_PacifyingWithKnockDownThrow"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd4ea84af5102a"
+			}]
 		}
 	},
 	"propertyOverrides": [{
