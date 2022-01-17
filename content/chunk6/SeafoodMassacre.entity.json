@@ -3067,7 +3067,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd207158ec2894", "abcdfe50f2bf070d", "abcd08f3961bbdf9"]
+					"value": ["abcd0d2f65df04d4", "abcd207158ec2894", "abcd24e4e2668cdb", "abcd08f3961bbdf9"]
 				}
 			},
 			"postInitProperties": {},
@@ -3075,12 +3075,20 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "In",
+				"shouldTrigger": "Start",
+				"onEntity": "abcda9c79f4ab253"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Stop",
 				"onEntity": "abcda9c79f4ab253"
 			}, {
 				"onEvent": "OnFalse",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcdeedc06b4cc58"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "EndFire",
+				"onEntity": "abcdcda5152e32a4"
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
@@ -4996,11 +5004,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "EndFire",
-				"onEntity": "abcdcda5152e32a4"
-			}]
+			"events": []
 		},
 		"abcd23f129e499b4": {
 			"parent": "abcd1a593e6d97a0",
@@ -5600,27 +5604,31 @@
 		"abcda9c79f4ab253": {
 			"parent": "abcd5c7cebfb354c",
 			"name": "InitialDelay",
-			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/logic.template?/timer.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timer.entitytemplate].pc_entityblueprint",
 			"properties": {
-				"Delay time (ms)": {
+				"m_bEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_nInterval": {
 					"type": "int32",
 					"value": 2000
-				},
-				"m_bResetWhenStopped": {
-					"type": "bool",
-					"value": true
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "Out",
+				"onEvent": "TimeOut",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcda9c79f4ab253"
+			}, {
+				"onEvent": "TimeOut",
 				"shouldTrigger": "Fire_Shoot",
 				"onEntity": "abcd8de5cbd87793"
 			}, {
-				"onEvent": "Out",
+				"onEvent": "TimeOut",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcdeedc06b4cc58"
 			}]
@@ -5846,6 +5854,25 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd24e4e2668cdb": {
+			"parent": "abcd39ae6d69ed26",
+			"name": "Sniper Present",
+			"template": "006D016120D6915A",
+			"blueprint": "00296868A3C1E8CD",
+			"properties": {
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd8de5cbd87793"
+				},
+				"m_fConditionValidDistance": {
+					"type": "float32",
+					"value": 2
 				}
 			},
 			"postInitProperties": {},
