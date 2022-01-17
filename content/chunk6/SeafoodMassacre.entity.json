@@ -1616,9 +1616,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": -89.11,
-							"y": 70.1,
-							"z": 96.8552
+							"x": -89.11000061035156,
+							"y": 70.0999984741211,
+							"z": 96.8552017211914
 						}
 					}
 				},
@@ -4491,6 +4491,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Done",
 				"onEntity": "abcdf9df2e4958a9"
+			}, {
+				"onEvent": "ShotFired",
+				"shouldTrigger": "Execute",
+				"onEntity": "abcd298e106778c9"
 			}]
 		},
 		"abcdcda5152e32a4": {
@@ -5591,10 +5595,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcda9c79f4ab253": {
 			"parent": "abcd5c7cebfb354c",
@@ -5632,10 +5633,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde38df2a00e42": {
 			"parent": "abcd0886580ebb2d",
@@ -5653,7 +5651,7 @@
 						},
 						"position": {
 							"x": -83.5,
-							"y": 41.24,
+							"y": 41.2400016784668,
 							"z": 102.5
 						}
 					}
@@ -5724,6 +5722,130 @@
 				"m_rCondition": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd495c26c61f05"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd20d20ce08aca": {
+			"parent": "abcd61dc0a9b90d2",
+			"name": "AISoundEventDescriptor",
+			"template": "[modules:/zaisoundeventdescriptor.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundeventdescriptor.class].pc_entityblueprint",
+			"properties": {
+				"m_eType": {
+					"type": "EAIEventType",
+					"value": "AIET_SoundGunShot"
+				},
+				"m_fLoudness": {
+					"type": "float32",
+					"value": 1
+				},
+				"m_fRange": {
+					"type": "float32",
+					"value": 20
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OutputEvent",
+				"shouldTrigger": "AddEvent",
+				"onEntity": "abcd298e106778c9"
+			}]
+		},
+		"abcd61dc0a9b90d2": {
+			"parent": "abcdb4b066e27787",
+			"name": "AISoundEvent",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd9953687ca6ae": {
+			"parent": "abcd61dc0a9b90d2",
+			"name": "AISoundEventProcessor",
+			"template": "[modules:/zaisoundeventprocessor.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundeventprocessor.class].pc_entityblueprint",
+			"properties": {
+				"m_rObjectEmittingProxy": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1f407f4cb6ed"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Run",
+				"shouldTrigger": "RequestEvent",
+				"onEntity": "abcd20d20ce08aca"
+			}]
+		},
+		"abcd1f407f4cb6ed": {
+			"parent": "abcd61dc0a9b90d2",
+			"name": "EmittingObject",
+			"template": "[modules:/zaisoundeventobjectproxy.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundeventobjectproxy.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd298e106778c9": {
+			"parent": "abcd61dc0a9b90d2",
+			"name": "AISoundEventProducer",
+			"template": "[modules:/zaisoundeventproducer.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundeventproducer.class].pc_entityblueprint",
+			"properties": {
+				"m_rEventProcessor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9953687ca6ae"
+				},
+				"m_rEventLocation": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd5410da627874"
+				},
+				"m_rEventSender": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd5410da627874"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5410da627874": {
+			"parent": "abcd61dc0a9b90d2",
+			"name": "FakeImpactLocation",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -89.07119750976563,
+							"y": 63.409786224365234,
+							"z": 101.00008392333984
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
 				}
 			},
 			"postInitProperties": {},
