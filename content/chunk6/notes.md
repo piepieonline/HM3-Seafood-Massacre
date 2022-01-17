@@ -1,8 +1,7 @@
 Notes
 * Food:
   * Dropping the item gets weird... Item goes to the sky
-  * Sometimes item isn't chained!? (Investigate signalpipes? Might be because of AIModifier not working)
-  * AIModifier is also not working
+  * Sometimes item isn't chained!? (Investigate signalpipes?)
   * need to stop them eating if the bowl is destroyed
   * Add chopsticks
   * Remove chef checking bowl action
