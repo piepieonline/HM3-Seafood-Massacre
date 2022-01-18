@@ -6260,7 +6260,7 @@
 			"properties": {
 				"m_bValue": {
 					"type": "bool",
-					"value": true
+					"value": false
 				}
 			},
 			"postInitProperties": {},
@@ -6409,9 +6409,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": -93.6,
-							"y": 71.453,
-							"z": 96.85
+							"x": -93.5999984741211,
+							"y": 71.4530029296875,
+							"z": 96.8499984741211
 						}
 					}
 				},
