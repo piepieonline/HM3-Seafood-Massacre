@@ -3056,7 +3056,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd95b1168e6d39"]
+					"value": ["abcd95b1168e6d39", "abcd1936d6405a69"]
 				}
 			},
 			"postInitProperties": {},
@@ -3108,7 +3108,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcda68da210bdc5"]
+					"value": ["abcda68da210bdc5", "abcd1936d6405a69"]
 				}
 			},
 			"postInitProperties": {},
@@ -6389,6 +6389,45 @@
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcdd888ea8ddf07"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1936d6405a69": {
+			"parent": "abcd0886580ebb2d",
+			"name": "TargetKillZone Outside Building VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -93.6,
+							"y": 71.453,
+							"z": 96.85
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 26,
+						"y": 10,
+						"z": 6
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
 				}
 			},
 			"editorOnly": false,
