@@ -868,6 +868,21 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdae74a7ca5bef": {
+			"parent": "28f2abc8f9824aec",
+			"name": "Prof_RedDragon",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_wet_unique_hush.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_wet_unique_hush.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["28f2abc8f9824aec"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [],
