@@ -3371,12 +3371,12 @@
 				"onEntity": "abcdd3ac79790455"
 			}, {
 				"onEvent": "ItemReady",
-				"shouldTrigger": "Transfer",
-				"onEntity": "abcdf973599aae35"
-			}, {
-				"onEvent": "ItemReady",
 				"shouldTrigger": "AttachLeftHand",
 				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "GetItem",
+				"onEntity": "abcd7ae3a95e98bd"
 			}]
 		},
 		"abcdf85ce7eb28b8": {
@@ -3484,7 +3484,7 @@
 			}, {
 				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "SpawnItem",
-				"onEntity": "abcd7ae3a95e98bd"
+				"onEntity": "abcde48ea4b01dbe"
 			}, {
 				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
@@ -3779,7 +3779,12 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnItemSet",
+				"shouldTrigger": "Transfer",
+				"onEntity": "abcdf973599aae35"
+			}]
 		},
 		"abcd0cdc95f34577": {
 			"parent": "abcd25ee54729b95",
@@ -4769,6 +4774,10 @@
 						"ref": "ea2ff0891b62bb18",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
 				}
 			},
 			"postInitProperties": {},
@@ -6217,6 +6226,84 @@
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcd5a49108a3813"
 			}]
+		},
+		"abcde48ea4b01dbe": {
+			"parent": "abcd4189eb0dd314",
+			"name": "PlateItemSpawner2",
+			"template": "[modules:/zitemspawner.class].pc_entitytype",
+			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -89.14022064208984,
+							"y": 63.7731819152832,
+							"z": 101.03020477294922
+						}
+					}
+				},
+				"m_bSpawnOnStart": {
+					"type": "bool",
+					"value": false
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				},
+				"m_rMainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "7c51c282481f8b73",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Item",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "Item",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcdd3ac79790455"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "AttachLeftHand",
+				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "GetItem",
+				"onEntity": "abcde48ea4b01dbe"
+			}]
+		},
+		"abcd746281d5855c": {
+			"parent": "abcd5dfffe265eba",
+			"name": "keyword_state_poisoned",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
