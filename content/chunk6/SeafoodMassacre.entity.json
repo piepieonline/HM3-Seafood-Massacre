@@ -3061,7 +3061,7 @@
 			"events": [{
 				"onEvent": "OnFalse",
 				"shouldTrigger": "SetFalse",
-				"onEntity": "abcd4ea84af5102a"
+				"onEntity": "abcd5a49108a3813"
 			}]
 		},
 		"abcdd6e7e6390bb9": {
@@ -3371,12 +3371,12 @@
 				"onEntity": "abcdd3ac79790455"
 			}, {
 				"onEvent": "ItemReady",
-				"shouldTrigger": "Transfer",
-				"onEntity": "abcdf973599aae35"
-			}, {
-				"onEvent": "ItemReady",
 				"shouldTrigger": "AttachLeftHand",
 				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "GetItem",
+				"onEntity": "abcd7ae3a95e98bd"
 			}]
 		},
 		"abcdf85ce7eb28b8": {
@@ -3484,7 +3484,7 @@
 			}, {
 				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "SpawnItem",
-				"onEntity": "abcd7ae3a95e98bd"
+				"onEntity": "abcde48ea4b01dbe"
 			}, {
 				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
@@ -3779,7 +3779,12 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnItemSet",
+				"shouldTrigger": "Transfer",
+				"onEntity": "abcdf973599aae35"
+			}]
 		},
 		"abcd0cdc95f34577": {
 			"parent": "abcd25ee54729b95",
@@ -4555,11 +4560,11 @@
 				},
 				"Target01": {
 					"type": "SEntityTemplateReference",
-					"value": null
+					"value": "abcd397e1f67b1f6"
 				},
 				"Target02": {
 					"type": "SEntityTemplateReference",
-					"value": null
+					"value": "abcd397e1f67b1f6"
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -4769,6 +4774,10 @@
 						"ref": "ea2ff0891b62bb18",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
 				}
 			},
 			"postInitProperties": {},
@@ -5012,8 +5021,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd23f129e499b4": {
 			"parent": "abcd1a593e6d97a0",
@@ -5781,10 +5789,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9953687ca6ae": {
 			"parent": "abcd61dc0a9b90d2",
@@ -5896,10 +5901,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd14ecb738d511": {
 			"parent": "abcd29d4b41732ba",
@@ -5921,22 +5923,9 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
-		},
-		"abcd4ea84af5102a": {
-			"parent": "abcd29d4b41732ba",
-			"name": "VBB HM has committed illegal action inside killzone",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
 		},
 		"abcd6b1e3aeb1751": {
 			"parent": "abcd9df9701a171c",
@@ -5946,7 +5935,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd4ea84af5102a", "abcd207158ec2894"]
+					"value": ["abcd5a49108a3813", "abcd207158ec2894"]
 				},
 				"m_eEvaluation": {
 					"type": "ZValueBool_Operation_Signal.EEvaluationType",
@@ -5955,12 +5944,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
-			}]
+			"platformSpecificPropertyValues": []
 		},
 		"abcd7413d27a50bb": {
 			"parent": "abcd29d4b41732ba",
@@ -5982,8 +5966,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
 		},
 		"abcdd34deb7e2abf": {
@@ -6006,8 +5990,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
 		},
 		"abcdd63ce459a4f3": {
@@ -6030,8 +6014,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
 		},
 		"abcd037a110fa5f2": {
@@ -6050,8 +6034,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
 		},
 		"abcd1970211d7505": {
@@ -6070,8 +6054,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
 		},
 		"abcda0128609f0ca": {
@@ -6090,8 +6074,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd4ea84af5102a"
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
 			}]
 		},
 		"abcd1936d6405a69": {
@@ -6109,9 +6093,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": -93.6,
-							"y": 71.453,
-							"z": 96.85
+							"x": -93.5999984741211,
+							"y": 71.4530029296875,
+							"z": 96.8499984741211
 						}
 					}
 				},
@@ -6128,6 +6112,194 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd64bb20191955": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "SniperAim",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdca6cce50c92b": {
+			"parent": "abcd64bb20191955",
+			"name": "HM ActorBoneAttachEntity",
+			"template": "[modules:/zactorboneattachentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorboneattachentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bStartAttached": {
+					"type": "bool",
+					"value": true
+				},
+				"m_BoneName": {
+					"type": "ZString",
+					"value": "head"
+				},
+				"m_linkedEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+			},
+				"m_spatial": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd397e1f67b1f6"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd397e1f67b1f6": {
+			"parent": "abcd64bb20191955",
+			"name": "HM as Target Spatial",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd5a49108a3813": {
+			"parent": "abcd29d4b41732ba",
+			"name": "VBB HM has committed illegal action inside killzone",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd57c38e9941c": {
+			"parent": "abcd29d4b41732ba",
+			"name": "Inside zone poll",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0d2f65df04d4"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "PollTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd5a49108a3813"
+			}, {
+				"onEvent": "PollFalse",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcd5a49108a3813"
+			}]
+		},
+		"abcde48ea4b01dbe": {
+			"parent": "abcd4189eb0dd314",
+			"name": "PlateItemSpawner2",
+			"template": "[modules:/zitemspawner.class].pc_entitytype",
+			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -89.14022064208984,
+							"y": 63.7731819152832,
+							"z": 101.03020477294922
+						}
+					}
+				},
+				"m_bSpawnOnStart": {
+					"type": "bool",
+					"value": false
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				},
+				"m_rMainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "7c51c282481f8b73",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Item",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "Item",
+				"shouldTrigger": "SetItem",
+				"onEntity": "abcdd3ac79790455"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "AttachLeftHand",
+				"onEntity": "abcdf85ce7eb28b8"
+			}, {
+				"onEvent": "ItemReady",
+				"shouldTrigger": "GetItem",
+				"onEntity": "abcde48ea4b01dbe"
+			}]
+		},
+		"abcd746281d5855c": {
+			"parent": "abcd5dfffe265eba",
+			"name": "keyword_state_poisoned",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_poisoned.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb5c5b0a38c91"]
 				}
 			},
 			"editorOnly": false,
@@ -6186,7 +6358,21 @@
 					"ref": "186c08c3a1cc494",
 					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 				}, {
+					"ref": "6b0f5cf589916271",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
+		"entities": [{
 					"ref": "d8f9ca2e2274a220",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_aValues": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "3b65c5217f607f89",
 					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 				}]
 			}
@@ -7073,6 +7259,21 @@
 			"$type": "void",
 			"$val": null
 		}
+	}, {
+		"fromEntity": {
+			"ref": "2ef698eb17c792be",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "e7b41492ec210647",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActTimeout",
+		"toPinName": "Start",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
 	}],
 	"pinConnectionOverrideDeletes": [{
 		"fromEntity": {
@@ -7099,6 +7300,21 @@
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActDone",
+		"toPinName": "Start",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "2ef698eb17c792be",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "1348b55a71e1308e",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActTimeout",
 		"toPinName": "Start",
 		"constantPinValue": {
 			"$type": "void",
