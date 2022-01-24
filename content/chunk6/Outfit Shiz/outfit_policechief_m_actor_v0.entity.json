@@ -288,7 +288,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["42d22acc5cf0f173", "a27cd6c3f8371168", "503782578736c847", "3cd1dc5ac974984e", "26ef067e52b2b780", "c7a381f3ea2f679a", "288340fcc105e760", "fb0461f252d5c625"]
+					"value": ["abcd17057b28101a", "42d22acc5cf0f173", "a27cd6c3f8371168", "503782578736c847", "3cd1dc5ac974984e", "26ef067e52b2b780", "c7a381f3ea2f679a", "288340fcc105e760", "fb0461f252d5c625"]
 				}
 			},
 			"editorOnly": false,
@@ -731,6 +731,218 @@
 				}
 			},
 			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd17057b28101a": {
+			"parent": "83bbed82c7b0e5a5",
+			"name": "Mesh_Moustache",
+			"template": "[modules:/zbodypartentity.class].pc_entitytype",
+			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/assets/individuals/llama/donyates/geometry/male_reg_donyates.wl2?/moustache.weightedprim](bodypart).pc_weightedprim",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd47dbeca20955": {
+			"parent": "4478144f74a4e04c",
+			"name": "moustache",
+			"template": "[assembly:/_pro/characters/assets/individuals/llama/donyates/materials/moustache.mi].pc_entitytype",
+			"blueprint": "[assembly:/_pro/characters/assets/individuals/llama/donyates/materials/moustache.mi].pc_entityblueprint",
+			"properties": {
+				"683226513": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"1737952988": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 1.0752429967198847e-7
+						},
+						"position": {
+							"x": 2.0713168957797734e-09,
+							"y": -7.157773751487184e-08,
+							"z": 0
+						}
+					}
+				},
+				"ConstantColorRGB_02_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#573311"
+				},
+				"DiffuseColorB": {
+					"type": "SColorRGB",
+					"value": "#c49578"
+				},
+				"Texture2D_04": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0006237DF989C3F0",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_04_enab": {
+					"type": "bool",
+					"value": true
+				},
+				"ConstantColorRGB_05_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_05_Value": {
+					"type": "SColorRGB",
+					"value": "#b2a1af"
+				},
+				"ConstantVector1D_05_Value": {
+					"type": "float32",
+					"value": 0.64999997615814209
+				},
+				"ConstantVector1D_09_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantVector1D_09_Value": {
+					"type": "float32",
+					"value": 0.070000000298023224
+				},
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "002763A321E5C8BE",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_01_enab": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {
+				"Clients": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd17057b28101a"]
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "83bbed82c7b0e5a5"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc10f678d1d6a": {
+			"parent": "4478144f74a4e04c",
+			"name": "base_hair_vertexcolor",
+			"template": "000BF013336584CF",
+			"blueprint": "00757A40547A20B1",
+			"properties": {
+				"683226513": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"1737952988": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"ConstantColorRGB_02_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#3d241f"
+				},
+				"DiffuseColorB": {
+					"type": "SColorRGB",
+					"value": "#9e6f5d"
+				},
+				"Texture2D_04": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0006237DF989C3F0",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_04_enab": {
+					"type": "bool",
+					"value": true
+				},
+				"ConstantColorRGB_05_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_05_Value": {
+					"type": "SColorRGB",
+					"value": "#b2a1af"
+				},
+				"ConstantVector1D_05_Value": {
+					"type": "float32",
+					"value": 0.64999997615814209
+				},
+				"ConstantVector1D_09_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantVector1D_09_Value": {
+					"type": "float32",
+					"value": 0.070000000298023224
+				},
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0030B823F2B4F0F9",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_01_enab": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {
+				"Clients": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd17057b28101a"]
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "83bbed82c7b0e5a5"
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
