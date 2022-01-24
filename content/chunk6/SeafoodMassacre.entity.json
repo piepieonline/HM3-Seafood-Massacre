@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["d40a022a606b4f72", "abcdd697b047d2b3"]
+					"entities": ["d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -1025,62 +1025,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdb3cc0a0ba9f1": {
-			"parent": "abcd2a42760b27bb",
-			"name": "play_sfx_pos_gluttony_pig_statue_soup_splash",
-			"template": "[modules:/zaudioevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zaudioevententity.class].pc_entityblueprint",
-			"properties": {
-				"m_pMainEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00337A19CFE1A6DB",
-						"flag": "5F"
-					}
-				},
-				"m_pEmitter": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdd697b047d2b3"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdd697b047d2b3": {
-			"parent": "abcd2a42760b27bb",
-			"name": "3DAE_Pig_Statue_Soup",
-			"template": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": -89.14022064208984,
-							"y": 63.7731819152832,
-							"z": 102.7302017211914
-						}
-					}
-				},
-				"m_bUseRaycastObstruction": {
-					"type": "bool",
-					"value": false
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "fffffffffffffffe"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd673e1641c0c9": {
 			"parent": "abcd2a42760b27bb",
 			"name": "Place Amulet TableDirect",
@@ -1140,10 +1084,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnDocumentsPlaced",
-				"shouldTrigger": "Send",
-				"onEntity": "abcdb3cc0a0ba9f1"
-			}, {
 				"onEvent": "OnDocumentsPlaced",
 				"shouldTrigger": "Trigger",
 				"onEntity": "abcdd38ec18c41ef"
@@ -1328,7 +1268,7 @@
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
-					"value": "af2d4a61-e7e9-40ba-a614-511457e8706a"
+					"value": "3380addd-e32a-4d8d-b7b3-319d769e0b57"
 				},
 				"m_eRequiredVoiceVariation": {
 					"type": "EActorVoiceVariation",
@@ -2209,25 +2149,6 @@
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd556156557816": {
-			"parent": null,
-			"name": "HKC_Meeting",
-			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rRequirements": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd3283846a3f03"
-				},
-				"m_bUseInventory": {
-					"type": "bool",
-					"value": true
-				}
-			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -6150,7 +6071,7 @@
 						"ref": "11b420629d3ee72e",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
-			},
+				},
 				"m_spatial": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd397e1f67b1f6"
@@ -6304,6 +6225,98 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdc8b5984230b7": {
+			"parent": "fffffffffffffffe",
+			"name": "Setpieces",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdd55b94d97d3e": {
+			"parent": "abcdc8b5984230b7",
+			"name": "Cameras",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd54bfdc81b274": {
+			"parent": "abcdd55b94d97d3e",
+			"name": "SetPiece_Surveillance_Camera_1TEST",
+			"template": "[assembly:/_pro/design/setpieces/setpiece_surveilliance.template?/setpiece_surveillance_camera_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/setpieces/setpiece_surveilliance.template?/setpiece_surveillance_camera_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -180
+						},
+						"position": {
+							"x": -91.00850677490234,
+							"y": 42.39142990112305,
+							"z": 102
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"DiffusePower": {
+					"type": "float32",
+					"value": 2000
+				},
+				"RotationOffset": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": -20,
+							"z": 30
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_bCastShadows": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb3653d0e75cf": {
+			"parent": "#",
+			"name": "Might be able to delete this stuff",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
@@ -6365,7 +6378,7 @@
 		}
 	}, {
 		"entities": [{
-					"ref": "d8f9ca2e2274a220",
+			"ref": "d8f9ca2e2274a220",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -7192,8 +7205,8 @@
 		"_comment": "Suyin Shen - Civ walks into restaurant",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"ref": "1ed6c015b8265b42",
-		"_comment": "Dirty Dishes on Meeting table",
+		"ref": "8198305d1c82d7c2",
+		"_comment": "Dirty Bowl on Meeting table",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
 		"ref": "a2f44357583b0e4a",
