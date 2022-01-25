@@ -1624,6 +1624,14 @@
 					"type": "SEntityTemplateReference",
 					"value": "abcd460483433912"
 				},
+				"AccessoryItem_Chopsticks_A": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd7091d597d78a"
+				},
+				"AccessoryItem_Chopsticks_B": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdf34ce009566a"
+				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
@@ -1803,6 +1811,14 @@
 				"m_rChair": {
 					"type": "SEntityTemplateReference",
 					"value": "abcdacd6f2f635ff"
+				},
+				"AccessoryItem_Chopsticks_A": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9231f051c0c2"
+				},
+				"AccessoryItem_Chopsticks_B": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd39e22d5f3e74"
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -1987,6 +2003,14 @@
 				"m_rChair": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd96b8b43349bd"
+				},
+				"AccessoryItem_Chopsticks_A": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a63d9d378ae"
+				},
+				"AccessoryItem_Chopsticks_B": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd7cd7c09e2f12"
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -3032,7 +3056,7 @@
 		},
 		"abcd857e0f74e7c1": {
 			"parent": "abcd81c826dc03f3",
-			"name": "Blue Sitting and Ready to eat",
+			"name": "Blue Sitting and Ready to eat VBC",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -3051,13 +3075,13 @@
 		},
 		"abcd5a31f14fb148": {
 			"parent": "abcd81c826dc03f3",
-			"name": "Blue Start Eating when true",
+			"name": "Blue Start Eating when true VBO",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe"]
+					"value": ["abcd857e0f74e7c1", "abcd24ceccc3b3fe", "abcd1b5d549e83bd"]
 				}
 			},
 			"postInitProperties": {},
@@ -6271,6 +6295,207 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1b5d549e83bd": {
+			"parent": "abcd81c826dc03f3",
+			"name": "Blue Bowl Intact VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9231f051c0c2": {
+			"parent": "abcd81c826dc03f3",
+			"name": "AccessoryItem_Chopsticks_A",
+			"template": "00DAF0B183032118",
+			"blueprint": "004B4BE2CD463A4E",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -53.50216216628199
+						},
+						"position": {
+							"x": 0.2002152055501938,
+							"y": -1.1957019567489624,
+							"z": 0.7483978271484375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd81c826dc03f3"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd39e22d5f3e74": {
+			"parent": "abcd81c826dc03f3",
+			"name": "AccessoryItem_Chopsticks_B",
+			"template": "00D94F077CA71430",
+			"blueprint": "00C2EFBB04C7C83D",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -43.54362913171307
+						},
+						"position": {
+							"x": 0.18684610724449158,
+							"y": -1.2121820449829102,
+							"z": 0.7483978271484375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd81c826dc03f3"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7091d597d78a": {
+			"parent": "abcdda8c7c5b2a4a",
+			"name": "AccessoryItem_Chopsticks_A",
+			"template": "00DAF0B183032118",
+			"blueprint": "004B4BE2CD463A4E",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -53.50216216628199
+						},
+						"position": {
+							"x": 0.2002152055501938,
+							"y": -1.1957019567489624,
+							"z": 0.7483978271484375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdda8c7c5b2a4a"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf34ce009566a": {
+			"parent": "abcdda8c7c5b2a4a",
+			"name": "AccessoryItem_Chopsticks_B",
+			"template": "00D94F077CA71430",
+			"blueprint": "00C2EFBB04C7C83D",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -43.54362913171307
+						},
+						"position": {
+							"x": 0.18684610724449158,
+							"y": -1.2121820449829102,
+							"z": 0.7483978271484375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdda8c7c5b2a4a"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7cd7c09e2f12": {
+			"parent": "abcd2d00fce5938a",
+			"name": "AccessoryItem_Chopsticks_B",
+			"template": "00D94F077CA71430",
+			"blueprint": "00C2EFBB04C7C83D",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -43.54362913171307
+						},
+						"position": {
+							"x": 0.18684610724449158,
+							"y": -1.2121820449829102,
+							"z": 0.7483978271484375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2d00fce5938a"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9a63d9d378ae": {
+			"parent": "abcd2d00fce5938a",
+			"name": "AccessoryItem_Chopsticks_A",
+			"template": "00DAF0B183032118",
+			"blueprint": "004B4BE2CD463A4E",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -53.50216216628199
+						},
+						"position": {
+							"x": 0.2002152055501938,
+							"y": -1.1957019567489624,
+							"z": 0.7483978271484375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2d00fce5938a"
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
