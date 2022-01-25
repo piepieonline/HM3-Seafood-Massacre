@@ -7401,6 +7401,350 @@
 		"ref": "8d6d0876a6b0bf92",
 		"_comment": "bowl on Meeting table",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "b4f0676d7f99568a",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_03"
+	},
+	{
+		"ref": "6ee108a15977fc53",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__09"
+	},
+	{
+		"ref": "718cc7d81790a2e4",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_05"
+	},
+	{
+		"ref": "fd3b88fd109e0658",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__03"
+	},
+	{
+		"ref": "908aa6863fb9be8f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__11"
+	},
+	{
+		"ref": "5d6e3a9e32400026",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__02"
+	},
+	{
+		"ref": "268e485bff366d58",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__10"
+	},
+	{
+		"ref": "32274e04b0265f66",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__08"
+	},
+	{
+		"ref": "2103a2acaee32377",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_03"
+	},
+	{
+		"ref": "b0bc8badd9ca1b12",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M_"
+	},
+	{
+		"ref": "dc1de12d0249cd00",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__04"
+	},
+	{
+		"ref": "b0e840313bd31d57",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__03"
+	},
+	{
+		"ref": "af02cf43e94708df",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__05"
+	},
+	{
+		"ref": "ae387ec3fb0fd1c5",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__02"
+	},
+	{
+		"ref": "66f6e24d5a0820b8",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO"
+	},
+	{
+		"ref": "3bd091c3dc1cd21b",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__08"
+	},
+	{
+		"ref": "c82560ac1bbdf16a",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__07"
+	},
+	{
+		"ref": "ad244d0d141e80b4",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO"
+	},
+	{
+		"ref": "210c3bed1baaec4b",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_02"
+	},
+	{
+		"ref": "20fa5f56b8be100e",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__01"
+	},
+	{
+		"ref": "feba80a2f7b9d7ed",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M"
+	},
+	{
+		"ref": "660c629056f346c6",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__02"
+	},
+	{
+		"ref": "4a5f243c3bf71845",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__09"
+	},
+	{
+		"ref": "2561882fbc99c3c4",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Back_Entrance_01"
+	},
+	{
+		"ref": "7a27a09a1a17619",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M_"
+	},
+	{
+		"ref": "2ab7f23fe6d85310",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__01"
+	},
+	{
+		"ref": "2e603796d60cf033",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_04"
+	},
+	{
+		"ref": "940f391343090e0a",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_01"
+	},
+	{
+		"ref": "e8c98a2b46952837",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_04"
+	},
+	{
+		"ref": "bf457759cd28e2ee",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__06"
+	},
+	{
+		"ref": "1454b8c3018410dd",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__10"
+	},
+	{
+		"ref": "4f07a6b277c2918a",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__07"
+	},
+	{
+		"ref": "a9d28c7215795d9c",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_01"
+	},
+	{
+		"ref": "3727e5babd86f300",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__04"
+	},
+	{
+		"ref": "27f051a5e538179f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__01"
+	},
+	{
+		"ref": "a10a6c59bc801074",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_02"
+	},
+	{
+		"ref": "1b48c232da9ae031",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__12"
+	},
+	{
+		"ref": "2a588f45eeb668d5",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__01"
+	},
+	{
+		"ref": "daaef1b1f000e3e8",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__04"
+	},
+	{
+		"ref": "77c9e996ec99f19e",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Back_Entrance"
+	},
+	{
+		"ref": "5debb8107ccd2a7e",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M_"
+	},
+	{
+		"ref": "67ef43a9784dfdaf",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO"
+	},
+	{
+		"ref": "7538220db809e63c",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_02"
+	},
+	{
+		"ref": "d5f0cec779bf6f39",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__04"
+	},
+	{
+		"ref": "edb8f52acd78d279",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M_"
+	},
+	{
+		"ref": "356025d9d7589754",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO"
+	},
+	{
+		"ref": "3eaa00c94f6b02bc",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__02"
+	},
+	{
+		"ref": "10b0c0c7a8b979b1",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__05"
+	},
+	{
+		"ref": "853674b5ab1d90df",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__07"
+	},
+	{
+		"ref": "50a0db09b14bedff",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__04"
+	},
+	{
+		"ref": "db29ef83eba540b3",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_01"
+	},
+	{
+		"ref": "597d2a68c1ab0d71",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__03"
+	},
+	{
+		"ref": "f30a33f9db2644b3",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M_"
+	},
+	{
+		"ref": "a69a6fbe53c0c60d",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__01"
+	},
+	{
+		"ref": "6c20d1410d9c2a38",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__09"
+	},
+	{
+		"ref": "420648e651561b06",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_01"
+	},
+	{
+		"ref": "30008215e9f0dca9",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__14"
+	},
+	{
+		"ref": "a891447d692e9e7f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__06"
+	},
+	{
+		"ref": "d1b91e03b2460ed7",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__13"
+	},
+	{
+		"ref": "86c2515c7b6095e9",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__03"
+	},
+	{
+		"ref": "2a1fdb701d64f1cf",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__01"
+	},
+	{
+		"ref": "727dc03c7f9fbda6",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__02"
+	},
+	{
+		"ref": "fa892c9fb2e537f7",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__01"
+	},
+	{
+		"ref": "dc456a42d29448c9",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__08"
+	},
+	{
+		"ref": "e8ef191b67df2943",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Wet_Guard_Block_M_PRO_01"
+	},
+	{
+		"ref": "62d866a3a55bfc0f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M_"
+	},
+	{
+		"ref": "4dd4d6d167c6384",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Facility_M__03"
+	},
+	{
+		"ref": "72fcfa593af19a88",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__05"
+	},
+	{
+		"ref": "d05dc51107c73c15",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "CHAR_Wet_Guard_Steets_M__01"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": {
