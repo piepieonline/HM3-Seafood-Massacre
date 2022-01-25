@@ -2231,7 +2231,7 @@
 		},
 		"abcdf9ffd05f0aa1": {
 			"parent": "abcde54070de7e46",
-			"name": "HitmanInteractionIsActive",
+			"name": "ConditionList HitmanInteractionIsActive",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
 			"properties": {},
@@ -2370,7 +2370,7 @@
 		},
 		"abcde166ce07d495": {
 			"parent": "abcde54070de7e46",
-			"name": "HM Is Red Dragon",
+			"name": "EnableCondition HM Is Red Dragon",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
 			"properties": {},
