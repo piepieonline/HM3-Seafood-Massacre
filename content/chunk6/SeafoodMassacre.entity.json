@@ -3004,6 +3004,10 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcda9c79f4ab253"
 			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd492e88ed0db0"
+			}, {
 				"onEvent": "OnFalse",
 				"shouldTrigger": "Stop",
 				"onEntity": "abcda9c79f4ab253"
@@ -5856,7 +5860,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd5a49108a3813", "abcd207158ec2894"]
+					"value": ["abcd5a49108a3813", "abcd207158ec2894", "abcd492e88ed0db0"]
 				},
 				"m_eEvaluation": {
 					"type": "ZValueBool_Operation_Signal.EEvaluationType",
@@ -6382,6 +6386,16 @@
 					"value": "abcda8678a0ed7c5"
 				}
 			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd492e88ed0db0": {
+			"parent": "abcd9df9701a171c",
+			"name": "HasSniperFiredAt47 VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
