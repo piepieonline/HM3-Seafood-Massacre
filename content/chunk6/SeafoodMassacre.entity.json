@@ -2231,7 +2231,7 @@
 		},
 		"abcdf9ffd05f0aa1": {
 			"parent": "abcde54070de7e46",
-			"name": "HitmanInteracting05",
+			"name": "HitmanInteractionIsActive",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
 			"properties": {},
@@ -2244,23 +2244,8 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcde06a19f9c2f1": {
-			"parent": "abcdf9ffd05f0aa1",
-			"name": "ValueBool_Proxy",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd885da8ac7373"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcdae42809a1449": {
-			"parent": "abcdf9ffd05f0aa1",
+			"parent": "abcdc454d99c8391",
 			"name": "InvertedCondition HM Doesnt Have Key",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
@@ -2275,7 +2260,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd24880992e43f": {
-			"parent": "abcdf9ffd05f0aa1",
+			"parent": "abcdc454d99c8391",
 			"name": "VBB_ShowInteraction",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -2290,7 +2275,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdc454d99c8391": {
-			"parent": "abcdf9ffd05f0aa1",
+			"parent": "abcde54070de7e46",
 			"name": "SetPiece_Activator_Dialogue",
 			"template": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_dialogue.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_activators.template?/setpiece_activator_dialogue.entitytemplate].pc_entityblueprint",
@@ -2346,7 +2331,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd9308b3206161", "abcd24880992e43f", "abcdae42809a1449"]
+					"value": ["abcd24880992e43f", "abcdae42809a1449", "abcd96152f20a094"]
 				}
 			},
 			"editorOnly": false,
@@ -2383,77 +2368,8 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd9308b3206161": {
-			"parent": "abcdf9ffd05f0aa1",
-			"name": "VBO_MilitaryDisguise",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd089b840b1f89"]
-				},
-				"m_eEvaluation": {
-					"type": "ZValueBool_Operation_Signal.EEvaluationType",
-					"value": "ANY"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd178b147ad79c": {
-			"parent": "abcd9308b3206161",
-			"name": "Prof_Noodle_Meeting",
-			"template": "007E827EA0D8ABB8",
-			"blueprint": "00D8D0CD7A6B623C",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd035e28352a06": {
-			"parent": "abcd9308b3206161",
-			"name": "Prof_Marrakesh_Guard_Elite",
-			"template": "[assembly:/_pro/design/actor/profession.template?/prof_marrakesh_guard_elite.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_marrakesh_guard_elite.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd089b840b1f89": {
-			"parent": "abcd9308b3206161",
-			"name": "HeroKeywordCondition",
-			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rRequirements": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd178b147ad79c"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd952ffacb47ef": {
-			"parent": "abcd9308b3206161",
-			"name": "HeroKeywordCondition01",
-			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rRequirements": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd035e28352a06"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcde166ce07d495": {
-			"parent": "abcdf9ffd05f0aa1",
+			"parent": "abcde54070de7e46",
 			"name": "HM Is Red Dragon",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
@@ -2479,7 +2395,7 @@
 		},
 		"abcd96152f20a094": {
 			"parent": "abcde166ce07d495",
-			"name": "HeroKeywordCondition_PlayerHaveOfficer",
+			"name": "HeroKeywordCondition_PlayerIsRedDragon",
 			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
 			"properties": {
@@ -2527,15 +2443,7 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnDone",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd288d4f0f43a0"
-			}, {
-				"onEvent": "OnTerminate",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd288d4f0f43a0"
-			}]
+			"events": []
 		},
 		"abcddf2751cdf649": {
 			"parent": "abcde54070de7e46",
@@ -2726,46 +2634,6 @@
 						"externalScene": null,
 						"exposedEntity": "Act_MR_FR_Stand_Item_Give"
 					}
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdb8f61944aa1e": {
-			"parent": "abcdf9ffd05f0aa1",
-			"name": "Dismissed03",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd885da8ac7373"]
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd885da8ac7373": {
-			"parent": "abcdb8f61944aa1e",
-			"name": "VB_Dismissed",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd288d4f0f43a0": {
-			"parent": "abcde54070de7e46",
-			"name": "VBS_Dissmissed03",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_aValueEntities": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd885da8ac7373"]
 				}
 			},
 			"editorOnly": false,
@@ -3030,12 +2898,7 @@
 			"name": "IncorrectUniform InvertedCondition",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rCondition": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd089b840b1f89"
-				}
-			},
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -6402,7 +6265,7 @@
 			"outputCopying": []
 		},
 		"abcd578780186052": {
-			"parent": "abcdf9ffd05f0aa1",
+			"parent": "abcdc454d99c8391",
 			"name": "VBB_HM Has Key",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
