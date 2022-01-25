@@ -114,7 +114,7 @@
 		},
 		"214005e4e9b8e2b3": {
 			"parent": "d40a022a606b4f72",
-			"name": "Restaurant Owner at Restaurant Front Desk",
+			"name": "DS Restaurant Owner at Restaurant Front Desk",
 			"template": "005B2A6454B76874",
 			"blueprint": "00BD25C96EAAC850",
 			"properties": {
@@ -2230,7 +2230,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdf9ffd05f0aa1": {
-			"parent": "d40a022a606b4f72",
+			"parent": "abcde54070de7e46",
 			"name": "HitmanInteracting05",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
@@ -2261,13 +2261,13 @@
 		},
 		"abcdae42809a1449": {
 			"parent": "abcdf9ffd05f0aa1",
-			"name": "InvertedCondition",
+			"name": "InvertedCondition HM Doesnt Have Key",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
 			"properties": {
 				"m_rCondition": {
 					"type": "SEntityTemplateReference",
-					"value": "abcde06a19f9c2f1"
+					"value": "abcd578780186052"
 				}
 			},
 			"postInitProperties": {},
@@ -2359,6 +2359,18 @@
 				"onEvent": "Started",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcd24880992e43f"
+			}, {
+				"onEvent": "OnFalsehmfaway",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcdcab922e78d41"
+			}, {
+				"onEvent": "OnFalsehmfaway",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd24880992e43f"
+			}, {
+				"onEvent": "OnFalsehmfaway",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd367ba650e6d4"
 			}]
 		},
 		"abcdcab922e78d41": {
@@ -2442,14 +2454,14 @@
 		},
 		"abcde166ce07d495": {
 			"parent": "abcdf9ffd05f0aa1",
-			"name": "HitmanAsOfficerInteracting03",
+			"name": "HM Is Red Dragon",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd96152f20a094"]
+					"value": ["abcd96152f20a094", "abcdae42809a1449"]
 				}
 			},
 			"editorOnly": false,
@@ -2485,8 +2497,8 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcde54070de7e46": {
-			"parent": "abcdf9ffd05f0aa1",
-			"name": "DR6184_Dismissing03",
+			"parent": "d40a022a606b4f72",
+			"name": "DS HM Asking For Key",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -2500,7 +2512,7 @@
 				},
 				"m_eReentryBehavior": {
 					"type": "ZDramaSituationEntity.EReentryBehavior",
-					"value": "RB_TERMINATE"
+					"value": "RB_RESTART"
 				}
 			},
 			"postInitProperties": {
@@ -2562,30 +2574,11 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd6456f7fdfc1a"
-			}, {
-				"onEvent": "OnDone",
-				"shouldTrigger": "SetFalse",
-				"onEntity": "abcd95abdae4603a"
 			}]
 		},
-		"abcd95abdae4603a": {
-			"parent": "abcde54070de7e46",
-			"name": "VBS_ShowInteraction",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValueEntities": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcddbbf5c2034e8": {
-			"parent": "abcde54070de7e46",
-			"name": "HeroOneLiner",
+			"parent": "abcd440d50950641",
+			"name": "HeroOneLiner Bathroom",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -2611,14 +2604,6 @@
 				"onEvent": "Aborted",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd367ba650e6d4"
-			}, {
-				"onEvent": "Speaking",
-				"shouldTrigger": "SetFalse",
-				"onEntity": "abcd95abdae4603a"
-			}, {
-				"onEvent": "Aborted",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd95abdae4603a"
 			}, {
 				"onEvent": "Completed",
 				"shouldTrigger": "Start",
@@ -2694,11 +2679,15 @@
 				"onEvent": "ItemTaken",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd367ba650e6d4"
+			}, {
+				"onEvent": "ItemTaken",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd578780186052"
 			}]
 		},
 		"abcd003ded13e389": {
-			"parent": "abcde54070de7e46",
-			"name": "AOL_DR6184_Officer47CellGuards_BDYGRD03_002",
+			"parent": "abcd440d50950641",
+			"name": "OneLiner BathroomResponse",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -6259,8 +6248,8 @@
 							"z": -90
 						},
 						"position": {
-							"x": -80.7,
-							"y": 29.4,
+							"x": -80.69999694824219,
+							"y": 29.399999618530273,
 							"z": 100.875
 						}
 					}
@@ -6392,6 +6381,29 @@
 		"abcd492e88ed0db0": {
 			"parent": "abcd9df9701a171c",
 			"name": "HasSniperFiredAt47 VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd440d50950641": {
+			"parent": "abcde54070de7e46",
+			"name": "Lines",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd578780186052": {
+			"parent": "abcdf9ffd05f0aa1",
+			"name": "VBB_HM Has Key",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {},
