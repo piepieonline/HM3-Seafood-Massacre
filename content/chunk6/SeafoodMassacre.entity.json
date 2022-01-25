@@ -3449,7 +3449,7 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": {
-						"ref": "abcd2d00fce5938a",
+						"ref": "abcd81c826dc03f3",
 						"externalScene": null,
 						"exposedEntity": "Spatial_CarryPlate_PutDown_075cm_POS"
 					}
@@ -3500,7 +3500,7 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": {
-						"ref": "abcd81c826dc03f3",
+						"ref": "abcd2d00fce5938a",
 						"externalScene": null,
 						"exposedEntity": "Spatial_CarryPlate_PutDown_075cm_POS"
 					}
@@ -6046,10 +6046,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdca6cce50c92b": {
 			"parent": "abcd64bb20191955",
@@ -6109,10 +6106,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd5a49108a3813": {
 			"parent": "abcd29d4b41732ba",
@@ -6234,10 +6228,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcdd55b94d97d3e": {
 			"parent": "abcdc8b5984230b7",
@@ -6247,10 +6238,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd54bfdc81b274": {
 			"parent": "abcdd55b94d97d3e",
@@ -6286,8 +6274,8 @@
 					"value": {
 						"rotation": {
 							"x": 0,
-							"y": -20,
-							"z": 30
+							"y": -20.000000650803944,
+							"z": 30.00000075862377
 						},
 						"position": {
 							"x": 0,
@@ -6306,17 +6294,96 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdb3653d0e75cf": {
-			"parent": "#",
+			"parent": null,
 			"name": "Might be able to delete this stuff",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcddd802d4c9c58": {
+			"parent": "abcd4189eb0dd314",
+			"name": "LastPersonSeated Poll",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd857e0f74e7c1"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"events": [{
+				"onEvent": "PollTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdbb37e72a06f5"
+			}, {
+				"onEvent": "PollFalse",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd24ceccc3b3fe"
+			}]
+		},
+		"abcda8678a0ed7c5": {
+			"parent": "abcd9105b49b083c",
+			"name": "TEST DartGun",
+			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "351c144c-8687-426a-a6f0-c4abd7021062"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde0d3a226bf54": {
+			"parent": "abcd9105b49b083c",
+			"name": "TEST DartGun Spawner",
+			"template": "[modules:/zitemspawner.class].pc_entitytype",
+			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_bSpawnOnStart": {
+					"type": "bool",
+					"value": true
+				},
+				"m_ePhysicsMode": {
+					"type": "ZItemSpawner.EPhysicsMode",
+					"value": "EPM_KINEMATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3ebd6ae8a2b6"
+				},
+				"m_rMainItemKey": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda8678a0ed7c5"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -7256,6 +7323,18 @@
 		"toEntity": "abcd4a4f0a586f05",
 		"fromPinName": "FoodReady",
 		"toPinName": "Grab",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": "abcddd802d4c9c58",
+		"toEntity": {
+			"ref": "64f9539bbd38fccc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "PollFalse",
+		"toPinName": "Done",
 		"constantPinValue": {
 			"$type": "void",
 			"$val": null

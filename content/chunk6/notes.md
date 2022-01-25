@@ -4,12 +4,15 @@
   * Sometimes item isn't chained!? (Investigate signalpipes?)
   * need to stop them eating if the bowl is destroyed
   * Add chopsticks
-  * Remove chef checking bowl action
 * Does ConsumeFromInventory work on AI?
-* Set amulet to kinematic
+* Bartender
+  * React if 47 walks away or times out
+  * If anything happens between bartender picking up bowl and serving them all, he stands there broken
 * Sniper
   * Convert to a new entity
   * Needs to fire in open combat
+  * Give him better memory
+  * Tweak the watch and killzones
 * Panic needs to be if they get to a guard, not just out of zone? (...or like PZ? Spreads to anyone they contact? But contacts aren't valid targets - just can't leave with them alive. Force loss of SA and cleanup)
 * Lock the gate to the back of the restaurant?
 
