@@ -1,6 +1,6 @@
 {
-	"tempHash": "002D1375DD934541",
-	"tbluHash": "00BBAF642DFE34C8",
+	"tempHash": "001FDACB6DA992B1",
+	"tbluHash": "0069214979D3E905",
 	"rootEntity": "83bbed82c7b0e5a5",
 	"entities": {
 		"a76f49e8f733b13d": {
@@ -245,7 +245,7 @@
 		},
 		"83bbed82c7b0e5a5": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePolice_M_Actor_v0",
+			"name": "OUTFIT_ChinesePolice_M_Actor_v2",
 			"template": "00C0753FBF784C66",
 			"blueprint": "007294473357329E",
 			"properties": {
@@ -657,9 +657,9 @@
 		},
 		"503782578736c847": {
 			"parent": "83bbed82c7b0e5a5",
-			"name": "Head_asian_20s_2",
-			"template": "003378F0FAA80D73",
-			"blueprint": "002DD581C03029FE",
+			"name": "head_asian_50s_01",
+			"template": "00AFE802E8C683F4",
+			"blueprint": "008983A334282CCD",
 			"properties": {
 				"ConstantColorRGB_02_Value": {
 					"type": "SColorRGB",
