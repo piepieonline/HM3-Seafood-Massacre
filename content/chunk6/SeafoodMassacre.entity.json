@@ -317,7 +317,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 2
+					"value": 3
 				}
 			},
 			"postInitProperties": {
@@ -369,6 +369,10 @@
 				"m_sActorName": {
 					"type": "ZString",
 					"value": "Jing Lun Zhou"
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 5
 				}
 			},
 			"postInitProperties": {
@@ -1339,10 +1343,6 @@
 					"type": "ZGuid",
 					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
 				},
-				"m_eRequiredVoiceVariation": {
-					"type": "EActorVoiceVariation",
-					"value": "eAVV_CIVMALECH01"
-				},
 				"m_bStartEnabled": {
 					"type": "bool",
 					"value": true
@@ -1356,6 +1356,10 @@
 					"value": true
 				},
 				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 2
+				},
+				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 2
 				}
@@ -6562,6 +6566,1209 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd02135d3d6024": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_TrainStart1",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -173.312,
+							"y": 151.6,
+							"z": 85
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Ching Chong"
+				},
+				"m_bWeaponUnholstered": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 2
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd379a378e22d8": {
+			"parent": "abcd02135d3d6024",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd193bd7a660b0"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd02135d3d6024"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc0745904163a": {
+			"parent": "abcd379a378e22d8",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd02135d3d6024"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb4c2cc895416": {
+			"parent": "abcd379a378e22d8",
+			"name": "Act_MR_Guard_Stand_Rifle2",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45.002979908338
+						},
+						"position": {
+							"x": -102.764,
+							"y": 114.417,
+							"z": 101.011
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 16
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdc0745904163a"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdf4b9cc31ccbe"
+			}]
+		},
+		"abcdf4b9cc31ccbe": {
+			"parent": "abcd379a378e22d8",
+			"name": "Act_MR_Stand_Rifle1",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -55.92343385152114
+						},
+						"position": {
+							"x": -42.2765,
+							"y": 127.869,
+							"z": 101.012
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 7
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdc0745904163a"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdb4c2cc895416"
+			}]
+		},
+		"abcd193bd7a660b0": {
+			"parent": "abcd379a378e22d8",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdc0745904163a"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdf4b9cc31ccbe"
+			}]
+		},
+		"abcdf8d3f54b27f6": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_TrainStart2",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -175.425,
+							"y": 139.069,
+							"z": 85
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Ding Dong"
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 2
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd29da736e8554": {
+			"parent": "abcdf8d3f54b27f6",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd5c4b8557e93a"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf8d3f54b27f6"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd520185a98f8d": {
+			"parent": "abcd29da736e8554",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf8d3f54b27f6"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd341db18fb8d7": {
+			"parent": "abcd29da736e8554",
+			"name": "Act_MR_Guard_Stand_Rifle2",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 60.002979908338
+						},
+						"position": {
+							"x": -58.6582,
+							"y": 77.75,
+							"z": 96.8552
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 16
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd520185a98f8d"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd4581e490a5ca"
+			}]
+		},
+		"abcd4581e490a5ca": {
+			"parent": "abcd29da736e8554",
+			"name": "Act_MR_Stand_Rifle1",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 35.92343385152114
+						},
+						"position": {
+							"x": -12.1126,
+							"y": 127.068,
+							"z": 101.012
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 7
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd520185a98f8d"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd341db18fb8d7"
+			}]
+		},
+		"abcd5c4b8557e93a": {
+			"parent": "abcd29da736e8554",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd520185a98f8d"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd4581e490a5ca"
+			}]
+		},
+		"abcd1e4b41a2a95e": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_TrainStart3",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -181.967,
+							"y": 131.768,
+							"z": 85
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Fing Fong"
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd13710b93a32a": {
+			"parent": "abcd1e4b41a2a95e",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd755102501fee"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1e4b41a2a95e"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd11689dd21182": {
+			"parent": "abcd13710b93a32a",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1e4b41a2a95e"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4c3f5b91ca3e": {
+			"parent": "abcd13710b93a32a",
+			"name": "Act_MR_Guard_Stand_Rifle2",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 135.002979908338
+						},
+						"position": {
+							"x": -14.5322,
+							"y": -0.0752043,
+							"z": 101
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 16
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd11689dd21182"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd211b9bd56064"
+			}]
+		},
+		"abcd211b9bd56064": {
+			"parent": "abcd13710b93a32a",
+			"name": "Act_MR_Stand_Rifle1",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -21.6232,
+							"y": 36.7082,
+							"z": 101
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 7
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd11689dd21182"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd4c3f5b91ca3e"
+			}]
+		},
+		"abcd755102501fee": {
+			"parent": "abcd13710b93a32a",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd11689dd21182"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd211b9bd56064"
+			}]
+		},
+		"abcd34dae91b471b": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_TrainFollower1",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -173.312,
+							"y": 151.6,
+							"z": 85
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Ging Gong"
+				},
+				"m_bWeaponUnholstered": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 2
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 3
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4c519e35efe2": {
+			"parent": "abcd34dae91b471b",
+			"name": "DR_FollowTest",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcde5fffcb3aa49"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9c3d53b0d798": {
+			"parent": "abcd4c519e35efe2",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd34dae91b471b"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde5fffcb3aa49": {
+			"parent": "abcd4c519e35efe2",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9c3d53b0d798"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd1e1f41c6d77c"
+			}]
+		},
+		"abcd1e1f41c6d77c": {
+			"parent": "abcd4c519e35efe2",
+			"name": "FollowTest",
+			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aTargetOffsets": {
+					"type": "TArray<SVector3>",
+					"value": [{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}, {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}]
+				},
+				"m_fSpeedUpDistance": {
+					"type": "float32",
+					"value": 4
+				},
+				"m_bStartSearchOnTargetDead": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fStartSearchOnTargetDeadSubsequentDelay": {
+					"type": "float32",
+					"value": 5
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 50
+				},
+				"m_fStartSearchOnTargetDeadDelay": {
+					"type": "float32",
+					"value": 60
+				},
+				"m_fMaxDistanceToIntermediates": {
+					"type": "float32",
+					"value": 15
+				}
+			},
+			"postInitProperties": {
+				"m_rEscortTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd02135d3d6024"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd34dae91b471b"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd9e0dc486d695": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_HomelessArea",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -118.521,
+							"y": 75.2986,
+							"z": 85.0107
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Hing Hong"
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 2
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 4
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdddf5244b2ffc": {
+			"parent": "abcd9e0dc486d695",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd80703eed9d17"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9e0dc486d695"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2e0d82b92a89": {
+			"parent": "abcdddf5244b2ffc",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9e0dc486d695"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd6e5d65e1f31f": {
+			"parent": "abcdddf5244b2ffc",
+			"name": "Act_MR_Guard_Stand_Rifle2",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -110.002979908338
+						},
+						"position": {
+							"x": -137.766,
+							"y": 71.9476,
+							"z": 85.0107
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 16
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2e0d82b92a89"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd83bcfff204ed"
+			}]
+		},
+		"abcd83bcfff204ed": {
+			"parent": "abcdddf5244b2ffc",
+			"name": "Act_MR_Stand_Rifle1",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -110.92343385152114
+						},
+						"position": {
+							"x": -116.547,
+							"y": 112.223,
+							"z": 101
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 17
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2e0d82b92a89"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd6e5d65e1f31f"
+			}]
+		},
+		"abcd80703eed9d17": {
+			"parent": "abcdddf5244b2ffc",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2e0d82b92a89"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd83bcfff204ed"
+			}]
+		},
+		"abcd2efe2cb579a0": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_MainSquare",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -70.1837,
+							"y": 107.136,
+							"z": 97
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Jing Jong"
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 2
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd743b5edce6b2": {
+			"parent": "abcd2efe2cb579a0",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd8c694fe13a2d"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2efe2cb579a0"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd6163edbc9283": {
+			"parent": "abcd743b5edce6b2",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2efe2cb579a0"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd41ad77d8b3e9": {
+			"parent": "abcd743b5edce6b2",
+			"name": "Act_MR_Guard_Stand_Rifle2",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 45.002979908338
+						},
+						"position": {
+							"x": -75.0117,
+							"y": 46.5107,
+							"z": 97.0097
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 16
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd6163edbc9283"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd2c15f4757878"
+			}]
+		},
+		"abcde9d43307e6d1": {
+			"parent": "abcd743b5edce6b2",
+			"name": "Act_MR_Stand_Rifle1",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -128.661,
+							"y": 79.2163,
+							"z": 97.0097
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 7
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd6163edbc9283"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd41ad77d8b3e9"
+			}]
+		},
+		"abcd8c694fe13a2d": {
+			"parent": "abcd743b5edce6b2",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd6163edbc9283"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcde9d43307e6d1"
+			}]
+		},
+		"abcd2c15f4757878": {
+			"parent": "abcd743b5edce6b2",
+			"name": "act_mr_stand_smoke",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_smoke.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_smoke.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45.002979908338
+						},
+						"position": {
+							"x": -73.4394,
+							"y": 101.618,
+							"z": 97
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 45
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd6163edbc9283"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcde9d43307e6d1"
+			}]
 		},
 		"abcdebfad3cd590c": {
 			"parent": "abcd39ae6d69ed26",

@@ -30,7 +30,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082"]
+					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcde9bbe0ed52c1", "abcd99fe1fec8571"]
 				}
 			},
 			"editorOnly": false,
@@ -217,6 +217,60 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "00730A4141A9FE47",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd6e957ba5c6bd": {
+			"parent": "696226ea3a8aea66",
+			"name": "3",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "001D56842F9EAA1D",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde9bbe0ed52c1": {
+			"parent": "696226ea3a8aea66",
+			"name": "4",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00C62C455C57D94A",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd99fe1fec8571": {
+			"parent": "696226ea3a8aea66",
+			"name": "5",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00222CCC8BDD3F56",
 						"flag": "9F"
 					}
 				}
