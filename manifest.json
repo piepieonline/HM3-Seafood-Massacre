@@ -1,8 +1,8 @@
 {
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"id": "KevinRudd.SeafoodMassacre",
 	"name": "Chongqing Noodle Massacre",
-	"dependencies": ["00F64C24A8D6130C", "00936023823CF8E6"],
+	"dependencies": ["00F64C24A8D6130C", "00936023823CF8E6", "009D17D65711801C"],
 	"blobsFolder": "blobs",
 	"description": "WIP Mod recreating The Seafood Massacre from Hitman Contracts, in H3's Chongqing. Intending to have day and night variations",
 	"authors": ["Kevin Rudd", "Piepieonline"],
@@ -14,5 +14,19 @@
 		  "path": "[assembly:/_pro/scenes/missions/wet/scene_noodle.entity].entitytemplate"
 		}
 	  ],
+	  "localisation": {
+		"english": {
+			"UI_CONTRACT_NOODLE_NIGHT": "The Noodle Massacre",
+            "UI_NOODLE_BRIEFING": "This is a placeholder briefing. I will try make a video briefing. I don't want the game to crash though so I've put this here."
+		},
+		"french": {},
+		"italian": {},
+		"german": {},
+		"spanish": {},
+		"russian": {},
+		"chineseSimplified": {},
+		"chineseTraditional": {},
+		"japanese": {}
+	},
 	"frameworkVersion": "1.0.0"
 }
