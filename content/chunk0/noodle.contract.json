@@ -72,13 +72,13 @@
             "Type": "statemachine",
             "Definition": {
                 "Context": {
-                    "Targets": ["a4e517a-e1e1-41d7-af91-751bc663df35"]
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1c"]
                 },
                 "States": {
                     "Start": {
                         "Kill": {
                             "Condition": {
-                                "$eq": ["$Value.RepositoryId", "a4e517a-e1e1-41d7-af91-751bc663df35"]
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1c"]
                             },
                             "Transition": "Success"
                         }
