@@ -3,7 +3,7 @@
         "Objectives": [{
                 "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
 				"ObjectiveType": "custom",
-				"Image": "images/actors/world_of_tomorrow_francesca_de_santis_briefing.jpg",
+				"Image": "images/noodle/amulet.jpg",
 				"BriefingName": "Frame Job",
                 "BriefingText": "Leave the Red Dragon Amulet at the meeting table",
                 "HUDTemplate": {
