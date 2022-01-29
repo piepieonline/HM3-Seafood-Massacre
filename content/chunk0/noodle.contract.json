@@ -1,15 +1,101 @@
 {
     "Data": {
         "Objectives": [{
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "Image": "images/noodle/red.jpg",
+            "BriefingName": "Red Dragon",
+            "BriefingText": "Eliminate the Red Dragon Negotiator",
+            "LongBriefingText": "$loc c0ab162c-1502-40d5-801f-c5471289d6b7_SierraKnox_Description",
+            "HUDTemplate": {
+                "display": "Eliminate the Red Dragon Negotiator"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1b"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },  {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "Image": "images/noodle/chief.jpg",
+            "BriefingName": "Police Chief",
+            "BriefingText": "Eliminate the Chief of Police",
+            "LongBriefingText": "Since the police are presiding over this meeting in the interests of preserving the peace, you'll have to include the chief in this job.",
+            "HUDTemplate": {
+                "display": "Eliminate the Chief of Police"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1d"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616833",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "Image": "images/noodle/blue.jpg",
+            "BriefingName": "Blue Lotus",
+            "BriefingText": "Eliminate the Blue Lotus Negotiator",
+            "LongBriefingText": "Taking the Blue Lotus negotiator out will ensure the police aren't confused about who's to blame for the chief being hit.",
+            "HUDTemplate": {
+                "display": "Eliminate the Blue Lotus Negotiator"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["a4e517a-e1e1-41d7-af91-751bc663df35"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "a4e517a-e1e1-41d7-af91-751bc663df35"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },
+        {
                 "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
 				"ObjectiveType": "custom",
 				"Image": "images/noodle/amulet.jpg",
 				"BriefingName": "Frame Job",
-                "BriefingText": "Leave the Red Dragon Amulet at the meeting table",
+                "BriefingText": "Leave the Red Dragon Amulet at the meeting table to implicate the Red Dragons",
                 "HUDTemplate": {
                     "display": "Leave the Red Dragon Amulet at the meeting table"
                 },
-				"LongBriefingText": "This won't work",
+				"LongBriefingText": "Drop a Red Dragon amulet at the table of the restaurant to ensure they take the blame.",
                 "Category": "primary",
                 "Scope": "hit",
                 "Type": "statemachine",
@@ -60,16 +146,17 @@
         "CodeName_Hint": "Noodle",
         "CreationTimestamp": "2012-12-12T12:12:12.743Z",
         "CreatorUserId": "00000000-0000-0000-0000-000000000000",
-        "TileImage": "images/challenges/hokkaido/flu_no_rubber.jpg",
-        "Title": "The Noodle Massacre",
-        "Description": "Just testing",
+        "TileImage": "images/noodle/amulet.jpg",
+        "Title": "UI_CONTRACT_NOODLE_NIGHT",
+        "Description": "UI_NOODLE_BRIEFING",
         "Id": "a8036782-de0a-4353-b522-0ab7a384badc",
         "IsPublished": true,
         "LastUpdate": "2015-03-10T12:00:00.551Z",
         "Location": "LOCATION_WET_RAT",
         "Release": "2.0.x",
         "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_noodle.entity",
-        "Type": "featured",
+        "Type": "flashback",
+        "Subtype": "flashback",
         "UserData": null
     },
     "UserData": {}
