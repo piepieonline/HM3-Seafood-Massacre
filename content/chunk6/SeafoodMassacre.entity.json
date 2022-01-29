@@ -6586,8 +6586,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -173.312,
-							"y": 151.6,
+							"x": -173.31199645996094,
+							"y": 151.60000610351563,
 							"z": 85
 						}
 					}
@@ -6679,9 +6679,9 @@
 							"z": -45.002979908338
 						},
 						"position": {
-							"x": -102.764,
-							"y": 114.417,
-							"z": 101.011
+							"x": -102.76399993896484,
+							"y": 114.41699981689453,
+							"z": 101.01100158691406
 						}
 					}
 				},
@@ -6720,12 +6720,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -55.92343385152114
+							"z": -55.92343309973799
 						},
 						"position": {
-							"x": -42.2765,
-							"y": 127.869,
-							"z": 101.012
+							"x": -42.2765007019043,
+							"y": 127.86900329589844,
+							"z": 101.01200103759766
 						}
 					}
 				},
@@ -6787,8 +6787,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -175.425,
-							"y": 139.069,
+							"x": -175.4250030517578,
+							"y": 139.06900024414063,
 							"z": 85
 						}
 					}
@@ -6873,12 +6873,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 60.002979908338
+							"z": 60.00298018836019
 						},
 						"position": {
-							"x": -58.6582,
+							"x": -58.658199310302734,
 							"y": 77.75,
-							"z": 96.8552
+							"z": 96.8552017211914
 						}
 					}
 				},
@@ -6917,12 +6917,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 35.92343385152114
+							"z": 35.92343285413521
 						},
 						"position": {
-							"x": -12.1126,
-							"y": 127.068,
-							"z": 101.012
+							"x": -12.112600326538086,
+							"y": 127.06800079345703,
+							"z": 101.01200103759766
 						}
 					}
 				},
@@ -6984,8 +6984,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -181.967,
-							"y": 131.768,
+							"x": -181.9669952392578,
+							"y": 131.76800537109375,
 							"z": 85
 						}
 					}
@@ -7073,8 +7073,8 @@
 							"z": 135.002979908338
 						},
 						"position": {
-							"x": -14.5322,
-							"y": -0.0752043,
+							"x": -14.53219985961914,
+							"y": -0.07520429790019989,
 							"z": 101
 						}
 					}
@@ -7117,8 +7117,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -21.6232,
-							"y": 36.7082,
+							"x": -21.623199462890625,
+							"y": 36.70819854736328,
 							"z": 101
 						}
 					}
@@ -7181,8 +7181,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -173.312,
-							"y": 151.6,
+							"x": -173.31199645996094,
+							"y": 151.60000610351563,
 							"z": 85
 						}
 					}
@@ -7333,8 +7333,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9e0dc486d695": {
 			"parent": "abcd692adf85a546",
@@ -7351,9 +7350,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -118.521,
-							"y": 75.2986,
-							"z": 85.0107
+							"x": -118.52100372314453,
+							"y": 75.29859924316406,
+							"z": 85.01069641113281
 						}
 					}
 				},
@@ -7437,12 +7436,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -110.002979908338
+							"z": -110.00298022672345
 						},
 						"position": {
-							"x": -137.766,
-							"y": 71.9476,
-							"z": 85.0107
+							"x": -137.76600646972656,
+							"y": 71.94760131835938,
+							"z": 85.01069641113281
 						}
 					}
 				},
@@ -7481,11 +7480,11 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -110.92343385152114
+							"z": -110.92343445015254
 						},
 						"position": {
-							"x": -116.547,
-							"y": 112.223,
+							"x": -116.5469970703125,
+							"y": 112.2229995727539,
 							"z": 101
 						}
 					}
@@ -7548,8 +7547,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -70.1837,
-							"y": 107.136,
+							"x": -70.18370056152344,
+							"y": 107.13600158691406,
 							"z": 97
 						}
 					}
@@ -7637,9 +7636,9 @@
 							"z": 45.002979908338
 						},
 						"position": {
-							"x": -75.0117,
-							"y": 46.5107,
-							"z": 97.0097
+							"x": -75.01170349121094,
+							"y": 46.51070022583008,
+							"z": 97.00969696044922
 						}
 					}
 				},
@@ -7681,9 +7680,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -128.661,
-							"y": 79.2163,
-							"z": 97.0097
+							"x": -128.66099548339844,
+							"y": 79.21630096435547,
+							"z": 97.00969696044922
 						}
 					}
 				},
@@ -7745,8 +7744,8 @@
 							"z": -45.002979908338
 						},
 						"position": {
-							"x": -73.4394,
-							"y": 101.618,
+							"x": -73.43939971923828,
+							"y": 101.61799621582031,
 							"z": 97
 						}
 					}
@@ -7879,7 +7878,7 @@
 			"properties": {
 				"m_rEnabledCondition": {
 					"type": "SEntityTemplateReference",
-					"value": "abcdcda4b8ede577"
+					"value": "abcdb88c399d6321"
 				},
 				"m_rEvaluator": {
 					"type": "SEntityTemplateReference",
@@ -7938,6 +7937,10 @@
 				"onEvent": "OnActorAdded",
 				"shouldTrigger": "SetState",
 				"onEntity": "abcd09029e4bba12"
+			}, {
+				"onEvent": "OnActorAdded",
+				"shouldTrigger": "SetIActor",
+				"onEntity": "abcd92a48ec55358"
 			}]
 		},
 		"abcd02579d0fa466": {
@@ -8054,23 +8057,24 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdcda4b8ede577": {
-			"parent": "abcd1ac35242c91a",
-			"name": "VBO Panic",
+			"parent": "abcde5906856cd14",
+			"name": "VBO Panic and 47 is not Red",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdf598a9018570", "abcd389afbd50fd9", "abcd93b0cfef32be", "abcd3feb64a3a01a"]
-				},
-				"m_eEvaluation": {
-					"type": "ZValueBool_Operation_Signal.EEvaluationType",
-					"value": "ANY"
+					"value": ["abcd4abf4ece5f4c", "abcd29f817d931eb"]
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcdb88c399d6321"
+			}]
 		},
 		"abcda94d51ad4e2a": {
 			"parent": "abcdea077126b837",
@@ -8124,6 +8128,140 @@
 					"value": ["abcdd888ea8ddf07"]
 				}
 			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4abf4ece5f4c": {
+			"parent": "abcde5906856cd14",
+			"name": "VBO Panic",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf598a9018570", "abcd389afbd50fd9", "abcd93b0cfef32be", "abcd3feb64a3a01a"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde5906856cd14": {
+			"parent": "abcd1ac35242c91a",
+			"name": "VirusSpread Conditions",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd29f817d931eb": {
+			"parent": "abcde5906856cd14",
+			"name": "47IsNotRed InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd96152f20a094"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb88c399d6321": {
+			"parent": "abcde5906856cd14",
+			"name": "VBB Is Panic Spreading",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd92a48ec55358": {
+			"parent": "abcd1ac35242c91a",
+			"name": "Contract",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"inputCopying": [{
+				"whenTriggered": "SetActor",
+				"alsoTrigger": "SetActor",
+				"onEntity": "abcd1929c0389895"
+			}]
+		},
+		"abcd1929c0389895": {
+			"parent": "abcd92a48ec55358",
+			"name": "ActorValue",
+			"template": "[modules:/zactormetricvalueentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactormetricvalueentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "ActorSet",
+				"shouldTrigger": "GetValue",
+				"onEntity": "abcd53680ff73595"
+			}]
+		},
+		"abcd53680ff73595": {
+			"parent": "abcd92a48ec55358",
+			"name": "MetricValue_Pool",
+			"template": "[modules:/zmetricvalue_pool.class].pc_entitytype",
+			"blueprint": "[modules:/zmetricvalue_pool.class].pc_entityblueprint",
+			"properties": {
+				"m_pValueProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1929c0389895"
+				},
+				"m_name": {
+					"type": "ZString",
+					"value": "ActorTarget"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Value",
+				"shouldTrigger": "SetValue",
+				"onEntity": "abcd0d6ba18b1440"
+			}]
+		},
+		"abcd0d6ba18b1440": {
+			"parent": "abcd92a48ec55358",
+			"name": "ContractsEvent",
+			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_bTriggerOnValue": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sName": {
+					"type": "ZString",
+					"value": "TargetPicked"
+				},
+				"m_bSendDirectly": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
