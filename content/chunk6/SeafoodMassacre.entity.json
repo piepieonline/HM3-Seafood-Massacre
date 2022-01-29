@@ -7774,7 +7774,53 @@
 				"onEntity": "abcde9d43307e6d1"
 			}]
 		},
-<<<<<<< HEAD
+		"abcdebfad3cd590c": {
+			"parent": "abcd39ae6d69ed26",
+			"name": "SniperActuallyPresent TimerConditional",
+			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nInterval": {
+					"type": "int32",
+					"value": 5000
+				},
+				"m_pCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd24e4e2668cdb"
+				},
+				"m_bRepeatWhileTrue": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bResetWhenStopped": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "TimeOut",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd845141da1d8f"
+			}]
+		},
+		"abcd845141da1d8f": {
+			"parent": "abcd39ae6d69ed26",
+			"name": "SniperActuallyPresent VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
 		"abcd1472582a90e8": {
 			"parent": "fffffffffffffffe",
 			"name": "Rooftops",
@@ -8138,49 +8184,6 @@
 				"m_rCharacter": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd52341c0dd6b4"
-=======
-		"abcdebfad3cd590c": {
-			"parent": "abcd39ae6d69ed26",
-			"name": "SniperActuallyPresent TimerConditional",
-			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_nInterval": {
-					"type": "int32",
-					"value": 5000
-				},
-				"m_pCondition": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd24e4e2668cdb"
-				},
-				"m_bRepeatWhileTrue": {
-					"type": "bool",
-					"value": false
-				},
-				"m_bResetWhenStopped": {
-					"type": "bool",
-					"value": true
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "TimeOut",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd845141da1d8f"
-			}]
-		},
-		"abcd845141da1d8f": {
-			"parent": "abcd39ae6d69ed26",
-			"name": "SniperActuallyPresent VBB",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_bValue": {
-					"type": "bool",
-					"value": false
->>>>>>> 7ccffc4620d83bdc99a891da574e55c5bc736c6f
 				}
 			},
 			"postInitProperties": {},
