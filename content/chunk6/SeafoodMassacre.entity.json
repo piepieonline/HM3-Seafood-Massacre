@@ -2482,8 +2482,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcddf2751cdf649": {
 			"parent": "abcde54070de7e46",
@@ -2890,7 +2889,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd24e4e2668cdb", "abcd08f3961bbdf9"]
+					"value": ["abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd845141da1d8f", "abcd08f3961bbdf9"]
 				}
 			},
 			"postInitProperties": {},
@@ -2916,6 +2915,14 @@
 				"onEvent": "OnFalse",
 				"shouldTrigger": "EndFire",
 				"onEntity": "abcdcda5152e32a4"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
+				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
@@ -4299,7 +4306,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 5
+					"value": -1
 				}
 			},
 			"postInitProperties": {
@@ -5544,16 +5551,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Deactivate",
-				"onEntity": "abcdc38640d82521"
-			}]
+			"platformSpecificPropertyValues": []
 		},
 		"abcddbb8e1c0e1ba": {
 			"parent": "abcd0886580ebb2d",
@@ -5693,7 +5691,7 @@
 		},
 		"abcd24e4e2668cdb": {
 			"parent": "abcd39ae6d69ed26",
-			"name": "Sniper Present",
+			"name": "Sniper Arrived",
 			"template": "006D016120D6915A",
 			"blueprint": "00296868A3C1E8CD",
 			"properties": {
@@ -5703,12 +5701,17 @@
 				},
 				"m_fConditionValidDistance": {
 					"type": "float32",
-					"value": 2
+					"value": 1.5
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnFalse",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcd845141da1d8f"
+			}]
 		},
 		"abcd29d4b41732ba": {
 			"parent": "abcd9df9701a171c",
@@ -6299,10 +6302,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd578780186052": {
 			"parent": "abcdc454d99c8391",
@@ -6341,7 +6341,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -53.50216216628199
+							"z": -53.50216381614815
 						},
 						"position": {
 							"x": 0.2002152055501938,
@@ -6403,7 +6403,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -53.50216216628199
+							"z": -53.50216381614815
 						},
 						"position": {
 							"x": 0.2002152055501938,
@@ -6496,7 +6496,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -53.50216216628199
+							"z": -53.50216381614815
 						},
 						"position": {
 							"x": 0.2002152055501938,
@@ -6523,10 +6523,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcda55ee837cc52": {
 			"parent": "abcd13698b3d26da",
@@ -7777,6 +7774,7 @@
 				"onEntity": "abcde9d43307e6d1"
 			}]
 		},
+<<<<<<< HEAD
 		"abcd1472582a90e8": {
 			"parent": "fffffffffffffffe",
 			"name": "Rooftops",
@@ -8140,6 +8138,49 @@
 				"m_rCharacter": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd52341c0dd6b4"
+=======
+		"abcdebfad3cd590c": {
+			"parent": "abcd39ae6d69ed26",
+			"name": "SniperActuallyPresent TimerConditional",
+			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nInterval": {
+					"type": "int32",
+					"value": 5000
+				},
+				"m_pCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd24e4e2668cdb"
+				},
+				"m_bRepeatWhileTrue": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bResetWhenStopped": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "TimeOut",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd845141da1d8f"
+			}]
+		},
+		"abcd845141da1d8f": {
+			"parent": "abcd39ae6d69ed26",
+			"name": "SniperActuallyPresent VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+>>>>>>> 7ccffc4620d83bdc99a891da574e55c5bc736c6f
 				}
 			},
 			"postInitProperties": {},
