@@ -717,7 +717,7 @@
 				},
 				"m_aWaypointActs": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["8f2e7da56b67663c"]
+					"value": ["8f2e7da56b67663c", "4fe5f7ced844bfcc"]
 				},
 				"m_fLookAtRange": {
 					"type": "float32",
@@ -7629,9 +7629,9 @@
 		},
 		"abcd41ad77d8b3e9": {
 			"parent": "abcd743b5edce6b2",
-			"name": "Act_MR_Guard_Stand_Rifle2",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_look_up",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_up.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_up.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -7933,7 +7933,12 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Disable",
+				"shouldTrigger": "Disconnected",
+				"onEntity": "abcd6e90f3d6f607"
+			}]
 		},
 		"abcd280246d48155": {
 			"parent": "abcde667f100ebbc",
@@ -8438,6 +8443,13 @@
 				"CameraFishEye": {
 					"type": "float32",
 					"value": 0.0099999997764825821
+				},
+				"DisconnectedImage": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0049B8AE0068F296",
+						"flag": "5F"
+					}
 				}
 			},
 			"postInitProperties": {
@@ -9244,7 +9256,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 1
+					"value": 0.5
 				}
 			},
 			"postInitProperties": {
@@ -9342,6 +9354,211 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdb750571a14ed": {
+			"parent": "abcde0a0a267f4d7",
+			"name": "Climbing Pipes Hostile",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zdisguisezoneentity.class].entitytype,[modules:/zorderedentity.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zdisguisezoneentity.class].entitytype,[modules:/zorderedentity.class].entitytype).pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aExitPoints": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd63b1110f3d1"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0eabe6a054b6": {
+			"parent": "abcdb750571a14ed",
+			"name": "Restaurant Hostile Rules",
+			"template": "[modules:/ztrespassingruleentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztrespassingruleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bDeepTrespassing": {
+					"type": "bool",
+					"value": true
+				},
+				"m_ExcludedFromDeepTrespassingProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_AllowedProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_KeeperProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7", {
+						"ref": "58d50e428bb02419",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}]
+				},
+				"m_Zones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb750571a14ed"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd63b1110f3d1": {
+			"parent": "abcdb750571a14ed",
+			"name": "EXT Pipes Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -80.5716,
+							"y": 34.931,
+							"z": 98.4
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.5,
+						"y": 13,
+						"z": 8
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3ffb48f11aeb": {
+			"parent": "abcde667f100ebbc",
+			"name": "monitor_floorstand_a",
+			"template": "00D08C274EE90D43",
+			"blueprint": "00966670F77BE56C",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 158
+						},
+						"position": {
+							"x": -60.0307,
+							"y": 92.2876,
+							"z": 113
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdec85672c7c17": {
+			"parent": "abcd3ffb48f11aeb",
+			"name": "tv_moderndesign_Wall_A_00_01",
+			"template": "[assembly:/_pro/environment/templates/props/electronics/tv_screens_a.template?/tv_moderndesign_wall_a_00.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/electronics/tv_screens_a.template?/tv_moderndesign_wall_a_00.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -10.131036837994248,
+							"y": 0.012834254894296494,
+							"z": -0.144786547874415
+						},
+						"position": {
+							"x": -0.013817000202834606,
+							"y": -0.06781099736690521,
+							"z": 1.3867650032043457
+						}
+					}
+				},
+				"GlowPower": {
+					"type": "float32",
+					"value": 1000
+				},
+				"m_vFarAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 0.5,
+						"y": 5
+					}
+				},
+				"DiffusePower": {
+					"type": "float32",
+					"value": 100
+				},
+				"ScreenImageA": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "008D4023C2D66A27",
+						"flag": "5F"
+					}
+				},
+				"CameraFishEye": {
+					"type": "float32",
+					"value": 0.0099999997764825821
+				},
+				"DisconnectedImage": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0049B8AE0068F296",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {
+				"PowerCondition": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "abcd90ff1dc668fe",
+						"externalScene": null,
+						"exposedEntity": "Camera_OnOff"
+					}]
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3ffb48f11aeb"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"comment6217ff61c": {
+			"parent": "abcd3ffb48f11aeb",
+			"type": "comment",
+			"name": "Second Monitor",
+			"text": "The one on the left"
 		}
 	},
 	"propertyOverrides": [{
