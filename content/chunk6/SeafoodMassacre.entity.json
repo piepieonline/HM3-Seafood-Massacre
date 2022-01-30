@@ -1564,9 +1564,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": -174.157,
-							"y": 146.167,
-							"z": 85
+							"x": -137.766,
+							"y": 71.9476,
+							"z": 85.0107
 						}
 					}
 				},
@@ -8907,9 +8907,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -174.018,
-							"y": 154.007,
-							"z": 85.6828
+							"x": -137.766,
+							"y": 71.9476,
+							"z": 85.0107
 						}
 					}
 				},
@@ -8963,7 +8963,11 @@
 				},
 				"m_nPriority": {
 					"type": "int32",
-					"value": 1
+					"value": 5
+				},
+				"m_ConditionList": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd4cd9f8290b3"]
 				}
 			},
 			"postInitProperties": {},
@@ -9140,69 +9144,11 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd5310f2c5f279": {
-			"parent": "abcde0eba4f09147",
-			"name": "DR_FollowChief",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rDrama": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd08c4c0e3ed7a"
-				},
-				"m_aActors": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcde0eba4f09147"]
-				},
-				"m_nPriority": {
-					"type": "int32",
-					"value": 5
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd26e1938dcb51": {
-			"parent": "abcd5310f2c5f279",
-			"name": "Follower Role",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aActors": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcde0eba4f09147"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd08c4c0e3ed7a": {
-			"parent": "abcd5310f2c5f279",
-			"name": "Screenplay",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"Roles": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd26e1938dcb51"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnStart",
-				"shouldTrigger": "Start",
-				"onEntity": "abcd267dfbbe1170"
-			}]
-		},
 		"abcd267dfbbe1170": {
-			"parent": "abcd5310f2c5f279",
+			"parent": "abcde0eba4f09147",
 			"name": "Act_FollowChief",
-			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/drama2escortsituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/drama2escortsituation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aTargetOffsets": {
 					"type": "TArray<SVector3>",
@@ -9246,7 +9192,11 @@
 				},
 				"m_fTargetPathOffsetMin": {
 					"type": "float32",
-					"value": 1
+					"value": 2
+				},
+				"m_ConditionList": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd92ce4282314"]
 				}
 			},
 			"postInitProperties": {
@@ -9319,17 +9269,13 @@
 				"onEntity": "abcd530a0fba6989"
 			}, {
 				"onEvent": "OnActTimeout",
-				"shouldTrigger": "LeaveTarget",
-				"onEntity": "abcd267dfbbe1170"
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcda3d7c8dfff0e"
 			}],
-			"outputCopying": [{
-				"onEvent": "OnActTimeout",
-				"propagateEvent": "OnDone",
-				"onEntity": "abcd5310f2c5f279"
-			}]
+			"outputCopying": []
 		},
 		"abcd530a0fba6989": {
-			"parent": "abcd7762be334884",
+			"parent": "abcdd4cd9f8290b3",
 			"name": "HasSaluted ValueBool_Basic",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -9350,6 +9296,51 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd7762be334884"
 			}],
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd4cd9f8290b3": {
+			"parent": "abcd7762be334884",
+			"name": "Has saluted EC",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd530a0fba6989"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd92ce4282314": {
+			"parent": "abcd267dfbbe1170",
+			"name": "Has not saluted",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcda3d7c8dfff0e"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda3d7c8dfff0e": {
+			"parent": "abcdd92ce4282314",
+			"name": "Has not saluted",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
 	},
