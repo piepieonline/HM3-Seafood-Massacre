@@ -1209,9 +1209,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": -174.018,
-							"y": 154.007,
-							"z": 85.6828
+							"x": 0,
+							"y": 0,
+							"z": 0
 						}
 					}
 				},
@@ -1243,7 +1243,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "fffffffffffffffe"
+					"value": "abcd3babaa763e83"
 				}
 			},
 			"editorOnly": false,
@@ -1590,7 +1590,7 @@
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
-				"onEntity": "abcdda8c7c5b2a4a"
+				"onEntity": "abcda8c84a3b4d08"
 			}]
 		},
 		"abcdda8c7c5b2a4a": {
@@ -2267,6 +2267,11 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
+			"events": [{
+				"onEvent": "EventOccurred",
+				"shouldTrigger": "PickupOnTarget",
+				"onEntity": "abcd267dfbbe1170"
+			}],
 			"platformSpecificPropertyValues": []
 		},
 		"abcdf9ffd05f0aa1": {
@@ -6531,7 +6536,7 @@
 		},
 		"abcda55ee837cc52": {
 			"parent": "abcd13698b3d26da",
-			"name": "PFObstacleTestContainer",
+			"name": "PFObstacleCourtyardICA",
 			"template": "[modules:/zpfobstacleentity.class].pc_entitytype",
 			"blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
 			"properties": {
@@ -6544,34 +6549,30 @@
 							"z": 0
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": -28.9904,
+							"y": 29.9661,
+							"z": 101.003
 						}
 					}
 				},
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 0.6731489896774292,
+						"x": 2.6731489896774292,
 						"y": 2.4581100940704346,
-						"z": 1.8866599798202515
+						"z": 2.8866599798202515
 					}
 				},
 				"m_fPenaltyMultiplier": {
 					"type": "float32",
 					"value": -1
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
 				}
 			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": {
-						"ref": "3771d3c427c074b5",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-					}
-				}
-			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -8806,12 +8807,556 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd93b33fde9430": {
+			"parent": "abcd13698b3d26da",
+			"name": "a_ext_wall_4x4_blank_a",
+			"template": "00CF878EEFFCF8EB",
+			"blueprint": "0036FD33AC3A68FA",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -66.9,
+							"y": 52.0092,
+							"z": 97.0006
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0c4974ad7cba": {
+			"parent": "abcd13698b3d26da",
+			"name": "PFObstacleTestContainer",
+			"template": "[modules:/zpfobstacleentity.class].pc_entitytype",
+			"blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.6731489896774292,
+						"y": 2.4581100940704346,
+						"z": 1.8866599798202515
+					}
+				},
+				"m_fPenaltyMultiplier": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "3771d3c427c074b5",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde0eba4f09147": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_TrainStart4_Inside",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -174.018,
+							"y": 154.007,
+							"z": 85.6828
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "King K. Kong"
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7762be334884": {
+			"parent": "abcde0eba4f09147",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9d16ea8468c2"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde0eba4f09147"]
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd53f1253259bb": {
+			"parent": "abcd7762be334884",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde0eba4f09147"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd28387d808494": {
+			"parent": "abcd7762be334884",
+			"name": "Act_MR_Stand_Phone_Read",
+			"template": "0003B9F0AF491390",
+			"blueprint": "00D7644B516D7846",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 15
+						},
+						"position": {
+							"x": -83.547,
+							"y": 53.9296,
+							"z": 101
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 16
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd53f1253259bb"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd5b758a1ba5d1"
+			}]
+		},
+		"abcd5b758a1ba5d1": {
+			"parent": "abcd7762be334884",
+			"name": "Act_MR_Sit_Read_Magazine_045CM",
+			"template": "000438E2BD3D6482",
+			"blueprint": "00B36A250AF537A2",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -170
+						},
+						"position": {
+							"x": -86.1,
+							"y": 44.9,
+							"z": 101.3
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 150
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd53f1253259bb"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd28387d808494"
+			}]
+		},
+		"abcd9d16ea8468c2": {
+			"parent": "abcd7762be334884",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd53f1253259bb"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd5b758a1ba5d1"
+			}]
+		},
+		"abcd7dbe8ec445ee": {
+			"parent": "abcdc8b5984230b7",
+			"name": "Item Containers",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdef021068ce75": {
+			"parent": "abcd7dbe8ec445ee",
+			"name": "SetPiece_Container_Items_Garbage_Bin_Modern_D",
+			"template": "[assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_garbage_bin_modern_d.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_garbage_bin_modern_d.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90
+						},
+						"position": {
+							"x": -86.4073,
+							"y": 43.1466,
+							"z": 101.083
+						}
+					}
+				},
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "51fb0a34-cbda-41dd-974e-1b3d75255ba5"
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5310f2c5f279": {
+			"parent": "abcde0eba4f09147",
+			"name": "DR_FollowChief",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd08c4c0e3ed7a"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde0eba4f09147"]
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 5
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd26e1938dcb51": {
+			"parent": "abcd5310f2c5f279",
+			"name": "Follower Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde0eba4f09147"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd08c4c0e3ed7a": {
+			"parent": "abcd5310f2c5f279",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd26e1938dcb51"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd267dfbbe1170"
+			}]
+		},
+		"abcd267dfbbe1170": {
+			"parent": "abcd5310f2c5f279",
+			"name": "Act_FollowChief",
+			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aTargetOffsets": {
+					"type": "TArray<SVector3>",
+					"value": [{
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}, {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}]
+				},
+				"m_fSpeedUpDistance": {
+					"type": "float32",
+					"value": 2
+				},
+				"m_bStartSearchOnTargetDead": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fStartSearchOnTargetDeadSubsequentDelay": {
+					"type": "float32",
+					"value": 5
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 50
+				},
+				"m_fStartSearchOnTargetDeadDelay": {
+					"type": "float32",
+					"value": 60
+				},
+				"m_fMaxDistanceToIntermediates": {
+					"type": "float32",
+					"value": 15
+				},
+				"m_fTargetPathOffsetMax": {
+					"type": "float32",
+					"value": 4
+				},
+				"m_fTargetPathOffsetMin": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {
+				"m_rEscortTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde0eba4f09147"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnLeaveTarget",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd7762be334884"
+			}, {
+				"onEvent": "OnLeaveTarget",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd5b758a1ba5d1"
+			}]
+		},
+		"abcda8c84a3b4d08": {
+			"parent": "abcdba7e01047fcf",
+			"name": "act_mr_military_stand_attention_salute",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_attention_salute.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_attention_salute.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -88.62220001220703,
+							"y": 68.88243103027344,
+							"z": 97.01000213623047
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd70501cb75193"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdda8c7c5b2a4a"
+			}, {
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd530a0fba6989"
+			}, {
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "LeaveTarget",
+				"onEntity": "abcd267dfbbe1170"
+			}],
+			"outputCopying": [{
+				"onEvent": "OnActTimeout",
+				"propagateEvent": "OnDone",
+				"onEntity": "abcd5310f2c5f279"
+			}]
+		},
+		"abcd530a0fba6989": {
+			"parent": "abcd7762be334884",
+			"name": "HasSaluted ValueBool_Basic",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "LeaveTarget",
+				"onEntity": "abcd267dfbbe1170"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd7762be334884"
+			}],
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
 		"entities": [{
 			"ref": "e7cc08bd31c97e03",
-			"_comment": "Restaurant Lantern",
+			"_comment": "Restaurant Lanterns",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "9dd9f9d064cb7fbd",
@@ -8849,6 +9394,10 @@
 			"ref": "3771d3c427c074b5",
 			"comment": "Container Door",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e7bf2ba7f94d5ba6",
+			"comment": "Courtyard Door to facility I think",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bEnabled": {
@@ -8863,6 +9412,7 @@
 	}, {
 		"entities": [{
 			"ref": "51da1b7462a6b2c5",
+			"comment": "Restaurant Toilet Door I think",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -9619,8 +10169,20 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "66578b18ea77aa28",
+		"_comment": "Newspaper Blend In Spot - Restaurant",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "f185db67a1a5307f",
+		"_comment": "Arcade Keypad",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "ea3d6f42dfb63df4",
 		"_comment": "Container Keypad",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "61fb4e0c594a14f8",
+		"_comment": "Restaurant Exterior Dumpster",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
 		"ref": "596bb31d67c6f5bb",
