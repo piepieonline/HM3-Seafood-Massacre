@@ -439,7 +439,7 @@
 						},
 						"position": {
 							"x": -88.62220001220703,
-							"y": 63.98242950439453,
+							"y": 62.98242950439453,
 							"z": 97.01000213623047
 						}
 					}
@@ -808,9 +808,9 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 3.8232200145721436,
-						"y": 9.399120330810547,
-						"z": 3.6749799251556396
+						"x": 5,
+						"y": 7.3,
+						"z": 3.5
 					}
 				}
 			},
@@ -898,7 +898,7 @@
 						},
 						"position": {
 							"x": -89.10850524902344,
-							"y": 53.5914306640625,
+							"y": 52,
 							"z": 103
 						}
 					}
@@ -907,7 +907,7 @@
 					"type": "SVector3",
 					"value": {
 						"x": 16.690670013427734,
-						"y": 25.73063087463379,
+						"y": 27.5,
 						"z": 5
 					}
 				}
@@ -2828,8 +2828,8 @@
 			}]
 		},
 		"abcd95b1168e6d39": {
-			"parent": "abcd0886580ebb2d",
-			"name": "TargetKillZone VolumeBox",
+			"parent": "abcd7fba46e1f9a5",
+			"name": "TargetKillZone Meeting VolumeBox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
 			"properties": {
@@ -2842,7 +2842,7 @@
 							"z": 0
 						},
 						"position": {
-							"x": -89.07119750976563,
+							"x": -90.1,
 							"y": 63.409786224365234,
 							"z": 101.00008392333984
 						}
@@ -2851,7 +2851,7 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 12,
+						"x": 13.5,
 						"y": 6,
 						"z": 4
 					}
@@ -2867,14 +2867,14 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd0d2f65df04d4": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd7fba46e1f9a5",
 			"name": "TargetKillZone VolumeTriggerCharacter",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd95b1168e6d39", "abcd1936d6405a69"]
+					"value": ["abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
 				}
 			},
 			"postInitProperties": {},
@@ -2887,7 +2887,7 @@
 			}]
 		},
 		"abcdd6e7e6390bb9": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd7fba46e1f9a5",
 			"name": "TargetKillZone AllConditionsMet",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
@@ -2931,14 +2931,14 @@
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd36cd499253ae",
 			"name": "TargetWatchZone VolumeTriggerCharacter",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcda68da210bdc5", "abcd1936d6405a69"]
+					"value": ["abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
 				}
 			},
 			"postInitProperties": {},
@@ -5428,7 +5428,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdeedc06b4cc58": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd7fba46e1f9a5",
 			"name": "TargetKillZone IsFiring VBB",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -5490,7 +5490,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcde38df2a00e42": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd36cd499253ae",
 			"name": "WatchZoneBathroomHidden VolumeBox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -5529,7 +5529,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd495c26c61f05": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd36cd499253ae",
 			"name": "WatchZoneBathroomHidden VolumeTriggerCharacter",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
@@ -5544,7 +5544,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdc73c5e590871": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd36cd499253ae",
 			"name": "TargetWatchZone AllConditionsMet",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
@@ -5559,7 +5559,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcddbb8e1c0e1ba": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd36cd499253ae",
 			"name": "WatchZoneBathroomHidden InvertedCondition",
 			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
 			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
@@ -5904,7 +5904,7 @@
 			}]
 		},
 		"abcd1936d6405a69": {
-			"parent": "abcd0886580ebb2d",
+			"parent": "abcd7fba46e1f9a5",
 			"name": "TargetKillZone Outside Building VolumeBox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -5918,17 +5918,17 @@
 							"z": 0
 						},
 						"position": {
-							"x": -93.5999984741211,
-							"y": 71.4530029296875,
-							"z": 96.8499984741211
+							"x": -106.381,
+							"y": 70.2209,
+							"z": 97.0107
 						}
 					}
 				},
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 26,
-						"y": 10,
+						"x": 40,
+						"y": 16,
 						"z": 6
 					}
 				}
@@ -6551,7 +6551,7 @@
 						"position": {
 							"x": -28.9904,
 							"y": 29.9661,
-							"z": 101.003
+							"z": 102
 						}
 					}
 				},
@@ -6560,16 +6560,16 @@
 					"value": {
 						"x": 2.6731489896774292,
 						"y": 2.4581100940704346,
-						"z": 2.8866599798202515
+						"z": 3.8866599798202515
 					}
+				},
+				"m_bEnabled": {
+					"type": "bool",
+					"value": true
 				},
 				"m_fPenaltyMultiplier": {
 					"type": "float32",
 					"value": -1
-				},
-				"m_eRoomBehaviour": {
-					"type": "ZSpatialEntity.ERoomBehaviour",
-					"value": "ROOM_DYNAMIC"
 				}
 			},
 			"postInitProperties": {},
@@ -8873,34 +8873,34 @@
 							"z": 0
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": -73.75,
+							"y": 36.3643,
+							"z": 98.5
 						}
 					}
 				},
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 0.6731489896774292,
-						"y": 2.4581100940704346,
-						"z": 1.8866599798202515
+						"x": 1.7,
+						"y": 1.8,
+						"z": 2.9
 					}
 				},
 				"m_fPenaltyMultiplier": {
 					"type": "float32",
 					"value": -1
+				},
+				"m_bEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
 				}
 			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": {
-						"ref": "3771d3c427c074b5",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-					}
-				}
-			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -9423,18 +9423,18 @@
 							"z": 0
 						},
 						"position": {
-							"x": -80.5716,
-							"y": 34.931,
-							"z": 98.4
+							"x": -80.5,
+							"y": 37.7,
+							"z": 101.5
 						}
 					}
 				},
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 1.5,
+						"x": 1,
 						"y": 13,
-						"z": 8
+						"z": 6
 					}
 				}
 			},
@@ -9559,6 +9559,110 @@
 			"type": "comment",
 			"name": "Second Monitor",
 			"text": "The one on the left"
+		},
+		"abcdfda853d78f04": {
+			"parent": "abcd7fba46e1f9a5",
+			"name": "TargetKillZone Outside Building VolumeBox2",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -110.8,
+							"y": 85.1399,
+							"z": 97.0097
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 25,
+						"y": 12.5,
+						"z": 15
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd40e10fce7caa": {
+			"parent": "abcd36cd499253ae",
+			"name": "TargetWatchzone Main Square Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 45
+						},
+						"position": {
+							"x": -94.5432,
+							"y": 81.2843,
+							"z": 96.8552
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 19,
+						"y": 15,
+						"z": 5
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd36cd499253ae": {
+			"parent": "abcd0886580ebb2d",
+			"name": "Watchzone",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd7fba46e1f9a5": {
+			"parent": "abcd0886580ebb2d",
+			"name": "Killzone",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
@@ -10377,11 +10481,65 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "f64c3fbe31ffb734",
+		"_comment": "Items",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "5e9fd394f8b045e8",
+		"_comment": "Start of THE BLOCK deletions",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "81b7d232aebebea6",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "7986669ce024fa5",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "340a660167fd7ba4",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "8e971617c5cb69a2",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "73b07a4c0d5197fe",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "5fc852ece98a7184",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "326b4faaaa53ec68",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "49e0d2f248ea47d4",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e6c310557737210",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "9ac5616f0d34d59",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a548de9edd373685",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a7ceaecbe0114fc2",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "5784b1d08bfad92",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "f677af028a0737c8",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "29fed8fac51b9831",
+		"_comment": "End of THE BLOCK old deletions",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "66578b18ea77aa28",
 		"_comment": "Newspaper Blend In Spot - Restaurant",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"ref": "f185db67a1a5307f",
+		"ref": "6dab2e19426e3926",
 		"_comment": "Arcade Keypad",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
