@@ -1419,7 +1419,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.002979908338
+							"z": -110.002979908338
 						},
 						"position": {
 							"x": -80.08000183105469,
@@ -9901,6 +9901,464 @@
 						"ref": "1cd934b65fec0661",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf14bd7969949": {
+			"parent": "abcd0415db798b80",
+			"name": "AUTHOR EVACUATION",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdfb2a2df9c889": {
+			"parent": "abcdf14bd7969949",
+			"name": "VIPController_Craig Black",
+			"template": "[modules:/zvipcontrollerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zvipcontrollerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eFaction": {
+					"type": "EActorFaction",
+					"value": "eActorFaction_VIP_1"
+				},
+				"m_bAllowSecondaryGuardsToEvacuate": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {
+				"m_rVIP": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				},
+				"m_aPreferredEntourage": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde0eba4f09147"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnEvacuationStarted",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcdbf6e1aa8b89a"
+			}]
+		},
+		"abcdbf6e1aa8b89a": {
+			"parent": "abcdf14bd7969949",
+			"name": "VBO_CatastropicEventHappened",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd379668beb050"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"inputCopying": [{
+				"whenTriggered": "SetTrue",
+				"alsoTrigger": "SetTrue",
+				"onEntity": "abcd157c07f6972c"
+			}]
+		},
+		"abcd9d7be98299c7": {
+			"parent": "abcdfb2a2df9c889",
+			"name": "VIPEvac_SafeRoom_Crypt",
+			"template": "[modules:/zvipevacuationnodeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zvipevacuationnodeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_aVolumes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd4e9afcc1877a"]
+				},
+				"m_bIsSafeRoom": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eActorFaction": {
+					"type": "EActorFaction",
+					"value": "eActorFaction_VIP_1"
+				},
+				"m_nMaxVIPCount": {
+					"type": "int32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {
+				"m_aGuardPoints": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9f68739fa663", "abcdc9437f28c563"]
+				},
+				"m_rPoint": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd287d83f99245"
+				},
+				"m_disguiseZones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd0d214eb9a2b"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4e9afcc1877a": {
+			"parent": "abcd9d7be98299c7",
+			"name": "Morgue",
+			"template": "[assembly:/templates/markup/orderedbox.template?/boxvolumeentity01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/orderedbox.template?/boxvolumeentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 45
+						},
+						"position": {
+							"x": -173.312,
+							"y": 151.6,
+							"z": 85
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 4.751150131225586,
+						"y": 4.628590106964111,
+						"z": 2.7408199310302734
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc9437f28c563": {
+			"parent": "abcd9d7be98299c7",
+			"name": "AgitatedGuardPoint01",
+			"template": "[modules:/zagitatedguardpointentity.class].pc_entitytype",
+			"blueprint": "[modules:/zagitatedguardpointentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 137.05240274333548
+						},
+						"position": {
+							"x": -181.967,
+							"y": 131.768,
+							"z": 85
+						}
+					}
+				},
+				"m_bMandatory": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9f68739fa663": {
+			"parent": "abcd9d7be98299c7",
+			"name": "AgitatedGuardPoint",
+			"template": "[modules:/zagitatedguardpointentity.class].pc_entitytype",
+			"blueprint": "[modules:/zagitatedguardpointentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 55.15782546397461
+						},
+						"position": {
+							"x": -175.425,
+							"y": 139.069,
+							"z": 85
+						}
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd287d83f99245": {
+			"parent": "abcd9d7be98299c7",
+			"name": "Act_MR_Stand_Anxious_Looking_Around",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -51.63496818071953
+						},
+						"position": {
+							"x": -173.312,
+							"y": 151.6,
+							"z": 85
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_Color": {
+					"type": "SColorRGB",
+					"value": "#e60000"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd0d214eb9a2b": {
+			"parent": "abcd9d7be98299c7",
+			"name": "DisguiseZone",
+			"template": "[modules:/zdisguisezoneentity.class].pc_entitytype",
+			"blueprint": "[modules:/zdisguisezoneentity.class].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf237841ce7a0"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf237841ce7a0": {
+			"parent": "abcdd0d214eb9a2b",
+			"name": "DisguiseZoneVolume",
+			"template": "[assembly:/templates/gameplay/disguise.template?/disguisezonevolume.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/disguise.template?/disguisezonevolume.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45
+						},
+						"position": {
+							"x": -173.312,
+							"y": 151.6,
+							"z": 85
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 4.463079929351807,
+						"y": 4.420010089874268,
+						"z": 2.7539401054382324
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdfe403c35f0a4": {
+			"parent": "abcdd0d214eb9a2b",
+			"name": "Prof_Police",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb4c1df7185ef": {
+			"parent": "abcdd0d214eb9a2b",
+			"name": "TrespassingRule",
+			"template": "[modules:/ztrespassingruleentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztrespassingruleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_AllowedProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdfe403c35f0a4"]
+				},
+				"m_KeeperProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdfe403c35f0a4"]
+				},
+				"m_Zones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd0d214eb9a2b"]
+				},
+				"m_bDeepTrespassing": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd528d7677e474": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "GameTensionCondition",
+			"template": "[modules:/zgametensioncondition.class].pc_entitytype",
+			"blueprint": "[modules:/zgametensioncondition.class].pc_entityblueprint",
+			"properties": {
+				"m_eMinTension": {
+					"type": "EGameTension",
+					"value": "EGT_AlertedHigh"
+				},
+				"m_eMaxTension": {
+					"type": "EGameTension",
+					"value": "EGT_Combat"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd157c07f6972c": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "VBB_AlertedInQAArea",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5b1e9905ee36": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "ValueBool_Operation01",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd528d7677e474"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ALL"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "GetMaxTension",
+				"onEntity": "abcdc42e72e98fcf"
+			}]
+		},
+		"abcd379668beb050": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "ValueBool_Operation",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd157c07f6972c"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc42e72e98fcf": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "ActorTensionMultipleCondition",
+			"template": "[modules:/zactortensionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactortensionentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd993631a4fc58"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "MaxTensionAlertedHigh",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd157c07f6972c"
+			}, {
+				"onEvent": "MaxTensionArrest",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd157c07f6972c"
+			}, {
+				"onEvent": "MaxTensionCombat",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd157c07f6972c"
+			}]
+		},
+		"abcd993631a4fc58": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -42.27666186591857
+						},
+						"position": {
+							"x": -137.766,
+							"y": 71.9476,
+							"z": 85.0107
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 180.089000701904297,
+						"y": 160.019800186157227,
+						"z": 30.4004199504852295
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1fdb154aee43": {
+			"parent": "abcdbf6e1aa8b89a",
+			"name": "InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd157c07f6972c"
 				}
 			},
 			"postInitProperties": {},
