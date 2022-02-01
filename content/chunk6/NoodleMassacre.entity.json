@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["d40a022a606b4f72"]
+					"entities": ["abcd56c045f94aa5", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -1055,11 +1055,11 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -179.68193024127547
+							"z": 140
 						},
 						"position": {
-							"x": -89.14022064208984,
-							"y": 63.7731819152832,
+							"x": -88.2,
+							"y": 63.25,
 							"z": 101.03020477294922
 						}
 					}
@@ -9663,9 +9663,264 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd61f441d191bf": {
+			"parent": "fffffffffffffffe",
+			"name": "SOUND",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd56c045f94aa5": {
+			"parent": "abcd61f441d191bf",
+			"name": "VAE_RestaurantMusic",
+			"template": "[assembly:/templates/sound/wwise/soundentities.template?/volumetricaudioemitter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/volumetricaudioemitter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -90.008506774902344,
+							"y": 42.391429901123047,
+							"z": 103
+						}
+					}
+				},
+				"m_fAttenuationSpreadDistance": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"entitySubsets": [
+				["AudioVolumetricGeom", {
+					"entities": ["abcdeda9d5e25a02", "abcdaead52a39cac", "abcd99f7a5c80291"]
+				}]
+			]
+		},
+		"abcd99f7a5c80291": {
+			"parent": "abcd56c045f94aa5",
+			"name": "GeomBox 3",
+			"template": "[modules:/zaudiovolumetricgeombox.class].pc_entitytype",
+			"blueprint": "[modules:/zaudiovolumetricgeombox.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45.9252656214246
+						},
+						"position": {
+							"x": -89,
+							"y": 55.34,
+							"z": 101
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 9.842619895935059,
+						"y": 15.223699569702148,
+						"z": 5.485610008239746
+					}
+				},
+				"m_bUseRaycastObstruction": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdeda9d5e25a02": {
+			"parent": "abcd56c045f94aa5",
+			"name": "GeomBox",
+			"template": "[modules:/zaudiovolumetricgeombox.class].pc_entitytype",
+			"blueprint": "[modules:/zaudiovolumetricgeombox.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 17.06100082397461,
+						"y": 11.814000129699707,
+						"z": 5.485610008239746
+					}
+				},
+				"m_bUseRaycastObstruction": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd56c045f94aa5"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdaead52a39cac": {
+			"parent": "abcd56c045f94aa5",
+			"name": "GeomBox 2",
+			"template": "[modules:/zaudiovolumetricgeombox.class].pc_entitytype",
+			"blueprint": "[modules:/zaudiovolumetricgeombox.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45.9252656214246
+						},
+						"position": {
+							"x": -87.78,
+							"y": 62.1,
+							"z": 102.5
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 14.123600006103516,
+						"y": 12.137299537658691,
+						"z": 5.485610008239746
+					}
+				},
+				"m_bUseRaycastObstruction": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3f3823814852": {
+			"parent": "abcd56c045f94aa5",
+			"name": "play_smoothsnake_japanesegarden_envmusic",
+			"template": "[modules:/zaudioevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zaudioevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMainEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00941F88025A1970",
+						"flag": "5F"
+					}
+				},
+				"m_pEmitter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd56c045f94aa5"
+				},
+				"m_eCullingBehavior": {
+					"type": "AudioEventCullingBehavior",
+					"value": "AutoSendStop"
+				},
+				"m_bUseOcclusionForCulling": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdccec46e2eb6e": {
+			"parent": "abcdde52f4b1409b",
+			"name": "Props",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd590bd1b429c5": {
+			"parent": "abcdccec46e2eb6e",
+			"name": "serving_tray_bar_a01",
+			"template": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/serving_tray_bar_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/serving_tray_bar_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -0.06256703317026543
+						},
+						"position": {
+							"x": 0.0065729999914765358,
+							"y": -0.011837000027298927,
+							"z": 0.0543069988489151
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "1cd934b65fec0661",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "88e6b52c61628f40",
+			"comment": "Karoake Music",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pMainEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": "00161ECFA6ADD670"
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "e7cc08bd31c97e03",
 			"_comment": "Restaurant Lanterns",
@@ -10478,6 +10733,14 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "deff40d2f5ab6c07",
+		"_comment": "Tray with sushi",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "7a26daca7a0c3ce5",
+		"_comment": "Single piece of sushi",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "f64c3fbe31ffb734",
 		"_comment": "Items",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
