@@ -35,10 +35,6 @@
 					"type": "EActorType",
 					"value": "eAT_Guard"
 				},
-				"m_bIsFemale": {
-					"type": "bool",
-					"value": false
-				},
 				"m_eActorCCClass": {
 					"type": "EActorCCPreset",
 					"value": "ACCP_CivilianeMale"
@@ -93,6 +89,10 @@
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
 					"value": ["eAVV_WAITER01"]
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd006f60c954ec"]
 				}
 			},
 			"postInitProperties": {
@@ -279,6 +279,10 @@
 				"m_bWeaponsAllowed": {
 					"type": "bool",
 					"value": false
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0867e18f1d14"]
 				}
 			},
 			"postInitProperties": {},
@@ -660,6 +664,10 @@
 				"m_eOutfitAICategory": {
 					"type": "EOutfitAICategory",
 					"value": "OAC_Fallback"
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd30787e9229da"]
 				}
 			},
 			"postInitProperties": {},
@@ -799,6 +807,10 @@
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
 					"value": ["eAVV_HUSH", "eAVV_CIVMALECH01", "eAVV_CIVMALECH02", "eAVV_KONG"]
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd20ffc70f31b3"]
 				}
 			},
 			"postInitProperties": {
@@ -880,6 +892,46 @@
 					"value": ["28f2abc8f9824aec"]
 				}
 			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd006f60c954ec": {
+			"parent": "abcd75486f003950",
+			"name": "AnimSet_BodyGuard_DragBody",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_bodyguard_dragbody.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_bodyguard_dragbody.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd30787e9229da": {
+			"parent": "abcde7ae0a3c1944",
+			"name": "animset_civ_dictator",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd20ffc70f31b3": {
+			"parent": "abcd9f4b2ba77522",
+			"name": "vri_male_walkfast",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_walkfast.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_walkfast.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0867e18f1d14": {
+			"parent": "28f2abc8f9824aec",
+			"name": "animset_s03_l01_civ_male_carlingram",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_carlingram.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_carlingram.entitytemplate].pc_entityblueprint",
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []

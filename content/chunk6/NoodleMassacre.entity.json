@@ -93,7 +93,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdde52f4b1409b": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcdb06dd9b9af95",
 			"name": "Restaurant",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -834,7 +834,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdf673ffefa5f1": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcdb06dd9b9af95",
 			"name": "Streets",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -969,7 +969,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd82237dac2971": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd9d3b85c4d569",
 			"name": "Objectives",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -2874,7 +2874,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
+					"value": ["abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
 				}
 			},
 			"postInitProperties": {},
@@ -2938,7 +2938,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
+					"value": ["abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
 				}
 			},
 			"postInitProperties": {},
@@ -4279,7 +4279,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd9105b49b083c": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd9d3b85c4d569",
 			"name": "TEST",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -6125,7 +6125,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdc8b5984230b7": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd9d3b85c4d569",
 			"name": "Setpieces",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -6525,7 +6525,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd13698b3d26da": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd9d3b85c4d569",
 			"name": "Door Blocking",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -7827,7 +7827,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd1472582a90e8": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcdb06dd9b9af95",
 			"name": "Rooftops",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -9562,7 +9562,7 @@
 		},
 		"abcdfda853d78f04": {
 			"parent": "abcd7fba46e1f9a5",
-			"name": "TargetKillZone Outside Building VolumeBox2",
+			"name": "TargetKillZone JokerStaircase VolumeBox",
 			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
 			"properties": {
@@ -9909,7 +9909,7 @@
 		},
 		"abcdf14bd7969949": {
 			"parent": "abcd0415db798b80",
-			"name": "AUTHOR EVACUATION",
+			"name": "EVACUATION",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -9919,7 +9919,7 @@
 		},
 		"abcdfb2a2df9c889": {
 			"parent": "abcdf14bd7969949",
-			"name": "VIPController_Craig Black",
+			"name": "VIPController_Chief",
 			"template": "[modules:/zvipcontrollerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zvipcontrollerentity.class].pc_entityblueprint",
 			"properties": {
@@ -9948,6 +9948,22 @@
 				"onEvent": "OnEvacuationStarted",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcdbf6e1aa8b89a"
+			}, {
+				"onEvent": "OnEvacuationStarted",
+				"shouldTrigger": "ShowIcon",
+				"onEntity": "abcd40cc8ca2da2f"
+			}, {
+				"onEvent": "OnEvacuationStarted",
+				"shouldTrigger": "Set",
+				"onEntity": "abcdb1843ec50375"
+			}, {
+				"onEvent": "OnEvacuationStandDown",
+				"shouldTrigger": "HideIcon",
+				"onEntity": "abcd40cc8ca2da2f"
+			}, {
+				"onEvent": "OnEvacuationStandDown",
+				"shouldTrigger": "Clear",
+				"onEntity": "abcdb1843ec50375"
 			}]
 		},
 		"abcdbf6e1aa8b89a": {
@@ -9972,7 +9988,7 @@
 		},
 		"abcd9d7be98299c7": {
 			"parent": "abcdfb2a2df9c889",
-			"name": "VIPEvac_SafeRoom_Crypt",
+			"name": "VIPEvac_Train",
 			"template": "[modules:/zvipevacuationnodeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zvipevacuationnodeentity.class].pc_entityblueprint",
 			"properties": {
@@ -10025,9 +10041,9 @@
 							"z": 45
 						},
 						"position": {
-							"x": -173.312,
-							"y": 151.6,
-							"z": 85
+							"x": -174.286,
+							"y": 162.7,
+							"z": 89
 						}
 					}
 				},
@@ -10036,7 +10052,7 @@
 					"value": {
 						"x": 4.751150131225586,
 						"y": 4.628590106964111,
-						"z": 2.7408199310302734
+						"z": 6.7408199310302734
 					}
 				}
 			},
@@ -10115,9 +10131,9 @@
 							"z": -51.63496818071953
 						},
 						"position": {
-							"x": -173.312,
-							"y": 151.6,
-							"z": 85
+							"x": -174.286,
+							"y": 162.7,
+							"z": 89
 						}
 					}
 				},
@@ -10132,7 +10148,12 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnReached",
+				"shouldTrigger": "Trigger",
+				"onEntity": "abcd5d8df115be30"
+			}]
 		},
 		"abcdd0d214eb9a2b": {
 			"parent": "abcd9d7be98299c7",
@@ -10364,6 +10385,405 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd40cc8ca2da2f": {
+			"parent": "abcdfb2a2df9c889",
+			"name": "ActorAttentionIndicatorEntity",
+			"template": "[modules:/zactorattentionindicatorentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorattentionindicatorentity.class].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9a040fd7639e"]
+				},
+				"m_eState": {
+					"type": "EActorAIState",
+					"value": "eAAIS_Fleeing"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5d8df115be30": {
+			"parent": "abcdf14bd7969949",
+			"name": "ContractsEvent Escape success",
+			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "TargetEscaped"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde59d64d5ed2f": {
+			"parent": "abcd13698b3d26da",
+			"name": "Shipping_Container_Long_Closed_Grey_A",
+			"template": "001708AFFE24CF9E",
+			"blueprint": "00D8D14AC8514EC2",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 91.32095695328437
+						},
+						"position": {
+							"x": 18.733020782470703,
+							"y": 24.481990814208984,
+							"z": 7.98797607421875
+						}
+					}
+				},
+				"F1MapMarkupEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"F0MapMarkupEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"F0BaseMapMarkupIsBase": {
+					"type": "bool",
+					"value": false
+				},
+				"F0BaseMapMarkupEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "bee6ed6f69918ed9",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb1843ec50375": {
+			"parent": "abcdfb2a2df9c889",
+			"name": "AIModifierActor",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_bIgnoreLowNoise": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreSillyHitman": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAnnoyingHitman": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreDistractions": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreDeadBodies": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDisableDeadBodySensor": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreWeapons": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreTrespassing": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDisableHelpCivilian": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bNeverSpectate": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bWantsPrivacy": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bSuppressSocialGreeting": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9d3b85c4d569": {
+			"parent": "fffffffffffffffe",
+			"name": "Gameplay",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdb06dd9b9af95": {
+			"parent": "fffffffffffffffe",
+			"name": "Locations",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd6dd8c6b2cb01": {
+			"parent": "abcd9d3b85c4d569",
+			"name": "Morgues",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd086f4b1ec9d7": {
+			"parent": "abcd6dd8c6b2cb01",
+			"name": "Rooftop Morgue",
+			"template": "[modules:/zmorgue.class].pc_entitytype",
+			"blueprint": "[modules:/zmorgue.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aVolumes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf2ca8cca02b8"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf2ca8cca02b8": {
+			"parent": "abcd086f4b1ec9d7",
+			"name": "VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -57.1299,
+							"y": 89.7532,
+							"z": 114
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 3.7936499118804932,
+						"y": 3.2687499523162842,
+						"z": 3
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3f401d0e0708": {
+			"parent": "abcd54ef9f61c2e6",
+			"name": "SetPiece_StashPoint_Crate_1",
+			"template": "[assembly:/_pro/design/setpieces/setpieces_stashpoints.template?/setpiece_stashpoint_crate.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/setpieces/setpieces_stashpoints.template?/setpiece_stashpoint_crate.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90
+						},
+						"position": {
+							"x": -56.9556,
+							"y": 98.7079,
+							"z": 113
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd54ef9f61c2e6": {
+			"parent": "abcdc8b5984230b7",
+			"name": "Stashpoints",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcda01c3dd9d341": {
+			"parent": "abcd36cd499253ae",
+			"name": "TargetWatchzone RestaurantL Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 45
+						},
+						"position": {
+							"x": -95.2828,
+							"y": 60.8894,
+							"z": 102
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 5,
+						"y": 7,
+						"z": 2
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb4cd1df26296": {
+			"parent": "abcd36cd499253ae",
+			"name": "TargetWatchzone RestaurantR Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -84.1761,
+							"y": 59.5325,
+							"z": 102
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 3,
+						"y": 7,
+						"z": 2
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd624d50256e8d": {
+			"parent": "abcd7fba46e1f9a5",
+			"name": "TargetKillZone ToTrainWalk VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -129.682,
+							"y": 86.8945,
+							"z": 85.0107
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 20,
+						"y": 9,
+						"z": 10
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -10416,10 +10836,6 @@
 		}
 	}, {
 		"entities": [{
-			"ref": "3771d3c427c074b5",
-			"comment": "Container Door",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
 			"ref": "e7bf2ba7f94d5ba6",
 			"comment": "Courtyard Door to facility I think",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -11191,6 +11607,42 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "8b5c1e002a4ac117",
+		"_comment": "Hush saferooms",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "37fb04fbde39f035",
+		"_comment": "Start of Muddy's container replacement",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "1a7528530a2d601b",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "1f169fee87234563",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e12b3c967c79701f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "39fbf106736505c1",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "40347ae36996105",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a8423af3cf62f08e",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e1a8374bc470185",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "959784bc38006c5f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "bbca464b299bc00c",
+		"_comment": "End of Muddy's container replacement",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "deff40d2f5ab6c07",
 		"_comment": "Tray with sushi",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"

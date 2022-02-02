@@ -6,8 +6,8 @@
             "ObjectiveType": "setpiece",
             "Image": "images/noodle/red.jpg",
             "BriefingName": "Red Dragon",
-            "BriefingText": "Eliminate the Red Dragon Negotiator",
-            "LongBriefingText": "$loc c0ab162c-1502-40d5-801f-c5471289d6b7_SierraKnox_Description",
+            "BriefingText": "A target has escaped.",
+            "LongBriefingText": "Lee Hong has sent a negotiator to broker peace with the police and the Blue Lotus Triad. Our client wants this to fail, so the Red Dragons must be blamed for killing the peace emissaries. This means that the Red Dragon negotiator cannot live to contradict this story, and his body must not be left anywhere where it will be found.",
             "HUDTemplate": {
                 "display": "Eliminate the Red Dragon Negotiator"
             },
@@ -24,6 +24,9 @@
                                 "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
                             },
                             "Transition": "Success"
+                        },
+                        "TargetEscaped": {
+                            "Transition": "Failure"
                         }
                     }
                 }
@@ -34,7 +37,7 @@
             "ObjectiveType": "setpiece",
             "Image": "images/noodle/chief.jpg",
             "BriefingName": "Police Chief",
-            "BriefingText": "Eliminate the Chief of Police",
+            "BriefingText": "A target has escaped.",
             "LongBriefingText": "Since the police are presiding over this meeting in the interests of preserving the peace, you'll have to include the chief in this job.",
             "HUDTemplate": {
                 "display": "Eliminate the Chief of Police"
@@ -52,6 +55,9 @@
                                 "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
                             },
                             "Transition": "Success"
+                        },
+                        "TargetEscaped": {
+                            "Transition": "Failure"
                         }
                     }
                 }
@@ -63,7 +69,7 @@
             "ObjectiveType": "setpiece",
             "Image": "images/noodle/blue.jpg",
             "BriefingName": "Blue Lotus",
-            "BriefingText": "Eliminate the Blue Lotus Negotiator",
+            "BriefingText": "A target has escaped.",
             "LongBriefingText": "Taking the Blue Lotus negotiator out will ensure the police aren't confused about who's to blame for the chief being hit.",
             "HUDTemplate": {
                 "display": "Eliminate the Blue Lotus Negotiator"
@@ -81,6 +87,9 @@
                                 "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1c"]
                             },
                             "Transition": "Success"
+                        },
+                        "TargetEscaped": {
+                            "Transition": "Failure"
                         }
                     }
                 }
@@ -107,9 +116,6 @@
                         "Start": {
                             "AmuletPlaced": {
                                 "Transition": "Success"
-                            },
-                            "TargetsEscaped": {
-                                "Transition": "Failure"
                             }
                         }
                     }
