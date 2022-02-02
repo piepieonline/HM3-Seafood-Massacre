@@ -24,9 +24,6 @@
                                 "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
                             },
                             "Transition": "Success"
-                        },
-                        "TargetEscaped": {
-                            "Transition": "Failure"
                         }
                     }
                 }
@@ -55,9 +52,6 @@
                                 "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
                             },
                             "Transition": "Success"
-                        },
-                        "TargetEscaped": {
-                            "Transition": "Failure"
                         }
                     }
                 }
@@ -87,9 +81,6 @@
                                 "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1c"]
                             },
                             "Transition": "Success"
-                        },
-                        "TargetEscaped": {
-                            "Transition": "Failure"
                         }
                     }
                 }
@@ -129,6 +120,28 @@
                 "OnActive": {
                     "IfCompleted": {
                         "Visible": true
+                    }
+                }
+            }, {
+                "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
+                "Category": "primary",
+                "IsHidden": true,
+                "ExcludeFromScoring": true,
+                "BriefingText": "A target has escaped.",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                        "TargetEscaped": {
+                            "Transition": "Failure"
+                            }
+                        }
                     }
                 }
             }],
