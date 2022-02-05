@@ -4,6 +4,7 @@
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
             "Category": "primary",
             "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/red.jpg",
             "BriefingName": "Red Dragon",
             "BriefingText": "A target has escaped.",
@@ -32,6 +33,7 @@
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
             "Category": "primary",
             "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/chief.jpg",
             "BriefingName": "Police Chief",
             "BriefingText": "A target has escaped.",
@@ -61,6 +63,7 @@
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616833",
             "Category": "primary",
             "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/blue.jpg",
             "BriefingName": "Blue Lotus",
             "BriefingText": "A target has escaped.",
@@ -90,10 +93,12 @@
                 "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
 				"ObjectiveType": "custom",
 				"Image": "images/noodle/amulet.jpg",
+				"ForceShowOnLoadingScreen": true,
 				"BriefingName": "Frame Job",
                 "BriefingText": "Leave the Red Dragon Amulet at the meeting table to implicate the Red Dragons",
                 "HUDTemplate": {
-                    "display": "Leave the Red Dragon Amulet at the meeting table"
+                    "display": "Leave the Red Dragon Amulet at the meeting table",
+                    "iconType": 17
                 },
 				"LongBriefingText": "Drop a Red Dragon amulet at the table of the restaurant to ensure they take the blame.",
                 "Category": "primary",

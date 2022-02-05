@@ -117,7 +117,7 @@
 			"properties": {
 				"Diffuse_Color_01_Value": {
 					"type": "SColorRGB",
-					"value": "#b3dead"
+					"value": "#ffffff"
 				},
 				"m_pMeshResource": {
 					"type": "ZRuntimeResourceID",
