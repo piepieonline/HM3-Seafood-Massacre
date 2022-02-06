@@ -1,6 +1,6 @@
 {
-	"tempHash": "0085D99EA00CAA07",
-	"tbluHash": "0090D4771F4F317F",
+	"tempHash": "00275DE3767D90C9",
+	"tbluHash": "00586BC542B87C6C",
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
@@ -413,7 +413,7 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePoliceShort_Hero_v2",
+			"name": "outfit_chinesepolice_wet_m_hero_v0",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {

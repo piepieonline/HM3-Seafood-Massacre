@@ -317,7 +317,11 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 3
+					"value": 7
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -373,6 +377,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 5
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -1362,6 +1370,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 2
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -2137,6 +2149,10 @@
 					"value": false
 				},
 				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 6
+				},
+				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
 				}
@@ -6063,7 +6079,11 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 0
+					"value": 5
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -6261,6 +6281,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 2
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -6456,6 +6480,10 @@
 					"value": 0
 				},
 				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
 				}
@@ -6659,6 +6687,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 3
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -6825,6 +6857,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 4
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -7022,6 +7058,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 2
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -7684,6 +7724,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 5
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -8125,6 +8169,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 4
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {
@@ -8388,6 +8436,10 @@
 				"m_nOutfitVariation": {
 					"type": "int32",
 					"value": 0
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
 				}
 			},
 			"postInitProperties": {

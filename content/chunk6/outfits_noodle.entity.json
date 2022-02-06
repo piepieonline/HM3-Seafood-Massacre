@@ -412,7 +412,7 @@
 			"postInitProperties": {
 				"m_aCharSets": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd00fdca7e7d06"]
+					"value": ["abcd00fdca7e7d06", "abcd976b760d3ca7"]
 				},
 				"m_AvailableWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -931,6 +931,16 @@
 			"name": "animset_s03_l01_civ_male_carlingram",
 			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_carlingram.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_carlingram.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd976b760d3ca7": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "charset_chinesepolice_wet_m",
+			"template": "004C2C99C75ED8AF",
+			"blueprint": "00F94E9C9C06EB4D",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
