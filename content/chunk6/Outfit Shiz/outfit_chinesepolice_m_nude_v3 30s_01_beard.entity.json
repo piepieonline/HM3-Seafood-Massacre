@@ -1,11 +1,11 @@
 {
-	"tempHash": "0074439A0048271A",
-	"tbluHash": "0041F9B8ED83E35C",
+	"tempHash": "00E234185F601425",
+	"tbluHash": "0059054FCA61C9D9",
 	"rootEntity": "f45421e0223275d7",
 	"entities": {
 		"f45421e0223275d7": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePolice_M_Nude_v1",
+			"name": "OUTFIT_ChinesePolice_M_Nude_v3",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -127,10 +127,19 @@
 		},
 		"9891c0a9e62730de": {
 			"parent": "f45421e0223275d7",
-			"name": "Head_asian_30s_3",
-			"template": "00B5FCED1E316C80",
-			"blueprint": "0A1DA827E15317D",
-			"properties": {},
+			"name": "head_asian_30s_01_beard",
+			"template": "0064E11159C4882C",
+			"blueprint": "0008E1DFFC08F16D",
+			"properties": {
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				},
+				"ConstantColorRGB_01_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -157,66 +166,11 @@
 		},
 		"abcdd34639c8e5cf": {
 			"parent": "f45421e0223275d7",
-			"name": "Hair_Top_M_SidePart",
-			"template": "00B645FABE45D271",
-			"blueprint": "00D32E026789FC1D",
-			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "[assembly:/_pro/characters/assets/individuals/seagull/dragoneye/geometry/male_reg_dragoneye.wl2?/dragoneye_hair.weightedprim](bodypart).pc_weightedprim",
-						"flag": "5F"
-					}
-				}
-			},
+			"name": "hair_top_ms_sidepart_neat",
+			"template": "00E2C97D9F5DA5EA",
+			"blueprint": "00426D8D36BD403C",
+			"properties": {},
 			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdfe9fe0e639e1": {
-			"parent": "abcdd34639c8e5cf",
-			"name": "base_hair",
-			"template": "00E71D84A55D0739",
-			"blueprint": "0005F23475432C1C",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						}
-					}
-				},
-				"ConstantColorRGB_02_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#26221e"
-				},
-				"ConstantColorRGB_05_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantColorRGB_05_Value": {
-					"type": "SColorRGB",
-					"value": "#bda99f"
-				}
-			},
-			"postInitProperties": {
-				"Clients": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdd34639c8e5cf"]
-				}
-			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
