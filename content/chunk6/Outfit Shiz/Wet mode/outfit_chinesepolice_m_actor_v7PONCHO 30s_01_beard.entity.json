@@ -295,7 +295,7 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "outfit_chinesepolice_wet_m_actor_PONCHOv3",
+			"name": "outfit_chinesepolice_wet_m_actor_PONCHOv7",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -667,49 +667,6 @@
 				}
 			},
 			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd29271275ae9c": {
-			"parent": "44b989ff347d77c8",
-			"name": "mask_hospital",
-			"template": "004B934C71A190BD",
-			"blueprint": "00622247415916BE",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": -6.894733014868127,
-							"y": 88.8684040400329,
-							"z": -176.3684740602807
-						},
-						"position": {
-							"x": 0.0738459974527359,
-							"y": 0.022928999736905098,
-							"z": 0.00039900001138448715
-						}
-					}
-				},
-				"m_PrimitiveScale": {
-					"type": "SVector3",
-					"value": {
-						"x": 1.0119500160217285,
-						"y": 1.000100016593933,
-						"z": 0.9349730014801025
-					}
-				},
-				"Diffuse_Color_01_Value": {
-					"type": "SColorRGB",
-					"value": "#f5ece6"
-				}
-			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "44b989ff347d77c8"
-				}
-			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
