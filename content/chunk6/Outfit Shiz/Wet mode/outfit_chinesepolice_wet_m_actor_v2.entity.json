@@ -1,6 +1,6 @@
 {
-	"tempHash": "0085D99EA00CAA07",
-	"tbluHash": "0090D4771F4F317F",
+	"tempHash": "004344C796F97820",
+	"tbluHash": "00AEE89AD0711C75",
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
@@ -41,16 +41,17 @@
 		},
 		"c4daea86e99bf487": {
 			"parent": "c1e434f458c274df",
-			"name": "Mesh_Boots",
-			"template": "[modules:/zbodypartentity.class].pc_entitytype",
-			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"name": "Shoes_Boots_Plain",
+			"template": "00636C233DF7C596",
+			"blueprint": "00285A52ACEC10A2",
 			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "004E7A668B12FD61",
-						"flag": "5F"
-					}
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#292929"
+				},
+				"ConstantVector1D_04_Value": {
+					"type": "float32",
+					"value": 0.25999999046325684
 				}
 			},
 			"postInitProperties": {},
@@ -305,10 +306,19 @@
 		},
 		"637003535601e69a": {
 			"parent": "c1e434f458c274df",
-			"name": "Head_47",
-			"template": "00537D16B5CE7286",
-			"blueprint": "00F2E4A932ECAA63",
-			"properties": {},
+			"name": "head_asian_50s_01",
+			"template": "00AFE802E8C683F4",
+			"blueprint": "008983A334282CCD",
+			"properties": {
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				},
+				"ConstantColorRGB_01_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -413,7 +423,7 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePoliceShort_Hero_v2",
+			"name": "outfit_chinesepolice_wet_m_actor_v2",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -527,7 +537,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
+					"value": ["abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
 				}
 			},
 			"editorOnly": false,
@@ -674,6 +684,22 @@
 				"whenTriggered": "ConstantVector1D_01_Value",
 				"alsoTrigger": "ConstantVector1D_01_Value",
 				"onEntity": "57b76c52d9fbcdcd"
+			}, {
+				"whenTriggered": "ConstantVector1D_06_Value",
+				"alsoTrigger": "ConstantVector1D_06_Value",
+				"onEntity": "abcdb8a71932b496"
+			}, {
+				"whenTriggered": "ConstantVector1D_14_Value",
+				"alsoTrigger": "ConstantVector1D_14_Value",
+				"onEntity": "abcdb8a71932b496"
+			}, {
+				"whenTriggered": "ConstantVector1D_15_Value",
+				"alsoTrigger": "ConstantVector1D_15_Value",
+				"onEntity": "abcdb8a71932b496"
+			}, {
+				"whenTriggered": "ConstantVector1D_01_Value",
+				"alsoTrigger": "ConstantVector1D_01_Value",
+				"onEntity": "abcdb8a71932b496"
 			}]
 		},
 		"abcd19dd4eb72656": {
@@ -761,6 +787,72 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd575e6efe73c8": {
+			"parent": "c1e434f458c274df",
+			"name": "Hair_Cap",
+			"template": "006594C7AF2B3472",
+			"blueprint": "000B3B438FC8C9AC",
+			"properties": {
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#8a7d71"
+				},
+				"ConstantColorRGB_05_Value": {
+					"type": "SColorRGB",
+					"value": "#fce1d2"
+				},
+				"ConstantColorRGB_03_Value": {
+					"type": "SColorRGB",
+					"value": "#524a43"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb8a71932b496": {
+			"parent": "44b989ff347d77c8",
+			"name": "mask_hospital",
+			"template": "004B934C71A190BD",
+			"blueprint": "00622247415916BE",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -6.894733014868127,
+							"y": 88.8684040400329,
+							"z": -176.3684740602807
+						},
+						"position": {
+							"x": 0.0738459974527359,
+							"y": 0.022928999736905098,
+							"z": 0.00039900001138448715
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.05119500160217285,
+						"y": 1.050100016593933,
+						"z": 1
+					}
+				},
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#f5ece6"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "44b989ff347d77c8"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [],
