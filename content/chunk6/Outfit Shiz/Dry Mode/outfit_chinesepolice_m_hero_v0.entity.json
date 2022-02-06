@@ -590,6 +590,13 @@
 			"template": "008DAFF880E54167",
 			"blueprint": "00A31B49E5A8A9FC",
 			"properties": {
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BA2D6008DDF3D6",
+						"flag": "5F"
+					}
+				},
 				"ConstantColorRGB_02_Value": {
 					"type": "SColorRGB",
 					"value": "#19291a"
