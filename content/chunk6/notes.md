@@ -1,5 +1,28 @@
-# Priorities
-1. 
+# RUDDY'S NOTES
+- Can we please finalise whatever's going on with the plate version of the amulet? Everything else is being finalised now, I think we're beyond having a floating plate in the air.
+- Chief is now incapable of actually entering combat with you, because combat state triggers his evacuation. This means I may as well make him a civillian (And the other targets when I get around to them)
+- Nobody actually follows chief if he evacuates after that specific guy stops following him, this must be recitified. I'll try.
+- Waiting for QN patch maker to work so I can revert scenario_noodle back to vanilla but KEEP my different parentings (I'll do this)
+- I will totally re-do (add in) a lot of trespassing zones, don't worry about that
+- The bartender cannot have a weapon visible the whole time, it needs to be a surprise. I'd love the sawn off to be hidden in his 'pocket'. Worst case is he has a pistol, but pistol is shit and not what he has in the original missions.
+- Atampy's been working on some really cool stuff with randomised routes/acts; I'd love to put one or two civillians in the streets and alleys who do this
+- I've made the ICA apartment a viable alternative sniping spot, but I will put an NPC in there so there's some challenge
+- Need to make chief, bartender and sniper not respond to distractions or help civilians. I should be able to do this.
+- Need to delete that annoying fucking 'have yu seen a gir aroun' lady
+- I still have more cop variations to make, and the associated nude variations, it's not at the top of my list.
+
+
+
+Possible ideas - Undecided:
+- Do something with The Block now that it's empty? I was just going to move the homeless in there, but I'm open.
+- C47 music for the daytime version of the mission (This one should be easy because C47 didn't have combat themes or anything, it play the one 7 minute track everywhere, permanently) and Contracts music for the night version of the mission (Harder because it has combat themes, etc)
+
+Future Easter Eggs:
+- Make the ICA Facility start in meltdown. A new keypad with some sort of special code will be placed on the map and allow access. Inside will be Dawood Rangan dancing to music. You get the meltdown started and I'll do the rest.
+- The answering machine in ICA apartment... instead of the End Of Era story shit it's gotta play something funny
+- A girl with shoh hair and bright green bag. I'll make this lady, don't worry. Hopefully she can be one of Atampy's randomised people.
+
+
 
 # Notes
 * Food:
