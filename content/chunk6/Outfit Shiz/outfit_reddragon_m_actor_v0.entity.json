@@ -1668,7 +1668,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd891ced1ade5f", "476177bf0aa2cdda", "be1e66f78a260de7", "7bd3c51db1335b68", "fd772538c4c3cd48", "1e9f1d71861e7ed9", "aa41ee85e13ef3a0", "d12d8a09b8ec883a", "ff8b99893ef32552"]
+					"value": ["476177bf0aa2cdda", "be1e66f78a260de7", "7bd3c51db1335b68", "fd772538c4c3cd48", "1e9f1d71861e7ed9", "aa41ee85e13ef3a0", "d12d8a09b8ec883a", "ff8b99893ef32552"]
 				}
 			},
 			"editorOnly": false,
@@ -2345,28 +2345,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd891ced1ade5f": {
-			"parent": "26a0368bd9eb44ca",
-			"name": "Mesh_Glasses",
-			"template": "[modules:/zbodypartentity.class].pc_entitytype",
-			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
-			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00E4E0231DDA8495",
-						"flag": "5F"
-					}
-				},
-				"m_IsHiddenInVR": {
-					"type": "bool",
-					"value": true
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd35c8b9816cc8": {
 			"parent": "26a0368bd9eb44ca",
 			"name": "Attacher_Head",
@@ -2422,6 +2400,60 @@
 				"Diffuse_Color_01_Value": {
 					"type": "SColorRGB",
 					"value": "#a61616"
+				},
+				"m_rLinkedProxyEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "26a0368bd9eb44ca"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd35c8b9816cc8"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd47b1152690bc": {
+			"parent": "abcd35c8b9816cc8",
+			"name": "glasses_round_metal",
+			"template": "0009C92ED80BEA0D",
+			"blueprint": "00072FB86078A71D",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -6.631748199462891,
+							"y": 89.10868072509766,
+							"z": -179.20462036132813
+						},
+						"position": {
+							"x": 0.0782179981470108,
+							"y": 0.0157260000705719,
+							"z": -0.00003600000127335079
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.0896400213241576,
+						"y": 0.9322310090065002,
+						"z": 1.229490041732788
+					}
+				},
+				"Diffuse_Tint_Value": {
+					"type": "SColorRGB",
+					"value": "#446962"
+				},
+				"m_ResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "005862BA007EF058",
+						"flag": "5F"
+					}
 				},
 				"m_rLinkedProxyEntity": {
 					"type": "SEntityTemplateReference",
