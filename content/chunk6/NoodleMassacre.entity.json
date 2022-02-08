@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcd56c045f94aa5", "d40a022a606b4f72"]
+					"entities": ["abcd9a040fd7639e", "abcd56c045f94aa5", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -10939,6 +10939,217 @@
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd5a49108a3813"
 			}]
+		},
+		"abcd1090e2da3351": {
+			"parent": "abcd9a040fd7639e",
+			"name": "Chief Dialogue to HM Red Dragon",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd571b9e7737e3": {
+			"parent": "abcd0fc3d549ddba",
+			"name": "EC_HM Is Red Dragon Chief ready to eat sees HM",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf187db81da97", "abcd33f28136cbd9", "abcdba53a6f8f3e2"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdfc2bf0b12de4": {
+			"parent": "abcd571b9e7737e3",
+			"name": "Prof_Noodle_Meeting",
+			"template": "007E827EA0D8ABB8",
+			"blueprint": "00D8D0CD7A6B623C",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf187db81da97": {
+			"parent": "abcd571b9e7737e3",
+			"name": "HeroKeywordCondition_PlayerIsRedDragon",
+			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bUseInventory": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rRequirements": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdfc2bf0b12de4"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdba53a6f8f3e2": {
+			"parent": "abcd571b9e7737e3",
+			"name": "Chief can see 47",
+			"template": "[modules:/zactorcanseecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactorcanseecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd0fc3d549ddba": {
+			"parent": "abcd1090e2da3351",
+			"name": "Chief speak to HM Red Dragon",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd7dd0d76db37d"
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 20
+				},
+				"m_eReentryBehavior": {
+					"type": "ZDramaSituationEntity.EReentryBehavior",
+					"value": "RB_RESTART"
+				}
+			},
+			"postInitProperties": {
+				"m_EnableConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd571b9e7737e3"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0fbe390edab7": {
+			"parent": "abcd0fc3d549ddba",
+			"name": "Chief Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9a040fd7639e"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7dd0d76db37d": {
+			"parent": "abcd0fc3d549ddba",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0fbe390edab7"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd46d4f51206c9"
+			}]
+		},
+		"abcd7690da2c3615": {
+			"parent": "abcd0fc3d549ddba",
+			"name": "Lines",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd7eaf832aa3c": {
+			"parent": "abcd7690da2c3615",
+			"name": "2_HM 1",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BCB2B0C3219259",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd46d4f51206c9": {
+			"parent": "abcd7690da2c3615",
+			"name": "1_Chief",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BD26AB41D629FD",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0fbe390edab7"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Aborted",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd7dd0d76db37d"
+			}, {
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdd7eaf832aa3c"
+			}]
 		}
 	},
 	"propertyOverrides": [{
@@ -11808,6 +12019,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "56765251432bfa7f",
+		"_comment": "NPCs - Facility",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "5b90111624df7efe",
 		"_comment": "ICA Apartment Blinds",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
