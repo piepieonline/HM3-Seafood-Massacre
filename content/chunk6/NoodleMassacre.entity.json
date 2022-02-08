@@ -2819,6 +2819,10 @@
 				"onEvent": "OnFalse",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcd5a49108a3813"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcd62f6434de40f"
 			}]
 		},
 		"abcdd6e7e6390bb9": {
@@ -5112,10 +5116,6 @@
 				"m_eMonitoredEvent": {
 					"type": "EAISharedEventType",
 					"value": "AISET_IllegalAction"
-				},
-				"m_rEnabled": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd24880992e43f"
 				}
 			},
 			"postInitProperties": {},
@@ -5155,10 +5155,6 @@
 				"m_eMonitoredEvent": {
 					"type": "EAISharedEventType",
 					"value": "AISET_IllegalActionSevere"
-				},
-				"m_rEnabled": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd24880992e43f"
 				}
 			},
 			"postInitProperties": {},
@@ -5179,10 +5175,6 @@
 				"m_eMonitoredEvent": {
 					"type": "EAISharedEventType",
 					"value": "AISET_IllegalBehavior"
-				},
-				"m_rEnabled": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd24880992e43f"
 				}
 			},
 			"postInitProperties": {},
@@ -5203,10 +5195,6 @@
 				"m_eMonitoredEvent": {
 					"type": "EAISharedEventType",
 					"value": "AISET_IllegalAgility"
-				},
-				"m_rEnabled": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd24880992e43f"
 				}
 			},
 			"postInitProperties": {},
@@ -5388,7 +5376,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd5a49108a3813": {
-			"parent": "abcd29d4b41732ba",
+			"parent": "abcd9df9701a171c",
 			"name": "VBB HM has committed illegal action inside killzone",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
@@ -5399,7 +5387,7 @@
 		},
 		"abcdd57c38e9941c": {
 			"parent": "abcd29d4b41732ba",
-			"name": "Inside zone poll",
+			"name": "Inside zone VBP",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -10852,6 +10840,73 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdfe5d508364c3": {
+			"parent": "abcde4f75efc745b",
+			"name": "HM is currently AISET_Trespassing",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_Trespassing"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcddd80f2292307"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcddd80f2292307"
+			}]
+		},
+		"abcde4f75efc745b": {
+			"parent": "abcd9df9701a171c",
+			"name": "Trespassing",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcddd80f2292307": {
+			"parent": "abcde4f75efc745b",
+			"name": "IsTrespassing VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd62f6434de40f": {
+			"parent": "abcde4f75efc745b",
+			"name": "Trespassing inside zone VBP",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcddd80f2292307"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "PollTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd5a49108a3813"
+			}]
 		}
 	},
 	"propertyOverrides": [{
