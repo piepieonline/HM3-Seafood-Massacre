@@ -10837,9 +10837,57 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd3846169b9367": {
+			"parent": "abcd9105b49b083c",
+			"name": "MeltdownActive",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "c1e7695f01e1a3ff",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_nInitialStateIndex": {
+				"type": "int32",
+				"value": 2
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "63e44936e1923b25",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_nInitialStateIndex": {
+				"type": "int32",
+				"value": 2
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "63e44936e1923b25",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_rEnableCondition": {
+				"type": "SEntityTemplateReference",
+				"value": "abcd3846169b9367"
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "a2ffb78903c866f4",
 			"comment": "ICA Apartment Door",
