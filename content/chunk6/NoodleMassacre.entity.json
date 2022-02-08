@@ -36,8 +36,8 @@
 		"d40a022a606b4f72": {
 			"parent": "abcd3216ca0eb5b1",
 			"name": "CHAR_Bartender",
-			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/templates/aspectdummy.aspect]([assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].entitytype,[modules:/zglowoverrideaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].entitytype,[modules:/zglowoverrideaspect.class].entitytype).pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -81,6 +81,10 @@
 				"m_InventoryItemKeys": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcdaebfdc6fc13e"]
+				},
+				"m_eGlowOverride": {
+					"type": "ERenderGlowTypes",
+					"value": "ERENDERGLOWTYPE_CIVILIAN"
 				}
 			},
 			"postInitProperties": {
@@ -205,6 +209,34 @@
 					"value": true
 				},
 				"m_bIgnoreAnnoyingHitman": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreDistractions": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreDeadBodies": {
+					"type": "bool",
+					"value": false
+				},
+				"mm_bIgnoreLockdown": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreWeapons": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreTrespassing": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bDisableHelpCivilian": {
 					"type": "bool",
 					"value": true
 				}
