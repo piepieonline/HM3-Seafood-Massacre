@@ -11479,6 +11479,26 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdffded148d20d": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is currently AISET_Shooting",
+			"template": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eMonitoredEvent": {
+					"type": "EAISharedEventType",
+					"value": "AISET_Shooting"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
+			}]
 		}
 	},
 	"propertyOverrides": [{
