@@ -38,7 +38,7 @@
             "WorldTransform": "0.939693, -0.34202, 0, 0.34202, 0.939693, 0, 0, 0, 1, -95.28177, 36.19925, 101"
         }, {
             "id": "f9c65d0b-e5ce-454e-8f20-08a8083a9b9d",
-            "isDefaultSpawn": false,
+            "isDefaultSpawn": true,
             "isPreferredSpawn": false,
             "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -173.9, 159.8794, 89"
         }

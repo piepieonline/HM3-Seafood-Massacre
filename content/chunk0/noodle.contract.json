@@ -4,10 +4,11 @@
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
             "Category": "primary",
             "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/red.jpg",
             "BriefingName": "Red Dragon",
-            "BriefingText": "Eliminate the Red Dragon Negotiator",
-            "LongBriefingText": "$loc c0ab162c-1502-40d5-801f-c5471289d6b7_SierraKnox_Description",
+            "BriefingText": "A target has escaped.",
+            "LongBriefingText": "Lee Hong has sent a negotiator to broker peace with the police and the Blue Lotus Triad. Our client wants this to fail, so the Red Dragons must be blamed for killing the peace emissaries. This means that the Red Dragon negotiator cannot live to contradict this story, and his body must not be left anywhere where it will be found.",
             "HUDTemplate": {
                 "display": "Eliminate the Red Dragon Negotiator"
             },
@@ -32,9 +33,10 @@
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
             "Category": "primary",
             "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/chief.jpg",
             "BriefingName": "Police Chief",
-            "BriefingText": "Eliminate the Chief of Police",
+            "BriefingText": "A target has escaped.",
             "LongBriefingText": "Since the police are presiding over this meeting in the interests of preserving the peace, you'll have to include the chief in this job.",
             "HUDTemplate": {
                 "display": "Eliminate the Chief of Police"
@@ -61,9 +63,10 @@
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616833",
             "Category": "primary",
             "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/blue.jpg",
             "BriefingName": "Blue Lotus",
-            "BriefingText": "Eliminate the Blue Lotus Negotiator",
+            "BriefingText": "A target has escaped.",
             "LongBriefingText": "Taking the Blue Lotus negotiator out will ensure the police aren't confused about who's to blame for the chief being hit.",
             "HUDTemplate": {
                 "display": "Eliminate the Blue Lotus Negotiator"
@@ -90,10 +93,12 @@
                 "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
 				"ObjectiveType": "custom",
 				"Image": "images/noodle/amulet.jpg",
+				"ForceShowOnLoadingScreen": true,
 				"BriefingName": "Frame Job",
                 "BriefingText": "Leave the Red Dragon Amulet at the meeting table to implicate the Red Dragons",
                 "HUDTemplate": {
-                    "display": "Leave the Red Dragon Amulet at the meeting table"
+                    "display": "Leave the Red Dragon Amulet at the meeting table",
+                    "iconType": 17
                 },
 				"LongBriefingText": "Drop a Red Dragon amulet at the table of the restaurant to ensure they take the blame.",
                 "Category": "primary",
@@ -107,9 +112,6 @@
                         "Start": {
                             "AmuletPlaced": {
                                 "Transition": "Success"
-                            },
-                            "TargetsEscaped": {
-                                "Transition": "Failure"
                             }
                         }
                     }
@@ -123,6 +125,28 @@
                 "OnActive": {
                     "IfCompleted": {
                         "Visible": true
+                    }
+                }
+            }, {
+                "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
+                "Category": "primary",
+                "IsHidden": true,
+                "ExcludeFromScoring": true,
+                "BriefingText": "A target has escaped.",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                        "TargetEscaped": {
+                            "Transition": "Failure"
+                            }
+                        }
                     }
                 }
             }],
