@@ -11118,13 +11118,22 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Aborted",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd7dd0d76db37d"
+			}, {
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd44a95b5fc5dc"
+			}]
 		},
 		"abcd46d4f51206c9": {
 			"parent": "abcd7690da2c3615",
 			"name": "1_Chief",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
@@ -11149,6 +11158,71 @@
 				"onEvent": "Completed",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdd7eaf832aa3c"
+			}]
+		},
+		"abcd44a95b5fc5dc": {
+			"parent": "abcd7690da2c3615",
+			"name": "3_Chief curse",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00631E59A81EF433",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0fbe390edab7"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Aborted",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd7dd0d76db37d"
+			}, {
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdd7eaf832aa3c"
+			}]
+		},
+		"abcd60dfd99b93d9": {
+			"parent": "abcd7690da2c3615",
+			"name": "4_HM 2 soz to disappoint",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/herooneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "11b420629d3ee72e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "006EE2E2D2412887",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Aborted",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd7dd0d76db37d"
+			}, {
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd44a95b5fc5dc"
 			}]
 		}
 	},
