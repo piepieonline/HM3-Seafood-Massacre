@@ -11185,10 +11185,6 @@
 				"onEvent": "Aborted",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd7dd0d76db37d"
-			}, {
-				"onEvent": "Completed",
-				"shouldTrigger": "Start",
-				"onEntity": "abcdd7eaf832aa3c"
 			}]
 		},
 		"abcd60dfd99b93d9": {
@@ -11224,6 +11220,70 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd44a95b5fc5dc"
 			}]
+		},
+		"abcd1039e3ae9c65": {
+			"parent": "abcd44a95b5fc5dc",
+			"name": "3_Chief complete",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd44a95b5fc5dc"
+				},
+				"m_eState": {
+					"type": "ZCharacterSpeakCondition.EState",
+					"value": "Completed"
+				},
+				"m_fTimeOffset": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd60dfd99b93d9"
+			}]
+		},
+		"abcdb703d67f775d": {
+			"parent": "abcd0fc3d549ddba",
+			"name": "act_mr_stand_anxious_looking_around",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -88.4000015258789,
+							"y": 61.54999923706055,
+							"z": 101
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0fbe390edab7"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
 		}
 	},
 	"propertyOverrides": [{
