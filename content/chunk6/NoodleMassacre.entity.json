@@ -11499,6 +11499,138 @@
 				"shouldTrigger": "Poll",
 				"onEntity": "abcdd57c38e9941c"
 			}]
+		},
+		"abcdfc18fe438b0b": {
+			"parent": "abcd9a040fd7639e",
+			"name": "Chief enforces RD outfit",
+			"template": "[modules:/zaidynamicenforcerevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zaidynamicenforcerevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				},
+				"m_eventType": {
+					"type": "EAISharedEventType",
+					"value": "AISET_DynamicEnforcer_SuspiciousMovement"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4e17b9f21bc0": {
+			"parent": "abcdfc18fe438b0b",
+			"name": "47 is RD and chief has seen RD",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1d1f144210b9"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Renew",
+				"onEntity": "abcdfc18fe438b0b"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Expire",
+				"onEntity": "abcdfc18fe438b0b"
+			}]
+		},
+		"abcdaf4002a62255": {
+			"parent": "abcd55d2a211955c",
+			"name": "Chief sees RD",
+			"template": "[modules:/zactorcanseecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactorcanseecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd0110d31999a"
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd8d49da71f42e": {
+			"parent": "abcd55d2a211955c",
+			"name": "Chief sees RD VBO",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdaf4002a62255"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd55d2a211955c"
+			}]
+		},
+		"abcd1d1f144210b9": {
+			"parent": "abcd4e17b9f21bc0",
+			"name": "HeroKeywordCondition_PlayerIsRedDragon",
+			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bUseInventory": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rRequirements": {
+					"type": "SEntityTemplateReference",
+					"value": "abcde32f631f41dc"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde32f631f41dc": {
+			"parent": "abcd1d1f144210b9",
+			"name": "Prof_Noodle_Meeting",
+			"template": "007E827EA0D8ABB8",
+			"blueprint": "00D8D0CD7A6B623C",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd55d2a211955c": {
+			"parent": "abcd4e17b9f21bc0",
+			"name": "Chief has seen RD VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
