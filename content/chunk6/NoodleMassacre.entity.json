@@ -1666,10 +1666,6 @@
 				"m_fActTimeout": {
 					"type": "float32",
 					"value": -1
-				},
-				"m_MovementType": {
-					"type": "ZActBehaviorEntity.EMovementType",
-					"value": "MT_WALK"
 				}
 			},
 			"postInitProperties": {
@@ -11515,7 +11511,7 @@
 		},
 		"abcdfc18fe438b0b": {
 			"parent": "abcd16c71337c087",
-			"name": "Chief enforces RD outfit",
+			"name": "Chief Guard enforces RD outfit",
 			"template": "[modules:/zaidynamicenforcerevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zaidynamicenforcerevententity.class].pc_entityblueprint",
 			"properties": {
@@ -11525,7 +11521,7 @@
 				},
 				"m_rTarget": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd9a040fd7639e"
+					"value": "abcde0eba4f09147"
 				}
 			},
 			"postInitProperties": {},
@@ -11703,7 +11699,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd1095e1669557", "abcdc8b8b283aa21", "abcd55d2a211955c", "abcd896333824890"]
+					"value": ["abcd1095e1669557", "abcd1af88a31d7b9", "abcd55d2a211955c", "abcd896333824890"]
 				}
 			},
 			"editorOnly": false,
@@ -11760,9 +11756,9 @@
 		},
 		"abcd9a0406f1e528": {
 			"parent": "abcd16c71337c087",
-			"name": "Act_MR_Military_Stand_Aim_ToAimVRI",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_aim_toaimvri.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_aim_toaimvri.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_angry",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_angry.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_angry.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -11790,20 +11786,13 @@
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
 				},
-				"m_bUseConversationHelper": {
+				"m_bAlignPosition": {
 					"type": "bool",
 					"value": true
 				},
-				"UnHolsterOnStart": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd27a3fc741391"
-				},
-				"m_pTarget": {
-					"type": "SEntityTemplateReference",
-					"value": {
-						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-					}
+				"m_MovementType": {
+					"type": "ZActBehaviorEntity.EMovementType",
+					"value": "MT_IGNORE_POSITION"
 				}
 			},
 			"postInitProperties": {
@@ -11971,10 +11960,6 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "Completed",
-				"shouldTrigger": "Start",
-				"onEntity": "abcda04c11cd6986"
-			}, {
-				"onEvent": "Completed",
 				"shouldTrigger": "Enable",
 				"onEntity": "abcd5d7206777825"
 			}, {
@@ -12008,7 +11993,7 @@
 		},
 		"abcda04c11cd6986": {
 			"parent": "abcdfcc672daeb48",
-			"name": "4_Chief Ur gonna pay for this",
+			"name": "4_Chief UNUSED",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -12208,7 +12193,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 0
+							"z": 110
 						},
 						"position": {
 							"x": -84.6676,
@@ -12507,7 +12492,7 @@
 			"properties": {
 				"m_eventType": {
 					"type": "EAIEventType",
-					"value": "AIET_DamagingMe"
+					"value": "AIET_SoundHitmanGunShot"
 				},
 				"m_duration": {
 					"type": "float32",
@@ -12515,7 +12500,7 @@
 				},
 				"m_actors": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd9a040fd7639e", "abcde0eba4f09147", "d40a022a606b4f72"]
+					"value": ["abcd9a040fd7639e", "abcde0eba4f09147"]
 				},
 				"m_target": {
 					"type": "SEntityTemplateReference",
@@ -12540,7 +12525,7 @@
 			"properties": {
 				"Delay time (ms)": {
 					"type": "int32",
-					"value": 6000
+					"value": 8000
 				}
 			},
 			"postInitProperties": {},
@@ -12576,6 +12561,63 @@
 					"value": "abcddac86be7d693"
 				}
 			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdd1fd32626f4e": {
+			"parent": "abcdc8b8b283aa21",
+			"name": "Chief has seen 47 in past 10 secs",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 10000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcd1af88a31d7b9"
+			}]
+		},
+		"abcd76946c5ad0fc": {
+			"parent": "abcdc8b8b283aa21",
+			"name": "ValueBool_Operation Seen 47",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdc8b8b283aa21"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "In",
+				"onEntity": "abcdd1fd32626f4e"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd1af88a31d7b9"
+			}]
+		},
+		"abcd1af88a31d7b9": {
+			"parent": "abcdc8b8b283aa21",
+			"name": "VBB_Seen HM recently",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
