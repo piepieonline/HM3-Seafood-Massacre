@@ -9373,10 +9373,6 @@
 			"events": [{
 				"onEvent": "OnEvacuationStarted",
 				"shouldTrigger": "SetTrue",
-				"onEntity": "abcdbf6e1aa8b89a"
-			}, {
-				"onEvent": "OnEvacuationStarted",
-				"shouldTrigger": "SetTrue",
 				"onEntity": "abcda3d7c8dfff0e"
 			}, {
 				"onEvent": "OnEvacuationStarted",
@@ -9398,26 +9394,6 @@
 				"onEvent": "OnEvacuationStandDown",
 				"shouldTrigger": "Clear",
 				"onEntity": "abcdb1843ec50375"
-			}]
-		},
-		"abcdbf6e1aa8b89a": {
-			"parent": "abcdf14bd7969949",
-			"name": "VBO_CatastropicEventHappened",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd379668beb050"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"inputCopying": [{
-				"whenTriggered": "SetTrue",
-				"alsoTrigger": "SetTrue",
-				"onEntity": "abcd157c07f6972c"
 			}]
 		},
 		"abcd9d7be98299c7": {
@@ -9669,151 +9645,6 @@
 				"m_bDeepTrespassing": {
 					"type": "bool",
 					"value": true
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd528d7677e474": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "GameTensionCondition",
-			"template": "[modules:/zgametensioncondition.class].pc_entitytype",
-			"blueprint": "[modules:/zgametensioncondition.class].pc_entityblueprint",
-			"properties": {
-				"m_eMinTension": {
-					"type": "EGameTension",
-					"value": "EGT_AlertedHigh"
-				},
-				"m_eMaxTension": {
-					"type": "EGameTension",
-					"value": "EGT_Combat"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd157c07f6972c": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "VBB_AlertedInQAArea",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd5b1e9905ee36": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "ValueBool_Operation01",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd528d7677e474"]
-				},
-				"m_eEvaluation": {
-					"type": "ZValueBool_Operation_Signal.EEvaluationType",
-					"value": "ALL"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "GetMaxTension",
-				"onEntity": "abcdc42e72e98fcf"
-			}]
-		},
-		"abcd379668beb050": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "ValueBool_Operation",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd157c07f6972c"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdc42e72e98fcf": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "ActorTensionMultipleCondition",
-			"template": "[modules:/zactortensionentity.class].pc_entitytype",
-			"blueprint": "[modules:/zactortensionentity.class].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_Boxes": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "MaxTensionAlertedHigh",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd157c07f6972c"
-			}, {
-				"onEvent": "MaxTensionArrest",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd157c07f6972c"
-			}, {
-				"onEvent": "MaxTensionCombat",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd157c07f6972c"
-			}]
-		},
-		"abcd993631a4fc58": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "VolumeBox",
-			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
-			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": -42.27666186591857
-						},
-						"position": {
-							"x": -137.766,
-							"y": 71.9476,
-							"z": 85.0107
-						}
-					}
-				},
-				"m_vGlobalSize": {
-					"type": "SVector3",
-					"value": {
-						"x": 280.089000701904297,
-						"y": 260.019800186157227,
-						"z": 70.4004199504852295
-					}
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd1fdb154aee43": {
-			"parent": "abcdbf6e1aa8b89a",
-			"name": "InvertedCondition",
-			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rCondition": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd157c07f6972c"
 				}
 			},
 			"postInitProperties": {},
@@ -10499,10 +10330,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnEvacuationStarted",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcdbf6e1aa8b89a"
-			}, {
 				"onEvent": "OnEvacuationStarted",
 				"shouldTrigger": "ShowIcon",
 				"onEntity": "abcd10a5b43c2071"
@@ -11511,7 +11338,7 @@
 		},
 		"abcdfc18fe438b0b": {
 			"parent": "abcd16c71337c087",
-			"name": "Chief Guard enforces RD outfit",
+			"name": "Chiefs Guard enforces RD outfit",
 			"template": "[modules:/zaidynamicenforcerevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zaidynamicenforcerevententity.class].pc_entityblueprint",
 			"properties": {
@@ -11586,31 +11413,6 @@
 				"onEntity": "abcd55d2a211955c"
 			}]
 		},
-		"abcd1d1f144210b9": {
-			"parent": "abcd4eb93bd4f39a",
-			"name": "HeroKeywordCondition_PlayerIsRedDragon",
-			"template": "[modules:/zherokeywordcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rRequirements": {
-					"type": "SEntityTemplateReference",
-					"value": "abcde32f631f41dc"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcde32f631f41dc": {
-			"parent": "abcd1d1f144210b9",
-			"name": "Prof_Noodle_Meeting",
-			"template": "007E827EA0D8ABB8",
-			"blueprint": "00D8D0CD7A6B623C",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd55d2a211955c": {
 			"parent": "abcd4e17b9f21bc0",
 			"name": "Chief has seen RD VBB",
@@ -11628,22 +11430,6 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
-		},
-		"abcd4eb93bd4f39a": {
-			"parent": "abcdfc18fe438b0b",
-			"name": "Chief has met RD and 47 is RD",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd1d1f144210b9", "abcd4e17b9f21bc0"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
 		},
 		"abcd0b970922761a": {
 			"parent": "abcd9a040fd7639e",
