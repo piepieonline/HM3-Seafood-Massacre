@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcd9a040fd7639e", "abcd56c045f94aa5", "d40a022a606b4f72"]
+					"entities": ["abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -1304,9 +1304,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": -107.985,
-							"y": 126.606,
-							"z": 113
+							"x": 0,
+							"y": 0,
+							"z": 0
 						}
 					}
 				},
@@ -1338,7 +1338,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "fffffffffffffffe"
+					"value": "abcd432adfe4aef7"
 				}
 			},
 			"editorOnly": false,
@@ -2842,7 +2842,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
+					"value": ["abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
 				}
 			},
 			"postInitProperties": {},
@@ -2866,7 +2866,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd845141da1d8f", "abcd08f3961bbdf9"]
+					"value": ["abcddbb8e1c0e1ba", "abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd845141da1d8f", "abcd08f3961bbdf9"]
 				}
 			},
 			"postInitProperties": {},
@@ -2910,7 +2910,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
+					"value": ["abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd7d020caa4a61", "abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
 				}
 			},
 			"postInitProperties": {},
@@ -4608,7 +4608,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": -1
+					"value": 25
 				}
 			},
 			"postInitProperties": {
@@ -4622,6 +4622,11 @@
 				}
 			},
 			"editorOnly": false,
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdb81cc02940b7"
+			}],
 			"platformSpecificPropertyValues": []
 		},
 		"abcd573b1d00168d": {
@@ -4942,13 +4947,13 @@
 		},
 		"abcd495c26c61f05": {
 			"parent": "abcd36cd499253ae",
-			"name": "WatchZoneBathroomHidden VolumeTriggerCharacter",
+			"name": "WatchZoneHidden VolumeTriggerCharacter",
 			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcde38df2a00e42"]
+					"value": ["abcd5915c6b0f2db", "abcd543d993985c0", "abcd736bcfe99d0a", "abcde38df2a00e42"]
 				}
 			},
 			"postInitProperties": {},
@@ -9103,190 +9108,6 @@
 			"inputCopying": [],
 			"outputCopying": []
 		},
-		"abcd56c045f94aa5": {
-			"parent": "abcd61f441d191bf",
-			"name": "VAE_RestaurantMusic",
-			"template": "[assembly:/templates/sound/wwise/soundentities.template?/volumetricaudioemitter.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/volumetricaudioemitter.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": -90.008506774902344,
-							"y": 42.391429901123047,
-							"z": 103
-						}
-					}
-				},
-				"m_fAttenuationSpreadDistance": {
-					"type": "float32",
-					"value": -1
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"entitySubsets": [
-				["AudioVolumetricGeom", {
-					"entities": ["abcdeda9d5e25a02", "abcdaead52a39cac", "abcd99f7a5c80291"]
-				}]
-			]
-		},
-		"abcd99f7a5c80291": {
-			"parent": "abcd56c045f94aa5",
-			"name": "GeomBox 3",
-			"template": "[modules:/zaudiovolumetricgeombox.class].pc_entitytype",
-			"blueprint": "[modules:/zaudiovolumetricgeombox.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": -45.9252656214246
-						},
-						"position": {
-							"x": -89,
-							"y": 55.34,
-							"z": 101
-						}
-					}
-				},
-				"m_vGlobalSize": {
-					"type": "SVector3",
-					"value": {
-						"x": 9.842619895935059,
-						"y": 15.223699569702148,
-						"z": 5.485610008239746
-					}
-				},
-				"m_bUseRaycastObstruction": {
-					"type": "bool",
-					"value": false
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdeda9d5e25a02": {
-			"parent": "abcd56c045f94aa5",
-			"name": "GeomBox",
-			"template": "[modules:/zaudiovolumetricgeombox.class].pc_entitytype",
-			"blueprint": "[modules:/zaudiovolumetricgeombox.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						}
-					}
-				},
-				"m_vGlobalSize": {
-					"type": "SVector3",
-					"value": {
-						"x": 17.06100082397461,
-						"y": 11.814000129699707,
-						"z": 5.485610008239746
-					}
-				},
-				"m_bUseRaycastObstruction": {
-					"type": "bool",
-					"value": false
-				}
-			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd56c045f94aa5"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdaead52a39cac": {
-			"parent": "abcd56c045f94aa5",
-			"name": "GeomBox 2",
-			"template": "[modules:/zaudiovolumetricgeombox.class].pc_entitytype",
-			"blueprint": "[modules:/zaudiovolumetricgeombox.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": -45.9252656214246
-						},
-						"position": {
-							"x": -87.78,
-							"y": 62.1,
-							"z": 102.5
-						}
-					}
-				},
-				"m_vGlobalSize": {
-					"type": "SVector3",
-					"value": {
-						"x": 14.123600006103516,
-						"y": 12.137299537658691,
-						"z": 5.485610008239746
-					}
-				},
-				"m_bUseRaycastObstruction": {
-					"type": "bool",
-					"value": false
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd3f3823814852": {
-			"parent": "abcd56c045f94aa5",
-			"name": "play_smoothsnake_japanesegarden_envmusic",
-			"template": "[modules:/zaudioevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zaudioevententity.class].pc_entityblueprint",
-			"properties": {
-				"m_pMainEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00941F88025A1970",
-						"flag": "5F"
-					}
-				},
-				"m_pEmitter": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd56c045f94aa5"
-				},
-				"m_eCullingBehavior": {
-					"type": "AudioEventCullingBehavior",
-					"value": "AutoSendStop"
-				},
-				"m_bUseOcclusionForCulling": {
-					"type": "bool",
-					"value": true
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcdccec46e2eb6e": {
 			"parent": "abcdde52f4b1409b",
 			"name": "Props",
@@ -12410,6 +12231,795 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcdb81cc02940b7": {
+			"parent": "abcd573b1d00168d",
+			"name": "Act_MR_Binocs Right",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_binoculars.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_binoculars.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 110.923432272893496
+						},
+						"position": {
+							"x": -80.3635,
+							"y": 95.6998,
+							"z": 109
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 8
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0696b52e1c0c"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd4a2e9928ac95"
+			}],
+			"platformSpecificPropertyValues": []
+		},
+		"abcd61504c375d7f": {
+			"parent": "abcd7fba46e1f9a5",
+			"name": "Other Rooftop",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdd92e94827537": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone 2ndFromTop VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -107.203,
+							"y": 115.244,
+							"z": 115.3
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 20,
+						"y": 6,
+						"z": 3
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde73f6ac8b22e": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone Staircase VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -108.801,
+							"y": 107.247,
+							"z": 110.392
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 16,
+						"y": 8,
+						"z": 19
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd547ca47f2c02": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone 3rdFromTop VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -20,
+							"y": 45,
+							"z": 0
+						},
+						"position": {
+							"x": -116,
+							"y": 102.38,
+							"z": 108.241
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 25,
+						"y": 15,
+						"z": 5
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7d020caa4a61": {
+			"parent": "abcdaccb188c1a70",
+			"name": "TargetWatchzone LaundryGangway Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -125.931,
+							"y": 89.7797,
+							"z": 101.25
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 4,
+						"y": 11,
+						"z": 3
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdaccb188c1a70": {
+			"parent": "abcd36cd499253ae",
+			"name": "Laundry Roof",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd736bcfe99d0a": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden Roof1",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -118.629,
+							"y": 101.777,
+							"z": 101.056
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 13,
+						"y": 5.2,
+						"z": 5.6
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd543d993985c0": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden Roof2",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -109.781,
+							"y": 108.704,
+							"z": 105
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 8,
+						"y": 5.2,
+						"z": 5
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5915c6b0f2db": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden Roof3Cover",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -104.604,
+							"y": 120.348,
+							"z": 113.45
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 20,
+						"y": 3,
+						"z": 1.02
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdad03e24de65d": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone TopSniperSpot VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45
+						},
+						"position": {
+							"x": -116.402,
+							"y": 110.772,
+							"z": 123.05
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 15,
+						"y": 6,
+						"z": 6
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3d1c3231aa42": {
+			"parent": "abcd3d755cd84fe8",
+			"name": "Chief Dialogue to Blue Lotus",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd6c94835de215": {
+			"parent": "abcd3d1c3231aa42",
+			"name": "Chief speak to BL at meeting",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdccf057a20343"
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 10
+				},
+				"m_bTerminateOnDone": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eReentryBehavior": {
+					"type": "ZDramaSituationEntity.EReentryBehavior",
+					"value": "RB_RECASTANDCONTINUE"
+				}
+			},
+			"postInitProperties": {
+				"m_EnableConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdba97ea052a51"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdba97ea052a51": {
+			"parent": "abcd6c94835de215",
+			"name": "Chief and BL at meeting",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd857e0f74e7c1", "abcd33f28136cbd9"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda5fe376d24c1": {
+			"parent": "abcd6c94835de215",
+			"name": "Chief Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd9a040fd7639e"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdccf057a20343": {
+			"parent": "abcd6c94835de215",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcda5fe376d24c1"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd7e5542a767bf"
+			}]
+		},
+		"abcd783bd7a466f1": {
+			"parent": "abcd6c94835de215",
+			"name": "Lines",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd528d1e26fac9": {
+			"parent": "abcdba97ea052a51",
+			"name": "Meeting VolumeTriggerCharacter",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd95b1168e6d39"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdc0fe4ab3e0cb": {
+			"parent": "abcd783bd7a466f1",
+			"name": "2_BL Hi",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd65dc06830c0a"
+				},
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BBAEDF15366BB5",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd9d2e525c6c95"
+			}]
+		},
+		"abcd7e5542a767bf": {
+			"parent": "abcd783bd7a466f1",
+			"name": "1_Chief",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00751627C602B49D",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda5fe376d24c1"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdc0fe4ab3e0cb"
+			}]
+		},
+		"abcd9d2e525c6c95": {
+			"parent": "abcd783bd7a466f1",
+			"name": "3_Chief Good good",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00579731181846AB",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda5fe376d24c1"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd83a26af6fae5": {
+			"parent": "abcd783bd7a466f1",
+			"name": "4_Chief Y do we have meetings",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda5fe376d24c1"
+				},
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0033DFC23FB473E2",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd8410ebce2001"
+			}]
+		},
+		"abcd8410ebce2001": {
+			"parent": "abcd783bd7a466f1",
+			"name": "5_BL no coincidence glad you came",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00546CDEB4C985FE",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd65dc06830c0a"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd41d4e7d1e7f3"
+			}]
+		},
+		"abcd41d4e7d1e7f3": {
+			"parent": "abcd783bd7a466f1",
+			"name": "6_Chief exhausting having to come here all the time",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda5fe376d24c1"
+				},
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00235CF5B58E832D",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd3528de3841fd"
+			}]
+		},
+		"abcd3528de3841fd": {
+			"parent": "abcd783bd7a466f1",
+			"name": "7_BL Having a nice time?",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F5D3E795BE741E",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd65dc06830c0a"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Done",
+				"onEntity": "abcdccf057a20343"
+			}]
+		},
+		"abcd204192fd065a": {
+			"parent": "abcd9d2e525c6c95",
+			"name": "3_Chief complete",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9d2e525c6c95"
+				},
+				"m_eState": {
+					"type": "ZCharacterSpeakCondition.EState",
+					"value": "Completed"
+				},
+				"m_fTimeOffset": {
+					"type": "float32",
+					"value": 0.2
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd83a26af6fae5"
+			}]
+		},
+		"abcd65dc06830c0a": {
+			"parent": "abcd6c94835de215",
+			"name": "BL Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3d755cd84fe8"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde4082ff844e2": {
+			"parent": "abcd7e5542a767bf",
+			"name": "1_Chief complete",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd7e5542a767bf"
+				},
+				"m_eState": {
+					"type": "ZCharacterSpeakCondition.EState",
+					"value": "Completed"
+				},
+				"m_fTimeOffset": {
+					"type": "float32",
+					"value": 0.2
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdc0fe4ab3e0cb"
+			}]
+		},
+		"abcdd06c8995c808": {
+			"parent": "abcd41d4e7d1e7f3",
+			"name": "6_Chief complete",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd41d4e7d1e7f3"
+				},
+				"m_eState": {
+					"type": "ZCharacterSpeakCondition.EState",
+					"value": "Completed"
+				},
+				"m_fTimeOffset": {
+					"type": "float32",
+					"value": 0.2
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd3528de3841fd"
+			}]
 		}
 	},
 	"propertyOverrides": [{
