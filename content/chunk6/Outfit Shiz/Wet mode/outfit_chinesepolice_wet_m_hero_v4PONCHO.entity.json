@@ -1,6 +1,6 @@
 {
-	"tempHash": "00C62C455C57D94A",
-	"tbluHash": "005A05C1BEAF1577",
+	"tempHash": "00E323729D0C6543",
+	"tbluHash": "00AC2EEEA3A1857E",
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
@@ -233,19 +233,10 @@
 		},
 		"637003535601e69a": {
 			"parent": "c1e434f458c274df",
-			"name": "head_asian_30s_04",
-			"template": "000AFF9D3CEF5DE4",
-			"blueprint": "00199012C68A07F3",
-			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				}
-			},
+			"name": "Head_47",
+			"template": "00537D16B5CE7286",
+			"blueprint": "00F2E4A932ECAA63",
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -295,7 +286,7 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "outfit_chinesepolice_wet_m_actor_v4PONCHO",
+			"name": "outfit_chinesepolice_wet_m_Hero_v4PONCHO",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {

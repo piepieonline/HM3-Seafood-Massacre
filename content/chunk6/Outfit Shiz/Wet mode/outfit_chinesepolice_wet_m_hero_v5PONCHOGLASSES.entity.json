@@ -1,6 +1,6 @@
 {
-	"tempHash": "00C62C455C57D94A",
-	"tbluHash": "005A05C1BEAF1577",
+	"tempHash": "008F16B13AE7EA7C",
+	"tbluHash": "00183E01D1D762DC",
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
@@ -80,7 +80,7 @@
 					"value": {
 						"x": 1,
 						"y": 1,
-						"z": 1
+						"z": 1.1
 					}
 				},
 				"Diffuse_Color_01_Value": {
@@ -233,19 +233,10 @@
 		},
 		"637003535601e69a": {
 			"parent": "c1e434f458c274df",
-			"name": "head_asian_30s_04",
-			"template": "000AFF9D3CEF5DE4",
-			"blueprint": "00199012C68A07F3",
-			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				}
-			},
+			"name": "Head_47",
+			"template": "00537D16B5CE7286",
+			"blueprint": "00F2E4A932ECAA63",
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -295,18 +286,10 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "outfit_chinesepolice_wet_m_actor_v4PONCHO",
+			"name": "outfit_chinesepolice_wet_m_hero_v5PONCHOGLASSES",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
-				"m_ResourceID": {
-					"type": "ZRuntimeResourceID",
-					"value": null
-				},
-				"m_fLODScale": {
-					"type": "float32",
-					"value": 1
-				},
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
@@ -351,14 +334,6 @@
 				"m_LocalColliders": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": []
-				},
-				"m_bGlobalCollidersEnabled": {
-					"type": "bool",
-					"value": false
-				},
-				"m_bUsePerVertexDamping": {
-					"type": "bool",
-					"value": false
 				},
 				"m_bUseSkinningPosNormalConstrains": {
 					"type": "bool",
@@ -659,6 +634,49 @@
 				}
 			},
 			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd06faacda2445": {
+			"parent": "44b989ff347d77c8",
+			"name": "glasses_rectangular_halfframe",
+			"template": "00B536B4A59EF689",
+			"blueprint": "0086BB5A1714613E",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 46.97755615565832,
+							"y": 88.10824226646373,
+							"z": 130.3015884491815
+						},
+						"position": {
+							"x": 0.0733489990234375,
+							"y": 0.009107000194489956,
+							"z": 0.0004199999966658652
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 0.9178850054740906,
+						"z": 1
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "44b989ff347d77c8"
+				},
+				"m_rLinkedProxyEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "c1e434f458c274df"
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}

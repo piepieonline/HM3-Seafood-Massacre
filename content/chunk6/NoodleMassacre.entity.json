@@ -81,10 +81,6 @@
 				"m_InventoryItemKeys": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcdaebfdc6fc13e"]
-				},
-				"m_eGlowOverride": {
-					"type": "ERenderGlowTypes",
-					"value": "ERENDERGLOWTYPE_CIVILIAN"
 				}
 			},
 			"postInitProperties": {
@@ -192,6 +188,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Set",
 				"onEntity": "7ab523862730fbda"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Set",
+				"onEntity": "7ab523862730fbda"
 			}]
 		},
 		"7ab523862730fbda": {
@@ -237,6 +237,10 @@
 					"value": false
 				},
 				"m_bDisableHelpCivilian": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreLowNoise": {
 					"type": "bool",
 					"value": true
 				}
@@ -2239,6 +2243,10 @@
 				"onEvent": "EventOccurred",
 				"shouldTrigger": "PickupOnTarget",
 				"onEntity": "abcd267dfbbe1170"
+			}, {
+				"onEvent": "EventOccurred",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd160cf40f9943"
 			}],
 			"platformSpecificPropertyValues": []
 		},
@@ -2603,6 +2611,10 @@
 				"onEvent": "ItemTaken",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd578780186052"
+			}, {
+				"onEvent": "ItemTaken",
+				"shouldTrigger": "Set",
+				"onEntity": "7ab523862730fbda"
 			}]
 		},
 		"abcd003ded13e389": {
@@ -7663,6 +7675,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_bWeaponUnholstered": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -13020,6 +13036,65 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd3528de3841fd"
 			}]
+		},
+		"abcd160cf40f9943": {
+			"parent": "abcdb4b066e27787",
+			"name": "AIModifierActor",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdba75fae49278"
+				},
+				"m_bIgnoreSillyHitman": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreAnnoyingHitman": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreDistractions": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreDeadBodies": {
+					"type": "bool",
+					"value": false
+				},
+				"mm_bIgnoreLockdown": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreWeapons": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreTrespassing": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bDisableHelpCivilian": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreLowNoise": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bSuppressSocialGreeting": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -13889,6 +13964,14 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "e23a8e7e12ce99c3",
+		"_comment": "Morgues",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "3c87c915d332c864",
+		"_comment": "Stashpoints",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "56765251432bfa7f",
 		"_comment": "NPCs - Facility",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"

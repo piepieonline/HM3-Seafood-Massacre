@@ -106,7 +106,7 @@
 				"HeadMaterialToOverride": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "009F7978C601815A",
+						"resource": "0069383755565205",
 						"flag": "5F"
 					}
 				}
@@ -313,6 +313,21 @@
 					"value": {
 						"resource": "0017416135CF879C",
 						"flag": "5F"
+					}
+				},
+				"Rifle_Holster_Attacher_Transform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 10
+						},
+						"position": {
+							"x": 0.05000000074505806,
+							"y": 0,
+							"z": 0
+						}
 					}
 				},
 				"m_bUsePerVertexStiffness": {
