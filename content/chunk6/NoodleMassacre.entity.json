@@ -9202,7 +9202,7 @@
 				},
 				"m_aPreferredEntourage": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcde0eba4f09147", "abcdf8d3f54b27f6"]
+					"value": ["abcde0eba4f09147"]
 				}
 			},
 			"editorOnly": false,
@@ -10050,11 +10050,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnReached",
-				"shouldTrigger": "Trigger",
-				"onEntity": "abcd5d8df115be30"
-			}]
+			"events": []
 		},
 		"abcd0d17e4acd771": {
 			"parent": "abcda722783ae5ad",
@@ -10162,6 +10158,10 @@
 				"m_rVIP": {
 					"type": "SEntityTemplateReference",
 					"value": "abcdd0110d31999a"
+				},
+				"m_aPreferredEntourage": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf8d3f54b27f6"]
 				}
 			},
 			"editorOnly": false,
@@ -10171,17 +10171,9 @@
 				"shouldTrigger": "ShowIcon",
 				"onEntity": "abcd10a5b43c2071"
 			}, {
-				"onEvent": "OnEvacuationStarted",
-				"shouldTrigger": "Set",
-				"onEntity": "abcdc1e7a724f6aa"
-			}, {
 				"onEvent": "OnEvacuationStandDown",
 				"shouldTrigger": "HideIcon",
 				"onEntity": "abcd10a5b43c2071"
-			}, {
-				"onEvent": "OnEvacuationStandDown",
-				"shouldTrigger": "Clear",
-				"onEntity": "abcdc1e7a724f6aa"
 			}]
 		},
 		"abcd10a5b43c2071": {
@@ -10200,74 +10192,6 @@
 				}
 			},
 			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdc1e7a724f6aa": {
-			"parent": "abcdf6a26b0dafd6",
-			"name": "AIModifierActor",
-			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
-			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
-			"properties": {
-				"m_bIgnoreLowNoise": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreSillyHitman": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreAnnoyingHitman": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreDistractions": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreAccidents": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreDeadBodies": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bDisableDeadBodySensor": {
-					"type": "bool",
-					"value": false
-				},
-				"m_bIgnoreWeapons": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreTrespassing": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bDisableHelpCivilian": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bNeverSpectate": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bWantsPrivacy": {
-					"type": "bool",
-					"value": false
-				},
-				"m_bSuppressSocialGreeting": {
-					"type": "bool",
-					"value": true
-				}
-			},
-			"postInitProperties": {
-				"m_pActor": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdd0110d31999a"
-				}
-			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -10323,12 +10247,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 45
+							"z": 0
 						},
 						"position": {
-							"x": 11.4393,
-							"y": 74.3084,
-							"z": 100.849
+							"x": 17.5,
+							"y": 77.3774,
+							"z": 101.003
 						}
 					}
 				},
@@ -10416,19 +10340,11 @@
 							"z": -51.63496818071953
 						},
 						"position": {
-							"x": 14.5652,
+							"x": 16.5652,
 							"y": 77.3774,
 							"z": 101.003
 						}
 					}
-				},
-				"m_fActTimeout": {
-					"type": "float32",
-					"value": 0
-				},
-				"m_Color": {
-					"type": "SColorRGB",
-					"value": "#e60000"
 				}
 			},
 			"postInitProperties": {},
@@ -13095,6 +13011,32 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd8ec596d79a4b": {
+			"parent": "abcdfebbca3b1eba",
+			"name": "Red Dragon reached Street Escape",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdbb249340fba6"]
+				},
+				"m_TriggerEntities": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdd0110d31999a"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Trigger",
+				"onEntity": "abcd5d8df115be30"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
