@@ -9,10 +9,6 @@
 			"template": "[modules:/zglobaloutfitkit.class].pc_entitytype",
 			"blueprint": "[modules:/zglobaloutfitkit.class].pc_entityblueprint",
 			"properties": {
-				"m_fHitPoints": {
-					"type": "float32",
-					"value": -1
-				},
 				"m_DamageMultipliers": {
 					"type": "SBodyPartDamageMultipliers",
 					"value": {
@@ -85,10 +81,6 @@
 				"m_rDescriptionTextResource": {
 					"type": "ZRuntimeResourceID",
 					"value": null
-				},
-				"m_rDefaultVoiceVariations": {
-					"type": "TArray<EActorVoiceVariation>",
-					"value": ["eAVV_WAITER01"]
 				},
 				"m_aAnimationSets": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -807,10 +799,6 @@
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
 					"value": ["eAVV_HUSH", "eAVV_CIVMALECH01", "eAVV_CIVMALECH02", "eAVV_KONG"]
-				},
-				"m_aAnimationSets": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd20ffc70f31b3"]
 				}
 			},
 			"postInitProperties": {
@@ -911,16 +899,6 @@
 			"name": "animset_civ_dictator",
 			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd20ffc70f31b3": {
-			"parent": "abcd9f4b2ba77522",
-			"name": "vri_male_walkfast",
-			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_walkfast.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_walkfast.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
