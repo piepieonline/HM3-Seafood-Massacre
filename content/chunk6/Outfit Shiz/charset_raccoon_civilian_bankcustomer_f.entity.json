@@ -1,0 +1,109 @@
+{
+	"tempHash": "000E2A63407134BF",
+	"tbluHash": "007FBA715225855C",
+	"rootEntity": "b89e6f1b25a3a4ae",
+	"entities": {
+		"cf0e9024623253e1": {
+			"parent": "b89e6f1b25a3a4ae",
+			"name": "Actor",
+			"template": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["3e1cdc693fd64cf0"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"1b29dd81a125631": {
+			"parent": "b89e6f1b25a3a4ae",
+			"name": "Nude",
+			"template": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["a038012b85e50771"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"a038012b85e50771": {
+			"parent": "1b29dd81a125631",
+			"name": "Var0",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"f1550fcf4f18ad21": {
+			"parent": "b89e6f1b25a3a4ae",
+			"name": "HeroA",
+			"template": "[modules:/zcharsetcharactertype.class].pc_entitytype",
+			"blueprint": "[modules:/zcharsetcharactertype.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aVariations": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["32edf07b8e0b8a3"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"32edf07b8e0b8a3": {
+			"parent": "f1550fcf4f18ad21",
+			"name": "Var0",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"b89e6f1b25a3a4ae": {
+			"parent": null,
+			"name": "CHARSET_Raccoon_Civilian_BankCustomer_F",
+			"template": "004470A9E6A7722D",
+			"blueprint": "00E21A11EC782D9E",
+			"properties": {
+				"m_aCharacters": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cf0e9024623253e1", "1b29dd81a125631", "f1550fcf4f18ad21"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3e1cdc693fd64cf0": {
+			"parent": "cf0e9024623253e1",
+			"name": "0",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": "00BB1EE1BB51D101"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		}
+	},
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"propertyOverrides": [],
+	"externalScenes": [],
+	"subType": 0,
+	"quickEntityVersion": 2.1
+}
