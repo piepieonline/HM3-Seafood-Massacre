@@ -85,14 +85,6 @@
 				"m_aAnimationSets": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd006f60c954ec"]
-				},
-				"m_bAuthorityFigure": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bAllowRadioAct": {
-					"type": "bool",
-					"value": false
 				}
 			},
 			"postInitProperties": {
@@ -363,7 +355,7 @@
 				},
 				"m_eSoundFootwearType": {
 					"type": "EHM5SoundFootwearType",
-					"value": "EFWT_BOOTS"
+					"value": "EFWT_LEATHER"
 				},
 				"m_sId": {
 					"type": "ZGuid",
@@ -800,17 +792,13 @@
 					"type": "EOutfitType",
 					"value": "eOT_Guard"
 				},
+				"m_eActorRank": {
+					"type": "EActorRank",
+					"value": "AR_Default"
+				},
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
 					"value": ["eAVV_HUSH", "eAVV_CIVMALECH01", "eAVV_CIVMALECH02", "eAVV_KONG"]
-				},
-				"m_bAuthorityFigure": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bAllowRadioAct": {
-					"type": "bool",
-					"value": false
 				}
 			},
 			"postInitProperties": {
@@ -821,10 +809,6 @@
 				"m_AvailableWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd182cca276a20"]
-				},
-				"m_aAnimationSets": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdf578892141ff"]
 				}
 			},
 			"editorOnly": false,
@@ -939,19 +923,6 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
-		},
-		"abcdf578892141ff": {
-			"parent": "abcd9f4b2ba77522",
-			"name": "VRI_Civ_Male_VIP_No_Bodyguard",
-			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_vip_no_bodyguard.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_vip_no_bodyguard.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [],
