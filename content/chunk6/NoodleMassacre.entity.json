@@ -12933,6 +12933,215 @@
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd7aa9b02c9b52"
 			}]
+		},
+		"abcd66644ec6f222": {
+			"parent": "abcdf14bd7969949",
+			"name": "BL Evac",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd4fc3e0ebc216": {
+			"parent": "abcd66644ec6f222",
+			"name": "ActorAttentionIndicatorEntity",
+			"template": "[modules:/zactorattentionindicatorentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorattentionindicatorentity.class].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3d755cd84fe8"]
+				},
+				"m_eState": {
+					"type": "EActorAIState",
+					"value": "eAAIS_Fleeing"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcddf814a81e66c": {
+			"parent": "abcd66644ec6f222",
+			"name": "BL reached Street Exit",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd416fa6c14bdc"]
+				},
+				"m_TriggerEntities": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3d755cd84fe8"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Trigger",
+				"onEntity": "abcd5d8df115be30"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdcbcbf9d4b1a2": {
+			"parent": "abcd66644ec6f222",
+			"name": "Fox_Lesser_Agent_Escape_Drama_BL",
+			"template": "00C86C2369383724",
+			"blueprint": "00CABF3E4584C84C",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3d755cd84fe8"]
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 162.89827862617935
+						},
+						"position": {
+							"x": 47.8937,
+							"y": 71.3081,
+							"z": 103.375
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_EnableConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2c6e26a75a53"]
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9d338236aa72": {
+			"parent": "abcd66644ec6f222",
+			"name": "BL Tense VBO",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7e8de7c7d1f3"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "In",
+				"onEntity": "abcd0fe3bf74b3d1"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd2c6e26a75a53": {
+			"parent": "abcd66644ec6f222",
+			"name": "Time Passed since BL alerted VBO",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "ShowIcon",
+				"onEntity": "abcd4fc3e0ebc216"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd416fa6c14bdc": {
+			"parent": "abcddf814a81e66c",
+			"name": "OOB Street",
+			"template": "[assembly:/templates/markup/orderedbox.template?/boxvolumeentity01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/orderedbox.template?/boxvolumeentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 47.8937,
+							"y": 71.3081,
+							"z": 103.375
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 2.751150131225586,
+						"y": 3.628590106964111,
+						"z": 6.7408199310302734
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7e8de7c7d1f3": {
+			"parent": "abcd9d338236aa72",
+			"name": "BL tense",
+			"template": "[modules:/zactortensioncondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactortensioncondition.class].pc_entityblueprint",
+			"properties": {
+				"m_eRequiredActorTension": {
+					"type": "EGameTension",
+					"value": "EGT_AlertedHigh"
+				},
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3d755cd84fe8"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0fe3bf74b3d1": {
+			"parent": "abcd9d338236aa72",
+			"name": "TimerSimple",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 1000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd2c6e26a75a53"
+			}]
 		}
 	},
 	"propertyOverrides": [{
