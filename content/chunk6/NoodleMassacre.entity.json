@@ -9524,7 +9524,7 @@
 							"z": 91.32095695328437
 						},
 						"position": {
-							"x": 18.733020782470703,
+							"x": 18.73,
 							"y": 24.481990814208984,
 							"z": 7.98797607421875
 						}
@@ -12648,11 +12648,11 @@
 				},
 				"m_bIgnoreSillyHitman": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bIgnoreAnnoyingHitman": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bIgnoreDistractions": {
 					"type": "bool",
@@ -12660,7 +12660,7 @@
 				},
 				"m_bIgnoreAccidents": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bIgnoreDeadBodies": {
 					"type": "bool",
@@ -12688,7 +12688,7 @@
 				},
 				"m_bSuppressSocialGreeting": {
 					"type": "bool",
-					"value": true
+					"value": false
 				}
 			},
 			"postInitProperties": {},
@@ -12937,7 +12937,31 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "845680542066688e",
+			"comment": "Kitchen Powerbox",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_mTransform": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": -90
+					},
+					"position": {
+						"x": -80.8,
+						"y": 35.36,
+						"z": 97.0097
+					}
+				}
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "c1e7695f01e1a3ff",
+			"comment": "Core Meltdown Stuff",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -12949,6 +12973,7 @@
 	}, {
 		"entities": [{
 			"ref": "63e44936e1923b25",
+			"comment": "Core Meltdown Stuff",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -12960,6 +12985,7 @@
 	}, {
 		"entities": [{
 			"ref": "63e44936e1923b25",
+			"comment": "Core Meltdown Stuff",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -13802,6 +13828,14 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "866b1085ab3c531f",
+		"_comment": "Keypad Base plate",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "466866df4f4a17aa",
+		"_comment": "Dumpster Outside restaurant",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "e23a8e7e12ce99c3",
 		"_comment": "Morgues",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
