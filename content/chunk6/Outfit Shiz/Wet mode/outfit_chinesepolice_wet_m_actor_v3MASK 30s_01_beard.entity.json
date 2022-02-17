@@ -774,21 +774,13 @@
 		},
 		"abcd575e6efe73c8": {
 			"parent": "c1e434f458c274df",
-			"name": "Hair_Cap",
-			"template": "006594C7AF2B3472",
-			"blueprint": "000B3B438FC8C9AC",
+			"name": "Hair_Sides_S",
+			"template": "00538F0D8B33EA7C",
+			"blueprint": "00616A7BAAB2C145",
 			"properties": {
 				"ConstantColorRGB_02_Value": {
 					"type": "SColorRGB",
-					"value": "#8a7d71"
-				},
-				"ConstantColorRGB_05_Value": {
-					"type": "SColorRGB",
-					"value": "#fce1d2"
-				},
-				"ConstantColorRGB_03_Value": {
-					"type": "SColorRGB",
-					"value": "#524a43"
+					"value": "#2b2b2b"
 				}
 			},
 			"postInitProperties": {},
