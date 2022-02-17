@@ -7345,15 +7345,11 @@
 			"postInitProperties": {
 				"m_aDefaultSpreadingActors": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd3d755cd84fe8", "abcd9a040fd7639e", "abcdd0110d31999a"]
+					"value": []
 				},
 				"m_rIncludeKeywords": {
 					"type": "SEntityTemplateReference",
 					"value": "abcdea077126b837"
-				},
-				"m_rExcludeKeywords": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdd888ea8ddf07"
 				},
 				"m_rTransitionOperator": {
 					"type": "SEntityTemplateReference",
@@ -7374,6 +7370,10 @@
 				"onEvent": "OnActorAdded",
 				"shouldTrigger": "SetIActor",
 				"onEntity": "abcd92a48ec55358"
+			}, {
+				"onEvent": "OnPlayerAdded",
+				"shouldTrigger": "RemovePlayer",
+				"onEntity": "abcd1ac35242c91a"
 			}]
 		},
 		"abcd02579d0fa466": {
@@ -7416,7 +7416,12 @@
 			"name": "ValueBool_PlayerCanditateForSpreading",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
-			"properties": {},
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -7483,7 +7488,7 @@
 			"postInitProperties": {
 				"m_aActors": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd3d755cd84fe8", "abcd9a040fd7639e", "abcdd0110d31999a"]
+					"value": []
 				}
 			},
 			"editorOnly": false,
@@ -7509,58 +7514,18 @@
 				"onEntity": "abcdb88c399d6321"
 			}]
 		},
-		"abcda94d51ad4e2a": {
-			"parent": "abcdea077126b837",
-			"name": "Keyword Guard",
-			"template": "[assembly:/_pro/design/actor/actoridentifierkeywords.template?/keyword_actoridentifier_guard.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/actoridentifierkeywords.template?/keyword_actoridentifier_guard.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd6a6daeac9c6c": {
-			"parent": "abcdea077126b837",
-			"name": "Prof_Wet_Worker_DumplingCook",
-			"template": "[assembly:/_pro/design/actor/profession.template?/prof_wet_worker_dumplingcook.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_wet_worker_dumplingcook.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aHolders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcddfba50c28964": {
-			"parent": "abcdea077126b837",
-			"name": "Prof_Police",
-			"template": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aHolders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdea077126b837"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd122f320b42d3": {
-			"parent": "abcdd888ea8ddf07",
-			"name": "Keyword_Prof_Class_Default",
-			"template": "007A51A2AFEC0D1A",
-			"blueprint": "00B0282A41C1CF2E",
-			"properties": {},
-			"postInitProperties": {
-				"m_aHolders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdd888ea8ddf07"]
+			"parent": "abcdea077126b837",
+			"name": "Keyword_ACTOR_NAKED",
+			"template": "0039F9AE27AFBA23",
+			"blueprint": "00BC94375F8C4257",
+			"properties": {
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdea077126b837"
 				}
 			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -7572,7 +7537,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdf598a9018570", "abcd389afbd50fd9", "abcd93b0cfef32be", "abcd3feb64a3a01a"]
+					"value": ["abcd3feb64a3a01a"]
 				},
 				"m_eEvaluation": {
 					"type": "ZValueBool_Operation_Signal.EEvaluationType",
@@ -11950,6 +11915,85 @@
 				"shouldTrigger": "Poll",
 				"onEntity": "abcdd57c38e9941c"
 			}]
+		},
+		"abcd1e20fbec86de": {
+			"parent": "abcd9105b49b083c",
+			"name": "Info",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7fc31935c768": {
+			"parent": "abcd1e20fbec86de",
+			"name": "Spotted",
+			"template": "[modules:/zspottedeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspottedeventlistenerentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Spotted",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdaafe0adc9b23"
+			}, {
+				"onEvent": "AddWitness",
+				"shouldTrigger": "SetIActor",
+				"onEntity": "abcdfc8ef2675a90"
+			}]
+		},
+		"abcdaafe0adc9b23": {
+			"parent": "abcd1e20fbec86de",
+			"name": "IsPlayerRD VBP",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd96152f20a094"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "PollFalse",
+				"shouldTrigger": "GetIActor",
+				"onEntity": "abcdfc8ef2675a90"
+			}]
+		},
+		"abcdfc8ef2675a90": {
+			"parent": "abcd1e20fbec86de",
+			"name": "Proxy",
+			"template": "[modules:/zactorproxyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorproxyentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnGetIActor",
+				"shouldTrigger": "AddActor",
+				"onEntity": "abcd1ac35242c91a"
+			}]
+		},
+		"abcdaf7bad0903aa": {
+			"parent": "abcdd888ea8ddf07",
+			"name": "Keyword_FLU_INFECTED",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_sick.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_sick.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd888ea8ddf07"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
