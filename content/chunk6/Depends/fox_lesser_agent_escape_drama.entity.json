@@ -26,7 +26,7 @@
 			"properties": {
 				"m_nPriority": {
 					"type": "int32",
-					"value": 500
+					"value": 999
 				},
 				"m_sMatchNode": {
 					"type": "ZString",
