@@ -13084,10 +13084,6 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "ShowIcon",
-				"onEntity": "abcd4fc3e0ebc216"
-			}, {
-				"onEvent": "OnTrue",
 				"shouldTrigger": "In",
 				"onEntity": "abcdffb857c4d585"
 			}],
@@ -13224,7 +13220,11 @@
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd358aa920d41b"
 			}],
-			"inputCopying": [],
+			"inputCopying": [{
+				"whenTriggered": "In",
+				"alsoTrigger": "ShowIcon",
+				"onEntity": "abcd4fc3e0ebc216"
+			}],
 			"outputCopying": []
 		},
 		"abcdcb8501e99cff": {
