@@ -1,6 +1,6 @@
 {
-	"tempHash": "004344C796F97820",
-	"tbluHash": "00AEE89AD0711C75",
+	"tempHash": "001C5CF920F9BFED",
+	"tbluHash": "00F125E8E1961D60",
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
@@ -306,19 +306,10 @@
 		},
 		"637003535601e69a": {
 			"parent": "c1e434f458c274df",
-			"name": "head_asian_50s_01",
-			"template": "00AFE802E8C683F4",
-			"blueprint": "008983A334282CCD",
-			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				}
-			},
+			"name": "Head_47",
+			"template": "00537D16B5CE7286",
+			"blueprint": "00F2E4A932ECAA63",
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -423,7 +414,7 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "outfit_chinesepolice_wet_m_actor_v2",
+			"name": "outfit_chinesepolice_wet_m_hero_v3",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -537,7 +528,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
+					"value": ["abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
 				}
 			},
 			"editorOnly": false,
@@ -684,22 +675,6 @@
 				"whenTriggered": "ConstantVector1D_01_Value",
 				"alsoTrigger": "ConstantVector1D_01_Value",
 				"onEntity": "57b76c52d9fbcdcd"
-			}, {
-				"whenTriggered": "ConstantVector1D_06_Value",
-				"alsoTrigger": "ConstantVector1D_06_Value",
-				"onEntity": "abcdb8a71932b496"
-			}, {
-				"whenTriggered": "ConstantVector1D_14_Value",
-				"alsoTrigger": "ConstantVector1D_14_Value",
-				"onEntity": "abcdb8a71932b496"
-			}, {
-				"whenTriggered": "ConstantVector1D_15_Value",
-				"alsoTrigger": "ConstantVector1D_15_Value",
-				"onEntity": "abcdb8a71932b496"
-			}, {
-				"whenTriggered": "ConstantVector1D_01_Value",
-				"alsoTrigger": "ConstantVector1D_01_Value",
-				"onEntity": "abcdb8a71932b496"
 			}]
 		},
 		"abcd19dd4eb72656": {
@@ -788,30 +763,7 @@
 			"inputCopying": [],
 			"outputCopying": []
 		},
-		"abcd575e6efe73c8": {
-			"parent": "c1e434f458c274df",
-			"name": "Hair_Cap",
-			"template": "006594C7AF2B3472",
-			"blueprint": "000B3B438FC8C9AC",
-			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#8a7d71"
-				},
-				"ConstantColorRGB_05_Value": {
-					"type": "SColorRGB",
-					"value": "#fce1d2"
-				},
-				"ConstantColorRGB_03_Value": {
-					"type": "SColorRGB",
-					"value": "#524a43"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdb8a71932b496": {
+		"abcdf60b92c6aed4": {
 			"parent": "44b989ff347d77c8",
 			"name": "mask_hospital",
 			"template": "004B934C71A190BD",
@@ -835,8 +787,8 @@
 				"m_PrimitiveScale": {
 					"type": "SVector3",
 					"value": {
-						"x": 1.05119500160217285,
-						"y": 1.050100016593933,
+						"x": 1,
+						"y": 1,
 						"z": 1
 					}
 				},
