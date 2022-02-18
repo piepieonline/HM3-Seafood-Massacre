@@ -161,7 +161,7 @@
 				"HeadMaterialToOverride": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "009F7978C601815A",
+						"resource": "00979A899CBEE5AE",
 						"flag": "5F"
 					}
 				}
@@ -325,9 +325,9 @@
 		},
 		"bb520fc692be5c97": {
 			"parent": "c1e434f458c274df",
-			"name": "Arms_Biceps_Hand",
-			"template": "0081BA55B3D8292E",
-			"blueprint": "00CFA61BB1571AF8",
+			"name": "Arms_Biceps_Wrist",
+			"template": "003501B0C44CFF39",
+			"blueprint": "00E838DEB7DEA62A",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
@@ -537,7 +537,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
+					"value": ["abcd0a7cf9e7f4c8", "abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
 				}
 			},
 			"editorOnly": false,
@@ -687,19 +687,19 @@
 			}, {
 				"whenTriggered": "ConstantVector1D_06_Value",
 				"alsoTrigger": "ConstantVector1D_06_Value",
-				"onEntity": "abcdb8a71932b496"
+				"onEntity": "abcd091f71ffa070"
 			}, {
 				"whenTriggered": "ConstantVector1D_14_Value",
 				"alsoTrigger": "ConstantVector1D_14_Value",
-				"onEntity": "abcdb8a71932b496"
+				"onEntity": "abcd091f71ffa070"
 			}, {
 				"whenTriggered": "ConstantVector1D_15_Value",
 				"alsoTrigger": "ConstantVector1D_15_Value",
-				"onEntity": "abcdb8a71932b496"
+				"onEntity": "abcd091f71ffa070"
 			}, {
 				"whenTriggered": "ConstantVector1D_01_Value",
 				"alsoTrigger": "ConstantVector1D_01_Value",
-				"onEntity": "abcdb8a71932b496"
+				"onEntity": "abcd091f71ffa070"
 			}]
 		},
 		"abcd19dd4eb72656": {
@@ -811,7 +811,22 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdb8a71932b496": {
+		"abcd0a7cf9e7f4c8": {
+			"parent": "c1e434f458c274df",
+			"name": "Gloves_Rubber_Medical",
+			"template": "00E8A1383E199041",
+			"blueprint": "009398722444190C",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd091f71ffa070": {
 			"parent": "44b989ff347d77c8",
 			"name": "mask_hospital",
 			"template": "004B934C71A190BD",
