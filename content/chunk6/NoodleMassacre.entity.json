@@ -7289,9 +7289,9 @@
 		},
 		"abcd9745c4383855": {
 			"parent": "abcde9ffa1d51289",
-			"name": "Keyword_FLU_INFECTED",
-			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_sick.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_sick.entitytemplate].pc_entityblueprint",
+			"name": "Keyword_ActorHasKnowledge",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_rHolder": {
 					"type": "SEntityTemplateReference",
