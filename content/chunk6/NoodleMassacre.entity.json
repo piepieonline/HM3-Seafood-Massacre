@@ -2895,14 +2895,6 @@
 				"onEvent": "OnFalse",
 				"shouldTrigger": "EndFire",
 				"onEntity": "abcdcda5152e32a4"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Deactivate",
-				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
@@ -4827,21 +4819,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd23f129e499b4": {
-				"parent": "abcd1a593e6d97a0",
-				"name": "ContractsEvent - TargetsEscaped",
-				"template": "[modules:/zcontractsevententity.class].pc_entitytype",
-				"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
-				"properties": {
-					"m_sName": {
-						"type": "ZString",
-						"value": "TargetsEscaped"
-					}
-				},
-				"postInitProperties": {},
-				"editorOnly": false,
-				"platformSpecificPropertyValues": []
-		},
 		"abcd207fc49ace75": {
 			"parent": "abcd9105b49b083c",
 			"name": "TEST ItemKey",
@@ -4986,7 +4963,16 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
+				"onEntity": "abcdc38640d82521"
+			}]
 		},
 		"abcddbb8e1c0e1ba": {
 			"parent": "abcd36cd499253ae",
@@ -7578,7 +7564,12 @@
 			"name": "VBB Is Panic Spreading",
 			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"properties": {},
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -11917,8 +11908,8 @@
 			}]
 		},
 		"abcd1e20fbec86de": {
-			"parent": "abcd9105b49b083c",
-			"name": "Info",
+			"parent": "abcd1ac35242c91a",
+			"name": "VirusManualSpreading",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -11928,7 +11919,7 @@
 		},
 		"abcd7fc31935c768": {
 			"parent": "abcd1e20fbec86de",
-			"name": "Spotted",
+			"name": "SpottedEventListener",
 			"template": "[modules:/zspottedeventlistenerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zspottedeventlistenerentity.class].pc_entityblueprint",
 			"properties": {},
@@ -11967,7 +11958,7 @@
 		},
 		"abcdfc8ef2675a90": {
 			"parent": "abcd1e20fbec86de",
-			"name": "Proxy",
+			"name": "ActorProxy",
 			"template": "[modules:/zactorproxyentity.class].pc_entitytype",
 			"blueprint": "[modules:/zactorproxyentity.class].pc_entityblueprint",
 			"properties": {},
