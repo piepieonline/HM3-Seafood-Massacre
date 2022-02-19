@@ -2904,14 +2904,6 @@
 				"onEvent": "OnFalse",
 				"shouldTrigger": "EndFire",
 				"onEntity": "abcdcda5152e32a4"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Deactivate",
-				"onEntity": "abcdc38640d82521"
 			}]
 		},
 		"abcd7ddbc0fdfad6": {
@@ -4985,7 +4977,16 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
+				"onEntity": "abcdc38640d82521"
+			}]
 		},
 		"abcddbb8e1c0e1ba": {
 			"parent": "abcd36cd499253ae",
