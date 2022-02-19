@@ -119,7 +119,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd750d6ab56bdc", "abcdd34639c8e5cf", "38ac983fe7a917e8", "9891c0a9e62730de", "33075b5b3d511394"]
+					"value": ["abcd6904a7f4b59e", "abcd33195bed6eef", "38ac983fe7a917e8", "9891c0a9e62730de", "33075b5b3d511394"]
 				}
 			},
 			"editorOnly": false,
@@ -132,10 +132,6 @@
 			"blueprint": "0008E1DFFC08F16D",
 			"properties": {
 				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"ConstantColorRGB_01_Value": {
 					"type": "SColorRGB",
 					"value": "#ffffff"
 				}
@@ -164,35 +160,239 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdd34639c8e5cf": {
+		"abcd33195bed6eef": {
+			"parent": "f45421e0223275d7",
+			"name": "Hair_Sides_S",
+			"template": "00538F0D8B33EA7C",
+			"blueprint": "00616A7BAAB2C145",
+			"properties": {
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#2b2b2b"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2eed5429a467": {
+			"parent": "f45421e0223275d7",
+			"name": "FX_Hitman_Wet_Logic_Body",
+			"template": "0067CFB703A80787",
+			"blueprint": "00AA88C960CD2080",
+			"properties": {
+				"HeadMaterialToOverride": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00740FFD13E5DF05",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {
+				"HeadMaterialOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["f45421e0223275d7"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "T",
+				"onEntity": "abcdde635b961c72"
+			}, {
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "T",
+				"onEntity": "abcd1322cb0abb86"
+			}, {
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "T",
+				"onEntity": "abcd5bfedfa16985"
+			}, {
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "T",
+				"onEntity": "abcdeb80a79dc0e0"
+			}, {
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "T",
+				"onEntity": "abcd99384ffc9dd2"
+			}, {
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "T",
+				"onEntity": "abcd9dc1f8f420b4"
+			}]
+		},
+		"abcdde635b961c72": {
+			"parent": "abcd2eed5429a467",
+			"name": "Norml",
+			"template": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": {
+					"type": "float32",
+					"value": 1.5
+				},
+				"m_fT": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_A": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Lerp",
+				"shouldTrigger": "ConstantVector1D_06_Value",
+				"onEntity": "33075b5b3d511394"
+			}]
+		},
+		"abcd9dc1f8f420b4": {
+			"parent": "abcd2eed5429a467",
+			"name": "baseRough 4",
+			"template": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": {
+					"type": "float32",
+					"value": 0.7699999809265136
+				},
+				"m_fT": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_A": {
+					"type": "float32",
+					"value": 0.30000001192092898
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Lerp",
+				"shouldTrigger": "ConstantVector1D_15_Value",
+				"onEntity": "33075b5b3d511394"
+			}]
+		},
+		"abcd1322cb0abb86": {
+			"parent": "abcd2eed5429a467",
+			"name": "Albedo",
+			"template": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": {
+					"type": "float32",
+					"value": 0.25
+				},
+				"m_fT": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_A": {
+					"type": "float32",
+					"value": 0.5
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd99384ffc9dd2": {
+			"parent": "abcd2eed5429a467",
+			"name": "Albedo 3",
+			"template": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": {
+					"type": "float32",
+					"value": 0.3499999940395355
+				},
+				"m_fT": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_A": {
+					"type": "float32",
+					"value": 0.6899999976158142
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcdeb80a79dc0e0": {
+			"parent": "abcd2eed5429a467",
+			"name": "Albedo 2",
+			"template": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": {
+					"type": "float32",
+					"value": 0.47999998927116396
+				},
+				"m_fT": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_A": {
+					"type": "float32",
+					"value": 0.800000011920929
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd5bfedfa16985": {
+			"parent": "abcd2eed5429a467",
+			"name": "baseRough 3",
+			"template": "[modules:/zmathlerp.class].pc_entitytype",
+			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
+			"properties": {
+				"m_B": {
+					"type": "float32",
+					"value": 0.30000001192092898
+				},
+				"m_fT": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_A": {
+					"type": "float32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Lerp",
+				"shouldTrigger": "ConstantVector1D_04_Value",
+				"onEntity": "9891c0a9e62730de"
+			}, {
+				"onEvent": "Lerp",
+				"shouldTrigger": "ConstantVector1D_04_Value",
+				"onEntity": "33075b5b3d511394"
+			}, {
+				"onEvent": "Lerp",
+				"shouldTrigger": "ConstantVector1D_14_Value",
+				"onEntity": "33075b5b3d511394"
+			}]
+		},
+		"abcd6904a7f4b59e": {
 			"parent": "f45421e0223275d7",
 			"name": "hair_top_ms_sidepart_neat",
 			"template": "00E2C97D9F5DA5EA",
 			"blueprint": "00426D8D36BD403C",
 			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd750d6ab56bdc": {
-			"parent": "f45421e0223275d7",
-			"name": "Hair_Cap",
-			"template": "006594C7AF2B3472",
-			"blueprint": "000B3B438FC8C9AC",
-			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#8a7d71"
-				},
-				"ConstantColorRGB_05_Value": {
-					"type": "SColorRGB",
-					"value": "#fce1d2"
-				},
-				"ConstantColorRGB_03_Value": {
-					"type": "SColorRGB",
-					"value": "#524a43"
-				}
-			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
