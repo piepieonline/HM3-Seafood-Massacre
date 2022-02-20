@@ -13846,10 +13846,6 @@
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
-			"DiffuseColor": {
-				"type": "SColorRGB",
-				"value": "#F9E250"
-			},
 			"m_mTransform": {
 				"type": "SMatrix43",
 				"value": {
