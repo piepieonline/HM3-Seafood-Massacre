@@ -38,6 +38,10 @@ Future Easter Eggs:
   * Tweak the watch and killzones
   * No longer looking at HM when aiming?
   * Confirmed, if Sniper has shooting memory then his gun will no longer work on NPCs
+* PZ Panic. Note: Contacts aren't valid targets - just can't leave with them alive. Force loss of SA and cleanup
+ * Need to check they made it inside the building before they panicked? (Maybe not)
+ * Sending contract event
+ * PZ spreading also for Red's body
   * AIModifieractor, no lure
 * Panic needs to be if they get to a guard, not just out of zone? (...or like PZ? Spreads to anyone they contact? But contacts aren't valid targets - just can't leave with them alive. Force loss of SA and cleanup)
  * PZ also for Red's body
