@@ -30,6 +30,35 @@
                 }
             }
         },  {
+            "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
+            "Category": "primary",
+            "Primary": true,
+            "ObjectiveType": "custom",
+            "ForceShowOnLoadingScreen": true,
+            "BriefingName": "Hide Body",
+            "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
+            "HUDTemplate": {
+                "display": "Conceal the Red Dragon negotiator's body",
+                "iconType": 17
+            },
+            "BriefingText": "Conceal the Red Dragon negotiator's body",
+            "LongBriefingText": "His corpse would tip off the Blue Lotus and the police, so 'keep things underground.'",
+            "Type": "statemachine",
+            "Definition": {
+                "Scope": "session",
+                "States": {
+                    "Start": {
+                        "BodyHidden": [{
+                                "Condition": {
+                                            "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                        },
+                                "Transition": "Success"
+                            }
+                        ]
+                    }
+                }
+            }
+        },  {
             "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
             "Category": "primary",
             "ObjectiveType": "setpiece",
@@ -128,6 +157,107 @@
                     }
                 }
             }, {
+                "Id": "b8ffc636-4f9a-49b5-8293-98839a6ca202",
+                "ObjectiveType": "custom",
+                "IgnoreIfInactive": true,
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": false
+                    }
+                },
+                "OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed"
+                    }
+                },
+                "Image": "images/contractconditions/condition_contrac_all_shots_fired_hit_an_npc.jpg",
+                "BriefingName": "No Witnesses",
+                "BriefingText": "No one must know the Red Dragons were not responsible",
+                "Category": "primary",
+                "HUDTemplate": {
+                    "display": "Eliminate all witnesses",
+                    "iconType": 8
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "ContextListeners": {
+                        "TargetsCounter": {
+                            "type": "objective-counter",
+                            "header": "UI_NOODLE_WITNESSES"
+                        }
+                    },
+                    "Context": {
+                        "KilledActors": [],
+                        "Witnesses": [],
+                        "TargetsCounter": 0
+                    },
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "TargetPicked": [{
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    },
+                                    "Transition": "TargetPicked"
+                                }
+                            ]
+                        },
+                        "TargetPicked": {
+                            "TargetPicked": [{
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    }
+                                }
+                            ],
+                            "Kill": [{
+                                    "Actions": {
+                                        "$pushunique": ["KilledActors", "$Value.RepositoryId"]
+                                    }
+                                }, {
+                                    "Actions": {
+                                        "$dec": "TargetsCounter"
+                                    },
+                                    "Condition": {
+                                        "$inarray": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$eq": ["$.#", "$Value.RepositoryId"]
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "Condition": {
+                                        "$all": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$any": {
+                                                    "in": "$.KilledActors",
+                                                    "?": {
+                                                        "$eq": ["$.#", "$.##"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "ContractLoad": [{
+                                    "Actions": {
+                                        "$set": ["TargetsCounter", "$.TargetsCounter"]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },  {
                 "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
                 "Category": "primary",
                 "IsHidden": true,
