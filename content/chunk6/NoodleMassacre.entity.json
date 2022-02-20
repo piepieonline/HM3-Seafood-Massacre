@@ -275,6 +275,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "e4ae21f200d8e8a8"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "GetKeyword",
+				"onEntity": "abcd9745c4383855"
 			}]
 		},
 		"7f5683f5066cc763": {
@@ -1472,7 +1476,7 @@
 						"position": {
 							"x": -80.08000183105469,
 							"y": 25.323909759521484,
-							"z": 101.00686645507813
+							"z": 101.00686645507812
 						}
 					}
 				},
@@ -1805,9 +1809,9 @@
 							"z": -45.002979908338
 						},
 						"position": {
-							"x": -95.331,
-							"y": 102.11,
-							"z": 101.011
+							"x": -95.33100128173828,
+							"y": 102.11000061035156,
+							"z": 101.01100158691406
 						}
 					}
 				},
@@ -1997,9 +2001,9 @@
 							"z": -171
 						},
 						"position": {
-							"x": -31.1785,
-							"y": 127.393,
-							"z": 101.043
+							"x": -31.178499221801758,
+							"y": 127.39299774169922,
+							"z": 101.04299926757812
 						}
 					}
 				},
@@ -2554,7 +2558,7 @@
 						},
 						"position": {
 							"x": 0,
-							"y": -3.999999989900971e-06,
+							"y": -0.000003999999989900971,
 							"z": 0
 						}
 					}
@@ -4604,8 +4608,8 @@
 							"z": 10.923432272893496
 						},
 						"position": {
-							"x": -79.7859,
-							"y": 94.1714,
+							"x": -79.78589630126953,
+							"y": 94.17140197753906,
 							"z": 109
 						}
 					}
@@ -4626,12 +4630,12 @@
 				}
 			},
 			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdb81cc02940b7"
-			}],
-			"platformSpecificPropertyValues": []
+			}]
 		},
 		"abcd573b1d00168d": {
 			"parent": "abcdba75fae49278",
@@ -5109,7 +5113,7 @@
 							"z": 0
 						},
 						"position": {
-							"x": -89.07119750976563,
+							"x": -89.07119750976562,
 							"y": 63.409786224365234,
 							"z": 101.00008392333984
 						}
@@ -5962,7 +5966,7 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 2.6731489896774292,
+						"x": 2.673148989677429,
 						"y": 2.4581100940704346,
 						"z": 3.8866599798202515
 					}
@@ -5995,8 +5999,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -173.312,
-							"y": 151.6,
+							"x": -173.31199645996094,
+							"y": 151.60000610351562,
 							"z": 85
 						}
 					}
@@ -6092,9 +6096,9 @@
 							"z": -45.002979908338
 						},
 						"position": {
-							"x": -102.764,
-							"y": 114.417,
-							"z": 101.011
+							"x": -102.76399993896484,
+							"y": 114.41699981689453,
+							"z": 101.01100158691406
 						}
 					}
 				},
@@ -6133,12 +6137,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -55.92343385152114
+							"z": -55.92343309973799
 						},
 						"position": {
-							"x": -42.2765,
-							"y": 127.869,
-							"z": 101.012
+							"x": -42.2765007019043,
+							"y": 127.86900329589844,
+							"z": 101.01200103759766
 						}
 					}
 				},
@@ -6200,8 +6204,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -175.425,
-							"y": 139.069,
+							"x": -175.4250030517578,
+							"y": 139.06900024414062,
 							"z": 85
 						}
 					}
@@ -6290,12 +6294,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 60.002979908338
+							"z": 60.00298018836019
 						},
 						"position": {
-							"x": -58.6582,
+							"x": -58.658199310302734,
 							"y": 77.75,
-							"z": 96.8552
+							"z": 96.8552017211914
 						}
 					}
 				},
@@ -6334,12 +6338,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 35.92343385152114
+							"z": 35.92343285413521
 						},
 						"position": {
-							"x": -12.1126,
-							"y": 127.068,
-							"z": 101.012
+							"x": -12.112600326538086,
+							"y": 127.06800079345703,
+							"z": 101.01200103759766
 						}
 					}
 				},
@@ -6401,8 +6405,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -181.967,
-							"y": 131.768,
+							"x": -181.9669952392578,
+							"y": 131.76800537109375,
 							"z": 85
 						}
 					}
@@ -6494,8 +6498,8 @@
 							"z": 135.002979908338
 						},
 						"position": {
-							"x": -14.5322,
-							"y": -0.0752043,
+							"x": -14.53219985961914,
+							"y": -0.07520429790019989,
 							"z": 101
 						}
 					}
@@ -6538,8 +6542,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -21.6232,
-							"y": 36.7082,
+							"x": -21.623199462890625,
+							"y": 36.70819854736328,
 							"z": 101
 						}
 					}
@@ -6602,8 +6606,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -173.312,
-							"y": 151.6,
+							"x": -173.31199645996094,
+							"y": 151.60000610351562,
 							"z": 85
 						}
 					}
@@ -6758,8 +6762,7 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd9e0dc486d695": {
 			"parent": "abcd692adf85a546",
@@ -6776,9 +6779,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -118.521,
-							"y": 75.2986,
-							"z": 85.0107
+							"x": -118.52100372314453,
+							"y": 75.29859924316406,
+							"z": 85.01069641113281
 						}
 					}
 				},
@@ -6866,12 +6869,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -110.002979908338
+							"z": -110.00298022672345
 						},
 						"position": {
-							"x": -137.766,
-							"y": 71.9476,
-							"z": 85.0107
+							"x": -137.76600646972656,
+							"y": 71.94760131835938,
+							"z": 85.01069641113281
 						}
 					}
 				},
@@ -6910,11 +6913,11 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -110.92343385152114
+							"z": -110.92343445015254
 						},
 						"position": {
-							"x": -116.547,
-							"y": 112.223,
+							"x": -116.5469970703125,
+							"y": 112.2229995727539,
 							"z": 101
 						}
 					}
@@ -6977,8 +6980,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -70.1837,
-							"y": 107.136,
+							"x": -70.18370056152344,
+							"y": 107.13600158691406,
 							"z": 97
 						}
 					}
@@ -7070,9 +7073,9 @@
 							"z": 45.002979908338
 						},
 						"position": {
-							"x": -75.0117,
-							"y": 46.5107,
-							"z": 97.0097
+							"x": -75.01170349121094,
+							"y": 46.51070022583008,
+							"z": 97.00969696044922
 						}
 					}
 				},
@@ -7114,9 +7117,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -128.661,
-							"y": 79.2163,
-							"z": 97.0097
+							"x": -128.66099548339844,
+							"y": 79.21630096435547,
+							"z": 97.00969696044922
 						}
 					}
 				},
@@ -7178,8 +7181,8 @@
 							"z": -45.002979908338
 						},
 						"position": {
-							"x": -73.4394,
-							"y": 101.618,
+							"x": -73.43939971923828,
+							"y": 101.61799621582031,
 							"z": 97
 						}
 					}
@@ -7262,10 +7265,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd723ee4fbce8d": {
 			"parent": "abcd1472582a90e8",
@@ -7275,10 +7275,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcde667f100ebbc": {
 			"parent": "abcd1472582a90e8",
@@ -7288,10 +7285,7 @@
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
+			"platformSpecificPropertyValues": []
 		},
 		"abcd239ec56b2b0e": {
 			"parent": "abcde667f100ebbc",
@@ -7308,8 +7302,8 @@
 							"z": 0
 						},
 						"position": {
-							"x": -61.0219,
-							"y": 93.4588,
+							"x": -61.02190017700195,
+							"y": 93.45880126953125,
 							"z": 113
 						}
 					}
@@ -7343,8 +7337,8 @@
 							"z": -180
 						},
 						"position": {
-							"x": -61.0219,
-							"y": 93.4588,
+							"x": -61.02190017700195,
+							"y": 93.45880126953125,
 							"z": 113
 						}
 					}
@@ -7432,7 +7426,7 @@
 						"position": {
 							"x": -0.134101003408432,
 							"y": 0.4706540107727051,
-							"z": -2.0605239868164063
+							"z": -2.0605239868164062
 						}
 					}
 				},
@@ -7586,8 +7580,8 @@
 							"z": -160.7347322208125
 						},
 						"position": {
-							"x": -61.4249,
-							"y": 92.1999,
+							"x": -61.42490005493164,
+							"y": 92.19989776611328,
 							"z": 113
 						}
 					}
@@ -7878,7 +7872,7 @@
 				},
 				"CameraFishEye": {
 					"type": "float32",
-					"value": 0.0099999997764825821
+					"value": 0.009999999776482582
 				},
 				"DisconnectedImage": {
 					"type": "ZRuntimeResourceID",
@@ -8975,7 +8969,7 @@
 				},
 				"CameraFishEye": {
 					"type": "float32",
-					"value": 0.0099999997764825821
+					"value": 0.009999999776482582
 				},
 				"DisconnectedImage": {
 					"type": "ZRuntimeResourceID",
@@ -9140,7 +9134,7 @@
 							"z": -0.06256703317026543
 						},
 						"position": {
-							"x": 0.0065729999914765358,
+							"x": 0.006572999991476536,
 							"y": -0.011837000027298927,
 							"z": 0.0543069988489151
 						}
@@ -9287,7 +9281,7 @@
 					"value": {
 						"x": 4.751150131225586,
 						"y": 4.628590106964111,
-						"z": 6.7408199310302734
+						"z": 6.740819931030273
 					}
 				}
 			},
@@ -9705,8 +9699,8 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 3.7936499118804932,
-						"y": 3.2687499523162842,
+						"x": 3.793649911880493,
+						"y": 3.268749952316284,
 						"z": 3
 					}
 				}
@@ -9941,7 +9935,7 @@
 					"value": {
 						"x": 4.751150131225586,
 						"y": 4.628590106964111,
-						"z": 6.7408199310302734
+						"z": 6.740819931030273
 					}
 				}
 			},
@@ -11860,7 +11854,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 110.923432272893496
+							"z": 110.92343227289349
 						},
 						"position": {
 							"x": -80.3635,
@@ -12883,7 +12877,7 @@
 					"value": {
 						"x": 2.751150131225586,
 						"y": 3.628590106964111,
-						"z": 6.7408199310302734
+						"z": 6.740819931030273
 					}
 				}
 			},
@@ -13117,7 +13111,7 @@
 					"value": {
 						"x": 2.751150131225586,
 						"y": 3.628590106964111,
-						"z": 6.7408199310302734
+						"z": 6.740819931030273
 					}
 				}
 			},
@@ -13319,7 +13313,7 @@
 					"value": {
 						"x": 2.751150131225586,
 						"y": 3.628590106964111,
-						"z": 6.7408199310302734
+						"z": 6.740819931030273
 					}
 				}
 			},
@@ -13352,6 +13346,497 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcde9ffa1d51289": {
+			"parent": "abcd1ac35242c91a",
+			"name": "Virus Keyword",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"inputCopying": [{
+				"whenTriggered": "SetIActor",
+				"alsoTrigger": "SetIActor",
+				"onEntity": "abcd6a9d80ab1cef"
+			}]
+		},
+		"abcd6a9d80ab1cef": {
+			"parent": "abcde9ffa1d51289",
+			"name": "ActorKeywordProxy",
+			"template": "[modules:/zactorkeywordproxyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorkeywordproxyentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActorSet",
+				"shouldTrigger": "GetKeyword",
+				"onEntity": "abcd9745c4383855"
+			}]
+		},
+		"abcd9745c4383855": {
+			"parent": "abcde9ffa1d51289",
+			"name": "Keyword_ActorHasKnowledge",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "abcde9ffa1d51289"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Keyword",
+				"shouldTrigger": "AddKeyword",
+				"onEntity": "abcd6a9d80ab1cef"
+			}]
+		},
+		"abcd1ac35242c91a": {
+			"parent": "abcd82237dac2971",
+			"name": "NoKnowledgeAllowed ActorSpreadController",
+			"template": "[modules:/zactorspreadcontrollerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorspreadcontrollerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rEnabledCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdb88c399d6321"
+				},
+				"m_rEvaluator": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd02579d0fa466"
+				},
+				"m_rActorCounter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd19d1d2c26ccd"
+				},
+				"m_bSpreadWhenDead": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bSpreadWhenPacified": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fSpreadTimeThreshold": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_rPlayerSpreading": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdb57024ba82a4"
+				},
+				"m_rPlayerCandidateForSpreading": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdb57024ba82a4"
+				}
+			},
+			"postInitProperties": {
+				"m_aDefaultSpreadingActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_rIncludeKeywords": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdea077126b837"
+				},
+				"m_rTransitionOperator": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdad26386f2034"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActorAdded",
+				"shouldTrigger": "SetIActor",
+				"onEntity": "abcd6a9d80ab1cef"
+			}, {
+				"onEvent": "OnActorAdded",
+				"shouldTrigger": "SetState",
+				"onEntity": "abcd09029e4bba12"
+			}, {
+				"onEvent": "OnActorAdded",
+				"shouldTrigger": "SetIActor",
+				"onEntity": "abcd92a48ec55358"
+			}, {
+				"onEvent": "OnPlayerAdded",
+				"shouldTrigger": "RemovePlayer",
+				"onEntity": "abcd1ac35242c91a"
+			}]
+		},
+		"abcd02579d0fa466": {
+			"parent": "abcd1ac35242c91a",
+			"name": "Range",
+			"template": "[modules:/zactorspreadevaluatorreasoninggrid.class].pc_entitytype",
+			"blueprint": "[modules:/zactorspreadevaluatorreasoninggrid.class].pc_entityblueprint",
+			"properties": {
+				"m_fInSpreadRangeDistance": {
+					"type": "float32",
+					"value": 4
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd19d1d2c26ccd": {
+			"parent": "abcd1ac35242c91a",
+			"name": "Number of infected",
+			"template": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdea077126b837": {
+			"parent": "abcd1ac35242c91a",
+			"name": "VirusSpread Receivers",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb57024ba82a4": {
+			"parent": "abcd1ac35242c91a",
+			"name": "ValueBool_PlayerCanditateForSpreading",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3feb64a3a01a": {
+			"parent": "abcd1ac35242c91a",
+			"name": "ValueBool_PlayerSpreading",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd888ea8ddf07": {
+			"parent": "abcd1ac35242c91a",
+			"name": "VirusSpread Blockers",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdad26386f2034": {
+			"parent": "abcd1ac35242c91a",
+			"name": "ActorSpreadTransitionOperatorMaterial",
+			"template": "[modules:/zactorspreadtransitionoperatormaterial.class].pc_entitytype",
+			"blueprint": "[modules:/zactorspreadtransitionoperatormaterial.class].pc_entityblueprint",
+			"properties": {
+				"m_bIgnoreDefaultSpreaders": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fTransitionTime": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd09029e4bba12": {
+			"parent": "abcd1ac35242c91a",
+			"name": "InfectedIcon",
+			"template": "[modules:/zactorsecondaryiconstateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorsecondaryiconstateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bApplyToActorListOnStart": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eState": {
+					"type": "EActorSecondaryIconState",
+					"value": "eSIS_Infected_Stage3"
+				}
+			},
+			"postInitProperties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdcda4b8ede577": {
+			"parent": "abcde5906856cd14",
+			"name": "VBO Panic and 47 is not Red",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd4abf4ece5f4c", "abcd29f817d931eb"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcdb88c399d6321"
+			}]
+		},
+		"abcd122f320b42d3": {
+			"parent": "abcdea077126b837",
+			"name": "Keyword_ACTOR_NAKED",
+			"template": "0039F9AE27AFBA23",
+			"blueprint": "00BC94375F8C4257",
+			"properties": {
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdea077126b837"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4abf4ece5f4c": {
+			"parent": "abcde5906856cd14",
+			"name": "VBO Panic",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3feb64a3a01a"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde5906856cd14": {
+			"parent": "abcd1ac35242c91a",
+			"name": "VirusSpread Conditions",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd29f817d931eb": {
+			"parent": "abcde5906856cd14",
+			"name": "47IsNotRed InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd96152f20a094"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb88c399d6321": {
+			"parent": "abcde5906856cd14",
+			"name": "VBB Is Panic Spreading",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd92a48ec55358": {
+			"parent": "abcd1ac35242c91a",
+			"name": "Contract",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"inputCopying": [{
+				"whenTriggered": "SetActor",
+				"alsoTrigger": "SetActor",
+				"onEntity": "abcd1929c0389895"
+			}]
+		},
+		"abcd1929c0389895": {
+			"parent": "abcd92a48ec55358",
+			"name": "ActorValue",
+			"template": "[modules:/zactormetricvalueentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactormetricvalueentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "ActorSet",
+				"shouldTrigger": "GetValue",
+				"onEntity": "abcd53680ff73595"
+			}]
+		},
+		"abcd53680ff73595": {
+			"parent": "abcd92a48ec55358",
+			"name": "MetricValue_Pool",
+			"template": "[modules:/zmetricvalue_pool.class].pc_entitytype",
+			"blueprint": "[modules:/zmetricvalue_pool.class].pc_entityblueprint",
+			"properties": {
+				"m_pValueProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1929c0389895"
+				},
+				"m_name": {
+					"type": "ZString",
+					"value": "ActorTarget"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Value",
+				"shouldTrigger": "SetValue",
+				"onEntity": "abcd0d6ba18b1440"
+			}]
+		},
+		"abcd0d6ba18b1440": {
+			"parent": "abcd92a48ec55358",
+			"name": "ContractsEvent",
+			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_bTriggerOnValue": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sName": {
+					"type": "ZString",
+					"value": "TargetPicked"
+				},
+				"m_bSendDirectly": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1e20fbec86de": {
+			"parent": "abcd1ac35242c91a",
+			"name": "VirusManualSpreading",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7fc31935c768": {
+			"parent": "abcd1e20fbec86de",
+			"name": "SpottedEventListener",
+			"template": "[modules:/zspottedeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspottedeventlistenerentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Spotted",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdaafe0adc9b23"
+			}, {
+				"onEvent": "AddWitness",
+				"shouldTrigger": "SetIActor",
+				"onEntity": "abcdfc8ef2675a90"
+			}]
+		},
+		"abcdaafe0adc9b23": {
+			"parent": "abcd1e20fbec86de",
+			"name": "IsPlayerRD VBP",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd96152f20a094"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "PollFalse",
+				"shouldTrigger": "GetIActor",
+				"onEntity": "abcdfc8ef2675a90"
+			}]
+		},
+		"abcdfc8ef2675a90": {
+			"parent": "abcd1e20fbec86de",
+			"name": "ActorProxy",
+			"template": "[modules:/zactorproxyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactorproxyentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnGetIActor",
+				"shouldTrigger": "AddActor",
+				"onEntity": "abcd1ac35242c91a"
+			}]
+		},
+		"abcdaf7bad0903aa": {
+			"parent": "abcdd888ea8ddf07",
+			"name": "Keyword_ActorHasKnowledge",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd888ea8ddf07"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
