@@ -3952,8 +3952,8 @@
 							"z": 0
 						},
 						"position": {
-							"x": -3,
-							"y": 3,
+							"x": 1.75,
+							"y": -0.27,
 							"z": 0
 						}
 					}
@@ -3982,11 +3982,11 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 0
+							"z": 180
 						},
 						"position": {
-							"x": -0.07999999821186066,
-							"y": 0.6200000047683716,
+							"x": 0.2,
+							"y": -0.68,
 							"z": 0
 						}
 					}
@@ -4005,7 +4005,7 @@
 				},
 				"m_aUIHighlightGeom": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["abcd2c9394f09c9d"]
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -4045,6 +4045,14 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd071ac30376d8"
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.7,
+						"y": 1.3,
+						"z": 1
+					}
 				}
 			},
 			"postInitProperties": {},
@@ -4063,12 +4071,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": 0
+							"z": -90
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": 0.2,
+							"y": 0.06,
+							"z": 1
 						}
 					}
 				},
@@ -5703,7 +5711,12 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "ItemSpawned",
+				"shouldTrigger": "GetIndex",
+				"onEntity": "abcdfa5dc6d88a60"
+			}]
 		},
 		"abcd492e88ed0db0": {
 			"parent": "abcd9df9701a171c",
@@ -14232,9 +14245,50 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": []
+		},
+		"abcdfa5dc6d88a60": {
+			"parent": "abcd9105b49b083c",
+			"name": "EntityHighlighterParent",
+			"template": "[modules:/zmultiparentspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zmultiparentspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_aParents": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2c9394f09c9d", "abcd071ac30376d8", "abcd84543a7ad2bb"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "73530082e7dbef26",
+			"comment": "Food bell",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_mTransform": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": -10.468154884948737
+					},
+					"position": {
+						"x": -85.3,
+						"y": 33.80461883544922,
+						"z": 101
+					}
+				}
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "845680542066688e",
 			"comment": "Kitchen Powerbox",

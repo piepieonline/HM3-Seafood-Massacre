@@ -26,6 +26,8 @@ Future Easter Eggs:
 
 # Notes
 * Food:
+  * Need to be able to replace the amulet if taken by 47 after placing?
+  * should always investigate if bell is rung
   * Dropping the item gets weird... Item goes to the sky
   * Sometimes item isn't chained!? (Investigate signalpipes?)
   * need to stop them eating if the bowl is destroyed. (Maybe not possible, not getting fracture events :()
@@ -33,28 +35,16 @@ Future Easter Eggs:
 * Bartender
   * If anything happens between bartender picking up bowl and serving them all, he stands there broken - can't replicate
 * Sniper
-  * Convert to a new entity
   * Needs to fire in open combat
   * Tweak the watch and killzones
   * No longer looking at HM when aiming?
   * Confirmed, if Sniper has shooting memory then his gun will no longer work on NPCs
-* PZ Panic. Note: Contacts aren't valid targets - just can't leave with them alive. Force loss of SA and cleanup
- * Need to check they made it inside the building before they panicked? (Maybe not)
- * Sending contract event
+* PZ Panic.
  * PZ spreading also for Red's body
-  * AIModifieractor, no lure
-* Panic needs to be if they get to a guard, not just out of zone? (...or like PZ? Spreads to anyone they contact? But contacts aren't valid targets - just can't leave with them alive. Force loss of SA and cleanup)
- * PZ also for Red's body
 * Lock the gate to the back of the restaurant?
-* Targets should evac?
 
+* Remove test items (poison)
 
-
-* Remove test items (serving plate, poison)
-* Fix amulet place (delivery) position & rotation
-* Unset default spawn
-
-* First guard deletion override: b4f0676d7f99568a
 
 * trying to get Hokkaido oriental music to play in restaurant?
 
