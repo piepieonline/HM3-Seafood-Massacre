@@ -13692,7 +13692,7 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"inputCopying": [{
-				"whenTriggered": "SetActor",
+				"whenTriggered": "SetIActor",
 				"alsoTrigger": "SetActor",
 				"onEntity": "abcd1929c0389895"
 			}]
