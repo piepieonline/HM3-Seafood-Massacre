@@ -7486,7 +7486,7 @@
 				},
 				"m_eState": {
 					"type": "EActorSecondaryIconState",
-					"value": "eSIS_Infected"
+					"value": "eSIS_Infected_Stage3"
 				}
 			},
 			"postInitProperties": {
