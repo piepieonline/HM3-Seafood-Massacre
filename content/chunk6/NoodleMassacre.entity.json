@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
+					"entities": ["abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -26,7 +26,7 @@
 					"entities": []
 				}],
 				["Replicable", {
-					"entities": ["abcde0eba4f09147", "abcd9a040fd7639e", "d40a022a606b4f72"]
+					"entities": ["abcd1501ba6455c8", "abcde0eba4f09147", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["Rooms", {
 					"entities": []
@@ -2251,6 +2251,10 @@
 				"onEvent": "EventOccurred",
 				"shouldTrigger": "Set",
 				"onEntity": "abcd160cf40f9943"
+			}, {
+				"onEvent": "EventOccurred",
+				"shouldTrigger": "In",
+				"onEntity": "abcdff1f8ba055ca"
 			}],
 			"platformSpecificPropertyValues": []
 		},
@@ -13875,6 +13879,359 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd4f4c44d5c8c2": {
+			"parent": "abcd692adf85a546",
+			"name": "Civilians",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd1501ba6455c8": {
+			"parent": "abcd4f4c44d5c8c2",
+			"name": "CHAR_Wet_Civilian_Streets_F__01",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -164.09786538167356
+						},
+						"position": {
+							"x": -88.9763,
+							"y": 60.0242,
+							"z": 97.0187
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "81bb6bd5-f4a2-4bb1-a91c-a6a950be16f6"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "f069ad6a-b75e-41a1-ad32-717c81843db6"
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Bri Gree Bah"
+				},
+				"m_eRequiredVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_YAMASAKI"
+				}
+			},
+			"postInitProperties": {
+				"m_InventoryItemKeys": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdff1f8ba055ca": {
+			"parent": "abcd1501ba6455c8",
+			"name": "Random act",
+			"template": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": {
+					"type": "int32",
+					"value": 5
+				},
+				"m_bShuffleOnEachLoop": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out1",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd87a3c9cb114b"
+			}, {
+				"onEvent": "Out2",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdd06783fbff89"
+			}, {
+				"onEvent": "Out3",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdf9b97595d1d6"
+			}, {
+				"onEvent": "Out4",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd2385ce67ffbf"
+			}, {
+				"onEvent": "Out5",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdec5c2f4fbef8"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd87a3c9cb114b": {
+			"parent": "abcdff1f8ba055ca",
+			"name": "act_fr_stand_phone_text_pacing",
+			"template": "003386392E1086F4",
+			"blueprint": "00A61DCF875B24DF",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45.002979908338
+						},
+						"position": {
+							"x": -4.12642,
+							"y": 115.928,
+							"z": 101.007
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 25
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1501ba6455c8"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "In",
+				"onEntity": "abcdff1f8ba055ca"
+			}, {
+				"onEvent": "OnReached",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd724b6aa31e20"
+			}]
+		},
+		"abcdf9b97595d1d6": {
+			"parent": "abcdff1f8ba055ca",
+			"name": "act_fr_sit_read_magazine",
+			"template": "008A06A580F89C68",
+			"blueprint": "00F5C1A0A4062CAB",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -38.5327,
+							"y": 110.4,
+							"z": 101
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 30
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1501ba6455c8"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "In",
+				"onEntity": "abcdff1f8ba055ca"
+			}]
+		},
+		"abcdd06783fbff89": {
+			"parent": "abcdff1f8ba055ca",
+			"name": "act_fh_stand_inspect_front",
+			"template": "[assembly:/_pro/design/actor/acts/fh.template?/act_fh_stand_inspect_front.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/fh.template?/act_fh_stand_inspect_front.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90
+						},
+						"position": {
+							"x": -44.4961,
+							"y": 98.1424,
+							"z": 97.061
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 8
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1501ba6455c8"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "In",
+				"onEntity": "abcdff1f8ba055ca"
+			}]
+		},
+		"abcd2385ce67ffbf": {
+			"parent": "abcdff1f8ba055ca",
+			"name": "act_fr_stand_smoke",
+			"template": "00F9C0A27EBA9CE8",
+			"blueprint": "003C0627512C23F2",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -80.002979908338
+						},
+						"position": {
+							"x": -41.3969,
+							"y": 127.933,
+							"z": 101.012
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 38
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1501ba6455c8"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "In",
+				"onEntity": "abcdff1f8ba055ca"
+			}]
+		},
+		"abcdec5c2f4fbef8": {
+			"parent": "abcdff1f8ba055ca",
+			"name": "act_fr_dance_rave_01",
+			"template": "004CEB06B4A04105",
+			"blueprint": "0060C5118FFA434E",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 180
+						},
+						"position": {
+							"x": -89.1895,
+							"y": 122.114,
+							"z": 101.017
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 15
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1501ba6455c8"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "In",
+				"onEntity": "abcdff1f8ba055ca"
+			}]
+		},
+		"abcd724b6aa31e20": {
+			"parent": "abcd87a3c9cb114b",
+			"name": "Text Monologue",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "003BD6458DE920ED",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1501ba6455c8"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
 		}
 	},
 	"propertyOverrides": [{
@@ -14770,6 +15127,34 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "777ab738974d4ca4",
+		"_comment": "Sit down prompt",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "aa0341bba4c633a0",
+		"_comment": "LED Light Stand apartment",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "3f41449e41f247bd",
+		"_comment": "LED Light Stand apartment",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a4941db5f4ac771",
+		"_comment": "Hush Room Blinds - Middle",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "fe7af52a337354d",
+		"_comment": "Hush Room Blinds",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "64a91f6d2c7eac31",
+		"_comment": "Hush Room Blinds",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "bb1eba6304d74263",
+		"_comment": "The Block CCTV",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "866b1085ab3c531f",
 		"_comment": "Keypad Base plate",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
