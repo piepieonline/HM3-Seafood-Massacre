@@ -8776,7 +8776,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcda3d7c8dfff0e"]
+					"value": ["abcda3d7c8dfff0e", "abcd41228fd6dcbc"]
 				}
 			},
 			"editorOnly": false,
@@ -13837,6 +13837,44 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd5f4c3de64238": {
+			"parent": "abcd9a040fd7639e",
+			"name": "ActorDeath",
+			"template": "[modules:/zactordeathentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactordeathentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnDead",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcd41228fd6dcbc"
+			}]
+		},
+		"abcd41228fd6dcbc": {
+			"parent": "abcd5f4c3de64238",
+			"name": "Chief is Alive VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
