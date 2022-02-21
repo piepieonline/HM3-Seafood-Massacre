@@ -8835,7 +8835,7 @@
 		},
 		"abcd0eabe6a054b6": {
 			"parent": "abcdb750571a14ed",
-			"name": "Restaurant Hostile Rules",
+			"name": "Pipe Hostile Rules",
 			"template": "[modules:/ztrespassingruleentity.class].pc_entitytype",
 			"blueprint": "[modules:/ztrespassingruleentity.class].pc_entityblueprint",
 			"properties": {
@@ -8845,7 +8845,10 @@
 				},
 				"m_ExcludedFromDeepTrespassingProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": [{
+						"ref": "58d50e428bb02419",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}]
 				},
 				"m_AllowedProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -14263,9 +14266,260 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd08cefbeda0da": {
+			"parent": "abcd78f8ed1f145d",
+			"name": "Lower Rooftop Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -80.15899658203125,
+							"y": 98.98100280761719,
+							"z": 110.5
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 16.690670013427734,
+						"y": 27.5,
+						"z": 5
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde6a937751125": {
+			"parent": "abcd78f8ed1f145d",
+			"name": "Lower Rooftop 2 Volumebox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -69.0554,
+							"y": 107.116,
+							"z": 112.2
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 8,
+						"y": 10,
+						"z": 7
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd06ec4119a0fc": {
+			"parent": "abcd1472582a90e8",
+			"name": "Tresspassing",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdcb5aef383ff5": {
+			"parent": "abcd06ec4119a0fc",
+			"name": "Lower Cop Roof Rules",
+			"template": "[modules:/ztrespassingruleentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztrespassingruleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bDeepTrespassing": {
+					"type": "bool",
+					"value": false
+				},
+				"m_AllowedProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
+				},
+				"m_KeeperProfessions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
+				},
+				"m_Zones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd78f8ed1f145d"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd78f8ed1f145d": {
+			"parent": "abcdcb5aef383ff5",
+			"name": "Lower Cop Rooftop ZONE",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zdisguisezoneentity.class].entitytype,[modules:/zorderedentity.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zdisguisezoneentity.class].entitytype,[modules:/zorderedentity.class].entitytype).pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aExitPoints": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd8ceef569ba8f"]
+				},
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde6a937751125", "abcd08cefbeda0da"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd8ceef569ba8f": {
+			"parent": "abcdcb5aef383ff5",
+			"name": "Escort out point_From Cop Roof",
+			"template": "008B662A16642728",
+			"blueprint": "003621696476C9AC",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -68.6727,
+							"y": 107.491,
+							"z": 105
+						}
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "60b4243977a5dc3b",
+			"comment": "Facility Container Courtyard Rules",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_AllowedProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcddc036a2478b0", "abcd97b18facbcd7", {
+					"ref": "58d50e428bb02419",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			},
+			"m_KeeperProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd97b18facbcd7", {
+					"ref": "58d50e428bb02419",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e6a931ec8ed1de3e",
+			"comment": "Kitchen Rules",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_KeeperProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd97b18facbcd7", {
+					"ref": "58d50e428bb02419",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "1f821070b72725a5",
+			"comment": "Laundry Area Rules",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "25e292ed9325978d",
+			"comment": "Laundry Area Rules Hostile",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4359ca06001e3404",
+			"comment": "Laundry Staffroom Rules",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_KeeperProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd97b18facbcd7"]
+			},
+			"m_AllowedProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd97b18facbcd7"]
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "2f61079282152447",
+			"comment": "Apartment Roof Rules",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bDeepTrespassing": {
+				"type": "bool",
+				"value": true
+			},
+			"m_KeeperProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd97b18facbcd7"]
+			},
+			"m_AllowedProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd97b18facbcd7"]
+			},
+			"m_Zones": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "2696b616b4a735e4",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "73530082e7dbef26",
 			"comment": "Food bell",
@@ -15207,6 +15461,30 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "9eb5c96b754ca2fa",
+		"_comment": "Block - Patient Area Rules",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "969f46024ad9b658",
+		"_comment": "Facility Courtyard Rules",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "dcc0f76c16d6196f",
+		"_comment": "Facility Roof Rules",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "ec680e1280fba786",
+		"_comment": "Block F0-2 Trespassing",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "183f646348ee7f01",
+		"_comment": "Block F3 Trespassing",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "cb6fa66e6ec377d7",
+		"_comment": "Block F4 Trespassing",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "68b96116cbc5dc45",
 		"_comment": "Floating Desk Lamp - Hush VR",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
