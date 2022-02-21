@@ -14352,6 +14352,14 @@
 			"ref": "a2ffb78903c866f4",
 			"comment": "ICA Apartment Door",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "59a22e5960511de6",
+			"comment": "Arcade to Block Door",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "33afabc5845fe72",
+			"comment": "Staircase to Block Door",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"Reinforced": {
@@ -14404,6 +14412,16 @@
 		}, {
 			"ref": "cf4b7f7213002efa",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d195ab06c6bf5743",
+			"comment": "Rest_INT Ceiling Lamps",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e32c767671a60325",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8e50d8de2bbe250c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"DiffuseColor": {
@@ -14435,6 +14453,10 @@
 		}],
 		"properties": {
 			"m_bIsLocked": {
+				"type": "bool",
+				"value": true
+			},
+			"m_bValueUnlockIfOpened": {
 				"type": "bool",
 				"value": true
 			}
@@ -15108,6 +15130,10 @@
 		"entities": [{
 			"ref": "22c51624dd0b7a82",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d195ab06c6bf5743",
+			"comment": "Middle light Meeting table",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"On": {
@@ -15181,6 +15207,26 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "68b96116cbc5dc45",
+		"_comment": "Floating Desk Lamp - Hush VR",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "b4511755abb6a7d4",
+		"_comment": "Floating Desk Lamp - Hush VR",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "df3cde5d98082840",
+		"_comment": "Floating Desk Lamp - Block Corridor L3",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "4f98a6c0e11767d3",
+		"_comment": "Floating Desk Lamp - Block Corridor L3",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "b2c319da177378c4",
+		"_comment": "Floating Desk Lamp - Block Corridor L3",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "777ab738974d4ca4",
 		"_comment": "Sit down prompt",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
