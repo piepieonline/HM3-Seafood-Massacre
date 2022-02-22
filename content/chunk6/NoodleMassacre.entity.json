@@ -6997,9 +6997,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -70.18370056152344,
-							"y": 107.13600158691406,
-							"z": 97
+							"x": -112.226,
+							"y": 90.3971,
+							"z": 93
 						}
 					}
 				},
@@ -14442,7 +14442,7 @@
 		},
 		"abcd48f1c60f78cb": {
 			"parent": "abcd31bece92cbf3",
-			"name": "CHAR_SentryTest1",
+			"name": "CHAR_BlockSentry",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -14479,7 +14479,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Zhou Lun Jing"
+					"value": "He Qiwu"
 				},
 				"m_bWeaponUnholstered": {
 					"type": "bool",
@@ -14764,6 +14764,501 @@
 		},
 		"abcd4d62d5d1869b": {
 			"parent": "abcd72b3df5e8282",
+			"name": "Prof_Police",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd50486506ab27": {
+			"parent": "abcd06ec4119a0fc",
+			"name": "SentryZones_FrontEntrance",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3c71b5508e42": {
+			"parent": "abcd50486506ab27",
+			"name": "CHAR_SentryTest1",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -170.92343442329582
+						},
+						"position": {
+							"x": -81.1911,
+							"y": 92.8287,
+							"z": 97.0031
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0055"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_eRequiredVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_JOB_MUMBSECHI02"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Zhou Lun Jing"
+				},
+				"m_bWeaponUnholstered": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 2
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf33abdf9a5cd": {
+			"parent": "abcd50486506ab27",
+			"name": "CHAR_SentryTest2",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -170.92343442329582
+						},
+						"position": {
+							"x": -112.226,
+							"y": 90.3971,
+							"z": 93
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0054"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eRequiredVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_JOB_MUMBSECHI03"
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Cop 663"
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7e82415efe85": {
+			"parent": "abcd50486506ab27",
+			"name": "Entrance",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -180
+						},
+						"position": {
+							"x": -70.2157,
+							"y": 95.8208,
+							"z": 109
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 5,
+						"y": 7,
+						"z": 3.8167099952697754
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcddd140cde8eb9": {
+			"parent": "abcd50486506ab27",
+			"name": "Warning",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -70.4297,
+							"y": 93.9469,
+							"z": 109
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 3.8232200145721436,
+						"y": 6.516769886016846,
+						"z": 3.6749799251556396
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcddae63de4652f": {
+			"parent": "abcd50486506ab27",
+			"name": "Greeting",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -70.5774,
+							"y": 100.301,
+							"z": 106.303
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 3.708750009536743,
+						"y": 5,
+						"z": 3.3574399948120117
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7b308206ad4e": {
+			"parent": "abcd50486506ab27",
+			"name": "IdleGuardFrontGate",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd9316ee6bf3a"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3c71b5508e42"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"propertyAliases": [{
+				"exposeProperty": "m_aActors",
+				"onEntity": "abcd663821900570",
+				"asProperty": "m_aActors"
+			}]
+		},
+		"abcd9dee29112e9a": {
+			"parent": "abcd50486506ab27",
+			"name": "IdleGuardFrontGate01",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdf453330c7076"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf33abdf9a5cd"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"propertyAliases": [{
+				"exposeProperty": "m_aActors",
+				"onEntity": "abcd1e11521d10e0",
+				"asProperty": "m_aActors"
+			}]
+		},
+		"abcd9fc87972bbaa": {
+			"parent": "abcd50486506ab27",
+			"name": "SentryZone01",
+			"template": "[modules:/zsentryzoneentity.class].pc_entitytype",
+			"blueprint": "[modules:/zsentryzoneentity.class].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3c71b5508e42", "abcdf33abdf9a5cd"]
+				},
+				"m_aEntranceZones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7e82415efe85"]
+				},
+				"m_aReFriskZones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_aGreetingZones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcddae63de4652f"]
+				},
+				"m_aWarningZones": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcddd140cde8eb9"]
+				},
+				"m_aWaypointActs": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd37610664c053", "abcd678ef2c94440"]
+				},
+				"m_fLookAtRange": {
+					"type": "float32",
+					"value": 20
+				}
+			},
+			"postInitProperties": {
+				"m_aDisguisesFriskExempt": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb770cf32f96b"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd37610664c053": {
+			"parent": "abcd7b308206ad4e",
+			"name": "act_mr_guard_stand_armsside",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_armsside.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_armsside.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -170.92343442329582
+						},
+						"position": {
+							"x": -69.612,
+							"y": 95.3769,
+							"z": 109
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd663821900570"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd663821900570": {
+			"parent": "abcd7b308206ad4e",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3c71b5508e42"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd9316ee6bf3a": {
+			"parent": "abcd7b308206ad4e",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd663821900570"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd37610664c053"
+			}]
+		},
+		"abcd678ef2c94440": {
+			"parent": "abcd9dee29112e9a",
+			"name": "act_mr_guard_stand_idle",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -170.92343442329582
+						},
+						"position": {
+							"x": -70.9762,
+							"y": 92.8217,
+							"z": 109
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1e11521d10e0"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1e11521d10e0": {
+			"parent": "abcd9dee29112e9a",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf33abdf9a5cd"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf453330c7076": {
+			"parent": "abcd9dee29112e9a",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1e11521d10e0"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd678ef2c94440"
+			}]
+		},
+		"abcdb770cf32f96b": {
+			"parent": "abcd9fc87972bbaa",
 			"name": "Prof_Police",
 			"template": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entityblueprint",
