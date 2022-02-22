@@ -36,8 +36,8 @@
 		"d40a022a606b4f72": {
 			"parent": "abcd3216ca0eb5b1",
 			"name": "CHAR_Bartender",
-			"template": "[assembly:/templates/aspectdummy.aspect]([assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].entitytype,[modules:/zglowoverrideaspect.class].entitytype).pc_entitytype",
-			"blueprint": "[assembly:/templates/aspectdummy.aspect]([assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].entitytype,[modules:/zglowoverrideaspect.class].entitytype).pc_entityblueprint",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -12375,7 +12375,7 @@
 			"properties": {
 				"m_rActor": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd65dc06830c0a"
+					"value": "abcd3d755cd84fe8"
 				},
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
@@ -12486,7 +12486,7 @@
 				},
 				"m_rActor": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd65dc06830c0a"
+					"value": "abcd3d755cd84fe8"
 				}
 			},
 			"postInitProperties": {},
@@ -12511,7 +12511,7 @@
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00235CF5B58E832D",
+						"resource": "0082E44E3649F15F",
 						"flag": "5F"
 					}
 				}
@@ -12540,16 +12540,16 @@
 				},
 				"m_rActor": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd65dc06830c0a"
+					"value": "abcd3d755cd84fe8"
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Done",
-				"onEntity": "abcdccf057a20343"
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdb2ff242a1c1d"
 			}]
 		},
 		"abcd204192fd065a": {
@@ -12611,7 +12611,7 @@
 				},
 				"m_fTimeOffset": {
 					"type": "float32",
-					"value": 0.2
+					"value": 0.1
 				}
 			},
 			"postInitProperties": {},
@@ -14774,7 +14774,7 @@
 		},
 		"abcd50486506ab27": {
 			"parent": "abcd06ec4119a0fc",
-			"name": "SentryZones_FrontEntrance",
+			"name": "SentryZones_ApartmentTop",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -14784,7 +14784,7 @@
 		},
 		"abcd3c71b5508e42": {
 			"parent": "abcd50486506ab27",
-			"name": "CHAR_SentryTest1",
+			"name": "CHAR_StairSentry1",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -14847,7 +14847,7 @@
 		},
 		"abcdf33abdf9a5cd": {
 			"parent": "abcd50486506ab27",
-			"name": "CHAR_SentryTest2",
+			"name": "CHAR_StairSentry2",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -15266,6 +15266,33 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdb2ff242a1c1d": {
+			"parent": "abcd783bd7a466f1",
+			"name": "8_Chief FU",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00E28F6867EE50EA",
+						"flag": "5F"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda5fe376d24c1"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Done",
+				"onEntity": "abcdccf057a20343"
+			}]
 		}
 	},
 	"propertyOverrides": [{
