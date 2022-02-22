@@ -14473,14 +14473,6 @@
 			"ref": "1f821070b72725a5",
 			"comment": "Laundry Area Rules",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "25e292ed9325978d",
-			"comment": "Laundry Area Rules Hostile",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "4359ca06001e3404",
-			"comment": "Laundry Staffroom Rules",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_KeeperProfessions": {
@@ -14510,13 +14502,6 @@
 			"m_AllowedProfessions": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": ["abcd97b18facbcd7"]
-			},
-			"m_Zones": {
-				"type": "TArray<SEntityTemplateReference>",
-				"value": [{
-					"ref": "2696b616b4a735e4",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-				}]
 			}
 		}
 	}, {
