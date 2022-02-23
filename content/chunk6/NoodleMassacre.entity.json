@@ -2334,8 +2334,11 @@
 					"value": "Talk to"
 				},
 				"m_rPromptDescriptionTextResource": {
-					"type": "ZString",
-					"value": "Bartender"
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_npcs_edgy.sweetmenutext?/outfits_edgy_worker_bartender_m_name_aee94745-0130-4bc9-87a4-6057ea330735.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
 				},
 				"m_sId": {
 					"type": "ZGuid",

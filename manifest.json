@@ -21,7 +21,8 @@
 		"english": {
 			"UI_CONTRACT_NOODLE_NIGHT": "The Noodle Massacre",
             "UI_NOODLE_BRIEFING": "This is a placeholder briefing. I will try make a video briefing. I don't want the game to crash though so I've put this here.",
-			"UI_NOODLE_WITNESSES": "Witnesses Remaining"
+			"UI_NOODLE_WITNESSES": "Witnesses Remaining",
+			"locr_Amulet": "Red Dragon Amulet"
 		},
 		"french": {},
 		"italian": {},
