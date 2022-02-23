@@ -224,7 +224,7 @@
 					"type": "bool",
 					"value": false
 				},
-				"mm_bIgnoreLockdown": {
+				"m_bIgnoreLockdown": {
 					"type": "bool",
 					"value": true
 				},
@@ -13448,7 +13448,7 @@
 				},
 				"m_fSpreadTimeThreshold": {
 					"type": "float32",
-					"value": 0
+					"value": 2.5
 				},
 				"m_rPlayerSpreading": {
 					"type": "SEntityTemplateReference",
