@@ -1364,7 +1364,7 @@
 		},
 		"abcd51a8f267dfa9": {
 			"parent": "abcd692adf85a546",
-			"name": "CHAR_Cop1",
+			"name": "CHAR_Walkway",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -7046,9 +7046,9 @@
 							"z": 45.002979908338
 						},
 						"position": {
-							"x": -75.01170349121094,
-							"y": 46.51070022583008,
-							"z": 97.00969696044922
+							"x": -74.2,
+							"y": 42.14,
+							"z": 97.009
 						}
 					}
 				},
@@ -8313,7 +8313,7 @@
 		},
 		"abcde0eba4f09147": {
 			"parent": "abcd692adf85a546",
-			"name": "CHAR_TrainStart4_Inside",
+			"name": "CHAR_ChiefFollower",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
