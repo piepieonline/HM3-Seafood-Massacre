@@ -143,36 +143,32 @@
 		},
 		"84d19b6a21fda23e": {
 			"parent": "84bc2271e73a955",
-			"name": "TimerRandom",
-			"template": "[assembly:/_pro/design/logic.template?/timerrandom.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/timerrandom.entitytemplate].pc_entityblueprint",
+			"name": "TimerSimple",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 			"properties": {
-				"m_fProbability": {
-					"type": "float32",
-					"value": 0.5
-				},
-				"m_bEnabled": {
-					"type": "bool",
-					"value": false
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 500
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "TimeOut",
+				"onEvent": "Out",
 				"shouldTrigger": "Stop",
 				"onEntity": "84d19b6a21fda23e"
 			}, {
-				"onEvent": "TimeOut",
+				"onEvent": "Out",
 				"shouldTrigger": "Start",
 				"onEntity": "ed3314af10bb539d"
 			}, {
-				"onEvent": "TimeOut",
+				"onEvent": "Out",
 				"shouldTrigger": "Set",
 				"onEntity": "85f358964b9f5144"
 			}, {
-				"onEvent": "TimeOut",
+				"onEvent": "Out",
 				"shouldTrigger": "Set",
 				"onEntity": "d0ecd2d31d8c1f3b"
 			}]
@@ -270,22 +266,14 @@
 			"events": [{
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
-				"onEntity": "ed3314af10bb539d"
-			}, {
-				"onEvent": "OnStart",
-				"shouldTrigger": "Set",
-				"onEntity": "85f358964b9f5144"
-			}, {
-				"onEvent": "OnStart",
-				"shouldTrigger": "Set",
-				"onEntity": "d0ecd2d31d8c1f3b"
+				"onEntity": "35f74c6300776f2a"
 			}]
 		},
 		"35f74c6300776f2a": {
 			"parent": "84bc2271e73a955",
-			"name": "Act_MR_Guard_Stand_Call_In",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_call_in.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_call_in.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_shocked_repulsed",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_shocked_repulsed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_shocked_repulsed.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -316,8 +304,8 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnActTimeout",
-				"shouldTrigger": "Start",
+				"onEvent": "OnStart",
+				"shouldTrigger": "In",
 				"onEntity": "84d19b6a21fda23e"
 			}]
 		},
@@ -356,9 +344,9 @@
 				"asProperty": "m_EnableConditions"
 			}],
 			"exposedEntities": [{
-				"name": "Act_MR_Stand_Basic",
+				"name": "Act_MR_Guard_Stand_Call_In",
 				"isArray": false,
-				"targets": ["ed3314af10bb539d"]
+				"targets": ["35f74c6300776f2a"]
 			}]
 		}
 	},
