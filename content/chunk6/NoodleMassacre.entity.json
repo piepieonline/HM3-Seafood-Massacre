@@ -3353,6 +3353,10 @@
 				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd24ceccc3b3fe"
+			}, {
+				"onEvent": "Plate_On_Table",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcd9273d6101d74"
 			}]
 		},
 		"abcdb96c31fcc9dd": {
@@ -3408,10 +3412,6 @@
 				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "SpawnItem",
 				"onEntity": "abcd7ae3a95e98bd"
-			}, {
-				"onEvent": "Plate_On_Table",
-				"shouldTrigger": "Poll",
-				"onEntity": "abcd9273d6101d74"
 			}, {
 				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
@@ -3861,7 +3861,7 @@
 				},
 				"m_bIgnoreDeadBodies": {
 					"type": "bool",
-					"value": false
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -3893,7 +3893,7 @@
 				},
 				"m_bIgnoreDeadBodies": {
 					"type": "bool",
-					"value": false
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -3925,7 +3925,7 @@
 				},
 				"m_bIgnoreDeadBodies": {
 					"type": "bool",
-					"value": false
+					"value": true
 				}
 			},
 			"postInitProperties": {
