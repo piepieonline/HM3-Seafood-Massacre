@@ -1,0 +1,558 @@
+{
+	"tempHash": "0001BC68434C8192",
+	"tbluHash": "0040481EF19DA776",
+	"rootEntity": "8f77790ad1549891",
+	"entities": {
+		"afd03949f90581ca": {
+			"parent": "8f77790ad1549891",
+			"name": "AppartmentDoor_A",
+			"template": "00BAB8F603324FA6",
+			"blueprint": "00719189075E25ED",
+			"properties": {
+				"3745552304": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/environment/materials/levels/wet/door_double_basement_bangkok_a.mi].pc_mi",
+						"flag": "5F"
+					}
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 180.0
+						},
+						"position": {
+							"x": 0.574999988079071,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_bKinematic": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_STATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "8f77790ad1549891"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"93bce5c01b9860b": {
+			"parent": "8f77790ad1549891",
+			"name": "AppartmentDoor_A_Frame",
+			"template": "[assembly:/_pro/environment/geometry/architecture/windows/windows_wet_a.wl2?/a_int_door_2x4_frame_a.prim].pc_entitytype",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"position": {
+							"x": -1.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_STATIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "8f77790ad1549891"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"ada404dedb04846c": {
+			"parent": "8f77790ad1549891",
+			"name": "Access_Helper_SingleDoor",
+			"template": "0069F26BC7AA7E57",
+			"blueprint": "00E86B3B3D13D43C",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"position": {
+							"x": 1.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "93bce5c01b9860b"
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["afd03949f90581ca"]
+				},
+				"m_pMainEvent13": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/sound/wwise/exportedwwisedata/events/props_events/setpieces/access/turn_lock_action/play_door_key_unlock_fast.wwiseevent].pc_wwisebank",
+						"flag": "5F"
+					}
+				},
+				"CrowbarOpen": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/sound/wwise/exportedwwisedata/events/props_events/setpieces/access/door_crowbar_wood_break/play_door_crowbar_wood_open_01b.wwiseevent].pc_wwisebank",
+						"flag": "5F"
+					}
+				},
+				"m_pMainEvent54": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/sound/wwise/exportedwwisedata/events/props_events/setpieces/access/door_crowbar_wood_break/play_door_crowbar_wood_impact_01a.wwiseevent].pc_wwisebank",
+						"flag": "5F"
+					}
+				},
+				"m_pMainEvent12": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00CEABFFCDF4E325",
+						"flag": "5F"
+					}
+				},
+				"m_fOcclusionFactorClosed": {
+					"type": "float32",
+					"value": 0.949999988079071
+				},
+				"C_AudioOpenComplete": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00EA3BA1629C5C39",
+						"flag": "5F"
+					}
+				},
+				"m_fOcclusionMaxDistance": {
+					"type": "float32",
+					"value": 50
+				},
+				"NormalDoorRotationOrientation": {
+					"type": "bool",
+					"value": false
+				},
+				"m_InitialState": {
+					"type": "IHM5Door.EInitialState",
+					"value": "IS_CLOSED"
+				},
+				"m_bIsLocked": {
+					"type": "bool",
+					"value": false
+				},
+				"RequireActivation": {
+					"type": "bool",
+					"value": false
+				},
+				"Reinforced": {
+					"type": "bool",
+					"value": false
+				},
+				"m_rGateEntity": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_OpenDir": {
+					"type": "IHM5Door.EOpenDir",
+					"value": "OD_AWAY"
+				},
+				"m_fRotAngle": {
+					"type": "float32",
+					"value": 90
+				},
+				"m_bPathfindingObstacleEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bAutoClose": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bManualClose": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bValueOpenFromInside": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bValueOpenFromOutside": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bValueUnlockIfOpened": {
+					"type": "bool",
+					"value": false
+				},
+				"C_AudioCloseComplete": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00B2B68B95D44921",
+						"flag": "5F"
+					}
+				},
+				"B_AudioCloseMovement": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A25E906E185960",
+						"flag": "5F"
+					}
+				},
+				"A_AudioCloseInitial": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "006B0BA39166D69F",
+						"flag": "5F"
+					}
+				},
+				"B_AudioOpenMovement": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0045345119857946",
+						"flag": "5F"
+					}
+				},
+				"A_AudioOpenInitial": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0071BCE8A5B2FDF4",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_rDoorFrame1": {
+					"type": "SEntityTemplateReference",
+					"value": "afd03949f90581ca"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"outputCopying": [{
+				"onEvent": "DoorOpen",
+				"propagateEvent": "DoorOpen",
+				"onEntity": "8f77790ad1549891"
+			}, {
+				"onEvent": "DoorClose",
+				"propagateEvent": "DoorClose",
+				"onEntity": "8f77790ad1549891"
+			}]
+		},
+		"8f77790ad1549891": {
+			"parent": null,
+			"name": "a_ext_door_2x4_singledoor_b",
+			"template": "[modules:/zcompositeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bIsLocked": {
+					"type": "bool",
+					"value": false
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"position": {
+							"x": 4.0,
+							"y": -4.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_pMainEvent8": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A25E906E185960",
+						"flag": "5F"
+					}
+				},
+				"m_pMainEvent10": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00B2B68B95D44921",
+						"flag": "5F"
+					}
+				},
+				"m_pMainEvent6": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0045345119857946",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"propertyAliases": [{
+				"exposeProperty": "m_InitialState",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_InitialState"
+			}, {
+				"exposeProperty": "m_pTextureRID",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pTextureRID"
+			}, {
+				"exposeProperty": "m_pTextureRIDType",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pTextureRIDType"
+			}, {
+				"exposeProperty": "m_bIsLocked",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bIsLocked"
+			}, {
+				"exposeProperty": "RequireActivation",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "RequireActivation"
+			}, {
+				"exposeProperty": "Reinforced",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "Reinforced"
+			}, {
+				"exposeProperty": "SFX_OpenEvent",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "SFX_OpenEvent"
+			}, {
+				"exposeProperty": "SFX_CloseEvent",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "SFX_CloseEvent"
+			}, {
+				"exposeProperty": "m_rGateEntity",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_rGateEntity"
+			}, {
+				"exposeProperty": "m_CloseMode",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_CloseMode"
+			}, {
+				"exposeProperty": "m_OpenDir",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_OpenDir"
+			}, {
+				"exposeProperty": "m_fRotAngle",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_fRotAngle"
+			}, {
+				"exposeProperty": "m_bPathfindingObstacleEnabled",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bPathfindingObstacleEnabled"
+			}, {
+				"exposeProperty": "m_bAutoClose",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bAutoClose"
+			}, {
+				"exposeProperty": "m_bManualClose",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bManualClose"
+			}, {
+				"exposeProperty": "SOUND_Door_ChannelToken",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "SOUND_Door_ChannelToken"
+			}, {
+				"exposeProperty": "m_bValueOpenFromInside",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bValueOpenFromInside"
+			}, {
+				"exposeProperty": "m_bValueOpenFromOutside",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bValueOpenFromOutside"
+			}, {
+				"exposeProperty": "m_bValueUnlockIfOpened",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_bValueUnlockIfOpened"
+			}, {
+				"exposeProperty": "m_pMainEvent345",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent345"
+			}, {
+				"exposeProperty": "m_pMainEvent13",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent13"
+			}, {
+				"exposeProperty": "C_AudioCloseComplete",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent10"
+			}, {
+				"exposeProperty": "m_pMainEvent2",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent2"
+			}, {
+				"exposeProperty": "B_AudioCloseMovement",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent8"
+			}, {
+				"exposeProperty": "m_pMainEvent4",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent4"
+			}, {
+				"exposeProperty": "A_AudioCloseInitial",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent3"
+			}, {
+				"exposeProperty": "m_pMainEvent7",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent7"
+			}, {
+				"exposeProperty": "B_AudioOpenMovement",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent6"
+			}, {
+				"exposeProperty": "m_pMainEvent9",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent9"
+			}, {
+				"exposeProperty": "A_AudioOpenInitial",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent1"
+			}, {
+				"exposeProperty": "m_pMainEvent11",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent11"
+			}, {
+				"exposeProperty": "CrowbarOpen",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "CrowbarOpen"
+			}, {
+				"exposeProperty": "m_pMainEvent54",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent54"
+			}, {
+				"exposeProperty": "m_pMainEvent12",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_pMainEvent12"
+			}, {
+				"exposeProperty": "m_eRoomBehaviour",
+				"onEntity": "93bce5c01b9860b",
+				"asProperty": "m_eRoomBehaviourFrame"
+			}, {
+				"exposeProperty": "C_AudioOpenComplete",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "C_AudioOpenComplete"
+			}, {
+				"exposeProperty": "m_fOcclusionFactorClosed",
+				"onEntity": "ada404dedb04846c",
+				"asProperty": "m_fOcclusionFactorClosed"
+			}],
+			"exposedEntities": [{
+				"name": "KeyWord_Key",
+				"isArray": false,
+				"targets": [{
+					"ref": "ada404dedb04846c",
+					"externalScene": null,
+					"exposedEntity": "RequiredKey"
+				}]
+			}, {
+				"name": "ValueBool_Simple_BrokenUp",
+				"isArray": false,
+				"targets": [{
+					"ref": "ada404dedb04846c",
+					"externalScene": null,
+					"exposedEntity": "ValueBool_Simple_BrokenUp"
+				}]
+			}, {
+				"name": "IsDoorLocked",
+				"isArray": false,
+				"targets": [{
+					"ref": "ada404dedb04846c",
+					"externalScene": null,
+					"exposedEntity": "IsDoorLocked"
+				}]
+			}, {
+				"name": "IsOpen",
+				"isArray": false,
+				"targets": [{
+					"ref": "ada404dedb04846c",
+					"externalScene": null,
+					"exposedEntity": "IsOpen"
+				}]
+			}],
+			"exposedInterfaces": [
+				["IHM5Door", "ada404dedb04846c"],
+				["ISoundGateController", "ada404dedb04846c"]
+			],
+			"entitySubsets": [
+				["AudioEmitters", {
+					"entities": ["ada404dedb04846c"]
+				}]
+			],
+			"inputCopying": [{
+				"whenTriggered": "UnlockDoor",
+				"alsoTrigger": "UnlockDoor",
+				"onEntity": "ada404dedb04846c"
+			}]
+		},
+		"6427c8a48e29b3a7": {
+			"parent": "8f77790ad1549891",
+			"name": "Doorhandle_AppartmentFront_Italy_A",
+			"template": "[assembly:/_pro/environment/templates/architecture/doors/doors_italy_a.template?/doorhandle_appartmentfront_italy_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/architecture/doors/doors_italy_a.template?/doorhandle_appartmentfront_italy_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": -180.0
+						},
+						"position": {
+							"x": 1.0750000476837159,
+							"y": -0.004997999873012304,
+							"z": 0.0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "afd03949f90581ca"
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_STATIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		}
+	},
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"propertyOverrides": [],
+	"externalScenes": [],
+	"subType": 0,
+	"quickEntityVersion": 2.1
+}
