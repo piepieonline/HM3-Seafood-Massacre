@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
+					"entities": ["abcd252bc988cbbe", "abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -17143,6 +17143,18 @@
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "36217f0765974508",
+			"comment": "Room_320_Inside_Toilet",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_Clients": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd252bc988cbbe"]
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "60b4243977a5dc3b",
 			"comment": "Facility Container Courtyard Rules",
