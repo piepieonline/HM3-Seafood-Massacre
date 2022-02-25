@@ -1837,7 +1837,7 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd81c826dc03f3"
 			}, {
-				"onEvent": "OnReached",
+				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdf18da00863f2"
 			}]
@@ -15501,7 +15501,7 @@
 		},
 		"abcdb359c4fea425": {
 			"parent": "abcd3d755cd84fe8",
-			"name": "FriskRealLawyer",
+			"name": "FriskBL",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -15516,10 +15516,6 @@
 				"m_eReentryBehavior": {
 					"type": "ZDramaSituationEntity.EReentryBehavior",
 					"value": "RB_RECASTANDRESTART"
-				},
-				"m_EnableConditions": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
 				},
 				"m_bTerminateOnDone": {
 					"type": "bool",
@@ -15684,6 +15680,18 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd9aa838426706"
+			}, {
+				"onEvent": "OnDone",
+				"shouldTrigger": "Done",
+				"onEntity": "abcdb359c4fea425"
+			}, {
+				"onEvent": "OnDone",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd81c826dc03f3"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd8e23765e2b44"
 			}]
 		},
 		"abcdf8f5aacfbc8d": {
@@ -15835,7 +15843,7 @@
 				},
 				"m_EnableConditions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["abcd4d3dc56f4634"]
 				}
 			},
 			"editorOnly": false,
@@ -15866,6 +15874,11 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd04c29216abc0"
+			}],
 			"platformSpecificPropertyValues": []
 		},
 		"abcdd0ad95d72f3a": {
@@ -15949,9 +15962,9 @@
 				"shouldTrigger": "Done",
 				"onEntity": "abcd7a2fd2334a56"
 			}, {
-				"onEvent": "OnStart",
-				"shouldTrigger": "Start",
-				"onEntity": "abcd8e23765e2b44"
+				"onEvent": "DoneFrisking",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd04c29216abc0"
 			}],
 			"outputCopying": [{
 				"onEvent": "DoneFrisking",
@@ -16016,7 +16029,7 @@
 		},
 		"abcd66b6fa6a1750": {
 			"parent": "abcdcec4ebc650b6",
-			"name": "Lawyer",
+			"name": "BL Role during Frisk",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
 			"properties": {},
@@ -16322,7 +16335,7 @@
 		},
 		"abcdedf0bfe049cf": {
 			"parent": "abcdd0110d31999a",
-			"name": "FriskRealLawyer",
+			"name": "FriskRD",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -16337,10 +16350,6 @@
 				"m_eReentryBehavior": {
 					"type": "ZDramaSituationEntity.EReentryBehavior",
 					"value": "RB_RECASTANDRESTART"
-				},
-				"m_EnableConditions": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
 				},
 				"m_bTerminateOnDone": {
 					"type": "bool",
@@ -16656,7 +16665,7 @@
 				},
 				"m_EnableConditions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["abcd5a0c1315903b"]
 				}
 			},
 			"editorOnly": false,
@@ -16687,6 +16696,11 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd3ae80beed007"
+			}],
 			"platformSpecificPropertyValues": []
 		},
 		"abcdf626f25db2f0": {
@@ -16773,6 +16787,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcda301e1343c3b"
+			}, {
+				"onEvent": "DoneFrisking",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd3ae80beed007"
 			}],
 			"outputCopying": [{
 				"onEvent": "DoneFrisking",
@@ -17135,6 +17153,66 @@
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd42f2ee53c456", "abcde737d0e82aa8"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd04c29216abc0": {
+			"parent": "abcdb359c4fea425",
+			"name": "VBB_Has Been Frisked",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4d3dc56f4634": {
+			"parent": "abcd04c29216abc0",
+			"name": "InvertedCondition Has not been frisked",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd04c29216abc0"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3ae80beed007": {
+			"parent": "abcdedf0bfe049cf",
+			"name": "VBB_Has Been Frisked",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5a0c1315903b": {
+			"parent": "abcd3ae80beed007",
+			"name": "InvertedCondition Has not been frisked",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3ae80beed007"
 				}
 			},
 			"postInitProperties": {},
