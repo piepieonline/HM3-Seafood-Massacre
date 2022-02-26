@@ -266,7 +266,7 @@
 				},
 				"m_eOutfitAICategory": {
 					"type": "EOutfitAICategory",
-					"value": "OAC_Fallback"
+					"value": "OAC_47STARTCLASSY"
 				},
 				"m_bWeaponsAllowed": {
 					"type": "bool",
@@ -378,7 +378,7 @@
 				},
 				"m_eOutfitAICategory": {
 					"type": "EOutfitAICategory",
-					"value": "OAC_Cop"
+					"value": "OAC_Bodyguard"
 				},
 				"m_rNameTextResource": {
 					"type": "ZRuntimeResourceID",
@@ -408,7 +408,7 @@
 				},
 				"m_AvailableWeaponKeys": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd49136ba895b5", "abcd90d31aab61ef", "abcd05632da10307"]
+					"value": ["abcd49136ba895b5", "abcd90d31aab61ef", "abcd05632da10307", "abcd328366bc2f55"]
 				}
 			},
 			"editorOnly": false,
@@ -798,7 +798,7 @@
 				},
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
-					"value": ["eAVV_HUSH", "eAVV_CIVMALECH01", "eAVV_CIVMALECH02", "eAVV_KONG"]
+					"value": ["eAVV_HUSH"]
 				}
 			},
 			"postInitProperties": {
@@ -920,6 +920,21 @@
 			"template": "004C2C99C75ED8AF",
 			"blueprint": "00F94E9C9C06EB4D",
 			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd328366bc2f55": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "ItemKey__ShashkaBlack",
+			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+			"properties": {
+				"m_RepositoryId": {
+					"type": "ZGuid",
+					"value": "09efc132-d35a-4e4e-b58e-ba802cc91dce"
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
