@@ -121,21 +121,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"ed413ed72a468951": {
-			"parent": "28f2abc8f9824aec",
-			"name": "Keyword_Prof_Class_Default",
-			"template": "007A51A2AFEC0D1A",
-			"blueprint": "00B0282A41C1CF2E",
-			"properties": {},
-			"postInitProperties": {
-				"m_aHolders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["28f2abc8f9824aec"]
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"61d2f820f6c8dcd6": {
 			"parent": "28f2abc8f9824aec",
 			"name": "Foley_Civilian",
@@ -291,21 +276,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdcca77f734be0": {
-			"parent": "abcd75486f003950",
-			"name": "Foley_Worker",
-			"template": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_worker.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_worker.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rHolder": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd75486f003950"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd8d0d6a95d880": {
 			"parent": "abcd75486f003950",
 			"name": "Keyword_Prof_Class_Worker_Service",
@@ -424,25 +394,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdefb7582e704a": {
-			"parent": "abcd1098e6fa90a2",
-			"name": "HAWK_BODYGUARD",
-			"template": "[modules:/zkeywordentity.class].pc_entitytype",
-			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
-			"properties": {
-				"m_sKeyword": {
-					"type": "ZString",
-					"value": "POLICEMAN"
-				},
-				"m_aHolders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd1098e6fa90a2"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd05632da10307": {
 			"parent": "abcd1098e6fa90a2",
 			"name": "ItemKey__SiegerAR552Tactical",
@@ -482,36 +433,6 @@
 				"m_RepositoryId": {
 					"type": "ZGuid",
 					"value": "901a3b51-51a0-4236-bdf2-23d20696b358"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd5c14c4fe3007": {
-			"parent": "abcd1098e6fa90a2",
-			"name": "Keyword_ActorIdentifier_Guard",
-			"template": "[assembly:/_pro/design/actor/actoridentifierkeywords.template?/keyword_actoridentifier_guard.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/actoridentifierkeywords.template?/keyword_actoridentifier_guard.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_aHolders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd1098e6fa90a2"]
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd6bbbc1b7284e": {
-			"parent": "abcd1098e6fa90a2",
-			"name": "Keyword_MUSIC_OUTFIT_REWARD",
-			"template": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keyword_music_outfit_reward.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keyword_music_outfit_reward.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rHolder": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd1098e6fa90a2"
 				}
 			},
 			"postInitProperties": {},
@@ -656,10 +577,6 @@
 				"m_eOutfitAICategory": {
 					"type": "EOutfitAICategory",
 					"value": "OAC_Fallback"
-				},
-				"m_aAnimationSets": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd30787e9229da"]
 				}
 			},
 			"postInitProperties": {},
@@ -889,16 +806,6 @@
 			"name": "AnimSet_BodyGuard_DragBody",
 			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_bodyguard_dragbody.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_bodyguard_dragbody.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd30787e9229da": {
-			"parent": "abcde7ae0a3c1944",
-			"name": "animset_civ_dictator",
-			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
