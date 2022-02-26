@@ -1405,7 +1405,7 @@
 				},
 				"m_nWeaponIndex": {
 					"type": "int32",
-					"value": 2
+					"value": 3
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
@@ -6000,7 +6000,7 @@
 				},
 				"m_nWeaponIndex": {
 					"type": "int32",
-					"value": 2
+					"value": 3
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
@@ -6607,7 +6607,7 @@
 				},
 				"m_nWeaponIndex": {
 					"type": "int32",
-					"value": 2
+					"value": 3
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
@@ -6981,7 +6981,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 2
+					"value": 3
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
@@ -14650,9 +14650,9 @@
 		},
 		"abcd17b54f244111": {
 			"parent": "abcdccb38faa4c2a",
-			"name": "act_mr_guard_stand_armsside",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_armsside.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_armsside.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_basic_umbrella",
+			"template": "00D247A995ED71E2",
+			"blueprint": "00C0BA6777010D60",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -14844,7 +14844,7 @@
 				},
 				"m_nWeaponIndex": {
 					"type": "int32",
-					"value": 1
+					"value": 3
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
@@ -15145,9 +15145,9 @@
 		},
 		"abcd678ef2c94440": {
 			"parent": "abcd9dee29112e9a",
-			"name": "act_mr_guard_stand_idle",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_sloppy_rifle_1hand_var2",
+			"template": "007BDF20923C54B5",
+			"blueprint": "0074199DDA534DBC",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
