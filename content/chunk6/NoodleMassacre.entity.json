@@ -1385,7 +1385,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0056"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -1397,7 +1397,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Bing Bong"
+					"value": "Pung Bob"
 				},
 				"m_bWeaponUnholstered": {
 					"type": "bool",
@@ -1409,7 +1409,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 2
+					"value": 8
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
@@ -2167,7 +2167,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0050"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -5980,7 +5980,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0059"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -6185,7 +6185,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0058"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -6197,7 +6197,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Ding Dong"
+					"value": "Bu Rick"
 				},
 				"m_nWeaponIndex": {
 					"type": "int32",
@@ -6205,7 +6205,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 2
+					"value": 9
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
@@ -6386,7 +6386,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0057"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -6587,7 +6587,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0060"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -6760,7 +6760,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0062"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -6961,7 +6961,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0061"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -7618,7 +7618,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0052"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -8071,7 +8071,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0051"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -8334,7 +8334,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0065"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0063"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -14447,7 +14447,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 0
+					"value": 7
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
@@ -14777,7 +14777,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Zhou Lun Jing"
+					"value": "Ding Dong"
 				},
 				"m_bWeaponUnholstered": {
 					"type": "bool",
