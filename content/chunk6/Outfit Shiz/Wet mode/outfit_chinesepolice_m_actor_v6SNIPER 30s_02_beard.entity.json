@@ -4,7 +4,7 @@
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "Norml",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -56,36 +56,58 @@
 		},
 		"57b76c52d9fbcdcd": {
 			"parent": "44b989ff347d77c8",
-			"name": "hat_cap_service",
-			"template": "008D38AF1EEFB1EA",
-			"blueprint": "00D943A776A418B5",
+			"name": "hat_beret_military",
+			"template": "006690544B26EAF8",
+			"blueprint": "00F37BA82AB9E50E",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
 						"rotation": {
-							"x": 90.04334489885709,
-							"y": 85.22274784141042,
-							"z": 93.31874698336325
+							"x": 173.86111738490638,
+							"y": 75.23224298627267,
+							"z": 5.208246417671153
 						},
 						"position": {
-							"x": 0.0776280015707016,
-							"y": 0.019523000344634056,
-							"z": 9.000000318337698e-06
+							"x": 0.08207699656486511,
+							"y": 0.022884000092744827,
+							"z": 0.0012939999578520656
 						}
 					}
 				},
 				"m_PrimitiveScale": {
 					"type": "SVector3",
 					"value": {
-						"x": 1,
-						"y": 1,
+						"x": 1.0623500347137451,
+						"y": 0.9600229859352112,
 						"z": 1
 					}
 				},
 				"Diffuse_Color_01_Value": {
 					"type": "SColorRGB",
-					"value": "#344a2e"
+					"value": "#baa8a8"
+				},
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/assets/guards/hokkaido/resort_security/textures/male_reg_resort_security_beret.texture?/diffuse_a.tex](ascolormap).pc_tex",
+						"flag": "5F"
+					}
+				},
+				"Texture2DNormal_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00720C039668B8B3",
+						"flag": "5F"
+					}
+				},
+				"ConstantVector1D_01_Value": {
+					"type": "float32",
+					"value": 0.93999999761581421
+				},
+				"Diffuse_Saturation_01_Value": {
+					"type": "float32",
+					"value": 0
 				}
 			},
 			"postInitProperties": {
@@ -180,7 +202,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"28611685cafcab61": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "Albedo",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -208,7 +230,7 @@
 			}]
 		},
 		"72e994b2d2a4c8d4": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "roough",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -261,7 +283,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"e21635841cff5910": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "Albedo 2",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -290,7 +312,7 @@
 		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "outfit_chinesepolice_wet_m_actor_vSNIPER",
+			"name": "outfit_chinesepolice_wet_m_actor_v6SNIPER",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -455,7 +477,7 @@
 			"inputCopying": []
 		},
 		"ac7e637bea4ad85f": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "baseRough",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
