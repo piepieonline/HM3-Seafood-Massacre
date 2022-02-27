@@ -17389,6 +17389,10 @@
 				"VideoRenderDestination": {
 					"type": "SEntityTemplateReference",
 					"value": "abcde44086d099d7"
+				},
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd533040763e1c"]
 				}
 			},
 			"editorOnly": false,
@@ -18498,9 +18502,564 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd6e1453f2c143": {
+			"parent": "abcd9f9f375b47cc",
+			"name": "Hobo Area",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd55aa7ea22f2f": {
+			"parent": "abcd6e1453f2c143",
+			"name": "NPCs",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd26955efd3efc": {
+			"parent": "abcd6e1453f2c143",
+			"name": "Props",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd6828b91e6c36": {
+			"parent": "abcd55aa7ea22f2f",
+			"name": "CHAR_Wet_CIV_Homeless_M_",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 124.94954468717928
+						},
+						"position": {
+							"x": -12.6408,
+							"y": 125.726,
+							"z": 101.012
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "5d40b48f-25f3-430b-bb07-31514345c627"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "ba4e595e-da3b-4902-8622-40889fc088db"
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Guoliang Ding"
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_eRequiredVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_CIVMALECH01"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd94a2f8112526": {
+			"parent": "abcd55aa7ea22f2f",
+			"name": "CHAR_Wet_CIV_Homeless_M__01",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -56.61232196682616
+						},
+						"position": {
+							"x": -19.6887,
+							"y": 98.1145,
+							"z": 113.207
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "a7e1866f-90da-44a8-99bb-7357686cdbcf"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "ba4e595e-da3b-4902-8622-40889fc088db"
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 3
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Tingfeng Gu"
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd331e9ab5986f": {
+			"parent": "abcd55aa7ea22f2f",
+			"name": "CHAR_Wet_Civilian_Streets_F__02",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -178.75715740288962
+						},
+						"position": {
+							"x": -42.8635,
+							"y": 91.7818,
+							"z": 109
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "6d36a787-2d37-4657-ad3f-6e76b2ed5389"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "2b1c9d64-f02e-4bdf-9111-18c2024f6483"
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Xingjuan Yuan"
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 1
+				},
+				"m_eRequiredVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_CIVFEMCH01"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd25aa28a09b5c": {
+			"parent": "abcd6828b91e6c36",
+			"name": "Warming Hands 1",
+			"template": "005B2A6454B76874",
+			"blueprint": "00BD25C96EAAC850",
+			"properties": {
+				"m_nBasePriority": {
+					"type": "int32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {
+				"m_aRoles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd5f4f9080bee1"]
+				},
+				"m_aHigherPriority": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1dd7ec6b7422": {
+			"parent": "abcd25aa28a09b5c",
+			"name": "DramaSituation2Proxy",
+			"template": "000C288A323918F9",
+			"blueprint": "00900EB78F2E0F5E",
+			"properties": {
+				"m_rOriginalDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd25aa28a09b5c"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd912de7176376"
+			}]
+		},
+		"abcd912de7176376": {
+			"parent": "abcd25aa28a09b5c",
+			"name": "Act_MR_Stand_Fire_Warm_Hands",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_fire_warm_hands.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_fire_warm_hands.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 13.441945365549966
+						},
+						"position": {
+							"x": -27.5118,
+							"y": 101.874,
+							"z": 109
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd5f4f9080bee1"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd1dd7ec6b7422"
+			}]
+		},
+		"abcd5f4f9080bee1": {
+			"parent": "abcd25aa28a09b5c",
+			"name": "Test",
+			"template": "00808A03B82188F7",
+			"blueprint": "0064725514B34594",
+			"properties": {
+				"m_rActorProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd6828b91e6c36"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb353247f746c": {
+			"parent": "abcd94a2f8112526",
+			"name": "Homeless loop",
+			"template": "005B2A6454B76874",
+			"blueprint": "00BD25C96EAAC850",
+			"properties": {
+				"m_nBasePriority": {
+					"type": "int32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {
+				"m_aRoles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd79f0fe90279d"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5351506b823d": {
+			"parent": "abcdb353247f746c",
+			"name": "DramaSituation2Proxy",
+			"template": "000C288A323918F9",
+			"blueprint": "00900EB78F2E0F5E",
+			"properties": {},
+			"postInitProperties": {
+				"m_rOriginalDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdb353247f746c"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdc6118e6424be"
+			}]
+		},
+		"abcd79f0fe90279d": {
+			"parent": "abcdb353247f746c",
+			"name": "Test",
+			"template": "00808A03B82188F7",
+			"blueprint": "0064725514B34594",
+			"properties": {
+				"m_rActorProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd94a2f8112526"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc6118e6424be": {
+			"parent": "abcdb353247f746c",
+			"name": "Act_MR_Stand_Fire_Warm_Hands",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_fire_warm_hands.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_fire_warm_hands.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -163.98219765972595
+						},
+						"position": {
+							"x": -27.2177,
+							"y": 99.7296,
+							"z": 109
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 25
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd79f0fe90279d"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd537126344383": {
+			"parent": "abcd331e9ab5986f",
+			"name": "Warming Hands",
+			"template": "005B2A6454B76874",
+			"blueprint": "00BD25C96EAAC850",
+			"properties": {
+				"m_aRoles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1dd976612e6d"]
+				},
+				"m_nBasePriority": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_aHigherPriority": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1dd976612e6d": {
+			"parent": "abcd537126344383",
+			"name": "Test",
+			"template": "00808A03B82188F7",
+			"blueprint": "0064725514B34594",
+			"properties": {},
+			"postInitProperties": {
+				"m_rActorProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd331e9ab5986f"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd9a0609a32c9d": {
+			"parent": "abcd537126344383",
+			"name": "DramaSituation2Proxy",
+			"template": "000C288A323918F9",
+			"blueprint": "00900EB78F2E0F5E",
+			"properties": {},
+			"postInitProperties": {
+				"m_rOriginalDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd537126344383"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd62676076c166"
+			}]
+		},
+		"abcd62676076c166": {
+			"parent": "abcd537126344383",
+			"name": "Act_FR_Stand_Smoke",
+			"template": "00F9C0A27EBA9CE8",
+			"blueprint": "003C0627512C23F2",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 173.19307282492392
+						},
+						"position": {
+							"x": -28.7143,
+							"y": 99.4159,
+							"z": 109
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd1dd976612e6d"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd9a0609a32c9d"
+			}]
+		},
+		"abcdb300120a3a7d": {
+			"parent": "abcd26955efd3efc",
+			"name": "fire_barrel_a",
+			"template": "[assembly:/_pro/environment/templates/props/lamps/lamps_indoor_colorado_a.template?/fire_barrel_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/lamps/lamps_indoor_colorado_a.template?/fire_barrel_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -27.3912,
+							"y": 100.923,
+							"z": 109
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"AddFireEmissiveIntensity": {
+					"type": "float32",
+					"value": 100000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "7dd1b3930e12b3ab",
+			"comment": "BlockBathroom Door",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bManualClose": {
+				"type": "bool",
+				"value": true
+			},
+			"m_InitialState": {
+				"type": "IHM5Door.EInitialState",
+				"value": "IS_CLOSED"
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "dc879bffb3d0f921",
+			"comment": "BlockApartment Door",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bIsLocked": {
+				"type": "bool",
+				"value": true
+			},
+			"m_bManualClose": {
+				"type": "bool",
+				"value": true
+			},
+			"m_InitialState": {
+				"type": "IHM5Door.EInitialState",
+				"value": "IS_CLOSED"
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "8a5ce1cbc84fd8e7",
 			"comment": "LightCSM",
@@ -19936,6 +20495,18 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "cddc1d62d7e237a0",
+		"_comment": "Homeless Deletions",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e2cc7fd92a289887",
+		"_comment": "Homeless Deletions",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "41b0396d08c9a4bd",
+		"_comment": "Homeless Deletions",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "51da1b7462a6b2c5",
 		"_comment": "Bathroom Door",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"

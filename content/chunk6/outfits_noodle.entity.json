@@ -441,13 +441,13 @@
 		},
 		"abcd9893bb1d2887": {
 			"parent": "abcd75486f003950",
-			"name": "ItemKey__SawnOffShotgun",
+			"name": "ItemKey__DAKX2",
 			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
 			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
 			"properties": {
 				"m_RepositoryId": {
 					"type": "ZGuid",
-					"value": "b58f4e9f-60b1-4bcb-bd87-b11dbcb8e6b2"
+					"value": "d75bef38-8a65-45f6-9cd1-ca5e23e2f79a"
 				}
 			},
 			"postInitProperties": {},
@@ -833,13 +833,13 @@
 		},
 		"abcd328366bc2f55": {
 			"parent": "abcd1098e6fa90a2",
-			"name": "ItemKey__ShashkaBlack",
+			"name": "ItemKey__ShashkaU33",
 			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
 			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
 			"properties": {
 				"m_RepositoryId": {
 					"type": "ZGuid",
-					"value": "09efc132-d35a-4e4e-b58e-ba802cc91dce"
+					"value": "e3b943d9-9f2c-4d45-a29e-e0dbf31a82bc"
 				}
 			},
 			"postInitProperties": {},
