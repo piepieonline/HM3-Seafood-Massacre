@@ -10393,7 +10393,7 @@
 						"flag": "5F"
 					}
 				},
-				"m_rCharacter": {
+				"m_rActor": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd0fbe390edab7"
 				}
@@ -19755,11 +19755,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "Completed",
-				"shouldTrigger": "Done",
-				"onEntity": "abcdbd7274585a9b"
-			}]
+			"events": []
 		},
 		"abcd8ed62d349c9c": {
 			"parent": "abcde5ea78ec55dd",
@@ -19791,7 +19787,7 @@
 		},
 		"abcd16bd7e74e4d1": {
 			"parent": "abcdc4c23fd8e8e4",
-			"name": "3_Chief complete",
+			"name": "3 complete",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -19930,6 +19926,172 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd821d3790b714": {
+			"parent": "abcd8f8bd6c55537",
+			"name": "9_C Making History",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0052EF15E7F3CF07",
+						"flag": "5F"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd85dfad673892"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd0d79800f776a"
+			}]
+		},
+		"abcd94a3a78d604c": {
+			"parent": "abcd441608df72b0",
+			"name": "Line complete",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd441608df72b0"
+				},
+				"m_eState": {
+					"type": "ZCharacterSpeakCondition.EState",
+					"value": "Completed"
+				},
+				"m_fTimeOffset": {
+					"type": "float32",
+					"value": 1.5
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd821d3790b714"
+			}]
+		},
+		"abcd0d79800f776a": {
+			"parent": "abcd8f8bd6c55537",
+			"name": "10_BL I'm glad",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0022B6A7DE3C2B71",
+						"flag": "5F"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3d755cd84fe8"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Done",
+				"onEntity": "abcdbd7274585a9b"
+			}]
+		},
+		"abcdeaf7f85c1db0": {
+			"parent": "abcdda8c7c5b2a4a",
+			"name": "Chief Yum",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "005DE1A991DDB1CC",
+						"flag": "5F"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd70501cb75193"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Completed",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdf1ac73f711a0"
+			}]
+		},
+		"abcdf1ac73f711a0": {
+			"parent": "abcd2d00fce5938a",
+			"name": "RD Food comment",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0096D10757BB377F",
+						"flag": "5F"
+					}
+				},
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdad317c818a0c"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcdfb4548cefb01": {
+			"parent": "abcdda8c7c5b2a4a",
+			"name": "Eating TimerConditional",
+			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pCondition": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcdda8c7c5b2a4a",
+						"externalScene": null,
+						"exposedEntity": "Is_Eating"
+					}
+				},
+				"m_nInterval": {
+					"type": "int32",
+					"value": 30000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "TimeOut",
+				"shouldTrigger": "Stop_Eating",
+				"onEntity": "abcdda8c7c5b2a4a"
+			}, {
+				"onEvent": "TimeOut",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdeaf7f85c1db0"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
