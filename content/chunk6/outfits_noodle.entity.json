@@ -85,6 +85,10 @@
 				"m_aAnimationSets": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd006f60c954ec"]
+				},
+				"m_eOutfitType": {
+					"type": "EOutfitType",
+					"value": "eOT_Waiter"
 				}
 			},
 			"postInitProperties": {
@@ -259,7 +263,7 @@
 				},
 				"m_aAnimationSets": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0867e18f1d14"]
+					"value": ["abcdc22f32d3e127"]
 				}
 			},
 			"postInitProperties": {},
@@ -369,6 +373,10 @@
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
 					"value": ["eAVV_HUSH", "eAVV_CIVMALECH01", "eAVV_CIVMALECH02", "eAVV_KONG"]
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2443e97dbb10"]
 				}
 			},
 			"postInitProperties": {
@@ -577,6 +585,10 @@
 				"m_eOutfitAICategory": {
 					"type": "EOutfitAICategory",
 					"value": "OAC_Fallback"
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd093425a76e1a"]
 				}
 			},
 			"postInitProperties": {},
@@ -716,6 +728,10 @@
 				"m_rDefaultVoiceVariations": {
 					"type": "TArray<EActorVoiceVariation>",
 					"value": ["eAVV_HUSH"]
+				},
+				"m_aAnimationSets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0867e18f1d14"]
 				}
 			},
 			"postInitProperties": {
@@ -812,10 +828,10 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd0867e18f1d14": {
-			"parent": "28f2abc8f9824aec",
-			"name": "animset_s03_l01_civ_male_carlingram",
-			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_carlingram.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_carlingram.entitytemplate].pc_entityblueprint",
+			"parent": "abcd9f4b2ba77522",
+			"name": "AnimSet_S03_L01_Civ_Male_Staff_Stressed",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_staff_stressed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_staff_stressed.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
@@ -842,6 +858,36 @@
 					"value": "e3b943d9-9f2c-4d45-a29e-e0dbf31a82bc"
 				}
 			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd093425a76e1a": {
+			"parent": "abcde7ae0a3c1944",
+			"name": "AnimSet_Civ_Dictator",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_dictator.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2443e97dbb10": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "VRI_Bodyguard_AssaultRifle_Evacuate_VIP",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_bodyguard_assaultrifle_evacuate_vip.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_bodyguard_assaultrifle_evacuate_vip.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc22f32d3e127": {
+			"parent": "28f2abc8f9824aec",
+			"name": "animset_civ_novikov",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_novikov.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_novikov.entitytemplate].pc_entityblueprint",
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []

@@ -1236,7 +1236,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd0c62c4000a7b"
+					"value": "abcdec5c2f4fbef8"
 				}
 			},
 			"editorOnly": false,
@@ -2107,7 +2107,7 @@
 			"events": [{
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd0c62c4000a7b"
+				"onEntity": "abcd2d00fce5938a"
 			}]
 		},
 		"abcd96b8b43349bd": {
@@ -10213,7 +10213,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdf187db81da97", "abcd65d767673500", "abcdba53a6f8f3e2", "abcd4a799aaa1701"]
+					"value": ["abcdf187db81da97", "abcd65d767673500", "abcd1af88a31d7b9", "abcd4a799aaa1701"]
 				}
 			},
 			"editorOnly": false,
@@ -10525,6 +10525,10 @@
 					}
 				},
 				"m_bUseConversationHelper": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bFastTransition": {
 					"type": "bool",
 					"value": true
 				}
@@ -10987,7 +10991,7 @@
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}
 				},
-				"m_bAlignPosition": {
+				"m_bFastTransition": {
 					"type": "bool",
 					"value": true
 				},
@@ -11771,13 +11775,13 @@
 		},
 		"abcdd1fd32626f4e": {
 			"parent": "abcdc8b8b283aa21",
-			"name": "Chief has seen 47 in past 10 secs",
+			"name": "Chief has seen 47 in past 7 secs",
 			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"Delay time (ms)": {
 					"type": "int32",
-					"value": 10000
+					"value": 7000
 				}
 			},
 			"postInitProperties": {},
@@ -11808,7 +11812,7 @@
 				"shouldTrigger": "In",
 				"onEntity": "abcdd1fd32626f4e"
 			}, {
-				"onEvent": "OnTrue",
+				"onEvent": "OnValue",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd1af88a31d7b9"
 			}]
@@ -13199,11 +13203,7 @@
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd358aa920d41b"
 			}],
-			"inputCopying": [{
-				"whenTriggered": "In",
-				"alsoTrigger": "ShowIcon",
-				"onEntity": "abcd4fc3e0ebc216"
-			}],
+			"inputCopying": [],
 			"outputCopying": []
 		},
 		"abcdcb8501e99cff": {
@@ -13314,7 +13314,11 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "ShowIcon",
+				"onEntity": "abcd4fc3e0ebc216"
+			}],
 			"inputCopying": [],
 			"outputCopying": []
 		},
@@ -13327,7 +13331,11 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "ShowIcon",
+				"onEntity": "abcd4fc3e0ebc216"
+			}],
 			"inputCopying": [],
 			"outputCopying": []
 		},
@@ -19428,6 +19436,18 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "223c0654d13c5c0b",
+			"comment": "Chill In Apartment Drama",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_aEnableConditions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": []
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "7dd1b3930e12b3ab",
 			"comment": "BlockBathroom Door",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -20922,6 +20942,14 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "e760e7825e41460",
+		"_comment": "Noodle Guy",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "87ecd2bd33ee57b3",
+		"_comment": "Annoying Bich",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "e703c9d5f0a1be16",
 		"_comment": "Towel Deletions",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
