@@ -214,13 +214,21 @@
 					"type": "bool",
 					"value": true
 				},
+				"m_bAuthorityFigure": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bPreferredAccidentInvestigator": {
+					"type": "bool",
+					"value": false
+				},
 				"m_aCharSets": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["ddb033fe58cab5af"]
 				},
 				"m_eSoundFootwearType": {
 					"type": "EHM5SoundFootwearType",
-					"value": "EFWT_LEATHER"
+					"value": "EFWT_SANDALS"
 				},
 				"m_sId": {
 					"type": "ZGuid",
@@ -329,7 +337,7 @@
 				},
 				"m_eSoundFootwearType": {
 					"type": "EHM5SoundFootwearType",
-					"value": "EFWT_LEATHER"
+					"value": "EFWT_BOOTS"
 				},
 				"m_sId": {
 					"type": "ZGuid",
@@ -543,6 +551,14 @@
 					"type": "bool",
 					"value": false
 				},
+				"m_bAuthorityFigure": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bPreferredAccidentInvestigator": {
+					"type": "bool",
+					"value": false
+				},
 				"m_aCharSets": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcdf03ffd22a418"]
@@ -682,6 +698,26 @@
 					"type": "bool",
 					"value": true
 				},
+				"m_bAuthorityFigure": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bPreferredAccidentInvestigator": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bAllowRadioAct": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bAccidentShy": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eActorCCClass": {
+					"type": "EActorCCPreset",
+					"value": "ACCP_CivilianeMale"
+				},
 				"m_eSoundFootwearType": {
 					"type": "EHM5SoundFootwearType",
 					"value": "EFWT_BOOTS"
@@ -731,7 +767,7 @@
 				},
 				"m_aAnimationSets": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd0867e18f1d14"]
+					"value": ["abcdc39ac81d96f4"]
 				}
 			},
 			"postInitProperties": {
@@ -827,16 +863,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd0867e18f1d14": {
-			"parent": "abcd9f4b2ba77522",
-			"name": "AnimSet_S03_L01_Civ_Male_Staff_Stressed",
-			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_staff_stressed.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_s03_l01_civ_male_staff_stressed.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd976b760d3ca7": {
 			"parent": "abcd1098e6fa90a2",
 			"name": "charset_chinesepolice_wet_m",
@@ -887,6 +913,16 @@
 			"name": "animset_civ_novikov",
 			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_novikov.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_civ_novikov.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc39ac81d96f4": {
+			"parent": "abcd9f4b2ba77522",
+			"name": "AnimSet_BodyGuard_DragBody",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/animset_bodyguard_dragbody.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/animset_bodyguard_dragbody.entitytemplate].pc_entityblueprint",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
