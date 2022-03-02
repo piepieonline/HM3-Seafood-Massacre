@@ -2759,34 +2759,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdd3f6832713d4": {
-			"parent": "abcdba75fae49278",
-			"name": "PIP ActorBoneAttachEntity",
-			"template": "[modules:/zactorboneattachentity.class].pc_entitytype",
-			"blueprint": "[modules:/zactorboneattachentity.class].pc_entityblueprint",
-			"properties": {
-				"m_bStartAttached": {
-					"type": "bool",
-					"value": true
-				},
-				"m_BoneName": {
-					"type": "ZString",
-					"value": "spine"
-				},
-				"m_linkedEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdba75fae49278"
-				}
-			},
-			"postInitProperties": {
-				"m_spatial": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd028695650617"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd028695650617": {
 			"parent": "abcdba75fae49278",
 			"name": "PIP Spatial",
@@ -2798,13 +2770,13 @@
 					"value": {
 						"rotation": {
 							"x": 0,
-							"y": 0,
+							"y": 70,
 							"z": 0
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": -80.8,
+							"y": 95.5,
+							"z": 110.3
 						}
 					}
 				},
@@ -2815,12 +2787,7 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"exposedEntities": [{
-				"name": "TargetInSight",
-				"isArray": false,
-				"targets": []
-			}]
+			"platformSpecificPropertyValues": []
 		},
 		"abcd95b1168e6d39": {
 			"parent": "abcd7fba46e1f9a5",
@@ -3415,6 +3382,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Poll",
 				"onEntity": "abcd459a8c901b56"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "Disable",
+				"onEntity": "abcded973169f4b7"
 			}, {
 				"onEvent": "Plate_On_Table",
 				"shouldTrigger": "SpawnItem",
@@ -4954,15 +4925,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Activate",
-				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Deactivate",
-				"onEntity": "abcdc38640d82521"
-			}]
+			"events": []
 		},
 		"abcddbb8e1c0e1ba": {
 			"parent": "abcd36cd499253ae",
@@ -14187,7 +14150,7 @@
 			"properties": {
 				"m_aParents": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd2c9394f09c9d", "abcd071ac30376d8", "abcdc18b376a3972"]
+					"value": ["abcd2c9394f09c9d", "abcd071ac30376d8", "abcdc18b376a3972", "abcd028695650617"]
 				}
 			},
 			"postInitProperties": {},
@@ -20178,16 +20141,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd4c5b1bb6f550": {
-			"parent": "abcd07c5ee6456d4",
-			"name": "Food Poisont",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd66e3938abbd8": {
 			"parent": "abcd07c5ee6456d4",
 			"name": "Act_MR_Stand_Prepare_Plate_100CM",
@@ -20240,16 +20193,6 @@
 				"onEntity": "abcd07c5ee6456d4"
 			}]
 		},
-		"abcd9df0dbee64b9": {
-			"parent": "abcd07c5ee6456d4",
-			"name": "Food prepared",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcdd0a8baa251a8": {
 			"parent": "abcd07c5ee6456d4",
 			"name": "Food ready",
@@ -20258,7 +20201,7 @@
 			"properties": {
 				"m_rValueEntity": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd9df0dbee64b9"
+					"value": "abcdbc03e05cd8eb"
 				}
 			},
 			"postInitProperties": {},
@@ -20381,6 +20324,127 @@
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd7f48f8c8f2f2"
 			}]
+		},
+		"abcdbc03e05cd8eb": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "Food prepared",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd8080d22f053": {
+			"parent": "abcdba75fae49278",
+			"name": "PIP AllConditionsMet",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdc73c5e590871", "abcdd41882735971"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Activate",
+				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Deactivate",
+				"onEntity": "abcdc38640d82521"
+			}]
+		},
+		"abcd40b4199cefb0": {
+			"parent": "abcd23ee0a571ff6",
+			"name": "ActStateCondition",
+			"template": "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd8de5cbd87793"
+				},
+				"m_bIsPlaying": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIsEntering": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIsMoving": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd41882735971": {
+			"parent": "abcdba75fae49278",
+			"name": "PIP InCorrectAction",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd40b4199cefb0", "abcdedfdabc054a8", "abcd5e877190fdbf"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd5e877190fdbf": {
+			"parent": "abcd573b1d00168d",
+			"name": "Act_MR_Binocs ActStateCondition",
+			"template": "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd4a2e9928ac95"
+				},
+				"m_bIsStopping": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdedfdabc054a8": {
+			"parent": "abcd573b1d00168d",
+			"name": "Act_MR_Binocs Right ActStateCondition",
+			"template": "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdb81cc02940b7"
+				},
+				"m_bIsStopping": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
