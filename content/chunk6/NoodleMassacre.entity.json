@@ -5591,30 +5591,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcddd802d4c9c58": {
-			"parent": "abcd4189eb0dd314",
-			"name": "LastPersonSeated Poll",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rValueEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd857e0f74e7c1"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "PollTrue",
-				"shouldTrigger": "Start",
-				"onEntity": "abcdbb37e72a06f5"
-			}, {
-				"onEvent": "PollFalse",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd24ceccc3b3fe"
-			}]
-		},
 		"abcda8678a0ed7c5": {
 			"parent": "abcd9105b49b083c",
 			"name": "TEST DartGun",
@@ -14211,7 +14187,7 @@
 			"properties": {
 				"m_aParents": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd2c9394f09c9d", "abcd071ac30376d8"]
+					"value": ["abcd2c9394f09c9d", "abcd071ac30376d8", "abcdc18b376a3972"]
 				}
 			},
 			"postInitProperties": {},
@@ -20092,9 +20068,334 @@
 			}],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcdc18b376a3972": {
+			"parent": "abcda16a3fbc97f6",
+			"name": "ChefToPrepareTimer TimerConditional",
+			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nInterval": {
+					"type": "int32",
+					"value": 600000
+				},
+				"m_pCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd862015b35dcd"
+				},
+				"m_bRepeatWhileTrue": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bResetWhenStopped": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "TimeOut",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd7f48f8c8f2f2"
+			}]
+		},
+		"abcda16a3fbc97f6": {
+			"parent": "abcdde52f4b1409b",
+			"name": "Chef",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd07c5ee6456d4": {
+			"parent": "abcda16a3fbc97f6",
+			"name": "Chef making plate",
+			"template": "005B2A6454B76874",
+			"blueprint": "00BD25C96EAAC850",
+			"properties": {
+				"m_aRoles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb6bd5156dd32"]
+				},
+				"m_bTerminateOnDone": {
+					"type": "bool",
+					"value": true
+				},
+				"m_aEnableConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7f48f8c8f2f2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd89c37c9d4d46": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "TimerConditional",
+			"template": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timerconditional.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nInterval": {
+					"type": "int32",
+					"value": 4000
+				}
+			},
+			"postInitProperties": {
+				"m_pCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda5c769ab8189"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "TimeOut",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd0a8baa251a8"
+			}]
+		},
+		"abcdb6bd5156dd32": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "Role",
+			"template": "00808A03B82188F7",
+			"blueprint": "0064725514B34594",
+			"properties": {},
+			"postInitProperties": {
+				"m_rActorProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd59d18db9b5fa"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4c5b1bb6f550": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "Food Poisont",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd66e3938abbd8": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "Act_MR_Stand_Prepare_Plate_100CM",
+			"template": "006AD617CE37498C",
+			"blueprint": "009C424096BC903A",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -179.30338064936885
+						},
+						"position": {
+							"x": -86.37223052978516,
+							"y": 33.26445007324219,
+							"z": 101.01589965820313
+						}
+					}
+				},
+				"m_Color": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 4
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdb6bd5156dd32"
+				},
+				"PoisonableSource": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "710845eac3f6aa0c",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+						"exposedEntity": "ItemKey_Poisonable_FoodPlate"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActDone",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd07c5ee6456d4"
+			}]
+		},
+		"abcd9df0dbee64b9": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "Food prepared",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd0a8baa251a8": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "Food ready",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9df0dbee64b9"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "PollFalse",
+				"shouldTrigger": "Prepare_Plate",
+				"onEntity": "abcd66e3938abbd8"
+			}, {
+				"onEvent": "PollTrue",
+				"shouldTrigger": "Done",
+				"onEntity": "abcd54e10cf84003"
+			}]
+		},
+		"abcda5c769ab8189": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "ActStateCondition",
+			"template": "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bIsPlaying": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd66e3938abbd8"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd59d18db9b5fa": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "ActorProviderDirect",
+			"template": "[modules:/zactorproviderdirect.class].pc_entitytype",
+			"blueprint": "[modules:/zactorproviderdirect.class].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "3957fa286e703e5e",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}, {
+						"ref": "a19a36b84c16ec87",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd54e10cf84003": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "DramaSituationProxy",
+			"template": "000C288A323918F9",
+			"blueprint": "00900EB78F2E0F5E",
+			"properties": {},
+			"postInitProperties": {
+				"m_rOriginalDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd07c5ee6456d4"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd66e3938abbd8"
+			}]
+		},
+		"abcd862015b35dcd": {
+			"parent": "abcda16a3fbc97f6",
+			"name": "FoodIsNotReady InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "67e69b92e2140e7",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7f48f8c8f2f2": {
+			"parent": "abcda16a3fbc97f6",
+			"name": "ChefShouldMakeFood VBB",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd41d1fdd7111c": {
+			"parent": "abcd4189eb0dd314",
+			"name": "All sitting VBO",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd857e0f74e7c1", "abcd33f28136cbd9", "abcd82a2bf6d2fe8"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd7f48f8c8f2f2"
+			}]
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "8de34ea8bc35645a",
+			"comment": "Chef loop - Prepare food override",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_aHigherPriority": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd07c5ee6456d4"]
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "223c0654d13c5c0b",
 			"comment": "Chill In Apartment Drama",
@@ -22253,6 +22554,18 @@
 		"_comment": "CHAR_Wet_Guard_Steets_M__01"
 	}],
 	"pinConnectionOverrides": [{
+		"fromEntity": "abcd66e3938abbd8",
+		"toEntity": {
+			"ref": "710845eac3f6aa0c",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActDone",
+		"toPinName": "ChefPreparedFood",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
 		"fromEntity": {
 			"ref": "710845eac3f6aa0c",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
