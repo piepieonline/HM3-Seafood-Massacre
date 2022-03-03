@@ -2860,7 +2860,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcddbb8e1c0e1ba", "abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd845141da1d8f", "abcd08f3961bbdf9"]
+					"value": ["abcddbb8e1c0e1ba", "abcd0d2f65df04d4", "abcd6b1e3aeb1751", "abcd845141da1d8f", "abcd08f3961bbdf9", "abcd2027b9b5810f"]
 				}
 			},
 			"postInitProperties": {},
@@ -4904,7 +4904,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd5915c6b0f2db", "abcd543d993985c0", "abcd736bcfe99d0a", "abcde38df2a00e42"]
+					"value": ["abcde38df2a00e42"]
 				}
 			},
 			"postInitProperties": {},
@@ -4919,7 +4919,7 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7ddbc0fdfad6", "abcd6b1e3aeb1751", "abcd08f3961bbdf9", "abcddbb8e1c0e1ba"]
+					"value": ["abcd7ddbc0fdfad6", "abcd6b1e3aeb1751", "abcd08f3961bbdf9", "abcddbb8e1c0e1ba", "abcd2027b9b5810f"]
 				}
 			},
 			"postInitProperties": {},
@@ -20374,6 +20374,116 @@
 			"editorOnly": false,
 			"events": [],
 			"platformSpecificPropertyValues": []
+		},
+		"abcd7e6d6afbcc28": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneCrouchHidden VolumeTriggerCharacter",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd5915c6b0f2db", "abcd543d993985c0", "abcd736bcfe99d0a"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2027b9b5810f": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneCrouchHidden InvertedCondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd502a52aa02f1"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc7fd10870365": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneCrouchHidden IsInCover",
+			"template": "[modules:/zherostateconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eState": {
+					"type": "EHeroGameState",
+					"value": "eHGS_MvCover"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd0d40eb74a958": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneCrouchHidden IsCrouching",
+			"template": "[modules:/zherostateconditionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eState": {
+					"type": "EHeroGameState",
+					"value": "eHGS_Sneaking"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdb787c8b6e913": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneCrouchHidden CrouchingOrCover VBO",
+			"template": "[modules:/zvaluebool_operation.class].pc_entitytype",
+			"blueprint": "[modules:/zvaluebool_operation.class].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0d40eb74a958", "abcdc7fd10870365"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation.EEvaluationType",
+					"value": "ANY"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd502a52aa02f1": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneCrouchHidden InZoneAndHidden VBO",
+			"template": "[modules:/zvaluebool_operation.class].pc_entitytype",
+			"blueprint": "[modules:/zvaluebool_operation.class].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7e6d6afbcc28", "abcdb787c8b6e913"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation.EEvaluationType",
+					"value": "ALL"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
