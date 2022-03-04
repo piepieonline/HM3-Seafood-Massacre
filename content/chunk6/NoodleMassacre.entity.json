@@ -20484,9 +20484,112 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcda60256ff2fd3": {
+			"parent": "abcd4189eb0dd314",
+			"name": "NotReadyToCollect Act_MR_Stand_Angry",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_angry.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_angry.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -0.0044450000859797,
+							"y": 0.001281999982893467,
+							"z": 0.05767099931836128
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 10
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "6ee93e13337704c2",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "9eb0d5d518bc23dc",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd93bb05ba030d": {
+			"parent": "abcd4189eb0dd314",
+			"name": "WasMealReady Poll",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "67e69b92e2140e7",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "PollFalse",
+				"shouldTrigger": "Start",
+				"onEntity": "abcda60256ff2fd3"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "ae3ddedeb2716ff4",
+			"comment": "Allow bartender to check food even if not ready",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_nCooldown": {
+				"type": "float32",
+				"value": 5
+			},
+			"m_bTerminateOnDone": {
+				"type": "bool",
+				"value": false
+			},
+			"m_aEnableConditions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "6b0f5cf589916271",
+					"comment": "Food bell rung",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			},
+			"m_aStartConditions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "6b0f5cf589916271",
+					"comment": "Food bell rung",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "8de34ea8bc35645a",
 			"comment": "Chef loop - Prepare food override",
@@ -21262,6 +21365,7 @@
 	}, {
 		"entities": [{
 			"ref": "43390d442177f82a",
+			"comment": "Actor (Bartender) to serve food",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -22732,6 +22836,7 @@
 			"$val": null
 		}
 	}, {
+		"comment": "Chef goes from chopping to spices (skipping the plate inspection)",
 		"fromEntity": {
 			"ref": "2ef698eb17c792be",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -22746,8 +22851,77 @@
 			"$type": "void",
 			"$val": null
 		}
+	}, {
+		"comment": "Check if food is ready, for angry reaction",
+		"fromEntity": {
+			"ref": "2500cf88fd8834d8",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": "abcd93bb05ba030d",
+		"fromPinName": "OnReached",
+		"toPinName": "Poll",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"comment": "Food has not been served - Angry reaction finished",
+		"fromEntity": "abcda60256ff2fd3",
+		"toEntity": {
+			"ref": "ae3ddedeb2716ff4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActTimeout",
+		"toPinName": "Done",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"comment": "Food has not been served",
+		"fromEntity": "abcda60256ff2fd3",
+		"toEntity": {
+			"ref": "f9bb714260d5a2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActTimeout",
+		"toPinName": "SetFalse",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"comment": "Food has not been picked up, enable the bell",
+		"fromEntity": "abcda60256ff2fd3",
+		"toEntity": {
+			"ref": "200f7807f215304d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActTimeout",
+		"toPinName": "SetFalse",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"comment": "Food has been served",
+		"fromEntity": {
+			"ref": "2500cf88fd8834d8",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "f9bb714260d5a2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnActDone",
+		"toPinName": "SetTrue",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
 	}],
 	"pinConnectionOverrideDeletes": [{
+		"comment": "Placing the first meal shouldn't complete the act",
 		"fromEntity": {
 			"ref": "20bfda5f2ef386ab",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -22763,6 +22937,7 @@
 			"$val": null
 		}
 	}, {
+		"comment": "Don't start the orignal meal placing act (We have our own)",
 		"fromEntity": {
 			"ref": "2500cf88fd8834d8",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -22778,6 +22953,7 @@
 			"$val": null
 		}
 	}, {
+		"comment": "The chef skips inspecting the meal (Gets in the way too much)",
 		"fromEntity": {
 			"ref": "2ef698eb17c792be",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -22788,6 +22964,22 @@
 		},
 		"fromPinName": "OnActTimeout",
 		"toPinName": "Start",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"comment": "Don't mark serving complete unless the meal really was completed",
+		"fromEntity": {
+			"ref": "ae3ddedeb2716ff4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "f9bb714260d5a2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "OnDone",
+		"toPinName": "SetTrue",
 		"constantPinValue": {
 			"$type": "void",
 			"$val": null
