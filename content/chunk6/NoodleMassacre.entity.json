@@ -6308,7 +6308,7 @@
 		},
 		"abcd1e4b41a2a95e": {
 			"parent": "abcd692adf85a546",
-			"name": "CHAR_TrainStart3",
+			"name": "CHAR_SpawnArea",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -6367,7 +6367,7 @@
 		},
 		"abcd13710b93a32a": {
 			"parent": "abcd1e4b41a2a95e",
-			"name": "DR_RestaurantWalkway",
+			"name": "DR_Patrol",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -6401,9 +6401,9 @@
 		},
 		"abcd4c3f5b91ca3e": {
 			"parent": "abcd13710b93a32a",
-			"name": "Act_MR_Guard_Stand_Rifle2",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_guard_stand_idle",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_idle.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -6440,14 +6440,14 @@
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd211b9bd56064"
+				"onEntity": "abcda5443ec318dc"
 			}]
 		},
 		"abcd211b9bd56064": {
 			"parent": "abcd13710b93a32a",
-			"name": "Act_MR_Stand_Rifle1",
-			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_itchingbeard",
+			"template": "00851E28A73ECF05",
+			"blueprint": "00C9CF30011AFB75",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -20062,9 +20062,9 @@
 							"z": 129.23991483007697
 						},
 						"position": {
-							"x": -79.01573944091797,
-							"y": 107.9845962524414,
-							"z": 101
+							"x": -63.6594,
+							"y": 67.8848,
+							"z": 117
 						}
 					}
 				},
@@ -20618,6 +20618,81 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcde9a6b9ab4aba": {
+			"parent": "abcd13698b3d26da",
+			"name": "ShortcutReplacera_int_door_2x4_frame_a",
+			"template": "00F74383269B78EA",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -180
+						},
+						"position": {
+							"x": -54,
+							"y": 26.96084976196289,
+							"z": 101
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda5443ec318dc": {
+			"parent": "abcd13710b93a32a",
+			"name": "act_mr_guard_stand_handscrossed",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_handscrossed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_guard_stand_handscrossed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -45
+						},
+						"position": {
+							"x": -58.4486,
+							"y": 14.1583,
+							"z": 104.987
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 10
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd11689dd21182"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd211b9bd56064"
+			}]
 		}
 	},
 	"propertyOverrides": [{
@@ -20717,11 +20792,115 @@
 			"ref": "8a5ce1cbc84fd8e7",
 			"comment": "LightCSM",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "aad55eac2d05644d",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "799276c7f555bb64",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "af03e9547a9b968c",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cb05f5e4f836473b",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "956e4a329ce2e83a",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e3064334cc6bbd89",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c69dc80748af6086",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "88f0c10e343d29b4",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "91c8156e6c7642ad",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c59226ada6575349",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bd254eb79b3b1bd1",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9b4357414b9a7ecd",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "43883fd48cce94c",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "33cf8efa56bb719f",
+			"comment": "lamp_street_rat begins here",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c8f90cccc9d90b8f",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fc35cfa0531d7149",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8a36d30e3d4a2b89",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2c27ad5b7eb1facb",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "875c7a9eb61243e3",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9fd41fce399e3f25",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9accc5aa429139dc",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bfd248b545fa8d4c",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d38ac1acd8b2bfca",
+			"comment": "Light_Wall_Flood_A_V2_08",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a4aba4e2287d16e7",
+			"comment": "Lamp_Strip_Light_C_SizeB_00_07",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_diffuseColor": {
 				"type": "SColorRGB",
 				"value": "#fff2c9"
+			},
+			"DiffuseColor": {
+				"type": "SColorRGB",
+				"value": "#e5ffd1"
+			},
+			"On": {
+				"type": "bool",
+				"value": true
 			}
 		}
 	}, {
@@ -20770,11 +20949,34 @@
 			"ref": "fb71e7e1c02a5574",
 			"comment": "ICA Apartment Window lights",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "991980d921d856fd",
+			"comment": "lamp_wet_street_a begins",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "177c9b7d3bf3a5b4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "63dbb04f504052eb",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9026353d07b9409a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "80e85bea0d9cf4a7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "73950f9056338e5d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_diffuseColor": {
 				"type": "SColorRGB",
 				"value": "#9A6C00"
+			},
+			"On": {
+				"type": "bool",
+				"value": true
 			}
 		}
 	}, {
@@ -22173,6 +22375,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "4db7aefe44f21494",
+		"_comment": "Perm Shortcut",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "d489792b5b9cbb25",
 		"_comment": "Box Reflection Cache",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
