@@ -1,13 +1,16 @@
 {
-	"version": "0.5.0",
+	"version": "0.7.0",
 	"id": "KevinRudd.SeafoodMassacre",
 	"name": "Chongqing Noodle Massacre",
-	"dependencies": ["0022B6A7DE3C2B71", "002213FD7FFF2F57", "00E6E0A484B02D21", "00941F88025A1970", "00F5D3E795BE741E", "00546CDEB4C985FE", "00BBAEDF15366BB5", "007F78E36ED4CFD5", "00CC38AA092A6FAA", "006EE2E2D2412887", "00BCB2B0C3219259", "0024F1CAAB79A762", "008E755A2A4FF385", "008B0A4F4FCA8E3F", "007D7BD3E9CEE479", "00161ECFA6ADD670", "00F64C24A8D6130C", "00936023823CF8E6", "009D17D65711801C", "00E1DE9426E4EFF9", {
+	"dependencies": ["0022B6A7DE3C2B71", "002213FD7FFF2F57", "00E6E0A484B02D21", "00F5D3E795BE741E", "00546CDEB4C985FE", "00BBAEDF15366BB5", "007F78E36ED4CFD5", "00CC38AA092A6FAA", "006EE2E2D2412887", "00BCB2B0C3219259", "008E755A2A4FF385", "008B0A4F4FCA8E3F", "007D7BD3E9CEE479", "00161ECFA6ADD670", "009D17D65711801C", "00E1DE9426E4EFF9", {
 		"runtimeID": "0071DA1DB35A2675",
+		"toChunk": "chunk6"
+	},	{
+		"runtimeID": "0024F1CAAB79A762",
 		"toChunk": "chunk6"
 	}],
 	"blobsFolder": "blobs",
-	"description": "WIP Mod recreating The Seafood Massacre from Hitman Contracts, in H3's Chongqing. Intending to have day and night variations",
+	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant, in H3's Chongqing. Has a Contracts (Night) and Codename 47 (Day) version to pick from.",
 	"authors": ["Kevin Rudd", "Piepieonline"],
 	"contentFolder": "content",
 	"packagedefinition": [
@@ -20,7 +23,7 @@
 	  "localisation": {
 		"english": {
 			"UI_CONTRACT_NOODLE_NIGHT": "The Noodle Massacre",
-            "UI_NOODLE_BRIEFING": "This is a placeholder briefing. I will try make a video briefing. I don't want the game to crash though so I've put this here.",
+            "UI_NOODLE_BRIEFING": "This is a placeholder briefing. I will try make a video briefing once everything else is locked in.",
 			"UI_NOODLE_WITNESSES": "Witnesses Remaining",
 			"locr_Amulet": "Red Dragon Amulet"
 		},
