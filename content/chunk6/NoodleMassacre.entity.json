@@ -20555,6 +20555,69 @@
 			}],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd580f42691c27": {
+			"parent": "fffffffffffffffe",
+			"name": "Lighting",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcda0eca803afc2": {
+			"parent": "abcd580f42691c27",
+			"name": "BoxReflection",
+			"template": "[modules:/zboxreflectionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxreflectionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1000,
+						"y": 1000,
+						"z": 1000
+					}
+				},
+				"m_vSampleOffset": {
+					"type": "SVector3",
+					"value": {
+						"x": 0,
+						"y": 0,
+						"z": 5
+					}
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eType": {
+					"type": "ZBoxReflectionEntity.EType",
+					"value": "eFallback"
+				},
+				"m_eBoundsType": {
+					"type": "ZBoxReflectionEntity.EBoundsType",
+					"value": "eBox"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -21079,7 +21142,7 @@
 			},
 			"m_diffuseColor": {
 				"type": "SColorRGB",
-				"value": "#CEBA00"
+				"value": "#BA9B1C"
 			}
 		}
 	}, {
@@ -22110,6 +22173,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "d489792b5b9cbb25",
+		"_comment": "Box Reflection Cache",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "e760e7825e41460",
 		"_comment": "Noodle Guy",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
