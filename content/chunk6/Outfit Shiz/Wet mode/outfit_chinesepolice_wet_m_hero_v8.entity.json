@@ -61,8 +61,8 @@
 		"d8ee225b56c4d47d": {
 			"parent": "7134fdcacc8c9b13",
 			"name": "facilityguard_shirt",
-			"template": "008A526029F12119",
-			"blueprint": "003D7200D03AF391",
+			"template": "008A526029F12120",
+			"blueprint": "003D7200D03AF392",
 			"properties": {
 				"1239136802": {
 					"type": "IRenderMaterialEntity.EModifierOperation",
@@ -649,7 +649,7 @@
 				"m_pMeshResource": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "004983611F1D2296",
+						"resource": "004983611F1D2297",
 						"flag": "5F"
 					}
 				}
