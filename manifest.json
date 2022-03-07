@@ -8,6 +8,28 @@
 	},	{
 		"runtimeID": "0024F1CAAB79A762",
 		"toChunk": "chunk6"
+	},	{
+		"runtimeID": "00FF0E0B584483DA",
+		"comment": "Ted Mendez Jacket Stuff",
+		"toChunk": "chunk6"
+	},	{
+		"runtimeID": "00C6E4298F23CDC3",
+		"toChunk": "chunk6"
+	},	{
+		"runtimeID": "00F9A0B9A55F005C",
+		"comment": "Ted Mendez Jacket Stuff",
+		"toChunk": "chunk6"
+	},	{
+		"runtimeID": "00D2C61706C1E2E9",
+		"toChunk": "chunk6"
+	},	{
+		"runtimeID": "0043E92132981F7C",
+		"comment": "Stilleto Head",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00F818CCC76DD8B7",
+		"comment": "Stiletto Skin",
+		"toChunk": "chunk1"
 	}],
 	"blobsFolder": "blobs",
 	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant, in H3's Chongqing. Has a Contracts (Night) and Codename 47 (Day) version to pick from.",
