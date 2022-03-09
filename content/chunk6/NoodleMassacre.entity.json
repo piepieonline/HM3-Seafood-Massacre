@@ -1194,9 +1194,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": -2.72411,
+							"y": 97.6204,
+							"z": 100.848
 						}
 					}
 				},
@@ -1232,7 +1232,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcdec5c2f4fbef8"
+					"value": "fffffffffffffffe"
 				}
 			},
 			"editorOnly": false,
@@ -1253,9 +1253,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": -185.222,
+							"y": 125.662,
+							"z": 85
 						}
 					}
 				},
@@ -1287,7 +1287,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcda8c84a3b4d08"
+					"value": "fffffffffffffffe"
 				}
 			},
 			"editorOnly": false,
@@ -1308,9 +1308,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
+							"x": -108.089,
+							"y": 125.776,
+							"z": 113
 						}
 					}
 				},
@@ -1342,7 +1342,7 @@
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd432adfe4aef7"
+					"value": "fffffffffffffffe"
 				}
 			},
 			"editorOnly": false,
@@ -1373,9 +1373,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -100.32219696044922,
-							"y": 34.88243103027344,
-							"z": 100.99999237060547
+							"x": -184.65,
+							"y": 115.866,
+							"z": 84.309
 						}
 					}
 				},
@@ -2103,7 +2103,7 @@
 			"events": [{
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd2d00fce5938a"
+				"onEntity": "abcd0c62c4000a7b"
 			}]
 		},
 		"abcd96b8b43349bd": {
@@ -6321,9 +6321,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -181.9669952392578,
-							"y": 131.76800537109375,
-							"z": 85
+							"x": -155.976,
+							"y": 90.2151,
+							"z": 81.1546
 						}
 					}
 				},
@@ -6522,9 +6522,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -173.31199645996094,
-							"y": 151.60000610351562,
-							"z": 85
+							"x": -173.96,
+							"y": 158.997,
+							"z": 88.9345
 						}
 					}
 				},
@@ -6695,9 +6695,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -118.52100372314453,
-							"y": 75.29859924316406,
-							"z": 85.01069641113281
+							"x": -175.966,
+							"y": 97.2071,
+							"z": 81
 						}
 					}
 				},
@@ -6896,9 +6896,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -112.226,
-							"y": 90.3971,
-							"z": 93
+							"x": -181.589,
+							"y": 104.353,
+							"z": 81
 						}
 					}
 				},
@@ -8269,9 +8269,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -137.766,
-							"y": 71.9476,
-							"z": 85.0107
+							"x": -182.087,
+							"y": 132.061,
+							"z": 85
 						}
 					}
 				},
@@ -14098,9 +14098,9 @@
 							"z": -170.92343442329582
 						},
 						"position": {
-							"x": -112.226,
-							"y": 90.3971,
-							"z": 93
+							"x": -166.125,
+							"y": 90.7409,
+							"z": 81
 						}
 					}
 				},
@@ -14367,12 +14367,12 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -170.92343442329582
+							"z": -199
 						},
 						"position": {
-							"x": -69.612,
-							"y": 95.3769,
-							"z": 109
+							"x": -69.7341,
+							"y": 98.7701,
+							"z": 107.324
 						}
 					}
 				}
@@ -14440,8 +14440,8 @@
 							"z": -170.92343442329582
 						},
 						"position": {
-							"x": -70.9762,
-							"y": 92.8217,
+							"x": -70.9585,
+							"y": 95.458,
 							"z": 109
 						}
 					}
@@ -20298,7 +20298,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 7
+					"value": 3
 				}
 			},
 			"postInitProperties": {
@@ -20709,8 +20709,8 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -181.9669952392578,
-							"y": 131.76800537109375,
+							"x": -183.175,
+							"y": 131.363,
 							"z": 85
 						}
 					}
@@ -20934,7 +20934,7 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnActTimeout",
+				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
 				"onEntity": "abcde85b0d656438"
 			}]
@@ -20985,6 +20985,52 @@
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "74c4378c644d18fe",
+			"comment": "Block Crowbar",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_mTransform": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 62.370002942944666
+					},
+					"position": {
+						"x": -34.1241,
+						"y": 91.643,
+						"z": 109
+					}
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "3eb4b7f8e2c29fdb",
+			"comment": "Block Radio",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_mTransform": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 93.4202962596881
+					},
+					"position": {
+						"x": -17.3326,
+						"y": 108.85,
+						"z": 108
+					}
+				}
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "ae3ddedeb2716ff4",
 			"comment": "Allow bartender to check food even if not ready",
@@ -21074,6 +21120,10 @@
 			"m_InitialState": {
 				"type": "IHM5Door.EInitialState",
 				"value": "IS_CLOSED"
+			},
+			"m_bAutoClose": {
+				"type": "bool",
+				"value": true
 			}
 		}
 	}, {
@@ -22664,6 +22714,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "18f8e96ea9b525d9",
+		"_comment": "Block Laptop",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "4db7aefe44f21494",
 		"_comment": "Perm Shortcut",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
