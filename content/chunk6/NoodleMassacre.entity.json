@@ -6924,7 +6924,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 3
+					"value": 2
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
@@ -14067,11 +14067,11 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 2
+					"value": 4
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
-					"value": 1
+					"value": 0
 				}
 			},
 			"postInitProperties": {
@@ -20982,6 +20982,37 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd0f90034e856b"
 			}]
+		},
+		"abcd86554d7924c5": {
+			"parent": "abcd3c71b5508e42",
+			"name": "ActorDeath",
+			"template": "[modules:/zactordeathentity.class].pc_entitytype",
+			"blueprint": "[modules:/zactordeathentity.class].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3c71b5508e42"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd0781970b993a": {
+			"parent": "abcd86554d7924c5",
+			"name": "HushDead",
+			"template": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "HushDead"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{

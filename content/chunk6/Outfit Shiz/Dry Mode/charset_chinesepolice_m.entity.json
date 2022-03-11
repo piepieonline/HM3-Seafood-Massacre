@@ -30,7 +30,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd"]
+					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcd1f00e875803b"]
 				}
 			},
 			"editorOnly": false,
@@ -45,7 +45,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0"]
+					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcd0c5ad60fac61", "abcdf176fc4e1422"]
 				}
 			},
 			"editorOnly": false,
@@ -60,7 +60,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307"]
+					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcdaae647a32922", "abcdece80ae0cba5"]
 				}
 			},
 			"editorOnly": false,
@@ -235,6 +235,96 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "008E7F9D308B5A7F",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1f00e875803b": {
+			"parent": "696226ea3a8aea66",
+			"name": "4JacketHush",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F4EF0D5F122757",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf176fc4e1422": {
+			"parent": "529de957a31989ac",
+			"name": "Var4JACKET",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00CF65CA92E85E89",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0c5ad60fac61": {
+			"parent": "529de957a31989ac",
+			"name": "Var3JACKET",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00CF65CA92E85E89",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdaae647a32922": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var3Stilletto",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0060CBA3CC8A9984",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdece80ae0cba5": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var4HUSH",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A80D32CB9964B9",
 						"flag": "9F"
 					}
 				}
