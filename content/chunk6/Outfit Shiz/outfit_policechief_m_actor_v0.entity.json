@@ -310,13 +310,12 @@
 			"template": "00271DB29B80BBB6",
 			"blueprint": "004F2866E67BBE64",
 			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
+				"Texture2DNormal_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "000F937ABB8E9C5E",
+						"flag": "5F"
+					}
 				}
 			},
 			"postInitProperties": {},
@@ -477,7 +476,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
+					"value": ["abcda9186c1aeb9f", "abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
 				}
 			},
 			"editorOnly": false,
@@ -725,6 +724,208 @@
 				"ConstantColorRGB_03_Value": {
 					"type": "SColorRGB",
 					"value": "#524a43"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda9186c1aeb9f": {
+			"parent": "c1e434f458c274df",
+			"name": "Mesh_Moustache",
+			"template": "[modules:/zbodypartentity.class].pc_entitytype",
+			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/_pro/characters/assets/individuals/llama/donyates/geometry/male_reg_donyates.wl2?/moustache.weightedprim](bodypart).pc_weightedprim",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd96462a471a79": {
+			"parent": "abcda9186c1aeb9f",
+			"name": "base_hair_vertexcolor",
+			"template": "000BF013336584CF",
+			"blueprint": "00757A40547A20B1",
+			"properties": {
+				"683226513": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"1737952988": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"Clients": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcda9186c1aeb9f"]
+				},
+				"ConstantColorRGB_02_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#282120"
+				},
+				"DiffuseColorB": {
+					"type": "SColorRGB",
+					"value": "#887f7c"
+				},
+				"Texture2D_04": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0006237DF989C3F0",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_04_enab": {
+					"type": "bool",
+					"value": true
+				},
+				"ConstantColorRGB_05_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_05_Value": {
+					"type": "SColorRGB",
+					"value": "#b2a1af"
+				},
+				"ConstantVector1D_05_Value": {
+					"type": "float32",
+					"value": 0.6499999761581421
+				},
+				"ConstantVector1D_09_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantVector1D_09_Value": {
+					"type": "float32",
+					"value": 0.07000000029802323
+				},
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0030B823F2B4F0F9",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_01_enab": {
+					"type": "bool",
+					"value": false
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7394d8814db7": {
+			"parent": "abcda9186c1aeb9f",
+			"name": "moustache",
+			"template": "[assembly:/_pro/characters/assets/individuals/llama/donyates/materials/moustache.mi].pc_entitytype",
+			"blueprint": "[assembly:/_pro/characters/assets/individuals/llama/donyates/materials/moustache.mi].pc_entityblueprint",
+			"properties": {
+				"683226513": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"1737952988": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 1.0752429346894132e-7
+						},
+						"position": {
+							"x": 2.0713168957797736e-9,
+							"y": -7.157773751487184e-8,
+							"z": 0.0
+						}
+					}
+				},
+				"Clients": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcda9186c1aeb9f"]
+				},
+				"ConstantColorRGB_02_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#201c17"
+				},
+				"DiffuseColorB": {
+					"type": "SColorRGB",
+					"value": "#b1adaa"
+				},
+				"Texture2D_04": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0006237DF989C3F0",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_04_enab": {
+					"type": "bool",
+					"value": true
+				},
+				"ConstantColorRGB_05_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantColorRGB_05_Value": {
+					"type": "SColorRGB",
+					"value": "#b2a1af"
+				},
+				"ConstantVector1D_05_Value": {
+					"type": "float32",
+					"value": 0.6499999761581421
+				},
+				"ConstantVector1D_09_Value_op": {
+					"type": "IRenderMaterialEntity.EModifierOperation",
+					"value": "eReplace"
+				},
+				"ConstantVector1D_09_Value": {
+					"type": "float32",
+					"value": 0.07000000029802323
+				},
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "002763A321E5C8BE",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_01_enab": {
+					"type": "bool",
+					"value": false
 				}
 			},
 			"postInitProperties": {},

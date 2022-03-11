@@ -307,7 +307,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd3caa15d6a29f": {
-			"parent": "abcdf64c6a3963e8",
+			"parent": "abcd3216ca0eb5b1",
 			"name": "CHAR_SentryTest1",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -321,9 +321,9 @@
 							"z": -170.92343442329582
 						},
 						"position": {
-							"x": -90.62220001220703,
-							"y": 65.88243103027344,
-							"z": 97.01000213623047
+							"x": -119.772,
+							"y": 87.1922,
+							"z": 89
 						}
 					}
 				},
@@ -374,7 +374,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd2b378fdc5ce7": {
-			"parent": "abcdf64c6a3963e8",
+			"parent": "abcd3216ca0eb5b1",
 			"name": "CHAR_SentryTest2",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
@@ -388,9 +388,9 @@
 							"z": -170.92343442329582
 						},
 						"position": {
-							"x": -86.62220001220703,
-							"y": 65.88243103027344,
-							"z": 97.01000213623047
+							"x": -141.464,
+							"y": 90.5077,
+							"z": 85
 						}
 					}
 				},
@@ -14035,9 +14035,9 @@
 							"z": -170.92343442329582
 						},
 						"position": {
-							"x": -81.1911,
-							"y": 92.8287,
-							"z": 97.0031
+							"x": -112.152,
+							"y": 90.3669,
+							"z": 93
 						}
 					}
 				},
