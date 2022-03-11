@@ -5,42 +5,42 @@
 	"entities": {
 		"7ab6ac61f48a8373": {
 			"parent": "4478144f74a4e04c",
-			"name": "hat_cap_service",
-			"template": "008D38AF1EEFB1EA",
-			"blueprint": "00D943A776A418B5",
+			"name": "hat_cap_service_military",
+			"template": "00F28962557158CA",
+			"blueprint": "00F32D6C4876F909",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
 						"rotation": {
-							"x": 90.04334489885709,
-							"y": 85.22274784141042,
-							"z": 93.31874698336325
+							"x": -58.97893142700195,
+							"y": 90,
+							"z": -120.7304458618164
 						},
 						"position": {
-							"x": 0.0776280015707016,
-							"y": 0.019523000344634056,
-							"z": 9.000000318337698e-06
+							"x": 0.09170900160074234,
+							"y": 0.01484199930727482,
+							"z": 0
 						}
 					}
 				},
 				"m_PrimitiveScale": {
 					"type": "SVector3",
 					"value": {
-						"x": 1,
+						"x": 1.04,
 						"y": 1,
 						"z": 1
 					}
-				},
-				"Diffuse_Color_01_Value": {
-					"type": "SColorRGB",
-					"value": "#344a2e"
 				}
 			},
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "4478144f74a4e04c"
+				},
+				"m_rLinkedProxyEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "83bbed82c7b0e5a5"
 				}
 			},
 			"editorOnly": false,
@@ -61,7 +61,7 @@
 				},
 				"Diffuse_Color_01_Value": {
 					"type": "SColorRGB",
-					"value": "#c9ffac"
+					"value": "#acffc5"
 				}
 			},
 			"postInitProperties": {},
@@ -94,21 +94,13 @@
 		},
 		"fb0461f252d5c625": {
 			"parent": "83bbed82c7b0e5a5",
-			"name": "Hair_Cap",
-			"template": "006594C7AF2B3472",
-			"blueprint": "000B3B438FC8C9AC",
+			"name": "hair_sides_s",
+			"template": "00538F0D8B33EA7C",
+			"blueprint": "00616A7BAAB2C145",
 			"properties": {
 				"ConstantColorRGB_02_Value": {
 					"type": "SColorRGB",
-					"value": "#8a7d71"
-				},
-				"ConstantColorRGB_05_Value": {
-					"type": "SColorRGB",
-					"value": "#fce1d2"
-				},
-				"ConstantColorRGB_03_Value": {
-					"type": "SColorRGB",
-					"value": "#524a43"
+					"value": "#2b2b2b"
 				}
 			},
 			"postInitProperties": {},
@@ -117,14 +109,10 @@
 		},
 		"83bbed82c7b0e5a5": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePolice_M_Actor_v3",
-			"template": "00C0753FBF784C66",
-			"blueprint": "007294473357329E",
+			"name": "OUTFIT_ChinesePolice_M_Actor_v3JACKETGLOVES",
+			"template": "00028BAEA86DD2FD",
+			"blueprint": "002045A6D2A25237",
 			"properties": {
-				"m_LocalColliders": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": []
-				},
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
@@ -134,27 +122,18 @@
 							"z": 0
 						},
 						"position": {
-							"x": 2.6008899211883545,
-							"y": 0,
-							"z": 0
+							"x": -1.9712560176849365,
+							"y": 2.8499159812927246,
+							"z": 0.004666999913752079
 						}
 					}
 				},
-				"m_vBodypartBoundingMarginMax": {
-					"type": "SVector3",
+				"m_pBonesAndCollisionResource": {
+					"type": "ZRuntimeResourceID",
 					"value": {
-						"x": 0,
-						"y": 0,
-						"z": 0.009999999776482582
+						"resource": "000EEEBE0084EB40",
+						"flag": "5F"
 					}
-				},
-				"m_fFrustumFarDistanceProperty": {
-					"type": "float32",
-					"value": 40
-				},
-				"m_bSimulationEnabled": {
-					"type": "bool",
-					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -583,6 +562,10 @@
 				"onEvent": "HitmanWetness",
 				"shouldTrigger": "T",
 				"onEntity": "abcd4fb331476741"
+			}, {
+				"onEvent": "HitmanWetness",
+				"shouldTrigger": "GetIndex",
+				"onEntity": "abcd7a0a7019036d"
 			}]
 		},
 		"abcdfa74361587e4": {
@@ -736,6 +719,24 @@
 				"shouldTrigger": "ConstantVector1D_01_Value",
 				"onEntity": "abcd3032844a538c"
 			}]
+		},
+		"abcd7a0a7019036d": {
+			"parent": "4478144f74a4e04c",
+			"name": "zmultiparentspatialentity",
+			"template": "[modules:/zmultiparentspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zmultiparentspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_aParents": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["7ab6ac61f48a8373"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [],
