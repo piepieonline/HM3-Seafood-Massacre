@@ -54,7 +54,13 @@
                                         },
                                 "Transition": "Success"
                             }
-                        ]
+                        ],  "BodyBagged": [{
+                            "Condition": {
+                                        "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                    },
+                            "Transition": "Failure"
+                        }
+                    ]
                     }
                 }
             }

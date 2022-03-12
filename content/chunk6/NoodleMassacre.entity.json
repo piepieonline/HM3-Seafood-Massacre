@@ -1277,7 +1277,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Chief"
+					"value": "Wang Qiang"
 				},
 				"m_InventoryItemKeys": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -20717,7 +20717,7 @@
 				},
 				"RepositoryId": {
 					"type": "ZGuid",
-					"value": "f7aa1122-215b-4a4c-8492-662bf32e0057"
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0066"
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
@@ -21060,6 +21060,215 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdfd98bb992ce2": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_RestaurantAlley",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -72.948,
+							"y": 113.6,
+							"z": 101
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0067"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Shang Chi"
+				},
+				"m_bWeaponUnholstered": {
+					"type": "bool",
+					"value": false
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 3
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 0
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd47106d092e8": {
+			"parent": "abcdfd98bb992ce2",
+			"name": "DR_RestaurantWalkway",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd903e23bfd92b"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdfd98bb992ce2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf2dd23889dc6": {
+			"parent": "abcdd47106d092e8",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdfd98bb992ce2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda79d20cd3028": {
+			"parent": "abcdd47106d092e8",
+			"name": "act_mr_military_stand_riffle_var02",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var02.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var02.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 180
+						},
+						"position": {
+							"x": -79.409,
+							"y": 24.9687,
+							"z": 97.0097
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdf2dd23889dc6"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdabeccba8cb0a"
+			}]
+		},
+		"abcdabeccba8cb0a": {
+			"parent": "abcdd47106d092e8",
+			"name": "act_mr_guard_ub_walk_slow_smoke",
+			"template": "005C19F62EA17037",
+			"blueprint": "009F0A5DE26B55DF",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 110.92343309973799
+						},
+						"position": {
+							"x": -72.1878,
+							"y": 29.3788,
+							"z": 97.0097
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 2
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdf2dd23889dc6"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcda79d20cd3028"
+			}, {
+				"onEvent": "OnActDone",
+				"shouldTrigger": "Start",
+				"onEntity": "abcda79d20cd3028"
+			}]
+		},
+		"abcd903e23bfd92b": {
+			"parent": "abcdd47106d092e8",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdf2dd23889dc6"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdabeccba8cb0a"
+			}]
 		}
 	},
 	"propertyOverrides": [{

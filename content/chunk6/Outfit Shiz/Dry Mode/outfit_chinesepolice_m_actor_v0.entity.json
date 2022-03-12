@@ -598,14 +598,6 @@
 					"type": "float32",
 					"value": 5
 				},
-				"m_PrimitiveScale": {
-					"type": "SVector3",
-					"value": {
-						"x": 1.5,
-						"y": 1.5,
-						"z": 1.3
-					}
-				},
 				"m_pMeshResource": {
 					"type": "ZRuntimeResourceID",
 					"value": {
@@ -664,17 +656,30 @@
 		},
 		"503782578736c847": {
 			"parent": "83bbed82c7b0e5a5",
-			"name": "Head_asian_20s_2",
-			"template": "003378F0FAA80D73",
-			"blueprint": "002DD581C03029FE",
+			"name": "Head_asian_30s_03_male_reg_head_asian_01",
+			"template": "00B5FCED1E316C80",
+			"blueprint": "00A1DA827E15317D",
 			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "006665E99F628B24",
+						"flag": "5F"
+					}
 				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
+				"Texture2DNormal_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00FBC3A1FC633EF4",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_03": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "005001428C260781",
+						"flag": "5F"
+					}
 				}
 			},
 			"postInitProperties": {},

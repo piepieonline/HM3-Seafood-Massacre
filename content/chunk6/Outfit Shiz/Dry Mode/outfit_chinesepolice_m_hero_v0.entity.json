@@ -122,7 +122,7 @@
 				"m_pMeshResource": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00B7CA31F4BC2D37",
+						"resource": "009634A64D7D91AE",
 						"flag": "5F"
 					}
 				},
@@ -194,7 +194,7 @@
 		},
 		"83bbed82c7b0e5a5": {
 			"parent": null,
-			"name": "OUTFIT_Raccoon_Guard_Security_M_Actor_v0",
+			"name": "OUTFIT_ChinesePolice_M_Hero_v0",
 			"template": "00C0753FBF784C66",
 			"blueprint": "007294473357329E",
 			"properties": {
@@ -615,16 +615,7 @@
 			"name": "Head_47",
 			"template": "00537D16B5CE7286",
 			"blueprint": "00F2E4A932ECAA63",
-			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				}
-			},
+			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -637,23 +628,10 @@
 			"properties": {
 				"m_BoneName": {
 					"type": "ZString",
-					"value": "Spine2"
-				},
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						}
-					}
-				},
+					"value": "L_Clavicle"
+				}
+			},
+			"postInitProperties": {
 				"m_linkedEntity": {
 					"type": "SEntityTemplateReference",
 					"value": "83bbed82c7b0e5a5"
@@ -663,7 +641,6 @@
 					"value": "83bbed82c7b0e5a5"
 				}
 			},
-			"postInitProperties": {},
 			"editorOnly": false,
 			"inputCopying": [{
 				"whenTriggered": "ConstantVector1D_04_Value",
@@ -682,14 +659,14 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": {
-							"x": 67.54164087495366,
-							"y": 80.7029269925656,
-							"z": 142.45488996701113
+							"x": 38.90581056383383,
+							"y": -9.540167152582319,
+							"z": 1.864096315587437
 						},
 						"position": {
-							"x": 0.04088500052690506,
-							"y": 0.1222379994392395,
-							"z": 0.10767999410629272
+							"x": 0.11740300059318542,
+							"y": -0.04370899870991707,
+							"z": 0.04319300130009651
 						}
 					}
 				},
@@ -697,21 +674,13 @@
 					"type": "bool",
 					"value": true
 				},
-				"DiffusePower": {
+				"EmissiveIntensity": {
 					"type": "float32",
-					"value": 7
+					"value": 20
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd0c7ecab4258c"
-				},
-				"m_PrimitiveScale": {
-					"type": "SVector3",
-					"value": {
-						"x": 1.2,
-						"y": 1.2,
-						"z": 1.1
-					}
 				}
 			},
 			"postInitProperties": {},
