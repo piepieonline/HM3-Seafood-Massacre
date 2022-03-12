@@ -5850,7 +5850,7 @@
 		},
 		"abcd13698b3d26da": {
 			"parent": "abcd9d3b85c4d569",
-			"name": "Door Blocking",
+			"name": "Blocking Changes",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -16684,7 +16684,7 @@
 			"properties": {
 				"m_aParents": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd1b7db247496c", "abcda1dd88a83290", "abcdbff66014bd37", "abcd09859640a0bc", "abcd2714c44461ce", "abcdccbfee04cc72"]
+					"value": ["abcdf2f70d7dff0e", "abcd1b7db247496c", "abcda1dd88a83290", "abcdbff66014bd37", "abcd09859640a0bc", "abcd2714c44461ce", "abcdccbfee04cc72"]
 				}
 			},
 			"postInitProperties": {},
@@ -21013,6 +21013,53 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdf2f70d7dff0e": {
+			"parent": "abcd13698b3d26da",
+			"name": "windowgrid_right_chawl_building_a_01",
+			"template": "00BDF0E08A0D01EE",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -80.87,
+							"y": 35.39,
+							"z": 101.97019958496094
+						}
+					}
+				},
+				"m_bVisible": {
+					"type": "bool",
+					"value": true
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.26,
+						"y": 1.0,
+						"z": 1.145
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -22745,6 +22792,14 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "f2bf2d30166caf6c",
+		"_comment": "Bodydump Restaurant BackAlley",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "7c10eb348c0efb86",
+		"_comment": "Kitchen Window Guide",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "18f8e96ea9b525d9",
 		"_comment": "Block Laptop",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
