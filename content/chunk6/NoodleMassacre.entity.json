@@ -1194,9 +1194,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": -2.72411,
-							"y": 97.6204,
-							"z": 100.848
+							"x": 10.7858,
+							"y": 78.8353,
+							"z": 101.041
 						}
 					}
 				},
@@ -1467,7 +1467,7 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -110.002979908338
+							"z": -145.002979908338
 						},
 						"position": {
 							"x": -80.08000183105469,
@@ -2005,7 +2005,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 10
+					"value": 21
 				}
 			},
 			"postInitProperties": {
@@ -2024,6 +2024,10 @@
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd2d00fce5938a"
+			}, {
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Clear",
+				"onEntity": "abcd7a03aaae14d2"
 			}]
 		},
 		"abcd2d00fce5938a": {
@@ -2103,7 +2107,7 @@
 			"events": [{
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd0c62c4000a7b"
+				"onEntity": "abcd718985a8292d"
 			}]
 		},
 		"abcd96b8b43349bd": {
@@ -6144,7 +6148,7 @@
 				},
 				"m_nWeaponIndex": {
 					"type": "int32",
-					"value": 1
+					"value": 3
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
@@ -6213,9 +6217,9 @@
 							"z": 60.00298018836019
 						},
 						"position": {
-							"x": -58.658199310302734,
-							"y": 77.75,
-							"z": 96.8552017211914
+							"x": -74.8011,
+							"y": 81.4607,
+							"z": 97.015
 						}
 					}
 				},
@@ -6976,9 +6980,9 @@
 		},
 		"abcd41ad77d8b3e9": {
 			"parent": "abcd743b5edce6b2",
-			"name": "act_mr_stand_look_up",
-			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_up.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_look_up.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_suspicious_stand_lookingforsomething_high",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_suspicious_stand_lookingforsomething_high.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_suspicious_stand_lookingforsomething_high.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -7013,7 +7017,7 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "OnActTimeout",
+				"onEvent": "OnActDone",
 				"shouldTrigger": "Start",
 				"onEntity": "abcd2c15f4757878"
 			}]
@@ -21269,9 +21273,201 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcdabeccba8cb0a"
 			}]
+		},
+		"abcd718985a8292d": {
+			"parent": "abcda024411ee09a",
+			"name": "act_mr_stand_anxious_looking_around",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -30
+						},
+						"position": {
+							"x": -30.6762,
+							"y": 126.701,
+							"z": 101.012
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 10
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdad317c818a0c"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd0c62c4000a7b"
+			}, {
+				"onEvent": "OnReached",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd7a03aaae14d2"
+			}]
+		},
+		"abcd7a03aaae14d2": {
+			"parent": "abcda024411ee09a",
+			"name": "Pissing AIModifierActor",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_bWantsPrivacy": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreLowNoise": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bSuppressSocialGreeting": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdd0110d31999a"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd20758436ef9": {
+			"parent": "abcdc8b5984230b7",
+			"name": "Body Hiders",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd2001620b077c": {
+			"parent": "abcdd20758436ef9",
+			"name": "Setpiece_Container_Body_GarbageTruck",
+			"template": "[assembly:/_pro/design/setpieces/unique/setpiece_skunk_unique.template?/setpiece_container_body_garbagetruck.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/setpieces/unique/setpiece_skunk_unique.template?/setpiece_container_body_garbagetruck.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90
+						},
+						"position": {
+							"x": -63.8,
+							"y": 77.4,
+							"z": 96.8
+						}
+					}
+				},
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "2b01e2d0-f302-4b8a-822b-867ba9728f76"
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde77ee8b43dd1": {
+			"parent": "abcd2001620b077c",
+			"name": "PFObstacleGarbageTruck",
+			"template": "[modules:/zpfobstacleentity.class].pc_entitytype",
+			"blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -63.6,
+							"y": 77.3608,
+							"z": 98.2
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 9.3,
+						"y": 3,
+						"z": 4.5
+					}
+				},
+				"m_fPenaltyMultiplier": {
+					"type": "float32",
+					"value": -1
+				},
+				"m_bEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "762b112b948e9b30",
+			"comment": "Hobo Crowbar",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_mTransform": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 62.370002942944666
+					},
+					"position": {
+						"x": 9.956,
+						"y": 84.248,
+						"z": 100.99279
+					}
+				}
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "74c4378c644d18fe",
 			"comment": "Block Crowbar",
@@ -23001,8 +23197,12 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "c482871d0d1832",
+		"_comment": "ALL STREET DUMPSTERS",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "f2bf2d30166caf6c",
-		"_comment": "Bodydump Restaurant BackAlley",
+		"_comment": "Bodydump Ledge Restaurant BackAlley",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
 		"ref": "7c10eb348c0efb86",

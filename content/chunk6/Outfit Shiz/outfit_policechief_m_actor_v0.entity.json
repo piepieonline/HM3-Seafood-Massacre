@@ -560,6 +560,10 @@
 				"onEvent": "Lerp",
 				"shouldTrigger": "ConstantVector1D_04_Value",
 				"onEntity": "26dc6fb155e9bd9"
+			}, {
+				"onEvent": "Lerp",
+				"shouldTrigger": "SpecularRoughnessMin",
+				"onEntity": "bb520fc692be5c97"
 			}]
 		},
 		"7134fdcacc8c9b13": {
