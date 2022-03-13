@@ -75,6 +75,13 @@
 						"resource": "0076A89E72A38035",
 						"flag": "5F"
 					}
+				},
+				"Texture2D_02": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F818CCC76DD8B7",
+						"flag": "5F"
+					}
 				}
 			},
 			"postInitProperties": {},

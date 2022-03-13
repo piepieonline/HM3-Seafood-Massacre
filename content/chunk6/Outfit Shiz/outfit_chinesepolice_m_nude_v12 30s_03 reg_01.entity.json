@@ -1,11 +1,11 @@
 {
-	"tempHash": "00CC099CD3764C87",
-	"tbluHash": "00627E634699545D",
+	"tempHash": "0095C6A3593270D3",
+	"tbluHash": "00EC78A6B8009CF5",
 	"rootEntity": "f45421e0223275d7",
 	"entities": {
 		"f45421e0223275d7": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePolice_M_Nude_v7",
+			"name": "OUTFIT_ChinesePolice_M_Nude_v12 reg_01",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -127,28 +127,28 @@
 		},
 		"9891c0a9e62730de": {
 			"parent": "f45421e0223275d7",
-			"name": "Head_asian_30s_03_male_reg_head_asian_02",
+			"name": "Head_asian_30s_03_male_reg_head_asian_01",
 			"template": "00B5FCED1E316C80",
 			"blueprint": "00A1DA827E15317D",
 			"properties": {
 				"Texture2D_01": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00CD5DC2AAEE68CD",
+						"resource": "006665E99F628B24",
 						"flag": "5F"
 					}
 				},
 				"Texture2DNormal_01": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "0092ADA61E432790",
+						"resource": "00FBC3A1FC633EF4",
 						"flag": "5F"
 					}
 				},
 				"Texture2D_03": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "0010629076C816C4",
+						"resource": "005001428C260781",
 						"flag": "5F"
 					}
 				},
