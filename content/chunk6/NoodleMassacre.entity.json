@@ -243,6 +243,10 @@
 				"m_bIgnoreLowNoise": {
 					"type": "bool",
 					"value": true
+				},
+				"m_bNeverSpectate": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {},
@@ -946,7 +950,7 @@
 						},
 						"position": {
 							"x": -89.10850524902344,
-							"y": 52,
+							"y": 49,
 							"z": 103
 						}
 					}
@@ -955,7 +959,7 @@
 					"type": "SVector3",
 					"value": {
 						"x": 16.690670013427734,
-						"y": 27.5,
+						"y": 22.5,
 						"z": 5
 					}
 				}
@@ -12933,7 +12937,7 @@
 			"properties": {
 				"m_bValue": {
 					"type": "bool",
-					"value": true
+					"value": false
 				}
 			},
 			"postInitProperties": {},
@@ -16688,7 +16692,7 @@
 			"properties": {
 				"m_aParents": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdf2f70d7dff0e", "abcd1b7db247496c", "abcda1dd88a83290", "abcdbff66014bd37", "abcd09859640a0bc", "abcd2714c44461ce", "abcdccbfee04cc72"]
+					"value": ["abcdacf636661ea5", "abcd4971723920df", "abcd59f0b36c00fe", "abcd7de565126adf", "abcd398fcefbe1ab", "abcd81e4c4cc9aa7", "abcd1d4b21163a1a", "abcd2f712dc5526b"]
 				}
 			},
 			"postInitProperties": {},
@@ -18537,8 +18541,8 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnActTimeout",
-				"shouldTrigger": "In",
-				"onEntity": "abcd87f76dc406b4"
+				"shouldTrigger": "Start",
+				"onEntity": "abcd6ca91e63695b"
 			}]
 		},
 		"abcdf448f3de59f9": {
@@ -19172,7 +19176,7 @@
 				},
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcda68da210bdc5"]
+					"value": ["abcd95b1168e6d39"]
 				}
 			},
 			"editorOnly": false,
@@ -21442,6 +21446,367 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd2f712dc5526b": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_02",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -49.6,
+							"y": 115.9,
+							"z": 100.5
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd20190a0fec27": {
+			"parent": "abcd13698b3d26da",
+			"name": "Ledge Blockers",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd1d4b21163a1a": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_01",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -45.6,
+							"y": 125.03,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd81e4c4cc9aa7": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_03",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -45.6,
+							"y": 127.03,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd398fcefbe1ab": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_04",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -43.4,
+							"y": 129.03,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd7de565126adf": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_05",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -45.6,
+							"y": 125.03,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.88,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdacf636661ea5": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_08",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -49.6,
+							"y": 115.9,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 2.3,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4971723920df": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_07",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -49.6,
+							"y": 120.9,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 2,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd59f0b36c00fe": {
+			"parent": "abcd20190a0fec27",
+			"name": "fence_wire_2m_a_06",
+			"template": "00B5A231105FF04B",
+			"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -47.4,
+							"y": 125.03,
+							"z": 101.9
+						}
+					}
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": {
+						"x": 1,
+						"y": 1,
+						"z": 1
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd6ca91e63695b": {
+			"parent": "abcd40e215880aeb",
+			"name": "act_mr_stand_inspect_100cm",
+			"template": "000C315200924862",
+			"blueprint": "00F9D4AE06E9B698",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -180
+						},
+						"position": {
+							"x": -48.455,
+							"y": 124.35,
+							"z": 101.012
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 10
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2eb7bfa5b5f3"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "In",
+				"onEntity": "abcd87f76dc406b4"
+			}]
 		}
 	},
 	"propertyOverrides": [{
@@ -23870,8 +24235,42 @@
 		"ref": "d05dc51107c73c15",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
 		"_comment": "CHAR_Wet_Guard_Steets_M__01"
+	}, {
+		"ref": "3be7a05957186f2c",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "BodyDump Coverplanes"
+	}, {
+		"ref": "14a0a80d34447326",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "54f0c0c08a93bbba",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "d6451fc3bc0bc0e0",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "513fe3d394856c28",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "241dea8bd380ce27",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "7f632cf648e03a37",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
+		"fromEntity": "abcd4920c9e3168a",
+		"toEntity": {
+			"ref": "24dea8f047925ff5",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "EventOccurred",
+		"toPinName": "Trigger",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
 		"fromEntity": "abcd66e3938abbd8",
 		"toEntity": {
 			"ref": "710845eac3f6aa0c",
