@@ -23562,6 +23562,38 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "b595f3efa52456d3",
+		"_comment": "Pallet Coverplane",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "1da69c371a21c577",
+		"_comment": "Pallet Coverplane",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "9769562ffdd2cec0",
+		"_comment": "Restaurant Alley Pallets",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e915c838e9cc96dd",
+		"_comment": "Restaurant Alley Pallets",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "9c2b53ff910c4a2c",
+		"_comment": "Restaurant Alley Pallets",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "6e258399634f649b",
+		"_comment": "Restaurant Alley Pallets",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "29d9e2f6741ef220",
+		"_comment": "Restaurant Alley Pallets",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "8e59931517b004b0",
+		"_comment": "Restaurant Alley Pallets",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "c482871d0d1832",
 		"_comment": "ALL STREET DUMPSTERS",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -24257,6 +24289,31 @@
 	}, {
 		"ref": "7f632cf648e03a37",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "86414028ef5ef66a",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "4a5640b5f47e00f9",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e05ee59da6414520",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "89d2ade99c1d61bd",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "360643e98ea57cd9",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "8ecd02b9a55dc967",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "d19a0a835f1c62b3",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "f8f096c57f549bca",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "End - Small cardboard boxes restaurant alley"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": "abcd4920c9e3168a",

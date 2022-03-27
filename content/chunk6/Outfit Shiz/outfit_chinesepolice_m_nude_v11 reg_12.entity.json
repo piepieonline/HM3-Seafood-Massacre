@@ -5,7 +5,7 @@
 	"entities": {
 		"f45421e0223275d7": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePolice_M_Nude_v11HUSH",
+			"name": "OUTFIT_ChinesePolice_M_Nude_v11Mogwai",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -378,148 +378,37 @@
 		},
 		"abcdc4fd819f18e5": {
 			"parent": "f45421e0223275d7",
-			"name": "Head_asian_30s_03HUSH",
-			"template": "00B5FCED1E316C80",
-			"blueprint": "00A1DA827E15317D",
+			"name": "head_arabic_30s_01_male_reg_head_asian_12",
+			"template": "0035AAEF8283C4C5",
+			"blueprint": "00C39E3D5C3D4AF9",
 			"properties": {
-				"ConstantColorRGB_02_Value": {
-					"type": "SColorRGB",
-					"value": "#e6fff8"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#ffffff"
-				},
-				"m_pMeshResource": {
+				"Texture2D_01": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "007FF7AE5414272B",
+						"resource": "00A300945DD21A18",
+						"flag": "5F"
+					}
+				},
+				"Texture2DNormal_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00C73CB1BC4558E5",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_03": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0004FA5856ECAB0E",
 						"flag": "5F"
 					}
 				},
 				"Texture2D_02": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "0020B8CC72C6219F",
+						"resource": "00F818CCC76DD8B7",
 						"flag": "5F"
 					}
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcdb90304035c7d": {
-			"parent": "abcdc4fd819f18e5",
-			"name": "male_reg_hush_head",
-			"template": "[assembly:/_pro/characters/assets/individuals/rat/hush/materials/male_reg_hush_head.mi].pc_entitytype",
-			"blueprint": "[assembly:/_pro/characters/assets/individuals/rat/hush/materials/male_reg_hush_head.mi].pc_entityblueprint",
-			"properties": {
-				"715347249": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0.0,
-							"y": 0.0,
-							"z": 0.0
-						},
-						"position": {
-							"x": -0.6596698760986328,
-							"y": 8.97413444519043,
-							"z": 2.9577319622039797
-						}
-					}
-				},
-				"Clients": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["f45421e0223275d7"]
-				}
-			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "f45421e0223275d7"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd70f13b91205f": {
-			"parent": "abcdb90304035c7d",
-			"name": "EventChannelReceiver_bool",
-			"template": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd1dee6065bc79"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "EventReceived",
-				"shouldTrigger": "Input",
-				"onEntity": "abcd2a8801d5058b",
-				"value": {
-					"type": "float32",
-					"value": 5
-				}
-			}]
-		},
-		"abcd2a8801d5058b": {
-			"parent": "abcdb90304035c7d",
-			"name": "SmoothOperator",
-			"template": "[modules:/zsmoothoperator.class].pc_entitytype",
-			"blueprint": "[modules:/zsmoothoperator.class].pc_entityblueprint",
-			"properties": {
-				"m_fTransitionTime": {
-					"type": "float32",
-					"value": 7
-				},
-				"m_bHasInitialValue": {
-					"type": "bool",
-					"value": true
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "Output",
-				"shouldTrigger": "Bleed",
-				"onEntity": "abcdb90304035c7d"
-			}]
-		},
-		"abcd1dee6065bc79": {
-			"parent": "abcdb90304035c7d",
-			"name": "HushDead",
-			"template": "[modules:/ztokenidentity.class].pc_entitytype",
-			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
-			"properties": {
-				"m_sName": {
-					"type": "ZString",
-					"value": "HushDead"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcde1c26fc7fa23": {
-			"parent": "abcdb90304035c7d",
-			"name": "HushNoseBleed",
-			"template": "[modules:/ztokenidentity.class].pc_entitytype",
-			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
-			"properties": {
-				"m_sName": {
-					"type": "ZString",
-					"value": "HushNoseBleed"
 				}
 			},
 			"postInitProperties": {},
