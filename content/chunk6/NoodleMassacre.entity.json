@@ -23562,6 +23562,18 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "ea25d8da60ea702e",
+		"_comment": "Drones",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "10c2f07eed25f919",
+		"_comment": "Arcade Dumpster",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a24e070d1168f069",
+		"_comment": "Block bottom floor closet",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "b595f3efa52456d3",
 		"_comment": "Pallet Coverplane",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -23814,9 +23826,6 @@
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
 		"ref": "5fc852ece98a7184",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "326b4faaaa53ec68",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
 		"ref": "49e0d2f248ea47d4",
