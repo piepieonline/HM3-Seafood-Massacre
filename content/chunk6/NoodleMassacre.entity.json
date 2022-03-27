@@ -1198,9 +1198,9 @@
 							"z": 0
 						},
 						"position": {
-							"x": 10.7858,
-							"y": 78.8353,
-							"z": 101.041
+							"x": 12.505,
+							"y": 72.9898,
+							"z": 100.85
 						}
 					}
 				},
@@ -1257,9 +1257,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": -185.222,
-							"y": 125.662,
-							"z": 85
+							"x": -169.326,
+							"y": 91.0691,
+							"z": 81
 						}
 					}
 				},
@@ -1312,9 +1312,9 @@
 							"z": 10.923433111197847
 						},
 						"position": {
-							"x": -108.089,
-							"y": 125.776,
-							"z": 113
+							"x": -127.645,
+							"y": 113.989,
+							"z": 109
 						}
 					}
 				},
@@ -2009,7 +2009,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 21
+					"value": 32
 				}
 			},
 			"postInitProperties": {
@@ -2844,7 +2844,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
+					"value": ["abcd604fe9fa0bb4", "abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
 				}
 			},
 			"postInitProperties": {},
@@ -2904,7 +2904,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd7d020caa4a61", "abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
+					"value": ["abcd604fe9fa0bb4", "abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd7d020caa4a61", "abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
 				}
 			},
 			"postInitProperties": {},
@@ -11230,7 +11230,7 @@
 						},
 						"position": {
 							"x": -108.801,
-							"y": 107.247,
+							"y": 106.247,
 							"z": 110.392
 						}
 					}
@@ -11270,7 +11270,7 @@
 						"position": {
 							"x": -116,
 							"y": 102.38,
-							"z": 108.241
+							"z": 107
 						}
 					}
 				},
@@ -11361,7 +11361,7 @@
 						"position": {
 							"x": -118.629,
 							"y": 101.777,
-							"z": 101.056
+							"z": 100.3
 						}
 					}
 				},
@@ -11437,16 +11437,16 @@
 							"z": 90
 						},
 						"position": {
-							"x": -104.604,
-							"y": 120.348,
-							"z": 113.45
+							"x": -124.709,
+							"y": 104.4,
+							"z": 105
 						}
 					}
 				},
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 20,
+						"x": 3,
 						"y": 3,
 						"z": 1.02
 					}
@@ -20391,7 +20391,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd5915c6b0f2db", "abcd543d993985c0", "abcd736bcfe99d0a"]
+					"value": ["abcda9f7e616b67e", "abcd1cd07ec8041a", "abcd2008f29b2b1a", "abcdd92e94827537", "abcd543d993985c0", "abcd736bcfe99d0a", "abcd5915c6b0f2db", "abcd8d6690fe4667"]
 				}
 			},
 			"postInitProperties": {},
@@ -21301,7 +21301,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 10
+					"value": 15
 				}
 			},
 			"postInitProperties": {
@@ -21807,6 +21807,201 @@
 				"shouldTrigger": "In",
 				"onEntity": "abcd87f76dc406b4"
 			}]
+		},
+		"abcd8d6690fe4667": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden 3rdfromtopCover",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -118.8,
+							"y": 107.4,
+							"z": 105
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 2.2,
+						"y": 3.8,
+						"z": 1.02
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd604fe9fa0bb4": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone LowestRoof VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -118.662,
+							"y": 97.1078,
+							"z": 101
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 25,
+						"y": 4.5,
+						"z": 5
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1cd07ec8041a": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden BottomCover1",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -125.836,
+							"y": 96.1,
+							"z": 101
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.7,
+						"y": 2,
+						"z": 1.02
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2008f29b2b1a": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden BottomCover2",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -122.974,
+							"y": 98.6657,
+							"z": 101.02
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.7,
+						"y": 2,
+						"z": 1.02
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda9f7e616b67e": {
+			"parent": "abcdaccb188c1a70",
+			"name": "WatchZoneHidden BottomLedgeCover",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": -107.673,
+							"y": 99.0278,
+							"z": 101.05
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 7,
+						"y": 1.6,
+						"z": 1.02
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
