@@ -30,7 +30,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcde9bbe0ed52c1", "abcd99fe1fec8571", "abcda50d072290f0", "abcde4ae6595beeb", "abcdf1fbfeed110d", "abcd6374d63c9288"]
+					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcde9bbe0ed52c1", "abcd99fe1fec8571", "abcda50d072290f0", "abcde4ae6595beeb", "abcdf1fbfeed110d", "abcd6374d63c9288", "abcda0df5a1af4c8"]
 				}
 			},
 			"editorOnly": false,
@@ -45,7 +45,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcdc044ec900a3b", "abcd11d0d2f1dd3e", "abcdad1b33a01df5", "abcdf6334e4e1384", "abcd13bd785c0307", "abcd4dc61e8e03a9", "abcdd983803e6f36"]
+					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcdc044ec900a3b", "abcd11d0d2f1dd3e", "abcdad1b33a01df5", "abcdf6334e4e1384", "abcd13bd785c0307", "abcd4dc61e8e03a9", "abcdd983803e6f36", "abcdeeef49005f98"]
 				}
 			},
 			"editorOnly": false,
@@ -60,7 +60,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcd32ed92cfd258", "abcdb7d17fe70f5e", "abcd2123cced9a7a", "abcdc7d5c2035ec2", "abcd83600033938f", "abcd3b7b56185c67", "abcd41930a922231"]
+					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcd32ed92cfd258", "abcdb7d17fe70f5e", "abcd2123cced9a7a", "abcdc7d5c2035ec2", "abcd83600033938f", "abcd3b7b56185c67", "abcd41930a922231", "abcd0e5bcfd4bf4a"]
 				}
 			},
 			"editorOnly": false,
@@ -595,6 +595,60 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "00AC2525600A898E",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda0df5a1af4c8": {
+			"parent": "696226ea3a8aea66",
+			"name": "10",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A258B33C4BDD4F",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0e5bcfd4bf4a": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var10",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A3308C188D21A9",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdeeef49005f98": {
+			"parent": "529de957a31989ac",
+			"name": "Var10",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "008CE342B8711FB2",
 						"flag": "9F"
 					}
 				}
