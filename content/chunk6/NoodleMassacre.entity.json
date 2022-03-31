@@ -2027,7 +2027,7 @@
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd2d00fce5938a"
+				"onEntity": "abcdf067c7f070ea"
 			}, {
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Clear",
@@ -22002,6 +22002,50 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdf067c7f070ea": {
+			"parent": "abcda024411ee09a",
+			"name": "act_mr_stand_smoke",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_smoke.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_smoke.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 145.002979908338
+						},
+						"position": {
+							"x": -64.871,
+							"y": 79.4875,
+							"z": 97.01
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 30
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdad317c818a0c"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd2d00fce5938a"
+			}]
 		}
 	},
 	"propertyOverrides": [{
