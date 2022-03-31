@@ -1,6 +1,6 @@
 {
-	"tempHash": "002D1375DD934541",
-	"tbluHash": "00BBAF642DFE34C8",
+	"tempHash": "00CBEC7C28B9A4B4",
+	"tbluHash": "00119CA152AA4516",
 	"rootEntity": "83bbed82c7b0e5a5",
 	"entities": {
 		"a76f49e8f733b13d": {
@@ -37,30 +37,6 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "8298a676410c1722"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"1c8f083089421239": {
-			"parent": "83bbed82c7b0e5a5",
-			"name": "Spine2_Attacher",
-			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zcompositeentity.class].entitytype,[modules:/zboneattachaspect.class].entitytype).pc_entitytype",
-			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zcompositeentity.class].entitytype,[modules:/zboneattachaspect.class].entitytype).pc_entityblueprint",
-			"properties": {
-				"m_BoneName": {
-					"type": "ZString",
-					"value": "Spine2"
-				}
-			},
-			"postInitProperties": {
-				"m_linkedEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "83bbed82c7b0e5a5"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "83bbed82c7b0e5a5"
 				}
 			},
 			"editorOnly": false,
@@ -171,21 +147,13 @@
 		},
 		"fb0461f252d5c625": {
 			"parent": "83bbed82c7b0e5a5",
-			"name": "Hair_Cap",
-			"template": "006594C7AF2B3472",
-			"blueprint": "000B3B438FC8C9AC",
+			"name": "Hair_Sides_S",
+			"template": "00538F0D8B33EA7C",
+			"blueprint": "00616A7BAAB2C145",
 			"properties": {
 				"ConstantColorRGB_02_Value": {
 					"type": "SColorRGB",
-					"value": "#8a7d71"
-				},
-				"ConstantColorRGB_05_Value": {
-					"type": "SColorRGB",
-					"value": "#fce1d2"
-				},
-				"ConstantColorRGB_03_Value": {
-					"type": "SColorRGB",
-					"value": "#524a43"
+					"value": "#2b2b2b"
 				}
 			},
 			"postInitProperties": {},
@@ -194,7 +162,7 @@
 		},
 		"83bbed82c7b0e5a5": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePolice_M_Actor_v0",
+			"name": "OUTFIT_ChinesePolice_M_Actor_v1",
 			"template": "00C0753FBF784C66",
 			"blueprint": "007294473357329E",
 			"properties": {
@@ -612,37 +580,17 @@
 		},
 		"503782578736c847": {
 			"parent": "83bbed82c7b0e5a5",
-			"name": "Head_asian_30s_03_male_reg_head_asian_01",
+			"name": "Head_asian_30s_3",
 			"template": "00B5FCED1E316C80",
-			"blueprint": "00A1DA827E15317D",
+			"blueprint": "0A1DA827E15317D",
 			"properties": {
-				"Texture2D_01": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "006665E99F628B24",
-						"flag": "5F"
-					}
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
 				},
-				"Texture2DNormal_01": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00FBC3A1FC633EF4",
-						"flag": "5F"
-					}
-				},
-				"Texture2D_03": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "005001428C260781",
-						"flag": "5F"
-					}
-				},
-				"Texture2D_02": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00F818CCC76DD8B7",
-						"flag": "5F"
-					}
+				"ConstantColorRGB_01_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
 				}
 			},
 			"postInitProperties": {},
