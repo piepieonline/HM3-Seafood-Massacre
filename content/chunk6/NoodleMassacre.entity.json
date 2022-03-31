@@ -5955,11 +5955,11 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 5
+					"value": 1
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
-					"value": 1
+					"value": 0
 				}
 			},
 			"postInitProperties": {
@@ -7589,7 +7589,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 5
+					"value": 10
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
@@ -23757,6 +23757,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "a57a2cf183de31f2",
+		"_comment": "Apartment Rooftop NPC stuff",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "ea25d8da60ea702e",
 		"_comment": "Drones",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
