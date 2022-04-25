@@ -81,6 +81,10 @@
 				"m_InventoryItemKeys": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcdaebfdc6fc13e"]
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0380ada9515c"]
 				}
 			},
 			"postInitProperties": {
@@ -366,6 +370,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -425,6 +433,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -793,7 +805,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"695c9eec21f0d23": {
-			"parent": "f09f347097e9fd79",
+			"parent": "abcd3bac4f29adb9",
 			"name": "Prof_Agent47",
 			"template": "[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entityblueprint",
@@ -876,7 +888,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd3283846a3f03": {
-			"parent": "f09f347097e9fd79",
+			"parent": "abcd3bac4f29adb9",
 			"name": "Prof_Noodle_Meeting",
 			"template": "007E827EA0D8ABB8",
 			"blueprint": "00D8D0CD7A6B623C",
@@ -906,7 +918,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd97b18facbcd7": {
-			"parent": "f09f347097e9fd79",
+			"parent": "abcd3bac4f29adb9",
 			"name": "Prof_Police",
 			"template": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_sheep_unique_bodyguard_leader.entitytemplate].pc_entityblueprint",
@@ -1286,6 +1298,10 @@
 				"m_InventoryItemKeys": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": []
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -1414,6 +1430,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -2200,6 +2220,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -4166,49 +4190,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdc3fbeb09b34f": {
-			"parent": "abcd9105b49b083c",
-			"name": "TEST Poison Spawner",
-			"template": "[modules:/zitemspawner.class].pc_entitytype",
-			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						}
-					}
-				},
-				"m_bSpawnOnStart": {
-					"type": "bool",
-					"value": true
-				},
-				"m_ePhysicsMode": {
-					"type": "ZItemSpawner.EPhysicsMode",
-					"value": "EPM_KINEMATIC"
-				}
-			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd3ebd6ae8a2b6"
-				},
-				"m_rMainItemKey": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd207fc49ace75"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"abcd9105b49b083c": {
 			"parent": "abcd9d3b85c4d569",
 			"name": "TEST",
@@ -4782,21 +4763,6 @@
 						"externalScene": null,
 						"exposedEntity": "RifleMissing"
 					}]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd207fc49ace75": {
-			"parent": "abcd9105b49b083c",
-			"name": "TEST ItemKey",
-			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
-			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryId": {
-					"type": "ZGuid",
-					"value": "49765e76-dea7-4ad4-b502-2bad7727a15f"
 				}
 			},
 			"postInitProperties": {},
@@ -5562,69 +5528,6 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcda8678a0ed7c5": {
-			"parent": "abcd9105b49b083c",
-			"name": "TEST DartGun",
-			"template": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
-			"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
-			"properties": {
-				"m_RepositoryId": {
-					"type": "ZGuid",
-					"value": "351c144c-8687-426a-a6f0-c4abd7021062"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcde0d3a226bf54": {
-			"parent": "abcd9105b49b083c",
-			"name": "TEST DartGun Spawner",
-			"template": "[modules:/zitemspawner.class].pc_entitytype",
-			"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						}
-					}
-				},
-				"m_bSpawnOnStart": {
-					"type": "bool",
-					"value": true
-				},
-				"m_ePhysicsMode": {
-					"type": "ZItemSpawner.EPhysicsMode",
-					"value": "EPM_KINEMATIC"
-				}
-			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd3ebd6ae8a2b6"
-				},
-				"m_rMainItemKey": {
-					"type": "SEntityTemplateReference",
-					"value": "abcda8678a0ed7c5"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "ItemSpawned",
-				"shouldTrigger": "GetIndex",
-				"onEntity": "abcdfa5dc6d88a60"
-			}]
-		},
 		"abcd492e88ed0db0": {
 			"parent": "abcd9df9701a171c",
 			"name": "HasSniperFiredAt47 VBB",
@@ -5960,6 +5863,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 0
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -6161,6 +6068,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -6362,6 +6273,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -6567,6 +6482,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -6736,6 +6655,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -6937,6 +6860,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -7598,6 +7525,10 @@
 				"m_bWeaponUnholstered": {
 					"type": "bool",
 					"value": true
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -8043,6 +7974,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -8310,6 +8245,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -13742,6 +13681,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -14080,6 +14023,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 0
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -14143,6 +14090,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 1
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -14563,7 +14514,7 @@
 				},
 				"m_bIsIllegal": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bActionHasValidDisguise": {
 					"type": "bool",
@@ -20750,6 +20701,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 0
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -21121,6 +21076,10 @@
 				"m_nOutfitCharset": {
 					"type": "int32",
 					"value": 0
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
 				}
 			},
 			"postInitProperties": {
@@ -22046,9 +22005,47 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd2d00fce5938a"
 			}]
+		},
+		"abcd3bac4f29adb9": {
+			"parent": "abcd9d3b85c4d569",
+			"name": "Disguises",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd0380ada9515c": {
+			"parent": "abcd3bac4f29adb9",
+			"name": "Prof_Wet_Worker_DumplingCook",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_wet_worker_dumplingcook.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_wet_worker_dumplingcook.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "c35a6ec40cfaa41d",
+			"comment": "ICA Apartment Rules",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_KeeperProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "e094cc8090d1bed1",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "762b112b948e9b30",
 			"comment": "Hobo Crowbar",
