@@ -799,6 +799,10 @@
 						"ref": "58d50e428bb02419",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 					}]
+				},
+				"m_aDisguisesFriskExempt": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdb770cf32f96b"]
 				}
 			},
 			"editorOnly": false,
