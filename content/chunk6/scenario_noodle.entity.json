@@ -18712,7 +18712,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd857e0f74e7c1", "abcd33f28136cbd9"]
+					"value": ["abcd857e0f74e7c1", "abcd33f28136cbd9", "abcde7e1f1d28dce"]
 				}
 			},
 			"editorOnly": false,
@@ -22963,18 +22963,6 @@
 			"RequireActivation": {
 				"type": "bool",
 				"value": false
-			}
-		}
-	}, {
-		"entities": [{
-			"ref": "88e6b52c61628f40",
-			"comment": "Karoake Music",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}],
-		"properties": {
-			"m_pMainEvent": {
-				"type": "ZRuntimeResourceID",
-				"value": "00161ECFA6ADD670"
 			}
 		}
 	}, {
