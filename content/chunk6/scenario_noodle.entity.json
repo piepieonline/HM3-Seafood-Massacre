@@ -1,6 +1,6 @@
 {
-	"tempHash": "0055FED55FB34E5C",
-	"tbluHash": "00C5C81891F5566A",
+	"tempHash": "000D36CCB954F4D4",
+	"tbluHash": "00F1543E51C36ACE",
 	"rootEntity": "fffffffffffffffe",
 	"entities": {
 		"fffffffffffffffe": {
@@ -8216,9 +8216,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -182.087,
-							"y": 132.061,
-							"z": 85
+							"x": -171.47,
+							"y": 94.54,
+							"z": 81
 						}
 					}
 				},
@@ -24805,7 +24805,7 @@
 			"$val": null
 		}
 	}],
-	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "[assembly:/_pro/scenes/missions/wet/commentary_rat.brick].pc_entitytype", "006B472172270F02", "00A789B895DCDFE3"],
+	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "006B472172270F02", "00A789B895DCDFE3"],
 	"subType": 1,
 	"quickEntityVersion": 2.1
 }
