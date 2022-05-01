@@ -896,7 +896,16 @@
 			"name": "Prof_Noodle_Meeting",
 			"template": "007E827EA0D8ABB8",
 			"blueprint": "00D8D0CD7A6B623C",
-			"properties": {},
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "abcd0cb4801cecce",
+						"externalScene": null,
+						"exposedEntity": "LegalProfession"
+					}]
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -1150,6 +1159,14 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
+				},
+				"m_bIsIllegal": {
+					"type": "bool",
+					"value": true
+				},
+				"LegalProfession": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd0380ada9515c"]
 				}
 			},
 			"postInitProperties": {},
