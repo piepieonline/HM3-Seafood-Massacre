@@ -13121,7 +13121,7 @@
 		},
 		"abcd1501ba6455c8": {
 			"parent": "abcd4f4c44d5c8c2",
-			"name": "CHAR_Wet_Civilian_Streets_F__01",
+			"name": "CHAR_RandomWoman",
 			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -18332,7 +18332,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 0
+					"value": 5
 				},
 				"m_sActorName": {
 					"type": "ZString",
