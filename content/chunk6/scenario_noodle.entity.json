@@ -22344,6 +22344,30 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcdf1282eaab094"
 			}]
+		},
+		"abcd35d2740f2bee": {
+			"parent": "abcd29d4b41732ba",
+			"name": "HM is Coup De Grace (Neck snap on floor)",
+			"template": "[modules:/zmonitorhitmanlocomotionstateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zmonitorhitmanlocomotionstateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_movementState": {
+					"type": "EBaseMovementType",
+					"value": "eMovementCoupDeGrace"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "StateEntered",
+				"shouldTrigger": "Poll",
+				"onEntity": "abcdd57c38e9941c"
+			}]
 		}
 	},
 	"propertyOverrides": [{
