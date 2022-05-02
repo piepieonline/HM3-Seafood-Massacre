@@ -139,7 +139,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd3032844a538c", "42d22acc5cf0f173", "a27cd6c3f8371168", "36bf599d786a4413", "503782578736c847", "3cd1dc5ac974984e", "26ef067e52b2b780", "c7a381f3ea2f679a", "288340fcc105e760", "fb0461f252d5c625"]
+					"value": ["abcdab55c2e59789", "abcd3032844a538c", "42d22acc5cf0f173", "a27cd6c3f8371168", "36bf599d786a4413", "503782578736c847", "3cd1dc5ac974984e", "c7a381f3ea2f679a", "288340fcc105e760", "fb0461f252d5c625"]
 				}
 			},
 			"editorOnly": false,
@@ -355,44 +355,6 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "0057D5645A8713BE",
-						"flag": "5F"
-					}
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"26ef067e52b2b780": {
-			"parent": "83bbed82c7b0e5a5",
-			"name": "Belt_StrapBuckle",
-			"template": "0017355DDB3D75A3",
-			"blueprint": "005F1B0540C7F863",
-			"properties": {
-				"Diffuse_Saturation_01_Value": {
-					"type": "float32",
-					"value": 0
-				},
-				"Diffuse_Color_01_Value": {
-					"type": "SColorRGB",
-					"value": "#8c8884"
-				},
-				"ConstantVector1D_01_Value": {
-					"type": "float32",
-					"value": 5
-				},
-				"m_PrimitiveScale": {
-					"type": "SVector3",
-					"value": {
-						"x": 1.5,
-						"y": 1.5,
-						"z": 1.3
-					}
-				},
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0031B71AECF15ABE",
 						"flag": "5F"
 					}
 				}
@@ -737,6 +699,24 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcdab55c2e59789": {
+			"parent": "83bbed82c7b0e5a5",
+			"name": "Mesh_Belt",
+			"template": "[modules:/zbodypartentity.class].pc_entitytype",
+			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pMeshResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00C47E1290E2170D",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [],
