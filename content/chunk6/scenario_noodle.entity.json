@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcdcbfe5fec2e2e", "abcdd0110d31999a", "abcdccbfee04cc72", "abcd252bc988cbbe", "abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
+					"entities": ["abcdef1d10259174", "abcdd6a87b40da7b", "abcdcbfe5fec2e2e", "abcdd0110d31999a", "abcdccbfee04cc72", "abcd252bc988cbbe", "abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": ["abcdccbfee04cc72"]
@@ -22167,6 +22167,204 @@
 				"shouldTrigger": "Poll",
 				"onEntity": "abcdd57c38e9941c"
 			}]
+		},
+		"abcd2eaac7ac9ff7": {
+			"parent": "abcde667f100ebbc",
+			"name": "monitor_floorstand_a",
+			"template": "00D08C274EE90D43",
+			"blueprint": "00966670F77BE56C",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 158
+						},
+						"position": {
+							"x": -60.0307,
+							"y": 92.2876,
+							"z": 113
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "3433b4dad4c994e6",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc120c63e4e4e": {
+			"parent": "abcde667f100ebbc",
+			"name": "monitor_floorstand_a",
+			"template": "00D08C274EE90D43",
+			"blueprint": "00966670F77BE56C",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -160.7347322208125
+						},
+						"position": {
+							"x": -61.42490005493164,
+							"y": 92.19989776611328,
+							"z": 113
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "3433b4dad4c994e6",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					}
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd6a87b40da7b": {
+			"parent": "abcd2eaac7ac9ff7",
+			"name": "tv_moderndesign_Wall_A_00_01",
+			"template": "[assembly:/_pro/environment/templates/props/electronics/tv_screens_a.template?/tv_moderndesign_wall_a_00.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/electronics/tv_screens_a.template?/tv_moderndesign_wall_a_00.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -10.131036837994248,
+							"y": 0.012834254894296494,
+							"z": -0.144786547874415
+						},
+						"position": {
+							"x": -0.013817000202834606,
+							"y": -0.06781099736690521,
+							"z": 1.3867650032043457
+						}
+					}
+				},
+				"GlowPower": {
+					"type": "float32",
+					"value": 1000
+				},
+				"m_vFarAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 0.5,
+						"y": 5
+					}
+				},
+				"DiffusePower": {
+					"type": "float32",
+					"value": 100
+				},
+				"ScreenImageA": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "008D4023C2D66A27",
+						"flag": "5F"
+					}
+				},
+				"CameraFishEye": {
+					"type": "float32",
+					"value": 0.009999999776482582
+				}
+			},
+			"postInitProperties": {
+				"PowerCondition": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "abcd90ff1dc668fe",
+						"externalScene": null,
+						"exposedEntity": "Camera_OnOff"
+					}]
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2eaac7ac9ff7"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdef1d10259174": {
+			"parent": "abcdc120c63e4e4e",
+			"name": "tv_moderndesign_Wall_A_00_01",
+			"template": "[assembly:/_pro/environment/templates/props/electronics/tv_screens_a.template?/tv_moderndesign_wall_a_00.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/electronics/tv_screens_a.template?/tv_moderndesign_wall_a_00.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -10.131036837994248,
+							"y": 0.012834254894296494,
+							"z": -0.144786547874415
+						},
+						"position": {
+							"x": -0.013817000202834606,
+							"y": -0.06781099736690521,
+							"z": 1.3867650032043457
+						}
+					}
+				},
+				"GlowPower": {
+					"type": "float32",
+					"value": 1000
+				},
+				"m_vFarAttenuation": {
+					"type": "SVector2",
+					"value": {
+						"x": 0.5,
+						"y": 5
+					}
+				},
+				"DiffusePower": {
+					"type": "float32",
+					"value": 100
+				},
+				"ScreenImageA": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "003E2C3883D82ED6",
+						"flag": "5F"
+					}
+				},
+				"CameraFishEye": {
+					"type": "float32",
+					"value": 0.009999999776482582
+				}
+			},
+			"postInitProperties": {
+				"PowerCondition": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [{
+						"ref": "abcd54bfdc81b274",
+						"externalScene": null,
+						"exposedEntity": "Camera_OnOff"
+					}]
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdc120c63e4e4e"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
