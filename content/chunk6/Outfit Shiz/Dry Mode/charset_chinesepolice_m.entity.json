@@ -30,7 +30,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcd1f00e875803b"]
+					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcd1f00e875803b", "abcd5e9b2f14245b", "abcd847e260202f6", "abcd2c6e88fc19cb", "abcdb52e12ef4541", "abcdf052f028d06b"]
 				}
 			},
 			"editorOnly": false,
@@ -45,7 +45,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcd0c5ad60fac61", "abcdf176fc4e1422"]
+					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcd0c5ad60fac61", "abcdf176fc4e1422", "abcdd332f6791654", "abcd60fa3864bcd4", "abcd586ecedddd20", "abcdd14c9787df8a", "abcdfcdcfaa76a00"]
 				}
 			},
 			"editorOnly": false,
@@ -60,7 +60,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcdaae647a32922", "abcdece80ae0cba5"]
+					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcdaae647a32922", "abcdece80ae0cba5", "abcd8a70cc03f45d", "abcd86df3e7e7b3d", "abcd0856d34eedaa", "abcd1862b12989ef", "abcdccdcdc43f2e5"]
 				}
 			},
 			"editorOnly": false,
@@ -198,7 +198,7 @@
 				"m_Outfit": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "0085D99EA00CAA07",
+						"resource": "00BD3A51A800F905",
 						"flag": "9F"
 					}
 				}
@@ -245,7 +245,7 @@
 		},
 		"abcd1f00e875803b": {
 			"parent": "696226ea3a8aea66",
-			"name": "4JacketHush",
+			"name": "4JacketGlasses",
 			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
 			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
 			"properties": {
@@ -325,6 +325,276 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "00A80D32CB9964B9",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd847e260202f6": {
+			"parent": "696226ea3a8aea66",
+			"name": "6 LongGlasses 30s_01",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0023C4F43F08DF4C",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf052f028d06b": {
+			"parent": "696226ea3a8aea66",
+			"name": "9 ShortGloves asian_11b",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BF08B6EDE69FF8",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5e9b2f14245b": {
+			"parent": "696226ea3a8aea66",
+			"name": "5 Long 30s_04",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00D3A7B6F92D217F",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb52e12ef4541": {
+			"parent": "696226ea3a8aea66",
+			"name": "8 ShortGloves asian_02",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0013F1EF3FFB8424",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2c6e88fc19cb": {
+			"parent": "696226ea3a8aea66",
+			"name": "7 SNIPER",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "005E00041F528378",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1862b12989ef": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var8 asian_02",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00CC099CD3764C87",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdccdcdc43f2e5": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var9 asian_11b",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A3308C188D21A9",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd86df3e7e7b3d": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var6 30s_01",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F054F7C942009E",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd8a70cc03f45d": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var5 30s_04",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "000AB3128AE7A4AD",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0856d34eedaa": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var7 SNIPER",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "007CA22B31D4AF01",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd14c9787df8a": {
+			"parent": "529de957a31989ac",
+			"name": "Var8 ShortGloves",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "000FE7C786724FEC",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd332f6791654": {
+			"parent": "529de957a31989ac",
+			"name": "Var5 Long",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BD3A51A800F905",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdfcdcfaa76a00": {
+			"parent": "529de957a31989ac",
+			"name": "Var9 ShortGloves",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "000FE7C786724FEC",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd60fa3864bcd4": {
+			"parent": "529de957a31989ac",
+			"name": "Var6 Glasses",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0085D99EA00CAA07",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd586ecedddd20": {
+			"parent": "529de957a31989ac",
+			"name": "Var7 Sniper",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "003F90BA8182A7F9",
 						"flag": "9F"
 					}
 				}
