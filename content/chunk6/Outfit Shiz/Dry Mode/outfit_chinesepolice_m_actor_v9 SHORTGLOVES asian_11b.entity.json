@@ -1,10 +1,10 @@
 {
-	"tempHash": "0085D99EA00CAA07",
-	"tbluHash": "0090D4771F4F317F",
+	"tempHash": "00BF08B6EDE69FF8",
+	"tbluHash": "006D7384D7E19AE2",
 	"rootEntity": "c1e434f458c274df",
 	"entities": {
 		"a0227f356d92c6e": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "Norml",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -41,16 +41,17 @@
 		},
 		"c4daea86e99bf487": {
 			"parent": "c1e434f458c274df",
-			"name": "Mesh_Boots",
-			"template": "[modules:/zbodypartentity.class].pc_entitytype",
-			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+			"name": "Shoes_Boots_Plain",
+			"template": "00636C233DF7C596",
+			"blueprint": "00285A52ACEC10A2",
 			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "004E7A668B12FD61",
-						"flag": "5F"
-					}
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#292929"
+				},
+				"ConstantVector1D_04_Value": {
+					"type": "float32",
+					"value": 0.25999999046325684
 				}
 			},
 			"postInitProperties": {},
@@ -60,8 +61,8 @@
 		"d8ee225b56c4d47d": {
 			"parent": "7134fdcacc8c9b13",
 			"name": "facilityguard_shirt",
-			"template": "008A526029F12119",
-			"blueprint": "003D7200D03AF391",
+			"template": "008A526029F12120",
+			"blueprint": "003D7200D03AF392",
 			"properties": {
 				"1239136802": {
 					"type": "IRenderMaterialEntity.EModifierOperation",
@@ -160,7 +161,7 @@
 				"HeadMaterialToOverride": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "009F7978C601815A",
+						"resource": "00478D7A62EF9561",
 						"flag": "5F"
 					}
 				}
@@ -244,7 +245,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"28611685cafcab61": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "Albedo",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -276,7 +277,7 @@
 			}]
 		},
 		"72e994b2d2a4c8d4": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "roough",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -305,26 +306,48 @@
 		},
 		"637003535601e69a": {
 			"parent": "c1e434f458c274df",
-			"name": "Head_47",
-			"template": "00537D16B5CE7286",
-			"blueprint": "00F2E4A932ECAA63",
-			"properties": {},
+			"name": "head_hispanic_30s_01_beard11b",
+			"template": "00CE40BBE1C715B2",
+			"blueprint": "0015454F528A5BD8",
+			"properties": {
+				"Texture2D_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "004340D5D2E29718",
+						"flag": "5F"
+					}
+				},
+				"Texture2DNormal_01": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00CFD67D45F91A60",
+						"flag": "5F"
+					}
+				},
+				"Texture2D_03": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00D033A75D83AB64",
+						"flag": "5F"
+					}
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
 		"bb520fc692be5c97": {
 			"parent": "c1e434f458c274df",
-			"name": "Arms_Biceps_Hand",
-			"template": "0081BA55B3D8292E",
-			"blueprint": "00CFA61BB1571AF8",
+			"name": "Arms_Biceps_Wrist",
+			"template": "003501B0C44CFF39",
+			"blueprint": "00E838DEB7DEA62A",
 			"properties": {},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
 		"e21635841cff5910": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "Albedo 2",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -351,69 +374,9 @@
 				"onEntity": "26dc6fb155e9bd9"
 			}]
 		},
-		"d4ba64e1a54f9b1c": {
-			"parent": "d3e57b3575b287f1",
-			"name": "WalkieTalkie",
-			"template": "002B96597756DF50",
-			"blueprint": "005268860122C61E",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 38.90581056383383,
-							"y": -9.540167152582319,
-							"z": 1.864096315587437
-						},
-						"position": {
-							"x": 0.11740300059318542,
-							"y": -0.04370899870991707,
-							"z": 0.04319300130009651
-						}
-					}
-				}
-			},
-			"postInitProperties": {
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "d3e57b3575b287f1"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"d3e57b3575b287f1": {
-			"parent": "c1e434f458c274df",
-			"name": "Attacher_Chest",
-			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zcompositeentity.class].entitytype,[modules:/zboneattachaspect.class].entitytype).pc_entitytype",
-			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zcompositeentity.class].entitytype,[modules:/zboneattachaspect.class].entitytype).pc_entityblueprint",
-			"properties": {
-				"m_BoneName": {
-					"type": "ZString",
-					"value": "L_Clavicle"
-				}
-			},
-			"postInitProperties": {
-				"m_linkedEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "c1e434f458c274df"
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "c1e434f458c274df"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"inputCopying": [{
-				"whenTriggered": "ConstantVector1D_04_Value",
-				"alsoTrigger": "ConstantVector1D_04_Value",
-				"onEntity": "d4ba64e1a54f9b1c"
-			}]
-		},
 		"c1e434f458c274df": {
 			"parent": null,
-			"name": "OUTFIT_ChinesePoliceShort_Hero_v2",
+			"name": "OUTFIT_ChinesePolice_M_Actor_v10 SHORTGLOVES asian_11b",
 			"template": "00EC23CD5ED3321D",
 			"blueprint": "00F08545F4143973",
 			"properties": {
@@ -527,7 +490,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
+					"value": ["abcd0a7cf9e7f4c8", "abcd575e6efe73c8", "abcd19dd4eb72656", "26dc6fb155e9bd9", "c4daea86e99bf487", "7134fdcacc8c9b13", "bb520fc692be5c97", "637003535601e69a", "a4d89cb4392bcf9b", "d7920184b78105af"]
 				}
 			},
 			"editorOnly": false,
@@ -578,7 +541,7 @@
 			"inputCopying": []
 		},
 		"ac7e637bea4ad85f": {
-			"parent": "c1e434f458c274df",
+			"parent": "5e5f5f0ff039821f",
 			"name": "baseRough",
 			"template": "[modules:/zmathlerp.class].pc_entitytype",
 			"blueprint": "[modules:/zmathlerp.class].pc_entityblueprint",
@@ -610,10 +573,6 @@
 			}, {
 				"onEvent": "Lerp",
 				"shouldTrigger": "ConstantVector1D_04_Value",
-				"onEntity": "d3e57b3575b287f1"
-			}, {
-				"onEvent": "Lerp",
-				"shouldTrigger": "ConstantVector1D_04_Value",
 				"onEntity": "26dc6fb155e9bd9"
 			}]
 		},
@@ -626,7 +585,7 @@
 				"m_pMeshResource": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "004983611F1D2296",
+						"resource": "004983611F1D2297",
 						"flag": "5F"
 					}
 				}
@@ -761,6 +720,44 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd575e6efe73c8": {
+			"parent": "c1e434f458c274df",
+			"name": "Hair_Cap",
+			"template": "006594C7AF2B3472",
+			"blueprint": "000B3B438FC8C9AC",
+			"properties": {
+				"ConstantColorRGB_02_Value": {
+					"type": "SColorRGB",
+					"value": "#8a7d71"
+				},
+				"ConstantColorRGB_05_Value": {
+					"type": "SColorRGB",
+					"value": "#fce1d2"
+				},
+				"ConstantColorRGB_03_Value": {
+					"type": "SColorRGB",
+					"value": "#524a43"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0a7cf9e7f4c8": {
+			"parent": "c1e434f458c274df",
+			"name": "Gloves_Rubber_Medical",
+			"template": "00E8A1383E199041",
+			"blueprint": "009398722444190C",
+			"properties": {
+				"Diffuse_Color_01_Value": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [],

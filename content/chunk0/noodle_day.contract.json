@@ -1,0 +1,293 @@
+{
+    "Data": {
+        "Objectives": [{
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/red.jpg",
+            "BriefingName": "Red Dragon",
+            "BriefingText": "A target has escaped.",
+            "LongBriefingText": "Lee Hong has sent a negotiator to broker peace with the police and the Blue Lotus Triad. Our client wants this to fail, so the Red Dragons must be blamed for killing the peace emissaries. This means that the Red Dragon negotiator cannot live to contradict this story, and his body must not be left anywhere where it will be found.",
+            "HUDTemplate": {
+                "display": "Eliminate the Red Dragon Negotiator"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1b"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },  {
+            "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
+            "Category": "primary",
+            "Primary": true,
+            "ObjectiveType": "custom",
+            "ForceShowOnLoadingScreen": true,
+            "BriefingName": "Hide Body",
+            "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
+            "HUDTemplate": {
+                "display": "Conceal the Red Dragon negotiator's body",
+                "iconType": 17
+            },
+            "BriefingText": "Conceal the Red Dragon negotiator's body",
+            "LongBriefingText": "His corpse would tip off the Blue Lotus and the police, so 'keep things underground.'",
+            "Type": "statemachine",
+            "Definition": {
+                "Scope": "session",
+                "States": {
+                    "Start": {
+                        "BodyHidden": [{
+                                "Condition": {
+                                            "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                        },
+                                "Transition": "Success"
+                            }
+                        ],  "BodyBagged": [{
+                            "Condition": {
+                                        "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                    },
+                            "Transition": "Failure"
+                        }
+                    ]
+                    }
+                }
+            }
+        },  {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/chief.jpg",
+            "BriefingName": "Police Chief",
+            "BriefingText": "A target has escaped.",
+            "LongBriefingText": "Since the police are presiding over this meeting in the interests of preserving the peace, you'll have to include the chief in this job.",
+            "HUDTemplate": {
+                "display": "Eliminate the Chief of Police"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1d"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },
+        {
+                "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
+				"ObjectiveType": "custom",
+				"Image": "images/noodle/amulet.jpg",
+				"ForceShowOnLoadingScreen": true,
+				"BriefingName": "Frame Job",
+                "BriefingText": "Leave the Red Dragon Amulet at the meeting table to implicate the Red Dragons",
+                "HUDTemplate": {
+                    "display": "Leave the Red Dragon Amulet at the meeting table",
+                    "iconType": 17
+                },
+				"LongBriefingText": "Drop a Red Dragon amulet at the table of the restaurant to ensure they take the blame.",
+                "Category": "primary",
+                "Scope": "hit",
+                "Type": "statemachine",
+                "Definition": {
+					"Context": {
+                        "Targets": ["94ab740b-b30f-4086-9aea-5c9c0de28456"]
+                    },
+                    "States": {
+                        "Start": {
+                            "AmuletPlaced": {
+                                "Transition": "Success"
+                            }
+                        }
+                    }
+                },
+				"OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed",
+                        "Visible": false
+                    }
+                },
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": true
+                    }
+                }
+            }, {
+                "Id": "b8ffc636-4f9a-49b5-8293-98839a6ca202",
+                "ObjectiveType": "custom",
+                "IgnoreIfInactive": true,
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": false
+                    }
+                },
+                "OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed"
+                    }
+                },
+                "Image": "images/contractconditions/condition_contrac_all_shots_fired_hit_an_npc.jpg",
+                "BriefingName": "No Witnesses",
+                "BriefingText": "No one must know the Red Dragons were not responsible",
+                "Category": "primary",
+                "HUDTemplate": {
+                    "display": "Eliminate all witnesses",
+                    "iconType": 8
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "ContextListeners": {
+                        "TargetsCounter": {
+                            "type": "objective-counter",
+                            "header": "UI_NOODLE_WITNESSES"
+                        }
+                    },
+                    "Context": {
+                        "KilledActors": [],
+                        "Witnesses": [],
+                        "TargetsCounter": 0
+                    },
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "TargetPicked": [{
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    },
+                                    "Transition": "TargetPicked"
+                                }
+                            ]
+                        },
+                        "TargetPicked": {
+                            "TargetPicked": [{
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    }
+                                }
+                            ],
+                            "Kill": [{
+                                    "Actions": {
+                                        "$pushunique": ["KilledActors", "$Value.RepositoryId"]
+                                    }
+                                }, {
+                                    "Actions": {
+                                        "$dec": "TargetsCounter"
+                                    },
+                                    "Condition": {
+                                        "$inarray": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$eq": ["$.#", "$Value.RepositoryId"]
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "Condition": {
+                                        "$all": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$any": {
+                                                    "in": "$.KilledActors",
+                                                    "?": {
+                                                        "$eq": ["$.#", "$.##"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "ContractLoad": [{
+                                    "Actions": {
+                                        "$set": ["TargetsCounter", "$.TargetsCounter"]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },  {
+                "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
+                "Category": "primary",
+                "IsHidden": true,
+                "ExcludeFromScoring": true,
+                "BriefingText": "A target has escaped.",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                        "TargetEscaped": {
+                            "Transition": "Failure"
+                            }
+                        }
+                    }
+                }
+            }],
+		"GameDifficulties": [{
+                "Difficulty": "easy",
+                "Bricks": []
+            }, {
+                "Difficulty": "normal",
+                "Bricks": []
+            }, {
+                "Difficulty": "hard",
+                "Bricks": []
+            }
+        ],
+        "Bricks": [],
+        "Entrances": [],
+        "GameChangers": [],
+        "EngineModesBricks": []
+    },
+    "Metadata": {
+        "CodeName_Hint": "Noodle_DAY",
+        "CreationTimestamp": "2012-12-12T12:12:12.743Z",
+        "CreatorUserId": "00000000-0000-0000-0000-000000000000",
+        "TileImage": "images/noodle/amulet.jpg",
+        "Title": "UI_CONTRACT_NOODLE_DAY",
+        "Description": "UI_NOODLE_BRIEFING",
+        "Id": "a8036782-de0a-4353-b522-0ab7a384badd",
+        "IsPublished": true,
+        "LastUpdate": "2015-03-10T12:00:00.551Z",
+        "Location": "LOCATION_WET_RAT",
+        "Release": "2.0.x",
+        "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_noodle_day.entity",
+        "Type": "flashback",
+        "Subtype": "flashback",
+        "UserData": null
+    },
+    "UserData": {}
+}

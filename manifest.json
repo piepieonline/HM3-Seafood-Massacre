@@ -44,11 +44,16 @@
 		  "type": "entity",
 		  "partition": "wet",
 		  "path": "[assembly:/_pro/scenes/missions/wet/scene_noodle.entity].entitytemplate"
-		}
+		},	{
+			"type": "entity",
+			"partition": "wet",
+			"path": "[assembly:/_pro/scenes/missions/wet/scene_noodle_day.entity].entitytemplate"
+		  }
 	  ],
 	  "localisation": {
 		"english": {
 			"UI_CONTRACT_NOODLE_NIGHT": "The Noodle Massacre",
+			"UI_CONTRACT_NOODLE_DAY": "Massacre At The Chongqing Noodle Restaurant",
             "UI_NOODLE_BRIEFING": "This is a placeholder briefing. I will try make a video briefing once everything else is locked in.",
 			"UI_NOODLE_WITNESSES": "Witnesses Remaining",
 			"locr_Amulet": "Red Dragon Amulet"
