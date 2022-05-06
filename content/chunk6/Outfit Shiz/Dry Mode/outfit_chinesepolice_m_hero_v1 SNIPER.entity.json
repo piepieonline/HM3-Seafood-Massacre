@@ -138,7 +138,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": []
 				},
-				"m_mTransform": {
+				"Rifle_Holster_Attacher_Transform": {
 					"type": "SMatrix43",
 					"value": {
 						"rotation": {
@@ -147,27 +147,26 @@
 							"z": 0
 						},
 						"position": {
-							"x": 2.6008899211883545,
+							"x": 0.04,
 							"y": 0,
 							"z": 0
 						}
 					}
 				},
-				"m_vBodypartBoundingMarginMax": {
-					"type": "SVector3",
+				"m_mTransform": {
+					"type": "SMatrix43",
 					"value": {
-						"x": 0,
-						"y": 0,
-						"z": 0.009999999776482582
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"position": {
+							"x": 0.4149650037288666,
+							"y": -3.040994882583618,
+							"z": 0.013648999854922295
+						}
 					}
-				},
-				"m_fFrustumFarDistanceProperty": {
-					"type": "float32",
-					"value": 40
-				},
-				"m_bSimulationEnabled": {
-					"type": "bool",
-					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -535,7 +534,7 @@
 			"properties": {
 				"Diffuse_Color_01_Value": {
 					"type": "SColorRGB",
-					"value": "#323030"
+					"value": "#696969"
 				}
 			},
 			"postInitProperties": {},

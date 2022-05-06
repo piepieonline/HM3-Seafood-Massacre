@@ -567,7 +567,7 @@
 			"properties": {
 				"Diffuse_Color_01_Value": {
 					"type": "SColorRGB",
-					"value": "#323030"
+					"value": "#696969"
 				}
 			},
 			"postInitProperties": {},
