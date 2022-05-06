@@ -1,1 +1,752 @@
-{"tempHash":"0000EC8E53C34D0F","tbluHash":"009E7169BA598D69","rootEntity":"Scene","entities":{"84b8a7755da9fe1f":{"parent":{"ref":"ce260ab9fb3bdef0","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_SmoothSnake","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"005EB9E0DF2AC48A","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"37cfa7d9efeb51e0":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Llama_WhiteDryas_level3","template":"0034422566C6A53C","blueprint":"001D6533FC03CC1B","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00E317771494956F","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"4d02adac2a0e9041":{"parent":{"ref":"92418064abb1696b","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Rat","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00821604DEE370C5","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"99fda65d552d6de4":{"parent":{"ref":"fe3f0f61bad22af7","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_SinsTest","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0005F8FD79A465A5","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"2798c5b0d68a2d4c":{"parent":{"ref":"fffffffffffffffe","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"MenuMapSetup_Season3","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"689c375b60c94b4d":{"parent":{"ref":"f2cf4164b417e20d","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Wolverine_Bellflower","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00745DD173691C1F","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"4b4bd25a88d73cf7":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_contractcreation","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00314BF837F0A9A3","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"6080bb2d5c35b469":{"parent":{"ref":"92418064abb1696b","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Magnolia","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00718902098EBF0C","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"83f1df1a04e2116":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_Smilax_Level3","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"009237D077B9C49C","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"4a9598a67fe5fd50":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_llama_elusive_jockeyclub","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00F20B8FD6C6E89C","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"a1c8e4324a12b7ac":{"parent":{"ref":"ce260ab9fb3bdef0","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Bulldog","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00B2DDEE77362311","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"9325bb98ea149d16":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"005D64741823561F","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"595efdfe669dc0c7":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_NightPhlox","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0068BEFE1016743B","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"1aea9c8ff0cdf827":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Edgy","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"f89cf71a93d0a8e":{"parent":{"ref":"fe3f0f61bad22af7","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Gibson","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00657A2F7E37EF7F","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"555be5b28c4e6bff":{"parent":{"ref":"dab952bd6f21cb1","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Dugong","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"002A59EC0AF31ACA","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"3538a9984d567c80":{"parent":{"ref":"ce260ab9fb3bdef0","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Hollyhock","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00065C0EF5A9ECE3","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"b7652835d501e46c":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Llama","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00FFC8BA56B15555","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"faa6fbc2bcb92bce":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_Ambrosia","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"001060C30FEFC82B","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"92418064abb1696b":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Wet","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"a089498384c3ae3":{"parent":{"ref":"92418064abb1696b","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_RedSnapper","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00FDBA894BD9F7C0","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"b28e2d00a4831a03":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_Smilax","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0086AD2295636E9E","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"dab952bd6f21cb1":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Rocky","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"3e93c80926ad438f":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_llama_elusive_clerico","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0035696978FD683E","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"51200e8a0323469b":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Llama_WhiteDryas_level2","template":"0034422566C6A53C","blueprint":"001D6533FC03CC1B","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0045E482269A26A4","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"c8b514bdc2f1fabe":{"parent":{"ref":"fe3f0f61bad22af7","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Lunaria","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00EF3AEE14DEAAF8","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"dafbbc964f82dd5a":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_Grasssnake","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00A15120224E16E0","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"c9e2bc48fe7a9575":{"parent":{"ref":"f2cf4164b417e20d","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Wolverine","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"000BEABC99B43FE3","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"5f273b66b31b2c39":{"parent":{"ref":"fe3f0f61bad22af7","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Desert_Rose","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00C1AAB91F11D683","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"8612018ef70f0644":{"parent":{"ref":"ce260ab9fb3bdef0","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Vesper","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0005B4BB0C5A30B0","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"fffffffffffffffe":{"parent":{"ref":"SPECIAL: None","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Scene","template":"[modules:/zspatialentity.class].pc_entitytype","blueprint":"[modules:/zspatialentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"52dfbc09761a6e29":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Llama_Jacaranda","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"002F2D80A2AEA711","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"a49d5b257479bac1":{"parent":{"ref":"92418064abb1696b","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Makoyana","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00FCBCEBD4F238A4","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"94d2d5fcfb5ad979":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_Cornflower","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00AA5C9A9EF378C1","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"2a89e0729cc986be":{"parent":{"ref":"fe3f0f61bad22af7","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Gecko","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0072747B8CD05AFC","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"fe1914accf17f7ae":{"parent":{"ref":"fe3f0f61bad22af7","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Angelica","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00E83318C631BB43","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"ce260ab9fb3bdef0":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Ancestral","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"f2cf4164b417e20d":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Trapped","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"8211075b8a144e1f":{"parent":{"ref":"34a395c36bc6af3c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Llama_WhiteDryas_level1","template":"0034422566C6A53C","blueprint":"001D6533FC03CC1B","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0060566C437DDC12","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"63f85a08cd2bca6a":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Fox_Smilax_Level2","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"0038DA4CE72F0780","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"1ad00de9cf09276c":{"parent":{"ref":"1aea9c8ff0cdf827","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Radler","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00A1B8D517FC7D75","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"fe3f0f61bad22af7":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Golden","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"34a395c36bc6af3c":{"parent":{"ref":"2798c5b0d68a2d4c","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"Elegant","template":"[modules:/zentity.class].pc_entitytype","blueprint":"[modules:/zentity.class].pc_entityblueprint","properties":{},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]},"abcd3a1656bb2eaa":{"parent":{"ref":"92418064abb1696b","exposedEntity":"","externalScene":"SPECIAL: None","entityID":"ffffffffffffffff"},"name":"scene_Noodle","template":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype","blueprint":"[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint","properties":{"m_pMetaDataResource":{"type":"ZRuntimeResourceID","value":{"resource":"00F999C5DA38B5BD","flag":"5F"}}},"postInitProperties":{},"editorOnly":false,"platformSpecificPropertyValues":[],"events":[],"inputCopying":[],"outputCopying":[]}},"propertyOverrides":[],"overrideDeletes":[],"pinConnectionOverrides":[],"pinConnectionOverrideDeletes":[],"externalScenes":[],"subType":2,"quickEntityVersion":2}
+{
+	"tempHash": "0000EC8E53C34D0F",
+	"tbluHash": "009E7169BA598D69",
+	"rootEntity": "fffffffffffffffe",
+	"entities": {
+		"84b8a7755da9fe1f": {
+			"parent": "ce260ab9fb3bdef0",
+			"name": "scene_SmoothSnake",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "005EB9E0DF2AC48A",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"37cfa7d9efeb51e0": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_Llama_WhiteDryas_level3",
+			"template": "0034422566C6A53C",
+			"blueprint": "001D6533FC03CC1B",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00E317771494956F",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"4d02adac2a0e9041": {
+			"parent": "92418064abb1696b",
+			"name": "scene_Rat",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00821604DEE370C5",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"99fda65d552d6de4": {
+			"parent": "fe3f0f61bad22af7",
+			"name": "scene_SinsTest",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0005F8FD79A465A5",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"2798c5b0d68a2d4c": {
+			"parent": "fffffffffffffffe",
+			"name": "MenuMapSetup_Season3",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"689c375b60c94b4d": {
+			"parent": "f2cf4164b417e20d",
+			"name": "scene_Wolverine_Bellflower",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00745DD173691C1F",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"4b4bd25a88d73cf7": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_contractcreation",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00314BF837F0A9A3",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"6080bb2d5c35b469": {
+			"parent": "92418064abb1696b",
+			"name": "scene_Magnolia",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00718902098EBF0C",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"83f1df1a04e2116": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_Smilax_Level3",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "009237D077B9C49C",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"4a9598a67fe5fd50": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_llama_elusive_jockeyclub",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F20B8FD6C6E89C",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"a1c8e4324a12b7ac": {
+			"parent": "ce260ab9fb3bdef0",
+			"name": "scene_Bulldog",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00B2DDEE77362311",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"9325bb98ea149d16": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "005D64741823561F",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"595efdfe669dc0c7": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_NightPhlox",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0068BEFE1016743B",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"1aea9c8ff0cdf827": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Edgy",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"f89cf71a93d0a8e": {
+			"parent": "fe3f0f61bad22af7",
+			"name": "scene_Gibson",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00657A2F7E37EF7F",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"555be5b28c4e6bff": {
+			"parent": "dab952bd6f21cb1",
+			"name": "scene_Dugong",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "002A59EC0AF31ACA",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3538a9984d567c80": {
+			"parent": "ce260ab9fb3bdef0",
+			"name": "scene_Hollyhock",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00065C0EF5A9ECE3",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"b7652835d501e46c": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_Llama",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00FFC8BA56B15555",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"faa6fbc2bcb92bce": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_Ambrosia",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "001060C30FEFC82B",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"92418064abb1696b": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Wet",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"a089498384c3ae3": {
+			"parent": "92418064abb1696b",
+			"name": "scene_RedSnapper",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00FDBA894BD9F7C0",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"b28e2d00a4831a03": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_Smilax",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0086AD2295636E9E",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"dab952bd6f21cb1": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Rocky",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3e93c80926ad438f": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_llama_elusive_clerico",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0035696978FD683E",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"51200e8a0323469b": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_Llama_WhiteDryas_level2",
+			"template": "0034422566C6A53C",
+			"blueprint": "001D6533FC03CC1B",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0045E482269A26A4",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"c8b514bdc2f1fabe": {
+			"parent": "fe3f0f61bad22af7",
+			"name": "scene_Lunaria",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00EF3AEE14DEAAF8",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"dafbbc964f82dd5a": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_Grasssnake",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A15120224E16E0",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"c9e2bc48fe7a9575": {
+			"parent": "f2cf4164b417e20d",
+			"name": "scene_Wolverine",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "000BEABC99B43FE3",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"5f273b66b31b2c39": {
+			"parent": "fe3f0f61bad22af7",
+			"name": "scene_Desert_Rose",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00C1AAB91F11D683",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"8612018ef70f0644": {
+			"parent": "ce260ab9fb3bdef0",
+			"name": "scene_Vesper",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0005B4BB0C5A30B0",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"fffffffffffffffe": {
+			"parent": null,
+			"name": "Scene",
+			"template": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"52dfbc09761a6e29": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_Llama_Jacaranda",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "002F2D80A2AEA711",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"a49d5b257479bac1": {
+			"parent": "92418064abb1696b",
+			"name": "scene_Makoyana",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00FCBCEBD4F238A4",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"94d2d5fcfb5ad979": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_Cornflower",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00AA5C9A9EF378C1",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"2a89e0729cc986be": {
+			"parent": "fe3f0f61bad22af7",
+			"name": "scene_Gecko",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0072747B8CD05AFC",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"fe1914accf17f7ae": {
+			"parent": "fe3f0f61bad22af7",
+			"name": "scene_Angelica",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00E83318C631BB43",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"ce260ab9fb3bdef0": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Ancestral",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"f2cf4164b417e20d": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Trapped",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"8211075b8a144e1f": {
+			"parent": "34a395c36bc6af3c",
+			"name": "scene_Llama_WhiteDryas_level1",
+			"template": "0034422566C6A53C",
+			"blueprint": "001D6533FC03CC1B",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0060566C437DDC12",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"63f85a08cd2bca6a": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Fox_Smilax_Level2",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0038DA4CE72F0780",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"1ad00de9cf09276c": {
+			"parent": "1aea9c8ff0cdf827",
+			"name": "scene_Radler",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00A1B8D517FC7D75",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"fe3f0f61bad22af7": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Golden",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"34a395c36bc6af3c": {
+			"parent": "2798c5b0d68a2d4c",
+			"name": "Elegant",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd3a1656bb2eaa": {
+			"parent": "92418064abb1696b",
+			"name": "scene_Noodle",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F999C5DA38B5BD",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf671be6fbea3": {
+			"parent": "92418064abb1696b",
+			"name": "scene_Noodle_Day",
+			"template": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/mapexportentities.template?/menumap.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pMetaDataResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F999C5DA38B5BC",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": 2,
+	"quickEntityVersion": 2.1
+}

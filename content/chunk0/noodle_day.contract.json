@@ -278,7 +278,7 @@
         "CreatorUserId": "00000000-0000-0000-0000-000000000000",
         "TileImage": "images/noodle/amulet.jpg",
         "Title": "UI_CONTRACT_NOODLE_DAY",
-        "Description": "UI_NOODLE_BRIEFING",
+        "Description": "UI_NOODLE_DAY_BRIEFING",
         "Id": "a8036782-de0a-4353-b522-0ab7a384badd",
         "IsPublished": true,
         "LastUpdate": "2015-03-10T12:00:00.551Z",

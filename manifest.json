@@ -54,7 +54,8 @@
 		"english": {
 			"UI_CONTRACT_NOODLE_NIGHT": "The Noodle Massacre",
 			"UI_CONTRACT_NOODLE_DAY": "Massacre At The Chongqing Noodle Restaurant",
-            "UI_NOODLE_BRIEFING": "This is a placeholder briefing. I will try make a video briefing once everything else is locked in.",
+			"UI_NOODLE_DAY_BRIEFING": "The meeting will take place at the Chongqing Noodle Restaurant, which is located on neutral ground. Taking out the Chief of Police in this place will expand the conflict and lift the police protection of Lee Hong.\n\nYou must therefore make sure that any survivors or witnesses believe that Lee Hong instigated the killing. Dressing up as a Red Dragon member could do the trick.\n\nLeave a Red Dragon Amulet inside the restaurant in order to further incriminate Lee Hong's triad. Lee Hong's negotiator will be carrying an amulet you can use.",
+            "UI_NOODLE_BRIEFING": "The Triads are ready for war, 47! But the Chongqing police is stepping in to preserve the peace. The Chief of police himself is presiding over a meeting of delegates, from the Red Dragons & the Blue Lotus, at the Chongqing Noodle Restaurant. If you eliminate the Red Dragon negotiator and then frame him for the murders of the chief of police & the Blue Lotus negotiator, all becomes inevitable. Even the police will align themselves against the Red Dragons, making Lee Hong vulnerable at last. Security is obviously tight because of the police involvement. Remember, 47, the hits are important, but they don't do anything unless the Red Dragons take the blame. Watch yourself, 47, the chief of police and the Blue Lotus negotiator are pretty tight and won't be easy to fool.",
 			"UI_NOODLE_WITNESSES": "Witnesses Remaining",
 			"locr_Amulet": "Red Dragon Amulet"
 		},

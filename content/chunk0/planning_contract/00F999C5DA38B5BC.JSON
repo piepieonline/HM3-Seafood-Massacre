@@ -1,0 +1,126 @@
+{
+    "scene": "assembly:/_pro/scenes/missions/wet/scene_noodle_day.entity",
+    "actors": [],
+    "entrances": [{
+            "id": "d497ce5a-011e-4b40-9d69-341cc8141120",
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
+            "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -173.9, 159.8794, 89"
+        }, {
+            "id": "f3944deb-0747-4d67-b26a-99af5f979705",
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
+            "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -85.82178, 114.6616, 109"
+        }, {
+            "id": "c235f578-f55b-4c9d-b568-db6cad909c8c",
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
+            "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -15.06186, -0.070374, 101"
+        }, {
+            "id": "7371c3ea-cfb9-46b8-a699-93ab1cdd07af",
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
+            "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -41.84045, 4.367894, 117"
+        }, {
+            "id": "3fd57506-80d6-4a63-88ed-206b15686758",
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
+            "WorldTransform": "0, -1, 0, 1, 0, 0, 0, 0, 1, 13.08301, 17.80184, 93.0002"
+        }, {
+            "id": "75827342-5601-4656-ac00-55aff44b48f4",
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
+            "WorldTransform": "0, 1, 0, -1, 0, 0, 0, 0, 1, -17.15897, 85.29478, 109"
+        }, {
+            "id": "4752ebbb-02c0-48b0-8e05-3ec2a920dedd",
+            "isDefaultSpawn": true,
+            "isPreferredSpawn": true,
+            "WorldTransform": "0.939693, -0.34202, 0, 0.34202, 0.939693, 0, 0, 0, 1, -95.28177, 36.19925, 101"
+        }, {
+            "id": "f9c65d0b-e5ce-454e-8f20-08a8083a9b9d",
+            "isDefaultSpawn": true,
+            "isPreferredSpawn": false,
+            "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -173.9, 159.8794, 89"
+        }
+    ],
+    "Exits": [{
+            "id": "1fe581eb-f6d3-4a9c-a0c2-ba9532cc22cf",
+            "WorldTransform": "-1, 0, 0, 0, -1, 0, 0, 0, 1, -36.04174, 89.5, 93",
+            "RequireKey": false
+        }, {
+            "id": "5b9f6976-7ccf-46fd-97b4-e145403c9b0b",
+            "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -108.3505, 127.6594, 113",
+            "RequireKey": false
+        }, {
+            "id": "22c30622-968a-4e71-b1d6-0a9134e7d8af",
+            "WorldTransform": "0.998682, 0.051325, 0, -0.051325, 0.998682, 0, 0, 0, 1, -174.3374, 162.5403, 89",
+            "RequireKey": false
+        }, {
+            "id": "e2a1710e-e74f-424e-89b2-1e2d4a404b8e",
+            "WorldTransform": "0.386093, -0.92246, 0, 0.92246, 0.386093, 0, 0, 0, 1, 5.229855, 77.51139, 100.8484",
+            "RequireKey": false
+        }
+    ],
+    "AgencyPickups": [{
+            "id": "acca901a-c33e-4462-b422-8c3bd81f4efa",
+            "WorldTransform": "0.995557, -0.094161, 0, 0.094161, 0.995557, 0, 0, 0, 1, -29.17535, 49.1258, 117.7629",
+            "AllowOutfits": false,
+            "AllowLargerItems": false,
+            "UnlockedByDefault": false
+        }, {
+            "id": "ff66b29c-c3c2-4aec-8b5c-c4e780f42a8a",
+            "WorldTransform": "0.99844, -0.055835, 0, 0.055835, 0.99844, 0, 0, 0, 1, -93.22765, 25.31197, 101.3433",
+            "AllowOutfits": false,
+            "AllowLargerItems": false,
+            "UnlockedByDefault": false
+        }, {
+            "id": "50be49a2-c366-443d-bdaa-6de2e11eefbe",
+            "WorldTransform": "-0.030437, 0.999537, 0, -0.999537, -0.030437, 0, 0, 0, 1, -10.54663, 33.62014, 85.84619",
+            "AllowOutfits": false,
+            "AllowLargerItems": false,
+            "UnlockedByDefault": false
+        }, {
+            "id": "20701325-000b-408a-99ca-17c9d87a221b",
+            "WorldTransform": "0.995503, -0.09473, 0, 0.09473, 0.995503, 0, 0, 0, 1, -62.65693, 21.49682, 89.84628",
+            "AllowOutfits": false,
+            "AllowLargerItems": false,
+            "UnlockedByDefault": false
+        }, {
+            "id": "e1658358-1b89-4dc2-bb42-3f046faf5813",
+            "WorldTransform": "0.999521, 0.030947, 0, -0.030947, 0.999521, 0, 0, 0, 1, -126.583, 114.4239, 102.338",
+            "AllowOutfits": false,
+            "AllowLargerItems": false,
+            "UnlockedByDefault": false
+        }, {
+            "id": "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
+            "WorldTransform": "0.809182, -0.587558, 0, 0, 0, 1, -0.587558, -0.809182, 0, -32.39404, 83.87108, 97.18317",
+            "AllowOutfits": true,
+            "AllowLargerItems": true,
+            "UnlockedByDefault": false
+        }, {
+            "id": "7b719d9b-13cd-48c7-bbff-c3809d01d39b",
+            "WorldTransform": "1, 0, 0, 0, 0, 1, 0, -1, 0, -74.43784, 92.68437, 101.1942",
+            "AllowOutfits": true,
+            "AllowLargerItems": true,
+            "UnlockedByDefault": false
+        }, {
+            "id": "c3b730f6-e402-4a2f-8fc2-4f01b30ced0f",
+            "WorldTransform": "-0.888629, 0.458627, 0, -0.458627, -0.888629, 0, 0, 0, 1, -18.80231, 127.0754, 101.0111",
+            "AllowOutfits": true,
+            "AllowLargerItems": true,
+            "UnlockedByDefault": false
+        }, {
+            "id": "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
+            "WorldTransform": "-0.998231, 0.059453, 0, 0, 0, 1, 0.059453, 0.998231, 0, -37.26632, 118.4988, 109.2766",
+            "AllowOutfits": true,
+            "AllowLargerItems": true,
+            "UnlockedByDefault": false
+        }, {
+            "id": "5e0df81c-e0a8-4061-a9da-d298e9bd8972",
+            "WorldTransform": "-0.939724, -0.341933, 0, 0.341933, -0.939724, 0, 0, 0, 1, -10.02932, 62.24215, 88.87395",
+            "AllowOutfits": true,
+            "AllowLargerItems": true,
+            "UnlockedByDefault": false
+        }
+    ]
+}
