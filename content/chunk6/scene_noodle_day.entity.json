@@ -1090,6 +1090,136 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "e413220ca05e9c43",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4853423bf94b09a4",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1c774a9fc468054",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5c12ff2dad12787e",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a780dc4fd5ed0118",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "13eeddcb34138603",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "86a4f0595a0dbf44",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9249724a74d21096",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3cb010ce4dd49f71",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3a47125191640bd7",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "deebf822515c9dac",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4c437ca4e6ae52a9",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b277b9dc849bc118",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e6e10fda1d9b32bb",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7a99d91720e29819",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d3622b5cab92e70c",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "232e8bb62a752291",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a380e0e2c140e758",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d6581a43ddb0cfea",
+			"comment": "Vehicles",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"IsInRainLevel": {
+				"type": "bool",
+				"value": false
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "5affebdd10df849d",
+			"comment": "Glowing bonus restaurant sign",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"ConstantVector1D_07_Value": {
+				"type": "float32",
+				"value": 0
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "3433b4dad4c994e6",
+			"comment": "Outside Room",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b35e453522c65e6a",
+			"comment": "Room",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "710dc907ff65045b",
+			"comment": "Room",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a3ed3645d2eb16ce",
+			"comment": "Room",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_Tags": {
+				"type": "ZString",
+				"value": ""
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "8121b6b5afa00758",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "48156b241ef34290",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ebc49eb038a0f7b0",
+			"comment": "Strip Lights Outside",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "63a57d7ad6e196ae",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
@@ -1308,6 +1438,63 @@
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "6c3de51c819b596d",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "47eaf04fe5781e79",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3e9f05dc0a9b4787",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7a4c1375068e1638",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "327579cf613e2d2a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f807d42219b2aa20",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a4ee5bae5c6a653f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ed1780e4c86b4c1b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1f1140a9d6b460aa",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3b8029d8e85ad2f7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "409514fa4d8375dc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d4fd14d568598fff",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8720f128e67bc93f",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f0903018ac0bd7ee",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "68dd714b11d83329",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ea2114c33253ccdb",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "27a94f79db867852",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "63221bdc90b5c602",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b4ea856ef70a7ad",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b25a8e57c26046ba",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -1985,6 +2172,9 @@
 		}, {
 			"ref": "e827d8fc0e663786",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f1254d954c025bfc",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"ConstantColorRGB_01_Value": {
@@ -2028,6 +2218,22 @@
 			"ref": "d195ab06c6bf5743",
 			"comment": "Middle light Meeting table",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "63df287ec5c06970",
+			"comment": "Lamps to turn off",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "731aabf2da94314",
+			"comment": "Lamps to turn off",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "11864f210ea8c7c3",
+			"comment": "Lamps to turn off",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2574e45b32181e93",
+			"comment": "Lamps to turn off",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"On": {
@@ -2035,6 +2241,10 @@
 				"value": false
 			},
 			"Light_On": {
+				"type": "bool",
+				"value": false
+			},
+			"IgnoreTimeOfDay": {
 				"type": "bool",
 				"value": false
 			}
@@ -2045,8 +2255,8 @@
 		"_comment": "Lighting",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"ref": "a44fe15487f6a2d5",
-		"_comment": "Outside - Effects",
+		"ref": "a7502a9e682c00b6",
+		"_comment": "Outside - Rain1",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
 		"ref": "53e811f3d9dcabf9",
@@ -2109,10 +2319,6 @@
 		"_comment": "Light Deletions",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"ref": "35e117f3235ca91f",
-		"_comment": "A_Glow_Planes_A_00",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
 		"ref": "6f512b5e9551463c",
 		"_comment": "A_Fog",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -2124,6 +2330,117 @@
 		"ref": "abcddf814a81e66c",
 		"_comment": "BL Escape Event Trigger",
 		"externalScene": "000D36CCB954F4D4"
+	}, {
+		"ref": "15e0550dd39d253a",
+		"_comment": "Arcade interior lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "2da72c43d2a170b1",
+		"_comment": "Restaurant Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "4dc7eec4e6cb4e92",
+		"_comment": "Restaurant Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "ec7a796646a358cd",
+		"_comment": "Restaurant Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "40ac12422934384b",
+		"_comment": "Window Rain Sound",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e1a0c1755df1d759",
+		"_comment": "Window Rain Sound",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "8fd7bf431b5c1dcf",
+		"_comment": "Window Rain Sound",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "f89ecf39739af1d7",
+		"_comment": "Drainpipe water effects",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "b61febfecde02b13",
+		"_comment": "Rain effects",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "eec7a5de4e4d3f96",
+		"_comment": "Fx_E_RainDrops",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "e1380929f4d2cdd6",
+		"_comment": "Fx_E_RainDrops",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "fa5b7caf2c6bc79f",
+		"_comment": "Fx_E_RainDrops",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "71ce0795198bf514",
+		"_comment": "Fx_E_RainDrops",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "387359439547cc01",
+		"_comment": "Outside - Character Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "fb30766dafeac1f",
+		"_comment": "Rooftop Flood Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "31f531bf4dfb8de",
+		"_comment": "Sign Spot Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "f6d9981ab467667f",
+		"_comment": "Sign Spot Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "efff5811561e7d73",
+		"_comment": "Sign Spot Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "2cf4c44dba9d8918",
+		"_comment": "Sign Spot Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "30e095ea8f4ffaf2",
+		"_comment": "Sign Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a43ac844dd7a4b7e",
+		"_comment": "Tile Override",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "22be9572ef24afc7",
+		"_comment": "Fake Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "eb5ae9c03f0d1de4",
+		"_comment": "Steff - Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "48703bc19e9ed1f8",
+		"_comment": "Emperor Sign Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "4f1ac4a85d33809c",
+		"_comment": "Emperor Sign Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "3c0495047f812ae6",
+		"_comment": "More Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "6454fe50295066ee",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "ac093126b16ab555",
+		"_comment": "Arcade Exterior Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
