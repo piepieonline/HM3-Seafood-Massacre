@@ -49,38 +49,30 @@
 						},
 						"position": {
 							"x": -48.717041015625,
-							"y": 71.205940246582031,
+							"y": 71.20594024658203,
 							"z": -1.0288339853286743
 						}
 					}
 				},
 				"m_GlobalLightFrontColor": {
 					"type": "SColorRGB",
-					"value": "#e8f5ff"
+					"value": "#ffffff"
 				},
 				"m_GlobalLightBackColor": {
 					"type": "SColorRGB",
-					"value": "#ffedc7"
+					"value": "#ffffff"
 				},
 				"m_fGlobalLightFrontIntensity": {
 					"type": "float32",
-					"value": 1
+					"value": 5
 				},
 				"m_fGlobalLightBackIntensity": {
 					"type": "float32",
-					"value": 0
+					"value": 5
 				},
 				"m_bVisible": {
 					"type": "bool",
 					"value": true
-				},
-				"m_vGlobalLightDirection": {
-					"type": "SVector3",
-					"value": {
-						"x": 1,
-						"y": 0,
-						"z": 1
-					}
 				}
 			},
 			"postInitProperties": {},
@@ -1086,6 +1078,56 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcddc436d32e39d": {
+			"parent": "fffffffffffffffe",
+			"name": "BoxReflection",
+			"template": "[modules:/zboxreflectionentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxreflectionentity.class].pc_entityblueprint",
+			"properties": {
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1000,
+						"y": 1000,
+						"z": 1000
+					}
+				},
+				"m_vSampleOffset": {
+					"type": "SVector3",
+					"value": {
+						"x": 0,
+						"y": 0,
+						"z": 5
+					}
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eType": {
+					"type": "ZBoxReflectionEntity.EType",
+					"value": "eFallback"
+				},
+				"m_eBoundsType": {
+					"type": "ZBoxReflectionEntity.EBoundsType",
+					"value": "eBox"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -2441,6 +2483,10 @@
 		"ref": "ac093126b16ab555",
 		"_comment": "Arcade Exterior Lights",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "abcda0eca803afc2",
+		"_comment": "Noodle Box Reflection",
+		"externalScene": "000D36CCB954F4D4"
 	}],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
