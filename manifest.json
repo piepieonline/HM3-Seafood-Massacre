@@ -34,6 +34,14 @@
 		"runtimeID": "00D7F248E08D4AD0",
 		"comment": "Brauvomo Hair",
 		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00CEBE48D5363B37",
+		"comment": "Bag Shoulder",
+		"toChunk": "chunk2"
+	},	{
+		"runtimeID": "00556CC6D2084CC8",
+		"comment": "coat_trench_closed",
+		"toChunk": "chunk2"
 	}],
 	"blobsFolder": "blobs",
 	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant, in H3's Chongqing. Has a Contracts (Night) and Codename 47 (Day) version to pick from.",
