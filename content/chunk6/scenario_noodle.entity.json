@@ -12928,11 +12928,11 @@
 				},
 				"m_OutfitRepositoryID": {
 					"type": "ZGuid",
-					"value": "f069ad6a-b75e-41a1-ad32-717c81843db6"
+					"value": "998b3a27-9b40-46b4-8d05-7a54493f209c"
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 0
+					"value": 6
 				},
 				"m_sActorName": {
 					"type": "ZString",

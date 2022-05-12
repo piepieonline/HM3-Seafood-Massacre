@@ -135,7 +135,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["b67d9a74592f7d9c", "31bb4df120d828dc", "2f1df0d3dff62d1c", "c3b9184947c1b4e4", "6d8d3242c8608379", "abcdc525eb0e3cd6"]
+					"value": ["b67d9a74592f7d9c", "31bb4df120d828dc", "2f1df0d3dff62d1c", "c3b9184947c1b4e4", "6d8d3242c8608379", "abcdc525eb0e3cd6", "abcd63d968e9324b"]
 				}
 			},
 			"editorOnly": false,
@@ -263,6 +263,24 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "003ACA11B297797A",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd63d968e9324b": {
+			"parent": "38a3ecf07d4d4d48",
+			"name": "6",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00E3642B5025B6DF",
 						"flag": "9F"
 					}
 				}
