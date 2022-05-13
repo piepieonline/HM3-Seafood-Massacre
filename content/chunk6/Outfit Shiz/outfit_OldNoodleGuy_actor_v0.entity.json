@@ -3,24 +3,6 @@
 	"tbluHash": "009D491227914186",
 	"rootEntity": "927e2539d580ca35",
 	"entities": {
-		"a03e7081cbdd239d": {
-			"parent": "927e2539d580ca35",
-			"name": "Mesh_Tie",
-			"template": "[modules:/zbodypartentity.class].pc_entitytype",
-			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
-			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "[assembly:/_pro/characters/assets/hero/agent47/geometry/male_reg_agent47_terminus.wl2?/tie.weightedprim](bodypart).pc_weightedprim",
-						"flag": "5F"
-					}
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
 		"f697d61300108436": {
 			"parent": "927e2539d580ca35",
 			"name": "male_reg_body",
@@ -55,42 +37,6 @@
 				"Clients": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["927e2539d580ca35"]
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "927e2539d580ca35"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"c877ad14ce60b120": {
-			"parent": "927e2539d580ca35",
-			"name": "malereg_tie",
-			"template": "009407FC235CE191",
-			"blueprint": "000FB527EDF21212",
-			"properties": {
-				"Elbow_L_Enabled": {
-					"type": "bool",
-					"value": false
-				},
-				"Elbow_R_Enabled": {
-					"type": "bool",
-					"value": false
-				},
-				"Hand_L_Enabled": {
-					"type": "bool",
-					"value": false
-				},
-				"Hand_R_Enabled": {
-					"type": "bool",
-					"value": false
-				}
-			},
-			"postInitProperties": {
-				"m_linkedEntity": {
-					"type": "SEntityTemplateReference",
-					"value": "927e2539d580ca35"
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -383,11 +329,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "Lerp",
-				"shouldTrigger": "ConstantVector1D_04_Value",
-				"onEntity": "91088247825cbf1e"
-			}]
+			"events": []
 		},
 		"8c21617c7e7f36": {
 			"parent": "927e2539d580ca35",
@@ -437,24 +379,6 @@
 					"value": "927e2539d580ca35"
 				}
 			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"3f6722a5440c9399": {
-			"parent": "927e2539d580ca35",
-			"name": "Mesh_Watch",
-			"template": "[modules:/zbodypartentity.class].pc_entitytype",
-			"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
-			"properties": {
-				"m_pMeshResource": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "004638FB3F3C2B9A",
-						"flag": "5F"
-					}
-				}
-			},
-			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -644,7 +568,7 @@
 				},
 				"m_LocalColliders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["c877ad14ce60b120"]
+					"value": []
 				},
 				"m_bGlobalCollidersEnabled": {
 					"type": "bool",
@@ -742,7 +666,7 @@
 			"postInitProperties": {
 				"m_aBodyParts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd80a7478fa575", "f6ac08e2d59ffd01", "e5aaa14e4b71c172", "2c052e89b5d9d4b7", "6d614ff4d54ec327", "39eb92831336d7a4", "a03e7081cbdd239d", "3f6722a5440c9399", "4a47d0aac6bb3d38", "443fe3ced8fdd31b", "aad0915461245912", "f8115a7589158186"]
+					"value": ["abcd80a7478fa575", "f6ac08e2d59ffd01", "e5aaa14e4b71c172", "2c052e89b5d9d4b7", "6d614ff4d54ec327", "39eb92831336d7a4", "4a47d0aac6bb3d38", "443fe3ced8fdd31b", "aad0915461245912", "f8115a7589158186"]
 				}
 			},
 			"editorOnly": false,
@@ -1127,112 +1051,6 @@
 						"resource": "[assembly:/_pro/characters/assets/hero/agent47/geometry/male_reg_agent47_terminus.wl2?/jacket.weightedprim](bodypart).pc_weightedprim",
 						"flag": "5F"
 					}
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"91088247825cbf1e": {
-			"parent": "927e2539d580ca35",
-			"name": "agent47_tie_absolution",
-			"template": "[assembly:/_pro/characters/assets/hero/agent47/materials/agent47_tie_absolution.mi].pc_entitytype",
-			"blueprint": "[assembly:/_pro/characters/assets/hero/agent47/materials/agent47_tie_absolution.mi].pc_entityblueprint",
-			"properties": {
-				"594659090": {
-					"type": "bool",
-					"value": true
-				},
-				"1737952988": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"1787395739": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"2287298018": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"2359342559": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eLeave"
-				},
-				"2456388972": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0
-						}
-					}
-				},
-				"Clients": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["927e2539d580ca35"]
-				},
-				"ConstantVector1D_09_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantVector1D_09_Value": {
-					"type": "float32",
-					"value": 0.10000000149011612
-				},
-				"ConstantVector1D_03_Value": {
-					"type": "float32",
-					"value": 7
-				},
-				"Texture2D_03_enab": {
-					"type": "bool",
-					"value": false
-				},
-				"ConstantVector1D_05_Value": {
-					"type": "float32",
-					"value": 0.60000002384185791
-				},
-				"ConstantVector1D_04_Value": {
-					"type": "float32",
-					"value": 0.5
-				},
-				"ConstantVector1D_07_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantVector1D_07_Value": {
-					"type": "float32",
-					"value": -0.14000000059604645
-				},
-				"ConstantVector1D_08_Value": {
-					"type": "float32",
-					"value": -0.0099999997764825821
-				},
-				"ConstantVector1D_01_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantVector1D_01_Value": {
-					"type": "float32",
-					"value": 0.80000001192092896
-				},
-				"Override": {
-					"type": "bool",
-					"value": false
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "927e2539d580ca35"
 				}
 			},
 			"postInitProperties": {},
