@@ -36,6 +36,270 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "1f1140a9d6b460aa",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2574e45b32181e93",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d4fd14d568598fff",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2dee9eb775763a7c",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "68dd714b11d83329",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7a4c1375068e1638",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "11864f210ea8c7c3",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f807d42219b2aa20",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "409514fa4d8375dc",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8720f128e67bc93f",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d75d865ff5fcd63a",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7fd77a27b429bd20",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "47eaf04fe5781e79",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b25a8e57c26046ba",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "327579cf613e2d2a",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ea2114c33253ccdb",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a4ee5bae5c6a653f",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "90f2f290a151ea49",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ed1780e4c86b4c1b",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3b8029d8e85ad2f7",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3e9f05dc0a9b4787",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f0903018ac0bd7ee",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "af14a2908248348d",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "27a94f79db867852",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "38ebb5e234497bff",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "92e5753f46c36d6e",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b4ea856ef70a7ad",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "63221bdc90b5c602",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"DiffuseColor": {
+				"type": "SColorRGB",
+				"value": "#e5ffd1"
+			},
+			"GlowPower": {
+				"type": "float32",
+				"value": 500
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "35d52bd5624fd661",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8be574a7252911b1",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bcd67fbd459888c4",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7373377a3d5e99dd",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d251eea9046806bd",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b0163cc14f705de1",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "96fc698fc5440e8e",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8510103bbf17090b",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ec1a6dfd4622f5fc",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1eb6860ab61a4a75",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1c12bec826159e13",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4bbf0699cc28ac3c",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "18ce749530b6245b",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2eca6f890043bd51",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4e1f15ae7a8f8a2e",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "273cc1033868bc51",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d4cc5463909bf34a",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fd1343366a14318e",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8afdd298fec36076",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d39c2b868c5d272d",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4d07cb4039b94f56",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "755cbddbe8b4125f",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f4af9b886e722c45",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bcf4f0a20f4d4342",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a09a4ab780043f48",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bc136b8db308dc8c",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ac05635f8d41dd9b",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "62a1352d03546e96",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8114f4c6c8e369d4",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "eae98f55aeacdac5",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2a0013570c0f00d0",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8dc5534efa41c663",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "dfebe7c081561f86",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "54bc9cdf88b92362",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "588b9baee591c898",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "8a5ce1cbc84fd8e7",
 			"comment": "LightCSM",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"

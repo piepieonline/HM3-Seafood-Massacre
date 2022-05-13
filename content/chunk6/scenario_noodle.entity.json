@@ -2312,6 +2312,10 @@
 				"onEvent": "EventOccurred",
 				"shouldTrigger": "GetIndex",
 				"onEntity": "abcda7442c4c0041"
+			}, {
+				"onEvent": "EventOccurred",
+				"shouldTrigger": "Set",
+				"onEntity": "abcdf7a863b4eb31"
 			}],
 			"platformSpecificPropertyValues": []
 		},
@@ -13013,9 +13017,9 @@
 							"z": -45.002979908338
 						},
 						"position": {
-							"x": -4.12642,
-							"y": 115.928,
-							"z": 101.007
+							"x": -11.4843,
+							"y": 126.993,
+							"z": 101.012
 						}
 					}
 				},
@@ -22404,6 +22408,10 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
+				},
+				"m_aApproachPath": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd7df4cc1e105d"]
 				}
 			},
 			"editorOnly": false,
@@ -22450,6 +22458,50 @@
 				"m_fPenaltyMultiplier": {
 					"type": "float32",
 					"value": -1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf7a863b4eb31": {
+			"parent": "abcd2eb7bfa5b5f3",
+			"name": "vri_male_limping",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_limping.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_limping.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd2eb7bfa5b5f3"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd7df4cc1e105d": {
+			"parent": "abcd2b55119eef9f",
+			"name": "Alley Approach",
+			"template": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -20.8,
+							"y": 124.6,
+							"z": 101
+						}
+					}
 				}
 			},
 			"postInitProperties": {},
@@ -24410,6 +24462,46 @@
 		"ref": "f8f096c57f549bca",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
 		"_comment": "End - Small cardboard boxes restaurant alley"
+	}, {
+		"ref": "9d21529750cd9524",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "23e082dc9902e45f",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "55c4d395fee8ad80",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "14ea98ba6d76e55",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "f533b38a1eb6d7ef",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "8c6aa7704ad6f9e1",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "550cc8cace6d1a23",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "31a0afd8e02a4d96",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "d92e272d8dbd0b6a",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
+	}, {
+		"ref": "a674f76e60b1cd5c",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"_comment": "Fake Window Lights - Wrong Colours"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": "abcd4920c9e3168a",

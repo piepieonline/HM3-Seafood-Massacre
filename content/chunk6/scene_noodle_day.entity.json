@@ -34,7 +34,7 @@
 			]
 		},
 		"abcda1ea6a437d28": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "GlobalLight",
 			"template": "[modules:/zgloballightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zgloballightentity.class].pc_entityblueprint",
@@ -64,11 +64,11 @@
 				},
 				"m_fGlobalLightFrontIntensity": {
 					"type": "float32",
-					"value": 5
+					"value": 1
 				},
 				"m_fGlobalLightBackIntensity": {
 					"type": "float32",
-					"value": 5
+					"value": 1
 				},
 				"m_bVisible": {
 					"type": "bool",
@@ -80,7 +80,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcdd3cfc367e386": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "Light_CSM",
 			"template": "[modules:/zlightentity.class].pc_entitytype",
 			"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
@@ -303,7 +303,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd276bff618ffd": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "RenderAtmosphericScattering",
 			"template": "[modules:/zrenderatmosphericscatteringentity.class].pc_entitytype",
 			"blueprint": "[modules:/zrenderatmosphericscatteringentity.class].pc_entityblueprint",
@@ -397,7 +397,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd1e423f9e4b98": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "Sky_Clear_B",
 			"template": "00831B9E1275B7C0",
 			"blueprint": "00DE82D8651E92F2",
@@ -459,7 +459,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd7db42d8beb7d": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "TimeOfDayConfig",
 			"template": "[modules:/ztimeofdayconfig.class].pc_entitytype",
 			"blueprint": "[modules:/ztimeofdayconfig.class].pc_entityblueprint",
@@ -474,7 +474,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcda830978a69f2": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "Wind",
 			"template": "[modules:/zwindentity.class].pc_entitytype",
 			"blueprint": "[modules:/zwindentity.class].pc_entityblueprint",
@@ -524,7 +524,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd2da78470bc7b": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "Postfilters",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
@@ -534,7 +534,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd3ff27e04d18c": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "FX_PF_PostfilterController",
 			"template": "[assembly:/_pro/effects/templates/postfilters/fx_pf_postfiltercontroller.template?/fx_pf_postfiltercontroller.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/effects/templates/postfilters/fx_pf_postfiltercontroller.template?/fx_pf_postfiltercontroller.entitytemplate].pc_entityblueprint",
@@ -1080,7 +1080,7 @@
 			"outputCopying": []
 		},
 		"abcddc436d32e39d": {
-			"parent": "fffffffffffffffe",
+			"parent": "abcd5b8896745511",
 			"name": "BoxReflection",
 			"template": "[modules:/zboxreflectionentity.class].pc_entitytype",
 			"blueprint": "[modules:/zboxreflectionentity.class].pc_entityblueprint",
@@ -1128,9 +1128,209 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd5b8896745511": {
+			"parent": "fffffffffffffffe",
+			"name": "Lighting",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdfc49b4c09e3a": {
+			"parent": "fffffffffffffffe",
+			"name": "Umbrella Replacements",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd95a444dc4921": {
+			"parent": "abcdfc49b4c09e3a",
+			"name": "act_mr_military_stand_shotgun_02",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_shotgun_02.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_shotgun_02.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -70.92343442329582
+						},
+						"position": {
+							"x": -49.5498,
+							"y": 107.125,
+							"z": 113
+						}
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "abcdd38bc07d4dcc",
+						"externalScene": "000D36CCB954F4D4"
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1e954988569d": {
+			"parent": "fffffffffffffffe",
+			"name": "Mumbai_SOUND_BANK",
+			"template": "[modules:/zsoundbankentity.class].pc_entitytype",
+			"blueprint": "[modules:/zsoundbankentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pBankResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "001147744AF1F5D3",
+						"flag": "5F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "2690e6bc46c36efc",
+			"comment": "Ambience Occlusion Rooms - Outside Global",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cf4dc4382f8f6973",
+			"comment": "Ambience Occlusion Rooms - Laundromat Roof",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pMainEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00729EF0B144AF31",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "c4940eb8645451bc",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e1ca7ab27b4cd234",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ef703a7074c5a065",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "af5e68db20237195",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "abefa4398c60a971",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6f7d0ec82dc134b5",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5017f52f5de04fd",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8bb550b693ca140c",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9e47c38a2eea3c7d",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3e52f563c60a5845",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d9c8cdf300940570",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a8d576c02aa43f84",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8ad8aa286203b299",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "23215403eb69c0ea",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b869b9bf6991bfda",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bab9295f1d74428c",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4b8dbb8f851cddc2",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9a9fd86bbbf68e4d",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ceae012ebc9ef8a0",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pMainEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00F845BB2B3CDFAF",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "abcd72b3df5e8282",
+			"comment": "Block Sentry Guy Zone",
+			"externalScene": "000D36CCB954F4D4"
+		}],
+		"properties": {
+			"m_aWaypointActs": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcd95a444dc4921"]
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "e413220ca05e9c43",
 			"comment": "Vehicles",
@@ -1252,6 +1452,66 @@
 		}
 	}, {
 		"entities": [{
+			"ref": "e66ccbb74eb5cf12",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "844e2301fa138eb6",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ae0024b63960af36",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3aabe3456f5dea35",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e193e635cc395fef",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2ac11fef59a8c38a",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cf0f549d50ca9f37",
+			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "21c337a0a4125f62",
+			"_comment": "Empty Shop Light",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2dee9eb775763a7c",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d75d865ff5fcd63a",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "7fd77a27b429bd20",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "90f2f290a151ea49",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "af14a2908248348d",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "38ebb5e234497bff",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "92e5753f46c36d6e",
+			"_comment": "Lamp_Wall_Modern_Spot_Italy",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "8121b6b5afa00758",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
@@ -1538,6 +1798,26 @@
 		}, {
 			"ref": "b25a8e57c26046ba",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f0e961714e8b51ad",
+			"comment": "Outside Bunker Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9d582ea04d54f832",
+			"comment": "Outside Bunker Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6264763fa1d7f914",
+			"comment": "Outside Bunker Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "27b4556272899146",
+			"comment": "Outside Bunker Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bfcdf07862f963c",
+			"comment": "Outside Bunker Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"On": {
@@ -1549,6 +1829,10 @@
 				"value": false
 			},
 			"IgnoreTimeOfDay": {
+				"type": "bool",
+				"value": false
+			},
+			"LightOn": {
 				"type": "bool",
 				"value": false
 			}
@@ -1675,6 +1959,38 @@
 		}
 	}, {
 		"entities": [{
+			"ref": "7373377a3d5e99dd",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8510103bbf17090b",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ec1a6dfd4622f5fc",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4e1f15ae7a8f8a2e",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d4cc5463909bf34a",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f4af9b886e722c45",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a09a4ab780043f48",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "62a1352d03546e96",
+			"comment": "Street Lights turned green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "8a5ce1cbc84fd8e7",
 			"comment": "LightCSM",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -1769,6 +2085,10 @@
 		}, {
 			"ref": "d38ac1acd8b2bfca",
 			"comment": "Light_Wall_Flood_A_V2_08",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "90f2f290a151ea49",
+			"comment": "Hobo main area lamp",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -2293,6 +2613,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "abcd17b54f244111",
+		"_comment": "Umbrella sentry act",
+		"externalScene": "000D36CCB954F4D4"
+	}, {
 		"ref": "315f1cd69f8d1e8a",
 		"_comment": "Lighting",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -2487,8 +2811,36 @@
 		"ref": "abcda0eca803afc2",
 		"_comment": "Noodle Box Reflection",
 		"externalScene": "000D36CCB954F4D4"
+	}, {
+		"ref": "5a4a78d357a674fe",
+		"_comment": "Exterior Green window light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "5affebdd10df849d",
+		"_comment": "Restaurant Direction Sign Glow",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "12f47b1f9c0d9690",
+		"_comment": "Haptics - Intro Rain sounds",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "5a179dc429207323",
+		"_comment": "Neon Light Sounds",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
-	"pinConnectionOverrides": [],
+	"pinConnectionOverrides": [{
+		"fromEntity": {
+			"ref": "abcd2851c60c56ff",
+			"externalScene": "000D36CCB954F4D4"
+		},
+		"toEntity": "abcd95a444dc4921",
+		"fromPinName": "OnStart",
+		"toPinName": "Start",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}],
 	"pinConnectionOverrideDeletes": [],
 	"externalScenes": ["000D36CCB954F4D4", "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"],
 	"subType": 1,
