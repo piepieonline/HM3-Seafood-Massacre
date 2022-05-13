@@ -1214,6 +1214,38 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "abefa4398c60a971",
+			"comment": "Ambience Occlusion Rooms - Main03",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6f7d0ec82dc134b5",
+			"comment": "Ambience Occlusion Rooms - Main04",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "3e52f563c60a5845",
+			"comment": "Ambience Occlusion Rooms - FacilityCourtyard",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4b8dbb8f851cddc2",
+			"comment": "Ambience Occlusion Rooms - FacilityCourtyard",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e330ebcb92b7800d",
+			"comment": "Ambience Occlusion Rooms - AlleyBlockBack_02",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ef703a7074c5a065",
+			"comment": "Ambience Occlusion Rooms - Main01",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pMainEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": null
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "2690e6bc46c36efc",
 			"comment": "Ambience Occlusion Rooms - Outside Global",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -1241,19 +1273,7 @@
 			"comment": "Ambience Occlusion Rooms - Outside Rain",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
-			"ref": "ef703a7074c5a065",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
 			"ref": "af5e68db20237195",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "abefa4398c60a971",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "6f7d0ec82dc134b5",
 			"comment": "Ambience Occlusion Rooms - Outside Rain",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
@@ -1266,10 +1286,6 @@
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "9e47c38a2eea3c7d",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "3e52f563c60a5845",
 			"comment": "Ambience Occlusion Rooms - Outside Rain",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
@@ -1294,10 +1310,6 @@
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "bab9295f1d74428c",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "4b8dbb8f851cddc2",
 			"comment": "Ambience Occlusion Rooms - Outside Rain",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
@@ -1452,6 +1464,82 @@
 		}
 	}, {
 		"entities": [{
+			"ref": "9f087eae1608ae01",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "220309615ac882a4",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8d014ced9d5dba0c",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6921974db67ec15",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "57c7222780f9d91f",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "49d724efd9ceea4a",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "834e1fd8d1681d6c",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8e6fe29cd94ae722",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "cb21e42e52a6732f",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "eecf5b55cd0247ad",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5951a11b77aa21e1",
+			"_comment": "Lamp_Underground_A_00",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "f9b20670df128f7d",
+			"_comment": "lantern_chinese_a_05",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fbb4b2b576d38ea1",
+			"_comment": "lantern_chinese_a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d4d7b28bffd3380a",
+			"_comment": "lantern_chinese_a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d0ae57753b96e9d6",
+			"_comment": "lantern_chinese_a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "577b5ae37a15ec54",
+			"_comment": "Restaurant Back Alley Ceiling Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "920d5cb630f0bcff",
+			"_comment": "Restaurant Back Alley Ceiling Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "2678b21cad0e91e6",
+			"_comment": "Restaurant Back Alley Ceiling Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "483a0fa480249a98",
+			"_comment": "Restaurant Back Alley Ceiling Lights",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "e66ccbb74eb5cf12",
 			"_comment": "Lamp_Wall_Workshop_Outdoor_Lamp_A_00",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -2826,6 +2914,26 @@
 	}, {
 		"ref": "5a179dc429207323",
 		"_comment": "Neon Light Sounds",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "ecc83584e7ec3793",
+		"_comment": "Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "d7709e94816bd331",
+		"_comment": "Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "d726899f1982837e",
+		"_comment": "Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "16fccbfa9470209e",
+		"_comment": "Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "958a1e1d3e9a698b",
+		"_comment": "Fake Lights",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
