@@ -1,0 +1,75 @@
+{
+	"tempHash": "0022010D957EFB7C",
+	"tbluHash": "0007E3B92ED5E8F7",
+	"rootEntity": "fffffffffffffffe",
+	"entities": {
+		"377e8c3323a3e34b": {
+			"parent": "bc1a260a3bba246d",
+			"name": "debriefing",
+			"template": "[modules:/zuivideodatabaseentryentity.class].pc_entitytype",
+			"blueprint": "[modules:/zuivideodatabaseentryentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sVideoId": {
+					"type": "ZString",
+					"value": "debriefing_quadruplerumandcoke"
+				},
+				"m_resourceId": {
+					"type": "ZRuntimeResourceID",
+					"value": null
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"6411c30becc23ba5": {
+			"parent": "bc1a260a3bba246d",
+			"name": "briefing",
+			"template": "[modules:/zuivideodatabaseentryentity.class].pc_entitytype",
+			"blueprint": "[modules:/zuivideodatabaseentryentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sVideoId": {
+					"type": "ZString",
+					"value": "briefing_quadruplerumandcoke"
+				},
+				"m_resourceId": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0007DB67E3876094",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"bc1a260a3bba246d": {
+			"parent": "fffffffffffffffe",
+			"name": "000_QuadrupleRumandCoke",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"fffffffffffffffe": {
+			"parent": null,
+			"name": "Scene",
+			"template": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		}
+	},
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"propertyOverrides": [],
+	"externalScenes": [],
+	"subType": 1,
+	"quickEntityVersion": 2.1
+}
