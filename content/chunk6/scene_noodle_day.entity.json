@@ -1214,6 +1214,14 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "c4940eb8645451bc",
+			"comment": "Ambience Occlusion Rooms - AlleyBlockCourtyard",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "e1ca7ab27b4cd234",
+			"comment": "Ambience Occlusion Rooms - AlleyFacilitySide",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "abefa4398c60a971",
 			"comment": "Ambience Occlusion Rooms - Main03",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -1237,21 +1245,61 @@
 			"ref": "ef703a7074c5a065",
 			"comment": "Ambience Occlusion Rooms - Main01",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d9c8cdf300940570",
+			"comment": "Ambience Occlusion Rooms - FacilityCourtyard02",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9e47c38a2eea3c7d",
+			"comment": "Ambience Occlusion Rooms - Block Courtyard",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a8d576c02aa43f84",
+			"comment": "Ambience Occlusion Rooms - FacilityScaffoldStairs",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "bab9295f1d74428c",
+			"comment": "Ambience Occlusion Rooms - Alley Facility Back",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "ceae012ebc9ef8a0",
+			"comment": "Ambience Occlusion Rooms - Walkway Laundromat",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "8bb550b693ca140c",
+			"comment": "Ambience Occlusion Rooms - AlleyBlockLaundromat",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fec08bd5461068b4",
+			"comment": "Ambience Occlusion Rooms - AlleyBlockSide PISS ALLEY",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9bf7b4f2d1bd230e",
+			"comment": "Ambience Occlusion Rooms - AlleyBlockEntrance",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_pMainEvent": {
 				"type": "ZRuntimeResourceID",
-				"value": null
+				"value": "005BF239676A0332"
 			}
 		}
 	}, {
 		"entities": [{
+			"ref": "af5e68db20237195",
+			"comment": "Ambience Occlusion Rooms - StreetExtMain02",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "2690e6bc46c36efc",
 			"comment": "Ambience Occlusion Rooms - Outside Global",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "cf4dc4382f8f6973",
 			"comment": "Ambience Occlusion Rooms - Laundromat Roof",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5017f52f5de04fd",
+			"comment": "Ambience Occlusion Rooms - Outside Rain",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -1265,67 +1313,31 @@
 		}
 	}, {
 		"entities": [{
-			"ref": "c4940eb8645451bc",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "e1ca7ab27b4cd234",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "af5e68db20237195",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "5017f52f5de04fd",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "8bb550b693ca140c",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "9e47c38a2eea3c7d",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "d9c8cdf300940570",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "a8d576c02aa43f84",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
 			"ref": "8ad8aa286203b299",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"comment": "Ambience Occlusion Rooms - Walkway_Station",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "23215403eb69c0ea",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"comment": "Ambience Occlusion Rooms - Alley Restaurant Back",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "b869b9bf6991bfda",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-		}, {
-			"ref": "bab9295f1d74428c",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"comment": "Ambience Occlusion Rooms - Alley Restaurant Side",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
 			"ref": "9a9fd86bbbf68e4d",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"comment": "Ambience Occlusion Rooms - Walkway Scenic",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}, {
-			"ref": "ceae012ebc9ef8a0",
-			"comment": "Ambience Occlusion Rooms - Outside Rain",
+			"ref": "57932d9c77639e8b",
+			"comment": "Ambience Occlusion Rooms - AlleyFacilityScenic",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_pMainEvent": {
 				"type": "ZRuntimeResourceID",
 				"value": {
-					"resource": "00F845BB2B3CDFAF",
+					"resource": "0023C8B28A69EC05",
 					"flag": "5F"
 				}
 			}
