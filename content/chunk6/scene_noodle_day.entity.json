@@ -2947,6 +2947,30 @@
 		"ref": "958a1e1d3e9a698b",
 		"_comment": "Fake Lights",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "caf88d1912f5d715",
+		"_comment": "Hush Room Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "8720d29ef4943c6f",
+		"_comment": "Hush Room Stuff",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "4c4774b2c2763f08",
+		"_comment": "Hush Room Red Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "f6797e3eb1c41b20",
+		"_comment": "Block Lobby Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "962037197f0c9ea6",
+		"_comment": "Block Lobby Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "36af3e12eba31d53",
+		"_comment": "Block Lobby Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": {

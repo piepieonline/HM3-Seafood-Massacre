@@ -23790,6 +23790,10 @@
 		"_comment": "Apartment Rooftop NPC stuff",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
+		"ref": "d430b357848bf324",
+		"_comment": "Hush Mind Control Platform",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
 		"ref": "ea25d8da60ea702e",
 		"_comment": "Drones",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
