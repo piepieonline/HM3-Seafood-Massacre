@@ -19314,6 +19314,10 @@
 				"onEvent": "OnActDone",
 				"shouldTrigger": "Done",
 				"onEntity": "abcd07c5ee6456d4"
+			}, {
+				"onEvent": "OnActDone",
+				"shouldTrigger": "In",
+				"onEntity": "abcd19ce17cd174d"
 			}]
 		},
 		"abcdd0a8baa251a8": {
@@ -22507,6 +22511,24 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd19ce17cd174d": {
+			"parent": "abcd07c5ee6456d4",
+			"name": "CallBartender Timer",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 60000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
@@ -24767,6 +24789,19 @@
 			"$type": "void",
 			"$val": null
 		}
+	}, {
+			"comment": "Call bartender to serve on timeout",
+			"fromEntity": "abcd19ce17cd174d",
+			"toEntity": {
+				"ref": "6b0f5cf589916271",
+				"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			},
+			"fromPinName": "Out",
+			"toPinName": "SetTrue",
+			"constantPinValue": {
+				"$type": "void",
+				"$val": null
+			}
 	}],
 	"pinConnectionOverrideDeletes": [{
 		"comment": "Placing the first meal shouldn't complete the act",
