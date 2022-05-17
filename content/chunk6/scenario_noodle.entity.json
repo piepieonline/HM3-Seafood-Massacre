@@ -9946,7 +9946,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd1095e1669557", "abcd1af88a31d7b9", "abcd55d2a211955c", "abcd896333824890"]
+					"value": ["abcd1095e1669557", "abcd1af88a31d7b9", "abcd55d2a211955c"]
 				}
 			},
 			"editorOnly": false,
@@ -10101,24 +10101,6 @@
 				"m_rActor": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd9a040fd7639e"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
-		},
-		"abcd896333824890": {
-			"parent": "abcd7c6a9fdb362d",
-			"name": "Meeting VolumeTriggerCharacter",
-			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_Boxes": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd95b1168e6d39"]
 				}
 			},
 			"postInitProperties": {},
@@ -10319,6 +10301,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Renew",
 				"onEntity": "abcdfc18fe438b0b"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcda3d7c8dfff0e"
 			}]
 		},
 		"abcd2bd08bd2c891": {
@@ -10544,7 +10530,7 @@
 			"editorOnly": false,
 			"events": [{
 				"onEvent": "OnTrue",
-				"shouldTrigger": "LeaveTarget",
+				"shouldTrigger": "PickupOnTarget",
 				"onEntity": "abcd267dfbbe1170"
 			}, {
 				"onEvent": "OnTrue",
@@ -10631,6 +10617,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcddac86be7d693"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd242ef1f341a4"
 			}]
 		},
 		"abcd10fb16deafe7": {
@@ -10817,13 +10807,13 @@
 		},
 		"abcdd1fd32626f4e": {
 			"parent": "abcdc8b8b283aa21",
-			"name": "Chief has seen 47 in past 7 secs",
+			"name": "Chief saw 47 in past 11 secs",
 			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"Delay time (ms)": {
 					"type": "int32",
-					"value": 7000
+					"value": 11000
 				}
 			},
 			"postInitProperties": {},
@@ -19700,6 +19690,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "ShowIcon",
 				"onEntity": "abcd3ce6f3125cf5"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcda3d7c8dfff0e"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
@@ -22512,7 +22506,39 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcd19ce17cd174d": {
+		"abcdace482bdeabc": {
+			"parent": "abcd0b970922761a",
+			"name": "ValueBool_Operation BL at meeting as escape triggered",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd857e0f74e7c1", "abcd242ef1f341a4"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetTrue",
+				"onEntity": "abcd9d338236aa72"
+			}]
+		},
+		"abcd242ef1f341a4": {
+			"parent": "abcdace482bdeabc",
+			"name": "VBB_RD Disguise Blown",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},	"abcd19ce17cd174d": {
 			"parent": "abcd07c5ee6456d4",
 			"name": "CallBartender Timer",
 			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
