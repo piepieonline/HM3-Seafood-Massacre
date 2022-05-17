@@ -2893,7 +2893,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd604fe9fa0bb4", "abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
+					"value": ["abcd8ffbcfec1946", "abcd1d248a933613", "abcd604fe9fa0bb4", "abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd624d50256e8d", "abcd95b1168e6d39", "abcd1936d6405a69", "abcdfda853d78f04"]
 				}
 			},
 			"postInitProperties": {},
@@ -2953,7 +2953,7 @@
 			"properties": {
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd604fe9fa0bb4", "abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd7d020caa4a61", "abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
+					"value": ["abcd8ffbcfec1946", "abcd1d248a933613", "abcd604fe9fa0bb4", "abcdad03e24de65d", "abcde73f6ac8b22e", "abcdd92e94827537", "abcd547ca47f2c02", "abcd7d020caa4a61", "abcd624d50256e8d", "abcda01c3dd9d341", "abcdb4cd1df26296", "abcd40e10fce7caa", "abcd1936d6405a69", "abcdfda853d78f04", "abcd95b1168e6d39"]
 				}
 			},
 			"postInitProperties": {},
@@ -8373,21 +8373,9 @@
 			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/drama2escortsituation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/drama2escortsituation.entitytemplate].pc_entityblueprint",
 			"properties": {
-				"m_aTargetOffsets": {
-					"type": "TArray<SVector3>",
-					"value": [{
-						"x": 0,
-						"y": 0,
-						"z": 0
-					}, {
-						"x": 0,
-						"y": 0,
-						"z": 0
-					}]
-				},
 				"m_fSpeedUpDistance": {
 					"type": "float32",
-					"value": 2
+					"value": 3
 				},
 				"m_bStartSearchOnTargetDead": {
 					"type": "bool",
@@ -8399,23 +8387,11 @@
 				},
 				"m_nPriority": {
 					"type": "int32",
-					"value": 50
+					"value": 100
 				},
 				"m_fStartSearchOnTargetDeadDelay": {
 					"type": "float32",
 					"value": 60
-				},
-				"m_fMaxDistanceToIntermediates": {
-					"type": "float32",
-					"value": 15
-				},
-				"m_fTargetPathOffsetMax": {
-					"type": "float32",
-					"value": 4
-				},
-				"m_fTargetPathOffsetMin": {
-					"type": "float32",
-					"value": 2
 				},
 				"m_ConditionList": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -8424,6 +8400,18 @@
 				"m_bIsRunning": {
 					"type": "bool",
 					"value": true
+				},
+				"m_bEscortsReactToDistactions": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rAnimVariationResource": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd6647db4620d3"
+				},
+				"m_fMaxTargetDistance": {
+					"type": "float32",
+					"value": 4
 				}
 			},
 			"postInitProperties": {
@@ -8438,15 +8426,7 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnLeaveTarget",
-				"shouldTrigger": "Start",
-				"onEntity": "abcd7762be334884"
-			}, {
-				"onEvent": "OnLeaveTarget",
-				"shouldTrigger": "Start",
-				"onEntity": "abcd5b758a1ba5d1"
-			}]
+			"events": []
 		},
 		"abcda8c84a3b4d08": {
 			"parent": "abcdba7e01047fcf",
@@ -8500,10 +8480,6 @@
 				"onEntity": "abcdda8c7c5b2a4a"
 			}, {
 				"onEvent": "OnActTimeout",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd530a0fba6989"
-			}, {
-				"onEvent": "OnActTimeout",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcda3d7c8dfff0e"
 			}],
@@ -8511,13 +8487,13 @@
 		},
 		"abcd530a0fba6989": {
 			"parent": "abcdd4cd9f8290b3",
-			"name": "HasSaluted ValueBool_Basic",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"name": "HasSaluted invertedcondition",
+			"template": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
 			"properties": {
-				"m_bValue": {
-					"type": "bool",
-					"value": false
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcda3d7c8dfff0e"
 				}
 			},
 			"postInitProperties": {},
@@ -8557,7 +8533,7 @@
 			"postInitProperties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcda3d7c8dfff0e", "abcd41228fd6dcbc"]
+					"value": ["abcda3d7c8dfff0e"]
 				}
 			},
 			"editorOnly": false,
@@ -19694,6 +19670,10 @@
 				"onEvent": "OnTrue",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcda3d7c8dfff0e"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd3a068d6bbad3"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
@@ -22538,7 +22518,8 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
-		},	"abcd19ce17cd174d": {
+		},
+		"abcd19ce17cd174d": {
 			"parent": "abcd07c5ee6456d4",
 			"name": "CallBartender Timer",
 			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
@@ -22555,6 +22536,315 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd6647db4620d3": {
+			"parent": "abcde0eba4f09147",
+			"name": "VRI_Male_WalkFast",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_walkfast.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_male_walkfast.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcde0eba4f09147"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd1d248a933613": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone NextToTopSniperSpot VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90
+						},
+						"position": {
+							"x": -114.517,
+							"y": 119.047,
+							"z": 121.017
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 15,
+						"y": 6,
+						"z": 6
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd8ffbcfec1946": {
+			"parent": "abcd61504c375d7f",
+			"name": "TargetKillZone NextToTopSniperSpotRight VolumeBox",
+			"template": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90
+						},
+						"position": {
+							"x": -127.031,
+							"y": 109.864,
+							"z": 121.024
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 2,
+						"y": 4,
+						"z": 4
+					}
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd2dc906e0b4ab": {
+			"parent": "abcd692adf85a546",
+			"name": "CHAR_StationGuard",
+			"template": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/gameplay/ai2/actors.template?/npcactor.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.92343385152114
+						},
+						"position": {
+							"x": -184.379,
+							"y": 123.287,
+							"z": 85
+						}
+					}
+				},
+				"RepositoryId": {
+					"type": "ZGuid",
+					"value": "f7aa1122-215b-4a4c-8492-662bf32e0067"
+				},
+				"m_OutfitRepositoryID": {
+					"type": "ZGuid",
+					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
+				},
+				"m_bStartEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sActorName": {
+					"type": "ZString",
+					"value": "Bing Bong"
+				},
+				"m_bWeaponUnholstered": {
+					"type": "bool",
+					"value": true
+				},
+				"m_nWeaponIndex": {
+					"type": "int32",
+					"value": 3
+				},
+				"m_nOutfitVariation": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_nOutfitCharset": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd97b18facbcd7"]
+				}
+			},
+			"postInitProperties": {
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdb2be5157639a": {
+			"parent": "abcd2dc906e0b4ab",
+			"name": "DR_WalkwayRoute",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dramasituation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rDrama": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd981a4b09a5da"
+				},
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2dc906e0b4ab"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdbc84c5316002": {
+			"parent": "abcdb2be5157639a",
+			"name": "Role",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/role.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aActors": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd2dc906e0b4ab"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd0726499131fb": {
+			"parent": "abcdb2be5157639a",
+			"name": "act_mr_stand_sloppy_rifle_2hand_var1",
+			"template": "00FBD3A4937FE930",
+			"blueprint": "0021ECC47366A6BD",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -175.065,
+							"y": 162.408,
+							"z": 89
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 45
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdbc84c5316002"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd4a99fca6c345"
+			}]
+		},
+		"abcd4a99fca6c345": {
+			"parent": "abcdb2be5157639a",
+			"name": "Act_MR_Stand_Rifle1",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 170
+						},
+						"position": {
+							"x": -168.392,
+							"y": 89.7122,
+							"z": 81
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 18
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdbc84c5316002"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd0726499131fb"
+			}, {
+				"onEvent": "OnActDone",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd0726499131fb"
+			}]
+		},
+		"abcd981a4b09a5da": {
+			"parent": "abcdb2be5157639a",
+			"name": "Screenplay",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/screenplay.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Roles": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcdbc84c5316002"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnStart",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd4a99fca6c345"
+			}]
 		}
 	},
 	"propertyOverrides": [{
@@ -24816,18 +25106,18 @@
 			"$val": null
 		}
 	}, {
-			"comment": "Call bartender to serve on timeout",
-			"fromEntity": "abcd19ce17cd174d",
-			"toEntity": {
-				"ref": "6b0f5cf589916271",
-				"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-			},
-			"fromPinName": "Out",
-			"toPinName": "SetTrue",
-			"constantPinValue": {
-				"$type": "void",
-				"$val": null
-			}
+		"comment": "Call bartender to serve on timeout",
+		"fromEntity": "abcd19ce17cd174d",
+		"toEntity": {
+			"ref": "6b0f5cf589916271",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		},
+		"fromPinName": "Out",
+		"toPinName": "SetTrue",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
 	}],
 	"pinConnectionOverrideDeletes": [{
 		"comment": "Placing the first meal shouldn't complete the act",

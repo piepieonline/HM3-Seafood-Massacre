@@ -1277,6 +1277,14 @@
 			"ref": "9bf7b4f2d1bd230e",
 			"comment": "Ambience Occlusion Rooms - AlleyBlockEntrance",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "9fe6d2777a44cfe7",
+			"comment": "Ambience Occlusion Rooms - Walkway_Underpass_Stairs",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "87cae41971e42011",
+			"comment": "AG_Walkway_Underpass_Open",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_pMainEvent": {
