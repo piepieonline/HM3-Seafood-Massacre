@@ -1214,6 +1214,73 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "e0861ac9bfe784ff",
+			"_comment": "StaticdecalController_Ground_15",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00D11933D823CA08",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "466b3b7064666b7c",
+			"_comment": "rat_ground_road_b",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"843012296": {
+				"type": "ZRuntimeResourceID",
+				"value": null
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "687768fc2815e31e",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6a09e16c60cd8dfc",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "fed9d79082f8048",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "32cdfb57c59ef89c",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "4f376db32230776",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "d09819bad4072068",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "42d5a8fbd258bef5",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "87c237abc6775681",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "da8306c2f8a75b5c",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "a1f190554b02fc24",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
 			"ref": "8819239ed58d391b",
 			"_comment": "StaticDecal_Interactive_Puddle_",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -1254,6 +1321,22 @@
 			"WaterLevel": {
 				"type": "float32",
 				"value": 0
+			},
+			"m_bVisible": {
+				"type": "bool",
+				"value": false
+			},
+			"m_vGlobalSize": {
+				"type": "SVector3",
+				"value": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			"DecalController": {
+				"type": "SEntityTemplateReference",
+				"value": null
 			}
 		}
 	}, {
@@ -3046,6 +3129,14 @@
 	}, {
 		"ref": "a3bf6d04442034db",
 		"_comment": "BirdcageAlleySeg1",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "5fcdd0d195508643",
+		"_comment": "StaticDecalController_Facility_Alley",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "6b40e4ac601f71a6",
+		"_comment": "Mesh_Decals Mud_Ground_Variation_Fox",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
