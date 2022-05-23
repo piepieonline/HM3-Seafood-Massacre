@@ -1214,6 +1214,50 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "8819239ed58d391b",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "1d56097e7e43e000",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "c5cd39192b4110f4",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5fe6584b328771fd",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "5e27637ecb4703d2",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "42e57d92a3620eac",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "b569535b486ef0eb",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "6d6df1869b1a1cd8",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}, {
+			"ref": "68e4d0ee2af67479",
+			"_comment": "StaticDecal_Interactive_Puddle_",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"WaterLevel": {
+				"type": "float32",
+				"value": 0
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "c4940eb8645451bc",
 			"comment": "Ambience Occlusion Rooms - AlleyBlockCourtyard",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -1348,6 +1392,18 @@
 					"resource": "0023C8B28A69EC05",
 					"flag": "5F"
 				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "f6a53188ca7ffbf",
+			"comment": "Room_330_Inside_Kitchen",
+			"externalScene": "000D36CCB954F4D4"
+		}],
+		"properties": {
+			"m_bCSMRoom": {
+				"type": "bool",
+				"value": false
 			}
 		}
 	}, {
@@ -2978,6 +3034,18 @@
 	}, {
 		"ref": "36af3e12eba31d53",
 		"_comment": "Block Lobby Window Light",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "2850f041f4ee4dad",
+		"_comment": "Restaurant Character Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "d0a9b44965444fee",
+		"_comment": "StaticDecalController_BirdcageAlley",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+	}, {
+		"ref": "a3bf6d04442034db",
+		"_comment": "BirdcageAlleySeg1",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{

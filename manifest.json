@@ -79,13 +79,30 @@
 			"UI_NOODLE_WITNESSES": "Witnesses Remaining",
 			"locr_Amulet": "Red Dragon Amulet"
 		},
-		"french": {},
+		"french": {"UI_CONTRACT_NOODLE_NIGHT": "Le Massacre des Nouilles",
+			"UI_CONTRACT_NOODLE_DAY": "Massacre au Restaurant de Nouilles de Chongqing",
+			"UI_NOODLE_DAY_BRIEFING": "La réunion aura lieu au restaurant de nouilles de Chongqing, situé sur un terrain neutre. Éliminer le chef de la police dans cet endroit va élargir le conflit et lever la protection policière de Lee Hong.\n\nVous devez donc vous assurer que tout survivant ou témoin croit que Lee Hong a provoqué le meurtre. Se déguiser en membre du Dragon Rouge pourrait faire l’affaire. \n\nLaissez une amulette du Dragon Rouge à l’intérieur du restaurant afin d’incriminer davantage la triade de Lee Hong. Le négociateur de Lee Hong portera une amulette que vous pourriez utiliser.",
+            "UI_NOODLE_BRIEFING": "Les Triades sont prêtes pour la guerre, 47 ! Mais la police de Chongqing intervient pour préserver la paix. Le chef de la police lui-même préside une réunion des délégués, des Dragons Rouges et du Lotus Bleu, au restaurant de nouilles de Chongqing. Si vous éliminez le négociateur du Dragon Rouge et que vous le piégez pour les meurtres du chef de la police et du négociateur du Lotus Bleu, tout devient inévitable. Même la police s’alignera contre les Dragons Rouges, rendant Lee Hong enfin vulnérable. La sécurité est évidemment serrée à cause de l’implication de la police. Rappelez-vous, 47, ces éliminations sont importantes mais elles ne compteront que si les Dragons Rouges en endossent la responsabilité. Regardez-vous, 47 ans, le chef de police et le négociateur du Lotus Bleu sont assez méfiants et ne seront pas facile à tromper..",
+			"UI_NOODLE_WITNESSES": "Témoins restants",
+			"locr_Amulet": "Amulette du Dragon Rouge"},
 		"italian": {},
 		"german": {},
 		"spanish": {},
 		"russian": {},
-		"chineseSimplified": {},
-		"chineseTraditional": {},
+		"chineseSimplified": {
+			"UI_CONTRACT_NOODLE_NIGHT": "面馆惨案",
+			"UI_CONTRACT_NOODLE_DAY": " 重庆面馆惨案",
+			"UI_NOODLE_DAY_BRIEFING": "会面将在位于中立地的一家重庆面馆举行. 在这里解决掉警察局长将扩大冲突，并解除警方对李洪的保护\n\n 为此，你必须确保任何目击者都相信是李洪主导了这起谋杀，因此你必须装扮成红龙帮成员. \n\n 在面馆内留下一个红龙护身符，以进一步指控李洪的帮派. 李洪的谈判代表身上应该有一个可以为你所用",
+			"UI_NOODLE_WITNESSES": "目击者数量",
+			"locr_Amulet": "红龙护身符"
+		},
+		"chineseTraditional": {
+			"UI_CONTRACT_NOODLE_NIGHT": "面馆惨案",
+			"UI_CONTRACT_NOODLE_DAY": " 重庆面馆惨案",
+			"UI_NOODLE_DAY_BRIEFING": "会面将在位于中立地的一家重庆面馆举行. 在这里解决掉警察局长将扩大冲突，并解除警方对李洪的保护\n\n 为此，你必须确保任何目击者都相信是李洪主导了这起谋杀，因此你必须装扮成红龙帮成员. \n\n 在面馆内留下一个红龙护身符，以进一步指控李洪的帮派. 李洪的谈判代表身上应该有一个可以为你所用",
+			"UI_NOODLE_WITNESSES": "目击者数量",
+			"locr_Amulet": "红龙护身符"
+		},
 		"japanese": {}
 	},
 	"frameworkVersion": "1.3.1"
