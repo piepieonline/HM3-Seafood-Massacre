@@ -22845,6 +22845,26 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd4a99fca6c345"
 			}]
+		},
+		"abcd8281d223daec": {
+			"parent": "abcd4189eb0dd314",
+			"name": "CanBartenderCheckMeals",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "NONE"
+				}
+			},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd24ceccc3b3fe"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
@@ -23064,7 +23084,7 @@
 					"ref": "6b0f5cf589916271",
 					"comment": "Food bell rung",
 					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-				}]
+				}, "abcd8281d223daec"]
 			},
 			"m_aStartConditions": {
 				"type": "TArray<SEntityTemplateReference>",
