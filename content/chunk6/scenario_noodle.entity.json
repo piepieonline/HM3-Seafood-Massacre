@@ -4957,7 +4957,7 @@
 				},
 				"m_fRange": {
 					"type": "float32",
-					"value": 20
+					"value": 30
 				}
 			},
 			"postInitProperties": {},
@@ -5021,11 +5021,11 @@
 				},
 				"m_rEventLocation": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd5410da627874"
+					"value": "abcd5028b4db38e4"
 				},
 				"m_rEventSender": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd5410da627874"
+					"value": "abcd5028b4db38e4"
 				}
 			},
 			"postInitProperties": {},
@@ -5033,8 +5033,8 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd5410da627874": {
-			"parent": "abcd61dc0a9b90d2",
-			"name": "FakeImpactLocation",
+			"parent": "abcd4b79d347278d",
+			"name": "FakeImpactLocation - Meeting",
 			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
 			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
 			"properties": {
@@ -5351,7 +5351,7 @@
 						"position": {
 							"x": 0,
 							"y": 0,
-							"z": 0
+							"z": 1
 						}
 					}
 				},
@@ -22863,6 +22863,179 @@
 					"value": ["abcd24ceccc3b3fe"]
 				}
 			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd5028b4db38e4": {
+			"parent": "abcd185877e642a8",
+			"name": "FakeImpactParenter",
+			"template": "[modules:/zmultiparentspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zmultiparentspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_nStartupIndex": {
+					"type": "int32",
+					"value": 0
+				},
+				"m_aParents": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd5410da627874", "abcddb84c26ce0f8"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd5f98010089be": {
+			"parent": "abcd4b79d347278d",
+			"name": "FakeImpactParenter VolumeTriggerCharacter Meeting",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd95b1168e6d39"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetIndexReparent",
+				"onEntity": "abcd5028b4db38e4",
+				"value": {
+					"type": "int32",
+					"value": 0
+				}
+			}]
+		},
+		"abcd185877e642a8": {
+			"parent": "abcd61dc0a9b90d2",
+			"name": "FakeImpacts",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd4b79d347278d": {
+			"parent": "abcd185877e642a8",
+			"name": "Meeting",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdee067a9ac259": {
+			"parent": "abcd185877e642a8",
+			"name": "Square",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcddb84c26ce0f8": {
+			"parent": "abcdee067a9ac259",
+			"name": "FakeImpactLocation - Square",
+			"template": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zspatialentity.class].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -91.3369,
+							"y": 105.328,
+							"z": 99.3154
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde6685478bc15": {
+			"parent": "abcdee067a9ac259",
+			"name": "FakeImpactParenter VolumeTriggerCharacter Square",
+			"template": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd40e10fce7caa"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "SetIndexReparent",
+				"onEntity": "abcd5028b4db38e4",
+				"value": {
+					"type": "int32",
+					"value": 1
+				}
+			}]
+		},
+		"abcdd95805bb283b": {
+			"parent": "abcd185877e642a8",
+			"name": "Cafe_Chair_Rat_China",
+			"template": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/furniture/cafe_furniture_italy_a.template?/cafe_chair_rat_china.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd5028b4db38e4"
+				}
+			},
+			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		}
