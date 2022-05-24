@@ -273,7 +273,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
 						"ref": "64f9539bbd38fccc",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				}
 			},
@@ -797,7 +797,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd3283846a3f03", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_aDisguisesFriskExempt": {
@@ -1012,14 +1012,14 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", "abcd3283846a3f03", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_KeeperProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_Zones": {
@@ -1153,7 +1153,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
 						"ref": "ea2ff0891b62bb18",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_eidParent": {
@@ -1837,9 +1837,9 @@
 		},
 		"abcd432adfe4aef7": {
 			"parent": "abcd7e536bbd183d",
-			"name": "act_mr_stand_anxious_looking_around",
-			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entityblueprint",
+			"name": "act_mr_stand_smoke",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_smoke.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_smoke.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_mTransform": {
 					"type": "SMatrix43",
@@ -1847,18 +1847,18 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -45.002979908338
+							"z": 180.002979908338
 						},
 						"position": {
-							"x": -95.33100128173828,
-							"y": 102.11000061035156,
-							"z": 101.01100158691406
+							"x": -74.7324,
+							"y": 111.999,
+							"z": 101.011
 						}
 					}
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 6
+					"value": 15
 				}
 			},
 			"postInitProperties": {
@@ -1876,9 +1876,9 @@
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd81c826dc03f3"
+				"onEntity": "abcd9711a0648b8d"
 			}, {
-				"onEvent": "OnReached",
+				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdf18da00863f2"
 			}]
@@ -2586,7 +2586,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_pAudioEvent": {
@@ -2659,7 +2659,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -3199,7 +3199,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "7c51c282481f8b73",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -3237,7 +3237,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6ee93e13337704c2",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -3307,7 +3307,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6ee93e13337704c2",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_eidParent": {
@@ -3366,7 +3366,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6ee93e13337704c2",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_eidParent": {
@@ -3421,7 +3421,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6ee93e13337704c2",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_eidParent": {
@@ -3602,7 +3602,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "7c51c282481f8b73",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -3997,7 +3997,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "f6a53188ca7ffbf",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -4443,7 +4443,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6ee93e13337704c2",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -4538,7 +4538,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "ea2ff0891b62bb18",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_ePhysicsMode": {
@@ -5322,7 +5322,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_spatial": {
@@ -5437,7 +5437,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "7c51c282481f8b73",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -8587,7 +8587,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_AllowedProfessions": {
@@ -8598,7 +8598,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_Zones": {
@@ -8797,7 +8797,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "1cd934b65fec0661",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -8871,7 +8871,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "bee6ed6f69918ed9",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -9276,7 +9276,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_rActor": {
@@ -9382,7 +9382,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_pAudioEvent": {
@@ -9462,7 +9462,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_pAudioEvent": {
@@ -9539,7 +9539,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_bUseConversationHelper": {
@@ -9620,7 +9620,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_pAudioEvent": {
@@ -10006,7 +10006,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_bFastTransition": {
@@ -10071,7 +10071,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_rActor": {
@@ -10149,7 +10149,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_pAudioEvent": {
@@ -10415,7 +10415,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_AlignRotation": {
@@ -10426,7 +10426,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_bUseConversationHelper": {
@@ -10543,7 +10543,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -10678,14 +10678,14 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_KeeperProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_Zones": {
@@ -10719,7 +10719,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -14498,14 +14498,14 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "8374ed815902a20",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_rGateEntity": {
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "e6b2cb738c11773e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_bIsLocked": {
@@ -16523,7 +16523,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6c1d9db9f2e37192",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -16620,7 +16620,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6c1d9db9f2e37192",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -18932,7 +18932,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_AllowedProfessions": {
@@ -18943,7 +18943,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["abcd97b18facbcd7", {
 						"ref": "58d50e428bb02419",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				},
 				"m_Zones": {
@@ -19269,7 +19269,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "710845eac3f6aa0c",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 						"exposedEntity": "ItemKey_Poisonable_FoodPlate"
 					}
 				}
@@ -19339,10 +19339,10 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
 						"ref": "3957fa286e703e5e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}, {
 						"ref": "a19a36b84c16ec87",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				}
 			},
@@ -19380,7 +19380,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "67e69b92e2140e7",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -19858,7 +19858,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [{
 						"ref": "431ec595d40a7f03",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
 				}
 			},
@@ -20272,14 +20272,14 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "6ee93e13337704c2",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "9eb0d5d518bc23dc",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -20297,7 +20297,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "67e69b92e2140e7",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -22181,7 +22181,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "3433b4dad4c994e6",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -22215,7 +22215,7 @@
 					"type": "SEntityTemplateReference",
 					"value": {
 						"ref": "3433b4dad4c994e6",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}
 				}
 			},
@@ -22865,13 +22865,57 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd9711a0648b8d": {
+			"parent": "abcd7e536bbd183d",
+			"name": "act_mr_stand_anxious_looking_around",
+			"template": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr.template?/act_mr_stand_anxious_looking_around.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0.002979908338
+						},
+						"position": {
+							"x": -87.1416,
+							"y": 101.742,
+							"z": 101.011
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 3
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd52341c0dd6b4"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd81c826dc03f3"
+			}]
 		}
 	},
 	"propertyOverrides": [{
 		"entities": [{
 			"ref": "25a5710918c3b74c",
 			"comment": "CoverPlane 199 - Kitchen Window",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bHeroCanDumpBody": {
@@ -22886,85 +22930,85 @@
 	}, {
 		"entities": [{
 			"ref": "98103f2b946ab7b0",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "bf8b3a268a085481",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b14952351b1364e4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "142d00d59bb25ec",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "70afae62d5325243",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2807441f9b2b2eab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "53f1673f39abb474",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ac4d83bba40a514b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "14637952abc96ae6",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "700d31eddcd7cb02",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7357610fb9cd4a44",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9af386dbfb5309ff",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8121b6b5afa00758",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "1ad30ab2698fc25d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "bbc1484eb2ad7da0",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ad8ede1387f0a160",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "72ae4f77f9aa627c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d14b6816c51a1dea",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9e04074395f00768",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "85b5fb415525ae83",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a636c09bbeec96c9",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5634d7ff3b6a43dd",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fed48ec52a24dc91",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e5f095b93092eff6",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b689c48b694c8831",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ae134538c0307702",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "26fc0559d4dffb4b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"DiffuseColor": {
@@ -22976,7 +23020,7 @@
 		"entities": [{
 			"ref": "579b5495a6345fef",
 			"comment": "Feng Zhao Act_MR_Stand_Lean_Back_Wall",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -22999,14 +23043,14 @@
 		"entities": [{
 			"ref": "c35a6ec40cfaa41d",
 			"comment": "ICA Apartment Rules",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_KeeperProfessions": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": [{
 					"ref": "e094cc8090d1bed1",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			}
 		}
@@ -23014,7 +23058,7 @@
 		"entities": [{
 			"ref": "762b112b948e9b30",
 			"comment": "Hobo Crowbar",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -23037,7 +23081,7 @@
 		"entities": [{
 			"ref": "74c4378c644d18fe",
 			"comment": "Block Crowbar",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -23060,7 +23104,7 @@
 		"entities": [{
 			"ref": "3eb4b7f8e2c29fdb",
 			"comment": "Block Radio",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -23083,7 +23127,7 @@
 		"entities": [{
 			"ref": "ae3ddedeb2716ff4",
 			"comment": "Allow bartender to check food even if not ready",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_nCooldown": {
@@ -23099,7 +23143,7 @@
 				"value": [{
 					"ref": "6b0f5cf589916271",
 					"comment": "Food bell rung",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}, "abcd8281d223daec"]
 			},
 			"m_aStartConditions": {
@@ -23107,7 +23151,7 @@
 				"value": [{
 					"ref": "6b0f5cf589916271",
 					"comment": "Food bell rung",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			}
 		}
@@ -23115,7 +23159,7 @@
 		"entities": [{
 			"ref": "8de34ea8bc35645a",
 			"comment": "Chef loop - Prepare food override",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_aHigherPriority": {
@@ -23127,7 +23171,7 @@
 		"entities": [{
 			"ref": "223c0654d13c5c0b",
 			"comment": "Chill In Apartment Drama",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_aEnableConditions": {
@@ -23139,7 +23183,7 @@
 		"entities": [{
 			"ref": "7dd1b3930e12b3ab",
 			"comment": "BlockBathroom Door",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bManualClose": {
@@ -23155,7 +23199,7 @@
 		"entities": [{
 			"ref": "dc879bffb3d0f921",
 			"comment": "BlockApartment Door",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bIsLocked": {
@@ -23179,7 +23223,7 @@
 		"entities": [{
 			"ref": "36217f0765974508",
 			"comment": "Room_320_Inside_Toilet",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_Clients": {
@@ -23191,21 +23235,21 @@
 		"entities": [{
 			"ref": "60b4243977a5dc3b",
 			"comment": "Facility Container Courtyard Rules",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_AllowedProfessions": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": ["abcddc036a2478b0", "abcd97b18facbcd7", {
 					"ref": "58d50e428bb02419",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			},
 			"m_KeeperProfessions": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": ["abcd97b18facbcd7", {
 					"ref": "58d50e428bb02419",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			}
 		}
@@ -23213,14 +23257,14 @@
 		"entities": [{
 			"ref": "e6a931ec8ed1de3e",
 			"comment": "Kitchen Rules",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_KeeperProfessions": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": ["abcd97b18facbcd7", {
 					"ref": "58d50e428bb02419",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			}
 		}
@@ -23228,7 +23272,7 @@
 		"entities": [{
 			"ref": "1f821070b72725a5",
 			"comment": "Laundry Area Rules",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_KeeperProfessions": {
@@ -23244,7 +23288,7 @@
 		"entities": [{
 			"ref": "2f61079282152447",
 			"comment": "Apartment Roof Rules",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bDeepTrespassing": {
@@ -23264,7 +23308,7 @@
 		"entities": [{
 			"ref": "73530082e7dbef26",
 			"comment": "Food bell",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -23287,7 +23331,7 @@
 		"entities": [{
 			"ref": "845680542066688e",
 			"comment": "Kitchen Powerbox",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -23310,7 +23354,7 @@
 		"entities": [{
 			"ref": "c1e7695f01e1a3ff",
 			"comment": "Core Meltdown Stuff",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_nInitialStateIndex": {
@@ -23322,7 +23366,7 @@
 		"entities": [{
 			"ref": "63e44936e1923b25",
 			"comment": "Core Meltdown Stuff",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_nInitialStateIndex": {
@@ -23334,7 +23378,7 @@
 		"entities": [{
 			"ref": "63e44936e1923b25",
 			"comment": "Core Meltdown Stuff",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_rEnableCondition": {
@@ -23346,15 +23390,15 @@
 		"entities": [{
 			"ref": "a2ffb78903c866f4",
 			"comment": "ICA Apartment Door",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "59a22e5960511de6",
 			"comment": "Arcade to Block Door",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "33afabc5845fe72",
 			"comment": "Staircase to Block Door",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"Reinforced": {
@@ -23370,41 +23414,41 @@
 		"entities": [{
 			"ref": "e7cc08bd31c97e03",
 			"_comment": "Restaurant Lanterns",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9dd9f9d064cb7fbd",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "89c4ee2d46e7642e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5e1a118e6b571506",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "4518077f0c65d739",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "290c1932f25d58",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a8e4bcf8bb977375",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "6778fbbd40322bbb",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "cf4b7f7213002efa",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d195ab06c6bf5743",
 			"comment": "Rest_INT Ceiling Lamps",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e32c767671a60325",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8e50d8de2bbe250c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"DiffuseColor": {
@@ -23416,7 +23460,7 @@
 		"entities": [{
 			"ref": "e7bf2ba7f94d5ba6",
 			"comment": "Courtyard Door to facility I think",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bEnabled": {
@@ -23431,7 +23475,7 @@
 	}, {
 		"entities": [{
 			"ref": "20bfda5f2ef386ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_eidParent": {
@@ -23447,7 +23491,7 @@
 		"entities": [{
 			"ref": "43390d442177f82a",
 			"comment": "Actor (Bartender) to serve food",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_aActors": {
@@ -23458,248 +23502,248 @@
 	}, {
 		"entities": [{
 			"ref": "eabcd3224c8ff18f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_aValues": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": [{
 					"ref": "67e69b92e2140e7",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}, {
 					"ref": "186c08c3a1cc494",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}, {
 					"ref": "6b0f5cf589916271",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			}
 		}
 	}, {
 		"entities": [{
 			"ref": "d8f9ca2e2274a220",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_aValues": {
 				"type": "TArray<SEntityTemplateReference>",
 				"value": [{
 					"ref": "3b65c5217f607f89",
-					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
 			}
 		}
 	}, {
 		"entities": [{
 			"ref": "3919e06430973e1c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "94e2a9679f9cb653",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "dd3cee4d2fd169f4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c841846acd657c64",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2906809196e5b629",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f9bbf13b08dc2531",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "59883bb1f9d4012e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "580a5758d37d9651",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3c8faf4bb74e6aa5",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a56968f6fbc7354f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "137c1b50874babc3",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e60921b0b10a39cc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "20f310debce193a3",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5cb7d40231b5bc2c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2ce020c4e29c0a69",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "623ded7cee52e500",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3d68151c73e9dfe7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e55eda70c1de5568",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fcb4dafc41dce081",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "400b383bc79534df",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "18ad85570407cd3c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "84e57fbfafd89898",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d1bf629599fa902a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "84d4798704f34a8c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f9f41cf4375722ea",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "17e8b1d56de05c8a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "40973bb759302074",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "307d2b73dfbaa71c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e45d6f32394d6f85",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3f609dab7c7a297d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "94c9f093f5205fc1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c07f22951ba97434",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5561203014f0fd16",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "4ef6d4eec6df3240",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "25c353950697f6b1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "66edb0272d6f89f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7c760972a1959a9f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "83f3e32ab1523637",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b4aa2ccb30f41c10",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fd20778e7edd49f6",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c7237ad5aab928a3",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "61f77709b8e0ff05",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3affb0d517c04854",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "474006ddfb745cbb",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a2d8dfc60afb6b95",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ddb59976db7c6fcc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "cd43f94cceede5bc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "72111be659d919c3",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ee6ee24394fb7951",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e103fc572ecc0284",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9bdb0cbc4f9708bc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "221d32877a7b5462",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5cf8446b3e9cc159",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "cca00b4add708a2f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7958fc1057798c27",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "aeb9abf3263ce6dc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "898ff12edf208e5b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "4e0e4edb6b30d3ad",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c8b053098f59b23d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8e8cba648ccc71a1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b0f6d59b640dd469",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7b454c1f00ac616a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ff0e90fc5f140ae9",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "6b30d748f50ec103",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5ef37a0d611e7daa",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3bc78219db84d7a9",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ca2683da8ffa62b7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "bfb03c2f7fe8df54",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e9f718c98003f1db",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f877980ec2ad930c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"Music_AmbientBiome": {
@@ -23710,202 +23754,202 @@
 	}, {
 		"entities": [{
 			"ref": "ed6472dbc9f5ddc7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b40f5cd4a8580c1f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "27a7c85ec7990f6c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b64cbb984f191242",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a38debca5d4f0f93",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5543149e2e2fa50f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f77d66ff8d8ee91f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ecdf11c31adfb1bb",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7158ebb17a86eb3b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "49dba483d2a212a0",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c4e0f2befc18e621",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b17f9c1e6aad9b49",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "51efd631f2b868d1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "96f8d16ec0d1c996",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b748b6053f207f94",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7b115e1fa966d9fb",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "beba144d04a92536",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2026ae4ccee428be",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9c836b13549d86ba",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "788745546dbf3aa6",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b0b5c2bec7ec2013",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "706a5dae7bdba5bd",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "22318cee3cccc248",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "44fa5c17c8533c9f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b193a5ad95ae2b7e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "bf3719c3c52627af",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f2fc38a2ede25520",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d404e64a0f23f106",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3196bd7094787ee5",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b946773db3b87932",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "241b65a91ab27f1a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f25f4f00f404a0c1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8684f2c978c4587a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "bcc912e536504b36",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a55190211b2faf5f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e0ebe73d6c3bfa9f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "7b42c8218ed619bb",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f5befb1af76d4560",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "1ff2c8228448c13b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d73dfd7e2d8226ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8acc6d43c6200070",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8dd1c2f71948d734",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b4ed2b8cac12a819",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "832d6e20c2d7f9d9",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5acb20d0c0cff32f",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ec285304e668d097",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "12173b3c2ae2eb9",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d1487d0da1766064",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fc7982dae8a9e3f2",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d94fab54accce930",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c1d3896c1d40e158",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8b553182323f122d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d43aa8430c8daf1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "6eac100af4dfdbe6",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c8009a76de3fc00a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b850a2a6bc59e44",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "108e0af83d564e13",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3e9d82dda8db3eb8",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "dd76c03f91ee19b8",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "50c779abf7ff5d98",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c05f4e2cd215aaf",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "530042c1b07c8383",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fdd29b3420e7e02e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "4af3d64a08eb6086",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ac50761302116ae4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fb5401f50b1177b4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"Music_AmbientBiome": {
@@ -23916,133 +23960,133 @@
 	}, {
 		"entities": [{
 			"ref": "9bf7b4f2d1bd230e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ceae012ebc9ef8a0",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "da8477227578d8a4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8bb550b693ca140c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8ddd2306af6fa3ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "57932d9c77639e8b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2beb95ba8106eb2d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "b869b9bf6991bfda",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ed9606dd327c9ead",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "fec08bd5461068b4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "4b8dbb8f851cddc2",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a8d576c02aa43f84",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8d1eabe2464b0da",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e1ca7ab27b4cd234",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "6f7d0ec82dc134b5",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a1d383c441542745",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "f7bc37ae0a119ce2",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "32eb51627dba4503",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3384cf9c0732121a",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9a9fd86bbbf68e4d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8ad8aa286203b299",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9fe6d2777a44cfe7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "8b4ebe3c127d22ff",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "bab9295f1d74428c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3486d04b1117a17c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3e52f563c60a5845",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "e330ebcb92b7800d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "87cae41971e42011",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2690e6bc46c36efc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "c4940eb8645451bc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "1b1c3be1454bd2d1",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "5017f52f5de04fd",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "cf4dc4382f8f6973",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "a9100f6a7e15dc88",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "2207aa7062b2916d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "abefa4398c60a971",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "23215403eb69c0ea",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "3eb855b42fb61e66",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "9e47c38a2eea3c7d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d7fa84c1ac9d134d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "d9c8cdf300940570",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "ef703a7074c5a065",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}, {
 			"ref": "af5e68db20237195",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"Music_AmbientBiome": {
@@ -24053,7 +24097,7 @@
 	}, {
 		"entities": [{
 			"ref": "fc35444ca86e02d7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"EnableInteractionLeft": {
@@ -24064,7 +24108,7 @@
 	}, {
 		"entities": [{
 			"ref": "20fa5f56b8be100e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_nOutfitVariation": {
@@ -24075,7 +24119,7 @@
 	}, {
 		"entities": [{
 			"ref": "11b420629d3ee72e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_InitialOutfitId": {
@@ -24086,7 +24130,7 @@
 	}, {
 		"entities": [{
 			"ref": "ccd2698d410bfdb7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"2090999008": {
@@ -24097,7 +24141,7 @@
 	}, {
 		"entities": [{
 			"ref": "7f4bf9c26f794e69",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_bValue": {
@@ -24108,7 +24152,7 @@
 	}, {
 		"entities": [{
 			"ref": "d5caf8708a625d4b",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"m_mTransform": {
@@ -24130,7 +24174,7 @@
 	}, {
 		"entities": [{
 			"ref": "66c22b8d852a49a0",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
 			"Composition_PlayEvent": {
@@ -24160,817 +24204,501 @@
 		}
 	}],
 	"overrideDeletes": [{
-		"ref": "a57a2cf183de31f2",
-		"_comment": "Apartment Rooftop NPC stuff",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"ref": "f914d31cad1a6c5a",
+		"_comment": "Chest Freezer",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d430b357848bf324",
 		"_comment": "Hush Mind Control Platform",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "ea25d8da60ea702e",
 		"_comment": "Drones",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "10c2f07eed25f919",
 		"_comment": "Arcade Dumpster",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a24e070d1168f069",
 		"_comment": "Block bottom floor closet",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "b595f3efa52456d3",
 		"_comment": "Pallet Coverplane",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "1da69c371a21c577",
 		"_comment": "Pallet Coverplane",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "9769562ffdd2cec0",
 		"_comment": "Restaurant Alley Pallets",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e915c838e9cc96dd",
 		"_comment": "Restaurant Alley Pallets",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "9c2b53ff910c4a2c",
 		"_comment": "Restaurant Alley Pallets",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "6e258399634f649b",
 		"_comment": "Restaurant Alley Pallets",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "29d9e2f6741ef220",
 		"_comment": "Restaurant Alley Pallets",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "8e59931517b004b0",
 		"_comment": "Restaurant Alley Pallets",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "c482871d0d1832",
 		"_comment": "ALL STREET DUMPSTERS",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "f2bf2d30166caf6c",
 		"_comment": "Bodydump Ledge Restaurant BackAlley",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "7c10eb348c0efb86",
 		"_comment": "Kitchen Window Guide",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "18f8e96ea9b525d9",
 		"_comment": "Block Laptop",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "4db7aefe44f21494",
 		"_comment": "Perm Shortcut",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d489792b5b9cbb25",
 		"_comment": "Box Reflection Cache",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e760e7825e41460",
 		"_comment": "Noodle Guy",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "87ecd2bd33ee57b3",
 		"_comment": "Annoying Bich",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e703c9d5f0a1be16",
 		"_comment": "Towel Deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "9c3ca3e7c531e6c5",
 		"_comment": "Towel Deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "cddc1d62d7e237a0",
 		"_comment": "Homeless Deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e2cc7fd92a289887",
 		"_comment": "Homeless Deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "41b0396d08c9a4bd",
 		"_comment": "Homeless Deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "51da1b7462a6b2c5",
 		"_comment": "Bathroom Door",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "9eb5c96b754ca2fa",
 		"_comment": "Block - Patient Area Rules",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "969f46024ad9b658",
 		"_comment": "Facility Courtyard Rules",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "dcc0f76c16d6196f",
 		"_comment": "Facility Roof Rules",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "ec680e1280fba786",
 		"_comment": "Block F0-2 Trespassing",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "183f646348ee7f01",
 		"_comment": "Block F3 Trespassing",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "cb6fa66e6ec377d7",
 		"_comment": "Block F4 Trespassing",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "68b96116cbc5dc45",
 		"_comment": "Floating Desk Lamp - Hush VR",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "b4511755abb6a7d4",
 		"_comment": "Floating Desk Lamp - Hush VR",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "df3cde5d98082840",
 		"_comment": "Floating Desk Lamp - Block Corridor L3",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "4f98a6c0e11767d3",
 		"_comment": "Floating Desk Lamp - Block Corridor L3",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "b2c319da177378c4",
 		"_comment": "Floating Desk Lamp - Block Corridor L3",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "777ab738974d4ca4",
 		"_comment": "Sit down prompt",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "aa0341bba4c633a0",
 		"_comment": "LED Light Stand apartment",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "3f41449e41f247bd",
 		"_comment": "LED Light Stand apartment",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a4941db5f4ac771",
 		"_comment": "Hush Room Blinds - Middle",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "fe7af52a337354d",
 		"_comment": "Hush Room Blinds",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "64a91f6d2c7eac31",
 		"_comment": "Hush Room Blinds",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "bb1eba6304d74263",
 		"_comment": "The Block CCTV",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "866b1085ab3c531f",
 		"_comment": "Keypad Base plate",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "466866df4f4a17aa",
 		"_comment": "Dumpster Outside restaurant",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e23a8e7e12ce99c3",
 		"_comment": "Morgues",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "3c87c915d332c864",
 		"_comment": "Stashpoints",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "56765251432bfa7f",
-		"_comment": "NPCs - Facility",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "5b90111624df7efe",
 		"_comment": "ICA Apartment Blinds",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "111677f8446a3a4b",
 		"_comment": "Evac and lockdown",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "37fb04fbde39f035",
 		"_comment": "Start of Muddy's container replacement",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "1a7528530a2d601b",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "1f169fee87234563",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e12b3c967c79701f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "39fbf106736505c1",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "40347ae36996105",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a8423af3cf62f08e",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e1a8374bc470185",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "959784bc38006c5f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "bbca464b299bc00c",
 		"_comment": "End of Muddy's container replacement",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "deff40d2f5ab6c07",
 		"_comment": "Tray with sushi",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "7a26daca7a0c3ce5",
 		"_comment": "Single piece of sushi",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "f64c3fbe31ffb734",
 		"_comment": "Items",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "5e9fd394f8b045e8",
 		"_comment": "Start of THE BLOCK deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "81b7d232aebebea6",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "7986669ce024fa5",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "340a660167fd7ba4",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "8e971617c5cb69a2",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "73b07a4c0d5197fe",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "5fc852ece98a7184",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "49e0d2f248ea47d4",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e6c310557737210",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "9ac5616f0d34d59",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a548de9edd373685",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a7ceaecbe0114fc2",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "5784b1d08bfad92",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "f677af028a0737c8",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "29fed8fac51b9831",
 		"_comment": "End of THE BLOCK old deletions",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "66578b18ea77aa28",
 		"_comment": "Newspaper Blend In Spot - Restaurant",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "ea3d6f42dfb63df4",
 		"_comment": "All Keypads",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "61fb4e0c594a14f8",
 		"_comment": "Restaurant Exterior Dumpster",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "596bb31d67c6f5bb",
 		"_comment": "Restaurant Body Closet",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d84b14e057c23567",
 		"_comment": "Restaurant Body Closet",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "7c071452c3820ccd",
 		"_comment": "Restaurant Body Closet",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "4587e62faa9c1b77",
-		"_comment": "Hush",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "aeebd6c1d9ccdad3",
-		"_comment": "Hush room NPCs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "7b6c57965f22f1bb",
-		"_comment": "Hush Guard",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "9983ee9a88e0e937",
-		"_comment": "Sister Lei",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "758c71e6158abe21",
-		"_comment": "Perfect test subjects",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "f6503dbadaea28c4",
 		"_comment": "Block Setpieces",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "1082cb2faca0dcd2",
 		"_comment": "Block Unique Setpieces",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "aedfdd58dfb346bd",
 		"_comment": "Bathtub",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "7f79bc73533bc644",
 		"_comment": "Sofa",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "ddcbe09aa24b5267",
 		"_comment": "Block Junk",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "dfaee33d37e3ffee",
 		"_comment": "Block Junk",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "81d0542f63603e7e",
 		"_comment": "Block Junk",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "38eb85ee3e5749b0",
 		"_comment": "Block Junk",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "ce919b382fff9b2",
-		"_comment": "Restaurant NPCs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "2fd910647c1f4cb",
 		"_comment": "IcA Guy",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d40a022a606b4f72",
 		"_comment": "Chen Ting",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "48963f177ee1c72f",
-		"_comment": "Facility Back Entrance NPCs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "ad66e7f6ff8bd00a",
-		"_comment": "Facility Front Courtyard NPCs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "61cfe233d0f8c57a",
-		"_comment": "Fake chefs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "baed2dce2ea046a7",
 		"_comment": "Meeting table unused chairs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "3e88d91ced8303b",
 		"_comment": "Meeting table unused chairs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "ffa6977c3d5dbab3",
 		"_comment": "Meeting table unused chairs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "36e6ce4a29963fe6",
 		"_comment": "Meeting table unused chairs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a6cd76ad48db306",
 		"_comment": "Meeting table unused chairs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "36120e6171d5561",
 		"_comment": "Meeting table unused chairs",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "1f3ae073665bc480",
 		"_comment": "Suyin Shen - Civ walks into restaurant",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "8198305d1c82d7c2",
 		"_comment": "Dirty Bowl on Meeting table",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "a2f44357583b0e4a",
 		"_comment": "Dirty Dishes on Meeting table",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d5eaa65f533033a9",
 		"_comment": "Dirty Dishes on Meeting table",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "8d6d0876a6b0bf92",
 		"_comment": "bowl on Meeting table",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
-		"ref": "b4f0676d7f99568a",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_03"
-	}, {
-		"ref": "6ee108a15977fc53",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__09"
-	}, {
-		"ref": "718cc7d81790a2e4",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_05"
-	}, {
-		"ref": "fd3b88fd109e0658",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__03"
-	}, {
-		"ref": "908aa6863fb9be8f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__11"
-	}, {
-		"ref": "5d6e3a9e32400026",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__02"
-	}, {
-		"ref": "268e485bff366d58",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__10"
-	}, {
-		"ref": "32274e04b0265f66",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__08"
-	}, {
-		"ref": "2103a2acaee32377",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_03"
-	}, {
-		"ref": "b0bc8badd9ca1b12",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M_"
-	}, {
-		"ref": "dc1de12d0249cd00",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__04"
-	}, {
-		"ref": "b0e840313bd31d57",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__03"
-	}, {
-		"ref": "af02cf43e94708df",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__05"
-	}, {
-		"ref": "ae387ec3fb0fd1c5",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__02"
-	}, {
-		"ref": "66f6e24d5a0820b8",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO"
-	}, {
-		"ref": "3bd091c3dc1cd21b",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__08"
-	}, {
-		"ref": "c82560ac1bbdf16a",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__07"
-	}, {
-		"ref": "ad244d0d141e80b4",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO"
-	}, {
-		"ref": "210c3bed1baaec4b",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_02"
-	}, {
-		"ref": "20fa5f56b8be100e",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__01"
-	}, {
-		"ref": "feba80a2f7b9d7ed",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M"
-	}, {
-		"ref": "660c629056f346c6",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__02"
-	}, {
-		"ref": "4a5f243c3bf71845",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__09"
-	}, {
-		"ref": "2561882fbc99c3c4",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Back_Entrance_01"
-	}, {
-		"ref": "7a27a09a1a17619",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M_"
-	}, {
-		"ref": "2ab7f23fe6d85310",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__01"
-	}, {
-		"ref": "2e603796d60cf033",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_04"
-	}, {
-		"ref": "940f391343090e0a",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_01"
-	}, {
-		"ref": "e8c98a2b46952837",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_04"
-	}, {
-		"ref": "bf457759cd28e2ee",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__06"
-	}, {
-		"ref": "1454b8c3018410dd",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__10"
-	}, {
-		"ref": "4f07a6b277c2918a",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__07"
-	}, {
-		"ref": "a9d28c7215795d9c",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_01"
-	}, {
-		"ref": "3727e5babd86f300",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__04"
-	}, {
-		"ref": "27f051a5e538179f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__01"
-	}, {
-		"ref": "a10a6c59bc801074",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_02"
-	}, {
-		"ref": "1b48c232da9ae031",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__12"
-	}, {
-		"ref": "2a588f45eeb668d5",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__01"
-	}, {
-		"ref": "daaef1b1f000e3e8",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__04"
-	}, {
-		"ref": "77c9e996ec99f19e",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Back_Entrance"
-	}, {
-		"ref": "5debb8107ccd2a7e",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M_"
-	}, {
-		"ref": "67ef43a9784dfdaf",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO"
-	}, {
-		"ref": "7538220db809e63c",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_02"
-	}, {
-		"ref": "d5f0cec779bf6f39",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__04"
-	}, {
-		"ref": "edb8f52acd78d279",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M_"
-	}, {
-		"ref": "356025d9d7589754",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO"
-	}, {
-		"ref": "3eaa00c94f6b02bc",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__02"
-	}, {
-		"ref": "10b0c0c7a8b979b1",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__05"
-	}, {
-		"ref": "853674b5ab1d90df",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__07"
-	}, {
-		"ref": "50a0db09b14bedff",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__04"
-	}, {
-		"ref": "db29ef83eba540b3",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_01"
-	}, {
-		"ref": "597d2a68c1ab0d71",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__03"
-	}, {
-		"ref": "f30a33f9db2644b3",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M_"
-	}, {
-		"ref": "a69a6fbe53c0c60d",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__01"
-	}, {
-		"ref": "6c20d1410d9c2a38",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__09"
-	}, {
-		"ref": "420648e651561b06",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier3_M_01"
-	}, {
-		"ref": "30008215e9f0dca9",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__14"
-	}, {
-		"ref": "a891447d692e9e7f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__06"
-	}, {
-		"ref": "d1b91e03b2460ed7",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__13"
-	}, {
-		"ref": "86c2515c7b6095e9",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__03"
-	}, {
-		"ref": "2a1fdb701d64f1cf",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__01"
-	}, {
-		"ref": "727dc03c7f9fbda6",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__02"
-	}, {
-		"ref": "fa892c9fb2e537f7",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__01"
-	}, {
-		"ref": "dc456a42d29448c9",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_Tier2_M__08"
-	}, {
-		"ref": "e8ef191b67df2943",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "Wet_Guard_Block_M_PRO_01"
-	}, {
-		"ref": "62d866a3a55bfc0f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M_"
-	}, {
-		"ref": "4dd4d6d167c6384",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Facility_M__03"
-	}, {
-		"ref": "72fcfa593af19a88",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__05"
-	}, {
-		"ref": "d05dc51107c73c15",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
-		"_comment": "CHAR_Wet_Guard_Steets_M__01"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "3be7a05957186f2c",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "BodyDump Coverplanes"
 	}, {
 		"ref": "14a0a80d34447326",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "54f0c0c08a93bbba",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d6451fc3bc0bc0e0",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "513fe3d394856c28",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "241dea8bd380ce27",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "7f632cf648e03a37",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "86414028ef5ef66a",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "4a5640b5f47e00f9",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "e05ee59da6414520",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "89d2ade99c1d61bd",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "360643e98ea57cd9",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "8ecd02b9a55dc967",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "d19a0a835f1c62b3",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "f8f096c57f549bca",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "End - Small cardboard boxes restaurant alley"
 	}, {
 		"ref": "9d21529750cd9524",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "23e082dc9902e45f",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "55c4d395fee8ad80",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "14ea98ba6d76e55",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "f533b38a1eb6d7ef",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "8c6aa7704ad6f9e1",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "550cc8cace6d1a23",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "31a0afd8e02a4d96",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "d92e272d8dbd0b6a",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}, {
 		"ref": "a674f76e60b1cd5c",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype",
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": "abcd4920c9e3168a",
 		"toEntity": {
 			"ref": "24dea8f047925ff5",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "EventOccurred",
 		"toPinName": "Trigger",
@@ -24982,7 +24710,7 @@
 		"fromEntity": "abcd66e3938abbd8",
 		"toEntity": {
 			"ref": "710845eac3f6aa0c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActDone",
 		"toPinName": "ChefPreparedFood",
@@ -24993,11 +24721,11 @@
 	}, {
 		"fromEntity": {
 			"ref": "710845eac3f6aa0c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "67e69b92e2140e7",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "FoodReady",
 		"toPinName": "SetTrue",
@@ -25008,7 +24736,7 @@
 	}, {
 		"fromEntity": {
 			"ref": "2500cf88fd8834d8",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": "abcdb96c31fcc9dd",
 		"fromPinName": "OnActDone",
@@ -25020,7 +24748,7 @@
 	}, {
 		"fromEntity": {
 			"ref": "710845eac3f6aa0c",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": "abcd4a4f0a586f05",
 		"fromPinName": "FoodReady",
@@ -25033,7 +24761,7 @@
 		"fromEntity": "abcddd802d4c9c58",
 		"toEntity": {
 			"ref": "64f9539bbd38fccc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "PollFalse",
 		"toPinName": "Done",
@@ -25045,7 +24773,7 @@
 		"fromEntity": "abcdbb37e72a06f5",
 		"toEntity": {
 			"ref": "64f9539bbd38fccc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActDone",
 		"toPinName": "Done",
@@ -25057,11 +24785,11 @@
 		"comment": "Chef goes from chopping to spices (skipping the plate inspection)",
 		"fromEntity": {
 			"ref": "2ef698eb17c792be",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "e7b41492ec210647",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActTimeout",
 		"toPinName": "Start",
@@ -25073,7 +24801,7 @@
 		"comment": "Check if food is ready, for angry reaction",
 		"fromEntity": {
 			"ref": "2500cf88fd8834d8",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": "abcd93bb05ba030d",
 		"fromPinName": "OnReached",
@@ -25087,7 +24815,7 @@
 		"fromEntity": "abcda60256ff2fd3",
 		"toEntity": {
 			"ref": "ae3ddedeb2716ff4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActTimeout",
 		"toPinName": "Done",
@@ -25100,7 +24828,7 @@
 		"fromEntity": "abcda60256ff2fd3",
 		"toEntity": {
 			"ref": "f9bb714260d5a2ca",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActTimeout",
 		"toPinName": "SetFalse",
@@ -25113,7 +24841,7 @@
 		"fromEntity": "abcda60256ff2fd3",
 		"toEntity": {
 			"ref": "200f7807f215304d",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActTimeout",
 		"toPinName": "SetFalse",
@@ -25125,11 +24853,11 @@
 		"comment": "Food has been served",
 		"fromEntity": {
 			"ref": "2500cf88fd8834d8",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "f9bb714260d5a2ca",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActDone",
 		"toPinName": "SetTrue",
@@ -25142,7 +24870,7 @@
 		"fromEntity": "abcd19ce17cd174d",
 		"toEntity": {
 			"ref": "6b0f5cf589916271",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "Out",
 		"toPinName": "SetTrue",
@@ -25155,11 +24883,11 @@
 		"comment": "Placing the first meal shouldn't complete the act",
 		"fromEntity": {
 			"ref": "20bfda5f2ef386ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "64f9539bbd38fccc",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "Plate_On_Table",
 		"toPinName": "Done",
@@ -25171,11 +24899,11 @@
 		"comment": "Don't start the orignal meal placing act (We have our own)",
 		"fromEntity": {
 			"ref": "2500cf88fd8834d8",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "20bfda5f2ef386ab",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActDone",
 		"toPinName": "Start",
@@ -25187,11 +24915,11 @@
 		"comment": "The chef skips inspecting the meal (Gets in the way too much)",
 		"fromEntity": {
 			"ref": "2ef698eb17c792be",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "1348b55a71e1308e",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnActTimeout",
 		"toPinName": "Start",
@@ -25203,11 +24931,11 @@
 		"comment": "Don't mark serving complete unless the meal really was completed",
 		"fromEntity": {
 			"ref": "ae3ddedeb2716ff4",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"toEntity": {
 			"ref": "f9bb714260d5a2ca",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		},
 		"fromPinName": "OnDone",
 		"toPinName": "SetTrue",
@@ -25216,7 +24944,7 @@
 			"$val": null
 		}
 	}],
-	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "00A789B895DCDFE3"],
+	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype", "00A789B895DCDFE3"],
 	"subType": 1,
 	"quickEntityVersion": 2.1
 }
