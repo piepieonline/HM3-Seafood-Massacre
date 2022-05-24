@@ -1214,6 +1214,18 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "6dab2e19426e3926",
+			"_comment": "Keypad",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"CodeValue4": {
+				"type": "int32",
+				"value": 0
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "e0861ac9bfe784ff",
 			"_comment": "StaticdecalController_Ground_15",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
