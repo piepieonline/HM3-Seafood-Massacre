@@ -1,549 +1,412 @@
 {
-    "tempHash": "006B472172270F02",
-    "tbluHash": "00C62907C4C189CD",
-    "rootEntity": "Scene",
-    "entities": {
-        "3a4fd7620d2fc601": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "Scene",
-            "template": "[modules:/zspatialentity.class].pc_entitytype",
-            "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
-            "properties": {},
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "entitySubsets": [["Replicable", {
-                        "entities": []
-                    }
-                ]],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc602": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "YAMASAKI",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_YAMASAKI"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/yamasaki.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc603": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "KONG",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_KONG"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/kong.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc604": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "HUSH",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_HUSH"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/hush.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc605": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "THUGES01",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_THUGES01"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/thuges01.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc606": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "MARTINEZ",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_MARTINEZ"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/martinez.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc607": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "STUYVESANT",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_STUYVESANT"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/stuyvesant.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc608": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "MENDOLA",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_MENDOLA"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/mendola.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc609": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "STRANDBERG",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_STRANDBERG"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/strandberg.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc610": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "JANUS",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_JANUS"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/janus.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc611": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "DESANTIS",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_DESANTIS"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/desantis.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc612": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "REYNARD",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_REYNARD"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/reynard.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc613": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "VIDAL",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_VIDAL"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/vidal.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc614": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "MAELSTROM",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_MAELSTROM"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/maelstrom.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },
-        "3a4fd7620d2fc615": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "ET_FABA",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_ET_FABA"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "[assembly:/sound/sounddefinitions/et_faba.sdefs].pc_sdefs"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },	
+	"tempHash": "006B472172270F02",
+	"tbluHash": "00C62907C4C189CD",
+	"rootEntity": "3a4fd7620d2fc601",
+	"entities": {
+		"3a4fd7620d2fc601": {
+			"parent": null,
+			"name": "Scene",
+			"template": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"entitySubsets": [
+				["Replicable", {
+					"entities": []
+				}]
+			]
+		},
+		"3a4fd7620d2fc602": {
+			"parent": null,
+			"name": "YAMASAKI",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_YAMASAKI"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/yamasaki.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc603": {
+			"parent": null,
+			"name": "KONG",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_KONG"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/kong.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc604": {
+			"parent": null,
+			"name": "HUSH",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_HUSH"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/hush.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc605": {
+			"parent": null,
+			"name": "THUGES01",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_THUGES01"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/thuges01.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc606": {
+			"parent": null,
+			"name": "MARTINEZ",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_MARTINEZ"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/martinez.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc607": {
+			"parent": null,
+			"name": "STUYVESANT",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_STUYVESANT"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/stuyvesant.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc608": {
+			"parent": null,
+			"name": "MENDOLA",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_MENDOLA"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/mendola.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc609": {
+			"parent": null,
+			"name": "STRANDBERG",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_STRANDBERG"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/strandberg.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc610": {
+			"parent": null,
+			"name": "JANUS",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_JANUS"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/janus.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc611": {
+			"parent": null,
+			"name": "DESANTIS",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_DESANTIS"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/desantis.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc612": {
+			"parent": null,
+			"name": "REYNARD",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_REYNARD"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/reynard.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc613": {
+			"parent": null,
+			"name": "VIDAL",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_VIDAL"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/vidal.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc614": {
+			"parent": null,
+			"name": "MAELSTROM",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_MAELSTROM"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/maelstrom.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"3a4fd7620d2fc615": {
+			"parent": null,
+			"name": "ET_FABA",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_ET_FABA"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/sound/sounddefinitions/et_faba.sdefs].pc_sdefs"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
 		"3a4fd7620d2fc616": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "THUGHI01",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_THUGHI01"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "0047B31DD258926C"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },	
+			"parent": null,
+			"name": "THUGHI01",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_THUGHI01"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "0047B31DD258926C"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
 		"3a4fd7620d2fc619": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "THUGHI02",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_THUGHI02"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "00353EFAF4555D2E"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },	
+			"parent": null,
+			"name": "THUGHI02",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_THUGHI02"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "00353EFAF4555D2E"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
 		"3a4fd7620d2fc617": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "THUGHI03",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_THUGHI03"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "0066A32F1952E1BC"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },	
+			"parent": null,
+			"name": "THUGHI03",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_THUGHI03"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "0066A32F1952E1BC"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
 		"3a4fd7620d2fc618": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "JOB_MUMBSECHI02",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_JOB_MUMBSECHI02"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "00B6CF427E11FA0B"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        },	
+			"parent": null,
+			"name": "JOB_MUMBSECHI02",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_JOB_MUMBSECHI02"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "00B6CF427E11FA0B"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
 		"3a4fd7620d2fc620": {
-            "parent": {
-                "ref": "SPECIAL: None",
-                "exposedEntity": "",
-                "externalScene": "SPECIAL: None",
-                "entityID": "ffffffffffffffff"
-            },
-            "name": "JOB_MUMBSECHI03",
-            "template": "[modules:/zsounddefresource.class].pc_entitytype",
-            "blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
-            "properties": {
-                "m_eVoiceVariation": {
-                    "type": "EActorVoiceVariation",
-                    "value": "eAVV_JOB_MUMBSECHI03"
-                },
-                "m_pResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": "008604A166FEFD95"
-                }
-            },
-            "postInitProperties": {},
-            "editorOnly": false,
-            "platformSpecificPropertyValues": [],
-            "events": [],
-            "inputCopying": [],
-            "outputCopying": []
-        }
-    },
-    "propertyOverrides": [],
-    "overrideDeletes": [],
-    "pinConnectionOverrides": [],
-    "pinConnectionOverrideDeletes": [],
-    "externalScenes": ["[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entitytype"],
-    "subType": 2,
-    "quickEntityVersion": 2
+			"parent": null,
+			"name": "JOB_MUMBSECHI03",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_JOB_MUMBSECHI03"
+				},
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "008604A166FEFD95"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc9b1c9817ee3": {
+			"parent": "#",
+			"name": "RANGAN",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "008B4C04D285442F"
+				},
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_RANGAN"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": ["[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entitytype"],
+	"subType": 2,
+	"quickEntityVersion": 2.1
 }

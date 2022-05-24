@@ -2872,7 +2872,7 @@
 				},
 				"m_aSubactions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["4d33acd44f509e1a", "6f6d527afc661114", "163507e7af6b3b7c"]
+					"value": ["4d33acd44f509e1a"]
 				},
 				"m_rVisibleCondition": {
 					"type": "SEntityTemplateReference",

@@ -24463,10 +24463,6 @@
 		"_comment": "Newspaper Blend In Spot - Restaurant",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
 	}, {
-		"ref": "6dab2e19426e3926",
-		"_comment": "Arcade Keypad",
-		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
-	}, {
 		"ref": "ea3d6f42dfb63df4",
 		"_comment": "All Keypads",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
@@ -25220,7 +25216,7 @@
 			"$val": null
 		}
 	}],
-	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "006B472172270F02", "00A789B895DCDFE3"],
+	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype", "00A789B895DCDFE3"],
 	"subType": 1,
 	"quickEntityVersion": 2.1
 }
