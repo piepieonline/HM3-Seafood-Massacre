@@ -1878,7 +1878,7 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd81c826dc03f3"
 			}, {
-				"onEvent": "OnStart",
+				"onEvent": "OnReached",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdf18da00863f2"
 			}]
@@ -7452,7 +7452,7 @@
 				},
 				"m_rCharacter": {
 					"type": "SEntityTemplateReference",
-					"value": "abcd3d755cd84fe8"
+					"value": "abcd52341c0dd6b4"
 				}
 			},
 			"postInitProperties": {},
@@ -23041,6 +23041,22 @@
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "25a5710918c3b74c",
+			"comment": "CoverPlane 199 - Kitchen Window",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bHeroCanDumpBody": {
+				"type": "bool",
+				"value": false
+			},
+			"m_bHeroPushNPCOverRail": {
+				"type": "bool",
+				"value": false
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "98103f2b946ab7b0",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat.brick].pc_entitytype"
