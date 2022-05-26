@@ -400,6 +400,28 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd7c63f8432ad3": {
+			"parent": "#",
+			"name": "FRANCO",
+			"template": "[modules:/zsounddefresource.class].pc_entitytype",
+			"blueprint": "[modules:/zsounddefresource.class].pc_entityblueprint",
+			"properties": {
+				"m_pResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "005F9C23EB8CE51E"
+				},
+				"m_eVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_FRANCO"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [],

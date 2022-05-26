@@ -12362,8 +12362,8 @@
 		"abcd9745c4383855": {
 			"parent": "abcde9ffa1d51289",
 			"name": "Keyword_ActorHasKnowledge",
-			"template": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_got_wine_reservation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_got_wine_reservation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_rHolder": {
 					"type": "SEntityTemplateReference",
@@ -12808,8 +12808,8 @@
 		"abcdaf7bad0903aa": {
 			"parent": "abcdd888ea8ddf07",
 			"name": "Keyword_ActorHasKnowledge",
-			"template": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordevergreen.template?/keyword_evergreen_masterplan_targetbody_found.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_got_wine_reservation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_got_wine_reservation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_rHolder": {
 					"type": "SEntityTemplateReference",
@@ -24944,7 +24944,7 @@
 			"$val": null
 		}
 	}],
-	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype", "00A789B895DCDFE3"],
+	"externalScenes": ["[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype", "00A789B895DCDFE3", "006B472172270F02"],
 	"subType": 1,
 	"quickEntityVersion": 2.1
 }
