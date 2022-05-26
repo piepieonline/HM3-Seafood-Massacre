@@ -175,6 +175,16 @@
                         },
                         "Success": {
                             "TargetPicked": [{
+                                "Condition": {
+                                    "$not": {
+                                            "$inarray": {
+                                                "in": "$.Witnesses",
+                                                "?": {
+                                                    "$eq": ["$.#", "$Value.RepositoryId"]
+                                                }
+                                            }
+                                        }
+                                    },
                                     "Actions": {
                                         "$inc": "TargetsCounter",
                                         "$pushunique": ["Witnesses", "$Value.RepositoryId"]
