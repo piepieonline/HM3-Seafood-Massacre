@@ -8634,9 +8634,9 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 1,
+						"x": 1.2,
 						"y": 13,
-						"z": 6
+						"z": 8
 					}
 				}
 			},
@@ -18912,7 +18912,7 @@
 				},
 				"m_Boxes": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd95b1168e6d39"]
+					"value": ["abcd95b1168e6d39", "abcda01c3dd9d341", "abcdb4cd1df26296"]
 				}
 			},
 			"editorOnly": false,
