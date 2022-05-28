@@ -3150,6 +3150,25 @@
 		"ref": "6b40e4ac601f71a6",
 		"_comment": "Mesh_Decals Mud_Ground_Variation_Fox",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "14537c25b6069b3b",
+		"_comment": "Umbrella Rain Sounds",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "681251413a638546",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "2f771f5100f94e8d",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "ccf573c68c31bdbf",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "2eb38db2fb699ff9",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "8481d7b252aa56cf",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": {
