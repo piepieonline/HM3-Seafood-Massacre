@@ -175,6 +175,16 @@
                         },
                         "Success": {
                             "TargetPicked": [{
+                                "Condition": {
+                                    "$not": {
+                                            "$inarray": {
+                                                "in": "$.Witnesses",
+                                                "?": {
+                                                    "$eq": ["$.#", "$Value.RepositoryId"]
+                                                }
+                                            }
+                                        }
+                                    },
                                     "Actions": {
                                         "$inc": "TargetsCounter",
                                         "$pushunique": ["Witnesses", "$Value.RepositoryId"]
@@ -270,7 +280,12 @@
         "Bricks": [],
         "Entrances": [],
         "GameChangers": [],
-        "EngineModesBricks": []
+        "EngineModesBricks": [],
+        "Stashpoints": [
+            "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
+            "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
+            "e1658358-1b89-4dc2-bb42-3f046faf5813"
+          ]
     },
     "Metadata": {
         "CodeName_Hint": "Noodle_DAY",
