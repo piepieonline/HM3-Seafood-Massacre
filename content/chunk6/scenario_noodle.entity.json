@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcd2efe2cb579a0", "abcdbd04a9ff424d", "abcdef1d10259174", "abcdd6a87b40da7b", "abcdcbfe5fec2e2e", "abcdd0110d31999a", "abcdccbfee04cc72", "abcd252bc988cbbe", "abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
+					"entities": ["abcd54bfdc81b274", "abcd90ff1dc668fe", "abcdaad1544e3778", "abcd631621ece236", "abcd2efe2cb579a0", "abcdbd04a9ff424d", "abcdef1d10259174", "abcdd6a87b40da7b", "abcdcbfe5fec2e2e", "abcdd0110d31999a", "abcdccbfee04cc72", "abcd252bc988cbbe", "abcd1501ba6455c8", "abcd3d755cd84fe8", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": ["abcdccbfee04cc72"]
@@ -6539,7 +6539,7 @@
 				},
 				"m_aActors": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["abcd34dae91b471b"]
 				}
 			},
 			"postInitProperties": {},
@@ -7236,7 +7236,7 @@
 			"postInitProperties": {
 				"m_aSecurityDevices": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd54bfdc81b274"]
+					"value": ["abcd54bfdc81b274", "abcd90ff1dc668fe", "abcdaad1544e3778"]
 				}
 			},
 			"editorOnly": false,
@@ -12960,7 +12960,7 @@
 			"events": [{
 				"onEvent": "Out1",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd95e46775cd8c"
+				"onEntity": "abcd87a3c9cb114b"
 			}, {
 				"onEvent": "Out2",
 				"shouldTrigger": "Start",
@@ -12968,11 +12968,11 @@
 			}, {
 				"onEvent": "Out3",
 				"shouldTrigger": "Start",
-				"onEntity": "abcdf9b97595d1d6"
+				"onEntity": "abcd2385ce67ffbf"
 			}, {
 				"onEvent": "Out4",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd2385ce67ffbf"
+				"onEntity": "abcdf9b97595d1d6"
 			}, {
 				"onEvent": "Out5",
 				"shouldTrigger": "Start",
@@ -12980,7 +12980,7 @@
 			}, {
 				"onEvent": "Out6",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd87a3c9cb114b"
+				"onEntity": "abcd95e46775cd8c"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
@@ -18137,7 +18137,7 @@
 			"events": [{
 				"onEvent": "Out1",
 				"shouldTrigger": "Start",
-				"onEntity": "abcddeb659b646d8"
+				"onEntity": "abcd2b55119eef9f"
 			}, {
 				"onEvent": "Out2",
 				"shouldTrigger": "Start",
@@ -18149,15 +18149,15 @@
 			}, {
 				"onEvent": "Out4",
 				"shouldTrigger": "Start",
-				"onEntity": "abcdf448f3de59f9"
+				"onEntity": "abcd772fa3d6ec00"
 			}, {
 				"onEvent": "Out5",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd772fa3d6ec00"
+				"onEntity": "abcdf448f3de59f9"
 			}, {
 				"onEvent": "Out6",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd2b55119eef9f"
+				"onEntity": "abcddeb659b646d8"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
