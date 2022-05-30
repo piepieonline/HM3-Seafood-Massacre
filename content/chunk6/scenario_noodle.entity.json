@@ -23209,28 +23209,17 @@
 		},
 		"abcd691e21e89c89": {
 			"parent": "abcd0086af30326a",
-			"name": "zaievententity",
-			"template": "[modules:/zaievententity.class].pc_entitytype",
-			"blueprint": "[modules:/zaievententity.class].pc_entityblueprint",
+			"name": "AIDynamicEnforcerEvent",
+			"template": "[modules:/zaidynamicenforcerevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zaidynamicenforcerevententity.class].pc_entityblueprint",
 			"properties": {
-				"m_eventType": {
-					"type": "EAIEventType",
-					"value": "AIET_Investigate_Strike_1"
-				},
-				"m_duration": {
-					"type": "float32",
-					"value": 60
-				},
-				"m_actors": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd2efe2cb579a0"]
-				},
-				"m_target": {
+				"m_rTarget": {
 					"type": "SEntityTemplateReference",
-					"value": {
-						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-					}
+					"value": "abcd2efe2cb579a0"
+				},
+				"m_eventType": {
+					"type": "EAISharedEventType",
+					"value": "AISET_DynamicEnforcer_SuspiciousMovement"
 				}
 			},
 			"postInitProperties": {},
@@ -23396,6 +23385,61 @@
 				"onEvent": "OnActDone",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcd0ab6db990bb6"
+			}, {
+				"onEvent": "OnReached",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdf624efa90d14"
+			}]
+		},
+		"abcdf624efa90d14": {
+			"parent": "abcdec2a926ce071",
+			"name": "BrknAck",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00E7DC674B0492AB",
+						"flag": "5F"
+					}
+				},
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd0086af30326a"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
+		},
+		"abcd7eb20bdaddb2": {
+			"parent": "abcdf624efa90d14",
+			"name": "BrknAck complete",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/dialoglinecondition.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdf624efa90d14"
+				},
+				"m_eState": {
+					"type": "ZCharacterSpeakCondition.EState",
+					"value": "Completed"
+				},
+				"m_fTimeOffset": {
+					"type": "float32",
+					"value": 30
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Expire",
+				"onEntity": "abcd691e21e89c89"
 			}]
 		}
 	},
