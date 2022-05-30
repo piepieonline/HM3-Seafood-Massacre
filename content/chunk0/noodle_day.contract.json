@@ -274,7 +274,7 @@
                 "Bricks": []
             }, {
                 "Difficulty": "hard",
-                "Bricks": []
+                "Bricks": ["assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick"]
             }
         ],
         "Bricks": [],
