@@ -1214,6 +1214,531 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "8b35cf980578dde",
+			"comment": "Water Puddle - StaticdecalController_Ground_02 - original 00A2F350692284B3",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00A2F350692284B4",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "2edfb6057c00e95b",
+			"comment": "Water Puddle - StaticdecalController_Ground_06 - original 00A894AC78028103",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00A894AC78028104",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "58f6e5ea195e4285",
+			"comment": "Water Puddle - StaticdecalController_Ground_03 - original 00BC286B4E7191C5",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00BC286B4E7191C6",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "edbd3c51f47f663e",
+			"comment": "Water Puddle - StaticDecalController_Walkway_Facility_Rear_D - original 00C8230CFE602BE4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00C8230CFE602BE5",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "1936ad778328e2ea",
+			"comment": "Water Puddle - StaticdecalController_Ground_09 - original 00CB7FFA00B29CD0",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00CB7FFA00B29CD1",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "4e5e099719deff9c",
+			"comment": "Water Puddle - StaticDecalController 4 - original 00CF43CED7DEA6B7",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00CF43CED7DEA6B8",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "2b7fa642d76feac",
+			"comment": "Water Puddle - StaticDecalController_Starting_Walkway_A - original 00D4879B40F3277B",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00D4879B40F3277C",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "7e7d9098e8d4ad22",
+			"comment": "Water Puddle - StaticDecalController_Starting_Walkway_A - original 00D09264D9845564",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00D09264D9845565",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e0861ac9bfe784ff",
+			"comment": "Water Puddle - StaticDecalController_Starting_Walkway_A - original 00D11933D823CA07",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00D11933D823CA08",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "d73a2b81ab6a1094",
+			"comment": "Water Puddle - StaticDecalController_Walkway_Facility_Rear_B - original 00DB701662D9F48C",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00DB701662D9F48D",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e98a76010377c23",
+			"comment": "Water Puddle - StaticdecalController_Ground_08 - original 00E6E1B7BCACE5DC",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00E6E1B7BCACE5DD",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "cede4d1af09be3b1",
+			"comment": "Water Puddle - StaticDecalController_restaurant_goods_in - original 00E85A4BA5814F14",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00E85A4BA5814F15",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "3e8ee7506be8aba0",
+			"comment": "Water Puddle - StaticDecalController_Starting_Walkway_B - original 00EA4F7C6537E19E",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00EA4F7C6537E19F",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "924afcb9977c1085",
+			"comment": "Water Puddle - StaticDecalController_Restaurant_Rear_Walkway_C - original 00FF2547B1CF6937",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00FF2547B1CF6938",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "f7913e86667ed17",
+			"comment": "Water Puddle - StaticDecalController_Road_Top - original 00FF4350E410C3CB",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00FF4350E410C3CC",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "ce887149b5c111ba",
+			"comment": "Water Puddle - StaticDecalController_Restaurant_Rear_Walkway_B - original 001C2A2B64670D9C",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "001C2A2B64670D9D",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "15f0c343de5b8a70",
+			"comment": "Water Puddle - StaticdecalController_Ground_10 - original 0002A3741E6B9B6B",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0002A3741E6B9B6C",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "5fcdd0d195508643",
+			"comment": "Water Puddle - StaticDecalController_Facility_Alley - original 0003DDF8A39B9C68",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0003DDF8A39B9C69",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "6c15bf24ae26af54",
+			"comment": "Water Puddle - StaticDecalController_Path_Algae - original 003B9050072001F8",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "003B9050072001F9",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "5d566369948e17d3",
+			"comment": "Water Puddle - StaticDecalController 6 - original 0004A9D56041FC39",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0004A9D56041FC30",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "8dd0cfdde6ba6e85",
+			"comment": "Water Puddle - StaticDecalController_Starting_Walkway_C - original 006FA05D21701981",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "006FA05D21701982",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "93073012f3a2d246",
+			"comment": "Water Puddle - StaticdecalController_Ground_14 - original 008D07A584A1E47F",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "008D07A584A1E47E",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "1b0c718f81340a2e",
+			"comment": "Water Puddle - StaticDecalController_Path_Algae_5 - original 009EE26CCCCD5F16",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "009EE26CCCCD5F17",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "52855b451601ccfa",
+			"comment": "Water Puddle - StaticDecalController_Walkway_Facility_Rear_C - original 0011FCA3C72FB2B2",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0011FCA3C72FB2B3",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "3ea73734dd7c151d",
+			"comment": "Water Puddle - StaticDecalController_Starting_Walkway_D - original 0012E38233CD49FF",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0012E38233CD49FE",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "26182015e0f5e439",
+			"comment": "Water Puddle - StaticdecalController_Ground_13 - original 0043D7399896A097",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0043D7399896A098",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "58cc6a34931e8bbc",
+			"comment": "Water Puddle - StaticDecalController_Walkway_Facility_Rear - original 0055E368E285A599",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0055E368E285A590",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "7f81ba14c646726b",
+			"comment": "Water Puddle - StaticdecalController_Ground_11 - original 0070C8C29C0FBAAF",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0070C8C29C0FBAAE",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "1c477c85359a12a0",
+			"comment": "Water Puddle - StaticdecalController_Ground_04 - original 0077AA6E4A8785D1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0077AA6E4A8785D2",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "d0a9b44965444fee",
+			"comment": "Water Puddle - StaticDecalController_BirdcageAlley - original 00568FA144036F48",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00568FA144036F49",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "9205f9b9c3a8a70e",
+			"comment": "Water Puddle - StaticDecalController 2 - original 00748F5809098760",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00748F5809098761",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "c09be84f0e2eaeb4",
+			"comment": "Water Puddle - StaticDecalController_Path_Algae - original 004403E141650442",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "004403E141650443",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e3e199803373046f",
+			"comment": "Water Puddle - StaticDecalController 8 - original 004552D6E9E41182",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "004552D6E9E41183",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "9d1be54970563e1c",
+			"comment": "Water Puddle - StaticDecalController 3 - original 006671FC00E50860",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "006671FC00E50861",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "6591098ad1ffa3b3",
+			"comment": "Water Puddle - StaticdecalController_Ground_18 - original 00245994D0137A9F",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pDecalMesh": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00245994D0137A9E",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "6dab2e19426e3926",
 			"_comment": "Keypad",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
