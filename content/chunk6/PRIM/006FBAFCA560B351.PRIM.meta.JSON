@@ -1,0 +1,17 @@
+{
+    "hash_value": "006FBAFCA560B351",
+    "hash_offset": 100458413,
+    "hash_size": 2147487042,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 13,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 6000,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/floor_tiles_ceramic_b_2mat_blend_type_a.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

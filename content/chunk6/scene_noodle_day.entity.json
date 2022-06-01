@@ -1214,6 +1214,321 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "c726a692fefb0c08",
+			"comment": "Wet Downdrop - original 0089D4CAB07A251A",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0089D4CAB07A251B",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "4a7103424a7d367d",
+			"comment": "Wet Ground",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00EB08B9C65E2236",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "87031eca12dbef5c",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "008E9BD26C96EC44",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e88bccf38ffebbe5",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0094DEE508617462",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "ed8ad7a8b6d7f42b",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "009E9CA2690BB783",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e1a489567d4730d0",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00EBC7142CB2913B",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "16fe2e2d7bab9196",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0059CDEB47424F16",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "30024d25e0719339",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00B65BC7E56537A3",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "466b3b7064666b7c",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "006EA96660BA7E48",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "40dcfee9edc61622",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00AA8C0A20BFD3E1",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "b92c5925ccc5cd36",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "006AB3BEAD54A6FB",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "314196076aa0fe56",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "003B0819A575DB6C",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "ffba8503d11c34d2",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00E270B57329F924",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "51c834ab8d61bf2d",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"619900998": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mii",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "e0da89f12c05818c",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"619900998": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mi",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "11b4dfc1b5adace1",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"619900998": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "[assembly:/_pro/environment/materials/generic/ground/asphalt_pavement_3mat_blend_b_skunk.mi].pc_mi",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "7baca6b721854c98",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "007B5B8C98FA5E6B",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "4b781d4b0e1148b6",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0052EA9245CD61B8",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "23281059b5030185",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "006FBAFCA560B352",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "762bbccacd98d7f9",
+			"comment": "Wet Ground - original ",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"619900998": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mi",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "5c022e5e1c3fc540",
+			"comment": "Wet Ground - original 00BFFCDDCE1F6736",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00BFFCDDCE1F6737",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "8b35cf980578dde",
 			"comment": "Water Puddle - StaticdecalController_Ground_02 - original 00A2F350692284B3",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"

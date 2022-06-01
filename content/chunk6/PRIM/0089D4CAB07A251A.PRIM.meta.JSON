@@ -1,0 +1,29 @@
+{
+    "hash_value": "0089D4CAB07A251A",
+    "hash_offset": 92388788,
+    "hash_size": 2147499226,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 40,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 32384,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/asphalt_pavement_3mat_blend_b_skunk.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/grass_dirt_terrace_blend_rat_c.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/paving_granite_concrete_3mat_blend.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/concrete_ground_weathered_blend_b.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

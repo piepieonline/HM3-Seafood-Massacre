@@ -1,0 +1,25 @@
+{
+    "hash_value": "00B65BC7E56537A2",
+    "hash_offset": 97389495,
+    "hash_size": 2147526054,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 31,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 72064,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/mumbai_sidewalks_tiles_a_3mat_blend.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/asphalt_pavement_3mat_blend_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/mumbai_ground_tiles_b_3mat_blend_type_c.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

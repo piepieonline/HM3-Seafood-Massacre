@@ -1,0 +1,25 @@
+{
+    "hash_value": "00C73B3C528DABAC",
+    "hash_offset": 31710767,
+    "hash_size": 2147484332,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 31,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 1280,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/curb_stones_paris_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/floor_tiles_ceramic_b_2mat_blend_type_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/decals/edges/bricksworn_stuccorough_a.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}
