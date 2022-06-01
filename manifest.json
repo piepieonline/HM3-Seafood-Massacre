@@ -62,6 +62,34 @@
 		"runtimeID": "008604A166FEFD95",
 		"comment": "JOB_MUMBSECHI03",
 		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00EEF802B8A0A491",
+		"comment": "Mumbai tiles",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00A756E8CD7DD992",
+		"comment": "[assembly:/_pro/environment/materials/generic/floor/mumbai_sidewalks_tiles_a_3mat_blend.mi].pc_mi",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "005259B174CBA1E0",
+		"comment": "[assembly:/_pro/environment/materials/generic/ground/asphalt_pavement_3mat_blend_a.mi].pc_mi",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00B89C2DEFFCEE02",
+		"comment": "[assembly:/_pro/environment/materials/generic/floor/mumbai_ground_tiles_b.mi].pc_mi",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "009258620E53A50B",
+		"comment": "[assembly:/_pro/environment/materials/generic/floor/mumbai_ground_tiles_b.mi].pc_mi",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00A904F1C2260F8C",
+		"comment": "[assembly:/_pro/environment/materials/generic/ground/paving_granite_concrete_3mat_blend.mi].pc_mi",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "009A3BDF3EE1684A",
+		"comment": "[assembly:/_pro/environment/materials/generic/floor/mumbai_sidewalks_tiles_b.mi].pc_mi",
+		"toChunk": "chunk1"
 	}],
 	"blobsFolder": "blobs",
 	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant, in H3's Chongqing. Has a Contracts (Night) and Codename 47 (Day) version to pick from.",

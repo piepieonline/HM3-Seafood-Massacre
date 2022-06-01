@@ -1,0 +1,17 @@
+{
+    "hash_value": "008E9BD26C96EC43",
+    "hash_offset": 71361676,
+    "hash_size": 2147488677,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 13,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 8096,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/mumbai_sidewalks_tiles_a_3mat_blend.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}
