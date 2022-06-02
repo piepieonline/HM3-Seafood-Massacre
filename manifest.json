@@ -90,6 +90,14 @@
 		"runtimeID": "009A3BDF3EE1684A",
 		"comment": "[assembly:/_pro/environment/materials/generic/floor/mumbai_sidewalks_tiles_b.mi].pc_mi",
 		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "00824F624CFCD966",
+		"comment": "[assembly:/_pro/environment/materials/generic/floor/floor_tiles_ceramic_c_2mat_blend_b_fox.mi].pc_mi",
+		"toChunk": "chunk1"
+	},	{
+		"runtimeID": "0005DEA28E52DD52",
+		"comment": "[assembly:/_pro/environment/materials/generic/ground/asphalt_road_3mat_blend_a_fox.mi].pc_mi",
+		"toChunk": "chunk1"
 	}],
 	"blobsFolder": "blobs",
 	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant, in H3's Chongqing. Has a Contracts (Night) and Codename 47 (Day) version to pick from.",
