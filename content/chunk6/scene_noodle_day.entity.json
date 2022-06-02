@@ -1576,7 +1576,7 @@
 			"m_ResourceID": {
 				"type": "ZRuntimeResourceID",
 				"value": {
-					"resource": "00EB08B9C65E2236",
+					"resource": "00EB08B9C65E2237",
 					"flag": "5F"
 				}
 			}
@@ -1756,7 +1756,14 @@
 			"619900998": {
 				"type": "ZRuntimeResourceID",
 				"value": {
-					"resource": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mii",
+					"resource": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mi",
+					"flag": "5F"
+				}
+			},
+			"m_ResourceID": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00CC189907CB47A4",
 					"flag": "5F"
 				}
 			}
@@ -4347,6 +4354,14 @@
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}, {
 		"ref": "8481d7b252aa56cf",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "2bf521c935c73873",
+		"_comment": "Material Override sidewalk_e",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "66eca69ca2894bbc",
+		"_comment": "Material Override sidewalk_e",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
