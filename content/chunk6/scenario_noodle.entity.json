@@ -24183,6 +24183,66 @@
 					"value": 6
 				}
 			}]
+		},
+		"abcd3500ce04cc7e": {
+			"parent": "abcd9105b49b083c",
+			"name": "AISoundConnector 25",
+			"template": "[modules:/zaisoundconnector.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundconnector.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -110.363,
+							"y": 118.404,
+							"z": 114
+						}
+					}
+				},
+				"m_pConnectedTo": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdac8d02566d65"
+				},
+				"m_bTwoWay": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdac8d02566d65": {
+			"parent": "abcd3500ce04cc7e",
+			"name": "AISoundConnectorTarget 25",
+			"template": "[modules:/zaisoundconnectortarget.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundconnectortarget.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -116.634,
+							"y": 111.944,
+							"z": 124.05
+						}
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
