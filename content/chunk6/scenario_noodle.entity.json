@@ -6206,15 +6206,15 @@
 							"z": 35.92343285413521
 						},
 						"position": {
-							"x": -12.112600326538086,
-							"y": 127.06800079345703,
-							"z": 101.01200103759766
+							"x": -5.73119,
+							"y": 127.23,
+							"z": 101.023
 						}
 					}
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 7
+					"value": 14
 				}
 			},
 			"postInitProperties": {
@@ -6232,7 +6232,7 @@
 			"events": [{
 				"onEvent": "OnActTimeout",
 				"shouldTrigger": "Start",
-				"onEntity": "abcd341db18fb8d7"
+				"onEntity": "abcd8fff3d237f55"
 			}]
 		},
 		"abcd5c4b8557e93a": {
@@ -13140,8 +13140,8 @@
 							"z": -80.002979908338
 						},
 						"position": {
-							"x": -41.3969,
-							"y": 127.933,
+							"x": -36.9504,
+							"y": 128.598,
 							"z": 101.012
 						}
 					}
@@ -24290,6 +24290,50 @@
 				"onEvent": "Out",
 				"shouldTrigger": "SetFalse",
 				"onEntity": "abcda3d7c8dfff0e"
+			}]
+		},
+		"abcd8fff3d237f55": {
+			"parent": "abcd29da736e8554",
+			"name": "Act_MR_Stand_Rifle1 RDExit",
+			"template": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/acts/mr_guard.template?/act_mr_military_stand_riffle_var01.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": 13.2091,
+							"y": 74.8372,
+							"z": 100.849
+						}
+					}
+				},
+				"m_fActTimeout": {
+					"type": "float32",
+					"value": 14
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd520185a98f8d"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "fffffffffffffffe"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnActTimeout",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd341db18fb8d7"
 			}]
 		}
 	},
