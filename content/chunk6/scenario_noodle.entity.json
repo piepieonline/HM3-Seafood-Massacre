@@ -2316,6 +2316,10 @@
 				"onEvent": "EventOccurred",
 				"shouldTrigger": "Set",
 				"onEntity": "abcdf7a863b4eb31"
+			}, {
+				"onEvent": "EventOccurred",
+				"shouldTrigger": "Set",
+				"onEntity": "abcddc667c15a50c"
 			}],
 			"platformSpecificPropertyValues": []
 		},
@@ -3923,10 +3927,6 @@
 					"value": true
 				},
 				"m_bNeverSpectate": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreDeadBodies": {
 					"type": "bool",
 					"value": true
 				}
@@ -12871,7 +12871,11 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [],
+			"events": [{
+				"onEvent": "OnFalse",
+				"shouldTrigger": "In",
+				"onEntity": "abcda74fd3ed3c30"
+			}],
 			"inputCopying": [],
 			"outputCopying": []
 		},
@@ -24243,6 +24247,50 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcddc667c15a50c": {
+			"parent": "abcd9a040fd7639e",
+			"name": "Chief Ignoreweapons",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_bIgnoreWeapons": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDisableHelpCivilian": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcda74fd3ed3c30": {
+			"parent": "abcd41228fd6dcbc",
+			"name": "TimerSimple",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 60000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "SetFalse",
+				"onEntity": "abcda3d7c8dfff0e"
+			}]
 		}
 	},
 	"propertyOverrides": [{
