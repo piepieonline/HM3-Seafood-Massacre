@@ -1214,6 +1214,66 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "d54ca8b72cd97053",
+			"comment": "RainDialogue1",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pAudioEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00FB57DD1AE8A0A3",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "7d795c21151cab9b",
+			"comment": "RainDialogue2",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pAudioEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "009CAC335AE92E3B",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "40266d3cb5bf4859",
+			"comment": "RainDialogue3",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pAudioEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "0095ABFAF1968335",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "5e85f93068fc2826",
+			"comment": "RainDialogue4",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_pAudioEvent": {
+				"type": "ZRuntimeResourceID",
+				"value": {
+					"resource": "00726B011E152E56",
+					"flag": "5F"
+				}
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "3a0e16265488e70d",
 			"comment": "walkways_straight_90",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
