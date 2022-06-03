@@ -148,7 +148,7 @@
                 },
                 "Image": "images/contractconditions/condition_contrac_all_shots_fired_hit_an_npc.jpg",
                 "BriefingName": "No Witnesses",
-                "BriefingText": "No one must know the Red Dragons were not responsible",
+                "BriefingText": "No witnesses can live to contradict our narrative",
                 "Category": "primary",
                 "HUDTemplate": {
                     "display": "Eliminate all witnesses",
@@ -199,7 +199,15 @@
                                         "$inc": "TargetsCounter",
                                         "$pushunique": ["Witnesses", "$Value.RepositoryId"]
                                     }
-                                }
+                                }, {
+									"Condition": {
+                                        "$eq": ["$.TargetsCounter", 15]
+                                    },
+									"Actions": {
+                                        "$set": ["TargetsCounter", -1]
+                                    },
+                                    "Transition": "Failure"
+								}
                             ],
                             "Kill": [{
                                     "Actions": {
