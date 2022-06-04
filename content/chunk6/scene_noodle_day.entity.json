@@ -3635,11 +3635,27 @@
 			"ref": "abcdba75fae49278",
 			"comment": "Sniper",
 			"externalScene": "000D36CCB954F4D4"
+		}, {
+			"ref": "abcd2dc906e0b4ab",
+			"comment": "Station Guard",
+			"externalScene": "000D36CCB954F4D4"
 		}],
 		"properties": {
 			"m_nOutfitCharset": {
 				"type": "int32",
 				"value": 0
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "abcd3caa15d6a29f",
+			"comment": "StationCop",
+			"externalScene": "000D36CCB954F4D4"
+		}],
+		"properties": {
+			"m_nOutfitVariation": {
+				"type": "int32",
+				"value": 9
 			}
 		}
 	}, {
