@@ -13,8 +13,8 @@
             "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -85.82178, 114.6616, 109"
         }, {
             "id": "c235f578-f55b-4c9d-b568-db6cad909c8c",
-            "isDefaultSpawn": false,
-            "isPreferredSpawn": false,
+            "isDefaultSpawn": true,
+            "isPreferredSpawn": true,
             "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -15.06186, -0.070374, 101"
         }, {
             "id": "7371c3ea-cfb9-46b8-a699-93ab1cdd07af",
@@ -33,12 +33,12 @@
             "WorldTransform": "0, 1, 0, -1, 0, 0, 0, 0, 1, -17.15897, 85.29478, 109"
         }, {
             "id": "4752ebbb-02c0-48b0-8e05-3ec2a920dedd",
-            "isDefaultSpawn": true,
-            "isPreferredSpawn": true,
+            "isDefaultSpawn": false,
+            "isPreferredSpawn": false,
             "WorldTransform": "0.939693, -0.34202, 0, 0.34202, 0.939693, 0, 0, 0, 1, -95.28177, 36.19925, 101"
         }, {
             "id": "f9c65d0b-e5ce-454e-8f20-08a8083a9b9d",
-            "isDefaultSpawn": true,
+            "isDefaultSpawn": false,
             "isPreferredSpawn": false,
             "WorldTransform": "1, 0, 0, 0, 1, 0, 0, 0, 1, -173.9, 159.8794, 89"
         }

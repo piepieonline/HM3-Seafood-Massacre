@@ -297,7 +297,7 @@
             }
         ],
         "Bricks": [],
-        "Entrances": [],
+        "Entrances": ["c235f578-f55b-4c9d-b568-db6cad909c8c"],
         "GameChangers": [],
         "EngineModesBricks": [],
         "Stashpoints": [
