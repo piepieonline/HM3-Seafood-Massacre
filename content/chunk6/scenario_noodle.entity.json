@@ -24671,11 +24671,11 @@
 						"rotation": {
 							"x": 0,
 							"y": 0,
-							"z": -90
+							"z": 180
 						},
 						"position": {
-							"x": -36.7995,
-							"y": 87.4602,
+							"x": -35.07,
+							"y": 87.6981,
 							"z": 97
 						}
 					}
@@ -24693,6 +24693,10 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
+				},
+				"m_aApproachPath": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcde9e0b40617a0"]
 				}
 			},
 			"editorOnly": false,
@@ -24702,6 +24706,32 @@
 				"shouldTrigger": "In",
 				"onEntity": "abcd9e28d0600b57"
 			}]
+		},
+		"abcde9e0b40617a0": {
+			"parent": "abcda5677e00c0ae",
+			"name": "Arcade Entrance",
+			"template": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -41.7996,
+							"y": 81.8692,
+							"z": 97.0333
+						}
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
