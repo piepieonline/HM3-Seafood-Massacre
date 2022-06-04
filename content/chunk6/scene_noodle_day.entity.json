@@ -1418,6 +1418,18 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "abcd5adc464b47d5",
+			"comment": "BL Escape Event",
+			"externalScene": "000D36CCB954F4D4"
+		}],
+		"properties": {
+			"m_sName": {
+				"type": "ZString",
+				"value": "BLEscaped"
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "199433d4f4034a5e",
 			"comment": "ActorProviderWaypoint M",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
@@ -4445,14 +4457,6 @@
 		"ref": "6f512b5e9551463c",
 		"_comment": "A_Fog",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-	}, {
-		"ref": "abcdfd77664a022b",
-		"_comment": "BL Escape Event Trigger",
-		"externalScene": "000D36CCB954F4D4"
-	}, {
-		"ref": "abcddf814a81e66c",
-		"_comment": "BL Escape Event Trigger",
-		"externalScene": "000D36CCB954F4D4"
 	}, {
 		"ref": "15e0550dd39d253a",
 		"_comment": "Arcade interior lights",
