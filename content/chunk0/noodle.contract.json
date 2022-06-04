@@ -32,6 +32,16 @@
         },  {
             "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
             "Category": "primary",
+            "OnActive": {
+                "IfCompleted": {
+                    "Visible": false
+                }
+            },
+            "OnInactive": {
+                "IfCompleted": {
+                    "State": "Completed"
+                }
+            },
             "Primary": true,
             "ObjectiveType": "custom",
             "ForceShowOnLoadingScreen": true,
