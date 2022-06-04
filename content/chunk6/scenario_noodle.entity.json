@@ -12002,7 +12002,7 @@
 			"events": [{
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Trigger",
-				"onEntity": "abcd5d8df115be30"
+				"onEntity": "abcd5adc464b47d5"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
@@ -12273,7 +12273,7 @@
 			"events": [{
 				"onEvent": "OnTrue",
 				"shouldTrigger": "Trigger",
-				"onEntity": "abcd5d8df115be30"
+				"onEntity": "abcd5adc464b47d5"
 			}],
 			"inputCopying": [],
 			"outputCopying": []
@@ -24335,6 +24335,21 @@
 				"shouldTrigger": "Start",
 				"onEntity": "abcd341db18fb8d7"
 			}]
+		},
+		"abcd5adc464b47d5": {
+			"parent": "abcd66644ec6f222",
+			"name": "ContractsEvent Escape success",
+			"template": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "TargetEscaped"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{

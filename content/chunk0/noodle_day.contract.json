@@ -209,6 +209,17 @@
                                     "Transition": "Failure"
 								}
                             ],
+                            "BLEscaped": [{
+                                "Condition": {
+                                    "$inarray": {
+                                        "in": "$.Witnesses",
+                                        "?": {
+                                            "$eq": ["$.#", "d339202b-5282-4bb9-9be6-d3335311be1c"]
+                                        }
+                                    }},
+                                "Transition": "Failure"
+                            }
+                        ],
                             "Kill": [{
                                     "Actions": {
                                         "$pushunique": ["KilledActors", "$Value.RepositoryId"]
