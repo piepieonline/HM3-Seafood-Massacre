@@ -12185,6 +12185,10 @@
 				"onEvent": "Out",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcd2c6e26a75a53"
+			}, {
+				"onEvent": "Out",
+				"shouldTrigger": "In",
+				"onEntity": "abcd34aa434e52f1"
 			}]
 		},
 		"abcdffb857c4d585": {
@@ -12911,9 +12915,9 @@
 							"z": -164.09786538167356
 						},
 						"position": {
-							"x": -41.1512,
-							"y": 92.6299,
-							"z": 105.002
+							"x": -18.2618,
+							"y": 120.408,
+							"z": 105
 						}
 					}
 				},
@@ -24269,6 +24273,10 @@
 				"m_bDisableHelpCivilian": {
 					"type": "bool",
 					"value": true
+				},
+				"m_bIgnoreLowNoise": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -24738,7 +24746,7 @@
 			"platformSpecificPropertyValues": []
 		},
 		"abcd9b9325417933": {
-			"parent": "abcd9a040fd7639e",
+			"parent": "abcd887fde10e24b",
 			"name": "VRI_Runner",
 			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_runner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_runner.entitytemplate].pc_entityblueprint",
@@ -24774,6 +24782,44 @@
 				"shouldTrigger": "Set",
 				"onEntity": "abcd9b9325417933"
 			}]
+		},
+		"abcd34aa434e52f1": {
+			"parent": "abcd0fe3bf74b3d1",
+			"name": "TimerToStartVRI",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 4000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd635fd7b4f054"
+			}]
+		},
+		"abcd635fd7b4f054": {
+			"parent": "abcd34aa434e52f1",
+			"name": "VRI_Runner",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_runner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_runner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd3d755cd84fe8"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{
