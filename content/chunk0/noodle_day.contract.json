@@ -306,6 +306,23 @@
                 "Bricks": ["assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick"]
             }
         ],
+        "VR": [
+            {
+                "Quality": "base",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/wet/vr_overrides_rat.brick",
+                    "assembly:/_pro/scenes/missions/Wet/vr_overrides_ps4perf.brick"
+                ]
+            },
+            {
+                "Quality": "better",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/wet/vr_overrides_rat.brick"
+                ]
+            }
+        ],
         "Bricks": [],
         "Entrances": ["c235f578-f55b-4c9d-b568-db6cad909c8c"],
         "GameChangers": [],
