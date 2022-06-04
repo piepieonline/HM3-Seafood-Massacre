@@ -19804,6 +19804,10 @@
 				"onEvent": "Out",
 				"shouldTrigger": "SetTrue",
 				"onEntity": "abcda82f705af864"
+			}, {
+				"onEvent": "Out",
+				"shouldTrigger": "In",
+				"onEntity": "abcd887fde10e24b"
 			}]
 		},
 		"abcda86910aeee07": {
@@ -24732,6 +24736,44 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcd9b9325417933": {
+			"parent": "abcd9a040fd7639e",
+			"name": "VRI_Runner",
+			"template": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_runner.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/animvariation.template?/vri_civ_male_runner.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd9a040fd7639e"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd887fde10e24b": {
+			"parent": "abcd71d93536e1fd",
+			"name": "TimerToStartVRI",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 4000
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd9b9325417933"
+			}]
 		}
 	},
 	"propertyOverrides": [{
