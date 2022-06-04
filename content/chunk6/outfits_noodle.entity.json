@@ -927,6 +927,111 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdcb0541798903": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Prof_WET_Guard",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_wet_guard.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_wet_guard.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd63dc1bf1aa40": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Prof_Wet",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_wet.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_wet.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd57087bf36bf2": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Keyword_ActorIdentifier_Guard",
+			"template": "[assembly:/_pro/design/actor/actoridentifierkeywords.template?/keyword_actoridentifier_guard.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/actoridentifierkeywords.template?/keyword_actoridentifier_guard.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd254b66c3d6c8": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Keyword_Prof_Class_Default",
+			"template": "007A51A2AFEC0D1A",
+			"blueprint": "00B0282A41C1CF2E",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd4e21465538dc": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Keyword_Prof_Class_Guard_Heavy",
+			"template": "00364659808ED13C",
+			"blueprint": "003A7D4D8810414B",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdf875753c033c": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Keyword_Prof_Class_Guard_Light",
+			"template": "003F8A8A859AE133",
+			"blueprint": "0059DEB85AA5AFED",
+			"properties": {},
+			"postInitProperties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd19576e78c3ed": {
+			"parent": "abcd1098e6fa90a2",
+			"name": "Prof_Wet_Guard_StreetGuard",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_wet_guard_streetguard.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_wet_guard_streetguard.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd1098e6fa90a2"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [],
