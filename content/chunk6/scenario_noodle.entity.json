@@ -3933,6 +3933,10 @@
 				"m_bNeverSpectate": {
 					"type": "bool",
 					"value": true
+				},
+				"m_bDisableHelpCivilian": {
+					"type": "bool",
+					"value": true
 				}
 			},
 			"postInitProperties": {
@@ -9947,7 +9951,12 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd9d010609d644"
+			}]
 		},
 		"abcd77413abb710c": {
 			"parent": "abcd16c71337c087",
@@ -9986,6 +9995,10 @@
 				"onEvent": "OnStart",
 				"shouldTrigger": "Start",
 				"onEntity": "abcdac072c33cdf1"
+			}, {
+				"onEvent": "OnStart",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd9d010609d644"
 			}]
 		},
 		"abcdfcc672daeb48": {
@@ -20869,9 +20882,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -64.8859,
-							"y": 70.765,
-							"z": 97.0098
+							"x": -53.9369,
+							"y": 80.0843,
+							"z": 97.015
 						}
 					}
 				},
@@ -24836,9 +24849,9 @@
 							"z": -90.92343385152114
 						},
 						"position": {
-							"x": -66.6873,
-							"y": 71.5867,
-							"z": 96.8552
+							"x": -49.26,
+							"y": 79.8267,
+							"z": 97.015
 						}
 					}
 				},
@@ -25169,6 +25182,66 @@
 			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
+		},
+		"abcd9d010609d644": {
+			"parent": "abcd9a040fd7639e",
+			"name": "Chief Confrontation",
+			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
+			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
+			"properties": {
+				"m_bIgnoreSillyHitman": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAnnoyingHitman": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreDistractions": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreDeadBodies": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreLockdown": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreWeapons": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreTrespassing": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bDisableHelpCivilian": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bIgnoreLowNoise": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bNeverSpectate": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd77413abb710c"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
