@@ -24953,8 +24953,8 @@
 		"abcd69f81bd3308a": {
 			"parent": "abcd5d9aaa0471de",
 			"name": "FollowTest",
-			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/escortsituation.entitytemplate].pc_entityblueprint",
+			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/drama2escortsituation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/drama2escortsituation.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aActors": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -25037,9 +25037,14 @@
 		"abcd5a409a9df466": {
 			"parent": "abcd69f81bd3308a",
 			"name": "Intermed screenplay",
-			"template": "005A93FF1E08C175",
-			"blueprint": "00E698713B0D1054",
-			"properties": {},
+			"template": "[assembly:/_pro/design/gamecore/escorthelpers.template?/intermediatedrama.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/escorthelpers.template?/intermediatedrama.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd7a7c98d94cbd"
+				}
+			},
 			"postInitProperties": {
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
@@ -25077,15 +25082,7 @@
 			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "SetTrue",
-				"onEntity": "abcd7a7c98d94cbd"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "SetFalse",
-				"onEntity": "abcd7a7c98d94cbd"
-			}]
+			"events": []
 		},
 		"abcd6baf459c6812": {
 			"parent": "abcd69f81bd3308a",
@@ -25111,8 +25108,8 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 7,
-						"y": 7,
+						"x": 13,
+						"y": 13,
 						"z": 3
 					}
 				}
@@ -25124,59 +25121,18 @@
 			"inputCopying": [],
 			"outputCopying": []
 		},
-		"abcdf3874c756a61": {
-			"parent": "abcd69f81bd3308a",
-			"name": "ValueBool_Operation",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7a7c98d94cbd"]
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"outputCopying": [{
-				"onEvent": "OnTrue",
-				"propagateEvent": "OnTrue",
-				"onEntity": "abcd759de726a7a8"
-			}, {
-				"onEvent": "OnFalse",
-				"propagateEvent": "OnFalse",
-				"onEntity": "abcd759de726a7a8"
-			}]
-		},
-		"abcd759de726a7a8": {
-			"parent": "abcd69f81bd3308a",
-			"name": "Escort conditions",
-			"template": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"exposedInterfaces": [
-				["ZValueBoolBasic", "abcd791211a09819"]
-			],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "LeaveTarget",
-				"onEntity": "abcd69f81bd3308a"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "PickupOnTarget",
-				"onEntity": "abcd69f81bd3308a"
-			}]
-		},
 		"abcd7a7c98d94cbd": {
 			"parent": "abcd3a523f3613b4",
-			"name": "ValueBool_Basic",
-			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"name": "EC Guard at post",
+			"template": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/enableconditions.entitytemplate].pc_entityblueprint",
 			"properties": {},
-			"postInitProperties": {},
+			"postInitProperties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd3a523f3613b4"]
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [],
