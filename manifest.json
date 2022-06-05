@@ -116,6 +116,10 @@
 			"type": "entity",
 			"partition": "wet",
 			"path": "[assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick].entitytype"
+		  },	{
+			"type": "entity",
+			"partition": "wet",
+			"path": "[assembly:/_pro/scenes/missions/wet/vr_overrides_rat_noodle.brick].entitytype"
 		  }
 	  ],
 	  "localisation": {
