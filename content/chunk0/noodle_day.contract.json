@@ -7,11 +7,11 @@
             "ObjectiveType": "setpiece",
             "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/red.jpg",
-            "BriefingName": "Red Dragon",
-            "BriefingText": "A target has escaped.",
-            "LongBriefingText": "Lee Hong has sent a negotiator to broker peace with the police and the Blue Lotus Triad. Our client wants this to fail, so the Red Dragons must be blamed for killing the peace emissaries. This means that the Red Dragon negotiator cannot live to contradict this story, and his body must not be left anywhere where it will be found.",
+            "BriefingName": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_LONGTEXT",
             "HUDTemplate": {
-                "display": "Eliminate the Red Dragon Negotiator"
+                "display": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_DISPLAY"
             },
             "DisplayAsKillObjective": true,
             "Type": "statemachine",
@@ -33,7 +33,6 @@
         },  {
             "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
             "Category": "primary",
-            "Primary": true,
             "OnActive": {
                 "IfCompleted": {
                     "Visible": false
@@ -44,16 +43,17 @@
                     "State": "Completed"
                 }
             },
+            "Primary": true,
             "ObjectiveType": "custom",
             "ForceShowOnLoadingScreen": true,
-            "BriefingName": "Hide Body",
+            "BriefingName": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_NAME",
             "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
             "HUDTemplate": {
-                "display": "Conceal the Red Dragon negotiator's body",
+                "display": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_DISPLAY",
                 "iconType": 17
             },
-            "BriefingText": "Conceal the Red Dragon negotiator's body",
-            "LongBriefingText": "His corpse would tip off the Blue Lotus and the police, so 'keep things underground.'",
+            "BriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_LONGTEXT",
             "Type": "statemachine",
             "Definition": {
                 "Scope": "session",
@@ -81,11 +81,11 @@
             "ObjectiveType": "setpiece",
             "ForceShowOnLoadingScreen": true,
             "Image": "images/noodle/chief.jpg",
-            "BriefingName": "Police Chief",
-            "BriefingText": "A target has escaped.",
-            "LongBriefingText": "Since the police are presiding over this meeting in the interests of preserving the peace, you'll have to include the chief in this job.",
+            "BriefingName": "$loc UI_NOODLE_CHIEFOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_LONGTEXT",
             "HUDTemplate": {
-                "display": "Eliminate the Chief of Police"
+                "display": "$loc UI_NOODLE_CHIEFOBJECTIVE_DISPLAY"
             },
             "DisplayAsKillObjective": true,
             "Type": "statemachine",
@@ -110,13 +110,13 @@
 				"ObjectiveType": "custom",
 				"Image": "images/noodle/amulet.jpg",
 				"ForceShowOnLoadingScreen": true,
-				"BriefingName": "Frame Job",
-                "BriefingText": "Leave the Red Dragon Amulet at the meeting table to implicate the Red Dragons",
+				"BriefingName": "$loc UI_NOODLE_AMULETOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_TEXT",
                 "HUDTemplate": {
-                    "display": "Leave the Red Dragon Amulet at the meeting table",
+                    "display": "$loc UI_NOODLE_AMULETOBJECTIVE_DISPLAY",
                     "iconType": 17
                 },
-				"LongBriefingText": "Drop a Red Dragon amulet at the table of the restaurant to ensure they take the blame.",
+				"LongBriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_LONGTEXT",
                 "Category": "primary",
                 "Scope": "hit",
                 "Type": "statemachine",
@@ -158,11 +158,11 @@
                     }
                 },
                 "Image": "images/contractconditions/condition_contrac_all_shots_fired_hit_an_npc.jpg",
-                "BriefingName": "No Witnesses",
-                "BriefingText": "No witnesses can live to contradict our narrative",
+                "BriefingName": "$loc UI_NOODLE_WITNESSESOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_WITNESSESOBJECTIVE_TEXT",
                 "Category": "primary",
                 "HUDTemplate": {
-                    "display": "Eliminate all witnesses",
+                    "display": "$loc UI_NOODLE_WITNESSESOBJECTIVE_DISPLAY",
                     "iconType": 8
                 },
                 "Type": "statemachine",
@@ -220,17 +220,6 @@
                                     "Transition": "Failure"
 								}
                             ],
-                            "BLEscaped": [{
-                                "Condition": {
-                                    "$inarray": {
-                                        "in": "$.Witnesses",
-                                        "?": {
-                                            "$eq": ["$.#", "d339202b-5282-4bb9-9be6-d3335311be1c"]
-                                        }
-                                    }},
-                                "Transition": "Failure"
-                            }
-                        ],
                             "Kill": [{
                                     "Actions": {
                                         "$pushunique": ["KilledActors", "$Value.RepositoryId"]

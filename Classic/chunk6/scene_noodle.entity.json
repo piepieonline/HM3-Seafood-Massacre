@@ -48,7 +48,7 @@
 		},
 		"abcddbbfd86cb3eb": {
 			"parent": "abcd7719fca07900",
-			"name": "play_cc_pm_light",
+			"name": "play_StreetsofHongKong",
 			"template": "[modules:/zmusicevententity.class].pc_entitytype",
 			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
 			"properties": {
@@ -62,6 +62,22 @@
 						"resource": "0052B814FE1EEF0B",
 						"flag": "5F"
 					}
+				},
+				"m_fTransitionTime": {
+					"type": "float32",
+					"value": 3
+				},
+				"m_bUseOcclusionForCulling": {
+					"type": "bool",
+					"value": false
+				},
+				"Attenuation": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_eCullingBehavior": {
+					"type": "AudioEventCullingBehavior",
+					"value": "NoAutoSendStop"
 				}
 			},
 			"postInitProperties": {},
@@ -70,7 +86,7 @@
 			"events": [{
 				"onEvent": "Stop",
 				"shouldTrigger": "Send",
-				"onEntity": "abcddbbfd86cb3eb"
+				"onEntity": "abcd38b3d2a9656e"
 			}]
 		},
 		"abcdbc95a0c244c4": {
@@ -102,6 +118,84 @@
 				"shouldTrigger": "Send",
 				"onEntity": "abcddbbfd86cb3eb"
 			}]
+		},
+		"abcd38b3d2a9656e": {
+			"parent": "abcd7719fca07900",
+			"name": "play_HongKongUnderground",
+			"template": "[modules:/zmusicevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_pEmitter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdbc95a0c244c4"
+				},
+				"m_pMainEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0052B814FE1EEF0D",
+						"flag": "5F"
+					}
+				},
+				"m_fTransitionTime": {
+					"type": "float32",
+					"value": 3
+				},
+				"m_bUseOcclusionForCulling": {
+					"type": "bool",
+					"value": false
+				},
+				"Attenuation": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_eCullingBehavior": {
+					"type": "AudioEventCullingBehavior",
+					"value": "NoAutoSendStop"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Stop",
+				"shouldTrigger": "Send",
+				"onEntity": "abcddbbfd86cb3eb"
+			}]
+		},
+		"abcd07239fcac8fd": {
+			"parent": "abcd7719fca07900",
+			"name": "GameTensionCondition",
+			"template": "[modules:/zgametensioncondition.class].pc_entitytype",
+			"blueprint": "[modules:/zgametensioncondition.class].pc_entityblueprint",
+			"properties": {
+				"m_eMaxTension": {
+					"type": "EGameTension",
+					"value": "EGT_Combat"
+				},
+				"m_eMinTension": {
+					"type": "EGameTension",
+					"value": "EGT_Ambient"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd82b809a3d995": {
+			"parent": "abcd07239fcac8fd",
+			"name": "ValueBool_Operation",
+			"template": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcd07239fcac8fd"]
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": []
 		}
 	},
 	"propertyOverrides": [{
