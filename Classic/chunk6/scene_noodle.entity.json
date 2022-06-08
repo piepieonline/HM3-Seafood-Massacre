@@ -101,13 +101,13 @@
 		},
 		"abcd0de561a20ede": {
 			"parent": "abcd7719fca07900",
-			"name": "Trigger Ave Maria",
+			"name": "Trigger Music",
 			"template": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
 			"properties": {
 				"m_eEvent": {
 					"type": "EGameEventType",
-					"value": "GET_IntroCutEnd"
+					"value": "GET_GameplayStart"
 				}
 			},
 			"postInitProperties": [],
@@ -174,7 +174,7 @@
 				},
 				"m_eMinTension": {
 					"type": "EGameTension",
-					"value": "EGT_Ambient"
+					"value": "EGT_Arrest"
 				}
 			},
 			"postInitProperties": {},
@@ -195,7 +195,70 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": []
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Send",
+				"onEntity": "abcdede96885e239"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcddbbfd86cb3eb"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcddbbfd86cb3eb"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Send",
+				"onEntity": "abcddbbfd86cb3eb"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcdede96885e239"
+			}]
+		},
+		"abcdede96885e239": {
+			"parent": "abcd7719fca07900",
+			"name": "play_47Detected",
+			"template": "[modules:/zmusicevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_pEmitter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdbc95a0c244c4"
+				},
+				"m_pMainEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0052B814FE1EEF0E",
+						"flag": "5F"
+					}
+				},
+				"m_fTransitionTime": {
+					"type": "float32",
+					"value": 3
+				},
+				"m_bUseOcclusionForCulling": {
+					"type": "bool",
+					"value": false
+				},
+				"Attenuation": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_eCullingBehavior": {
+					"type": "AudioEventCullingBehavior",
+					"value": "NoAutoSendStop"
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Stop",
+				"shouldTrigger": "Send",
+				"onEntity": "abcddbbfd86cb3eb"
+			}]
 		}
 	},
 	"propertyOverrides": [{
