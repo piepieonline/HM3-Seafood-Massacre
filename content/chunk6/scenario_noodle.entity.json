@@ -4733,6 +4733,7 @@
 					"value": "abcd8de5cbd87793"
 				}
 			},
+			"events": [],
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -11573,7 +11574,7 @@
 		},
 		"abcd160cf40f9943": {
 			"parent": "abcdb4b066e27787",
-			"name": "AIModifierActor",
+			"name": "AIModifierActor SniperDefault",
 			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
 			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
 			"properties": {
@@ -19424,6 +19425,14 @@
 				"onEvent": "OnFalse",
 				"shouldTrigger": "Deactivate",
 				"onEntity": "abcdc38640d82521"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd160cf40f9943"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd8be9679b61b3"
 			}]
 		},
 		"abcd40b4199cefb0": {
@@ -22867,7 +22876,7 @@
 				},
 				"m_fActTimeout": {
 					"type": "float32",
-					"value": 2
+					"value": 0.5
 				}
 			},
 			"postInitProperties": {
@@ -25332,7 +25341,7 @@
 				},
 				"m_aIntermediateScreenplays": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcdc8cdfafc4fcf"]
+					"value": ["abcdc8cdfafc4fcf", "abcdfac76aa23b79", "abcd527e90ec08b0"]
 				}
 			},
 			"editorOnly": false,
@@ -25789,7 +25798,7 @@
 				},
 				"m_bIgnoreDeadBodies": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bIgnoreLockdown": {
 					"type": "bool",
@@ -25801,7 +25810,7 @@
 				},
 				"m_bIgnoreTrespassing": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bDisableHelpCivilian": {
 					"type": "bool",
@@ -25813,7 +25822,7 @@
 				},
 				"m_bSuppressSocialGreeting": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bNeverSpectate": {
 					"type": "bool",
@@ -25822,6 +25831,10 @@
 				"m_bDeafAndBlind": {
 					"type": "bool",
 					"value": true
+				},
+				"m_nScope": {
+					"type": "EAIModifierScope",
+					"value": "AIMS_Behavior"
 				}
 			},
 			"postInitProperties": {},
@@ -25875,7 +25888,7 @@
 				},
 				"m_nOutfitVariation": {
 					"type": "int32",
-					"value": 8
+					"value": 0
 				},
 				"m_nOutfitCharset": {
 					"type": "int32",
