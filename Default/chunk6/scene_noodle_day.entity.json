@@ -5013,6 +5013,18 @@
 	}, {
 		"ref": "a3ccc3782f51a1d5",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "94d82139e838cd72",
+		"_comment": "Laundromat Windowlight",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "2c49b6b74db01730",
+		"_comment": "Laundromat Windowlight",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "11ed5cdbc1a61d9",
+		"_comment": "Laundromat Windowlight",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 	}],
 	"pinConnectionOverrides": [{
 		"fromEntity": {
