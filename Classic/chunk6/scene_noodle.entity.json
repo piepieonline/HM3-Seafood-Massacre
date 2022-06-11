@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": []
+					"entities": ["abcdbc95a0c244c4"]
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -35,7 +35,7 @@
 		},
 		"abcd7719fca07900": {
 			"parent": "fffffffffffffffe",
-			"name": "Ave Maria",
+			"name": "Music",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -71,20 +71,20 @@
 					"type": "bool",
 					"value": false
 				},
+				"m_bMainEventEndedOnStop": {
+					"type": "bool",
+					"value": false
+				},
 				"Attenuation": {
 					"type": "float32",
 					"value": 0
-				},
-				"m_eCullingBehavior": {
-					"type": "AudioEventCullingBehavior",
-					"value": "NoAutoSendStop"
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "Stop",
+				"onEvent": "MainEventEnded",
 				"shouldTrigger": "Send",
 				"onEntity": "abcd38b3d2a9656e"
 			}]
@@ -94,7 +94,12 @@
 			"name": "MUSIC_CC_PM_Light_2dAE",
 			"template": "[assembly:/templates/sound/wwise/soundentities.template?/2daudioemitter.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/2daudioemitter.entitytemplate].pc_entityblueprint",
-			"properties": {},
+			"properties": {
+				"m_bIsEnabled": {
+					"type": "bool",
+					"value": true
+				}
+			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
@@ -157,7 +162,7 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "Stop",
+				"onEvent": "MainEventEnded",
 				"shouldTrigger": "Send",
 				"onEntity": "abcddbbfd86cb3eb"
 			}]
@@ -195,27 +200,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Send",
-				"onEntity": "abcdede96885e239"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Stop",
-				"onEntity": "abcddbbfd86cb3eb"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Stop",
-				"onEntity": "abcddbbfd86cb3eb"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Send",
-				"onEntity": "abcddbbfd86cb3eb"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Stop",
-				"onEntity": "abcdede96885e239"
-			}]
+			"events": []
 		},
 		"abcdede96885e239": {
 			"parent": "abcd7719fca07900",
@@ -255,7 +240,7 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "Stop",
+				"onEvent": "MainEventEnded",
 				"shouldTrigger": "Send",
 				"onEntity": "abcddbbfd86cb3eb"
 			}]

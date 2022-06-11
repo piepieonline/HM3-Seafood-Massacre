@@ -26,7 +26,7 @@
 					"entities": []
 				}],
 				["Replicable", {
-					"entities": ["abcd5179a190d8fa", "abcd1282323de057", "abcdd8a66b09309c", "abcdcbfe5fec2e2e", "abcd2eb7bfa5b5f3", "abcd1501ba6455c8", "abcde0eba4f09147", "abcd9a040fd7639e", "d40a022a606b4f72"]
+					"entities": ["abcdba75fae49278", "abcd5179a190d8fa", "abcd1282323de057", "abcdd8a66b09309c", "abcdcbfe5fec2e2e", "abcd2eb7bfa5b5f3", "abcd1501ba6455c8", "abcde0eba4f09147", "abcd9a040fd7639e", "d40a022a606b4f72"]
 				}],
 				["Rooms", {
 					"entities": []
@@ -2273,6 +2273,14 @@
 				"m_bTerminateOnDone": {
 					"type": "bool",
 					"value": true
+				},
+				"m_nPriority": {
+					"type": "int32",
+					"value": 250
+				},
+				"m_sMatchNode": {
+					"type": "ZString",
+					"value": "BT_CLOSECOMBAT_ONLY"
 				}
 			},
 			"postInitProperties": {},
@@ -2966,6 +2974,15 @@
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd8be9679b61b3"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "Set",
+				"onEntity": "abcd160cf40f9943"
+			}],
 			"platformSpecificPropertyValues": []
 		},
 		"abcd2c62761e8677": {
@@ -4257,6 +4274,10 @@
 				"m_fActTimeout": {
 					"type": "float32",
 					"value": -1
+				},
+				"m_ePerceptionSensitivity": {
+					"type": "EActorPerceptionSensitivity",
+					"value": "APS_AMBIENT_DEAFBLIND"
 				}
 			},
 			"postInitProperties": {
@@ -19425,14 +19446,6 @@
 				"onEvent": "OnFalse",
 				"shouldTrigger": "Deactivate",
 				"onEntity": "abcdc38640d82521"
-			}, {
-				"onEvent": "OnFalse",
-				"shouldTrigger": "Set",
-				"onEntity": "abcd160cf40f9943"
-			}, {
-				"onEvent": "OnTrue",
-				"shouldTrigger": "Set",
-				"onEntity": "abcd8be9679b61b3"
 			}]
 		},
 		"abcd40b4199cefb0": {
@@ -25776,9 +25789,9 @@
 			"template": "[modules:/zaimodifieractor.class].pc_entitytype",
 			"blueprint": "[modules:/zaimodifieractor.class].pc_entityblueprint",
 			"properties": {
-				"m_pActor": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdba75fae49278"
+				"m_bIgnoreLowNoise": {
+					"type": "bool",
+					"value": true
 				},
 				"m_bIgnoreSillyHitman": {
 					"type": "bool",
@@ -25792,15 +25805,15 @@
 					"type": "bool",
 					"value": true
 				},
-				"m_bIgnoreAccidents": {
-					"type": "bool",
-					"value": true
-				},
 				"m_bIgnoreDeadBodies": {
 					"type": "bool",
 					"value": true
 				},
-				"m_bIgnoreLockdown": {
+				"m_bIgnoreAccidents": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bDisableDeadBodySensor": {
 					"type": "bool",
 					"value": true
 				},
@@ -25812,15 +25825,11 @@
 					"type": "bool",
 					"value": true
 				},
+				"m_bIgnoreLockdown": {
+					"type": "bool",
+					"value": true
+				},
 				"m_bDisableHelpCivilian": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIgnoreLowNoise": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bSuppressSocialGreeting": {
 					"type": "bool",
 					"value": true
 				},
@@ -25828,16 +25837,25 @@
 					"type": "bool",
 					"value": true
 				},
-				"m_bDeafAndBlind": {
+				"m_bWantsPrivacy": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bSuppressSocialGreeting": {
 					"type": "bool",
 					"value": true
 				},
 				"m_nScope": {
 					"type": "EAIModifierScope",
-					"value": "AIMS_Behavior"
+					"value": "AIMS_Override"
 				}
 			},
-			"postInitProperties": {},
+			"postInitProperties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": "abcdba75fae49278"
+				}
+			},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},

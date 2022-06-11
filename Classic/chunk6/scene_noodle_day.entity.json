@@ -1477,7 +1477,7 @@
 			"properties": {
 				"m_eEvent": {
 					"type": "EGameEventType",
-					"value": "GET_IntroCutEnd"
+					"value": "GET_GameplayStart"
 				}
 			},
 			"postInitProperties": [],
