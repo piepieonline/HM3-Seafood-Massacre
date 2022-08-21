@@ -343,10 +343,6 @@
 					"type": "ZGuid",
 					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
 				},
-				"m_eRequiredVoiceVariation": {
-					"type": "EActorVoiceVariation",
-					"value": "eAVV_JOB_MUMBSECHI02"
-				},
 				"m_bStartEnabled": {
 					"type": "bool",
 					"value": true
@@ -414,13 +410,13 @@
 					"type": "ZGuid",
 					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
 				},
+				"m_eRequiredVoiceVariation": {
+					"type": "EActorVoiceVariation",
+					"value": "eAVV_CIVMALECH02"
+				},
 				"m_bStartEnabled": {
 					"type": "bool",
 					"value": true
-				},
-				"m_eRequiredVoiceVariation": {
-					"type": "EActorVoiceVariation",
-					"value": "eAVV_JOB_MUMBSECHI03"
 				},
 				"m_sActorName": {
 					"type": "ZString",
@@ -13431,10 +13427,6 @@
 					"type": "ZGuid",
 					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
 				},
-				"m_eRequiredVoiceVariation": {
-					"type": "EActorVoiceVariation",
-					"value": "eAVV_THUGHI01"
-				},
 				"m_bStartEnabled": {
 					"type": "bool",
 					"value": true
@@ -13777,10 +13769,6 @@
 					"type": "ZGuid",
 					"value": "88f1516f-f81d-4a7b-a593-0674e4091d36"
 				},
-				"m_eRequiredVoiceVariation": {
-					"type": "EActorVoiceVariation",
-					"value": "eAVV_JOB_MUMBSECHI02"
-				},
 				"m_bStartEnabled": {
 					"type": "bool",
 					"value": true
@@ -13847,10 +13835,6 @@
 				"m_bStartEnabled": {
 					"type": "bool",
 					"value": true
-				},
-				"m_eRequiredVoiceVariation": {
-					"type": "EActorVoiceVariation",
-					"value": "eAVV_JOB_MUMBSECHI03"
 				},
 				"m_sActorName": {
 					"type": "ZString",
@@ -14591,16 +14575,13 @@
 		},
 		"abcd8e23765e2b44": {
 			"parent": "abcdb359c4fea425",
-			"name": "AOL_Sentry_FrskRequest_THUGHI02",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"name": "AOL_Sentry_FrskRequest_SENTRY01",
+			"template": "[modules:/zspeakentity_sounddef.class].pc_entitytype",
+			"blueprint": "[modules:/zspeakentity_sounddef.class].pc_entityblueprint",
 			"properties": {
-				"m_pAudioEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00B9878C835AD477",
-						"flag": "5F"
-					}
+				"m_eSoundDef": {
+					"type": "EActorSoundDefs",
+					"value": "Sentry_FrskRequest"
 				}
 			},
 			"postInitProperties": {
@@ -14874,23 +14855,25 @@
 		},
 		"abcdac6944c5601c": {
 			"parent": "abcdb359c4fea425",
-			"name": "AOL_Sentry_Accepted_THUGHI02",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"name": "AOL_Sentry_Accepted_SENTRY01",
+			"template": "[modules:/zspeakentity_sounddef.class].pc_entitytype",
+			"blueprint": "[modules:/zspeakentity_sounddef.class].pc_entityblueprint",
 			"properties": {
+				"m_eSoundDef": {
+					"type": "EActorSoundDefs",
+					"value": "Sentry_Accepted"
+				},
+				"m_eGesture": {
+					"type": "EGestureCategory",
+					"value": "EGC_AmbientDialog"
+				}
+			},
+			"postInitProperties": {
 				"m_rActor": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd5ce6ef2eebcb"
-				},
-				"m_pAudioEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "000CB2723AD3D12A",
-						"flag": "5F"
-					}
 				}
 			},
-			"postInitProperties": {},
 			"editorOnly": false,
 			"events": [{
 				"onEvent": "Completed",
@@ -15331,23 +15314,21 @@
 		},
 		"abcd8ec91b24de79": {
 			"parent": "abcdb359c4fea425",
-			"name": "AOL_Sentry_DuringFrisk_THUGHI02",
-			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
+			"name": "AOL_Sentry_DuringFrisk_SENTRY01",
+			"template": "[modules:/zspeakentity_sounddef.class].pc_entitytype",
+			"blueprint": "[modules:/zspeakentity_sounddef.class].pc_entityblueprint",
 			"properties": {
+				"m_eSoundDef": {
+					"type": "EActorSoundDefs",
+					"value": "Sentry_Frsk"
+				}
+			},
+			"postInitProperties": {
 				"m_rActor": {
 					"type": "SEntityTemplateReference",
 					"value": "abcd5ce6ef2eebcb"
-				},
-				"m_pAudioEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0044C1AB9D8EE57F",
-						"flag": "5F"
-					}
 				}
 			},
-			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
@@ -15425,14 +15406,14 @@
 		},
 		"abcda301e1343c3b": {
 			"parent": "abcdedf0bfe049cf",
-			"name": "AOL_Sentry_FrskRequest_THUGHI03",
+			"name": "AOL_Sentry_FrskRequest_SENTRYCH02",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00537EC4B1C73E64",
+						"resource": "00C038062B17D214",
 						"flag": "5F"
 					}
 				}
@@ -15696,7 +15677,7 @@
 		},
 		"abcd4d851bfa8754": {
 			"parent": "abcdedf0bfe049cf",
-			"name": "AOL_Sentry_Accepted_THUGHI03",
+			"name": "AOL_Sentry_Accepted_CH02",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -15707,7 +15688,7 @@
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00DE6D3A1D2C84A1",
+						"resource": "00DEFA8E60B9ECDA",
 						"flag": "5F"
 					}
 				}
@@ -15829,7 +15810,7 @@
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "0012F50DC9B4325C",
+						"resource": "005AFA48720347FB",
 						"flag": "5F"
 					}
 				}
@@ -15845,7 +15826,7 @@
 		},
 		"abcd7f6bda6ffec3": {
 			"parent": "abcdedf0bfe049cf",
-			"name": "AOL_Sentry_DuringFrisk_THUGHI03",
+			"name": "AOL_Sentry_DuringFrisk_CH02",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -15856,7 +15837,7 @@
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "003E49D34F7D1EF0",
+						"resource": "00753B5C0524FA1D",
 						"flag": "5F"
 					}
 				}
@@ -20085,14 +20066,14 @@
 		},
 		"abcd6a2d1084e3b7": {
 			"parent": "abcd7680a2caac34",
-			"name": "AOL_Sentry_Deny_THUGHI03",
+			"name": "AOL_Sentry_Deny_SENTRY",
 			"template": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actoroneliner.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00B7550B6E4278FE",
+						"resource": "00066BED4E48CB40",
 						"flag": "5F"
 					}
 				}

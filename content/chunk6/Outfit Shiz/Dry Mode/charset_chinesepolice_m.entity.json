@@ -30,7 +30,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcd1f00e875803b", "abcd5e9b2f14245b", "abcd847e260202f6", "abcd2c6e88fc19cb", "abcdb52e12ef4541", "abcdf052f028d06b"]
+					"value": ["e42c8819c14919f8", "abcdc1d2b7798934", "abcd36208b1ee082", "abcd6e957ba5c6bd", "abcd1f00e875803b", "abcd5e9b2f14245b", "abcd847e260202f6", "abcd2c6e88fc19cb", "abcdb52e12ef4541", "abcdf052f028d06b", "abcd8d2b741d551e", "abcdbb7d13ac9d65", "abcdfa7e7e117c9d"]
 				}
 			},
 			"editorOnly": false,
@@ -45,7 +45,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcd0c5ad60fac61", "abcdf176fc4e1422", "abcdd332f6791654", "abcd60fa3864bcd4", "abcd586ecedddd20", "abcdd14c9787df8a", "abcdfcdcfaa76a00"]
+					"value": ["8a80297b9b8417f9", "abcd691931aae3f8", "abcd4370d79fffb0", "abcd0c5ad60fac61", "abcdf176fc4e1422", "abcdd332f6791654", "abcd60fa3864bcd4", "abcd586ecedddd20", "abcdd14c9787df8a", "abcdfcdcfaa76a00", "abcde7279696856d", "abcd90dce9154920"]
 				}
 			},
 			"editorOnly": false,
@@ -60,7 +60,7 @@
 			"postInitProperties": {
 				"m_aVariations": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcdaae647a32922", "abcdece80ae0cba5", "abcd8a70cc03f45d", "abcd86df3e7e7b3d", "abcd0856d34eedaa", "abcd1862b12989ef", "abcdccdcdc43f2e5"]
+					"value": ["bf6d0176a6000c49", "abcd311fdd55fd34", "abcdcba7cc16c307", "abcdaae647a32922", "abcdece80ae0cba5", "abcd8a70cc03f45d", "abcd86df3e7e7b3d", "abcd0856d34eedaa", "abcd1862b12989ef", "abcdccdcdc43f2e5", "abcdd7c97ba7fe6b", "abcdc2c312695e2b", "abcd54458cba5548"]
 				}
 			},
 			"editorOnly": false,
@@ -595,6 +595,150 @@
 					"type": "ZRuntimeResourceID",
 					"value": {
 						"resource": "003F90BA8182A7F9",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdbb7d13ac9d65": {
+			"parent": "696226ea3a8aea66",
+			"name": "11 HOBO Mask 20s",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00DF53ADD1533E01",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdfa7e7e117c9d": {
+			"parent": "696226ea3a8aea66",
+			"name": "12 HOBO mask 30s_04",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00E9CC6CF2E0946F",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd8d2b741d551e": {
+			"parent": "696226ea3a8aea66",
+			"name": "10 HOBO 50s",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "001875A3A6F93E16",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd54458cba5548": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var12 HOBO 30s_04",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0043AA7DA0E3F8F1",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdd7c97ba7fe6b": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var10 HOBO 50s_01",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00AACFC8F82C2F5D",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcdc2c312695e2b": {
+			"parent": "69ef73f048e1f2e8",
+			"name": "Var11 HOBO 20s_02",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00D98585845BF972",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcde7279696856d": {
+			"parent": "529de957a31989ac",
+			"name": "Var10JACKET",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00CF65CA92E85E89",
+						"flag": "9F"
+					}
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd90dce9154920": {
+			"parent": "529de957a31989ac",
+			"name": "Var11JACKETMask",
+			"template": "[modules:/zoutfitvariation.class].pc_entitytype",
+			"blueprint": "[modules:/zoutfitvariation.class].pc_entityblueprint",
+			"properties": {
+				"m_Outfit": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00BBA03726690A58",
 						"flag": "9F"
 					}
 				}

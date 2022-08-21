@@ -369,6 +369,9 @@
         "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_noodle.entity",
         "Type": "flashback",
         "Subtype": "flashback",
+        "Entitlements": [
+            "LOCATION_WET"
+        ],
         "UserData": null
     },
     "UserData": {}
