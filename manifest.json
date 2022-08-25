@@ -55,14 +55,6 @@
 		"comment": "Mumbai Apartment Ambience",
 		"toChunk": 6
 	},	{
-		"runtimeID": "00B6CF427E11FA0B",
-		"comment": "JOB_MUMBSECHI02",
-		"toChunk": 1
-	},	{
-		"runtimeID": "008604A166FEFD95",
-		"comment": "JOB_MUMBSECHI03",
-		"toChunk": 1
-	},	{
 		"runtimeID": "00EEF802B8A0A491",
 		"comment": "Mumbai tiles",
 		"toChunk": 1
@@ -146,8 +138,8 @@
 		"group": "Music",
 		"contentFolder": "Default"
 	},	{
-		"name": "Classic (BETA/BUGGY)",
-		"tooltip": "Plays looping Jesper Kyd track used in original version of mission. Echoey, cuts out if lots of gunshots, only one track per mission",
+		"name": "Classic (BETA)",
+		"tooltip": "Day: Looping track from Codename 47, Night: Mix of tracks from Contracts, very rough combat music system may not always kick in",
 		"type": "select",
 		"group": "Music",
 		"contentFolder": "Classic"
