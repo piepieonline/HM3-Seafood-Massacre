@@ -25995,6 +25995,18 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "760cc2d7c90e1cf5",
+			"comment": "Ledge - Restaurant Back",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bIllegal": {
+				"type": "bool",
+				"value": true
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "25a5710918c3b74c",
 			"comment": "CoverPlane 199 - Kitchen Window",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
@@ -27286,6 +27298,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "eec23b0ffa9d69bc",
+		"_comment": "Ledge Into Facility",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
 		"ref": "f914d31cad1a6c5a",
 		"_comment": "Chest Freezer",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
