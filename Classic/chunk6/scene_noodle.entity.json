@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcdbc95a0c244c4"]
+					"entities": []
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -33,142 +33,8 @@
 				}]
 			]
 		},
-		"abcd7719fca07900": {
-			"parent": "fffffffffffffffe",
-			"name": "Music",
-			"template": "[modules:/zentity.class].pc_entitytype",
-			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
-		},
-		"abcddbbfd86cb3eb": {
-			"parent": "abcd7719fca07900",
-			"name": "play_StreetsofHongKong",
-			"template": "[modules:/zmusicevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
-			"properties": {
-				"m_pEmitter": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdbc95a0c244c4"
-				},
-				"m_pMainEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0052B814FE1EEF0B",
-						"flag": "5F"
-					}
-				},
-				"m_fTransitionTime": {
-					"type": "float32",
-					"value": 3
-				},
-				"m_bUseOcclusionForCulling": {
-					"type": "bool",
-					"value": false
-				},
-				"m_bMainEventEndedOnStop": {
-					"type": "bool",
-					"value": false
-				},
-				"Attenuation": {
-					"type": "float32",
-					"value": 0
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "MainEventEnded",
-				"shouldTrigger": "Send",
-				"onEntity": "abcd38b3d2a9656e"
-			}]
-		},
-		"abcdbc95a0c244c4": {
-			"parent": "abcd7719fca07900",
-			"name": "MUSIC_CC_PM_Light_2dAE",
-			"template": "[assembly:/templates/sound/wwise/soundentities.template?/2daudioemitter.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/2daudioemitter.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_bIsEnabled": {
-					"type": "bool",
-					"value": true
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd0de561a20ede": {
-			"parent": "abcd7719fca07900",
-			"name": "Trigger Music",
-			"template": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
-			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
-			"properties": {
-				"m_eEvent": {
-					"type": "EGameEventType",
-					"value": "GET_GameplayStart"
-				}
-			},
-			"postInitProperties": [],
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "EventOccurred",
-				"shouldTrigger": "Send",
-				"onEntity": "abcddbbfd86cb3eb"
-			}]
-		},
-		"abcd38b3d2a9656e": {
-			"parent": "abcd7719fca07900",
-			"name": "play_HongKongUnderground",
-			"template": "[modules:/zmusicevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
-			"properties": {
-				"m_pEmitter": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdbc95a0c244c4"
-				},
-				"m_pMainEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0052B814FE1EEF0D",
-						"flag": "5F"
-					}
-				},
-				"m_fTransitionTime": {
-					"type": "float32",
-					"value": 3
-				},
-				"m_bUseOcclusionForCulling": {
-					"type": "bool",
-					"value": false
-				},
-				"Attenuation": {
-					"type": "float32",
-					"value": 0
-				},
-				"m_eCullingBehavior": {
-					"type": "AudioEventCullingBehavior",
-					"value": "NoAutoSendStop"
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "MainEventEnded",
-				"shouldTrigger": "Send",
-				"onEntity": "abcddbbfd86cb3eb"
-			}]
-		},
 		"abcd07239fcac8fd": {
-			"parent": "abcd7719fca07900",
+			"parent": "abcd8d640aaf3df6",
 			"name": "GameTensionCondition",
 			"template": "[modules:/zgametensioncondition.class].pc_entitytype",
 			"blueprint": "[modules:/zgametensioncondition.class].pc_entityblueprint",
@@ -179,7 +45,7 @@
 				},
 				"m_eMinTension": {
 					"type": "EGameTension",
-					"value": "EGT_Arrest"
+					"value": "EGT_Hunting"
 				}
 			},
 			"postInitProperties": {},
@@ -200,50 +66,278 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": []
+			"events": [{
+				"onEvent": "OnTrue",
+				"shouldTrigger": "In",
+				"onEntity": "abcda5df099cc061"
+			}, {
+				"onEvent": "OnTrue",
+				"shouldTrigger": "Abort",
+				"onEntity": "abcd1cce23c988aa"
+			}, {
+				"onEvent": "OnFalse",
+				"shouldTrigger": "In",
+				"onEntity": "abcd1cce23c988aa"
+			}]
 		},
-		"abcdede96885e239": {
-			"parent": "abcd7719fca07900",
-			"name": "play_47Detected",
-			"template": "[modules:/zmusicevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
+		"abcd8d640aaf3df6": {
+			"parent": "fffffffffffffffe",
+			"name": "Classic Soundtrack",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd5c9128856e09": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "Trigger Ave Maria",
+			"template": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
 			"properties": {
-				"m_pEmitter": {
-					"type": "SEntityTemplateReference",
-					"value": "abcdbc95a0c244c4"
-				},
-				"m_pMainEvent": {
+				"m_eEvent": {
+					"type": "EGameEventType",
+					"value": "GET_GameplayStart"
+				}
+			},
+			"postInitProperties": [],
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "EventOccurred",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd1c660adb6597"
+			}]
+		},
+		"abcd43980a132824": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "HandlerStandIn",
+			"template": "[modules:/zhandlerstandin.class].pc_entitytype",
+			"blueprint": "[modules:/zhandlerstandin.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd1c660adb6597": {
+			"parent": "abcd42a7b19dc8a9",
+			"name": "Streets of HK",
+			"template": "[modules:/zcharacterspeakentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcharacterspeakentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0052B814FE1EEF0E",
-						"flag": "5F"
-					}
-				},
-				"m_fTransitionTime": {
-					"type": "float32",
-					"value": 3
-				},
-				"m_bUseOcclusionForCulling": {
-					"type": "bool",
-					"value": false
-				},
-				"Attenuation": {
-					"type": "float32",
-					"value": 0
-				},
-				"m_eCullingBehavior": {
-					"type": "AudioEventCullingBehavior",
-					"value": "NoAutoSendStop"
+					"value": "00483F3519B04A0C"
+				}
+			},
+			"postInitProperties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd43980a132824"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnCompleted",
+				"shouldTrigger": "In",
+				"onEntity": "abcd6c68e5ac68f0"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd6c68e5ac68f0": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "TimerforHKU",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 50
 				}
 			},
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
 			"events": [{
-				"onEvent": "MainEventEnded",
-				"shouldTrigger": "Send",
-				"onEntity": "abcddbbfd86cb3eb"
+				"onEvent": "Out",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd83d8ad3c7eaa"
 			}]
+		},
+		"abcd83d8ad3c7eaa": {
+			"parent": "abcd42a7b19dc8a9",
+			"name": "HK Underground",
+			"template": "[modules:/zcharacterspeakentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcharacterspeakentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": "00A49FCD593D08D8"
+				}
+			},
+			"postInitProperties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd43980a132824"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnCompleted",
+				"shouldTrigger": "In",
+				"onEntity": "abcd4d855f01e77b"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcdad4ad538f4c9": {
+			"parent": "abcd42a7b19dc8a9",
+			"name": "47 Detected",
+			"template": "[modules:/zcharacterspeakentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcharacterspeakentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": "00B9BE1FB0FF0050"
+				}
+			},
+			"postInitProperties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd43980a132824"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnCompleted",
+				"shouldTrigger": "In",
+				"onEntity": "abcda5df099cc061"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd42a7b19dc8a9": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "Tracks",
+			"template": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcd4d855f01e77b": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "TimerforStreetsHK",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 50
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd1c660adb6597"
+			}]
+		},
+		"abcda5df099cc061": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "Timerfor47Detected",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 50
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "Start",
+				"onEntity": "abcdad4ad538f4c9"
+			}, {
+				"onEvent": "Out",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcd83d8ad3c7eaa"
+			}, {
+				"onEvent": "Out",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcd1c660adb6597"
+			}]
+		},
+		"abcd1cce23c988aa": {
+			"parent": "abcd8d640aaf3df6",
+			"name": "TimerforExitingCombat",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 600
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "In",
+				"onEntity": "abcd7e4aced12bf6"
+			}, {
+				"onEvent": "Out",
+				"shouldTrigger": "Stop",
+				"onEntity": "abcdad4ad538f4c9"
+			}]
+		},
+		"abcd7e4aced12bf6": {
+			"parent": "abcd1cce23c988aa",
+			"name": "Pick Ambient Track",
+			"template": "[modules:/zsignalrandomrouteentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalrandomrouteentity_void.class].pc_entityblueprint",
+			"properties": {
+				"m_nMaxOutPinNum": {
+					"type": "int32",
+					"value": 2
+				},
+				"m_bShuffleOnEachLoop": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out1",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd1c660adb6597"
+			}, {
+				"onEvent": "Out2",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd83d8ad3c7eaa"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
 		}
 	},
 	"propertyOverrides": [{

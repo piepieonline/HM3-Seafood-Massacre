@@ -17,7 +17,7 @@
 					"entities": []
 				}],
 				["AudioEmitters", {
-					"entities": ["abcd52d7b1115466"]
+					"entities": []
 				}],
 				["AudioVolumetricGeom", {
 					"entities": []
@@ -1049,7 +1049,7 @@
 			"properties": {
 				"m_eEvent": {
 					"type": "EGameEventType",
-					"value": "GET_IntroCutEnd"
+					"value": "GET_GameplayStart"
 				}
 			},
 			"postInitProperties": {},
@@ -1415,9 +1415,9 @@
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
 		},
-		"abcdf674af581fa8": {
+		"abcd9951edb6558f": {
 			"parent": "fffffffffffffffe",
-			"name": "Ave Maria",
+			"name": "Classic Soundtrack",
 			"template": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
 			"properties": {},
@@ -1428,49 +1428,8 @@
 			"inputCopying": [],
 			"outputCopying": []
 		},
-		"abcdfc24d48ec509": {
-			"parent": "abcdf674af581fa8",
-			"name": "play_cc_pm_light",
-			"template": "[modules:/zmusicevententity.class].pc_entitytype",
-			"blueprint": "[modules:/zmusicevententity.class].pc_entityblueprint",
-			"properties": {
-				"m_pEmitter": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd52d7b1115466"
-				},
-				"m_pMainEvent": {
-					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "0052B814FE1EEF0A",
-						"flag": "5F"
-					}
-				},
-				"m_fTransitionTime": {
-					"type": "float32",
-					"value": 2
-				}
-			},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "Stop",
-				"shouldTrigger": "Send",
-				"onEntity": "abcdfc24d48ec509"
-			}]
-		},
-		"abcd52d7b1115466": {
-			"parent": "abcdf674af581fa8",
-			"name": "MUSIC_CC_PM_Light_2dAE",
-			"template": "[assembly:/templates/sound/wwise/soundentities.template?/2daudioemitter.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/2daudioemitter.entitytemplate].pc_entityblueprint",
-			"properties": {},
-			"postInitProperties": {},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": []
-		},
-		"abcd45dd6e77532a": {
-			"parent": "abcdf674af581fa8",
+		"abcdedbb56f3e350": {
+			"parent": "abcd9951edb6558f",
 			"name": "Trigger Ave Maria",
 			"template": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
@@ -1485,8 +1444,65 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "EventOccurred",
-				"shouldTrigger": "Send",
-				"onEntity": "abcdfc24d48ec509"
+				"shouldTrigger": "Start",
+				"onEntity": "abcd77e2713497b0"
+			}]
+		},
+		"abcd86ade8a43b14": {
+			"parent": "abcd9951edb6558f",
+			"name": "HandlerStandIn",
+			"template": "[modules:/zhandlerstandin.class].pc_entitytype",
+			"blueprint": "[modules:/zhandlerstandin.class].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd77e2713497b0": {
+			"parent": "abcd9951edb6558f",
+			"name": "CharacterSpeak",
+			"template": "[modules:/zcharacterspeakentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcharacterspeakentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pAudioEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": "005AE425EA693930"
+				}
+			},
+			"postInitProperties": {
+				"m_rCharacter": {
+					"type": "SEntityTemplateReference",
+					"value": "abcd86ade8a43b14"
+				}
+			},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "OnCompleted",
+				"shouldTrigger": "In",
+				"onEntity": "abcda5140982143f"
+			}],
+			"inputCopying": [],
+			"outputCopying": []
+		},
+		"abcda5140982143f": {
+			"parent": "abcd9951edb6558f",
+			"name": "TimerSimple",
+			"template": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 50
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": [],
+			"events": [{
+				"onEvent": "Out",
+				"shouldTrigger": "Start",
+				"onEntity": "abcd77e2713497b0"
 			}]
 		}
 	},
