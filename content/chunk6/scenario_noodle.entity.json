@@ -16401,7 +16401,7 @@
 			"properties": {
 				"m_aParents": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd7321f09c0299", "abcd07c7f9a604bb", "abcdacf636661ea5", "abcd4971723920df", "abcd59f0b36c00fe", "abcd7de565126adf", "abcd398fcefbe1ab", "abcd81e4c4cc9aa7", "abcd1d4b21163a1a", "abcd2f712dc5526b"]
+					"value": ["abcd89c29fec4fff", "abcd7321f09c0299", "abcd07c7f9a604bb", "abcdacf636661ea5", "abcd4971723920df", "abcd59f0b36c00fe", "abcd7de565126adf", "abcd398fcefbe1ab", "abcd81e4c4cc9aa7", "abcd1d4b21163a1a", "abcd2f712dc5526b"]
 				}
 			},
 			"postInitProperties": {},
@@ -26194,9 +26194,9 @@
 							"z": 90
 						},
 						"position": {
-							"x": -14.5597,
-							"y": 115.475,
-							"z": 114.3
+							"x": -14.8989,
+							"y": 102.57,
+							"z": 114.5
 						}
 					}
 				},
@@ -28528,6 +28528,10 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "af820ede14d6201e",
+		"_comment": "Patient Area Trespass Zone",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
 		"ref": "eec23b0ffa9d69bc",
 		"_comment": "Ledge Into Facility",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
