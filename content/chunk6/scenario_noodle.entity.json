@@ -2291,7 +2291,7 @@
 			"properties": {
 				"m_eEvent": {
 					"type": "EGameEventType",
-					"value": "GET_IntroCutEnd"
+					"value": "GET_GameplayStart"
 				}
 			},
 			"postInitProperties": {},
@@ -16375,6 +16375,13 @@
 					"type": "float32",
 					"value": 10
 				},
+				"Loop_SFX_Event": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00576585786EAE58",
+						"flag": "5F"
+					}
+				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "fffffffffffffffe"
@@ -16391,7 +16398,8 @@
 				}
 			},
 			"editorOnly": false,
-			"platformSpecificPropertyValues": []
+			"platformSpecificPropertyValues": [],
+			"events": []
 		},
 		"abcda7442c4c0041": {
 			"parent": "abcd4920c9e3168a",
@@ -17477,7 +17485,7 @@
 				"m_pVideo": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "00E6E0A484B02D21",
+						"resource": "[assembly:/_pro/effects/videos/cooking_show.avi].pc_gfxv",
 						"flag": "5F"
 					}
 				},
@@ -26247,9 +26255,108 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcdf5a2295dfaea": {
+			"parent": "abcd09859640a0bc",
+			"name": "PFObstacleCouch",
+			"template": "[modules:/zpfobstacleentity.class].pc_entitytype",
+			"blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -27.4,
+							"y": 103.2,
+							"z": 105
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 3,
+						"y": 1.2,
+						"z": 1.6
+					}
+				},
+				"m_bEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fPenaltyMultiplier": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
+		},
+		"abcd089c49e84fb1": {
+			"parent": "abcdbff66014bd37",
+			"name": "PFObstacleTable",
+			"template": "[modules:/zpfobstacleentity.class].pc_entitytype",
+			"blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -27.3,
+							"y": 105.1,
+							"z": 105
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.8,
+						"y": 1.1,
+						"z": 1.5
+					}
+				},
+				"m_bEnabled": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fPenaltyMultiplier": {
+					"type": "float32",
+					"value": -1
+				}
+			},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "24184b855f50bca6",
+			"comment": "Lady Apartment Fusebox",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"NPCDispatchKeyword": {
+				"type": "SEntityTemplateReference",
+				"value": {
+					"ref": "7173b65309cef71f",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+				}
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "8168e50e40ce5df5",
 			"comment": "Arcade Clerk",
@@ -28631,6 +28738,22 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "a6f7c1d67fb43c9f",
+		"_comment": "Block Apartment Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "1a3bfd8e443306c0",
+		"_comment": "Block Apartment Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "aea417a674e481bb",
+		"_comment": "Block Apartment Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "f36dab99b986ca58",
+		"_comment": "Block Apartment Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
 		"ref": "4017f9cc0b3f004a",
 		"_comment": "Arcade Fake Lights",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
@@ -29162,6 +29285,96 @@
 		"_comment": "Fake Window Lights - Wrong Colours"
 	}],
 	"pinConnectionOverrides": [{
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "4e69ac07f4197f9a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"fromPinName": "OnFalse",
+		"toPinName": "TurnOff",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": {
+			"ref": "4e69ac07f4197f9a",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"fromPinName": "OnTrue",
+		"toPinName": "TurnOn",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": "abcdccbfee04cc72",
+		"fromPinName": "OnFalse",
+		"toPinName": "TurnOff",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": "abcd0f1211d324b8",
+		"fromPinName": "OnFalse",
+		"toPinName": "TurnOff",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": "abcd0f1211d324b8",
+		"fromPinName": "OnTrue",
+		"toPinName": "TurnOn",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": "abcd849f8adfe24a",
+		"fromPinName": "OnFalse",
+		"toPinName": "TurnOff",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
+		"fromEntity": {
+			"ref": "39b0764c2a82c2ca",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		},
+		"toEntity": "abcd849f8adfe24a",
+		"fromPinName": "OnTrue",
+		"toPinName": "TurnOn",
+		"constantPinValue": {
+			"$type": "void",
+			"$val": null
+		}
+	}, {
 		"fromEntity": "abcd4920c9e3168a",
 		"toEntity": {
 			"ref": "24dea8f047925ff5",
