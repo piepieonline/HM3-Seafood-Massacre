@@ -26251,6 +26251,125 @@
 	},
 	"propertyOverrides": [{
 		"entities": [{
+			"ref": "8168e50e40ce5df5",
+			"comment": "Arcade Clerk",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_InventoryItemKeys": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": [{
+					"ref": "669ab514585d6fde",
+					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+				}]
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "4c1ab142d0f4f41",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "ea76f9a3a05bc3d3",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "1fdd2bd7331cb9c",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "e5fd5c2449cf8077",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "c0fb3e18f14f0971",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "411b64f74c56d508",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "38608dfdf9b97113",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "5cdd31cccfa3a5fc",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "3230385c42004e05",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "68fbbde358273e1c",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "89415bd7d5dc045a",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "78150c3bbb0f0f44",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "d2dc39646af8917a",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "ea630ff1a3a33098",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "1f69f36f0f94a3a",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "b779c48aff818968",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "439ba7718f8736bb",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "e0fbafd9cbcfda19",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "aedc4d0ca8e7e93a",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "57b97e67612c4ab1",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "ee64cba6d89c4fae",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "3430ed2149c9bdb6",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "d9a6a8310022cde5",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "394e34a18dfe9fea",
+			"_comment": "Arcade Lamp to Green",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"DiffuseColor": {
+				"type": "SColorRGB",
+				"value": "#96ff8c"
+			}
+		}
+	}, {
+		"entities": [{
 			"ref": "dac0685510024f05",
 			"comment": "Block F5 Rules",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
@@ -26354,22 +26473,6 @@
 		}
 	}, {
 		"entities": [{
-			"ref": "ee64cba6d89c4fae",
-			"_comment": "Arcade Lamp to Green",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-		}, {
-			"ref": "3430ed2149c9bdb6",
-			"_comment": "Arcade Lamp to Green",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-		}, {
-			"ref": "d9a6a8310022cde5",
-			"_comment": "Arcade Lamp to Green",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-		}, {
-			"ref": "394e34a18dfe9fea",
-			"_comment": "Arcade Lamp to Green",
-			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-		}, {
 			"ref": "1f1140a9d6b460aa",
 			"_comment": "Lamp_Wall_Modern_Spot_Italy",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
@@ -28528,6 +28631,38 @@
 		}
 	}],
 	"overrideDeletes": [{
+		"ref": "4017f9cc0b3f004a",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "32bf7d2a759a2a",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "bd833e45f1844919",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "2612861b4668b3f0",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "2848265ab671fffc",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "72b99249309716d2",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "505841ea7955a759",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
+		"ref": "e02a4f3684c90883",
+		"_comment": "Arcade Fake Lights",
+		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+	}, {
 		"ref": "af820ede14d6201e",
 		"_comment": "Patient Area Trespass Zone",
 		"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
