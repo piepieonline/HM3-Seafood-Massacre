@@ -408,5 +408,6 @@
 			"UI_NOODLE_WITNESSESOBJECTIVE_DISPLAY" :  "Eliminate all witnesses"
 		}
 	},
-	"frameworkVersion": "2.2.0"
+	"frameworkVersion": "2.2.0",
+	"updateCheck": "https://raw.githubusercontent.com/piepieonline/HM3-Seafood-Massacre/main/version.json"
 }
