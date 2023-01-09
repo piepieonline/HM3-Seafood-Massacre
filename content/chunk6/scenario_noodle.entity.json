@@ -12903,6 +12903,10 @@
 				"m_eRequiredVoiceVariation": {
 					"type": "EActorVoiceVariation",
 					"value": "eAVV_YAMASAKI"
+				},
+				"m_aEnforcedOutfits": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["abcda5c4a937ea54"]
 				}
 			},
 			"postInitProperties": {
@@ -26048,7 +26052,7 @@
 				"m_vGlobalSize": {
 					"type": "SVector3",
 					"value": {
-						"x": 27.5,
+						"x": 27,
 						"y": 22.5,
 						"z": 7
 					}
@@ -26075,11 +26079,11 @@
 				},
 				"m_AllowedProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": []
+					"value": ["abcda5c4a937ea54"]
 				},
 				"m_KeeperProfessions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["abcd97b18facbcd7", {
+					"value": ["abcda5c4a937ea54", "abcd97b18facbcd7", {
 						"ref": "e094cc8090d1bed1",
 						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 					}]
@@ -26641,9 +26645,58 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": []
+		},
+		"abcda5c4a937ea54": {
+			"parent": "abcd3bac4f29adb9",
+			"name": "Prof_Freelancer_Guard",
+			"template": "[assembly:/_pro/design/actor/profession.template?/prof_greenland_guard.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_greenland_guard.entitytemplate].pc_entityblueprint",
+			"properties": {},
+			"postInitProperties": {},
+			"editorOnly": false,
+			"platformSpecificPropertyValues": []
 		}
 	},
 	"propertyOverrides": [{
+		"entities": [{
+			"ref": "cbb279dd1599b1b2",
+			"comment": "Hush Bedroom interior door",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"m_bIsLocked": {
+				"type": "bool",
+				"value": true
+			}
+		}
+	}, {
+		"entities": [{
+			"ref": "de9ce1eba85f7228",
+			"comment": "Block Top Camera",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}],
+		"properties": {
+			"RotationOffset": {
+				"type": "SMatrix43",
+				"value": {
+					"rotation": {
+						"x": -5.00000023358407,
+						"y": 0,
+						"z": 30
+					},
+					"position": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			},
+			"DetectionDistance": {
+				"type": "float32",
+				"value": 14
+			}
+		}
+	}, {
 		"entities": [{
 			"ref": "24184b855f50bca6",
 			"comment": "Lady Apartment Fusebox",
@@ -26872,6 +26925,10 @@
 		"entities": [{
 			"ref": "602c75e90f1a5ea1",
 			"comment": "Hush VR Door EXT",
+			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
+		}, {
+			"ref": "53aebfba7c94c6a7",
+			"comment": "F5 Balcony Door 1",
 			"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 		}],
 		"properties": {
@@ -27884,10 +27941,14 @@
 		"properties": {
 			"m_KeeperProfessions": {
 				"type": "TArray<SEntityTemplateReference>",
-				"value": [{
+				"value": ["abcda5c4a937ea54", {
 					"ref": "e094cc8090d1bed1",
 					"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
 				}]
+			},
+			"m_AllowedProfessions": {
+				"type": "TArray<SEntityTemplateReference>",
+				"value": ["abcda5c4a937ea54"]
 			}
 		}
 	}, {
