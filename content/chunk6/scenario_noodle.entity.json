@@ -2224,7 +2224,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Sniper"
+					"value": "Shoo Tee Boi"
 				},
 				"m_bWeaponUnholstered": {
 					"type": "bool",
@@ -10488,10 +10488,6 @@
 			"platformSpecificPropertyValues": [],
 			"events": [{
 				"onEvent": "OnReached",
-				"shouldTrigger": "Start",
-				"onEntity": "abcdabf9d8aa8d19"
-			}, {
-				"onEvent": "OnReached",
 				"shouldTrigger": "In",
 				"onEntity": "abcd6a487691575e"
 			}]
@@ -10573,32 +10569,6 @@
 			"inputCopying": [],
 			"outputCopying": []
 		},
-		"abcdabf9d8aa8d19": {
-			"parent": "abcd728db4899746",
-			"name": "LLama_Drama_Helper_Shootout",
-			"template": "007F78E36ED4CFD5",
-			"blueprint": "0055F788C7491462",
-			"properties": {
-				"TargetActor": {
-					"type": "SEntityTemplateReference",
-					"value": {
-						"ref": "11b420629d3ee72e",
-						"externalScene": "[assembly:/_pro/scenes/missions/wet/scenario_rat_ruddy.brick].pc_entitytype"
-					}
-				}
-			},
-			"postInitProperties": {
-				"m_pActor": {
-					"type": "SEntityTemplateReference",
-					"value": "abcd07c0cc09f426"
-				}
-			},
-			"editorOnly": false,
-			"platformSpecificPropertyValues": [],
-			"events": [],
-			"inputCopying": [],
-			"outputCopying": []
-		},
 		"abcdd3998a57d6ce": {
 			"parent": "abcdac072c33cdf1",
 			"name": "1_Chief Started",
@@ -10648,15 +10618,7 @@
 			"postInitProperties": {},
 			"editorOnly": false,
 			"platformSpecificPropertyValues": [],
-			"events": [{
-				"onEvent": "Out01",
-				"shouldTrigger": "Aim",
-				"onEntity": "abcdabf9d8aa8d19"
-			}, {
-				"onEvent": "Out02",
-				"shouldTrigger": "Start_Fire",
-				"onEntity": "abcdabf9d8aa8d19"
-			}],
+			"events": [],
 			"inputCopying": [],
 			"outputCopying": []
 		},
@@ -12902,7 +12864,7 @@
 				},
 				"m_eRequiredVoiceVariation": {
 					"type": "EActorVoiceVariation",
-					"value": "eAVV_YAMASAKI"
+					"value": "eAVV_CIVFEMCH02"
 				},
 				"m_aEnforcedOutfits": {
 					"type": "TArray<SEntityTemplateReference>",
@@ -13197,7 +13159,7 @@
 				"m_pAudioEvent": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "003BD6458DE920ED",
+						"resource": "0012A6D450AECC00",
 						"flag": "5F"
 					}
 				},
@@ -24816,7 +24778,7 @@
 				},
 				"m_sActorName": {
 					"type": "ZString",
-					"value": "Yìng Hàn"
+					"value": "Ying Han"
 				},
 				"m_bWeaponUnholstered": {
 					"type": "bool",
