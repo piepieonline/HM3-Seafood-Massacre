@@ -1,0 +1,280 @@
+{
+  "f1e85e76-f9cd-41bf-8cb4-4fc75f2c3152": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f1e85e76-f9cd-41bf-8cb4-4fc75f2c3152",
+    "Name": "Won Ton",
+    "Outfit": "b5664bed-462a-417c-bc07-6d9d3f666e2d"
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0065": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0065",
+    "Name": "Zhou Lun Jing",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 7,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0064": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0064",
+    "Name": "Jing Lun Zhou",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 5,
+    "CharacterSetIndex": 1
+  },
+  "d339202b-5282-4bb9-9be6-d3335311be1b": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "d339202b-5282-4bb9-9be6-d3335311be1b",
+    "Name": "Red Dragon Negotiator",
+    "Outfit": "af2d4a61-e7e9-40ba-a614-511457e8706a"
+  },
+  "d339202b-5282-4bb9-9be6-d3335311be1d": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "d339202b-5282-4bb9-9be6-d3335311be1d",
+    "Name": "Wang Qiang",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d35"
+  },
+  "d339202b-5282-4bb9-9be6-d3335311be1c": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "d339202b-5282-4bb9-9be6-d3335311be1c",
+    "Name": "Blue Lotus Negotiator",
+    "Outfit": "3380addd-e32a-4d8d-b7b3-319d769e0b57"
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0056": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0056",
+    "Name": "Pung Bob",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 8,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0050": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0050",
+    "Name": "Shoo Tee Boi",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 6,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0059": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0059",
+    "Name": "Lu Kewen",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0058": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0058",
+    "Name": "Bu Rick",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 9,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0057": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0057",
+    "Name": "Ping Pong",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 1,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0060": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0060",
+    "Name": "Pen Yo",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 3,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0062": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0062",
+    "Name": "Tse Tsung",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 4,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0061": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0061",
+    "Name": "Ni Hao",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 2,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0052": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0052",
+    "Name": "Wat Ching",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 10,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0051": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0051",
+    "Name": "Ei Sii Yuw",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 4,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0063": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0063",
+    "Name": "King K. Kong",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "CharacterSetIndex": 1
+  },
+  "81bb6bd5-f4a2-4bb1-a91c-a6a950be16f6": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "81bb6bd5-f4a2-4bb1-a91c-a6a950be16f6",
+    "Name": "Agurl Aroun",
+    "Outfit": "998b3a27-9b40-46b4-8d05-7a54493f209c",
+    "OutfitVariationIndex": 6
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0053": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0053",
+    "Name": "He Qiwu",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 7,
+    "CharacterSetIndex": 1
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0055": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0055",
+    "Name": "Ding Dong",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 4
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0054": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0054",
+    "Name": "Cop 663",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 1,
+    "CharacterSetIndex": 1
+  },
+  "5d40b48f-25f3-430b-bb07-31514345c627": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "5d40b48f-25f3-430b-bb07-31514345c627",
+    "Name": "Guoliang Ding",
+    "Outfit": "ba4e595e-da3b-4902-8622-40889fc088db",
+    "CharacterSetIndex": 1
+  },
+  "a7e1866f-90da-44a8-99bb-7357686cdbcf": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "a7e1866f-90da-44a8-99bb-7357686cdbcf",
+    "Name": "Tingfeng Gu",
+    "Outfit": "ba4e595e-da3b-4902-8622-40889fc088db",
+    "OutfitVariationIndex": 3
+  },
+  "6d36a787-2d37-4657-ad3f-6e76b2ed5389": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "6d36a787-2d37-4657-ad3f-6e76b2ed5389",
+    "Name": "Xingjuan Yuan",
+    "Outfit": "2b1c9d64-f02e-4bdf-9111-18c2024f6483"
+  },
+  "81bb6bd5-f4a2-4bb1-a91c-a6a950be16f5": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "81bb6bd5-f4a2-4bb1-a91c-a6a950be16f5",
+    "Name": "Yang Hengjun",
+    "Outfit": "998b3a27-9b40-46b4-8d05-7a54493f209c",
+    "OutfitVariationIndex": 5
+  },
+  "fc776f90-eda8-4aaf-83d9-bb069c3827ab": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "fc776f90-eda8-4aaf-83d9-bb069c3827ab",
+    "Name": "Jinhai Zhao",
+    "Outfit": "998b3a27-9b40-46b4-8d05-7a54493f209c",
+    "OutfitVariationIndex": 3
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0066": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0066",
+    "Name": "Wen Shen",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 3
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0067": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0067",
+    "Name": "Bing Bong",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "OutfitVariationIndex": 10,
+    "CharacterSetIndex": 1
+  },
+  "f25ced88-e077-47f1-a84f-700e21509494": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f25ced88-e077-47f1-a84f-700e21509494",
+    "Name": "Kelly To",
+    "Outfit": "3914b229-10d6-4c7d-a706-86e6ff9492b1"
+  },
+  "f7aa1122-215b-4a4c-8492-662bf32e0070": {
+    "Description": "Unknown",
+    "Description_LOC": "actor_description",
+    "Tile": "images/actors/default_target.png",
+    "ID_": "f7aa1122-215b-4a4c-8492-662bf32e0070",
+    "Name": "Quartz Tan",
+    "Outfit": "88f1516f-f81d-4a7b-a593-0674e4091d36",
+    "CharacterSetIndex": 1
+  }
+}
