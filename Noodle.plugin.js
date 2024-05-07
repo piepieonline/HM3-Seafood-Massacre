@@ -1,0 +1,768 @@
+const { log, LogLevel } = require("@peacockproject/core/loggingInterop")
+
+const contracts = [
+    {
+        "Data": {
+             "Objectives": [
+            {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/red.jpg",
+            "BriefingName": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_LONGTEXT",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_DISPLAY"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1b"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },  {
+            "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
+            "Category": "primary",
+            "OnActive": {
+                "IfCompleted": {
+                    "Visible": false
+                }
+            },
+            "OnInactive": {
+                "IfCompleted": {
+                    "State": "Completed"
+                }
+            },
+            "Primary": true,
+            "ObjectiveType": "custom",
+            "ForceShowOnLoadingScreen": true,
+            "BriefingName": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_NAME",
+            "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_DISPLAY",
+                "iconType": 17
+            },
+            "BriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_LONGTEXT",
+            "Type": "statemachine",
+            "Definition": {
+                "Scope": "session",
+                "States": {
+                    "Start": {
+                        "BodyHidden": [{
+                                "Condition": {
+                                            "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                        },
+                                "Transition": "Success"
+                            }
+                        ],  "BodyBagged": [{
+                            "Condition": {
+                                        "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                    },
+                            "Transition": "Failure"
+                        }
+                    ]
+                    }
+                }
+            }
+        },  {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/chief.jpg",
+            "BriefingName": "$loc UI_NOODLE_CHIEFOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_LONGTEXT",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_CHIEFOBJECTIVE_DISPLAY"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1d"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616833",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/blue.jpg",
+            "BriefingName": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_LONGTEXT",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_DISPLAY"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1c"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1c"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },
+        {
+                "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
+				"ObjectiveType": "custom",
+				"Image": "images/noodle/amulet.jpg",
+				"ForceShowOnLoadingScreen": true,
+				"BriefingName": "$loc UI_NOODLE_AMULETOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_TEXT",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_AMULETOBJECTIVE_DISPLAY",
+                    "iconType": 17
+                },
+				"LongBriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_LONGTEXT",
+                "Category": "primary",
+                "Scope": "hit",
+                "Type": "statemachine",
+                "Definition": {
+					"Context": {
+                        "Targets": ["94ab740b-b30f-4086-9aea-5c9c0de28456"]
+                    },
+                    "States": {
+                        "Start": {
+                            "AmuletPlaced": {
+                                "Transition": "Success"
+                            }
+                        }
+                    }
+                },
+				"OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed",
+                        "Visible": false
+                    }
+                },
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": true
+                    }
+                }
+            }, {
+                "Id": "b8ffc636-4f9a-49b5-8293-98839a6ca202",
+                "ObjectiveType": "custom",
+                "IgnoreIfInactive": true,
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": false
+                    }
+                },
+                "OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed"
+                    }
+                },
+                "Image": "images/contractconditions/condition_contrac_all_shots_fired_hit_an_npc.jpg",
+                "BriefingName": "$loc UI_NOODLE_WITNESSESOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_WITNESSESOBJECTIVE_TEXT",
+                "Category": "primary",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_WITNESSESOBJECTIVE_DISPLAY",
+                    "iconType": 8
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "ContextListeners": {
+                        "TargetsCounter": {
+                            "type": "objective-counter",
+                            "header": "UI_NOODLE_WITNESSES"
+                        }
+                    },
+                    "Context": {
+                        "KilledActors": [],
+                        "Witnesses": [],
+                        "TargetsCounter": 0
+                    },
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "TargetPicked": [{
+                                "Condition": {
+                                    "$not": {
+                                            "$inarray": {
+                                                "in": "$.Witnesses",
+                                                "?": {
+                                                    "$eq": ["$.#", "$Value.RepositoryId"]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    },
+                                    "Transition": "TargetPicked"
+                                }
+                            ]
+                        },
+                        "TargetPicked": {
+                            "TargetPicked": [{
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    }
+                                }, {
+									"Condition": {
+                                        "$eq": ["$.TargetsCounter", 15]
+                                    },
+									"Actions": {
+                                        "$set": ["TargetsCounter", -1]
+                                    },
+                                    "Transition": "Failure"
+								}
+                            ],
+                            "Kill": [{
+                                    "Actions": {
+                                        "$pushunique": ["KilledActors", "$Value.RepositoryId"]
+                                    }
+                                }, {
+                                    "Actions": {
+                                        "$dec": "TargetsCounter"
+                                    },
+                                    "Condition": {
+                                        "$inarray": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$eq": ["$.#", "$Value.RepositoryId"]
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "Condition": {
+                                        "$all": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$any": {
+                                                    "in": "$.KilledActors",
+                                                    "?": {
+                                                        "$eq": ["$.#", "$.##"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "ContractLoad": [{
+                                    "Actions": {
+                                        "$set": ["TargetsCounter", "$.TargetsCounter"]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },  {
+                "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
+                "Category": "primary",
+                "IsHidden": true,
+                "ExcludeFromScoring": true,
+                "BriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_TEXT",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                        "TargetEscaped": {
+                            "Transition": "Failure"
+                            }
+                        }
+                    }
+                }
+            }],
+		"GameDifficulties": [{
+                "Difficulty": "easy",
+                "Bricks": []
+            }, {
+                "Difficulty": "normal",
+                "Bricks": []
+            }, {
+                "Difficulty": "hard",
+                "Bricks": ["assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick"]
+            }
+        ],
+        "VR": [
+            {
+                "Quality": "base",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/wet/vr_overrides_rat_ruddy.brick",
+                    "assembly:/_pro/scenes/missions/Wet/vr_overrides_ps4perf.brick"
+                ]
+            },
+            {
+                "Quality": "better",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/wet/vr_overrides_rat_ruddy.brick"
+                ]
+            }
+        ],
+        "Bricks": [],
+        "Entrances": ["c235f578-f55b-4c9d-b568-db6cad909c8c"],
+        "GameChangers": [],
+        "EngineModesBricks": [],
+        "Stashpoints": [
+            "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
+            "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
+            "e1658358-1b89-4dc2-bb42-3f046faf5813"
+          ]
+    },
+        "Metadata": {
+            "CodeName_Hint": "Noodle",
+            "CreationTimestamp": "2012-12-12T12:12:12.743Z",
+            "CreatorUserId": "00000000-0000-0000-0000-000000000000",
+            "TileImage": "images/noodle/night.jpg",
+            "Title": "UI_CONTRACT_NOODLE_NIGHT",
+            "Description": "UI_NOODLE_BRIEFING",
+            "BriefingVideo": "briefing_quadruplerumandcoke",
+            "Id": "a8036782-ee0a-4353-b522-0ab7a384badc",
+            "IsPublished": true,
+            "LastUpdate": "2015-03-10T12:00:00.551Z",
+            "Location": "LOCATION_WET_RAT",
+            "Release": "2.0.x",
+            "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_noodle.entity",
+            "Type": "flashback",
+            "Subtype": "flashback",
+            "UserData": null
+        },
+        "UserData": {}
+    },
+    {
+        "Data": {
+             "Objectives": [
+            {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/red.jpg",
+            "BriefingName": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_LONGTEXT",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_DISPLAY"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1b"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },  {
+            "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
+            "Category": "primary",
+            "OnActive": {
+                "IfCompleted": {
+                    "Visible": false
+                }
+            },
+            "OnInactive": {
+                "IfCompleted": {
+                    "State": "Completed"
+                }
+            },
+            "Primary": true,
+            "ObjectiveType": "custom",
+            "ForceShowOnLoadingScreen": true,
+            "BriefingName": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_NAME",
+            "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_DISPLAY",
+                "iconType": 17
+            },
+            "BriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_LONGTEXT",
+            "Type": "statemachine",
+            "Definition": {
+                "Scope": "session",
+                "States": {
+                    "Start": {
+                        "BodyHidden": [{
+                                "Condition": {
+                                            "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                        },
+                                "Transition": "Success"
+                            }
+                        ],  "BodyBagged": [{
+                            "Condition": {
+                                        "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                                    },
+                            "Transition": "Failure"
+                        }
+                    ]
+                    }
+                }
+            }
+        },  {
+            "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
+            "Category": "primary",
+            "ObjectiveType": "setpiece",
+            "ForceShowOnLoadingScreen": true,
+            "Image": "images/noodle/chief.jpg",
+            "BriefingName": "$loc UI_NOODLE_CHIEFOBJECTIVE_NAME",
+            "BriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_TEXT",
+            "LongBriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_LONGTEXT",
+            "HUDTemplate": {
+                "display": "$loc UI_NOODLE_CHIEFOBJECTIVE_DISPLAY"
+            },
+            "DisplayAsKillObjective": true,
+            "Type": "statemachine",
+            "Definition": {
+                "Context": {
+                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1d"]
+                },
+                "States": {
+                    "Start": {
+                        "Kill": {
+                            "Condition": {
+                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
+                            },
+                            "Transition": "Success"
+                        }
+                    }
+                }
+            }
+        },
+        {
+                "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
+				"ObjectiveType": "custom",
+				"Image": "images/noodle/amulet.jpg",
+				"ForceShowOnLoadingScreen": true,
+				"BriefingName": "$loc UI_NOODLE_AMULETOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_TEXT",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_AMULETOBJECTIVE_DISPLAY",
+                    "iconType": 17
+                },
+				"LongBriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_LONGTEXT",
+                "Category": "primary",
+                "Scope": "hit",
+                "Type": "statemachine",
+                "Definition": {
+					"Context": {
+                        "Targets": ["94ab740b-b30f-4086-9aea-5c9c0de28456"]
+                    },
+                    "States": {
+                        "Start": {
+                            "AmuletPlaced": {
+                                "Transition": "Success"
+                            }
+                        }
+                    }
+                },
+				"OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed",
+                        "Visible": false
+                    }
+                },
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": true
+                    }
+                }
+            }, {
+                "Id": "b8ffc636-4f9a-49b5-8293-98839a6ca202",
+                "ObjectiveType": "custom",
+                "IgnoreIfInactive": true,
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": false
+                    }
+                },
+                "OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed"
+                    }
+                },
+                "Image": "images/contractconditions/condition_contrac_all_shots_fired_hit_an_npc.jpg",
+                "BriefingName": "$loc UI_NOODLE_WITNESSESOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_WITNESSESOBJECTIVE_TEXT",
+                "Category": "primary",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_WITNESSESOBJECTIVE_DISPLAY",
+                    "iconType": 8
+                },
+                "Type": "statemachine",
+                "Definition": {
+                    "ContextListeners": {
+                        "TargetsCounter": {
+                            "type": "objective-counter",
+                            "header": "UI_NOODLE_WITNESSES"
+                        }
+                    },
+                    "Context": {
+                        "KilledActors": [],
+                        "Witnesses": [],
+                        "TargetsCounter": 0
+                    },
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "TargetPicked": [{
+                                "Condition": {
+                                    "$not": {
+                                            "$inarray": {
+                                                "in": "$.Witnesses",
+                                                "?": {
+                                                    "$eq": ["$.#", "$Value.RepositoryId"]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    },
+                                    "Transition": "TargetPicked"
+                                }
+                            ]
+                        },
+                        "TargetPicked": {
+                            "TargetPicked": [{
+                                    "Actions": {
+                                        "$inc": "TargetsCounter",
+                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                    }
+                                }, {
+									"Condition": {
+                                        "$eq": ["$.TargetsCounter", 15]
+                                    },
+									"Actions": {
+                                        "$set": ["TargetsCounter", -1]
+                                    },
+                                    "Transition": "Failure"
+								}
+                            ],
+                            "Kill": [{
+                                    "Actions": {
+                                        "$pushunique": ["KilledActors", "$Value.RepositoryId"]
+                                    }
+                                }, {
+                                    "Actions": {
+                                        "$dec": "TargetsCounter"
+                                    },
+                                    "Condition": {
+                                        "$inarray": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$eq": ["$.#", "$Value.RepositoryId"]
+                                            }
+                                        }
+                                    }
+                                }, {
+                                    "Condition": {
+                                        "$all": {
+                                            "in": "$.Witnesses",
+                                            "?": {
+                                                "$any": {
+                                                    "in": "$.KilledActors",
+                                                    "?": {
+                                                        "$eq": ["$.#", "$.##"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "ContractLoad": [{
+                                    "Actions": {
+                                        "$set": ["TargetsCounter", "$.TargetsCounter"]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },  {
+                "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
+                "Category": "primary",
+                "IsHidden": true,
+                "ExcludeFromScoring": true,
+                "BriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_TEXT",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                        "TargetEscaped": {
+                            "Transition": "Failure"
+                            }
+                        }
+                    }
+                }
+            }],
+		"GameDifficulties": [{
+                "Difficulty": "easy",
+                "Bricks": []
+            }, {
+                "Difficulty": "normal",
+                "Bricks": []
+            }, {
+                "Difficulty": "hard",
+                "Bricks": ["assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick"]
+            }
+        ],
+        "VR": [
+            {
+                "Quality": "base",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/wet/vr_overrides_rat_noodle.brick",
+                    "assembly:/_pro/scenes/missions/Wet/vr_overrides_ps4perf.brick"
+                ]
+            },
+            {
+                "Quality": "better",
+                "Bricks": [
+                    "assembly:/_pro/Scenes/Bricks/vr_setup.brick",
+                    "assembly:/_pro/scenes/missions/wet/vr_overrides_rat_noodle.brick"
+                ]
+            }
+        ],
+        "Bricks": [],
+        "Entrances": ["c235f578-f55b-4c9d-b568-db6cad909c8c"],
+        "GameChangers": [],
+        "EngineModesBricks": [],
+        "Stashpoints": [
+            "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
+            "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
+            "e1658358-1b89-4dc2-bb42-3f046faf5813"
+          ]
+    },
+        "Metadata": {
+            "CodeName_Hint": "Noodle_DAY",
+            "CreationTimestamp": "2012-12-12T12:12:12.743Z",
+            "CreatorUserId": "00000000-0000-0000-0000-000000000000",
+            "TileImage": "images/noodle/day.jpg",
+            "Title": "UI_CONTRACT_NOODLE_DAY",
+            "Description": "UI_NOODLE_DAY_BRIEFING",
+            "Id": "a8036782-ee0a-4353-b522-0ab7a384badd",
+            "IsPublished": true,
+            "LastUpdate": "2015-03-10T12:00:00.551Z",
+            "Location": "LOCATION_WET_RAT",
+            "Release": "2.0.x",
+            "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_noodle_day.entity",
+            "Type": "flashback",
+            "Subtype": "flashback",
+            "UserData": null
+        },
+        "UserData": {}
+    }
+]
+
+module.exports = function NoodlePlugin(controller) {
+    if (controller.addClientSideModDependency("KevinRudd.SeafoodMassacre")) {
+        log(LogLevel.ERROR, "[Noodle] You require the Simple Mod Framework mod to use this! Find it on the Nexus page!")
+        return
+    }
+
+    controller.configManager.configs.Entrances["assembly:/_pro/scenes/missions/wet/scene_noodle.entity"] = [
+        "d497ce5a-011e-4b40-9d69-341cc8141120",
+        "f3944deb-0747-4d67-b26a-99af5f979705",
+        "c235f578-f55b-4c9d-b568-db6cad909c8c",
+        "7371c3ea-cfb9-46b8-a699-93ab1cdd07af",
+        "3fd57506-80d6-4a63-88ed-206b15686758",
+        "75827342-5601-4656-ac00-55aff44b48f4",
+        "4752ebbb-02c0-48b0-8e05-3ec2a920dedd",
+        "f9c65d0b-e5ce-454e-8f20-08a8083a9b9d"
+    ]
+	controller.configManager.configs.AgencyPickups["assembly:/_pro/scenes/missions/wet/scene_noodle.entity"] = [
+        "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
+            "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
+            "e1658358-1b89-4dc2-bb42-3f046faf5813"
+    ]
+    controller.configManager.configs.Entrances["assembly:/_pro/scenes/missions/wet/scene_noodle_day.entity"] = [
+        "d497ce5a-011e-4b40-9d69-341cc8141120",
+        "f3944deb-0747-4d67-b26a-99af5f979705",
+        "c235f578-f55b-4c9d-b568-db6cad909c8c",
+        "7371c3ea-cfb9-46b8-a699-93ab1cdd07af",
+        "3fd57506-80d6-4a63-88ed-206b15686758",
+        "75827342-5601-4656-ac00-55aff44b48f4",
+        "4752ebbb-02c0-48b0-8e05-3ec2a920dedd",
+        "f9c65d0b-e5ce-454e-8f20-08a8083a9b9d"
+    ]
+	controller.configManager.configs.AgencyPickups["assembly:/_pro/scenes/missions/wet/scene_noodle_day.entity"] = [
+        "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
+            "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
+            "e1658358-1b89-4dc2-bb42-3f046faf5813"
+    ]
+
+    contracts.forEach((contract) => {
+        controller.addMission(contract)
+        controller.missionsInLocations[contract.Metadata.Location].push(contract.Metadata.Id)
+    })
+
+    log(LogLevel.INFO, "[Chongqing Noodle Massacre] Missions available in Chongqing destination menu")
+}

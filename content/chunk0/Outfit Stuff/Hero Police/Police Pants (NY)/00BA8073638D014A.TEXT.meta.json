@@ -1,0 +1,17 @@
+{
+    "hash_value": "00BA8073638D014B",
+    "hash_offset": 44093676,
+    "hash_size": 2147483648,
+    "hash_resource_type": "TEXT",
+    "hash_reference_table_size": 13,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 4816,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 688128,
+    "hash_reference_data": [
+        {
+            "hash": "001273499D3E0A5C",
+            "flag": "9F"
+        }
+    ]
+}

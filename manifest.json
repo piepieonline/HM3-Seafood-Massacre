@@ -1,28 +1,44 @@
 {
-	"version": "1.1.2",
-	"id": "KevinRudd.SeafoodMassacreDev",
-	"name": "Chongqing Noodle Massacre - Dev",
+	"version": "1.1.3",
+	"id": "KevinRudd.SeafoodMassacre",
+	"name": "Chongqing Noodle Massacre",
 	"dependencies": [
 		"00AE34EB206E2FF4","0084DFE53AE76C1F","00F49076916070B5","0020C901B2E4B3ED","00D4993FF3D4CE2A","00229E1C4B60679F","0045CB8C70A17521","00F3286718194013","0044356984A66021","000F8B4F5B8902FF","00546EF49CC05DD1","0021646D7874F2A5","0020E19AE4C26AD1","00AD57CC5D85E92F","0027EDC4FAF48579","001147744AF1F5D3","0022B6A7DE3C2B71","002213FD7FFF2F57","00F5D3E795BE741E","00546CDEB4C985FE","00BBAEDF15366BB5","00CC38AA092A6FAA","006EE2E2D2412887","00BCB2B0C3219259","008E755A2A4FF385","008B0A4F4FCA8E3F","007D7BD3E9CEE479","009D17D65711801C","00161ECFA6ADD670",{
 		"runtimeID": "0071DA1DB35A2675",
-		"toChunk": 6
+		"portFromChunk1": true
 	},{
 		"runtimeID": "0024F1CAAB79A762",
 		"toChunk": 6
 	},{
 		"runtimeID": "00FF0E0B584483DA",
 		"comment": "Ted Mendez Jacket Stuff",
-		"toChunk": 6
+		"portFromChunk1": true
 	},{
 		"runtimeID": "00C6E4298F23CDC3",
-		"toChunk": 6
+		"portFromChunk1": true
+	},{
+		"runtimeID": "00F38B3622078CF1",
+		"comment": "Poncho",
+		"portFromChunk1": true
+	},{
+		"runtimeID": "0079517CC97F16B8",
+		"comment": "Tie Kelvin",
+		"portFromChunk1": true
+	},{
+		"runtimeID": "00F28962557158CA",
+		"comment": "hat_cap_service_military",
+		"portFromChunk1": true
+	},{
+		"runtimeID": "004B934C71A190BD",
+		"comment": "Mask Hospital",
+		"portFromChunk1": true
 	},{
 		"runtimeID": "00F9A0B9A55F005C",
 		"comment": "Ted Mendez Jacket Stuff",
-		"toChunk": 6
+		"portFromChunk1": true
 	},{
 		"runtimeID": "00D2C61706C1E2E9",
-		"toChunk": 6
+		"portFromChunk1": true
 	},{
 		"runtimeID": "0043E92132981F7C",
 		"comment": "Stilleto Head",
@@ -113,9 +129,10 @@
 		"toChunk": 6
 	}],
 	"blobsFolders": ["blobs"],
-	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant, in H3's Chongqing. Has a Contracts (Night) and Codename 47 (Day) version to pick from.",
+	"description": "Recreation of The Seafood Massacre/Massacre at Cheung Cheu Fish Restaurant in H3's Chongqing. Has Contracts (Night) and Codename 47 (Day) versions",
 	"authors": ["Kevin Rudd", "Piepieonline"],
 	"contentFolders": ["content"],
+	"peacockPlugins": ["Noodle.plugin.js"],
 	"packagedefinition": [
 		{
 		  "type": "entity",

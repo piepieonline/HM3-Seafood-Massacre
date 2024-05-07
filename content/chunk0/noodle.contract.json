@@ -2,157 +2,185 @@
     "Data": {
         "Objectives": [
             {
-            "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
-            "Category": "primary",
-            "ObjectiveType": "setpiece",
-            "ForceShowOnLoadingScreen": true,
-            "Image": "images/noodle/red.jpg",
-            "BriefingName": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_NAME",
-            "BriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_TEXT",
-            "LongBriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_LONGTEXT",
-            "HUDTemplate": {
-                "display": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_DISPLAY"
-            },
-            "DisplayAsKillObjective": true,
-            "Type": "statemachine",
-            "Definition": {
-                "Context": {
-                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1b"]
+                "Id": "1cb0d79c-1805-4e91-bc97-97469e616831",
+                "Category": "primary",
+                "ObjectiveType": "setpiece",
+                "ForceShowOnLoadingScreen": true,
+                "Image": "images/noodle/red.jpg",
+                "BriefingName": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_TEXT",
+                "LongBriefingText": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_LONGTEXT",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_REDDRAGONOBJECTIVE_DISPLAY"
                 },
-                "States": {
-                    "Start": {
-                        "Kill": {
-                            "Condition": {
-                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
-                            },
-                            "Transition": "Success"
-                        }
-                    }
-                }
-            }
-        },  {
-            "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
-            "Category": "primary",
-            "OnActive": {
-                "IfCompleted": {
-                    "Visible": false
-                }
-            },
-            "OnInactive": {
-                "IfCompleted": {
-                    "State": "Completed"
-                }
-            },
-            "Primary": true,
-            "ObjectiveType": "custom",
-            "ForceShowOnLoadingScreen": true,
-            "BriefingName": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_NAME",
-            "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
-            "HUDTemplate": {
-                "display": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_DISPLAY",
-                "iconType": 17
-            },
-            "BriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_TEXT",
-            "LongBriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_LONGTEXT",
-            "Type": "statemachine",
-            "Definition": {
-                "Scope": "session",
-                "States": {
-                    "Start": {
-                        "BodyHidden": [{
+                "DisplayAsKillObjective": true,
+                "Type": "statemachine",
+                "Definition": {
+                    "Context": {
+                        "Targets": [
+                            "d339202b-5282-4bb9-9be6-d3335311be1b"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": {
                                 "Condition": {
-                                            "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
-                                        },
+                                    "$eq": [
+                                        "$Value.RepositoryId",
+                                        "d339202b-5282-4bb9-9be6-d3335311be1b"
+                                    ]
+                                },
                                 "Transition": "Success"
                             }
-                        ],  "BodyBagged": [{
-                            "Condition": {
-                                        "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1b"]
+                        }
+                    }
+                }
+            },
+            {
+                "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a5",
+                "Category": "primary",
+                "OnActive": {
+                    "IfCompleted": {
+                        "Visible": false
+                    }
+                },
+                "OnInactive": {
+                    "IfCompleted": {
+                        "State": "Completed"
+                    }
+                },
+                "Primary": true,
+                "ObjectiveType": "custom",
+                "ForceShowOnLoadingScreen": true,
+                "BriefingName": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_NAME",
+                "Image": "images/challenges/wet/wet_exit_manhole_a.jpg",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_DISPLAY",
+                    "iconType": 17
+                },
+                "BriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_TEXT",
+                "LongBriefingText": "$loc UI_NOODLE_HIDEBODYOBJECTIVE_LONGTEXT",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "BodyHidden": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "d339202b-5282-4bb9-9be6-d3335311be1b"
+                                        ]
                                     },
-                            "Transition": "Failure"
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "BodyBagged": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "d339202b-5282-4bb9-9be6-d3335311be1b"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
                         }
-                    ]
                     }
                 }
-            }
-        },  {
-            "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
-            "Category": "primary",
-            "ObjectiveType": "setpiece",
-            "ForceShowOnLoadingScreen": true,
-            "Image": "images/noodle/chief.jpg",
-            "BriefingName": "$loc UI_NOODLE_CHIEFOBJECTIVE_NAME",
-            "BriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_TEXT",
-            "LongBriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_LONGTEXT",
-            "HUDTemplate": {
-                "display": "$loc UI_NOODLE_CHIEFOBJECTIVE_DISPLAY"
             },
-            "DisplayAsKillObjective": true,
-            "Type": "statemachine",
-            "Definition": {
-                "Context": {
-                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1d"]
+            {
+                "Id": "1cb0d79c-1805-4e91-bc97-97469e616832",
+                "Category": "primary",
+                "ObjectiveType": "setpiece",
+                "ForceShowOnLoadingScreen": true,
+                "Image": "images/noodle/chief.jpg",
+                "BriefingName": "$loc UI_NOODLE_CHIEFOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_TEXT",
+                "LongBriefingText": "$loc UI_NOODLE_CHIEFOBJECTIVE_LONGTEXT",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_CHIEFOBJECTIVE_DISPLAY"
                 },
-                "States": {
-                    "Start": {
-                        "Kill": {
-                            "Condition": {
-                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1d"]
-                            },
-                            "Transition": "Success"
+                "DisplayAsKillObjective": true,
+                "Type": "statemachine",
+                "Definition": {
+                    "Context": {
+                        "Targets": [
+                            "d339202b-5282-4bb9-9be6-d3335311be1d"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": {
+                                "Condition": {
+                                    "$eq": [
+                                        "$Value.RepositoryId",
+                                        "d339202b-5282-4bb9-9be6-d3335311be1d"
+                                    ]
+                                },
+                                "Transition": "Success"
+                            }
                         }
                     }
                 }
-            }
-        },
-        {
-            "Id": "1cb0d79c-1805-4e91-bc97-97469e616833",
-            "Category": "primary",
-            "ObjectiveType": "setpiece",
-            "ForceShowOnLoadingScreen": true,
-            "Image": "images/noodle/blue.jpg",
-            "BriefingName": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_NAME",
-            "BriefingText": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_TEXT",
-            "LongBriefingText": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_LONGTEXT",
-            "HUDTemplate": {
-                "display": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_DISPLAY"
             },
-            "DisplayAsKillObjective": true,
-            "Type": "statemachine",
-            "Definition": {
-                "Context": {
-                    "Targets": ["d339202b-5282-4bb9-9be6-d3335311be1c"]
+            {
+                "Id": "1cb0d79c-1805-4e91-bc97-97469e616833",
+                "Category": "primary",
+                "ObjectiveType": "setpiece",
+                "ForceShowOnLoadingScreen": true,
+                "Image": "images/noodle/blue.jpg",
+                "BriefingName": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_NAME",
+                "BriefingText": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_TEXT",
+                "LongBriefingText": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_LONGTEXT",
+                "HUDTemplate": {
+                    "display": "$loc UI_NOODLE_BLUELOTUSOBJECTIVE_DISPLAY"
                 },
-                "States": {
-                    "Start": {
-                        "Kill": {
-                            "Condition": {
-                                "$eq": ["$Value.RepositoryId", "d339202b-5282-4bb9-9be6-d3335311be1c"]
-                            },
-                            "Transition": "Success"
+                "DisplayAsKillObjective": true,
+                "Type": "statemachine",
+                "Definition": {
+                    "Context": {
+                        "Targets": [
+                            "d339202b-5282-4bb9-9be6-d3335311be1c"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": {
+                                "Condition": {
+                                    "$eq": [
+                                        "$Value.RepositoryId",
+                                        "d339202b-5282-4bb9-9be6-d3335311be1c"
+                                    ]
+                                },
+                                "Transition": "Success"
+                            }
                         }
                     }
                 }
-            }
-        },
-        {
+            },
+            {
                 "Id": "14e41bce-ae6d-4b7b-8e43-aa130cce17a6",
-				"ObjectiveType": "custom",
-				"Image": "images/noodle/amulet.jpg",
-				"ForceShowOnLoadingScreen": true,
-				"BriefingName": "$loc UI_NOODLE_AMULETOBJECTIVE_NAME",
+                "ObjectiveType": "custom",
+                "Image": "images/noodle/amulet.jpg",
+                "ForceShowOnLoadingScreen": true,
+                "BriefingName": "$loc UI_NOODLE_AMULETOBJECTIVE_NAME",
                 "BriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_TEXT",
                 "HUDTemplate": {
                     "display": "$loc UI_NOODLE_AMULETOBJECTIVE_DISPLAY",
                     "iconType": 17
                 },
-				"LongBriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_LONGTEXT",
+                "LongBriefingText": "$loc UI_NOODLE_AMULETOBJECTIVE_LONGTEXT",
                 "Category": "primary",
                 "Scope": "hit",
                 "Type": "statemachine",
                 "Definition": {
-					"Context": {
-                        "Targets": ["94ab740b-b30f-4086-9aea-5c9c0de28456"]
+                    "Context": {
+                        "Targets": [
+                            "94ab740b-b30f-4086-9aea-5c9c0de28456"
+                        ]
                     },
                     "States": {
                         "Start": {
@@ -162,7 +190,7 @@
                         }
                     }
                 },
-				"OnInactive": {
+                "OnInactive": {
                     "IfCompleted": {
                         "State": "Completed",
                         "Visible": false
@@ -173,7 +201,8 @@
                         "Visible": true
                     }
                 }
-            }, {
+            },
+            {
                 "Id": "b8ffc636-4f9a-49b5-8293-98839a6ca202",
                 "ObjectiveType": "custom",
                 "IgnoreIfInactive": true,
@@ -215,46 +244,69 @@
                             }
                         },
                         "Success": {
-                            "TargetPicked": [{
-                                "Condition": {
-                                    "$not": {
+                            "TargetPicked": [
+                                {
+                                    "Condition": {
+                                        "$not": {
                                             "$inarray": {
                                                 "in": "$.Witnesses",
                                                 "?": {
-                                                    "$eq": ["$.#", "$Value.RepositoryId"]
+                                                    "$eq": [
+                                                        "$.#",
+                                                        "$Value.RepositoryId"
+                                                    ]
                                                 }
                                             }
                                         }
                                     },
                                     "Actions": {
                                         "$inc": "TargetsCounter",
-                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                        "$pushunique": [
+                                            "Witnesses",
+                                            "$Value.RepositoryId"
+                                        ]
                                     },
                                     "Transition": "TargetPicked"
                                 }
                             ]
                         },
                         "TargetPicked": {
-                            "TargetPicked": [{
+                            "TargetPicked": [
+                                {
                                     "Actions": {
                                         "$inc": "TargetsCounter",
-                                        "$pushunique": ["Witnesses", "$Value.RepositoryId"]
+                                        "$pushunique": [
+                                            "Witnesses",
+                                            "$Value.RepositoryId"
+                                        ]
                                     }
-                                }, {
-									"Condition": {
-                                        "$eq": ["$.TargetsCounter", 15]
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$.TargetsCounter",
+                                            15
+                                        ]
                                     },
-									"Actions": {
-                                        "$set": ["TargetsCounter", -1]
+                                    "Actions": {
+                                        "$set": [
+                                            "TargetsCounter",
+                                            -1
+                                        ]
                                     },
                                     "Transition": "Failure"
-								}
+                                }
                             ],
-                            "Kill": [{
+                            "Kill": [
+                                {
                                     "Actions": {
-                                        "$pushunique": ["KilledActors", "$Value.RepositoryId"]
+                                        "$pushunique": [
+                                            "KilledActors",
+                                            "$Value.RepositoryId"
+                                        ]
                                     }
-                                }, {
+                                },
+                                {
                                     "Actions": {
                                         "$dec": "TargetsCounter"
                                     },
@@ -262,11 +314,15 @@
                                         "$inarray": {
                                             "in": "$.Witnesses",
                                             "?": {
-                                                "$eq": ["$.#", "$Value.RepositoryId"]
+                                                "$eq": [
+                                                    "$.#",
+                                                    "$Value.RepositoryId"
+                                                ]
                                             }
                                         }
                                     }
-                                }, {
+                                },
+                                {
                                     "Condition": {
                                         "$all": {
                                             "in": "$.Witnesses",
@@ -274,7 +330,10 @@
                                                 "$any": {
                                                     "in": "$.KilledActors",
                                                     "?": {
-                                                        "$eq": ["$.#", "$.##"]
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "$.##"
+                                                        ]
                                                     }
                                                 }
                                             }
@@ -283,16 +342,21 @@
                                     "Transition": "Success"
                                 }
                             ],
-                            "ContractLoad": [{
+                            "ContractLoad": [
+                                {
                                     "Actions": {
-                                        "$set": ["TargetsCounter", "$.TargetsCounter"]
+                                        "$set": [
+                                            "TargetsCounter",
+                                            "$.TargetsCounter"
+                                        ]
                                     }
                                 }
                             ]
                         }
                     }
                 }
-            },  {
+            },
+            {
                 "Id": "0122e0cc-cc4c-40e9-94f7-5832733414a4",
                 "Category": "primary",
                 "IsHidden": true,
@@ -308,22 +372,28 @@
                             }
                         },
                         "Success": {
-                        "TargetEscaped": {
-                            "Transition": "Failure"
+                            "TargetEscaped": {
+                                "Transition": "Failure"
                             }
                         }
                     }
                 }
-            }],
-		"GameDifficulties": [{
+            }
+        ],
+        "GameDifficulties": [
+            {
                 "Difficulty": "easy",
                 "Bricks": []
-            }, {
+            },
+            {
                 "Difficulty": "normal",
                 "Bricks": []
-            }, {
+            },
+            {
                 "Difficulty": "hard",
-                "Bricks": ["assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick"]
+                "Bricks": [
+                    "assembly:/_PRO/Scenes/missions/Wet/difficulty_erect_noodle.brick"
+                ]
             }
         ],
         "VR": [
@@ -344,14 +414,16 @@
             }
         ],
         "Bricks": [],
-        "Entrances": ["c235f578-f55b-4c9d-b568-db6cad909c8c"],
+        "Entrances": [
+            "c235f578-f55b-4c9d-b568-db6cad909c8c"
+        ],
         "GameChangers": [],
         "EngineModesBricks": [],
         "Stashpoints": [
             "2bc67e36-180c-41b6-bdf4-01b91d53cf29",
             "f0cd0184-8d7c-4b5f-8c5e-94177f8bd9ff",
             "e1658358-1b89-4dc2-bb42-3f046faf5813"
-          ]
+        ]
     },
     "Metadata": {
         "CodeName_Hint": "Noodle",
@@ -374,5 +446,12 @@
         ],
         "UserData": null
     },
-    "UserData": {}
+    "UserData": {},
+    "SMF": {
+        "destinations": {
+            "addToDestinations": true,
+            "peacockIntegration": false,
+            "narrativeContext": "Mission"
+        }
+    }
 }
