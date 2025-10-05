@@ -1,5 +1,5 @@
 {
-    "version": "1.1.4",
-    "changelog": "- Gives “Random Man” unique ID to avoid witness system and freelancer target bug\n- Reduces cop enforcers\n- Possible fix to CCTV not counting as erased if you were recorded on two particular cameras\n- Extra body morgue at back of restaurant\n- Fixes cop with wrong shirt",
-    "url": "https://github.com/piepieonline/HM3-Seafood-Massacre/releases/download/1.1.4/Chongqing.Noodle.Massacre.1.1.4.zip"
+    "version": "1.1.5",
+    "changelog": "- Fix to work with latest game update\n- Restructures Accent Overhaul assets to not deploy if you have AOM deployed. Updates to latest Hush greeting line.\n- Replaces raw speech files with depends (smaller file size, longer deploy)",
+    "url": "https://github.com/piepieonline/HM3-Seafood-Massacre/releases/download/1.1.5/Chongqing.Noodle.Massacre.1.1.5.zip"
 }
