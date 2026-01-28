@@ -1,0 +1,17 @@
+{
+    "hash_value": "00EBC7142CB2913A",
+    "hash_offset": 87557057,
+    "hash_size": 2147487693,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 13,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 6512,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/asphalt_pavement_3mat_blend_a.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/hush/sentry_itemrequest_hush.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+        "type": "Random",
+        "containers": [
+            {
+		"type": "WavFile",
+		"wavName": "sentry_itemrequest_hush_001",
+		"weight": 1,
+		"soundtag": "In-world_AI_Important",
+		"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/hush/sentry_itemrequest_hush_001.wav].pc_wes",
+		"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/hush/indsg_fllwwrn1shadyitem_hush_hush_001.animset].pc_animset",
+		"languages": {}
+	}
+        ]
+    }
+}

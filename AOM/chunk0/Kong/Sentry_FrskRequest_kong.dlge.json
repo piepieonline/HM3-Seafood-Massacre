@@ -1,0 +1,20 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/kong/sentry_frskrequest_kong.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "sentry_frskrequest_kong_001",
+				"weight": 1.0,
+				"soundtag": "In-world_AI_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/sentry_frskrequest_kong_001.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/inst_hmincvr_kong_kong_001.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

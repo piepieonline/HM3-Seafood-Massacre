@@ -1,0 +1,37 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/kong/Trspss_EscortRequest_kong.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+        "type": "Random",
+        "containers": [
+           {
+						"type": "WavFile",
+						"wavName": "inst_pq47entack_kong_kong_001",
+						"weight": 0.333333333,
+						"soundtag": "In-world_AI_Important",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/inst_pq_kong/inst_pq47entack_kong_kong_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/inst_pq_kong/inst_pq47entack_kong_kong_001.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "inst_pq47entack_kong_kong_002",
+						"weight": 0.333333333,
+						"soundtag": "In-world_AI_Important",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/inst_pq_kong/inst_pq47entack_kong_kong_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/inst_pq_kong/inst_pq47entack_kong_kong_002.animset].pc_animset",
+						"languages": {}
+					}, {
+						"type": "WavFile",
+						"wavName": "inst_pqnpcentack_kong_kong_001",
+						"weight": 0.333333333,
+						"soundtag": "In-world_AI_Important",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/inst_pq_kong/inst_pqnpcentack_kong_kong_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/inst_pq_kong/inst_pqnpcentack_kong_kong_001.animset].pc_animset",
+						"languages": {}
+					}
+        ]
+    }
+}

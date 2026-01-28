@@ -1,0 +1,20 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/et_baij/Trspss_EscortRequest_et_baij.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "dr4640_anybaijupriv_et_baij_001",
+				"weight": 1.0,
+				"soundtag": "In-world_Mission_Important",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4640_anybaijupriv_et_baij_001.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4640_anybaijupriv_et_baij_001.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

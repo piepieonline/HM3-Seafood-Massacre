@@ -1,0 +1,25 @@
+{
+    "hash_value": "00CC189907CB47A3",
+    "hash_offset": 98856258,
+    "hash_size": 2147507600,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 31,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 44208,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/levels/wet/floor_tiles_concrete_rat_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/levels/wet/moss_decal_rat.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

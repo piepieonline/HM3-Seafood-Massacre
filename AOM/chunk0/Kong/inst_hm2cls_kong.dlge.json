@@ -1,0 +1,38 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/kong/inst_hm2cls_kong.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "inst_hm2cls_kong_kong_001",
+				"weight": 0.3333333333333333,
+				"soundtag": "In-world_AI_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/inst_hm2cls_kong_kong_001.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/inst_hm2cls_kong_kong_001.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "ar_47badaction_kong_kong_002",
+				"weight": 0.3333333333333333,
+				"soundtag": "In-world_AI_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/ar_47badaction_kong_kong_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/ar_47badaction_kong_kong_002.animset].pc_animset",
+				"languages": {}
+			},
+			{
+				"type": "WavFile",
+				"wavName": "avoidxplo_stnd_kong_kong_003",
+				"weight": 0.3333333333333333,
+				"soundtag": "In-world_AI_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/avoidxplo_stnd_kong_kong_003.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/avoidxplo_stnd_kong_kong_003.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

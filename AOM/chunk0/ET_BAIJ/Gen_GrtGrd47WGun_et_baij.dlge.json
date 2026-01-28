@@ -1,0 +1,28 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/et_baij/Gen_GrtGrd47WGun_et_baij.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "dr4502_uhlbaijugngintel2_et_baij_002",
+				"weight": 0.499999,
+				"soundtag": "In-world_AI_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4502_uhlbaijugngintel2_et_baij_002.wav].pc_wes",
+		"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4502_uhlbaijugngintel2_et_baij_002.animset].pc_animset",
+		"languages": {}
+			},{
+				"type": "WavFile",
+				"wavName": "cmbt_beg_et_baij_et_baij_003",
+				"weight": 0.499999,
+				"soundtag": "In-world_AI_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/cmbt_beg_et_baij_et_baij_003.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/cmbt_beg_et_baij_et_baij_003.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

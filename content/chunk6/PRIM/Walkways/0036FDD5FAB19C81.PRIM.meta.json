@@ -1,0 +1,33 @@
+{
+    "hash_value": "0036FDD5FAB19C81",
+    "hash_offset": 57913313,
+    "hash_size": 2147620924,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 49,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 338960,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/levels/wet/concrete_bare_rat_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/floor_tiles_ceramic_b_2mat_blend_fox.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/levels/wet/decal_dirt_facade_rat_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/levels/wet/decal_edge_concrete_rat_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/decals/edges/trims_stone_decal_a.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

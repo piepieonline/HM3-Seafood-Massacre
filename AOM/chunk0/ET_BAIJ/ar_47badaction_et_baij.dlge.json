@@ -1,0 +1,20 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/et_baij/ar_47badaction_et_baij.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "ar_47badaction_et_baij_et_baij_002",
+				"weight": 1.0,
+				"soundtag": "In-world_AI_Important",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/ar_47badaction_et_baij_et_baij_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/clscmbt_ack_et_baij_et_baij_001.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}

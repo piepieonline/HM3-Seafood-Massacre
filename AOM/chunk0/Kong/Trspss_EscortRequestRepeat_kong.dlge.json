@@ -1,0 +1,29 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/kong/Trspss_EscortRequestRepeat_kong.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+        "type": "Random",
+        "containers": [
+           {
+						"type": "WavFile",
+						"wavName": "dr11162_kongfindbarmaid_kong_005",
+						"weight": 0.499999,
+						"soundtag": "In-world_AI_Important",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/marrakech/11000_python/11000_story/dr11162_kongfindbarmaid_kong_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/marrakech/11000_python/11000_story/dr11162_kongfindbarmaid_kong_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "inst_pq47entack_kong_kong_002",
+						"weight": 0.499999,
+						"soundtag": "In-world_AI_Important",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/kong/Trspss_EscortRequestRepeat_kong_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/kong/inca_civrptfail_kong_kong_003.animset].pc_animset",
+						"languages": {}
+					}
+        ]
+    }
+}

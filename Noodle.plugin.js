@@ -723,7 +723,7 @@ const contracts = [
 ]
 
 module.exports = function NoodlePlugin(controller) {
-    if (controller.addClientSideModDependency("KevinRudd.SeafoodMassacre")) {
+    if (!controller.smf.modIsInstalled("KevinRudd.SeafoodMassacre")) {
         log(LogLevel.ERROR, "[Noodle] You require the Simple Mod Framework mod to use this! Find it on the Nexus page!")
         return
     }
@@ -761,7 +761,7 @@ module.exports = function NoodlePlugin(controller) {
 
     contracts.forEach((contract) => {
         controller.addMission(contract)
-        controller.missionsInLocations[contract.Metadata.Location].push(contract.Metadata.Id)
+        controller.missionsInLocation["h3"][contract.Metadata.Location].push(contract.Metadata.Id)
     })
 
     log(LogLevel.INFO, "[Chongqing Noodle Massacre] Missions available in Chongqing destination menu")

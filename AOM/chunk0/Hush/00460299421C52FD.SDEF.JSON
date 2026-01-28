@@ -1,0 +1,1823 @@
+{
+    "$schema": "https://glaciermodding.org/schemas/sdef.schema.json",
+    "SDEF": [
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "_NoSound"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_brknck_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_BrkNck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_fll_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Fll"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_gnsht_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_GnSht"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_hdsht_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_HdSht"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_mpct_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Mpct"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_sltthrt_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_SltThrt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_strngl_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Strngl"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_xplo_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Xplo"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_prpf_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_PrpF"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_electro_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Electro"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_burn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Burn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_crush_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Crush"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Dth_Scrm"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_hrt_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Hrt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_srpsgrab_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_SrpsGrab"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_humshldstrain_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_HumShldStrain"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_snore_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Snore"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_groan_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Groan"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_dump_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Dump"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_prptssfrntack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_PrpTssFrntAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_headlock_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Headlock"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_blinded_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Blinded"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_beesting_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_BeeSting"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Dth_Grab"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_grt47_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "Gen_Grt47"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_grtgrd47wgun_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_GrtGrd47WGun"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_GrtTrgt"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_GrtTrgtRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_npc2npcgrt_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "Gen_NPC2NPCGrt"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NPC2NPCRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_GtHlp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlpld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_GtHlpLd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlp47knwn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_GtHlp47Knwn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_mssng_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Mssng"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_hmhere_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_HMHere"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_hmthere_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_HMThere"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_srpslow_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_SrpsLow"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_srpslowshort_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_SrpsLowShort"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_srps_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Srps"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_srpsld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_SrpsLd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stndrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_StndRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stop_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Stop"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stopld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_StopLd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_reveal_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Reveal"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_thumbsup_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_ThumbsUp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_brknack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_BrknAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Ack"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_AckLd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackntnse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_AckNtnse"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_bumpack_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "Gen_BumpAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_curse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Curse"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_curselow_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_CurseLow"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_drpgun_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_DrpGun"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_drpcase_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_DrpCase"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_coincurse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_CoinCurse"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_civcmnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_TransportGreet"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_thanks_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Thanks"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_ReturnItem2Guard"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay1"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay2Kidding"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay3Joke"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay44Real"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay5DntBeliv"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay6Serious"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_NoWay7Horrible"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way1"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way2Kidding"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way3Joke"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way44Real"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way5DntBeliv"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way6Serious"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_Way7Horrible"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_nkdrunack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_NkdRunAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_grasp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Grasp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_amused_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Amused"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_annoyed_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Annoyed"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_BdygrdArrive"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_BdygrdMovOut"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_annoyed_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_GiveUp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_off_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Off"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_on_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_On"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_paniclow_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_PanicLow"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_sick_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Sick"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_smellack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_SmellAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_smrtphnact_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_SmrtPhnAct"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_phoneact_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_PhoneAct"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_OutbreakInfect"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_OutbreakSick"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_OutbreakWhine"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gtag"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/clscmbt_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "ClsCmbt_Ack"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43296_testhushpainlethal.sweetdialog?/dr43296_testhushpainlethal_rat_hush_m_001.sweetdialogitem].pc_dialogevent",
+            "_Slot_Hint": "ClsCmbt_Tnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlpld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_BackupCll"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnimposter_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_BadDsg"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_beg_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_Beg"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_clsack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_ClsAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_fire_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_Fire"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_brk2grd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_FireLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_gthit_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_GtHit"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43042_hushloopatcpurandom.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HitHM"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_curselow_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMClsCmbtAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_clsack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMCvr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1shadyitem_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMFire"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnlos_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMFlnk"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/sniper_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMHeadPopr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnseedth_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMKll"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_massive_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMKllCiv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnknckdwn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMKllName"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_blameknckdwnmelee_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMKllPrpTss"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_amused_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMMssTnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_curse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMShrpShtr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnlos_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMSpttd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_mssng_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMVnshd"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_Hold"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HoldLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldRls1"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldRls2"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldRls3"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldRlsFem1"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldRlsFem2"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldRlsFem3"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldVctm"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_HumShldLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_brk2grd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_LngLst"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_LngLstRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_massive_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_LstMnStn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrnjoinr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_LstSght"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_mssng_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_LstSghtRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_ndrattck_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_NdrAttck"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_Relod"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_scrm_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_Scrm"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/avoidxplo_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_ThrowFlash"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_ThrowFlashMiss"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_ThrowFlashMiss2"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_fire_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_ThrowFlashWin"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_ThrowFlashWin2"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_civrptfail_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_TkDwnLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_VntAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/cmbt_whmp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_Whmp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_StalemateHold"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmincvr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_StalemateTnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_TriggerTheAlarm"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_47Mpty"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Cmbt_47SuperSize"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/thuges01/evac_prttrgtsolo_thuges01.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Evac_PrtTrgtSolo"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_PrtTrgtAck"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_PrtTrgtAckLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_PrtTrgtEscrt"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_PrtTrgtStop"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/evac_prttrgtstndrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Evac_PrtTrgtStnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/evac_prttrgtstndrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Evac_PrtTrgtStndRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_Cornered"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_MovOut"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_PathChange"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_PeelOff"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_LastPeelOff"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_ShltrArrv"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_ShltrBad"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_ShltrLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_ShltrRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Evac_TrgtHitRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/avoidxplo_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "AvoidXplo_Ack"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/avoidxplo_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "AvoidXplo_Stnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_47badaction_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_47BadAction"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1ack_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "Ar_47X"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_baddsg_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "Ar_BadDsg"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_blmekll_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_BlmeKll"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_blameknckdwn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_BlameKnckDwn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_blameknckdwnpt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_BlameKnckDwnPT"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_blmekll_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_BlameKllPT"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1badaction_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_47BadActionPT"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_drgbody_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_DrgBody"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_fkesrrdrtnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_FkeSrrdrTnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_hmdoor_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_HMDoor"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_strangle_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Strangle"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_trspss_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Trspss"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_prptssfrntack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_WeapWrn1"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_grtgrd47wgun_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_WeapWrn2"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stopld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Wrn1"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn2_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Wrn2"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn3_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Wrn3"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_victimack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_VictimAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_thief_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Thief"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1badsound_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_Rsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/sniper_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sniper_Ack"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_BackupCll"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43284_testmindcontrollei2random3.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_ChckCvr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_civrptfail_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_CivRptFail"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_civupset_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_CivUpset"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_mssng_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_ClstTnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_hmtnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_HMTnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_Idle"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stndrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_NitiateHMKnwn"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_SrchLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_Stnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_StndAgtd"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_StndAgtdLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_StndAgtdHMKnwn"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_StndAgtdHMKnwnLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_StndHMKnwn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnrecursvr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_StndHMKnwnLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_StndLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stndrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_StndRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_StndLckDwnFlsAlrm"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_VntTnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hm2cls_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_Brk2Civ"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_brk2grd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_Brk2Grd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptsshearinv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_Brk2Rdo"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_brkask_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_BrkAsk"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_brkask_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_GhostAsk"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_TriggerTheAlarm"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xpln47thief_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_Xpln47Thief"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndstrss_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_DstrssInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnx_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_DstrssLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_brk2grd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_DstrssInvLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_WakeAsk"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_47Rcall"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_WakerStnd"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_ClsCmbtAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndedbdy_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_SeeDthInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_itemackldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_SeeDthInvLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnseedth_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_SeeDthLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptsshearack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XploInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnexplo_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XploInvLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnexplo_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XploLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_alarmack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_AlarmAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1badsound_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_GnShtInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_cralrmldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_GnShtInvLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptsshearldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_GnShtLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_curse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_RecurSvrInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_annoyed_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_RecurSvrInvLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_RecurSvrInvRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnrecursvr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_RecurSvrLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackntnse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_RecurSvrRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_LckDwnGtOutLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_LckDwnGtOutRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_LckDwnWrn1"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_LckDwnWrn2"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_LckDwnWrn3"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_LckDwnCivCmnt"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_FrskAck"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_Frsk"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_FrskCln"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_FrskWpn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xpln47wpn_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_Xpln47Wpn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnaccdnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnAccdnt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndedbdy_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnDedBdy"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndedbdymassive_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnDedBdyMassive"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndrgbdy_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnDrgBdy"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndstrss_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnDstrss"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnexplo_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnExplo"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnghost_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnGhost"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplngnsht_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnGnsht"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnnkdbdy_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnNkdBdy"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnpcfdbdy_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnPcfdBdy"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnseedth_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnSeeDth"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplntrspss_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnTrspss"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnx_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnX"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnwpn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnWpn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndsg_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnDsg"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnimposter_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnImposter"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnrecursvr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnRecurSvr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackntnse_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_XplnAckRdo"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnknckdwn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnKnckDwn"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_XplnKnckDwnVctm"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnknckdwnghost_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnKnckDwnGhost"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnseestrngl_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnSeeStrngl"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndsg_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnHuntTargetWin"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_XplnHuntTargetFail"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplndedbdy_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InCa_VIPDownAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_inv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_VIPKillAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/accdnt_inv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Accdnt_Inv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_bloodpllack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_BloodPllAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_Ack"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_nkdack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_NkdAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_inv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_Inv"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_BllPllRpt"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_massive_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_Massive"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_pcfdinv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_PcfdInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_annoyed_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_CntnAck"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_Stnd"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_CircleBdy"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_civcmnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_CivCmnt"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_PrmtrBrchWrn1"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_PrmtrBrchWrn2"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_47AsGrdAck"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_BodyGone"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_vctmrcvr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_VctmRcvr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_ack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_WakerWake"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_wakersp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_WakeRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_WakeNkdLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_WakeNkdRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Rcvr_Xpln47"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Rcvr_XplnDsg"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Rcvr_XplnKnckDwn"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDsg_FllwWrn1"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn2_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn2"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn3_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn3"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_pzzl_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_Pzzl"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_Stnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmbzstnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_StndDistance"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_hmtnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_StndHidden"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_hdnplnsght_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_HdNPlnSght"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1ack_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn1Ack"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1badaction_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn1BadAction"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1wpn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn1Wpn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1badsound_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn1BadSound"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrnjoinr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrnJoinr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1shadyitem_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn1ShadyItem"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmbzstnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_Stnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_trspss_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_Wrn1"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn2_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_Wrn2"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn3_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_Wrn3"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43322_testnosisterleiescort.sweetdialog?/dr43322_testnosisterleiescort_rat_hush_m_001.sweetdialogitem].pc_dialogevent",
+            "_Slot_Hint": "Trspss_Rsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Trspss_SrchAckLegal47"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_trspss_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43323_testnoresultescort.sweetdialog?/dr43323_testnoresultescort_rat_hush_m_002.sweetdialogitem].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortRequest"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43255_testhushandassistantsubject1.sweetdialog?/dr43255_testhushandassistantsubject1_rat_hush_m_005.sweetdialogitem].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortRequestRepeat"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_mssng_hush.sweetdialog].pc_dialogevent",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Trspss_EscortStayClose"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_thumbsup_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortOk"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43045_hushlooppodvoicestartrandom2.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortStnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stopld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortArrest"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Trspss_EscortExit"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_stopld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Trspss_EscortStayRequest"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCu_Brk2Rdo"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_ackld_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_CivCmnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_Stnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_civrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_CivRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_gthlp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_BackupRqst"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_cralrmack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_CrAlrmAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_cralrmldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_CrAlrmLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_CrAlrmStndRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_ftstpsack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_FtStpsAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_ftstpsstnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_FtStpsStnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptsshearack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssHearAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptsshearinv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssHearInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptsshearldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssHearLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnghost_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssHearStndRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptssseeack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssSeeAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptssseeinv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssSeeInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_prptssseeldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssSeeLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnghost_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_PrpTssSeeStndRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_rdoack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_RdoAck"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCu_RdoInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_rdoldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_RdoLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_rdostndrsp_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_RdoStndRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_civcmnt_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_WpnInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_recurack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_RecurAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_recurinv_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_RecurInv"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_recurldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_RecurLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCu_RecurRsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/incu_itemackldr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCu_ItemAckLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCu_CrAlrmStndStndRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCu_EscrtTrgtRedLight"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCu_EscrtTrgtGreenLight"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmbz_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HMAglty"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmbz_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HMBz"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmbzstnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HMBzStnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmentxit_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HMEntXit"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmincvr_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HMInCvr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hmsnkng_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HMSnkng"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_prptsssee_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_PrpTssSee"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_stnd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_Stnd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_wrn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_Wrn"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_hm2cls_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_HM2Cls"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_sickack_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InSt_SickAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_adiosrequest_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InSt_AdiosRequest"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_pq_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "InSt_PQ"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/fsebx_fixed_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "FseBx_Fixed"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43209_vrdist_hushfixingsetup.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "FseBx_Fixing"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_annoyed_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "FseBx_GoFix"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/fsebx_saback_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "FseBx_SabAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_hmdoor_hush.sweetdialog].pc_dialogevent",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Sentry_DenyEntry"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_smellack_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_Frsk"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/sentry_itemrequest_et_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_FrskRequest"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/sentry_itemrequest_et_hush.sweetdialog].pc_dialogevent",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Sentry_ItemRequest"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_thanks_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_Accepted"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1shadyitem_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_FrskWpnAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inst_pq_hush/_.sweetfolder].pc_dialogevent",
+            "_Slot_Hint": "Sentry_47LoiterAck"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_hmdoor_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_DenyDsg"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43048_hushlooppodvoicestoprandom2.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_PostCommentLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_amused_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Sentry_PostCommentRsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "VIP_MssgnA_Ldr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "VIP_MssgnB_Rsp"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "VIP_MssgnC_Ldr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "VIP_MssgnD_Rsp"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_mssng_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "VIP_MssngCallOut"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/dth_sick_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Sick"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fod_male/dth_poison_fod_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Dth_Poison"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_avoid_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_Avoid"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_closecall_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_CloseCall"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_phnpckup_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_PhnPckUP"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/gen_phoneactlockdown_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Gen_PhoneActLockdown"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/wet/rat/43000_story/dr43278_testsubjecthushpainlow.sweetdialog?/dr43278_testsubjecthushpainlow_rat_hush_m_001.sweetdialogitem].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_FlushOutLdr"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnknckdwn_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Cmbt_HMPrptssKnckOut"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_FrskHeadsUpLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_FrskHeadsUpRdo"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplnlos_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnLOS"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/inca_xplngotshot_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InCa_XplnGotShot"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_civcmntphone_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_CivCmntPhone"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_nofaulvctmxpln_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_NoFaulVctmXpln"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indsg_fllwwrn1nkd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDsg_FllwWrn1Nkd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/ar_blameknckdwnmelee_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Ar_BlameKnckDwnMelee"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/exp_carry_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Carry"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_clearthroat_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_ClearThroat"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_cough_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Cough"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_drink_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Drink"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_exhale_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Exhale"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_idle_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Idle"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_inhale_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Inhale"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_inhalefast_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_InhaleFast"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_sniff_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Sniff"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_swallow_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Swallow"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_think_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Think"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_scared_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Scared"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_gld_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Gld"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_dsppntd_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_Dsppntd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/fol_male/exp_inpain_fol_male.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "Exp_InPain"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_AckBdy"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InCa_AckBdyLdr"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "InDedBdy_CivCmntPcfd"
+        },
+        {
+            "DLGE": "[assembly:/localization/hitman6/conversations/ai/hush/indedbdy_civcmntphonepcfd_hush.sweetdialog].pc_dialogevent",
+            "_Slot_Hint": "InDedBdy_CivCmntPhonePcfd"
+        },
+        {
+            "DLGE": "",
+            "_Path_Hint": "",
+            "_Slot_Hint": "Gen_SocialAck"
+        }
+    ]
+}

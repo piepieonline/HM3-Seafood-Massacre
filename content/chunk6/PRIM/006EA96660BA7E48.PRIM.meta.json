@@ -1,0 +1,41 @@
+{
+    "hash_value": "006EA96660BA7E49",
+    "hash_offset": 97037362,
+    "hash_size": 2147592342,
+    "hash_resource_type": "PRIM",
+    "hash_reference_table_size": 67,
+    "hash_reference_table_dummy": 0,
+    "hash_size_final": 210336,
+    "hash_size_in_memory": 4294967295,
+    "hash_size_in_video_memory": 4294967295,
+    "hash_reference_data": [
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/asphalt_pavement_3mat_blend_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/floor_tiles_ceramic_b_2mat_blend_fox.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/grass_dirt_terrace_blend_rat_c.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/mumbai_ground_tiles_b.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/ground/blend_tilesstreet_tilesstreetworn_concreterough_a.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/generic/floor/mumbai_ground_tiles_b_3mat_blend_type_c.mi].pc_mi",
+            "flag": "5F"
+        },
+        {
+            "hash": "[assembly:/_pro/environment/materials/decals/road/trim_decals_road_rat_a.mi].pc_mi",
+            "flag": "5F"
+        }
+    ]
+}

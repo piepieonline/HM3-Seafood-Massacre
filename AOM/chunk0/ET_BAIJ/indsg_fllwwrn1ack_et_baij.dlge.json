@@ -1,0 +1,1993 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/et_baij/indsg_fllwwrn1ack_et_baij/_.sweetfolder].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Switch",
+		"switchKey": "AI_HMLastKnownDisguise",
+		"default": "DIALOGUE_BADDSG_FALLBACK",
+		"containers": [
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ACTOR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ARCHITECT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ARKIAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ARTIST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ATTENDANT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BANKMANAGER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BANKTELLER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BARBER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BARTENDER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BASEBALL"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BDYGRD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BIKER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BLAKE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BOATCPTN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BOUNCER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BUSKER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BUTCHER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_BUTLER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CAMERA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CASTAWAY"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CHEF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CHURCHSTAFF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CLN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CLUBOWNER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CLUBSTAFF"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CLUBTECH"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_COOK"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_COP"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_COUNSELLOR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CQANALYST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CQCNTRLLR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CQENGNR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CQGUARD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CQHOMELESS"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CQSUBJECT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CREW"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CRITIC"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_CYCLIST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DANCER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DASILVA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DEADJANUS"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DEALER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DELIVERY"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DELIVERYFOX"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DELUXEDEVIL"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DELUXEHUNTING"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DELUXETANG"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DJ"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DOCTOR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DRIVER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DRIVERCH"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DRIVERPALE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DRIVERSA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DRIVERUK"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_DRIVERUS"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ENGINEERDUG"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_EVENTSTFF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FAKEMLSTRM"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FALLBACK"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.333333,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.333333,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.333333,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FALLBACKPLAIN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FAMILYGD"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FIELDGRD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FILMCREW"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FIXER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FLRDAMAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FOOD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_FORTUNE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GAUCHO"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GHOST"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GOTH"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GOTY_CLOWN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GOTY_COWBOY"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GOTY_DARKSNIPER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_GRDNR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HACKER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HAVMASSEUR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HAVSTAFF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HAZMAT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HERALD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HIPPIE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_HOUSSTFF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_INTERN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_INVESTOR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_INVESTBANKER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_JOURNAL"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KGB"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KNIGHT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KRNSTDTENGNR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KRNSTDTSEC"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KRUGER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KSHMRN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_KTCHSTFF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_LAWYER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_LAWYERBD"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_LEE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_LIFEGRD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MAILMAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MASCOT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MASCOT_REWARD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MASSEUR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MASTER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHANIC"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECH_MIAMI"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHCH"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHIT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHKRNSTDT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHSA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHSA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MECHUS"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MEDIC"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MENDEZ"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_METALWKR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MILITIASEC"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MIME"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MORGUE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MAINTENANCE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_MUSICIAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_NINJA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_NORFOLK"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_NURSE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_OFFICER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_OUTBREAK"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PARKA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PHOTOGRAPHER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PILOT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PIRATE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PLAGUE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_POLITICASST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_POLITICIAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_47PREORDERS3"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PRIEST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PRIEST_VP"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PRINTER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PRIVATEYE"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_PSYCH"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_RABBIT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_RACECOORD"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_RACEMARSH"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_REALSTBROKE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_RESIDENT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_RESORTSTAFF"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_ROBBER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SANTA"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SCARECROW"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SCNTST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SECURITY"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SHAMAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SHEIK"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SHOPKEEP"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SNORKEL"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SNOWTREK"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SOLDIER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SOMMELIER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SOUNDCREW"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SPECOPS"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_STALKER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_47STARTRACCOON"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_STYLIST"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_47SUIT"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_SURGEON"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_TAILOR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_TATOO"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_TECHCREW"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_TERMINUS"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_THUG"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_TRAINER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_UGTECH"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_UNDERTAKER"
+				],
+				"containers": [
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_005.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_002.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/ai/et_baij/indsg_fllwwrn1ack_et_baij/indsg_fllwwrn1ackdsg_fallback_et_baij_et_baij_003.animset].pc_animset",
+						"languages": {}
+					},
+					{
+						"type": "WavFile",
+						"wavName": "dr4558_lngbaijugngintel4_et_baij_001",
+						"weight": 0.25,
+						"soundtag": "In-world_AI_Normal",
+						"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.wav].pc_wes",
+						"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4558_lngbaijugngintel4_et_baij_001.animset].pc_animset",
+						"languages": {}
+					}
+				]
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_VAMPIRE"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_WINEMKR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_WINTER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_WISEMAN"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_WORKER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_WAITER"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_XTERMINATOR"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_YACHTCREW"
+				],
+				"containers": []
+			},
+			{
+				"type": "Random",
+				"cases": [
+					"DIALOGUE_BADDSG_YOGA"
+				],
+				"containers": []
+			}
+		]
+	}
+}

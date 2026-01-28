@@ -1,0 +1,28 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/ai/civmalech01/Trspss_EscortRequest_civmalech01.sweetdialog].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer": {
+		"type": "Random",
+		"containers": [
+			{
+				"type": "WavFile",
+				"wavName": "dr4362_fgt assn01greet_civmalech01_002",
+				"weight": 0.49999,
+				"soundtag": "In-world_Mission_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4362_fgt assn01greet_civmalech01_002.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4362_fgt assn01greet_civmalech01_002.animset].pc_animset",
+				"languages": {}
+			},{
+				"type": "WavFile",
+				"wavName": "dr4362_fgt assn01greet_civmalech01_005",
+				"weight": 0.49999,
+				"soundtag": "In-world_Mission_Normal",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4362_fgt assn01greet_civmalech01_005.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/bangkok/4000_elusive/4000_baiju/4300_baiju_story/dr4362_fgt assn01greet_civmalech01_005.animset].pc_animset",
+				"languages": {}
+			}
+		]
+	}
+}
